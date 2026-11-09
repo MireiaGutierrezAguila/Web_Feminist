@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propuesta C · Vidriera</title>
+  <!-- MAQUETA de diseño. Datos de las mujeres: data/mujeres.json. Código común: js/comun.js y css/comun.css.
+       Los textos de la interfaz están aquí solo para verlos; en la web real irán a /src/i18n.
+       Hay que abrirla desde el servidor local. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/comun.css">
+  <style>
+    :root {
+      --plomo: #0B0710;
+      --rosa: #C2386E;
+      --verdeazul: #127C86;
+      --naranja: #E8762B;
+      --morado: #5B2A86;
+      --verde: #2E7D4F;
+      --oro: #C9A24B;
+      --oro-claro: #E8CE86;
+      --fondo: #0B0710;
+      --color-texto: #F2E9F7;
+      --acento: #C2386E;
+      --acento-texto: #A8285C;
+      --borde: #C9A24B;
+      --foco: #FFE9A8;
+      --boton-texto: #F2E9F7;
+      --boton-activo-texto: #0B0710;
+      --btn-bg: #C2386E; --btn-texto: #fff; --btn-borde: #E8CE86;
+      --btn2-bg: transparent; --btn2-texto: #F2E9F7; --btn2-borde: #C9A24B;
+      --placa-bg: #F6EEFA; --placa-tinta: #1A0E24; --placa-borde: 6px solid #0B0710;
+      --fuente-titulos: "Playfair Display", Georgia, serif;
+      --fuente-texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+      --logo: "Almendra Display", Georgia, serif;
+      /* Rosetón de vidriera con CSS: colores en sectores + plomo (negro) en radios y anillos */
+      --vidrio:
+        repeating-conic-gradient(from 0deg, #0B0710 0 1.2deg, transparent 1.2deg 22.5deg),
+        radial-gradient(circle closest-side, #0B0710 0 5%, transparent 5.4%),
+        radial-gradient(circle closest-side, transparent 0 21%, #0B0710 21% 22.6%, transparent 22.6% 45%, #0B0710 45% 47%, transparent 47% 70%, #0B0710 70% 72.4%, transparent 72.4% 96%, #0B0710 96% 100%),
+        radial-gradient(circle closest-side, rgba(255,255,255,.35) 0 21%, rgba(255,255,255,.08) 21% 45%, rgba(0,0,0,.12) 45% 70%, rgba(0,0,0,.35) 70%),
+        repeating-conic-gradient(from 11deg, #C2386E 0 22.5deg, #127C86 22.5deg 45deg, #E8762B 45deg 67.5deg, #5B2A86 67.5deg 90deg);
+      --cinta-colores: linear-gradient(90deg, #C2386E 0 25%, #127C86 25% 50%, #E8762B 50% 75%, #5B2A86 75%);
+    }
+    .logo { color: #F6EEFA; }
+    .fx-btn:hover { background: rgba(201,162,75,.18); }
+    nav.menu { border-top: 6px solid transparent; border-image: var(--cinta-colores) 6; margin-top: 6px; }
+    nav.menu a:hover { color: var(--oro-claro); }
+
+    /* ---------- Hero: rosetón que se ilumina ---------- */
+    .hero { position: relative; overflow: hidden; touch-action: pan-y; }
+    .hero-grid { display: grid; gap: 14px; align-items: center; padding-block: 36px 52px; }
+    .hero h1 { font-size: clamp(2rem, 7.4vw, 3.7rem); font-weight: 800; color: #F6EEFA; }
+    .hero-texto p { font-size: 1.15rem; max-width: 32rem; margin: 20px 0 26px; }
+    .pista-luz { margin-top: 16px; font-size: .95rem; color: var(--oro-claro); }
+    body:not(.fx) .pista-luz { display: none; }
+    .roseton { position: relative; width: min(520px, 86vw); aspect-ratio: 1; border-radius: 50%; margin: 10px auto 0;
+      box-shadow: 0 0 0 8px var(--plomo), 0 0 0 11px var(--oro), 0 0 70px rgba(194,56,110,.35); }
+    .roseton-dim, .roseton-luz { position: absolute; inset: 0; border-radius: 50%; background: var(--vidrio); }
+    /* Con efectos, el cristal está apagado y solo se ilumina donde pasa la luz */
+    .roseton-dim { filter: brightness(.36) saturate(.85); }
+    .roseton-luz { -webkit-mask-image: radial-gradient(circle 210px at var(--lx, 50%) var(--ly, 50%), #000 0, transparent 100%); mask-image: radial-gradient(circle 210px at var(--lx, 50%) var(--ly, 50%), #000 0, transparent 100%); }
+    body:not(.fx) .roseton-dim { filter: none; }
+    body:not(.fx) .roseton-luz { display: none; }
+
+    .separa { height: 12px; background: var(--plomo); border-block: 3px solid var(--oro); }
+
+    /* ---------- Títulos ---------- */
+    .bloque h2 { font-size: clamp(1.7rem, 5.4vw, 2.7rem); font-weight: 800; color: #F6EEFA; margin-bottom: 14px; }
+    .bloque h2::after { content: ""; display: block; width: 170px; height: 9px; margin-top: 12px; background: var(--cinta-colores); border: 2px solid var(--plomo); outline: 1px solid var(--oro); }
+
+    /* ---------- Placa de lectura ---------- */
+    .placa { border-radius: 4px; outline: 3px solid var(--oro); outline-offset: 0; }
+    .placa h3 { font-weight: 800; }
+    .logro { border-left-color: var(--rosa); }
+
+    /* ---------- Paneles de vidriera ---------- */
+    .cara.panel { border: 9px solid var(--plomo); background: var(--plomo); box-shadow: 0 0 0 3px var(--oro), 0 14px 30px rgba(0,0,0,.6); border-radius: 4px; }
+    .cristal { position: relative; flex: 1; overflow: hidden;
+      background:
+        repeating-linear-gradient(62deg, transparent 0 46px, #0B0710 46px 49px),
+        repeating-linear-gradient(-28deg, transparent 0 58px, #0B0710 58px 61px),
+        radial-gradient(circle closest-side at 50% 60%, rgba(255,255,255,.62), rgba(255,255,255,0)),
+        var(--v, #127C86); }
+    .nombre-c { padding: 9px 6px; text-align: center; font-family: var(--fuente-titulos); font-weight: 800; line-height: 1.2; color: var(--oro-claro); background: var(--plomo); }
+    .cristal.reverso { display: grid; place-content: center; justify-items: center; gap: 10px; text-align: center; padding: 14px; }
+    .rotulo { background: var(--plomo); color: #F6EEFA; padding: 8px 12px; font-weight: 700; }
+
+    /* ---------- Actividades, glosario, juego ---------- */
+    .actividades li { border-radius: 4px; box-shadow: 0 0 0 2px var(--oro); position: relative; }
+    .actividades li::before { content: ""; width: 28px; height: 28px; flex: none; border-radius: 50%; border: 3px solid var(--plomo); background: var(--c, #C2386E); }
+    .actividades li:nth-child(5n+1) { --c: #C2386E; } .actividades li:nth-child(5n+2) { --c: #127C86; }
+    .actividades li:nth-child(5n+3) { --c: #E8762B; } .actividades li:nth-child(5n+4) { --c: #5B2A86; } .actividades li:nth-child(5n) { --c: #2E7D4F; }
+    .glosario li { border-width: 4px; }
+    .glosario li:nth-child(4n+1) { border-color: var(--rosa); } .glosario li:nth-child(4n+2) { border-color: var(--verdeazul); }
+    .glosario li:nth-child(4n+3) { border-color: var(--naranja); } .glosario li:nth-child(4n) { border-color: var(--morado); }
+    .marco-c { border: 9px solid var(--plomo); box-shadow: 0 0 0 3px var(--oro), 0 14px 30px rgba(0,0,0,.55); border-radius: 4px; overflow: hidden; }
+    footer { background: #05030a; border-top: 10px solid transparent; border-image: var(--cinta-colores) 10; }
+    .firma { font-family: var(--fuente-titulos); font-weight: 800; font-size: 1.15rem; color: var(--oro-claro); }
+
+    @media (min-width: 800px) {
+      .hero-grid { grid-template-columns: 1fr 1fr; padding-block: 48px 64px; }
+      .roseton { margin: 0 0 0 auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header class="top">
+      <div class="top-row">
+        <a class="logo" href="#">
+          <svg class="venus" viewBox="0 0 22 30" aria-hidden="true"><circle cx="11" cy="9" r="7" fill="none" stroke="#C9A24B" stroke-width="3"/><path d="M11 16v13M5 23h12" stroke="#C9A24B" stroke-width="3" stroke-linecap="round"/></svg>
+          Feminist
+        </a>
+        <div class="controles">
+          <button type="button" class="fx-btn" id="fxBtn">Quitar efectos</button>
+          <div class="idiomas" role="group" aria-label="Idioma">
+            <button type="button" aria-pressed="true">ES</button>
+            <button type="button" aria-pressed="false">CA</button>
+            <button type="button" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </div>
+      <nav class="menu" aria-label="Secciones">
+        <ul>
+          <li><a href="#mujeres">Mujeres</a></li>
+          <li><a href="#juego">El juego</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+          <li><a href="#glosario">Glosario</a></li>
+          <li><a href="#informatica">Quién lo hizo</a></li>
+          <li><a href="#fuentes">Fuentes</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-texto">
+        <h1>Mujeres que cambiaron la historia</h1>
+        <p>Cada mujer es una vidriera que deja pasar la luz. Conoce a las que aparecen en el juego Feminist y descubre su historia.</p>
+        <a class="btn" href="#mujeres">Conocerlas</a>
+        <p class="pista-luz">Mueve el ratón o arrastra el dedo para iluminar la vidriera.</p>
+      </div>
+      <div class="roseton" id="roseton" aria-hidden="true"><div class="roseton-dim"></div><div class="roseton-luz"></div></div>
+    </div>
+  </section>
+  <div class="separa" aria-hidden="true"></div>
+
+  <main>
+    <div class="wrap">
+
+      <section class="bloque" id="mujeres">
+        <h2>Una mujer cada día</h2>
+        <p class="intro">Ejemplo de maqueta: así se vería la mujer del día. Elige otra del carrusel con «Ver ficha» y su ficha aparece aquí.</p>
+        <div id="ficha" aria-live="polite"></div>
+
+        <h2 style="margin-top:56px">Mujeres de la historia</h2>
+        <p class="pista">Toca un panel para girarlo y ver la foto real. Con efectos, se inclina siguiendo el dedo o el ratón.</p>
+        <ul class="carrusel" id="carrusel" tabindex="0" aria-label="Carrusel de mujeres"></ul>
+      </section>
+
+      <section class="bloque" id="juego">
+        <div class="juego-grid">
+          <div class="marco-c"><img src="img/captura-03.webp" alt="Captura del juego: Ada Lovelace sentada sobre un borde de papel rasgado, con la protagonista y números binarios debajo" width="1200" height="540" loading="lazy"></div>
+          <div>
+            <h2>El juego Feminist</h2>
+            <p>Un videojuego reivindicativo y feminista, cargado de acción, humor y lucha, en el que las grandes mujeres de la historia te apoyan en tu camino.</p>
+            <div class="botones">
+              <a class="btn" href="#">Ver el juego</a>
+              <a class="btn alt" href="#">Google Play (próximamente)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bloque" id="actividades">
+        <h2>Actividades</h2>
+        <p class="intro">Cada actividad completada ilumina un cristal. Se guarda en tu navegador.</p>
+        <ul class="actividades">
+          <li>Memory</li><li>Línea del tiempo</li><li>La mujer en el mundo</li><li>¿De quién es la frase?</li><li>Pancarta 8M</li><li>Inventos de mujeres</li>
+        </ul>
+      </section>
+
+      <section class="bloque" id="glosario">
+        <h2>Glosario feminista</h2>
+        <p class="intro">Palabras que conviene conocer.</p>
+        <ul class="glosario"><li>sororidad</li><li>techo de cristal</li><li>brecha salarial</li><li>micromachismo</li></ul>
+      </section>
+
+      <section class="bloque" id="informatica">
+        <div class="codigo" id="lluvia">
+          <div class="contenido informatica">
+            <h2 style="font-size:clamp(1.4rem,4.4vw,2.1rem);margin:0">Hecha por una mujer en la informática</h2>
+            <p>Esta web y el juego los ha hecho una mujer, en un sector donde las mujeres son una clara minoría. Mireia pasó de la educación a la informática, un trabajo que en su momento ni se había planteado.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="fuentes">
+    <div class="wrap">
+      <p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p>
+      <a href="#fuentes">Fuentes de información</a>
+    </div>
+  </footer>
+
+  <script src="js/comun.js"></script>
+  <script>
+    F.iniciar();
+    // La luz sigue al ratón o al dedo por toda la portada, pero se mide sobre el rosetón
+    F.luz(document.getElementById('hero'), document.getElementById('roseton'));
+    F.codigo(document.getElementById('lluvia'), 18);
+
+    var COLORES = ['#127C86', '#C2386E', '#E8762B', '#5B2A86', '#2E7D4F'];
+
+    F.cargar().then(function () {
+      var car = document.getElementById('carrusel');
+      F.mujeres.forEach(function (m, n) {
+        car.appendChild(F.tarjeta(m, n, {
+          frente: function (cara, m, fig, n) {
+            cara.classList.add('panel');
+            cara.style.setProperty('--v', COLORES[n % COLORES.length]);
+            var c = F.el('span', 'cristal');
+            c.appendChild(fig);
+            cara.appendChild(c);
+            cara.appendChild(F.el('span', 'nombre-c', m.nombre));
+          },
+          dorso: function (cara, m, n) {
+            cara.classList.add('panel');
+            cara.style.setProperty('--v', COLORES[n % COLORES.length]);
+            var r = F.el('span', 'cristal reverso');
+            r.appendChild(F.el('span', 'rotulo', '[FOTO REAL PENDIENTE]'));
+            r.appendChild(F.el('span', 'rotulo', 'autor y licencia por indicar'));
+            cara.appendChild(r);
+            cara.appendChild(F.el('span', 'nombre-c', m.cabecera));
+          }
+        }));
+      });
+      F.ficha(F.porSlug('hipatia-de-alejandria') || F.mujeres[0], document.getElementById('ficha'));
+    }).catch(F.errorDatos);
+  </script>
+</body>
+</html>

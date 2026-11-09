@@ -1,0 +1,123 @@
+[
+  {
+    "slug": "frida-kahlo",
+    "nombre": "Frida Kahlo",
+    "cabecera": "Frida Kahlo (1907-1954)",
+    "profesionLugar": "Pintora - Coyoacán (México)",
+    "logro": "Desafió los cánones de belleza y los roles de género a través del arte.",
+    "quienTitulo": "¿Quién fue ?",
+    "quien": "Magdalena Frida Carmen Kahlo y Calderón, conocida como Frida Kahlo, fue una pintora mexicana cuya obra gira temáticamente en torno a su vida personal. Realizó un total de 150 obras, principalmente autorretratos. A través de su arte y su forma de vida, rompió estereotipos de género, rechazó los cánones de belleza impuestos y vivió su sexualidad en absoluta libertad.",
+    "fuentes": "[FUENTE PENDIENTE]",
+    "capas": { "cabeza": { "s": 0.69, "dx": 88, "dy": -48 }, "cuerpo": { "s": 1, "dx": 0, "dy": 54 } }
+  },
+  {
+    "slug": "zheng-shi",
+    "nombre": "Zheng Shi",
+    "cabecera": "Zheng Shi (1775-1844)",
+    "profesionLugar": "Líder pirata- Cantón (China)",
+    "logro": "Lideró la mayor flota pirata de la historia y nunca fue derrotada.",
+    "quienTitulo": "¿Quién fue ?",
+    "quien": "Zheng Shi (también conocida como Ching Shih) fue la pirata más poderosa de la historia. Tras enviudar de su esposo, el pirata Zheng Yi, asumió el liderazgo absoluto de Confederación Pirata de Guangdong y se casó con el hijo adoptivo de su difunto marido, convirtiéndolo en su mano derecha.  Más allá de sus victorias, destacó por imponer un código de leyes que protegía drásticamente a las mujeres. Por ejemplo: estaba terminantemente prohibido dañar o violar a las cautivas; si un pirata agredía sexualmente a una mujer prisionera, la pena era la ejecución inmediata por decapitación. Se retiró con su inmensa fortuna y vivió el resto de sus días en absoluta libertad.",
+    "fuentes": "[FUENTE PENDIENTE]",
+    "capas": { "cabeza": { "s": 0.71, "dx": 60, "dy": -86 }, "cuerpo": { "s": 0.99, "dx": 0, "dy": 86 } }
+  },
+  {
+    "slug": "hipatia-de-alejandria",
+    "nombre": "Hipatia de Alejandría",
+    "cabecera": "Hipatia (355/370 - 415)",
+    "profesionLugar": "Astrónoma, matemática y filosofa - Alejandría (Egipto)",
+    "logro": "Mejoró y construyó instrumentos astronómicos como el astrolabio o el planisferio.",
+    "quienTitulo": "¿Quién fue ?",
+    "quien": "Hipatia de Alejandría fue una brillante filósofa, matemática y astrónoma griega que vivió en Egipto a finales del siglo IV y principios del V. Es la primera mujer matemática de la que se conserva un registro biográfico e histórico detallado, además destacó por sus profundos conocimientos en geometría, álgebra y astronomía.Su figura se convirtió en un símbolo universal de la razón, el libre pensamiento y la erudición. Su trágica muerte, a manos de una multitud de cristianos extremistas que atacaban la ciencia y el paganismo clásico, la consagró definitivamente como un icono histórico de la defensa del conocimiento y la libertad intelectual. Para algunos historiadores su muerte supuso el principio del fin del paganismo en la Antigüedad.",
+    "fuentes": "[FUENTE PENDIENTE]",
+    "capas": { "cabeza": { "s": 0.65, "dx": 68, "dy": -34 }, "cuerpo": { "s": 0.91, "dx": 18, "dy": 124 } }
+  },
+  {
+    "slug": "olimpia-de-gouges",
+    "nombre": "Olimpia de Gouges",
+    "cabecera": "Olimpia de Gouges (1748- 1793)",
+    "profesionLugar": "Política, escritora y filosofa  - Londres (Inglaterra)",
+    "logro": "Precursora histórica del feminismo y autora de la Declaración de los Derechos de la Mujer y de la Ciudadana.",
+    "quienTitulo": "¿Quién fue ?",
+    "quien": "Olympe de Gouges (Olimpia de Gouges) fue una escritora, dramaturga y activista política francesa del siglo XVIII. Considerada una de las primeras defensoras de los derechos de la mujer, redactó la Declaración de los Derechos de la Mujer y de la Ciudadana, en plena Revolución Francesa, reclamando la igualdad de derechos políticos y el sufragio femenino. Su trágica muerte en la guillotina por desafiar los límites impuestos a las mujeres la consagró definitivamente como un icono histórico de la emancipación y la libertad.",
+    "fuentes": "[FUENTE PENDIENTE]",
+    "capas": { "cabeza": { "s": 0.64, "dx": 98, "dy": -38 }, "cuerpo": { "s": 1, "dx": 4, "dy": 50 } }
+  },
+  {
+    "slug": "rosa-parks",
+    "nombre": "Rosa Parks",
+    "cabecera": "Rosa Parks (1913-2005)",
+    "profesionLugar": "Costurera y activista - Alabama (Estados Unidos)",
+    "logro": "Se negó a ceder su asiento a una persona blanca, su gesto puso en marcha un movimiento contra la segregación racial imparable.",
+    "quienTitulo": "¿Quién fue ?",
+    "quien": "Rosa Parks es conocida como \"la Primera Dama del Movimiento por los derechos civiles\" en Estados Unidos. Aunque ya en 1950 se había unido a dicho movimiento, ese calificativo se debe a su negativa a cederle el asiento a un blanco y moverse a la parte trasera de un autobús en Montgomery (Alabama), población del sur del país. Sucedió el 1 de diciembre de 1955 y prendió la mecha del boicot a los autobuses de Montgomery, primera gran victoria de los negros americanos contra las leyes racistas.",
+    "fuentes": "[FUENTE PENDIENTE]",
+    "capas": { "cabeza": { "s": 0.72, "dx": 68, "dy": -66 }, "cuerpo": { "s": 0.99, "dx": 4, "dy": 56 } }
+  },
+  {
+    "slug": "aglaonice-de-tesalia",
+    "nombre": "Aglaonice de Tesalia",
+    "cabecera": "Aglaonice (Siglo II - I a. C.)",
+    "profesionLugar": "Astrónoma -  Tesalia (Grecia)",
+    "logro": "Ser una de las primeras astrónomas reconocida por predecir eclipses con exactitud.",
+    "quienTitulo": "¿Quién fue ?",
+    "quien": "Más conocida como Aglaonice de Tesalia ,fue la primera mujer astrónoma conocida de la antigua Grecia. Destacó por su profundo dominio para predecir con exactitud los eclipses lunares. Aglaonice fue relacionada con un grupo de mujeres astrólogas, muy activas entre el siglo III y el siglo I a. C., aparentemente consideradas como hechiceras o magas. Se conocieron como las BRUJAS DE TESALIA y existió la creencia, muy extendida en la antigüedad, que tenían el poder de \"bajar la luna\" del cielo.",
+    "fuentes": "[FUENTE PENDIENTE]",
+    "capas": { "cabeza": { "s": 0.67, "dx": 90, "dy": -52 }, "cuerpo": { "s": 0.99, "dx": 18, "dy": 44 } }
+  },
+  {
+    "slug": "ada-lovelace",
+    "nombre": "Ada Lovelace",
+    "cabecera": "Ada Lovelace (1815–1852)",
+    "profesionLugar": "Matemática y escritora - Londres (Inglaterra)",
+    "logro": "Primera persona programadora de la historia. Creó el primer algoritmo informático.",
+    "quienTitulo": "¿Quién fue Ada_Lovelace?",
+    "quien": "Ada Lovelace fue una matemática y escritora británica, célebre sobre todo por su trabajo acerca de la computadora mecánica de uso general de Charles Babbage, la denominada máquina analítica. Todos sus hallazgos fueron fundamentales para la eventual creación de la computadora.\n\nFalleció a los 36 años a causa de un cáncer de útero.",
+    "fuentes": "[FUENTE PENDIENTE]",
+    "capas": { "cabeza": { "s": 0.75, "dx": 60, "dy": -82 }, "cuerpo": { "s": 0.99, "dx": 0, "dy": 26 } }
+  },
+  {
+    "slug": "lynn-margulis",
+    "nombre": "Lynn Margulis",
+    "cabecera": "Lynn Margulis (1938-2011)",
+    "profesionLugar": "Bióloga y Catedrática - Chicago (Estados Unidos)",
+    "logro": "Revolucionó la teoría de la evolución con su teoría de El Origen de las Células Eucariotas",
+    "quienTitulo": "¿Quién fue ?",
+    "quien": "Lynn Margulis dedicó su vida profesional a investigar el microcosmos de los organismos más pequeños de la Tierra. Demostró que las células nucleadas o eucariotas –de las que están hechos todos los organismos vivos: los hongos, las plantas, los animales, y numerosos seres unicelulares– no sólo descienden de bacterias, sino que son literalmente amalgamas de células bacterianas diversas. La División de Ciencias de la Vida de la NASA, financió durante décadas su investigación.",
+    "fuentes": "[FUENTE PENDIENTE]",
+    "capas": { "cabeza": { "s": 0.67, "dx": 68, "dy": -44 }, "cuerpo": { "s": 1.01, "dx": -4, "dy": 72 } }
+  },
+  {
+    "slug": "julia-hermosilla",
+    "nombre": "Julia Hermosilla",
+    "cabecera": "Julia Hermosilla (1916-2009)",
+    "profesionLugar": "Miliciana y Anarcosindicalista   - Vizcaya (Euskal Herria)",
+    "logro": "Miliciana anarquista que casi nos libra de Franco en dos ocasiones.",
+    "quienTitulo": "¿Quién fue ?",
+    "quien": "Julia Hermosilla, conocida como \"Paquita\", fue una valiente anarcosindicalista y  miliciana, miembro clave de la resistencia antifranquista. A los catorce años se afilió al CNT, se convirtió en miliciana armada, combatiendo activamente en el Frente del Norte con los batallones. Estuvo vinculada al desarrollo cultural y social del movimiento libertario, apoyando a agrupaciones como Mujeres Libres, un colectivo feminista y anarquista del que su propia madre fue organizadora en Barakaldo.Desde el exilio en Francia, Julia fue una pieza clave en la logística y organización de dos intentos de atentado directo para asesinar al dictador Francisco Franco.",
+    "fuentes": "[FUENTE PENDIENTE]",
+    "capas": { "cabeza": { "s": 0.79, "dx": 62, "dy": -76 }, "cuerpo": { "s": 1.04, "dx": 0, "dy": 56 } }
+  },
+  {
+    "slug": "emma-goldman",
+    "nombre": "Emma Goldman",
+    "cabecera": "Emma Goldman (1869 – 1940)",
+    "profesionLugar": "Anarquista, Escritora y Activista - Kaunas (Lituania)",
+    "logro": "Fue conocida como \"La mujer más peligrosa de América\"  por su intensa lucha Anarcofeminista e ideas revolucionarias.",
+    "quienTitulo": "¿Quién fue ?",
+    "quien": "Emma Goldman, conocida como \"Emma, la roja\", fue una de las voces más radicales y apasionadas del anarquismo y el feminismo del siglo XX.  Creció en una familia judía humilde y los 16 años, emigró a Estados Unidos, escapando de la represión y las limitadas oportunidades de vida en su tierra natal. Dedicó su vida a la lucha por la libertad, defendiendo los derechos de las mujeres y los trabajadores, y criticando la guerra y el ejército. Luchó por los derechos sexuales y reproductivos, lo que le llevó a ser arrestada varias veces por organizar huelgas y por enseñar a la gente a usar métodos anticonceptivos. Fue expulsada de Estados Unidos en 1919 y murió en Canadá en el año 1940.",
+    "fuentes": "[FUENTE PENDIENTE]",
+    "capas": { "cabeza": { "s": 0.78, "dx": 50, "dy": -56 }, "cuerpo": { "s": 0.99, "dx": 2, "dy": 74 } }
+  },
+  {
+    "slug": "hedy-lamarr",
+    "nombre": "Hedy Lamarr",
+    "cabecera": "Hedy Lamarr (1914–2000)",
+    "profesionLugar": "Ingeniera y  Actriz de cine - Viena (Austria)",
+    "logro": "Creó la tecnología de salto de frecuencia que hoy hace posibles el Wi-Fi, el Bluetooth y el GPS.",
+    "quienTitulo": "¿Quién fue ?",
+    "quien": "Conocida en su faceta artística como una de las grandes estrellas de la época dorada de Hollywood, demostró una mente científica prodigiosa que iba mucho más allá de las pantallas. Durante la Segunda Guerra Mundial, diseñó un sistema secreto de comunicación por radio con tecnología de salto de frecuencia para evitar que los torpedos aliados fueran interceptados por los nazis.",
+    "fuentes": "[FUENTE PENDIENTE]",
+    "capas": { "cabeza": { "s": 0.68, "dx": 82, "dy": -54 }, "cuerpo": { "s": 1, "dx": -2, "dy": 114 } }
+  }
+]

@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maqueta 1 · Pizarra y papel rasgado</title>
+  <!-- MAQUETA de diseño: los textos están aquí dentro solo para poder verlos.
+       En la web real irán a los archivos de idioma (/src/i18n). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pizarra: #2E4A42;
+      --pizarra-oscura: #213730;
+      --papel: #EFE6F4;
+      --papel-claro: #FBF8FE;
+      --tinta: #2B1239;
+      --magenta: #B3266E;
+      --amarillo: #E4C547;
+      --tiza: #F2EDF7;
+      --cian: #3FD6C9;
+      --titulos: "Almendra Display", Georgia, serif;
+      --texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+      /* Rayas blancas y negras del juego: se usan en marcos y separadores */
+      --rayas: repeating-linear-gradient(135deg, #1b1020 0 8px, #f4f0f7 8px 16px);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: var(--texto); font-size: 1.0625rem; line-height: 1.6;
+      color: var(--tinta); background: var(--papel);
+    }
+    h1, h2, h3 { font-family: var(--titulos); font-weight: 400; line-height: 1.1; margin: 0; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--amarillo); outline-offset: 3px; }
+    .wrap { width: min(1100px, 100% - 32px); margin-inline: auto; }
+
+    /* ---------- Pizarra (cabecera + hero) ---------- */
+    .pizarra {
+      color: var(--tiza);
+      background:
+        radial-gradient(ellipse at 20% 10%, rgba(255,255,255,.07), transparent 55%),
+        radial-gradient(ellipse at 80% 70%, rgba(0,0,0,.18), transparent 60%),
+        var(--pizarra);
+      padding-bottom: 96px;
+      position: relative;
+    }
+    header.top { padding-block: 14px 0; }
+    .top-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .logo { font-family: var(--titulos); font-size: 1.9rem; text-decoration: none; display: flex; align-items: center; gap: 8px; color: var(--tiza); }
+    .venus { width: 22px; height: 30px; flex: none; }
+    .idiomas { display: flex; gap: 6px; }
+    .idiomas button {
+      font: 700 .85rem var(--texto); min-width: 44px; min-height: 44px; border-radius: 10px;
+      border: 2px solid var(--tiza); color: var(--tiza); background: transparent; cursor: pointer;
+    }
+    .idiomas button[aria-pressed="true"] { background: var(--magenta); border-color: var(--magenta); color: #fff; }
+    nav.menu { margin-top: 6px; border-top: 6px solid transparent; border-image: var(--rayas) 6; }
+    nav.menu ul { display: flex; gap: 4px 20px; list-style: none; margin: 0; padding: 8px 0; overflow-x: auto; white-space: nowrap; }
+    nav.menu a { display: inline-block; padding: 10px 2px; text-decoration: none; font-weight: 700; }
+    nav.menu a:hover { color: var(--amarillo); }
+
+    .hero { display: grid; gap: 28px; padding-top: 36px; align-items: center; }
+    .hero h1 { font-size: clamp(2.6rem, 9vw, 4.6rem); letter-spacing: .01em; }
+    /* Subrayado de tiza dibujado a mano (SVG) bajo el título */
+    .hero h1 span { display: inline-block; padding-bottom: 10px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 10' preserveAspectRatio='none'%3E%3Cpath d='M2 6 C60 1 120 9 180 4 S270 7 298 3' fill='none' stroke='%23E4C547' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") bottom/100% 8px no-repeat; }
+    .hero p { max-width: 34rem; font-size: 1.15rem; margin: 18px 0 26px; }
+    .btn {
+      display: inline-block; text-decoration: none; font-weight: 700; padding: 14px 24px; min-height: 48px;
+      border-radius: 12px; background: var(--magenta); color: #fff; border: 2px solid #fff3;
+      box-shadow: 4px 4px 0 var(--tinta);
+    }
+    .btn:hover { background: #cc2e80; }
+    .btn.claro { background: var(--amarillo); color: var(--tinta); box-shadow: 4px 4px 0 var(--pizarra-oscura); }
+    .hero-img { margin: 0; padding: 8px; background: var(--rayas); border-radius: 14px; transform: rotate(1.5deg); box-shadow: 0 10px 24px rgba(0,0,0,.35); }
+    .hero-img img { display: block; width: 100%; height: auto; border-radius: 8px; }
+
+    /* ---------- Papel rasgado ---------- */
+    .papel {
+      background: var(--papel); margin-top: -72px; position: relative;
+      padding-top: 72px; padding-bottom: 8px;
+      clip-path: polygon(0 18px, 4% 6px, 8% 16px, 12% 4px, 17% 14px, 22% 5px, 27% 17px, 32% 7px, 38% 15px, 43% 3px, 49% 14px, 55% 6px, 60% 17px, 66% 5px, 71% 15px, 77% 4px, 83% 16px, 88% 6px, 94% 14px, 100% 5px, 100% 100%, 0 100%);
+    }
+    section.bloque { padding-block: 48px; }
+    .bloque h2 { font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 8px; }
+    .bloque .intro { max-width: 40rem; margin: 0 0 28px; }
+
+    /* ---------- Una mujer cada día + ficha ---------- */
+    .dia { display: grid; gap: 32px; }
+    .ficha-flip { width: min(280px, 100%); margin-inline: auto; }
+    .flip {
+      all: unset; display: block; width: 100%; aspect-ratio: 3/4; cursor: pointer; position: relative;
+      perspective: 900px; transform: rotate(-2deg);
+    }
+    .flip:focus-visible { outline: 3px solid var(--magenta); outline-offset: 6px; }
+    .flip-inner { position: absolute; inset: 0; transition: transform .7s; transform-style: preserve-3d; }
+    .flip[aria-pressed="true"] .flip-inner { transform: rotateY(180deg); }
+    .cara {
+      position: absolute; inset: 0; backface-visibility: hidden; border-radius: 6px;
+      background: var(--papel-claro); padding: 14px 14px 18px; box-shadow: 0 8px 20px rgba(43,18,57,.25);
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .cara::before { /* cinta adhesiva */
+      content: ""; position: absolute; top: -14px; left: 50%; width: 96px; height: 28px;
+      transform: translateX(-50%) rotate(-3deg); background: rgba(228,197,71,.85);
+    }
+    .cara.atras { transform: rotateY(180deg); }
+    .lienzo {
+      flex: 1; border: 4px solid transparent; border-image: var(--rayas) 4; display: grid; place-items: center;
+      text-align: center; padding: 12px; font-size: .95rem; color: #5b4a68;
+      background: repeating-linear-gradient(45deg, #f0e7f6 0 12px, #e8dcf0 12px 24px);
+    }
+    .cara b { font-family: var(--titulos); font-weight: 400; font-size: 1.5rem; line-height: 1.1; }
+    .cara small { color: #5b4a68; }
+    .pista { text-align: center; margin: 22px 0 0; font-size: .95rem; color: #5b4a68; }
+
+    .datos h3 { font-size: 2.2rem; }
+    .datos .fechas { font-weight: 700; margin: 4px 0 2px; }
+    .logro { margin: 18px 0; padding: 14px 16px; background: var(--papel-claro); border-left: 8px solid var(--amarillo); }
+    .logro strong { display: block; color: var(--magenta); }
+    details.quien { background: var(--papel-claro); border-radius: 10px; padding: 4px 16px; }
+    details.quien summary { cursor: pointer; font-weight: 700; padding: 12px 0; min-height: 44px; }
+    details.quien p { max-width: 62ch; }
+    .fuentes-btn { display: inline-block; margin-top: 14px; padding: 10px 16px; min-height: 44px; border: 2px solid var(--tinta); border-radius: 10px; text-decoration: none; font-weight: 700; }
+    .pendiente { background: var(--amarillo); padding: 0 6px; border-radius: 4px; font-size: .85em; }
+
+    /* ---------- Carrusel ---------- */
+    .carrusel { display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 22px 6px 26px; margin-inline: -6px; }
+    .recorte { flex: 0 0 min(230px, 70vw); scroll-snap-align: start; background: var(--papel-claro); padding: 12px 12px 16px; border-radius: 6px; box-shadow: 0 6px 16px rgba(43,18,57,.2); position: relative; }
+    .recorte:nth-child(odd) { transform: rotate(-1.5deg); }
+    .recorte:nth-child(even) { transform: rotate(1.2deg); }
+    .recorte::before { content: ""; position: absolute; top: -12px; left: 24px; width: 70px; height: 22px; background: rgba(179,38,110,.55); transform: rotate(-4deg); }
+    .recorte .lienzo { aspect-ratio: 1; flex: none; }
+    .recorte h3 { font-size: 1.4rem; margin-top: 10px; }
+
+    /* ---------- El juego (vuelve la pizarra) ---------- */
+    .juego { background: var(--pizarra); color: var(--tiza); clip-path: polygon(0 10px, 6% 2px, 14% 9px, 25% 1px, 40% 10px, 55% 3px, 70% 9px, 85% 2px, 100% 8px, 100% calc(100% - 10px), 92% 100%, 78% calc(100% - 8px), 60% 100%, 44% calc(100% - 9px), 28% 100%, 12% calc(100% - 7px), 0 calc(100% - 2px)); padding-block: 60px; margin-block: 24px; }
+    .juego-grid { display: grid; gap: 28px; align-items: center; }
+    .juego figure { margin: 0; padding: 8px; background: var(--rayas); border-radius: 12px; }
+    .juego figure img { display: block; width: 100%; height: auto; border-radius: 6px; }
+    .juego h2 { color: var(--tiza); }
+    .juego .botones { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 20px; }
+
+    /* ---------- Actividades ---------- */
+    .actividades { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+    .actividades li { background: var(--papel-claro); border: 3px solid var(--tinta); border-radius: 12px; padding: 16px; min-height: 84px; font-weight: 700; display: flex; align-items: center; gap: 12px; }
+    .actividades li::before { content: "♀"; font-size: 1.5rem; color: var(--magenta); }
+
+    .glosario { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; margin: 0; }
+    .glosario li { padding: 10px 18px; border-radius: 999px; background: var(--tinta); color: var(--tiza); font-family: var(--titulos); font-size: 1.25rem; }
+
+    .informatica { display: grid; gap: 20px; }
+    .informatica p { max-width: 60ch; margin: 0; }
+
+    /* ---------- Pie ---------- */
+    footer { background: var(--pizarra-oscura); color: var(--tiza); padding-block: 36px; border-top: 10px solid transparent; border-image: var(--rayas) 10; }
+    footer .wrap { display: grid; gap: 10px; }
+    footer a { font-weight: 700; }
+    .firma { font-family: var(--titulos); font-size: 1.3rem; }
+
+    @media (min-width: 800px) {
+      .hero { grid-template-columns: 1.1fr .9fr; }
+      .dia { grid-template-columns: 300px 1fr; align-items: start; }
+      .juego-grid { grid-template-columns: 1fr 1fr; }
+      .informatica { grid-template-columns: 1fr 1fr; align-items: center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .flip-inner { transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pizarra">
+    <div class="wrap">
+      <header class="top">
+        <div class="top-row">
+          <a class="logo" href="#">
+            <svg class="venus" viewBox="0 0 22 30" aria-hidden="true"><circle cx="11" cy="9" r="7" fill="none" stroke="#E4C547" stroke-width="3"/><path d="M11 16v13M5 23h12" stroke="#E4C547" stroke-width="3" stroke-linecap="round"/></svg>
+            Feminist
+          </a>
+          <div class="idiomas" role="group" aria-label="Idioma">
+            <button type="button" aria-pressed="true">ES</button>
+            <button type="button" aria-pressed="false">CA</button>
+            <button type="button" aria-pressed="false">EN</button>
+          </div>
+        </div>
+        <nav class="menu" aria-label="Secciones">
+          <ul>
+            <li><a href="#mujeres">Mujeres</a></li>
+            <li><a href="#juego">El juego</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+            <li><a href="#glosario">Glosario</a></li>
+            <li><a href="#informatica">Quién lo hizo</a></li>
+            <li><a href="#fuentes">Fuentes</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1><span>Mujeres que cambiaron la historia</span></h1>
+          <p>Conoce a las mujeres que aparecen en el juego Feminist, descubre su historia y pon a prueba lo que sabes con actividades para todas las edades.</p>
+          <a class="btn" href="#mujeres">Conocerlas</a>
+        </div>
+        <figure class="hero-img">
+          <img src="img/portada.webp" alt="Carátula de Feminist: una joven con un pañuelo de lunares y el puño en alto, sobre fondo amarillo" width="640" height="288">
+        </figure>
+      </section>
+    </div>
+  </div>
+
+  <main class="papel">
+    <div class="wrap">
+
+      <section class="bloque" id="mujeres">
+        <h2>Una mujer cada día</h2>
+        <p class="intro">Ejemplo de maqueta: así se vería la mujer del día, con su tarjeta y su ficha. Toca la tarjeta para girarla.</p>
+
+        <div class="dia">
+          <div>
+            <div class="ficha-flip">
+              <button class="flip" type="button" aria-pressed="false" aria-label="Girar la tarjeta de Hipatia para ver la foto de la mujer real">
+                <span class="flip-inner">
+                  <span class="cara">
+                    <span class="lienzo">[DIBUJO ANIMADO PENDIENTE]</span>
+                    <b>Hipatia</b>
+                    <small>Toca para ver la foto real</small>
+                  </span>
+                  <span class="cara atras">
+                    <span class="lienzo">[FOTO REAL PENDIENTE]<br>autor y licencia por indicar</span>
+                    <b>Hipatia de Alejandría</b>
+                    <small>Imagen: [FUENTE PENDIENTE]</small>
+                  </span>
+                </span>
+              </button>
+            </div>
+            <p class="pista">La tarjeta gira con un toque o con la tecla Intro.</p>
+          </div>
+
+          <div class="datos">
+            <h3>Hipatia de Alejandría</h3>
+            <p class="fechas">Hipatia (355/370 - 415)</p>
+            <p>Astrónoma, matemática y filosofa - Alejandría (Egipto)</p>
+            <div class="logro">
+              <strong>LOGRO:</strong>
+              Mejoró y construyó instrumentos astronómicos como el astrolabio o el planisferio.
+            </div>
+            <details class="quien">
+              <summary>¿Quién fue ?</summary>
+              <p>Hipatia de Alejandría fue una brillante filósofa, matemática y astrónoma griega que vivió en Egipto a finales del siglo IV y principios del V. Es la primera mujer matemática de la que se conserva un registro biográfico e histórico detallado, además destacó por sus profundos conocimientos en geometría, álgebra y astronomía. Su figura se convirtió en un símbolo universal de la razón, el libre pensamiento y la erudición. Su trágica muerte, a manos de una multitud de cristianos extremistas que atacaban la ciencia y el paganismo clásico, la consagró definitivamente como un icono histórico de la defensa del conocimiento y la libertad intelectual. Para algunos historiadores su muerte supuso el principio del fin del paganismo en la Antigüedad.</p>
+            </details>
+            <a class="fuentes-btn" href="#fuentes">Fuentes <span class="pendiente">[FUENTE PENDIENTE]</span></a>
+          </div>
+        </div>
+
+        <h2 style="margin-top:48px">Mujeres de la historia</h2>
+        <div class="carrusel" tabindex="0" aria-label="Carrusel de mujeres">
+          <article class="recorte"><div class="lienzo">[DIBUJO PENDIENTE]</div><h3>Hipatia</h3></article>
+          <article class="recorte"><div class="lienzo">[DIBUJO PENDIENTE]</div><h3>Ada Lovelace</h3></article>
+          <article class="recorte"><div class="lienzo">[DIBUJO PENDIENTE]</div><h3>Rosa Parks</h3></article>
+          <article class="recorte"><div class="lienzo">[DIBUJO PENDIENTE]</div><h3>Frida Kahlo</h3></article>
+          <article class="recorte"><div class="lienzo">[DIBUJO PENDIENTE]</div><h3>Hedy Lamarr</h3></article>
+          <article class="recorte"><div class="lienzo">[DIBUJO PENDIENTE]</div><h3>Emma Goldman</h3></article>
+        </div>
+      </section>
+
+    </div>
+
+    <section class="juego" id="juego">
+      <div class="wrap juego-grid">
+        <figure><img src="img/banner.webp" alt="Logotipo de Feminist y la protagonista con el puño en alto" width="640" height="288" loading="lazy"></figure>
+        <div>
+          <h2>El juego Feminist</h2>
+          <p>Un videojuego reivindicativo y feminista, cargado de acción, humor y lucha, en el que las grandes mujeres de la historia te apoyan en tu camino.</p>
+          <div class="botones">
+            <a class="btn claro" href="#">Ver el juego</a>
+            <a class="btn" href="#">Google Play (próximamente)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section class="bloque" id="actividades">
+        <h2>Actividades</h2>
+        <p class="intro">Cada actividad completada te da un sello, que se guarda en tu navegador.</p>
+        <ul class="actividades">
+          <li>Memory</li>
+          <li>Línea del tiempo</li>
+          <li>La mujer en el mundo</li>
+          <li>¿De quién es la frase?</li>
+          <li>Pancarta 8M</li>
+          <li>Inventos de mujeres</li>
+        </ul>
+      </section>
+
+      <section class="bloque" id="glosario">
+        <h2>Glosario feminista</h2>
+        <p class="intro">Palabras que conviene conocer.</p>
+        <ul class="glosario">
+          <li>sororidad</li><li>techo de cristal</li><li>brecha salarial</li><li>micromachismo</li>
+        </ul>
+      </section>
+
+      <section class="bloque" id="informatica">
+        <div class="informatica">
+          <div>
+            <h2>Hecha por una mujer en la informática</h2>
+          </div>
+          <p>Esta web y el juego los ha hecho una mujer, en un sector donde las mujeres son una clara minoría. Mireia pasó de la educación a la informática, un trabajo que en su momento ni se había planteado.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="fuentes">
+    <div class="wrap">
+      <p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p>
+      <a href="#fuentes">Fuentes de información</a>
+    </div>
+  </footer>
+
+  <script>
+    // Girar la tarjeta: un botón real, así funciona con dedo, ratón y teclado
+    document.querySelectorAll('.flip').forEach(function (b) {
+      b.addEventListener('click', function () {
+        b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+      });
+    });
+    // Selector de idioma: en la maqueta solo cambia el aspecto del botón
+    document.querySelectorAll('.idiomas button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        document.querySelectorAll('.idiomas button').forEach(function (o) { o.setAttribute('aria-pressed', 'false'); });
+        b.setAttribute('aria-pressed', 'true');
+      });
+    });
+  </script>
+</body>
+</html>

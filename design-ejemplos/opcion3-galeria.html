@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maqueta 3 · Galería de retratos</title>
+  <!-- MAQUETA de diseño: los textos están aquí dentro solo para poder verlos.
+       En la web real irán a los archivos de idioma (/src/i18n). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --damasco: #2A0F3A;
+      --ciruela: #4B1F5E;
+      --dorado: #C9A24B;
+      --dorado-claro: #E8CE86;
+      --lila: #E3CCF0;
+      --placa: #EADCF2;
+      --tinta: #2B1239;
+      --magenta: #B3266E;
+      --titulos: "Almendra Display", Georgia, serif;
+      --texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+      --rayas: repeating-linear-gradient(135deg, #1b1020 0 8px, #f4f0f7 8px 16px);
+      /* Marco dorado: degradado metálico + doble borde */
+      --oro: linear-gradient(135deg, #8a6a24, #E8CE86 30%, #C9A24B 55%, #7a5a1c 80%, #E8CE86);
+      /* Damasco suave dibujado con SVG: muy poco contraste para no cansar al leer */
+      --dibujo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23C9A24B' stroke-opacity='.16' stroke-width='1.5'%3E%3Cpath d='M60 10c10 14 10 26 0 40-10-14-10-26 0-40zM60 70c10 14 10 26 0 40-10-14-10-26 0-40zM10 60c14-10 26-10 40 0-14 10-26 10-40 0zM70 60c14-10 26-10 40 0-14 10-26 10-40 0z'/%3E%3Ccircle cx='60' cy='60' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: var(--texto); font-size: 1.0625rem; line-height: 1.6;
+      color: var(--lila); background: var(--damasco) var(--dibujo);
+    }
+    h1, h2, h3 { font-family: var(--titulos); font-weight: 400; line-height: 1.1; margin: 0; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--dorado-claro); outline-offset: 3px; }
+    .wrap { width: min(1100px, 100% - 32px); margin-inline: auto; }
+
+    /* ---------- Cabecera ---------- */
+    header.top { padding-block: 14px 0; }
+    .top-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .logo { font-family: var(--titulos); font-size: 2rem; text-decoration: none; color: var(--lila); display: flex; align-items: center; gap: 8px; letter-spacing: .04em; }
+    .venus { width: 22px; height: 30px; flex: none; }
+    .idiomas { display: flex; gap: 6px; }
+    .idiomas button { font: 700 .85rem var(--texto); min-width: 44px; min-height: 44px; border-radius: 10px; border: 2px solid var(--dorado); color: var(--dorado-claro); background: transparent; cursor: pointer; }
+    .idiomas button[aria-pressed="true"] { background: var(--dorado); color: var(--damasco); }
+    nav.menu { margin-top: 6px; border-top: 6px solid transparent; border-image: var(--rayas) 6; }
+    nav.menu ul { display: flex; gap: 4px 20px; list-style: none; margin: 0; padding: 8px 0; overflow-x: auto; white-space: nowrap; }
+    nav.menu a { display: inline-block; padding: 10px 2px; text-decoration: none; font-weight: 700; }
+    nav.menu a:hover { color: var(--dorado-claro); }
+
+    /* ---------- Hero con marco dorado ---------- */
+    .hero { display: grid; gap: 36px; padding-block: 44px 56px; align-items: center; }
+    .hero h1 { font-size: clamp(2.6rem, 9vw, 4.6rem); color: var(--lila); }
+    .hero p { max-width: 34rem; font-size: 1.15rem; margin: 18px 0 26px; }
+    .btn { display: inline-block; text-decoration: none; font-weight: 700; padding: 14px 24px; min-height: 48px; border-radius: 12px; background: var(--magenta); color: #fff; border: 2px solid var(--dorado); }
+    .btn:hover { background: #cc2e80; }
+    .btn.oro { background: var(--dorado); color: var(--damasco); border-color: var(--dorado-claro); }
+    .btn.oro:hover { background: var(--dorado-claro); }
+
+    /* Marco dorado reutilizable para retratos */
+    .marco { padding: 12px; background: var(--oro); border-radius: 8px; box-shadow: 0 14px 30px rgba(0,0,0,.5), inset 0 0 0 2px rgba(255,255,255,.25); }
+    .marco > .interior { border: 3px solid #5a4210; background: var(--ciruela); border-radius: 3px; overflow: hidden; }
+    .marco img { display: block; width: 100%; height: auto; }
+
+    /* ---------- Títulos de sección con filete de rayas ---------- */
+    section.bloque { padding-block: 52px; }
+    .bloque h2 { font-size: clamp(2rem, 6vw, 3rem); color: var(--dorado-claro); padding-bottom: 12px; margin-bottom: 14px; border-bottom: 6px solid transparent; border-image: var(--rayas) 6; display: inline-block; }
+    .bloque .intro { max-width: 40rem; margin: 0 0 28px; }
+
+    /* ---------- Una mujer cada día ---------- */
+    .dia { display: grid; gap: 34px; }
+    .retrato { width: min(280px, 100%); margin-inline: auto; }
+    .flip { all: unset; display: block; width: 100%; aspect-ratio: 3/4; cursor: pointer; position: relative; perspective: 900px; }
+    .flip:focus-visible { outline: 3px solid var(--dorado-claro); outline-offset: 6px; border-radius: 10px; }
+    .flip-inner { position: absolute; inset: 0; transition: transform .8s; transform-style: preserve-3d; }
+    .flip[aria-pressed="true"] .flip-inner { transform: rotateY(180deg); }
+    .cara { position: absolute; inset: 0; backface-visibility: hidden; padding: 12px; background: var(--oro); border-radius: 8px; box-shadow: 0 14px 30px rgba(0,0,0,.5); display: flex; flex-direction: column; }
+    .cara.atras { transform: rotateY(180deg); }
+    .cara .tela { flex: 1; border: 3px solid #5a4210; background: var(--ciruela) var(--dibujo); display: grid; place-items: center; text-align: center; padding: 12px; font-size: .95rem; color: var(--lila); }
+    .cara .placa-nombre { margin-top: 10px; padding: 8px 10px; background: #1b0b26; color: var(--dorado-claro); text-align: center; font-family: var(--titulos); font-size: 1.3rem; border: 2px solid #5a4210; }
+    .pista { text-align: center; margin: 22px 0 0; font-size: .95rem; }
+
+    /* Placa de lectura clara: el texto largo se lee sobre fondo claro, no sobre el dibujo */
+    .placa { background: var(--placa); color: var(--tinta); padding: 24px 22px; border-radius: 6px; border: 3px solid var(--dorado); outline: 3px solid #5a4210; outline-offset: 3px; }
+    .placa h3 { font-size: 2.2rem; color: var(--tinta); }
+    .placa .fechas { font-weight: 700; margin: 4px 0 2px; }
+    .logro { margin: 18px 0; padding: 12px 16px; background: #fff; border-left: 8px solid var(--magenta); }
+    .logro strong { display: block; color: var(--magenta); }
+    details.quien { background: #fff; border-radius: 8px; padding: 4px 16px; }
+    details.quien summary { cursor: pointer; font-weight: 700; padding: 12px 0; min-height: 44px; }
+    details.quien p { max-width: 62ch; }
+    .fuentes-btn { display: inline-block; margin-top: 14px; padding: 10px 16px; min-height: 44px; border: 2px solid var(--tinta); border-radius: 10px; text-decoration: none; font-weight: 700; color: var(--tinta); }
+    .pendiente { background: var(--dorado-claro); padding: 0 6px; border-radius: 4px; font-size: .85em; }
+
+    /* ---------- Carrusel de marcos ---------- */
+    .carrusel { display: flex; gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 12px 6px 28px; margin-inline: -6px; }
+    .retrato-mini { flex: 0 0 min(210px, 64vw); scroll-snap-align: start; }
+    .retrato-mini .marco { padding: 10px; }
+    .retrato-mini .lienzo { aspect-ratio: 3/4; display: grid; place-items: center; text-align: center; padding: 10px; font-size: .9rem; background: var(--ciruela) var(--dibujo); }
+    .retrato-mini h3 { text-align: center; font-size: 1.35rem; margin-top: 12px; color: var(--dorado-claro); }
+
+    /* ---------- El juego ---------- */
+    .juego-grid { display: grid; gap: 30px; align-items: center; }
+    .juego-grid h2 { margin-bottom: 14px; }
+    .botones { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 20px; }
+
+    /* ---------- Actividades ---------- */
+    .actividades { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+    .actividades li { background: var(--placa); color: var(--tinta); border: 3px solid var(--dorado); border-radius: 10px; padding: 16px; min-height: 84px; font-weight: 700; display: flex; align-items: center; gap: 12px; }
+    .actividades li::before { content: "♀"; font-size: 1.5rem; color: var(--magenta); }
+
+    .glosario { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; margin: 0; }
+    .glosario li { padding: 10px 18px; border-radius: 999px; background: var(--placa); color: var(--tinta); font-family: var(--titulos); font-size: 1.25rem; border: 2px solid var(--dorado); }
+
+    .informatica { display: grid; gap: 20px; }
+    .informatica p { max-width: 60ch; margin: 0; }
+
+    /* ---------- Pie ---------- */
+    footer { background: #1b0b26; padding-block: 36px; border-top: 10px solid transparent; border-image: var(--rayas) 10; }
+    footer .wrap { display: grid; gap: 10px; }
+    .firma { font-family: var(--titulos); font-size: 1.3rem; color: var(--dorado-claro); }
+    footer a { font-weight: 700; }
+
+    @media (min-width: 800px) {
+      .hero { grid-template-columns: 1.1fr .9fr; }
+      .dia { grid-template-columns: 300px 1fr; align-items: start; }
+      .juego-grid { grid-template-columns: 1fr 1fr; }
+      .informatica { grid-template-columns: 1fr 1fr; align-items: center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .flip-inner { transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header class="top">
+      <div class="top-row">
+        <a class="logo" href="#">
+          <svg class="venus" viewBox="0 0 22 30" aria-hidden="true"><circle cx="11" cy="9" r="7" fill="none" stroke="#C9A24B" stroke-width="3"/><path d="M11 16v13M5 23h12" stroke="#C9A24B" stroke-width="3" stroke-linecap="round"/></svg>
+          Feminist
+        </a>
+        <div class="idiomas" role="group" aria-label="Idioma">
+          <button type="button" aria-pressed="true">ES</button>
+          <button type="button" aria-pressed="false">CA</button>
+          <button type="button" aria-pressed="false">EN</button>
+        </div>
+      </div>
+      <nav class="menu" aria-label="Secciones">
+        <ul>
+          <li><a href="#mujeres">Mujeres</a></li>
+          <li><a href="#juego">El juego</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+          <li><a href="#glosario">Glosario</a></li>
+          <li><a href="#informatica">Quién lo hizo</a></li>
+          <li><a href="#fuentes">Fuentes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Mujeres que cambiaron la historia</h1>
+        <p>Pasea por la galería, conoce a las mujeres que aparecen en el juego Feminist y descubre su historia con actividades para todas las edades.</p>
+        <a class="btn oro" href="#mujeres">Entrar en la galería</a>
+      </div>
+      <div class="marco">
+        <div class="interior">
+          <img src="img/portada.webp" alt="Carátula de Feminist: una joven con un pañuelo de lunares y el puño en alto, sobre fondo amarillo" width="640" height="288">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <div class="wrap">
+
+      <section class="bloque" id="mujeres">
+        <h2>Una mujer cada día</h2>
+        <p class="intro">Ejemplo de maqueta: así se vería la mujer del día, con su retrato y su ficha. Toca el marco para girarlo.</p>
+
+        <div class="dia">
+          <div>
+            <div class="retrato">
+              <button class="flip" type="button" aria-pressed="false" aria-label="Girar el retrato de Hipatia para ver la foto de la mujer real">
+                <span class="flip-inner">
+                  <span class="cara">
+                    <span class="tela">[DIBUJO ANIMADO PENDIENTE]</span>
+                    <span class="placa-nombre">Hipatia</span>
+                  </span>
+                  <span class="cara atras">
+                    <span class="tela">[FOTO REAL PENDIENTE]<br>autor y licencia por indicar</span>
+                    <span class="placa-nombre">Hipatia de Alejandría</span>
+                  </span>
+                </span>
+              </button>
+            </div>
+            <p class="pista">El marco gira con un toque o con la tecla Intro.</p>
+          </div>
+
+          <div class="placa">
+            <h3>Hipatia de Alejandría</h3>
+            <p class="fechas">Hipatia (355/370 - 415)</p>
+            <p>Astrónoma, matemática y filosofa - Alejandría (Egipto)</p>
+            <div class="logro">
+              <strong>LOGRO:</strong>
+              Mejoró y construyó instrumentos astronómicos como el astrolabio o el planisferio.
+            </div>
+            <details class="quien">
+              <summary>¿Quién fue ?</summary>
+              <p>Hipatia de Alejandría fue una brillante filósofa, matemática y astrónoma griega que vivió en Egipto a finales del siglo IV y principios del V. Es la primera mujer matemática de la que se conserva un registro biográfico e histórico detallado, además destacó por sus profundos conocimientos en geometría, álgebra y astronomía. Su figura se convirtió en un símbolo universal de la razón, el libre pensamiento y la erudición. Su trágica muerte, a manos de una multitud de cristianos extremistas que atacaban la ciencia y el paganismo clásico, la consagró definitivamente como un icono histórico de la defensa del conocimiento y la libertad intelectual. Para algunos historiadores su muerte supuso el principio del fin del paganismo en la Antigüedad.</p>
+            </details>
+            <a class="fuentes-btn" href="#fuentes">Fuentes <span class="pendiente">[FUENTE PENDIENTE]</span></a>
+          </div>
+        </div>
+
+        <h2 style="margin-top:52px">Mujeres de la historia</h2>
+        <div class="carrusel" tabindex="0" aria-label="Carrusel de mujeres">
+          <article class="retrato-mini"><div class="marco"><div class="interior"><div class="lienzo">[DIBUJO PENDIENTE]</div></div></div><h3>Hipatia</h3></article>
+          <article class="retrato-mini"><div class="marco"><div class="interior"><div class="lienzo">[DIBUJO PENDIENTE]</div></div></div><h3>Ada Lovelace</h3></article>
+          <article class="retrato-mini"><div class="marco"><div class="interior"><div class="lienzo">[DIBUJO PENDIENTE]</div></div></div><h3>Rosa Parks</h3></article>
+          <article class="retrato-mini"><div class="marco"><div class="interior"><div class="lienzo">[DIBUJO PENDIENTE]</div></div></div><h3>Frida Kahlo</h3></article>
+          <article class="retrato-mini"><div class="marco"><div class="interior"><div class="lienzo">[DIBUJO PENDIENTE]</div></div></div><h3>Hedy Lamarr</h3></article>
+          <article class="retrato-mini"><div class="marco"><div class="interior"><div class="lienzo">[DIBUJO PENDIENTE]</div></div></div><h3>Emma Goldman</h3></article>
+        </div>
+      </section>
+
+      <section class="bloque" id="juego">
+        <div class="juego-grid">
+          <div class="marco"><div class="interior">
+            <img src="img/captura-09.webp" alt="Captura del juego: la protagonista en una sala con papel pintado morado y marcos dorados" width="1200" height="540" loading="lazy">
+          </div></div>
+          <div>
+            <h2>El juego Feminist</h2>
+            <p>Un videojuego reivindicativo y feminista, cargado de acción, humor y lucha, en el que las grandes mujeres de la historia te apoyan en tu camino.</p>
+            <div class="botones">
+              <a class="btn oro" href="#">Ver el juego</a>
+              <a class="btn" href="#">Google Play (próximamente)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bloque" id="actividades">
+        <h2>Actividades</h2>
+        <p class="intro">Cada actividad completada te da un sello, que se guarda en tu navegador.</p>
+        <ul class="actividades">
+          <li>Memory</li>
+          <li>Línea del tiempo</li>
+          <li>La mujer en el mundo</li>
+          <li>¿De quién es la frase?</li>
+          <li>Pancarta 8M</li>
+          <li>Inventos de mujeres</li>
+        </ul>
+      </section>
+
+      <section class="bloque" id="glosario">
+        <h2>Glosario feminista</h2>
+        <p class="intro">Palabras que conviene conocer.</p>
+        <ul class="glosario">
+          <li>sororidad</li><li>techo de cristal</li><li>brecha salarial</li><li>micromachismo</li>
+        </ul>
+      </section>
+
+      <section class="bloque" id="informatica">
+        <div class="informatica">
+          <h2 style="display:block;border:0;padding:0">Hecha por una mujer en la informática</h2>
+          <p>Esta web y el juego los ha hecho una mujer, en un sector donde las mujeres son una clara minoría. Mireia pasó de la educación a la informática, un trabajo que en su momento ni se había planteado.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="fuentes">
+    <div class="wrap">
+      <p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p>
+      <a href="#fuentes">Fuentes de información</a>
+    </div>
+  </footer>
+
+  <script>
+    // Girar el marco: un botón real, así funciona con dedo, ratón y teclado
+    document.querySelectorAll('.flip').forEach(function (b) {
+      b.addEventListener('click', function () {
+        b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+      });
+    });
+    // Selector de idioma: en la maqueta solo cambia el aspecto del botón
+    document.querySelectorAll('.idiomas button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        document.querySelectorAll('.idiomas button').forEach(function (o) { o.setAttribute('aria-pressed', 'false'); });
+        b.setAttribute('aria-pressed', 'true');
+      });
+    });
+  </script>
+</body>
+</html>

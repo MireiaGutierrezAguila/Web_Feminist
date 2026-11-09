@@ -1,0 +1,101 @@
+/* Estilos comunes de las propuestas A, B y C (maqueta).
+   Cada propuesta define sus colores y tipografías con variables CSS y añade lo suyo. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: var(--fuente-texto); font-size: 1.0625rem; line-height: 1.6; color: var(--color-texto); background: var(--fondo); }
+h1, h2, h3 { font-family: var(--fuente-titulos); line-height: 1.12; margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; }
+.wrap { width: min(1100px, 100% - 32px); margin-inline: auto; }
+
+/* ---------- Cabecera ---------- */
+header.top { padding-block: 14px 0; position: relative; z-index: 5; }
+.top-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.logo { font-family: var(--logo); font-size: 2rem; text-decoration: none; display: flex; align-items: center; gap: 8px; letter-spacing: .04em; }
+.venus { width: 22px; height: 30px; flex: none; }
+.controles { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.idiomas { display: flex; gap: 6px; }
+.idiomas button, .fx-btn { font: 700 .85rem var(--fuente-texto); min-width: 44px; min-height: 44px; border-radius: 10px; border: 2px solid var(--borde); color: var(--boton-texto); background: transparent; cursor: pointer; padding-inline: 12px; }
+.idiomas button[aria-pressed="true"] { background: var(--borde); color: var(--boton-activo-texto); }
+nav.menu ul { display: flex; gap: 4px 20px; list-style: none; margin: 0; padding: 8px 0; overflow-x: auto; white-space: nowrap; }
+nav.menu a { display: inline-block; padding: 10px 2px; text-decoration: none; font-weight: 700; }
+
+.btn { display: inline-block; text-decoration: none; font-weight: 700; padding: 14px 24px; min-height: 48px; border-radius: 12px; background: var(--btn-bg); color: var(--btn-texto); border: 2px solid var(--btn-borde); }
+.btn.alt { background: var(--btn2-bg); color: var(--btn2-texto); border-color: var(--btn2-borde); }
+.botones { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 20px; }
+
+section.bloque { padding-block: 52px; }
+.bloque .intro { max-width: 40rem; margin: 0 0 28px; }
+.pista { font-size: .95rem; margin: 0 0 8px; }
+
+/* ---------- Figura: dibujo de la mujer. Con efectos, la cabeza se mueve sobre el cuerpo ---------- */
+/* Cuadrado del 88% del ancho; se fuerza con padding porque aspect-ratio da altura 0 en un span absoluto */
+.figura { position: absolute; left: 6%; right: 6%; bottom: 0; height: 0; padding-bottom: 88%; display: block; }
+.figura img { position: absolute; display: block; max-width: none; }
+.figura .completa { left: 0; top: 0; width: 100%; height: 100%; }
+.figura .capas { position: absolute; inset: 0; display: none; }
+/* Solo se cambia a las capas cuando cabeza y cuerpo ya están cargados (clase .lista), para no ver huecos */
+body.fx .figura.lista .completa { visibility: hidden; }
+body.fx .figura.lista .capas { display: block; }
+body.fx .figura.lista .capas .cabeza { transform-origin: 50% 80%; animation: balanceo 3.4s ease-in-out infinite; animation-delay: var(--retardo, 0s); }
+@keyframes balanceo { 0%, 100% { transform: rotate(-3deg) translateX(-1.2%); } 50% { transform: rotate(3deg) translateX(1.2%); } }
+
+/* ---------- Tarjeta: se inclina (efectos) y gira con un toque ---------- */
+.carrusel { display: flex; gap: 26px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 24px 10px 34px; margin: 0 -10px; list-style: none; }
+.tarjeta { flex: 0 0 min(250px, 70vw); scroll-snap-align: start; display: flex; flex-direction: column; gap: 14px; }
+.tilt { perspective: 800px; touch-action: pan-x pan-y; }
+.tilt-in { transition: transform .15s ease-out; transform-style: preserve-3d; }
+.giro { all: unset; display: block; width: 100%; aspect-ratio: 3/4.2; cursor: pointer; position: relative; perspective: 900px; }
+.giro:focus-visible { outline: 3px solid var(--foco); outline-offset: 6px; border-radius: 10px; }
+.giro-in { position: absolute; inset: 0; transition: transform .8s; transform-style: preserve-3d; }
+.giro[aria-pressed="true"] .giro-in { transform: rotateY(180deg); }
+.cara { position: absolute; inset: 0; backface-visibility: hidden; display: flex; flex-direction: column; }
+.cara.dorso { transform: rotateY(180deg); }
+.ver-ficha { font: 700 1rem var(--fuente-texto); min-height: 46px; border-radius: 10px; border: 2px solid var(--borde); background: transparent; color: var(--boton-texto); cursor: pointer; }
+.ver-ficha:hover { background: rgba(255,255,255,.12); }
+
+/* ---------- Ficha en placa de lectura clara ---------- */
+.placa { background: var(--placa-bg); color: var(--placa-tinta); padding: 26px 24px; max-width: 760px; border: var(--placa-borde); box-shadow: var(--placa-sombra, none); }
+.placa h3 { font-size: 2.2rem; color: var(--placa-tinta); }
+.placa .fechas { font-weight: 700; margin: 6px 0 2px; }
+.logro { margin: 18px 0; padding: 12px 16px; background: #fff; border-left: 8px solid var(--acento); }
+.logro strong { display: block; color: var(--acento-texto); }
+details.quien { background: #fff; border-radius: 8px; padding: 4px 16px; }
+details.quien summary { cursor: pointer; font-weight: 700; padding: 12px 0; min-height: 44px; }
+details.quien p { max-width: 62ch; white-space: pre-line; }
+.fuentes-btn { display: inline-block; margin-top: 14px; padding: 10px 16px; min-height: 44px; border: 2px solid var(--placa-tinta); border-radius: 10px; text-decoration: none; font-weight: 700; color: var(--placa-tinta); }
+.pendiente { background: #FFE9A8; color: #3a2a00; padding: 0 6px; border-radius: 4px; font-size: .85em; }
+.error { background: #fff; color: #1a0e24; padding: 16px; border-radius: 8px; border-left: 8px solid var(--acento); }
+
+/* ---------- Juego, actividades, glosario ---------- */
+.juego-grid { display: grid; gap: 30px; align-items: center; }
+.juego-grid h2 { margin-bottom: 14px; }
+.juego-grid img { display: block; width: 100%; height: auto; }
+.actividades { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.actividades li { background: var(--placa-bg); color: var(--placa-tinta); border: var(--placa-borde); padding: 16px; min-height: 84px; font-weight: 700; display: flex; align-items: center; gap: 12px; }
+.glosario { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; margin: 0; }
+.glosario li { padding: 10px 18px; border-radius: 999px; background: var(--placa-bg); color: var(--placa-tinta); font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.1rem; border: var(--placa-borde); }
+.informatica { display: grid; gap: 20px; }
+.informatica p { max-width: 60ch; margin: 0; }
+
+/* Lluvia de código (solo en «Hecha por una mujer en la informática») */
+.codigo { position: relative; overflow: hidden; border-radius: 12px; padding: 28px 22px; background: #04121a; }
+.codigo .col { position: absolute; top: 0; font: 700 .9rem/1.2 ui-monospace, Menlo, monospace; color: #3FD6C9; opacity: .32; white-space: pre; transform: translateY(-40%); }
+body.fx .codigo .col { animation: caer linear infinite; }
+@keyframes caer { from { transform: translateY(-60%); } to { transform: translateY(10%); } }
+.codigo .contenido { position: relative; z-index: 1; display: grid; gap: 16px; background: rgba(4,18,26,.82); padding: 18px 20px; border-radius: 10px; color: #E8FBF9; }
+.codigo h2 { color: #E8FBF9; }
+
+footer { padding-block: 36px; }
+footer .wrap { display: grid; gap: 10px; }
+footer a { font-weight: 700; }
+
+@media (min-width: 800px) {
+  .juego-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .giro-in, .tilt-in { transition: none; }
+  body.fx .figura.lista .capas .cabeza { animation: none; }
+  body.fx .codigo .col { animation: none; }
+}

@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propuesta A · Medianoche</title>
+  <!-- MAQUETA de diseño. Datos de las mujeres: data/mujeres.json. Código común: js/comun.js y css/comun.css.
+       Los textos de la interfaz están aquí solo para verlos; en la web real irán a /src/i18n.
+       Hay que abrirla desde el servidor local. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/comun.css">
+  <style>
+    :root {
+      --marino: #0A1430;
+      --marino-2: #10224A;
+      --verdeazul: #1F6F78;
+      --oro: #C9A24B;
+      --oro-claro: #E8CE86;
+      --luna: #F1E6C8;
+      --fondo: #0A1430;
+      --color-texto: #EDE3C8;
+      --acento: #C9A24B;
+      --acento-texto: #6b4d10;
+      --borde: #C9A24B;
+      --foco: #F1E6C8;
+      --boton-texto: #F1E6C8;
+      --boton-activo-texto: #0A1430;
+      --btn-bg: #C9A24B; --btn-texto: #0A1430; --btn-borde: #F1E6C8;
+      --btn2-bg: transparent; --btn2-texto: #F1E6C8; --btn2-borde: #C9A24B;
+      --placa-bg: #F1E6C8; --placa-tinta: #0A1430; --placa-borde: 3px solid #C9A24B;
+      --fuente-titulos: "Cinzel Decorative", Georgia, serif;
+      --fuente-texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+      --logo: "Almendra Display", Georgia, serif;
+      --oro-grad: linear-gradient(135deg, #8a6a24, #E8CE86 30%, #C9A24B 55%, #7a5a1c 80%, #E8CE86);
+      /* Nubes en remolino dibujadas con SVG, en tres capas de color */
+      --nube-1: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='90' viewBox='0 0 200 90'%3E%3Cg fill='%231F6F78'%3E%3Ccircle cx='25' cy='58' r='26'/%3E%3Ccircle cx='75' cy='52' r='30'/%3E%3Ccircle cx='130' cy='58' r='28'/%3E%3Ccircle cx='178' cy='54' r='26'/%3E%3Crect y='58' width='200' height='32'/%3E%3C/g%3E%3Cg fill='none' stroke='%23E8CE86' stroke-opacity='.55' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M20 58a9 9 0 1 1 9-9'/%3E%3Cpath d='M72 52a11 11 0 1 1 11-11'/%3E%3Cpath d='M127 58a9 9 0 1 1 9-9'/%3E%3Cpath d='M176 54a8 8 0 1 1 8-8'/%3E%3C/g%3E%3C/svg%3E");
+      --nube-2: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='90' viewBox='0 0 200 90'%3E%3Cg fill='%2314306a'%3E%3Ccircle cx='25' cy='58' r='26'/%3E%3Ccircle cx='75' cy='52' r='30'/%3E%3Ccircle cx='130' cy='58' r='28'/%3E%3Ccircle cx='178' cy='54' r='26'/%3E%3Crect y='58' width='200' height='32'/%3E%3C/g%3E%3Cg fill='none' stroke='%23F1E6C8' stroke-opacity='.4' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M20 58a9 9 0 1 1 9-9'/%3E%3Cpath d='M72 52a11 11 0 1 1 11-11'/%3E%3Cpath d='M127 58a9 9 0 1 1 9-9'/%3E%3Cpath d='M176 54a8 8 0 1 1 8-8'/%3E%3C/g%3E%3C/svg%3E");
+      --nube-3: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='90' viewBox='0 0 200 90'%3E%3Cg fill='%23081028'%3E%3Ccircle cx='25' cy='58' r='26'/%3E%3Ccircle cx='75' cy='52' r='30'/%3E%3Ccircle cx='130' cy='58' r='28'/%3E%3Ccircle cx='178' cy='54' r='26'/%3E%3Crect y='58' width='200' height='32'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    body {
+      background:
+        radial-gradient(1.5px 1.5px at 20px 30px, #F1E6C8, transparent),
+        radial-gradient(1px 1px at 90px 80px, #F1E6C8, transparent),
+        radial-gradient(1.6px 1.6px at 150px 20px, #C9A24B, transparent),
+        radial-gradient(1px 1px at 60px 140px, #F1E6C8, transparent),
+        linear-gradient(#0A1430, #0E1B3A 55%, #081028);
+      background-size: 180px 180px, 180px 180px, 180px 180px, 180px 180px, 100% 100%;
+    }
+    .logo { color: var(--luna); }
+    nav.menu { border-top: 2px solid rgba(201,162,75,.5); margin-top: 6px; }
+    nav.menu a:hover { color: var(--oro-claro); }
+    .fx-btn:hover { background: rgba(201,162,75,.18); }
+
+    /* ---------- Hero: luna y nubes ---------- */
+    .hero { position: relative; overflow: hidden; display: flex; flex-direction: column; }
+    .hero-texto { position: relative; z-index: 3; padding-block: 28px 150px; max-width: 34rem; }
+    .hero h1 { font-size: clamp(1.9rem, 7.2vw, 3.6rem); font-weight: 900; color: var(--luna); text-shadow: 0 0 28px rgba(232,206,134,.35); }
+    .hero p { font-size: 1.15rem; margin: 20px 0 26px; }
+    .luna { position: relative; z-index: 1; font-size: clamp(150px, 26vw, 280px); width: 1em; height: 1em; margin: 24px auto 0; border-radius: 50%;
+      box-shadow: inset .14em -.02em 0 0 var(--oro-claro); filter: drop-shadow(0 0 28px rgba(232,206,134,.45));
+      transition: transform .25s ease-out; }
+    body.fx .luna { transform: translate(calc(var(--mx, 0) * -22px), calc(var(--my, 0) * -14px)); }
+    .nubes { position: absolute; left: 0; right: 0; bottom: 0; height: 170px; z-index: 2; pointer-events: none; transform: translateY(calc(var(--sy, 0) * -.06px)); }
+    .nube { position: absolute; left: 0; right: 0; bottom: 0; background-repeat: repeat-x; background-size: 200px 90px; }
+    .n1 { height: 120px; background-image: var(--nube-1); opacity: .85; }
+    .n2 { height: 96px; background-image: var(--nube-2); background-position: 70px 0; }
+    .n3 { height: 66px; background-image: var(--nube-3); background-position: 30px 0; }
+    body.fx .n1 { animation: deriva 90s linear infinite; }
+    body.fx .n2 { animation: deriva 60s linear infinite reverse; }
+    body.fx .n3 { animation: deriva 40s linear infinite; }
+    @keyframes deriva { to { background-position-x: 1000px; } }
+    .pista-luz { margin-top: 16px; font-size: .95rem; color: var(--oro-claro); }
+    body:not(.fx) .pista-luz { display: none; }
+
+    /* ---------- Títulos ---------- */
+    .bloque h2 { font-size: clamp(1.6rem, 5vw, 2.5rem); font-weight: 700; color: var(--oro-claro); margin-bottom: 14px; }
+    .bloque h2::after { content: ""; display: block; width: 120px; height: 3px; margin-top: 12px; background: linear-gradient(90deg, var(--oro), transparent); }
+
+    /* ---------- Placa de lectura ---------- */
+    .placa { border-radius: 10px; outline: 2px solid rgba(201,162,75,.45); outline-offset: 4px; }
+    .placa h3 { font-size: 1.9rem; font-weight: 700; }
+    .logro strong { color: #6b4d10; }
+    .logro { border-left-color: var(--oro); }
+
+    /* ---------- Cartas de tarot ---------- */
+    .cara.tarot { padding: 10px; background: var(--oro-grad); border-radius: 50% 50% 10px 10px / 24% 24% 10px 10px; box-shadow: 0 14px 30px rgba(0,0,0,.55); }
+    .arco { position: relative; flex: 1; overflow: hidden; border-radius: 50% 50% 4px 4px / 24% 24% 4px 4px; border: 2px solid #5a4210;
+      background:
+        radial-gradient(1.2px 1.2px at 24px 40px, #F1E6C8, transparent),
+        radial-gradient(1px 1px at 80px 90px, #F1E6C8, transparent),
+        radial-gradient(1.4px 1.4px at 130px 30px, #E8CE86, transparent),
+        linear-gradient(#162a5c, #0A1430);
+      background-size: 150px 150px, 150px 150px, 150px 150px, 100% 100%; }
+    .luna-mini { position: absolute; top: 8%; left: 50%; transform: translateX(-50%); font-size: 26px; width: 1em; height: 1em; border-radius: 50%; box-shadow: inset .3em 0 0 0 var(--oro-claro); }
+    .colina { position: absolute; left: -15%; right: -15%; bottom: -14%; height: 44%; border-radius: 50% 50% 0 0; background: radial-gradient(ellipse at 50% 0, #2a8791, var(--verdeazul) 60%); }
+    .nombre-carta { margin-top: 8px; padding: 8px 6px; text-align: center; font-family: var(--fuente-titulos); font-weight: 700; font-size: .85rem; line-height: 1.2; color: var(--luna); background: #0A1430; border: 2px solid var(--oro); border-radius: 6px; }
+    .arco.reverso { display: grid; place-content: center; justify-items: center; text-align: center; gap: 14px; padding: 16px; color: var(--luna); font-size: .95rem; }
+    .fases { display: flex; gap: 8px; }
+    .fase { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--luna); display: inline-block; flex: none; background: linear-gradient(90deg, var(--luna) var(--p, 0%), transparent var(--p, 0%)); }
+
+    /* ---------- Actividades con fases de luna como insignias ---------- */
+    .actividades li { border-radius: 10px; }
+    .actividades .fase { border-color: var(--marino); background: linear-gradient(90deg, var(--marino) var(--p, 0%), transparent var(--p, 0%)); width: 26px; height: 26px; }
+    .actividades li:nth-child(1) .fase { --p: 0%; }
+    .actividades li:nth-child(2) .fase { --p: 20%; }
+    .actividades li:nth-child(3) .fase { --p: 40%; }
+    .actividades li:nth-child(4) .fase { --p: 60%; }
+    .actividades li:nth-child(5) .fase { --p: 80%; }
+    .actividades li:nth-child(6) .fase { --p: 100%; }
+
+    .marco-juego { padding: 10px; background: var(--oro-grad); border-radius: 16px; box-shadow: 0 14px 30px rgba(0,0,0,.5); }
+    .marco-juego img { border-radius: 8px; border: 2px solid #5a4210; }
+    .glosario li { border-radius: 999px; }
+    footer { background: #060c20; border-top: 3px solid var(--oro); }
+    .firma { font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.05rem; color: var(--oro-claro); }
+
+    @media (min-width: 800px) {
+      .hero { display: block; min-height: 560px; }
+      .luna { position: absolute; right: 8%; top: 40px; margin: 0; }
+      .hero-texto { padding-block: 70px 170px; }
+    }
+    @media (prefers-reduced-motion: reduce) { body.fx .nube, body.fx .luna { animation: none; transition: none; } }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header class="top">
+      <div class="top-row">
+        <a class="logo" href="#">
+          <svg class="venus" viewBox="0 0 22 30" aria-hidden="true"><circle cx="11" cy="9" r="7" fill="none" stroke="#C9A24B" stroke-width="3"/><path d="M11 16v13M5 23h12" stroke="#C9A24B" stroke-width="3" stroke-linecap="round"/></svg>
+          Feminist
+        </a>
+        <div class="controles">
+          <button type="button" class="fx-btn" id="fxBtn">Quitar efectos</button>
+          <div class="idiomas" role="group" aria-label="Idioma">
+            <button type="button" aria-pressed="true">ES</button>
+            <button type="button" aria-pressed="false">CA</button>
+            <button type="button" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </div>
+      <nav class="menu" aria-label="Secciones">
+        <ul>
+          <li><a href="#mujeres">Mujeres</a></li>
+          <li><a href="#juego">El juego</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+          <li><a href="#glosario">Glosario</a></li>
+          <li><a href="#informatica">Quién lo hizo</a></li>
+          <li><a href="#fuentes">Fuentes</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="luna" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-texto">
+        <h1>Mujeres que cambiaron la historia</h1>
+        <p>Cada noche hay una mujer que merece que su historia se cuente. Conoce a las que aparecen en el juego Feminist y descubre qué hicieron.</p>
+        <a class="btn" href="#mujeres">Conocerlas</a>
+        <p class="pista-luz">Mueve el ratón y la luna te sigue.</p>
+      </div>
+    </div>
+    <div class="nubes" aria-hidden="true"><div class="nube n3"></div><div class="nube n2"></div><div class="nube n1"></div></div>
+  </section>
+
+  <main>
+    <div class="wrap">
+
+      <section class="bloque" id="mujeres">
+        <h2>Una mujer cada día</h2>
+        <p class="intro">Ejemplo de maqueta: así se vería la mujer del día. Elige otra del carrusel con «Ver ficha» y su ficha aparece aquí.</p>
+        <div id="ficha" aria-live="polite"></div>
+
+        <h2 style="margin-top:56px">Mujeres de la historia</h2>
+        <p class="pista">Toca una carta para girarla y ver la foto real. Con efectos, se inclina siguiendo el dedo o el ratón.</p>
+        <ul class="carrusel" id="carrusel" tabindex="0" aria-label="Carrusel de mujeres"></ul>
+      </section>
+
+      <section class="bloque" id="juego">
+        <div class="juego-grid">
+          <div class="marco-juego"><img src="img/captura-07.webp" alt="Captura del juego: la protagonista corriendo de noche entre casas torcidas con las ventanas iluminadas" width="1200" height="540" loading="lazy"></div>
+          <div>
+            <h2>El juego Feminist</h2>
+            <p>Un videojuego reivindicativo y feminista, cargado de acción, humor y lucha, en el que las grandes mujeres de la historia te apoyan en tu camino.</p>
+            <div class="botones">
+              <a class="btn" href="#">Ver el juego</a>
+              <a class="btn alt" href="#">Google Play (próximamente)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bloque" id="actividades">
+        <h2>Actividades</h2>
+        <p class="intro">Cada actividad completada llena una fase de la luna. Se guarda en tu navegador.</p>
+        <ul class="actividades">
+          <li><span class="fase" aria-hidden="true"></span>Memory</li>
+          <li><span class="fase" aria-hidden="true"></span>Línea del tiempo</li>
+          <li><span class="fase" aria-hidden="true"></span>La mujer en el mundo</li>
+          <li><span class="fase" aria-hidden="true"></span>¿De quién es la frase?</li>
+          <li><span class="fase" aria-hidden="true"></span>Pancarta 8M</li>
+          <li><span class="fase" aria-hidden="true"></span>Inventos de mujeres</li>
+        </ul>
+      </section>
+
+      <section class="bloque" id="glosario">
+        <h2>Glosario feminista</h2>
+        <p class="intro">Palabras que conviene conocer.</p>
+        <ul class="glosario"><li>sororidad</li><li>techo de cristal</li><li>brecha salarial</li><li>micromachismo</li></ul>
+      </section>
+
+      <section class="bloque" id="informatica">
+        <div class="codigo" id="lluvia">
+          <div class="contenido informatica">
+            <h2 style="font-size:clamp(1.4rem,4.4vw,2.1rem);margin:0">Hecha por una mujer en la informática</h2>
+            <p>Esta web y el juego los ha hecho una mujer, en un sector donde las mujeres son una clara minoría. Mireia pasó de la educación a la informática, un trabajo que en su momento ni se había planteado.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="fuentes">
+    <div class="wrap">
+      <p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p>
+      <a href="#fuentes">Fuentes de información</a>
+    </div>
+  </footer>
+
+  <script src="js/comun.js"></script>
+  <script>
+    F.iniciar();
+    var hero = document.getElementById('hero');
+    F.luz(hero, hero);
+    // Las nubes suben un poco al hacer scroll (parallax suave, solo con efectos)
+    window.addEventListener('scroll', function () {
+      if (F.efectosOn()) hero.style.setProperty('--sy', window.scrollY);
+    }, { passive: true });
+    F.codigo(document.getElementById('lluvia'), 18);
+
+    F.cargar().then(function () {
+      var car = document.getElementById('carrusel');
+      F.mujeres.forEach(function (m, n) {
+        car.appendChild(F.tarjeta(m, n, {
+          frente: function (cara, m, fig) {
+            cara.classList.add('tarot');
+            var arco = F.el('span', 'arco');
+            arco.appendChild(F.el('span', 'luna-mini'));
+            arco.appendChild(F.el('span', 'colina'));
+            arco.appendChild(fig);
+            cara.appendChild(arco);
+            cara.appendChild(F.el('span', 'nombre-carta', m.nombre));
+          },
+          dorso: function (cara, m) {
+            cara.classList.add('tarot');
+            var a = F.el('span', 'arco reverso');
+            var fases = F.el('span', 'fases');
+            ['0%', '25%', '50%', '75%', '100%'].forEach(function (p) {
+              var f = F.el('span', 'fase'); f.style.setProperty('--p', p); fases.appendChild(f);
+            });
+            a.appendChild(fases);
+            a.appendChild(document.createTextNode('[FOTO REAL PENDIENTE]'));
+            a.appendChild(document.createElement('br'));
+            a.appendChild(document.createTextNode('autor y licencia por indicar'));
+            cara.appendChild(a);
+            cara.appendChild(F.el('span', 'nombre-carta', m.cabecera));
+          }
+        }));
+      });
+      F.ficha(F.porSlug('hipatia-de-alejandria') || F.mujeres[0], document.getElementById('ficha'));
+    }).catch(F.errorDatos);
+  </script>
+</body>
+</html>

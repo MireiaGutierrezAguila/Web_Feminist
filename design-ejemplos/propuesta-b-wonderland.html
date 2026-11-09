@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propuesta B · Wonderland torcido</title>
+  <!-- MAQUETA de diseño. Datos de las mujeres: data/mujeres.json. Código común: js/comun.js y css/comun.css.
+       Los textos de la interfaz están aquí solo para verlos; en la web real irán a /src/i18n.
+       Hay que abrirla desde el servidor local. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/comun.css">
+  <style>
+    :root {
+      --negro: #101010;
+      --blanco: #F5F5F0;
+      --morado: #6B2D8C;
+      --magenta: #D12E7C;
+      --amarillo: #FFE14D;
+      --fondo: #101010;
+      --color-texto: #F5F5F0;
+      --acento: #B3266E;
+      --acento-texto: #A02163;
+      --borde: #F5F5F0;
+      --foco: #FFE14D;
+      --boton-texto: #F5F5F0;
+      --boton-activo-texto: #101010;
+      --btn-bg: #B3266E; --btn-texto: #fff; --btn-borde: #F5F5F0;
+      --btn2-bg: #F5F5F0; --btn2-texto: #101010; --btn2-borde: #101010;
+      --placa-bg: #F5F5F0; --placa-tinta: #101010; --placa-borde: 4px solid #101010; --placa-sombra: 8px 8px 0 #D12E7C;
+      --fuente-titulos: "DynaPuff", system-ui, sans-serif;
+      --fuente-texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+      --logo: "Almendra Display", Georgia, serif;
+      --rayas-morado: repeating-linear-gradient(135deg, #101010 0 10px, #6B2D8C 10px 20px);
+      --rayas-bn: repeating-linear-gradient(135deg, #101010 0 10px, #F5F5F0 10px 20px);
+      --tablero: repeating-conic-gradient(#F5F5F0 0 25%, #101010 0 50%);
+    }
+    .logo { color: var(--blanco); }
+    .fx-btn:hover { background: rgba(255,255,255,.14); }
+
+    /* ---------- Hero: espiral, cartel de flechas y suelo de ajedrez ---------- */
+    .hero { position: relative; overflow: hidden; }
+    .espiral { position: absolute; left: 50%; top: 50%; width: min(1000px, 170vw); transform: translate(-50%, -50%); opacity: .13; pointer-events: none; }
+    body.fx .espiral { animation: gira 140s linear infinite; }
+    @keyframes gira { to { transform: translate(-50%, -50%) rotate(360deg); } }
+    .hero-grid { position: relative; z-index: 1; display: grid; gap: 8px; padding-top: 28px; }
+    .hero h1 { font-size: clamp(1.9rem, 7vw, 3.3rem); font-weight: 700; transform: rotate(-1.5deg); transform-origin: left; }
+    .hero h1 span { background: var(--blanco); color: var(--negro); padding: .05em .3em; line-height: 1.5; box-decoration-break: clone; -webkit-box-decoration-break: clone; box-shadow: 6px 6px 0 var(--magenta); }
+    .hero-texto > p { font-size: 1.15rem; max-width: 32rem; margin: 22px 0 0; }
+    .poste ul { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 10px; justify-items: start; }
+    .poste a { display: block; text-decoration: none; font-family: var(--fuente-titulos); font-weight: 700; color: var(--negro); background: var(--blanco);
+      padding: 12px 44px 12px 20px; min-height: 48px; transform: rotate(var(--g, 0deg));
+      clip-path: polygon(0 0, calc(100% - 26px) 0, 100% 50%, calc(100% - 26px) 100%, 0 100%); }
+    .poste li:nth-child(even) a { padding: 12px 20px 12px 44px; clip-path: polygon(26px 0, 100% 0, 100% 100%, 26px 100%, 0 50%); }
+    .poste a:hover, .poste a:focus-visible { background: var(--amarillo); outline: none; text-decoration: underline; }
+    .poste li:nth-child(1) { --g: -3deg; } .poste li:nth-child(2) { --g: 2deg; } .poste li:nth-child(3) { --g: -1.5deg; }
+    .poste li:nth-child(4) { --g: 3deg; } .poste li:nth-child(5) { --g: -2deg; }
+    .poste li:nth-child(1) a, .poste li:nth-child(2) a { min-width: 220px; } .poste li:nth-child(3) a { min-width: 190px; }
+    .poste li:nth-child(4) a { min-width: 205px; } .poste li:nth-child(5) a { min-width: 175px; }
+    .pista-luz { margin-top: 16px; font-size: .95rem; color: var(--amarillo); }
+
+    .suelo-escena { position: relative; height: 250px; margin-top: 6px; }
+    .tablero { position: absolute; left: -30%; right: -30%; bottom: 0; height: 62%; background: var(--tablero) 0 0/80px 80px; transform: perspective(420px) rotateX(62deg); transform-origin: 50% 100%;
+      -webkit-mask-image: linear-gradient(transparent, #000 45%); mask-image: linear-gradient(transparent, #000 45%); }
+    body.fx .tablero { animation: desliza 7s linear infinite; }
+    @keyframes desliza { to { background-position: 0 80px; } }
+    .musa { position: absolute; bottom: 12%; width: clamp(120px, 30vw, 200px); aspect-ratio: 1; }
+    .m0 { left: 2%; } .m1 { left: 33%; z-index: 2; bottom: 6%; } .m2 { left: 62%; }
+
+    .cinta { height: 26px; background: var(--tablero) 0 0/26px 26px; }
+
+    /* ---------- Títulos: cinta torcida ---------- */
+    .bloque h2 { display: inline-block; background: var(--morado); color: var(--blanco); padding: .15em .5em; transform: rotate(-1.2deg); box-shadow: 5px 5px 0 var(--blanco); font-size: clamp(1.5rem, 5vw, 2.3rem); font-weight: 700; margin-bottom: 20px; }
+    .bloque .intro { margin-top: 4px; }
+
+    .placa { border-radius: 0; }
+    .placa h3 { font-weight: 700; font-size: 2rem; }
+
+    /* ---------- Tarjetas: marco de rayas sobre suelo de ajedrez ---------- */
+    .tarjeta:nth-child(odd) .tilt { transform: rotate(-1.5deg); }
+    .tarjeta:nth-child(even) .tilt { transform: rotate(1.2deg); }
+    .cara.cuadro { border: 7px solid transparent; border-image: var(--rayas-morado) 7; background: var(--blanco); box-shadow: 8px 8px 0 var(--magenta); }
+    .escena-b { position: relative; flex: 1; overflow: hidden; background: var(--tablero) 0 0/34px 34px #fff; border-bottom: 4px solid var(--negro); }
+    .escena-b::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 66%, rgba(107,45,140,.9), rgba(107,45,140,0) 72%); }
+    .nombre-b { padding: 10px 8px; text-align: center; font-family: var(--fuente-titulos); font-weight: 700; line-height: 1.2; color: var(--blanco); background: var(--morado); }
+    .reverso-b { flex: 1; display: grid; place-content: center; justify-items: center; text-align: center; gap: 10px; padding: 16px; color: var(--blanco); font-weight: 700; background: repeating-conic-gradient(#6B2D8C 0 15deg, #4a1d63 0 30deg); }
+    .reverso-b span { background: var(--negro); padding: 8px 12px; }
+
+    /* ---------- Actividades y glosario ---------- */
+    .actividades li { box-shadow: 6px 6px 0 var(--magenta); position: relative; overflow: hidden; padding-left: 34px; }
+    .actividades li::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 16px; background: var(--rayas-morado); }
+    .actividades li:nth-child(even) { transform: rotate(.8deg); } .actividades li:nth-child(odd) { transform: rotate(-.8deg); }
+    .glosario li { border-width: 4px; font-weight: 700; }
+    .glosario li:nth-child(even) { background: var(--amarillo); }
+    .marco-b { padding: 10px; background: var(--rayas-bn); transform: rotate(-1deg); box-shadow: 8px 8px 0 var(--magenta); }
+    .marco-b img { border: 3px solid var(--negro); }
+    footer { background: #000; border-top: 12px solid transparent; border-image: var(--rayas-morado) 12; }
+    .firma { font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.1rem; color: var(--amarillo); }
+
+    @media (min-width: 800px) {
+      .hero-grid { grid-template-columns: 1.05fr .95fr; align-items: center; padding-top: 44px; }
+      .suelo-escena { height: 400px; }
+      .musa { width: clamp(150px, 15vw, 210px); }
+    }
+    @media (prefers-reduced-motion: reduce) { body.fx .espiral, body.fx .tablero { animation: none; } }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header class="top">
+      <div class="top-row">
+        <a class="logo" href="#">
+          <svg class="venus" viewBox="0 0 22 30" aria-hidden="true"><circle cx="11" cy="9" r="7" fill="none" stroke="#F5F5F0" stroke-width="3"/><path d="M11 16v13M5 23h12" stroke="#F5F5F0" stroke-width="3" stroke-linecap="round"/></svg>
+          Feminist
+        </a>
+        <div class="controles">
+          <button type="button" class="fx-btn" id="fxBtn">Quitar efectos</button>
+          <div class="idiomas" role="group" aria-label="Idioma">
+            <button type="button" aria-pressed="true">ES</button>
+            <button type="button" aria-pressed="false">CA</button>
+            <button type="button" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <section class="hero" id="hero">
+    <svg class="espiral" id="espiral" viewBox="-300 -300 600 600" aria-hidden="true"></svg>
+    <div class="wrap hero-grid">
+      <div class="hero-texto">
+        <h1><span>Mujeres que cambiaron la historia</span></h1>
+        <p>Sigue las flechas, conoce a las mujeres que aparecen en el juego Feminist y descubre qué hicieron. Todo está un poco torcido, como Wonderland.</p>
+        <nav class="poste" aria-label="Secciones">
+          <ul>
+            <li><a href="#mujeres">Mujeres</a></li>
+            <li><a href="#juego">El juego</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+            <li><a href="#glosario">Glosario</a></li>
+            <li><a href="#informatica">Quién lo hizo</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="suelo-escena" id="escena" aria-hidden="true"><div class="tablero"></div></div>
+    </div>
+  </section>
+  <div class="cinta" aria-hidden="true"></div>
+
+  <main>
+    <div class="wrap">
+
+      <section class="bloque" id="mujeres">
+        <h2>Una mujer cada día</h2>
+        <p class="intro">Ejemplo de maqueta: así se vería la mujer del día. Elige otra del carrusel con «Ver ficha» y su ficha aparece aquí.</p>
+        <div id="ficha" aria-live="polite"></div>
+
+        <h2 style="margin-top:56px">Mujeres de la historia</h2>
+        <p class="pista">Toca un marco para girarlo y ver la foto real. Con efectos, se inclina siguiendo el dedo o el ratón.</p>
+        <ul class="carrusel" id="carrusel" tabindex="0" aria-label="Carrusel de mujeres"></ul>
+      </section>
+
+      <section class="bloque" id="juego">
+        <div class="juego-grid">
+          <div class="marco-b"><img src="img/captura-09.webp" alt="Captura del juego: la protagonista en una sala de papel pintado morado, con espejos y suelo de ajedrez" width="1200" height="540" loading="lazy"></div>
+          <div>
+            <h2>El juego Feminist</h2>
+            <p>Un videojuego reivindicativo y feminista, cargado de acción, humor y lucha, en el que las grandes mujeres de la historia te apoyan en tu camino.</p>
+            <div class="botones">
+              <a class="btn" href="#">Ver el juego</a>
+              <a class="btn alt" href="#">Google Play (próximamente)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bloque" id="actividades">
+        <h2>Actividades</h2>
+        <p class="intro">Cada actividad completada te da un sello, que se guarda en tu navegador.</p>
+        <ul class="actividades">
+          <li>Memory</li><li>Línea del tiempo</li><li>La mujer en el mundo</li><li>¿De quién es la frase?</li><li>Pancarta 8M</li><li>Inventos de mujeres</li>
+        </ul>
+      </section>
+
+      <section class="bloque" id="glosario">
+        <h2>Glosario feminista</h2>
+        <p class="intro">Palabras que conviene conocer.</p>
+        <ul class="glosario"><li>sororidad</li><li>techo de cristal</li><li>brecha salarial</li><li>micromachismo</li></ul>
+      </section>
+
+      <section class="bloque" id="informatica">
+        <div class="codigo" id="lluvia">
+          <div class="contenido informatica">
+            <h2 style="font-size:clamp(1.4rem,4.4vw,2.1rem);margin:0;display:block;background:none;box-shadow:none;transform:none;padding:0">Hecha por una mujer en la informática</h2>
+            <p>Esta web y el juego los ha hecho una mujer, en un sector donde las mujeres son una clara minoría. Mireia pasó de la educación a la informática, un trabajo que en su momento ni se había planteado.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="cinta" aria-hidden="true"></div>
+  <footer id="fuentes">
+    <div class="wrap">
+      <p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p>
+      <a href="#fuentes">Fuentes de información</a>
+    </div>
+  </footer>
+
+  <script src="js/comun.js"></script>
+  <script>
+    F.iniciar();
+    F.codigo(document.getElementById('lluvia'), 18);
+
+    // Espiral de fondo: se dibuja con una curva; las vueltas dan el efecto de rayas
+    (function () {
+      var pts = [];
+      for (var t = 0; t <= 22 * Math.PI; t += 0.15) {
+        var r = 4.2 * t;
+        pts.push((r * Math.cos(t)).toFixed(1) + ' ' + (r * Math.sin(t)).toFixed(1));
+      }
+      var p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      p.setAttribute('d', 'M' + pts.join(' L'));
+      p.setAttribute('fill', 'none'); p.setAttribute('stroke', '#F5F5F0');
+      p.setAttribute('stroke-width', '16'); p.setAttribute('stroke-linecap', 'round');
+      document.getElementById('espiral').appendChild(p);
+    })();
+
+    F.cargar().then(function () {
+      // Tres mujeres de pie sobre el suelo de ajedrez de la portada (decorativas)
+      var escena = document.getElementById('escena');
+      ['frida-kahlo', 'hedy-lamarr', 'rosa-parks'].forEach(function (s, i) {
+        var m = F.porSlug(s);
+        if (!m) return;
+        var d = F.el('div', 'musa m' + i);
+        d.appendChild(F.figura(m, i));
+        escena.appendChild(d);
+      });
+
+      var car = document.getElementById('carrusel');
+      F.mujeres.forEach(function (m, n) {
+        car.appendChild(F.tarjeta(m, n, {
+          frente: function (cara, m, fig) {
+            cara.classList.add('cuadro');
+            var e = F.el('span', 'escena-b');
+            e.appendChild(fig);
+            cara.appendChild(e);
+            cara.appendChild(F.el('span', 'nombre-b', m.nombre));
+          },
+          dorso: function (cara, m) {
+            cara.classList.add('cuadro');
+            var r = F.el('span', 'reverso-b');
+            r.appendChild(F.el('span', '', '[FOTO REAL PENDIENTE]'));
+            r.appendChild(F.el('span', '', 'autor y licencia por indicar'));
+            cara.appendChild(r);
+            cara.appendChild(F.el('span', 'nombre-b', m.cabecera));
+          }
+        }));
+      });
+      F.ficha(F.porSlug('hipatia-de-alejandria') || F.mujeres[0], document.getElementById('ficha'));
+    }).catch(F.errorDatos);
+  </script>
+</body>
+</html>
