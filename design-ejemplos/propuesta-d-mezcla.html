@@ -162,21 +162,26 @@
     }
     /* ---------- Calendario de la portada: fecha de hoy y dos frases ---------- */
     /* Hoja inclinada con anillas y páginas apiladas detrás (inspirado en el dibujo de Mireia, dibujado desde cero) */
-    .calendario { position: relative; order: 1; z-index: 3; margin: 34px 30px 30px 16px; color: #101010; transform: rotate(-2deg); transform-origin: 50% 0; }
+    .calendario { position: relative; order: 1; z-index: 3; margin: 34px 60px 30px 16px; color: #101010; transform: rotate(-2deg); transform-origin: 50% 0; }
     .cal-pila i { position: absolute; inset: 0; border: 3px solid #101010; border-radius: 8px 12px 10px 14px / 12px 8px 14px 10px; box-shadow: 0 8px 18px rgba(0,0,0,.5); }
-    .cal-pila i:nth-child(1) { background: #D8CBE6; transform: translate(24px, 15px) rotate(4.5deg); }
-    .cal-pila i:nth-child(2) { background: #E6DCEF; transform: translate(16px, 10px) rotate(3deg); }
-    .cal-pila i:nth-child(3) { background: #EFE8F4; transform: translate(8px, 5px) rotate(1.5deg); }
-    .cal-hoja { position: relative; background: #F3EEF7; border: 3px solid #101010; border-radius: 8px 12px 10px 14px / 12px 8px 14px 10px; overflow: hidden; outline: 2px solid rgba(201,162,75,.55); outline-offset: -9px; transition: transform .35s ease; }
-    body.fx .calendario:hover .cal-hoja { transform: translateY(-7px) rotate(-1.5deg); }
+    /* Las páginas de atrás cuelgan de las mismas anillas: giran desde el borde de arriba y se abren por abajo */
+    .cal-pila i { transform-origin: 50% 0; }
+    .cal-pila i:nth-child(1) { background: #D8CBE6; transform: rotate(-9deg) translateY(4px); }
+    .cal-pila i:nth-child(2) { background: #E6DCEF; transform: rotate(-6deg) translateY(3px); }
+    .cal-pila i:nth-child(3) { background: #EFE8F4; transform: rotate(-3deg) translateY(2px); }
+    /* Casi cuadrada: la proporción es el mínimo y crece si el texto del día es largo */
+    .cal-hoja { position: relative; display: flex; flex-direction: column; aspect-ratio: 1 / .95; background: #F3EEF7; border: 3px solid #101010; border-radius: 8px 12px 10px 14px / 12px 8px 14px 10px; outline: 2px solid rgba(201,162,75,.55); outline-offset: -9px; }
+    /* Hoja y anillas forman un solo bloque, así se levantan juntas y las anillas no se descuadran */
+    .cal-frente { position: relative; transform-origin: 50% 0; transition: transform .35s ease; }
+    body.fx .calendario:hover .cal-frente { transform: translateY(-7px) rotate(-1.5deg); }
     .cal-anillas { position: absolute; z-index: 2; top: -24px; left: 0; right: 0; display: flex; justify-content: space-evenly; pointer-events: none; }
-    .cal-anillas span { position: relative; width: 20px; height: 44px; border: 5px solid #A58FCB; border-radius: 50%; transform: rotate(8deg); box-shadow: 0 0 0 2px #101010, inset 0 0 0 2px #101010; }
+    .cal-anillas span { position: relative; width: 20px; height: 44px; border: 5px solid #F0D58A; border-radius: 50%; transform: rotate(8deg); box-shadow: 0 0 0 2px #101010, inset 0 0 0 2px #101010; }
     .cal-anillas span::after { content: ""; position: absolute; left: 50%; bottom: -9px; width: 12px; height: 7px; margin-left: -6px; border-radius: 50%; background: #101010; }
-    .cal-cabecera { background: var(--morado); color: #fff; font-family: var(--fuente-titulos); font-weight: 700; padding: 22px 18px 8px; display: flex; justify-content: space-between; gap: 10px; border-bottom: 3px solid #101010; }
+    .cal-cabecera { background: var(--morado); color: #fff; font-family: var(--fuente-titulos); font-weight: 700; padding: 22px 18px 8px; display: flex; justify-content: space-between; gap: 10px; border-bottom: 3px solid #101010; border-radius: 5px 9px 0 0; }
     .cal-dia { display: flex; align-items: baseline; gap: 14px; padding: 8px 16px 0; }
     .cal-num { font-family: var(--fuente-titulos); font-weight: 900; font-size: 3.8rem; line-height: 1; color: #101010; }
     .cal-semana { font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.15rem; }
-    .cal-frases { list-style: none; margin: 0; padding: 10px 16px 16px; display: grid; gap: 12px; }
+    .cal-frases { list-style: none; margin: 0; padding: 10px 22px 22px; display: grid; gap: 12px; flex: 1; align-content: center; }
     .cal-frases li { border-left: 5px solid var(--magenta); padding: 2px 0 2px 12px; font-size: .98rem; line-height: 1.45; }
     .cal-frases cite { display: block; margin-top: 4px; font-style: normal; font-size: .82rem; color: #4b3a58; }
     .cal-frases .pendiente { background: #E8CE86; color: #3a2a00; padding: 0 6px; border-radius: 4px; }
@@ -251,12 +256,14 @@
     </div>
     <aside class="calendario" aria-label="Calendario de hoy">
       <div class="cal-pila" aria-hidden="true"><i></i><i></i><i></i></div>
-      <div class="cal-hoja">
-        <div class="cal-cabecera"><span id="calMes">Mes</span><span id="calAnio"></span></div>
-        <time class="cal-dia" id="calFecha"><span class="cal-num" id="calNum">0</span><span class="cal-semana" id="calSemana">Día</span></time>
-        <ul class="cal-frases" id="calFrases"></ul>
+      <div class="cal-frente">
+        <div class="cal-hoja">
+          <div class="cal-cabecera"><span id="calMes">Mes</span><span id="calAnio"></span></div>
+          <time class="cal-dia" id="calFecha"><span class="cal-num" id="calNum">0</span><span class="cal-semana" id="calSemana">Día</span></time>
+          <ul class="cal-frases" id="calFrases"></ul>
+        </div>
+        <div class="cal-anillas" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
       </div>
-      <div class="cal-anillas" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
     </aside>
     <nav class="nombres" id="nombres" aria-label="Mujeres de la historia"></nav>
     <div class="oscuridad" aria-hidden="true"></div>
@@ -386,11 +393,8 @@
         var ul = document.getElementById('calFrases');
         d.frases.forEach(function (f) {
           var li = F.el('li');
-          li.appendChild(document.createTextNode(f.texto + ' '));
-          var c = F.el('cite');
-          c.appendChild(document.createTextNode('Fuente: '));
-          c.appendChild(F.el('span', 'pendiente', f.fuente));
-          li.appendChild(c);
+          /* Solo la frase del PDF: la fuente va en referencias.md, no en el calendario */
+          li.appendChild(document.createTextNode(f.texto));
           ul.appendChild(li);
         });
       }).catch(function () { /* sin frases: el calendario enseña solo la fecha */ });
