@@ -37,8 +37,9 @@ section.bloque { padding-block: 52px; }
 /* Solo se cambia a las capas cuando cabeza y cuerpo ya están cargados (clase .lista), para no ver huecos */
 body.fx .figura.lista .completa { visibility: hidden; }
 body.fx .figura.lista .capas { display: block; }
-body.fx .figura.lista .capas .cabeza { transform-origin: 50% 80%; animation: balanceo 3.4s ease-in-out infinite; animation-delay: var(--retardo, 0s); }
-@keyframes balanceo { 0%, 100% { transform: rotate(-3deg) translateX(-1.2%); } 50% { transform: rotate(3deg) translateX(1.2%); } }
+body.fx .figura.lista .capas .cabeza { transform-origin: 50% 50%; animation: balanceo 2.6s ease-in-out infinite alternate; animation-delay: var(--retardo, 0s); }
+/* Igual que Anim_GiroCabeza del juego: de +10° a -10°, ida y vuelta, sin desplazamiento lateral. Duración 2,6 s por tramo (el juego usa 2 s; Mireia lo prefiere un poco más lento) */
+@keyframes balanceo { from { transform: rotate(10deg); } to { transform: rotate(-10deg); } }
 
 /* ---------- Tarjeta: se inclina (efectos) y gira con un toque ---------- */
 .carrusel { display: flex; gap: 26px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 24px 10px 34px; margin: 0 -10px; list-style: none; }

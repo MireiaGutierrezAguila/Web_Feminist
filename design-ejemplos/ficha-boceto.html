@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boceto de ficha</title>
+  <!-- BOCETO de la ficha abierta en su sitio (fila de mujeres). Usa los datos reales de data/mujeres.json
+       y los adornos del juego copiados en public/images/juego/. Los textos de las fichas NO se modifican.
+       El estilo parte del juego (azul noche, dorado, pergamino, cuerdas) pero la composición es propia. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Handlee&family=Quintessential&family=Send+Flowers&family=Cinzel:wght@700;800&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --fuente-titulos: "Cinzel Decorative", Georgia, serif;
+      --fuente-nombres: "Cinzel", Georgia, serif;
+      --fuente-texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+      /* Letra del pergamino (propuesta: Quintessential). Para probar otra: ?letra=handlee o ?letra=sendflowers */
+      --fuente-pergamino: "Quintessential", Georgia, serif;
+      --noche: #0b1238; --noche-2: #131f55; --oro: #D9B25F; --oro-claro: #F0D58A; --morado: #6b2d8f; --magenta: #d6347c;
+      --texto: #eef1ff; --tinta: #6a4524; /* marrón de tinta de pergamino, más claro que el anterior (#2b1d10) */
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #0d0d12; color: var(--texto); font-family: var(--fuente-texto); line-height: 1.55; }
+    .contenedor { width: min(100% - 32px, 1100px); margin-inline: auto; }
+    header.pagina { padding: 22px 0 6px; }
+    header.pagina h1 { font-family: var(--fuente-titulos); font-size: clamp(1.3rem, 5vw, 2rem); margin: 0 0 6px; }
+    header.pagina p { margin: 0; color: #c9c4d6; max-width: 62ch; }
+    h2.seccion { display: inline-block; font-family: var(--fuente-titulos); background: var(--morado); color: #fff; padding: 8px 16px; margin: 26px 0 6px; transform: rotate(-1deg); font-size: clamp(1.1rem, 4.5vw, 1.5rem); }
+    .ayuda { color: #c9c4d6; font-size: .95rem; margin: 6px 0 0; }
+
+    /* ---------- Fila de mujeres (se abre la ficha en su sitio) ---------- */
+    .fila { display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x proximity; list-style: none; margin: 0 -16px; padding: 22px 16px 34px; align-items: flex-start; }
+    .carta { flex: 0 0 min(230px, 64vw); scroll-snap-align: start; transition: flex-basis .55s cubic-bezier(.2,.8,.2,1); min-width: 0; }
+    .carta.abierta { flex-basis: min(800px, 92vw); }
+    @media (prefers-reduced-motion: reduce) { .carta { transition: none; } }
+
+    /* Tarjeta cerrada */
+    .mini { display: flex; flex-direction: column; gap: 12px; }
+    .carta.abierta .mini { display: none; }
+    .arco { position: relative; height: 270px; border-radius: 125px 125px 16px 16px; padding: 7px; background: linear-gradient(160deg, #F0D58A, #8a6a22 55%, #E8C76F); box-shadow: 0 10px 22px rgba(0,0,0,.5); }
+    .arco-in { position: relative; width: 100%; height: 100%; border-radius: 119px 119px 11px 11px; overflow: hidden; background: radial-gradient(circle at 50% 70%, var(--halo, #6b2d8f), #140a24 75%); }
+    .arco-in img { position: absolute; left: 4%; bottom: -4%; width: 92%; height: auto; }
+    .mini .nombre { font-family: var(--fuente-nombres); font-weight: 800; text-align: center; font-size: .95rem; background: #16122a; border: 2px solid var(--oro); border-radius: 8px; padding: 8px 6px; }
+    .boton-ver { font: inherit; font-weight: 700; color: var(--texto); background: transparent; border: 2px solid var(--oro); border-radius: 10px; padding: 11px 14px; min-height: 44px; cursor: pointer; }
+    .boton-ver:hover { background: rgba(217,178,95,.16); }
+    :focus-visible { outline: 3px solid var(--oro-claro); outline-offset: 3px; }
+
+    /* ---------- Ficha abierta ---------- */
+    .ficha { display: none; position: relative; border-radius: 22px; padding: 18px; background: radial-gradient(120% 80% at 20% 0%, var(--noche-2), var(--noche) 70%); border: 3px solid var(--oro); box-shadow: 0 0 0 4px #0d0d12, 0 0 0 6px rgba(217,178,95,.55), 0 20px 40px rgba(0,0,0,.6); }
+    .carta.abierta .ficha { display: block; animation: aparece .5s .15s both; }
+    @keyframes aparece { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { .carta.abierta .ficha { animation: none; } }
+
+    .cerrar { position: absolute; top: 8px; right: 8px; width: 46px; height: 46px; border: 0; padding: 0; cursor: pointer; background: url("../public/images/juego/ui/boton-cerrar.png") center / contain no-repeat; z-index: 3; border-radius: 50%; }
+    .cerrar:hover, .cerrar:focus-visible { background-image: url("../public/images/juego/ui/boton-cerrar-luz.png"); }
+
+    /* Cartel con el nombre: el texto va en una sola línea, centrado en el panel (la medalla queda a la izquierda y las cuerdas debajo) */
+    .cabecera-ficha { display: flex; align-items: center; justify-content: center; gap: 6px; margin: 0 auto 14px; padding-right: 44px; }
+    .cabecera-ficha .objeto { flex: 0 0 auto; width: clamp(58px, 15vw, 112px); height: auto; transform: rotate(-8deg); filter: drop-shadow(0 6px 8px rgba(0,0,0,.55)); }
+    @media (max-width: 560px) { .cabecera-ficha { padding-right: 0; gap: 0; margin-top: 4px; } .cabecera-ficha .objeto { width: 50px; margin-right: -4px; } }
+    /* Dos carteles del juego: el normal y uno más alargado para nombres largos. El texto se centra en el panel liso (a la derecha de la medalla, sobre las cuerdas) */
+    .cartel { position: relative; flex: 0 1 auto; width: min(100%, 560px); aspect-ratio: 1432 / 391; background: url("../public/images/juego/carteles/cartel-nombre-2.png") center / 100% 100% no-repeat; }
+    .cartel h3 { position: absolute; left: 20%; right: 20%; top: 24%; bottom: 26%; margin: 0; display: flex; align-items: center; justify-content: center; text-align: center; white-space: nowrap; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.5rem; line-height: 1.1; color: #f3e9fb; text-shadow: 0 2px 4px rgba(0,0,0,.6); }
+    .cartel h3:focus { outline: none; }
+
+    .contenido { display: grid; gap: 18px; }
+    @media (min-width: 720px) { .contenido { grid-template-columns: 250px 1fr; gap: 26px; align-items: start; } .ficha { padding: 22px 26px 26px; } }
+
+    /* Retrato en marco: sin fondo de color, la mujer se ve sobre el azul noche de la ficha */
+    .retrato { margin: 0; }
+    .marco { position: relative; aspect-ratio: 967 / 1218; max-width: 270px; margin-inline: auto; }
+    .marco .fondo { position: absolute; inset: 7% 11%; }
+    /* La mujer va por delante del marco y puede salirse un poco de él */
+    .marco .fondo img { position: absolute; left: -20%; bottom: -5%; width: 140%; height: auto; max-width: none; z-index: 2; }
+    .marco .borde { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
+    .retrato figcaption { margin-top: 10px; text-align: center; }
+    .retrato .datos { font-weight: 700; color: var(--oro-claro); }
+    .retrato .fechas { font-family: var(--fuente-nombres); font-weight: 700; letter-spacing: .02em; color: #fff; }
+
+    /* Pergamino con el logro */
+    .pergamino { margin: 0 0 18px; padding: 8% 11%; text-align: center; font-family: var(--fuente-pergamino); font-weight: 400; font-size: clamp(1.1rem, 4.2vw, 1.35rem); line-height: 1.35; color: var(--tinta); background: url("../public/images/juego/carteles/pergamino.png") center / 100% 100% no-repeat; }
+    .quien h4 { font-family: var(--fuente-nombres); font-weight: 800; font-size: 1.25rem; margin: 0 0 8px; color: var(--oro-claro); }
+    .quien p { margin: 0 0 14px; font-size: 1.02rem; max-width: 62ch; }
+    .fuentes { border-top: 2px dashed rgba(217,178,95,.45); padding-top: 10px; font-size: .92rem; color: #cfd6f2; }
+    .fuentes strong { color: var(--oro-claro); }
+    .pendiente { background: #E8CE86; color: #3a2a00; padding: 0 6px; border-radius: 4px; }
+    .rayas { display: block; width: 100%; height: auto; margin-top: 16px; opacity: .85; }
+    .nota { margin-top: 24px; padding: 14px 16px; border-left: 5px solid var(--magenta); background: #17142a; color: #d6d2e4; font-size: .93rem; }
+    .nota ul { margin: 6px 0 0; padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <header class="pagina contenedor">
+    <h1>Boceto de ficha abierta</h1>
+    <p>Pulsa «Ver ficha» en Hedy Lamarr (o en cualquier otra) y la ficha se abre en su sitio, en la misma fila. Se cierra con la X o con la tecla Esc.</p>
+  </header>
+
+  <main class="contenedor">
+    <h2 class="seccion">Mujeres de la historia</h2>
+    <p class="ayuda">Desliza la fila con el dedo o el ratón.</p>
+    <ul class="fila" id="fila" tabindex="0" aria-label="Fila de mujeres"></ul>
+
+    <div class="nota">
+      <strong>Notas del boceto (para revisar):</strong>
+      <ul>
+        <li>Los textos de las fichas son los de <code>mujeres.json</code>, sin cambios. El título «¿Quién fue …?» se compone con el nombre porque en los datos está incompleto («¿Quién fue ?»).</li>
+        <li>Las fuentes siguen como <span class="pendiente">[FUENTE PENDIENTE]</span> hasta que haya referencias.</li>
+        <li>El nombre va como texto de la página sobre el cartel del juego, así no se repiten erratas de las placas con nombre y se podrá traducir.</li>
+        <li>El objeto relacionado (de momento solo el Wi-Fi de Hedy) sale de <code>data/objetos.json</code>; el resto se añadirá cuando lo tengas.</li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      // Textos de interfaz (irán al archivo de idiomas). No son contenido de las fichas.
+      var TXT = { verFicha: 'Ver ficha', cerrar: 'Cerrar ficha', quienFue: '¿Quién fue ', fuentes: 'Fuentes: ', mujeres: 'Mujeres de la historia' };
+      var RUTA_M = '../public/images/mujeres/', RUTA_J = '../public/images/juego/';
+      var halos = ['#8e2a5c', '#1f6f86', '#b25a1f', '#5b2e91', '#2f5fb0', '#8a3a2f', '#1f7a56', '#8a6a22', '#6b2d8f', '#3a58c8', '#a0264f'];
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var fila = document.getElementById('fila');
+      var abierta = null;
+      var OBJETOS = {};
+
+      // Solo para la maqueta: probar otras letras del pergamino desde la dirección (?letra=handlee)
+      var letras = { quintessential: '"Quintessential", Georgia, serif', handlee: '"Handlee", cursive', sendflowers: '"Send Flowers", cursive' };
+      var pedida = new URLSearchParams(location.search).get('letra');
+      if (pedida && letras[pedida]) { document.documentElement.style.setProperty('--fuente-pergamino', letras[pedida]); }
+
+      // Reduce la letra del nombre hasta que cabe en una línea dentro del cartel
+      // Si aun así no cabe en una línea, se permite partirlo en dos y se sigue reduciendo hasta un mínimo legible
+      function ajustarTexto(n) {
+        var t = 2.1; n.style.whiteSpace = 'nowrap'; n.style.fontSize = t + 'rem';
+        while (n.scrollWidth > n.clientWidth + 1 && t > 0.95) { t -= 0.05; n.style.fontSize = t + 'rem'; }
+        if (n.scrollWidth > n.clientWidth + 1) {
+          n.style.whiteSpace = 'normal';
+          while ((n.scrollWidth > n.clientWidth + 1 || n.scrollHeight > n.clientHeight + 1) && t > 0.75) { t -= 0.05; n.style.fontSize = t + 'rem'; }
+        }
+      }
+
+      function el(tag, clase, texto) { var n = document.createElement(tag); if (clase) n.className = clase; if (texto !== undefined) n.textContent = texto; return n; }
+      function img(src, alt, clase) { var i = new Image(); i.src = src; i.alt = alt || ''; if (clase) i.className = clase; return i; }
+
+      function cerrar(li) {
+        li.classList.remove('abierta');
+        li.querySelector('.boton-ver').setAttribute('aria-expanded', 'false');
+        abierta = null;
+      }
+      function abrir(li, boton) {
+        if (abierta && abierta !== li) { cerrar(abierta); }
+        li.classList.add('abierta');
+        boton.setAttribute('aria-expanded', 'true');
+        abierta = li;
+        var titulo = li.querySelector('.cartel h3');
+        // El ajuste del nombre se hace cuando la ficha ya tiene su ancho final (tras la animación)
+        setTimeout(function () { li._ajustarNombre(); }, reduce ? 0 : 650);
+        titulo.focus({ preventScroll: true });
+        // Tras la animación, se centra la ficha en la fila
+        setTimeout(function () { li.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', inline: 'center', block: 'nearest' }); }, reduce ? 0 : 420);
+      }
+
+      function construir(m, n) {
+        var li = el('li', 'carta'); li.dataset.slug = m.slug; li.style.setProperty('--halo', halos[n % halos.length]);
+        var idFicha = 'ficha-' + m.slug;
+
+        // Tarjeta cerrada
+        var mini = el('div', 'mini');
+        var arco = el('div', 'arco'), arcoIn = el('div', 'arco-in');
+        arcoIn.appendChild(img(RUTA_M + m.slug + '/completa.png', 'Dibujo de ' + m.nombre));
+        arco.appendChild(arcoIn); mini.appendChild(arco);
+        mini.appendChild(el('div', 'nombre', m.nombre));
+        var boton = el('button', 'boton-ver', TXT.verFicha);
+        boton.type = 'button'; boton.setAttribute('aria-expanded', 'false'); boton.setAttribute('aria-controls', idFicha);
+        boton.addEventListener('click', function () { abrir(li, boton); });
+        mini.appendChild(boton); li.appendChild(mini);
+
+        // Ficha abierta
+        var f = el('section', 'ficha'); f.id = idFicha; f.setAttribute('aria-label', 'Ficha de ' + m.nombre);
+        var x = el('button', 'cerrar'); x.type = 'button'; x.setAttribute('aria-label', TXT.cerrar);
+        x.addEventListener('click', function () { cerrar(li); boton.focus(); });
+        f.appendChild(x);
+
+        // Cabecera: objeto relacionado (a la izquierda) + cartel con el nombre; los nombres largos usan el cartel más alargado
+        var cab = el('div', 'cabecera-ficha');
+        var ob = OBJETOS[m.slug];
+        if (ob) { cab.appendChild(img(RUTA_M + m.slug + '/' + ob.imagen, ob.alt.es, 'objeto')); }
+        var cartel = el('div', 'cartel'); var h = el('h3', null, m.nombre); h.tabIndex = -1; cartel.appendChild(h); cab.appendChild(cartel);
+        f.appendChild(cab);
+        li._ajustarNombre = function () { ajustarTexto(h); };
+
+        var cont = el('div', 'contenido');
+        var fig = el('figure', 'retrato'), marco = el('div', 'marco'), fondo = el('div', 'fondo');
+        fondo.appendChild(img(RUTA_M + m.slug + '/completa.png', 'Dibujo de ' + m.nombre));
+        marco.appendChild(fondo); marco.appendChild(img(RUTA_J + 'marcos/marco-retrato.png', '', 'borde'));
+        fig.appendChild(marco);
+        var cap = el('figcaption'); cap.appendChild(el('div', 'datos', m.profesionLugar)); cap.appendChild(el('div', 'fechas', m.cabecera));
+        fig.appendChild(cap); cont.appendChild(fig);
+
+        var der = el('div', 'texto');
+        der.appendChild(el('p', 'pergamino', m.logro));
+        var q = el('div', 'quien'); q.appendChild(el('h4', null, TXT.quienFue + m.nombre + '?')); q.appendChild(el('p', null, m.quien)); der.appendChild(q);
+        var fu = el('p', 'fuentes'); fu.appendChild(el('strong', null, TXT.fuentes));
+        var pend = el('span', /PENDIENTE/.test(m.fuentes) ? 'pendiente' : '', m.fuentes); fu.appendChild(pend); der.appendChild(fu);
+        der.appendChild(img(RUTA_J + 'adornos/separador-rayas.png', '', 'rayas'));
+        cont.appendChild(der); f.appendChild(cont);
+        li.appendChild(f);
+        return li;
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && abierta) { var li = abierta; cerrar(li); li.querySelector('.boton-ver').focus(); }
+      });
+
+      // Los objetos relacionados están en un archivo de datos aparte; si falta, las fichas se ven sin objeto
+      var pObjetos = fetch('data/objetos.json').then(function (r) { return r.json(); }).then(function (o) { OBJETOS = o.objetos || {}; }).catch(function () { OBJETOS = {}; });
+      pObjetos.then(function () { return fetch('data/mujeres.json'); }).then(function (r) { return r.json(); }).then(function (d) {
+        var lista = Array.isArray(d) ? d : (d.mujeres || []);
+        lista.forEach(function (m, n) { fila.appendChild(construir(m, n)); });
+        // El boceto arranca con Hedy Lamarr abierta si se pide con ?abrir=hedy-lamarr
+        var q = new URLSearchParams(location.search).get('abrir');
+        if (q) { var li = fila.querySelector('[data-slug="' + q + '"]'); if (li) { abrir(li, li.querySelector('.boton-ver')); } }
+      }).catch(function () { fila.appendChild(el('li', null, 'No se pudieron cargar los datos de las mujeres.')); });
+    })();
+  </script>
+</body>
+</html>

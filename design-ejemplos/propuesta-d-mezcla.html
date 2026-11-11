@@ -11,8 +11,9 @@
        Hay que abrirla desde el servidor local. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@800&family=Cinzel+Decorative:wght@700;900&family=Quintessential&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/comun.css">
+  <link rel="stylesheet" href="css/ficha.css">
   <style>
     :root {
       --negro: #101010;
@@ -179,10 +180,10 @@
     /* Las anillas van DETRÁS de la hoja: solo se ve la parte que asoma por arriba, como si la atravesaran por los agujeros */
     .cal-anillas { position: absolute; z-index: 0; top: -24px; left: 0; right: 0; display: flex; justify-content: space-evenly; pointer-events: none; }
     .cal-anillas span { position: relative; width: 20px; height: 44px; border: 5px solid #F0D58A; border-radius: 50%; transform: rotate(8deg); box-shadow: 0 0 0 2px #101010, inset 0 0 0 2px #101010; }
-    .cal-cabecera { background: var(--morado); color: #fff; font-family: var(--fuente-titulos); font-weight: 700; padding: 22px 18px 8px; display: flex; justify-content: space-between; gap: 10px; border-bottom: 3px solid #101010; border-radius: 5px 9px 0 0; }
-    .cal-dia { display: flex; align-items: baseline; gap: 14px; padding: 8px 16px 0; }
-    .cal-num { font-family: var(--fuente-titulos); font-weight: 900; font-size: 3.8rem; line-height: 1; color: #101010; }
-    .cal-semana { font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.15rem; }
+    .cal-cabecera { background: var(--morado); color: #fff; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.5rem; padding: 22px 18px 8px; display: flex; justify-content: space-between; gap: 10px; border-bottom: 3px solid #101010; border-radius: 5px 9px 0 0; }
+    .cal-dia { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding: 8px 16px 0; }
+    .cal-num { font-family: "Cinzel", Georgia, serif; font-weight: 800; font-size: 4.2rem; line-height: 1; color: #101010; }
+    .cal-semana { font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.3rem; }
     .cal-frases { list-style: none; margin: 0; padding: 10px 22px 22px; display: grid; gap: 12px; flex: 1; align-content: center; }
     .cal-frases li { border-left: 5px solid var(--magenta); padding: 2px 0 2px 12px; font-size: .98rem; line-height: 1.45; }
     .cal-frases cite { display: block; margin-top: 4px; font-style: normal; font-size: .82rem; color: #4b3a58; }
@@ -262,7 +263,7 @@
       <div class="cal-frente">
         <div class="cal-hoja">
           <div class="cal-cabecera"><span id="calMes">Mes</span><span id="calAnio"></span></div>
-          <time class="cal-dia" id="calFecha"><span class="cal-num" id="calNum">0</span><span class="cal-semana" id="calSemana">Día</span></time>
+          <time class="cal-dia" id="calFecha"><span class="cal-semana" id="calSemana">Día</span><span class="cal-num" id="calNum">0</span></time>
           <ul class="cal-frases" id="calFrases"></ul>
         </div>
         <div class="cal-anillas" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
@@ -277,12 +278,8 @@
     <div class="wrap">
 
       <section class="bloque" id="mujeres">
-        <h2>Una mujer cada día</h2>
-        <p class="intro">Ejemplo de maqueta: así se vería la mujer del día. Elige otra del carrusel con «Ver ficha» y su ficha aparece aquí.</p>
-        <div id="ficha" aria-live="polite"></div>
-
-        <h2 style="margin-top:56px">Mujeres de la historia</h2>
-        <p class="pista">Toca una carta para girarla y ver la foto real. Con efectos, se inclina siguiendo el dedo o el ratón.</p>
+        <h2>Mujeres de la historia</h2>
+        <p class="pista">Toca una carta para girarla y ver la foto real, o pulsa «Ver ficha» para abrirla aquí mismo. Con efectos, se inclina siguiendo el dedo o el ratón.</p>
         <ul class="carrusel" id="carrusel" tabindex="0" aria-label="Carrusel de mujeres"></ul>
       </section>
 
@@ -335,6 +332,7 @@
   </footer>
 
   <script src="js/comun.js"></script>
+  <script src="js/ficha.js"></script>
   <script>
     F.iniciar();
     var hero = document.getElementById('hero');
@@ -388,6 +386,18 @@
       var datos = null;
       var mayus = function (t) { return t.charAt(0).toUpperCase() + t.slice(1); };
       var dos = function (n) { return ('0' + n).slice(-2); };
+      var diaDelAnio = function (d) { return Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 86400000); };
+      /* Solo para la maqueta: ?fecha=2026-03-08 enseña ese día; ?sensibles=1 incluye las entradas marcadas como sensibles */
+      var params = new URLSearchParams(location.search);
+      var verSensibles = params.get('sensibles') === '1';
+      function fechaInicial() {
+        var f = params.get('fecha');
+        if (f && /^\d{4}-\d{2}-\d{2}$/.test(f)) {
+          var p = f.split('-'), d = new Date(+p[0], +p[1] - 1, +p[2]);
+          if (!isNaN(d.getTime()) && d.getMonth() === +p[1] - 1) { return d; }
+        }
+        return new Date();
+      }
       function pintar(hoy) {
         document.getElementById('calNum').textContent = hoy.getDate();
         document.getElementById('calSemana').textContent = mayus(hoy.toLocaleDateString('es-ES', { weekday: 'long' }));
@@ -398,12 +408,31 @@
         ul.textContent = '';
         if (!datos) { return; }
         var lista = datos.dias[dos(hoy.getMonth() + 1) + '-' + dos(hoy.getDate())] || [];
-        /* Solo se enseñan entradas verificadas; la principal va primero. La fuente no se muestra aquí: está en los datos */
-        var verificadas = lista.filter(function (e) { return e.estado === 'verificada'; });
-        var elegida = verificadas.filter(function (e) { return e.principal; })[0] || verificadas[0];
+        /* Solo se enseñan entradas verificadas y no «sensibles» (salvo que se pida con ?sensibles=1).
+           Prioridad: la principal, luego una ancla, luego el resto. La fuente no se muestra aquí: está en los datos */
+        var visibles = lista.filter(function (e) { return e.estado === 'verificada' && (!e.sensible || verSensibles); });
+        var elegida = visibles.filter(function (e) { return e.principal; })[0] || visibles.filter(function (e) { return e.ancla; })[0] || visibles[0];
+        var etiqueta = '';
+        if (!elegida) {
+          /* Día sin efeméride: se enseña una entrada «sin día» (sección sinDia). Primero las del mes actual
+             («Este mes: …»); si no hay, las que solo tienen año («Sin día exacto, …»), rotando según el día del año */
+          var sin = (datos.sinDia || []).filter(function (e) { return (e.estado === 'verificada' || e.estado === 'parcial') && (!e.sensible || verSensibles); });
+          var delMes = sin.filter(function (e) { return e.mes === hoy.getMonth() + 1; });
+          var grupo = delMes.length ? delMes : sin.filter(function (e) { return !e.mes; });
+          if (grupo.length) {
+            elegida = grupo[diaDelAnio(hoy) % grupo.length];
+            /* Texto de interfaz (no es un dato): irá en el archivo de idiomas */
+            etiqueta = delMes.length ? 'Este mes: ' : 'Sin día exacto, ';
+          }
+        }
         var li = F.el('li');
         if (elegida) {
-          li.appendChild(document.createTextNode(elegida.anio + ': ' + elegida.texto.es));
+          if (etiqueta) { li.appendChild(document.createTextNode(etiqueta)); }
+          /* El año va en negrita (se crea con textContent, sin HTML, por seguridad) */
+          var anio = F.el('strong');
+          anio.textContent = elegida.anio + ':';
+          li.appendChild(anio);
+          li.appendChild(document.createTextNode(' ' + elegida.texto.es));
         } else {
           /* Texto de interfaz (no es un dato): irá en el archivo de idiomas */
           li.className = 'cal-vacio';
@@ -412,10 +441,10 @@
         ul.appendChild(li);
       }
       window.pintarCalendario = pintar; /* solo para probar otras fechas en la maqueta */
-      pintar(new Date());
+      pintar(fechaInicial());
       fetch('data/calendario.json').then(function (r) { return r.json(); }).then(function (d) {
         datos = d;
-        pintar(new Date());
+        pintar(fechaInicial());
       }).catch(function () { /* sin datos: el calendario enseña solo la fecha */ });
     })();
 
@@ -483,7 +512,8 @@
     var COLORES_TARJETA = ['#C2386Eb3', '#127C86b3', '#E8762Bb3', '#8a4fc2b3', '#2E7D4Fb3'];
     var COLORES_NOMBRE = ['#F27AA6', '#4FD0DB', '#FFA95C', '#C39BEE', '#7FD79E', '#F5F5F0'];
 
-    F.cargar().then(function () {
+    F.cargar().then(function () { return F.cargarObjetos(); }).then(function () {
+      var tarjetas = {}; // slug -> tarjeta de la fila, para abrir su ficha desde los nombres escondidos
       // Nombres escondidos en la oscuridad: cada uno lleva a su ficha
       var nombres = document.getElementById('nombres');
       // Cinco zonas (las rectángulos rosas de Mireia): 3 + 2 + 2 + 2 + 2 nombres. En pantallas estrechas las zonas "desaparecen" (display: contents)
@@ -496,7 +526,11 @@
         a.style.setProperty('--c', COLORES_NOMBRE[n % COLORES_NOMBRE.length]);
         a.style.setProperty('--g', ((n % 5) - 2) * 1.6 + 'deg');
         a.style.setProperty('--al', alineaciones[(n * 2 + z) % 3]); // cada nombre en un punto distinto de su zona
-        a.addEventListener('click', function () { F.ficha(m, document.getElementById('ficha')); });
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.getElementById('mujeres').scrollIntoView({ behavior: F.reduce ? 'auto' : 'smooth' });
+          F.abrirFicha(tarjetas[m.slug], m); // la ficha se abre en su sitio, dentro de la fila
+        });
         zonas[Math.min(z, zonas.length - 1)].appendChild(a);
         if (++dentro >= reparto[z]) { z++; dentro = 0; }
       });
@@ -507,7 +541,8 @@
 
       var car = document.getElementById('carrusel');
       F.mujeres.forEach(function (m, n) {
-        car.appendChild(F.tarjeta(m, n, {
+        var tarjeta = F.tarjeta(m, n, {
+          alVerFicha: function (mm, li) { F.abrirFicha(li, mm); },
           frente: function (cara, m, fig, n) {
             cara.classList.add('tarot');
             cara.style.setProperty('--v', COLORES_TARJETA[n % COLORES_TARJETA.length]);
@@ -531,9 +566,10 @@
             cara.appendChild(a);
             cara.appendChild(F.el('span', 'nombre-carta', m.cabecera));
           }
-        }));
+        });
+        tarjetas[m.slug] = tarjeta;
+        car.appendChild(tarjeta);
       });
-      F.ficha(F.porSlug('hipatia-de-alejandria') || F.mujeres[0], document.getElementById('ficha'));
     }).catch(F.errorDatos);
   </script>
 </body>

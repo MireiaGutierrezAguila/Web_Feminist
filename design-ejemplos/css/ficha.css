@@ -1,0 +1,65 @@
+/* Ficha de la mujer abierta en su sitio, dentro de la fila (carrusel).
+   Estilo del juego (azul noche, dorado, cartel morado, pergamino) con composición propia.
+   Todas las clases empiezan por «fa-» para no chocar con otras maquetas. Se usa con js/ficha.js. */
+
+/* La fila deja que cada tarjeta tenga su propia altura (la ficha abierta es más alta que las cerradas) */
+.carrusel { align-items: flex-start; }
+.tarjeta { transition: flex-basis .55s cubic-bezier(.2, .8, .2, 1); min-width: 0; }
+.tarjeta.abierta { flex-basis: min(800px, 92vw); }
+.tarjeta.abierta > .tilt, .tarjeta.abierta > .ver-ficha { display: none; }
+@media (prefers-reduced-motion: reduce) { .tarjeta { transition: none; } }
+
+.fa-ficha {
+  --fa-noche: #0b1238; --fa-noche-2: #131f55; --fa-oro: #D9B25F; --fa-oro-claro: #F0D58A; --fa-texto: #eef1ff;
+  --fa-tinta: #6a4524; /* marrón de tinta de pergamino */
+  --fa-fuente-titulos: "Cinzel Decorative", Georgia, serif;
+  --fa-fuente-nombres: "Cinzel", Georgia, serif;
+  --fa-fuente-pergamino: "Quintessential", Georgia, serif;
+  display: none; position: relative; border-radius: 22px; padding: 18px; color: var(--fa-texto); text-align: left;
+  background: radial-gradient(120% 80% at 20% 0%, var(--fa-noche-2), var(--fa-noche) 70%);
+  border: 3px solid var(--fa-oro);
+  box-shadow: 0 0 0 4px #0d0d12, 0 0 0 6px rgba(217, 178, 95, .55), 0 20px 40px rgba(0, 0, 0, .6);
+}
+.tarjeta.abierta .fa-ficha { display: block; animation: fa-aparece .5s .15s both; }
+@keyframes fa-aparece { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .tarjeta.abierta .fa-ficha { animation: none; } }
+.fa-ficha :focus-visible { outline: 3px solid var(--fa-oro-claro); outline-offset: 3px; }
+
+.fa-cerrar { position: absolute; top: 8px; right: 8px; width: 46px; height: 46px; border: 0; padding: 0; cursor: pointer; border-radius: 50%; z-index: 3;
+  background: url("../../public/images/juego/ui/boton-cerrar.png") center / contain no-repeat; }
+.fa-cerrar:hover, .fa-cerrar:focus-visible { background-image: url("../../public/images/juego/ui/boton-cerrar-luz.png"); }
+
+/* Cabecera: objeto relacionado (izquierda) + cartel con el nombre */
+.fa-cab { display: flex; align-items: center; justify-content: center; gap: 6px; margin: 0 auto 14px; padding-right: 44px; }
+/* El tamaño se limita por ancho y por alto, para que objetos anchos (autobús) y altos (astrolabio) pesen parecido */
+.fa-objeto { flex: 0 0 auto; width: auto; height: auto; max-width: clamp(70px, 16vw, 150px); max-height: clamp(58px, 13vw, 118px); transform: rotate(-8deg); filter: drop-shadow(0 6px 8px rgba(0, 0, 0, .55)); }
+.fa-cartel { position: relative; flex: 0 1 auto; width: min(100%, 560px); aspect-ratio: 1432 / 391;
+  background: url("../../public/images/juego/carteles/cartel-nombre-2.png") center / 100% 100% no-repeat; }
+/* El nombre se centra en el panel liso del cartel (a la derecha de la medalla y sobre las cuerdas) */
+.fa-cartel h3 { position: absolute; left: 20%; right: 20%; top: 24%; bottom: 26%; margin: 0; display: flex; align-items: center; justify-content: center;
+  text-align: center; white-space: nowrap; font-family: var(--fa-fuente-titulos); font-weight: 700; font-size: 2.1rem; line-height: 1.1; color: #f3e9fb; text-shadow: 0 2px 4px rgba(0, 0, 0, .6); }
+.fa-cartel h3:focus { outline: none; }
+@media (max-width: 560px) { .fa-cab { padding-right: 0; gap: 0; margin-top: 4px; } .fa-objeto { max-width: 58px; max-height: 58px; margin-right: -4px; } }
+
+.fa-cont { display: grid; gap: 18px; }
+@media (min-width: 720px) { .fa-cont { grid-template-columns: 250px 1fr; gap: 26px; align-items: start; } .fa-ficha { padding: 22px 26px 26px; } }
+
+/* Retrato en marco: sin fondo de color; la mujer va por delante del marco y puede salirse un poco */
+.fa-retrato { margin: 0; }
+.fa-marco { position: relative; aspect-ratio: 967 / 1218; max-width: 270px; margin-inline: auto; }
+.fa-fondo { position: absolute; inset: 7% 11%; }
+.fa-fondo img { position: absolute; left: -20%; bottom: -5%; width: 140%; height: auto; max-width: none; z-index: 2; }
+.fa-borde { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
+.fa-retrato figcaption { margin-top: 10px; text-align: center; }
+.fa-datos { font-weight: 700; color: var(--fa-oro-claro); }
+.fa-fechas { font-family: var(--fa-fuente-nombres); font-weight: 700; letter-spacing: .02em; color: #fff; }
+
+/* Pergamino con el logro */
+.fa-perg { margin: 0 0 18px; padding: 8% 11%; text-align: center; font-family: var(--fa-fuente-pergamino); font-weight: 400; font-size: clamp(1.1rem, 4.2vw, 1.35rem); line-height: 1.35; color: var(--fa-tinta);
+  background: url("../../public/images/juego/carteles/pergamino.png") center / 100% 100% no-repeat; }
+.fa-quien h4 { font-family: var(--fa-fuente-nombres); font-weight: 800; font-size: 1.25rem; margin: 0 0 8px; color: var(--fa-oro-claro); }
+.fa-quien p { margin: 0 0 14px; font-size: 1.02rem; max-width: 62ch; white-space: pre-line; } /* pre-line respeta los saltos de línea del texto de Mireia */
+.fa-fuentes { border-top: 2px dashed rgba(217, 178, 95, .45); padding-top: 10px; font-size: .92rem; color: #cfd6f2; margin: 0; }
+.fa-fuentes strong { color: var(--fa-oro-claro); }
+.fa-pend { background: #E8CE86; color: #3a2a00; padding: 0 6px; border-radius: 4px; }
+.fa-rayas { display: block; width: 100%; height: auto; margin-top: 16px; opacity: .85; }

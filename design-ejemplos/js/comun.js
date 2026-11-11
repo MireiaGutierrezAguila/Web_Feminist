@@ -118,6 +118,7 @@
     var ver = F.el('button', 'ver-ficha', 'Ver ficha');
     ver.type = 'button';
     ver.addEventListener('click', function () {
+      if (cfg.alVerFicha) { cfg.alVerFicha(m, li); return; } // portada D: la ficha se abre en su sitio, dentro de la fila
       F.ficha(m, document.getElementById('ficha'));
       document.getElementById('mujeres').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
     });

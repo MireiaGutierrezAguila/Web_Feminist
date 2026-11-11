@@ -71,3 +71,12 @@ Mireia dio el visto bueno a la lista de ~70 candidatas (todas **sin verificar**;
 - **Pendiente de ronda 2:** más Asia, África y Oceanía; meses con pocas anclas (enero, abril, junio…). Mireia irá añadiendo más.
 - **Permiso WebFetch:** Mireia borró `"WebFetch"` de `ask` en `~/.claude/settings.json` (2026-11-11). Si sigue pidiendo permiso tras reiniciar la sesión, revisar.
 - La web de Género y Metodologías es un repost de muraldegenero.com (2022, sin autoría); es solo pista, no fuente.
+
+## Decisión 2026-11-11: cómo mostrar las entradas sin día
+Mireia elige la **opción 1**: las entradas con `precision` «mes» o «anio» (sección `sinDia` del JSON, p. ej. Maseras 1872) se muestran **solo en los días sin efeméride**, con el formato «Este mes: …». Más adelante se puede pasar a un cuadro aparte «Este mes en la historia» (opción 4). No se inventan días de calendario para ellas. Pendiente: adaptar el script de la portada (`propuesta-d-mezcla.html`) para leer `ancla`, `precision` y `sinDia`.
+
+## Estado a 2026-11-11 (noche)
+- **Tandas de anclas 1 a 7 verificadas y pasadas al JSON:** 63 anclas con día (más alternativas) y 10 en `sinDia`. Quedan sueltas por verificar (si se quieren): Wyoming 1869, Ecuador 1929, Gouges con su día, Ada Lovelace (nacimiento), desfile de Washington 1913, Ransome-Kuti ya está, etc.
+- **Meses rellenados con agentes (días vacíos antes → ahora):** noviembre completo (30 días); **diciembre** rellenado (quedan vacíos 2, 5, 6, 8 y 15), **enero** (queda el 1) y **febrero** (quedan 15, 18 y 29 por año bisiesto). **Pendiente: marzo a octubre** (211 días vacíos en total).
+- Reglas del agente actualizadas con lecciones (`.claude/agents/investigador-efemerides.md`): día confirmado en página abierta, «fuentes básicas» si solo hay una, sin alternativas dudosas.
+- El calendario de la portada ya sabe usar anclas, `sinDia`, `sensible` y `?fecha=`; no está probado en escritorio ni en hover.
