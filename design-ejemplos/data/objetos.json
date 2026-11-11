@@ -1,0 +1,93 @@
+{
+  "aviso": "Objeto relacionado con cada mujer (idea de Mireia, 2026-11-11). Las descripciones (alt) son de redacción propia y están pendientes de revisión de Mireia.",
+  "objetos": {
+    "ada-lovelace": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Esfera cubierta de ceros y unos verdes, el código binario",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    "aglaonice-de-tesalia": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "La Luna, gris y con cráteres",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    "emma-goldman": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Símbolo de la anarquía: una A dentro de un círculo, en tres dimensiones",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    "frida-kahlo": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Pincel de pintar con el mango granate",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    "hedy-lamarr": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Símbolo del Wi-Fi en tres dimensiones, en tonos azules y verdes",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    "hipatia-de-alejandria": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Astrolabio antiguo, un instrumento para observar los astros",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    "julia-hermosilla": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Pistola antigua con la empuñadura marrón",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    "lynn-margulis": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Corte de una célula con su núcleo morado y sus orgánulos",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    "olimpia-de-gouges": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Pergamino con una pluma y un tintero",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    "rosa-parks": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Autobús urbano verde y crema de los años cincuenta",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    "zheng-shi": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Sable de hoja curva con la empuñadura dorada",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    }
+  }
+}

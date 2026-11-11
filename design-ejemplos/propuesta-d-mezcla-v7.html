@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propuesta D · Wonderland con tarot</title>
+  <!-- MAQUETA de diseño: base de la propuesta B (Alicia / Tim Burton) + tarjetas y letra de A + colores,
+       actividades y glosario de C. Versión 2 (la primera está en propuesta-d-mezcla-v1.html).
+       Datos: data/mujeres.json. Código común: js/comun.js y css/comun.css.
+       Los textos de la interfaz están aquí solo para verlos; en la web real irán a /src/i18n.
+       Hay que abrirla desde el servidor local. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@800&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/comun.css">
+  <style>
+    :root {
+      --negro: #101010;
+      --blanco: #F5F5F0;
+      --morado: #6B2D8C;
+      --magenta: #D12E7C;
+      --oro: #C9A24B;
+      --oro-claro: #E8CE86;
+      --rosa: #C2386E;
+      --verdeazul: #127C86;
+      --naranja: #E8762B;
+      --verde: #2E7D4F;
+      --fondo: #101010;
+      --color-texto: #F5F5F0;
+      --acento: #B3266E;
+      --acento-texto: #A02163;
+      --borde: #C9A24B;
+      --foco: #D9B25A; /* dorado en lugar del amarillo anterior */
+      --boton-texto: #F5F5F0;
+      --boton-activo-texto: #101010;
+      --btn-bg: #B3266E; --btn-texto: #fff; --btn-borde: #F5F5F0;
+      --btn2-bg: transparent; --btn2-texto: #F5F5F0; --btn2-borde: #C9A24B;
+      --placa-bg: #F3EEF7; --placa-tinta: #101010; --placa-borde: 3px solid #C9A24B;
+      --fuente-titulos: "Cinzel Decorative", Georgia, serif;
+      --fuente-texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+      --logo: "Almendra Display", Georgia, serif;
+      --rayas-bn: repeating-linear-gradient(135deg, #101010 0 10px, #F5F5F0 10px 20px);
+      --oro-grad: linear-gradient(135deg, #8a6a24, #E8CE86 30%, #C9A24B 55%, #7a5a1c 80%, #E8CE86);
+      --cinta-colores: linear-gradient(90deg, #C2386E 0 25%, #127C86 25% 50%, #E8762B 50% 75%, #6B2D8C 75%);
+      /* Las imágenes en espiral (remolinos, colina, iconos, zarcillos) se generan con JavaScript y se guardan aquí:
+         --rem-1, --rem-2, --rem-3, --remolino, --ico-1 … --ico-5, --esp-blanca, --zarcillo */
+    }
+    .logo { color: var(--blanco); }
+    .fx-btn:hover { background: rgba(201,162,75,.18); }
+    .pendiente { background: var(--oro-claro); color: #3a2a00; }
+
+    /* ---------- Hero: oscuridad, linterna, espirales irregulares y cartel de madera ---------- */
+    .hero { position: relative; overflow: hidden; display: flex; flex-direction: column; touch-action: pan-y; }
+    .espiral { position: absolute; pointer-events: none; z-index: 0; }
+    .e1 { left: 50%; top: 50%; width: min(1000px, 170vw); opacity: .15; transform: translate(-50%, -50%); }
+    .e2 { right: -14%; top: -8%; width: min(520px, 100vw); opacity: .12; }
+    .e3 { left: -16%; top: 30%; width: min(560px, 100vw); opacity: .13; }
+    .e4 { left: 5%; top: 6%; width: min(300px, 60vw); opacity: .14; }
+    /* Giran más rápido que antes (una vuelta cada 40-60 s) para que el giro se note */
+    body.fx .e1 { animation: gira1 60s linear infinite; }
+    body.fx .e2 { animation: gira2 45s linear infinite; }
+    body.fx .e3 { animation: gira3 55s linear infinite; }
+    body.fx .e4 { animation: gira2 40s linear infinite; }
+    @keyframes gira1 { to { transform: translate(-50%, -50%) rotate(360deg); } }
+    @keyframes gira2 { to { transform: rotate(-360deg); } }
+    @keyframes gira3 { to { transform: rotate(360deg); } }
+
+    .hero-grid { position: relative; z-index: 3; order: 1; padding-top: 28px; }
+    .hero h1 { font-size: clamp(1.45rem, 5.4vw, 2.6rem); font-weight: 900; transform: rotate(-1.5deg); transform-origin: left; line-height: 1.55; }
+    .hero h1 span { background: var(--blanco); color: var(--negro); padding: .05em .35em; box-decoration-break: clone; -webkit-box-decoration-break: clone; box-shadow: 6px 6px 0 var(--magenta); }
+    .hero-texto > p { font-size: 1.15rem; max-width: 32rem; margin: 22px 0 0; text-shadow: 0 1px 8px #000; }
+
+    /* Cartel de madera desgastada: poste central y flechas con veta y bordes irregulares */
+    .poste ul { position: relative; list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 12px; width: min(310px, 100%); }
+    .poste ul::before { content: ""; position: absolute; left: calc(50% - 8px); top: -14px; bottom: -18px; width: 16px; border-radius: 3px;
+      background: repeating-linear-gradient(0deg, rgba(0,0,0,.2) 0 3px, transparent 3px 10px), linear-gradient(90deg, #7b7364, #c9c2b3 45%, #6e6657); }
+    .poste li { position: relative; display: flex; justify-content: center; }
+    .madera, .poste a {
+      background:
+        repeating-linear-gradient(90deg, rgba(60,45,20,.11) 0 1px, transparent 1px 7px),
+        repeating-linear-gradient(0deg, rgba(60,45,20,.07) 0 2px, transparent 2px 11px),
+        linear-gradient(#efeadf, #cdc5b3); }
+    .poste a { display: block; text-decoration: none; font-family: var(--fuente-titulos); font-weight: 700; font-size: .92rem; color: #2b2418;
+      padding: 13px 50px 13px 22px; min-height: 50px; transform: rotate(var(--g, 0deg)); border-bottom: 3px solid rgba(90,70,40,.45);
+      clip-path: polygon(0 5%, 3% 0, 60% 4%, calc(100% - 28px) 0, 100% 52%, calc(100% - 30px) 100%, 52% 96%, 2% 100%, 1% 55%); }
+    .poste li:nth-child(even) a { padding: 13px 22px 13px 50px;
+      clip-path: polygon(28px 0, 42% 4%, 97% 0, 100% 46%, 98% 100%, 46% 96%, 30px 100%, 0 50%); }
+    .poste a:hover, .poste a:focus-visible { outline: none; text-decoration: underline;
+      background:
+        repeating-linear-gradient(90deg, rgba(60,45,20,.11) 0 1px, transparent 1px 7px),
+        linear-gradient(#f5e6b4, #d9b866); }
+    .poste li:nth-child(1) { --g: -3deg; } .poste li:nth-child(2) { --g: 2deg; } .poste li:nth-child(3) { --g: -1.5deg; }
+    .poste li:nth-child(4) { --g: 3deg; } .poste li:nth-child(5) { --g: -2deg; }
+    .poste li:nth-child(1) a, .poste li:nth-child(2) a { min-width: 232px; } .poste li:nth-child(3) a { min-width: 216px; }
+    .poste li:nth-child(4) a { min-width: 226px; } .poste li:nth-child(5) a { min-width: 216px; }
+    .pista-luz { margin-top: 18px; font-size: .95rem; color: var(--oro-claro); }
+    body:not(.fx) .pista-luz { display: none; }
+
+    /* Los nombres están en la oscuridad; la luz (pequeña) los descubre de uno en uno. Cada nombre lleva a su ficha */
+    .nombres { position: relative; z-index: 1; order: 2; display: flex; flex-wrap: wrap; gap: 14px 26px; justify-content: center; padding: 14px 10px 190px; }
+    .nombres a { font-family: var(--fuente-titulos); font-weight: 700; font-size: clamp(1rem, 4.2vw, 1.25rem); color: var(--c, #F5F5F0); text-decoration: none; padding: 8px 6px; min-height: 44px; display: inline-flex; align-items: center; transform: rotate(var(--g, 0deg)); }
+    .nombres a:nth-child(3n+1) { font-size: clamp(1.1rem, 4.8vw, 1.5rem); }
+    .nombres a:hover, .nombres a:focus-visible { text-decoration: underline; }
+    .oscuridad { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+      background: radial-gradient(circle 100px at var(--lx, 70%) var(--ly, 50%), rgba(16,16,16,0) 0, rgba(16,16,16,.6) 58%, rgba(16,16,16,.97) 100%); }
+    body:not(.fx) .oscuridad { display: none; }
+
+    /* Franja de discos de espiral que se deslizan, como las nubes de A: grandes detrás, pequeños delante */
+    .remolinos { position: absolute; left: 0; right: 0; bottom: 0; height: 156px; z-index: 4; pointer-events: none; transform: translateY(calc(var(--sy, 0) * -.06px)); }
+    .base { position: absolute; left: 0; right: 0; bottom: 0; height: 40px; background: linear-gradient(#2a1038, #140720); }
+    .fila { position: absolute; left: 0; right: 0; bottom: var(--b); height: var(--d); }
+    .pista-discos { display: flex; width: max-content; height: 100%; animation: corre var(--t) linear infinite; animation-direction: var(--sentido); animation-play-state: paused; }
+    body.fx .pista-discos { animation-play-state: running; }
+    @keyframes corre { to { transform: translateX(-50%); } }
+    .disco { position: relative; flex: none; width: var(--d); height: var(--d); margin-left: calc(var(--d) * -.06); border-radius: 50%; box-shadow: 0 0 0 2px #0b0b0b, 3px 6px 12px rgba(0,0,0,.55); }
+    .disco i { position: absolute; inset: 0; border-radius: 50%; background: var(--img) center / cover; animation: vuelta 70s linear infinite; animation-play-state: paused; }
+    body.fx .disco i { animation-play-state: running; }
+    /* Brillo y sombra fijos encima del disco giratorio, para dar volumen */
+    .disco::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 34% 28%, rgba(255,255,255,.4), transparent 42%), radial-gradient(circle, transparent 52%, rgba(0,0,0,.5) 100%); }
+    @keyframes vuelta { to { transform: rotate(360deg); } }
+
+    /* ---------- Títulos: cinta torcida en morado con la letra de A ---------- */
+    .bloque h2 { display: inline-block; background: var(--morado); color: var(--blanco); padding: .3em .7em; transform: rotate(-1.2deg); box-shadow: 5px 5px 0 var(--blanco); font-size: clamp(1.05rem, 3.9vw, 1.7rem); font-weight: 700; margin-bottom: 22px; line-height: 1.25; }
+    .bloque .intro { margin-top: 4px; }
+
+    .placa { border-radius: 10px; outline: 2px solid rgba(201,162,75,.45); outline-offset: 4px; }
+    .placa h3 { font-weight: 700; font-size: 1.7rem; }
+
+    /* ---------- Cartas de tarot (de A) con colina en remolino y brillo de color ---------- */
+    .cara.tarot { padding: 10px; background: var(--oro-grad); border-radius: 50% 50% 10px 10px / 24% 24% 10px 10px; box-shadow: 0 14px 30px rgba(0,0,0,.6); }
+    .arco { position: relative; flex: 1; overflow: hidden; border-radius: 50% 50% 4px 4px / 24% 24% 4px 4px; border: 2px solid #5a4210;
+      background: radial-gradient(circle at 50% 62%, var(--v, #C2386Eb3), transparent 68%), linear-gradient(#26103a, #101010); }
+    .icono-espiral { position: absolute; top: 7%; left: 50%; transform: translateX(-50%); width: 34px; height: 34px; background: var(--esp-blanca) center/contain no-repeat; }
+    /* Colina desigual: remolino de rayas blancas y negras irregulares, estilo túnel hipnótico */
+    .colina { position: absolute; left: -15%; right: -15%; bottom: -14%; height: 46%; border-radius: 50% 50% 0 0; background: var(--remolino) var(--px, 50%) 38% / 170% auto, #F5F5F0; box-shadow: inset 0 6px 0 rgba(255,255,255,.35), inset 0 -10px 18px rgba(0,0,0,.25); }
+    .nombre-carta { margin-top: 8px; padding: 8px 6px; text-align: center; font-family: var(--fuente-titulos); font-weight: 700; font-size: .85rem; line-height: 1.2; color: var(--blanco); background: #101010; border: 2px solid var(--oro); border-radius: 6px; }
+    .arco.reverso { display: grid; place-content: center; justify-items: center; text-align: center; gap: 14px; padding: 16px; color: var(--blanco); font-size: .95rem; }
+    .arco.reverso .icono-espiral { position: static; transform: none; width: 54px; height: 54px; }
+
+    /* ---------- Actividades (iconos en espiral) y glosario ---------- */
+    .actividades li { border-radius: 10px; outline: 2px solid rgba(201,162,75,.45); outline-offset: 2px; }
+    .actividades li::before { content: ""; width: 34px; height: 34px; flex: none; background: var(--ico) center/contain no-repeat; }
+    .actividades li:nth-child(5n+1) { --ico: var(--ico-1); } .actividades li:nth-child(5n+2) { --ico: var(--ico-2); }
+    .actividades li:nth-child(5n+3) { --ico: var(--ico-3); } .actividades li:nth-child(5n+4) { --ico: var(--ico-4); } .actividades li:nth-child(5n) { --ico: var(--ico-5); }
+    .glosario li { border-width: 4px; font-size: .95rem; }
+    .glosario li:nth-child(4n+1) { border-color: var(--rosa); } .glosario li:nth-child(4n+2) { border-color: var(--verdeazul); }
+    .glosario li:nth-child(4n+3) { border-color: var(--naranja); } .glosario li:nth-child(4n) { border-color: #8a4fc2; }
+
+    /* ---------- Marco del juego: dibujo de marco de Mireia (img/marco-juego.png) con la captura sobre el pergamino ---------- */
+    #juego { overflow-x: clip; }
+    /* El dibujo mide 1500x1500 pero el marco ocupa solo la parte de arriba: se recorta a 1460x1130 (desde x=20, y=90) */
+    .marco-png { position: relative; overflow: hidden; aspect-ratio: 1420 / 925; filter: drop-shadow(0 14px 22px rgba(0,0,0,.6)); }
+    .marco-png .dibujo { position: absolute; left: -2.82%; top: -29.19%; width: 105.63%; height: auto; max-width: none; }
+    /* La captura va en el centro del pergamino, lejos de las volutas de las esquinas */
+
+    .codigo h2 { display: block; background: none; box-shadow: none; transform: none; padding: 0; margin: 0; font-size: clamp(1.1rem, 4vw, 1.6rem); }
+    footer { background: #000; border-top: 10px solid transparent; border-image: var(--cinta-colores) 10; }
+    .firma { font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.05rem; color: var(--oro-claro); }
+
+    @media (max-width: 799px) {
+      .oscuridad { background: radial-gradient(circle 82px at var(--lx, 50%) var(--ly, 50%), rgba(16,16,16,0) 0, rgba(16,16,16,.6) 58%, rgba(16,16,16,.97) 100%); }
+    }
+    /* ---------- Calendario de la portada: fecha de hoy y dos frases ---------- */
+    /* Hoja inclinada con anillas y páginas apiladas detrás (inspirado en el dibujo de Mireia, dibujado desde cero) */
+    .calendario { position: relative; order: 1; z-index: 3; margin: 34px 60px 30px 30px; max-width: 290px; color: #101010; transform: rotate(5deg); transform-origin: 50% 0; }
+    .cal-pila i { position: absolute; inset: 0; border: 3px solid #101010; border-radius: 8px 12px 10px 14px / 12px 8px 14px 10px; box-shadow: 0 8px 18px rgba(0,0,0,.5); }
+    /* Las páginas de atrás cuelgan de las mismas anillas: giran desde el borde de arriba y se abren por abajo */
+    /* Se recorta lo que sobresale por arriba: las páginas cuelgan de las anillas, no pueden asomar por encima */
+    .cal-pila { position: absolute; inset: 0; clip-path: inset(0 -80px -80px -80px); }
+    .cal-pila i { transform-origin: 50% 0; }
+    .cal-pila i:nth-child(1) { background: #D8CBE6; transform: rotate(-9deg) translateY(4px); }
+    .cal-pila i:nth-child(2) { background: #E6DCEF; transform: rotate(-6deg) translateY(3px); }
+    .cal-pila i:nth-child(3) { background: #EFE8F4; transform: rotate(-3deg) translateY(2px); }
+    /* Casi cuadrada: la proporción es el mínimo y crece si el texto del día es largo */
+    .cal-hoja { position: relative; z-index: 1; display: flex; flex-direction: column; aspect-ratio: 1 / .95; background: #F3EEF7; border: 3px solid #101010; border-radius: 8px 12px 10px 14px / 12px 8px 14px 10px; outline: 2px solid rgba(201,162,75,.55); outline-offset: -9px; }
+    /* Hoja y anillas forman un solo bloque, así se levantan juntas y las anillas no se descuadran */
+    .cal-frente { position: relative; transform-origin: 50% 0; transition: transform .35s ease; }
+    body.fx .calendario:hover .cal-frente { transform: translateY(-7px) rotate(1.5deg); }
+    /* Las anillas van DETRÁS de la hoja: solo se ve la parte que asoma por arriba, como si la atravesaran por los agujeros */
+    .cal-anillas { position: absolute; z-index: 0; top: -24px; left: 0; right: 0; display: flex; justify-content: space-evenly; pointer-events: none; }
+    .cal-anillas span { position: relative; width: 20px; height: 44px; border: 5px solid #F0D58A; border-radius: 50%; transform: rotate(8deg); box-shadow: 0 0 0 2px #101010, inset 0 0 0 2px #101010; }
+    .cal-cabecera { background: var(--morado); color: #fff; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.5rem; padding: 22px 18px 8px; display: flex; justify-content: space-between; gap: 10px; border-bottom: 3px solid #101010; border-radius: 5px 9px 0 0; }
+    .cal-dia { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding: 8px 16px 0; }
+    .cal-num { font-family: "Cinzel", Georgia, serif; font-weight: 800; font-size: 4.2rem; line-height: 1; color: #101010; }
+    .cal-semana { font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.3rem; }
+    .cal-frases { list-style: none; margin: 0; padding: 10px 22px 22px; display: grid; gap: 12px; flex: 1; align-content: center; }
+    .cal-frases li { border-left: 5px solid var(--magenta); padding: 2px 0 2px 12px; font-size: .98rem; line-height: 1.45; }
+    .cal-frases cite { display: block; margin-top: 4px; font-style: normal; font-size: .82rem; color: #4b3a58; }
+    .cal-frases .cal-vacio { border-left-color: #8a7aa0; color: #4b3a58; font-style: italic; }
+    .cal-frases .pendiente { background: #E8CE86; color: #3a2a00; padding: 0 6px; border-radius: 4px; }
+    @media (min-width: 800px) {
+      .hero { display: block; min-height: 640px; }
+      .hero-grid { padding-block: 56px 200px; }
+      .hero-texto { max-width: 34rem; }
+      .calendario { position: absolute; margin: 0; right: max(16px, calc((100% - 1100px) / 2)); top: 70px; width: min(290px, 36%); max-width: none; }
+      .nombres { position: absolute; z-index: 1; right: max(16px, calc((100% - 1100px) / 2)); top: 440px; bottom: 190px; width: min(46%, 520px); padding: 0; align-content: center; justify-content: flex-end; gap: 22px 34px; }
+      .nombres a { font-size: clamp(1rem, 1.5vw, 1.2rem); }
+      .nombres a:nth-child(3n+1) { font-size: clamp(1.1rem, 1.9vw, 1.5rem); }
+    }
+    /* Pantalla ancha: los nombres se esparcen por cinco zonas libres alrededor del texto y el calendario (porcentajes de la portada) */
+    @media (min-width: 1500px) {
+      .calendario { right: auto; left: 74%; top: 12%; width: 19%; }
+      .nombres { inset: 0; width: auto; padding: 0; pointer-events: none; }
+      .nombres .zona { position: absolute; display: flex; flex-direction: column; justify-content: space-evenly; }
+      .nombres .zona a { pointer-events: auto; align-self: var(--al, center); }
+      .z1 { left: 1.3%; top: 6%; width: 20.6%; height: 78%; }
+      .z2 { left: 44.2%; top: 6%; width: 11%; height: 27%; }
+      .z3 { left: 37.6%; top: 46%; width: 15.2%; height: 31%; }
+      .z4 { left: 55.2%; top: 6.5%; width: 16.9%; height: 75%; }
+      .z5 { left: 74.2%; top: 52%; width: 24.4%; height: 32%; }
+      .nombres a { font-size: clamp(.95rem, 1.05vw, 1.2rem); white-space: nowrap; }
+      .nombres a:nth-child(3n+1) { font-size: clamp(1.05rem, 1.2vw, 1.4rem); }
+    }
+    @media (max-width: 1499px) { .nombres .zona { display: contents; } }
+    @media (prefers-reduced-motion: reduce) { body.fx .e1, body.fx .e2, body.fx .e3, body.fx .e4, body.fx .pista-discos, body.fx .disco i { animation: none; } }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header class="top">
+      <div class="top-row">
+        <a class="logo" href="#">
+          <svg class="venus" viewBox="0 0 22 30" aria-hidden="true"><circle cx="11" cy="9" r="7" fill="none" stroke="#F5F5F0" stroke-width="3"/><path d="M11 16v13M5 23h12" stroke="#F5F5F0" stroke-width="3" stroke-linecap="round"/></svg>
+          Feminist
+        </a>
+        <div class="controles">
+          <button type="button" class="fx-btn" id="fxBtn">Quitar efectos</button>
+          <div class="idiomas" role="group" aria-label="Idioma">
+            <button type="button" aria-pressed="true">ES</button>
+            <button type="button" aria-pressed="false">CA</button>
+            <button type="button" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <section class="hero" id="hero">
+    <svg class="espiral e1" id="esp1" viewBox="-400 -400 800 800" aria-hidden="true"></svg>
+    <svg class="espiral e2" id="esp2" viewBox="-400 -400 800 800" aria-hidden="true"></svg>
+    <svg class="espiral e3" id="esp3" viewBox="-400 -400 800 800" aria-hidden="true"></svg>
+    <svg class="espiral e4" id="esp4" viewBox="-400 -400 800 800" aria-hidden="true"></svg>
+    <div class="wrap hero-grid">
+      <div class="hero-texto">
+        <h1><span>Mujeres que cambiaron la historia</span></h1>
+        <p>Sigue las flechas o busca con la luz a las mujeres que aparecen en el juego Feminist. En la oscuridad hay mucho por descubrir.</p>
+        <nav class="poste" aria-label="Secciones">
+          <ul>
+            <li><a href="#mujeres">Mujeres</a></li>
+            <li><a href="#juego">El juego</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+            <li><a href="#glosario">Glosario</a></li>
+            <li><a href="#informatica">Quién lo hizo</a></li>
+          </ul>
+        </nav>
+        <p class="pista-luz">Mueve el ratón o arrastra el dedo para descubrir los nombres uno a uno.</p>
+      </div>
+    </div>
+    <aside class="calendario" aria-label="Calendario de hoy">
+      <div class="cal-pila" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="cal-frente">
+        <div class="cal-hoja">
+          <div class="cal-cabecera"><span id="calMes">Mes</span><span id="calAnio"></span></div>
+          <time class="cal-dia" id="calFecha"><span class="cal-semana" id="calSemana">Día</span><span class="cal-num" id="calNum">0</span></time>
+          <ul class="cal-frases" id="calFrases"></ul>
+        </div>
+        <div class="cal-anillas" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+    </aside>
+    <nav class="nombres" id="nombres" aria-label="Mujeres de la historia"></nav>
+    <div class="oscuridad" aria-hidden="true"></div>
+    <div class="remolinos" id="remolinos" aria-hidden="true"><div class="base"></div></div>
+  </section>
+
+  <main>
+    <div class="wrap">
+
+      <section class="bloque" id="mujeres">
+        <h2>Una mujer cada día</h2>
+        <p class="intro">Ejemplo de maqueta: así se vería la mujer del día. Elige otra del carrusel con «Ver ficha» y su ficha aparece aquí.</p>
+        <div id="ficha" aria-live="polite"></div>
+
+        <h2 style="margin-top:56px">Mujeres de la historia</h2>
+        <p class="pista">Toca una carta para girarla y ver la foto real. Con efectos, se inclina siguiendo el dedo o el ratón.</p>
+        <ul class="carrusel" id="carrusel" tabindex="0" aria-label="Carrusel de mujeres"></ul>
+      </section>
+
+      <section class="bloque" id="juego">
+        <div class="juego-grid">
+          <div class="marco-png">
+            <img class="dibujo" src="img/marco-juego-montado.png" alt="Captura del juego dentro de un marco de zarcillos a rayas: la protagonista en una sala de papel pintado morado, con espejos y suelo de ajedrez" width="1500" height="1500" loading="lazy">
+          </div>
+          <div>
+            <h2>El juego Feminist</h2>
+            <p>Un videojuego reivindicativo y feminista, cargado de acción, humor y lucha, en el que las grandes mujeres de la historia te apoyan en tu camino.</p>
+            <div class="botones">
+              <a class="btn" href="#">Ver el juego</a>
+              <a class="btn alt" href="#">Google Play (próximamente)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bloque" id="actividades">
+        <h2>Actividades</h2>
+        <p class="intro">Cada actividad completada te da un sello, que se guarda en tu navegador.</p>
+        <ul class="actividades">
+          <li>Memory</li><li>Línea del tiempo</li><li>La mujer en el mundo</li><li>¿De quién es la frase?</li><li>Pancarta 8M</li><li>Inventos de mujeres</li>
+        </ul>
+      </section>
+
+      <section class="bloque" id="glosario">
+        <h2>Glosario feminista</h2>
+        <p class="intro">Palabras que conviene conocer.</p>
+        <ul class="glosario"><li>sororidad</li><li>techo de cristal</li><li>brecha salarial</li><li>micromachismo</li></ul>
+      </section>
+
+      <section class="bloque" id="informatica">
+        <div class="codigo" id="lluvia">
+          <div class="contenido informatica">
+            <h2>Hecha por una mujer en la informática</h2>
+            <p>Esta web y el juego los ha hecho una mujer, en un sector donde las mujeres son una clara minoría. Mireia pasó de la educación a la informática, un trabajo que en su momento ni se había planteado.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="fuentes">
+    <div class="wrap">
+      <p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p>
+      <a href="#fuentes">Fuentes de información</a>
+    </div>
+  </footer>
+
+  <script src="js/comun.js"></script>
+  <script>
+    F.iniciar();
+    var hero = document.getElementById('hero');
+    F.luz(hero, hero);
+    // Los remolinos suben un poco al hacer scroll (parallax suave, solo con efectos)
+    window.addEventListener('scroll', function () {
+      if (F.efectosOn()) hero.style.setProperty('--sy', window.scrollY);
+    }, { passive: true });
+    F.codigo(document.getElementById('lluvia'), 18);
+
+    /* ================= Dibujos en espiral generados con código (SVG) ================= */
+    var NS = 'http://www.w3.org/2000/svg';
+    var raiz = document.documentElement.style;
+    function uri(svg) { return 'url("data:image/svg+xml,' + encodeURIComponent(svg) + '")'; }
+    function doc(w, h, vb, contenido) { return "<svg xmlns='http://www.w3.org/2000/svg' width='" + w + "' height='" + h + "' viewBox='" + vb + "'>" + contenido + '</svg>'; }
+
+    // Espiral regular que va de un radio R0 a otro R1 (hacia dentro o hacia fuera); dir 1 = sentido horario
+    function trazo(cx, cy, R0, R1, vueltas, dir, ang0) {
+      var total = vueltas * 2 * Math.PI, n = Math.ceil(total / 0.12), pts = [];
+      for (var k = 0; k <= n; k++) {
+        var f = k / n, a = ang0 + dir * f * total, r = R0 + (R1 - R0) * f;
+        pts.push((cx + r * Math.cos(a)).toFixed(1) + ' ' + (cy + r * Math.sin(a)).toFixed(1));
+      }
+      return 'M' + pts.join(' L');
+    }
+    // Espiral irregular, "dibujada a mano": el radio y el ángulo tiemblan un poco
+    function irregular(vueltas, escala, semilla) {
+      var pts = [];
+      for (var t = 0; t <= vueltas * 2 * Math.PI; t += 0.12) {
+        var r = escala * t * (1 + 0.11 * Math.sin(t * 1.3 + semilla) + 0.07 * Math.sin(t * 3.1 + 2 * semilla));
+        var a = t + 0.06 * Math.sin(t * 2.2 + semilla);
+        pts.push((r * Math.cos(a)).toFixed(1) + ' ' + (r * Math.sin(a)).toFixed(1));
+      }
+      return 'M' + pts.join(' L');
+    }
+    // Espirales grandes de fondo de la portada (tres, una a la izquierda)
+    function fondo(id, vueltas, escala, semilla) {
+      var p = document.createElementNS(NS, 'path');
+      p.setAttribute('d', irregular(vueltas, escala, semilla));
+      p.setAttribute('fill', 'none'); p.setAttribute('stroke', '#F5F5F0');
+      p.setAttribute('stroke-width', '15'); p.setAttribute('stroke-linecap', 'round'); p.setAttribute('stroke-linejoin', 'round');
+      document.getElementById(id).appendChild(p);
+    }
+    fondo('esp1', 11, 4.4, 1.7);
+    fondo('esp2', 8, 6.2, 4.1);
+    fondo('esp3', 9, 5.2, 2.9);
+    fondo('esp4', 7, 6.6, 5.3);
+
+    // Calendario: la fecha sale del reloj del navegador; la efeméride, de data/calendario.json (clave "MM-DD")
+    (function () {
+      var datos = null;
+      var mayus = function (t) { return t.charAt(0).toUpperCase() + t.slice(1); };
+      var dos = function (n) { return ('0' + n).slice(-2); };
+      function pintar(hoy) {
+        document.getElementById('calNum').textContent = hoy.getDate();
+        document.getElementById('calSemana').textContent = mayus(hoy.toLocaleDateString('es-ES', { weekday: 'long' }));
+        document.getElementById('calMes').textContent = mayus(hoy.toLocaleDateString('es-ES', { month: 'long' }));
+        document.getElementById('calAnio').textContent = hoy.getFullYear();
+        document.getElementById('calFecha').setAttribute('datetime', hoy.getFullYear() + '-' + dos(hoy.getMonth() + 1) + '-' + dos(hoy.getDate()));
+        var ul = document.getElementById('calFrases');
+        ul.textContent = '';
+        if (!datos) { return; }
+        var lista = datos.dias[dos(hoy.getMonth() + 1) + '-' + dos(hoy.getDate())] || [];
+        /* Solo se enseñan entradas verificadas; la principal va primero. La fuente no se muestra aquí: está en los datos */
+        var verificadas = lista.filter(function (e) { return e.estado === 'verificada'; });
+        var elegida = verificadas.filter(function (e) { return e.principal; })[0] || verificadas[0];
+        var li = F.el('li');
+        if (elegida) {
+          /* El año va en negrita (se crea con textContent, sin HTML, por seguridad) */
+          var anio = F.el('strong');
+          anio.textContent = elegida.anio + ':';
+          li.appendChild(anio);
+          li.appendChild(document.createTextNode(' ' + elegida.texto.es));
+        } else {
+          /* Texto de interfaz (no es un dato): irá en el archivo de idiomas */
+          li.className = 'cal-vacio';
+          li.appendChild(document.createTextNode('Hoy no tenemos efeméride. ¡Vuelve mañana!'));
+        }
+        ul.appendChild(li);
+      }
+      window.pintarCalendario = pintar; /* solo para probar otras fechas en la maqueta */
+      pintar(new Date());
+      fetch('data/calendario.json').then(function (r) { return r.json(); }).then(function (d) {
+        datos = d;
+        pintar(new Date());
+      }).catch(function () { /* sin datos: el calendario enseña solo la fecha */ });
+    })();
+
+    // Disco de espiral cerrada (montaje de Mireia): cuerpo oscuro, cinta clara en espiral y borde de cuerda retorcida
+    function disco(cuerpo, cinta, cuerdaA, cuerdaB) {
+      var rim = '', N = 40, paso = 2 * Math.PI / N, torsion = 0.16;
+      for (var k = 0; k < N; k++) {
+        var a = k * paso;
+        var p = [
+          [41 * Math.cos(a), 41 * Math.sin(a)],
+          [50 * Math.cos(a + torsion), 50 * Math.sin(a + torsion)],
+          [50 * Math.cos(a + paso + torsion), 50 * Math.sin(a + paso + torsion)],
+          [41 * Math.cos(a + paso), 41 * Math.sin(a + paso)]
+        ];
+        rim += "<path d='M" + p.map(function (q) { return q[0].toFixed(1) + ' ' + q[1].toFixed(1); }).join(' L') + "Z' fill='" + (k % 2 ? cuerdaA : cuerdaB) + "'/>";
+      }
+      var espiral = trazo(0, 0, 35, 4, 2.5, 1, 0);
+      var contenido = "<defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='" + cinta + "'/><stop offset='1' stop-color='#8d8b86'/></linearGradient></defs>" +
+        "<circle r='50' fill='" + cuerpo + "'/>" + rim + "<circle r='41' fill='" + cuerpo + "'/>" +
+        "<path d='" + espiral + "' fill='none' stroke='#0d0a10' stroke-opacity='.55' stroke-width='9.5' stroke-linecap='round' stroke-linejoin='round'/>" +
+        "<path d='" + espiral + "' fill='none' stroke='url(#g)' stroke-width='6.5' stroke-linecap='round' stroke-linejoin='round'/>" +
+        "<circle r='3' fill='#0d0a10'/>";
+      return uri(doc(100, 100, '-50 -50 100 100', contenido));
+    }
+    // Dos filas de discos que se deslizan: grandes detrás (ciruela) y pequeños delante (azul noche), con colores apagados.
+    // Cada fila tiene el doble de discos de los necesarios: al desplazarla la mitad, el bucle no se nota.
+    function remolinos() {
+      var cont = document.getElementById('remolinos');
+      var ancho = Math.min(Math.max(window.innerWidth, window.screen.width || 0, 1200), 2600);
+      [
+        { d: 112, b: 34, cuerpo: '#2b1a33', cinta: '#d9d6cf', a: '#bcb8b0', b2: '#3a2742', t: 190, sentido: 'normal' },
+        { d: 66, b: 6, cuerpo: '#1b2447', cinta: '#d2d6db', a: '#aeb4bf', b2: '#26336a', t: 110, sentido: 'reverse' }
+      ].forEach(function (f, k) {
+        var fila = F.el('div', 'fila');
+        fila.style.setProperty('--d', f.d + 'px');
+        fila.style.setProperty('--b', f.b + 'px');
+        fila.style.setProperty('--img', disco(f.cuerpo, f.cinta, f.a, f.b2));
+        fila.style.setProperty('--t', f.t + 's');
+        fila.style.setProperty('--sentido', f.sentido);
+        var pista = F.el('div', 'pista-discos');
+        var n = Math.ceil(ancho / (f.d * 0.94)) + 1;
+        for (var i = 0; i < n * 2; i++) {
+          var d = F.el('span', 'disco'), giro = F.el('i');
+          giro.style.animationDelay = -((i * 3.7 + k * 5) % 24) + 's'; // cada disco gira desfasado
+          d.appendChild(giro); pista.appendChild(d);
+        }
+        fila.appendChild(pista); cont.appendChild(fila);
+      });
+    }
+    remolinos();
+
+    // Remolino de rayas desiguales para la colina de las cartas (blanco y negro, como el túnel hipnótico)
+    raiz.setProperty('--remolino', uri(doc(400, 400, '-200 -200 400 400',
+      "<rect x='-200' y='-200' width='400' height='400' fill='#F5F5F0'/><path d='" + irregular(7, 4.6, 3.3) + "' fill='none' stroke='#101010' stroke-width='17' stroke-linecap='round' stroke-linejoin='round'/>")));
+
+    // Iconos de actividades: espirales de colores (en lugar de círculos concéntricos)
+    ['#F27AA6', '#4FD0DB', '#FFA95C', '#C39BEE', '#7FD79E'].forEach(function (c, i) {
+      raiz.setProperty('--ico-' + (i + 1), uri(doc(34, 34, '-17 -17 34 34',
+        "<circle r='16.4' fill='#101010'/><path d='" + trazo(0, 0, 12.5, 1.6, 2.3, 1, 0) + "' fill='none' stroke='" + c + "' stroke-width='3.2' stroke-linecap='round'/>")));
+    });
+    // Espiral blanca para las cartas
+    raiz.setProperty('--esp-blanca', uri(doc(40, 40, '-20 -20 40 40',
+      "<path d='" + trazo(0, 0, 17, 2, 2.4, 1, 0) + "' fill='none' stroke='#F5F5F0' stroke-width='3' stroke-linecap='round'/>")));
+
+    var COLORES_TARJETA = ['#C2386Eb3', '#127C86b3', '#E8762Bb3', '#8a4fc2b3', '#2E7D4Fb3'];
+    var COLORES_NOMBRE = ['#F27AA6', '#4FD0DB', '#FFA95C', '#C39BEE', '#7FD79E', '#F5F5F0'];
+
+    F.cargar().then(function () {
+      // Nombres escondidos en la oscuridad: cada uno lleva a su ficha
+      var nombres = document.getElementById('nombres');
+      // Cinco zonas (las rectángulos rosas de Mireia): 3 + 2 + 2 + 2 + 2 nombres. En pantallas estrechas las zonas "desaparecen" (display: contents)
+      var reparto = [3, 2, 2, 2, 2], zonas = [], alineaciones = ['flex-start', 'center', 'flex-end'];
+      reparto.forEach(function (_, z) { var d = F.el('div', 'zona z' + (z + 1)); nombres.appendChild(d); zonas.push(d); });
+      var z = 0, dentro = 0;
+      F.mujeres.forEach(function (m, n) {
+        var a = F.el('a', '', m.nombre);
+        a.href = '#mujeres';
+        a.style.setProperty('--c', COLORES_NOMBRE[n % COLORES_NOMBRE.length]);
+        a.style.setProperty('--g', ((n % 5) - 2) * 1.6 + 'deg');
+        a.style.setProperty('--al', alineaciones[(n * 2 + z) % 3]); // cada nombre en un punto distinto de su zona
+        a.addEventListener('click', function () { F.ficha(m, document.getElementById('ficha')); });
+        zonas[Math.min(z, zonas.length - 1)].appendChild(a);
+        if (++dentro >= reparto[z]) { z++; dentro = 0; }
+      });
+      // La luz empieza sobre los nombres, para que se vea qué hace antes de mover el ratón
+      var r = nombres.getBoundingClientRect(), h = hero.getBoundingClientRect();
+      hero.style.setProperty('--lx', (r.left - h.left + r.width / 2) + 'px');
+      hero.style.setProperty('--ly', (r.top - h.top + Math.min(r.height / 2, 160)) + 'px');
+
+      var car = document.getElementById('carrusel');
+      F.mujeres.forEach(function (m, n) {
+        car.appendChild(F.tarjeta(m, n, {
+          frente: function (cara, m, fig, n) {
+            cara.classList.add('tarot');
+            cara.style.setProperty('--v', COLORES_TARJETA[n % COLORES_TARJETA.length]);
+            var arco = F.el('span', 'arco');
+            arco.appendChild(F.el('span', 'icono-espiral'));
+            var colina = F.el('span', 'colina');
+            colina.style.setProperty('--px', (25 + (n * 17) % 50) + '%'); // cada colina enseña otra parte del remolino
+            arco.appendChild(colina);
+            arco.appendChild(fig);
+            cara.appendChild(arco);
+            cara.appendChild(F.el('span', 'nombre-carta', m.nombre));
+          },
+          dorso: function (cara, m, n) {
+            cara.classList.add('tarot');
+            cara.style.setProperty('--v', COLORES_TARJETA[n % COLORES_TARJETA.length]);
+            var a = F.el('span', 'arco reverso');
+            a.appendChild(F.el('span', 'icono-espiral'));
+            a.appendChild(document.createTextNode('[FOTO REAL PENDIENTE]'));
+            a.appendChild(document.createElement('br'));
+            a.appendChild(document.createTextNode('autor y licencia por indicar'));
+            cara.appendChild(a);
+            cara.appendChild(F.el('span', 'nombre-carta', m.cabecera));
+          }
+        }));
+      });
+      F.ficha(F.porSlug('hipatia-de-alejandria') || F.mujeres[0], document.getElementById('ficha'));
+    }).catch(F.errorDatos);
+  </script>
+</body>
+</html>
