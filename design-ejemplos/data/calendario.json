@@ -1,7 +1,263 @@
 {
-  "fuente": "[FUENTE PENDIENTE]",
-  "frases": [
-    { "texto": "[FRASE PENDIENTE]", "fuente": "[FUENTE PENDIENTE]" },
-    { "texto": "[FRASE PENDIENTE]", "fuente": "[FUENTE PENDIENTE]" }
-  ]
+  "version": 1,
+  "aviso": "Textos en español redactados con palabras propias, pendientes de revisión de Mireia. ca y en: traducciones pendientes. El calendario solo enseña las entradas con estado 'verificada'. Más datos y dudas en docs/efemerides-noviembre-borrador.md",
+  "dias": {
+    "11-01": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1848, "pais": "EE. UU.", "mujer": null, "tema": "educación y salud", "region": "América del Norte",
+        "texto": { "es": "Comienzan en Boston las clases del New England Female Medical College, un centro pionero de medicina solo para mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: New England Female Medical College", "url": "https://en.wikipedia.org/wiki/New_England_Female_Medical_College" },
+          { "nombre": "When and Where in Boston", "url": "https://whenandwhereinboston.org/entry/new-england-female-medical-college-first-is-established" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "Se dice «pionero» y no «el primero»: Wikipedia señala que lo de primero está disputado con otro colegio de Pensilvania. Otra fuente (WGBH) da el 9 nov para otro momento."
+      }
+    ],
+    "11-04": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1936, "pais": "España", "mujer": null, "tema": "política", "region": "Europa",
+        "texto": { "es": "Federica Montseny es nombrada ministra de Sanidad, la primera mujer con cargo ministerial en España.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: Federica Montseny", "url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/montseny-federica-1905-1994" },
+          { "nombre": "Wikipedia: List of female ministers of Spain", "url": "https://en.wikipedia.org/wiki/List_of_female_ministers_of_Spain" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "No afirmar «primera de Europa occidental»: hubo ministras antes en Dinamarca y Finlandia."
+      }
+    ],
+    "11-05": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1872, "pais": "EE. UU.", "mujer": null, "tema": "voto y derechos políticos", "region": "América del Norte",
+        "texto": { "es": "Susan B. Anthony vota en Rochester, Nueva York, cuando a las mujeres no se les permitía, y semanas después es arrestada.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "National Women's History Museum: Susan B. Anthony", "url": "https://www.womenshistory.org/education-resources/biographies/susan-b-anthony" },
+          { "nombre": "EBSCO Research Starters: Anthony tried voting", "url": "https://ebsco.com/research-starters/history/anthony-tried-voting" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "Voto el 5 nov 1872; arresto el 18 nov. Citas obtenidas con lector automático: abrir los enlaces para confirmar."
+      }
+    ],
+    "11-06": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1990, "pais": "Arabia Saudí", "mujer": null, "tema": "derechos y libertades", "region": "Asia",
+        "texto": { "es": "Cuarenta y siete mujeres conducen sus coches por Riad desafiando la prohibición de conducir a las mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "NBC News", "url": "https://www.nbcnews.com/id/wbna27713062" },
+          { "nombre": "Wikipedia: Women to drive movement", "url": "https://en.wikipedia.org/wiki/Women_to_drive_movement" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "Gulf News repite el mismo texto que NBC: no cuenta como fuente independiente. La cifra (47) y el número de coches varían según la fuente."
+      }
+    ],
+    "11-07": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1916, "pais": "EE. UU.", "mujer": null, "tema": "política", "region": "América del Norte",
+        "texto": { "es": "Jeannette Rankin, de Montana, es elegida y se convierte en la primera mujer en el Congreso de Estados Unidos.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "National Archives (EE. UU.): First Congresswoman Jeannette Rankin", "url": "https://visit.archives.gov/whats-on/explore-exhibits/first-congresswoman-jeannette-rankin" },
+          { "nombre": "History.com", "url": "https://www.history.com/this-day-in-history/november-7/jeannette-rankin-becomes-first-u-s-congresswoman" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "Una fuente (HistoryNet) da el 6 nov; las leídas dan el 7."
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1867, "pais": "Polonia", "mujer": null, "tema": "ciencia y tecnología", "region": "Europa",
+        "texto": { "es": "Nace Marie Curie, científica. Es la única persona con premios Nobel en dos ciencias distintas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Biography.com: Marie Curie", "url": "https://www.biography.com/scientist/marie-curie" },
+          { "nombre": "Physics Today (American Institute of Physics): Marie Skłodowska-Curie", "url": "https://physicstoday.aip.org/news/marie-skłodowska-curie" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "La web oficial del Nobel dio error 403 en todos los intentos."
+      }
+    ],
+    "11-12": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1918, "pais": "Alemania", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa",
+        "texto": { "es": "El gobierno provisional alemán proclama el sufragio universal, con voto igual para mujeres y hombres desde los 20 años.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Deutsches Historisches Museum: Equal rights, equal duties", "url": "https://www.dhm.de/journal/en/post/equal-rights-equal-duties-womens-suffrage-in-germany" },
+          { "nombre": "US Holocaust Memorial Museum: Women's suffrage is declared in Germany", "url": "https://encyclopedia.ushmm.org/content/en/timeline-event/holocaust/before-1933/womens-suffrage-is-declared-in-germany" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "Es el anuncio; la ley electoral que lo concreta es del 30 nov. La edad de 20 años solo aparece en la fuente del DHM."
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1815, "pais": "EE. UU.", "mujer": null, "tema": "movimientos sociales", "region": "América del Norte",
+        "texto": { "es": "Nace Elizabeth Cady Stanton, activista. Cofundó la primera convención por los derechos de las mujeres, en Seneca Falls.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "National Women's History Museum: Elizabeth Cady Stanton", "url": "https://www.womenshistory.org/education-resources/biographies/elizabeth-cady-stanton" },
+          { "nombre": "Biography.com: Elizabeth Cady Stanton", "url": "https://www.biography.com/activist/elizabeth-cady-stanton" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": ""
+      }
+    ],
+    "11-14": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1917, "pais": "EE. UU.", "mujer": null, "tema": "justicia y violencia", "region": "América del Norte",
+        "texto": { "es": "Sufragistas presas en el penal de Occoquan son maltratadas por los guardias en la llamada «Noche del terror».", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Ms. Magazine: Today in feminist history", "url": "https://msmagazine.com/2020/11/14/today-in-feminist-history-a-night-of-terror-in-the-infamous-occoquan-workhouse-november-14-1917/" },
+          { "nombre": "National Park Service: Night of Terror", "url": "https://home.nps.gov/articles/000/suffrage60seconds-night-of-terror.htm" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "Tema delicado: sin detalles duros. Algunas fuentes externas dan el 15 nov; las leídas dan el 14."
+      }
+    ],
+    "11-15": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1887, "pais": "EE. UU.", "mujer": null, "tema": "arte y literatura", "region": "América del Norte",
+        "texto": { "es": "Nace Georgia O'Keeffe, pintora. Pionera del modernismo estadounidense.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Biography.com: Georgia O'Keeffe", "url": "https://www.biography.com/artist/georgia-okeeffe" },
+          { "nombre": "Georgia O'Keeffe Museum: Biography", "url": "https://access-ok.okeeffemuseum.org/biography/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "Comprobar que access-ok.okeeffemuseum.org es el dominio oficial del museo. Otra fuente: Spencer Museum of Art (https://spencerart.ku.edu/art/collections-online/artist/18907)."
+      }
+    ],
+    "11-19": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1933, "pais": "España", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa",
+        "texto": { "es": "Las mujeres españolas votan por primera vez en unas elecciones generales.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: 1933 Spanish general election", "url": "https://en.wikipedia.org/wiki/1933_Spanish_general_election" },
+          { "nombre": "Euro Weekly News", "url": "https://euroweeklynews.com/2018/11/19/female-suffrage-spain-marks-85-years-since-women-first-voted-in-elections-today/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "Sustituir la segunda fuente por una oficial (Congreso de los Diputados, Museo Reina Sofía)."
+      }
+    ],
+    "11-20": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1910, "pais": "EE. UU.", "mujer": null, "tema": "justicia y derechos civiles", "region": "América del Norte",
+        "texto": { "es": "Nace Pauli Murray, jurista. Su trabajo legal influyó en los derechos civiles y en la igualdad de género.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "National Women's History Museum: Pauli Murray", "url": "https://www.womenshistory.org/node/1375" },
+          { "nombre": "Maryland State Archives: Pauli Murray", "url": "https://www.msa.maryland.gov/megafile/msa/speccol/sc3500/sc3520/013500/013577/html/13577bio.html" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "Las fuentes varían en los pronombres que usan para Murray: revisar antes de publicar."
+      }
+    ],
+    "11-21": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1918, "pais": "Reino Unido", "mujer": null, "tema": "política", "region": "Europa",
+        "texto": { "es": "Una ley permite que las mujeres sean elegidas diputadas en la Cámara de los Comunes del Reino Unido.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "legislation.gov.uk: Parliament (Qualification of Women) Act 1918", "url": "https://www.legislation.gov.uk/ukpga/Geo5/8-9/47/data.xht" },
+          { "nombre": "Wikipedia: Parliament (Qualification of Women) Act 1918", "url": "https://en.wikipedia.org/wiki/Parliament_(Qualification_of_Women)_Act_1918" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "Fuente primaria oficial. Sanción real el 21 nov 1918."
+      }
+    ],
+    "11-22": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1819, "pais": "Reino Unido", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Nace Mary Ann Evans, escritora que publicó sus novelas con el seudónimo George Eliot.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: Evans, Mary Anne", "url": "https://www.encyclopedia.com/women/dictionaries-thesauruses-pictures-and-press-releases/evans-mary-anne-1819-1880" },
+          { "nombre": "Poets.org: George Eliot", "url": "https://poets.org/poet/george-eliot" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "El texto no explica el motivo del seudónimo porque no se ha confirmado en las fuentes leídas."
+      }
+    ],
+    "11-24": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1810, "pais": "Reino Unido", "mujer": null, "tema": "justicia y colonialismo", "region": "África",
+        "texto": { "es": "Llega a los tribunales de Londres el caso de Sarah Baartman, mujer khoikhoi exhibida como atracción. Un caso de gran simbolismo en la historia del racismo colonial.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "descripcion": { "es": "Sarah Baartman, mujer khoikhoi de Sudáfrica, fue exhibida como atracción en Londres. En noviembre de 1810, activistas contra la esclavitud llevaron el caso a un tribunal. Ella dijo estar allí por voluntad propia y el caso se cerró, aunque hoy se duda de que pudiera hablar con libertad. Sus restos volvieron a Sudáfrica y fueron enterrados el 9 de agosto de 2002.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Royal Collection Trust: Sarah Baartman (1789-1815)", "url": "https://col.rct.uk/collection/661166/sarah-baartman-1789-1815" },
+          { "nombre": "Scully y Crais, Journal of British Studies (Cambridge)", "url": "https://www.cambridge.org/core/product/73FB7C2017BE1A35CBCCF458443AD1A4/core-reader" },
+          { "nombre": "South African History Online: Sara 'Saartjie' Baartman (restos y entierro, 2002)", "url": "https://sahistory.org.za/people/sara-saartjie-baartman" },
+          { "nombre": "Universidad de Ciudad del Cabo (repatriación y entierro)", "url": "https://news.uct.ac.za/mondaypaper/?id=9923" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11",
+        "nota": "Propuesta de Mireia. El 24 nov 1810 está confirmado por dos fuentes abiertas como el día en que el caso llega al tribunal (Court of King's Bench); NO es el inicio del proceso (el expediente va del 21 al 28 nov). La frase final («gran simbolismo en la historia del racismo colonial») es una valoración de Mireia, suavizada a propósito; no tiene fuente abierta propia (candidatas aparecidas en búsqueda, sin abrir: UWC, UCT; el presidente Mbeki la calificó de emblema del abuso colonial en su entierro). Resultado del caso: una fuente dice «desestimado» y otra «declarada libre». Nombrarla Sarah Baartman; no usar el apodo colonial. Tema sensible: sin detalles gráficos; la ficha larga, en una capa «saber más». Idea: otra entrada el 9 ago (entierro, Día de la Mujer en Sudáfrica)."
+      }
+    ],
+    "11-26": [
+      {
+        "principal": true, "tipo": "muerte", "anio": 1883, "pais": "EE. UU.", "mujer": null, "tema": "movimientos sociales", "region": "América del Norte",
+        "texto": { "es": "Muere Sojourner Truth, abolicionista y defensora de los derechos de las mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "National Park Service: Sojourner Truth", "url": "https://home.nps.gov/people/sojourner-truth.htm" },
+          { "nombre": "Encyclopedia.com: Sojourner Truth", "url": "https://www.encyclopedia.com/people/social-sciences-and-law/social-reformers/sojourner-truth" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": ""
+      }
+    ],
+    "11-28": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1893, "pais": "Nueva Zelanda", "mujer": null, "tema": "voto y derechos políticos", "region": "Oceanía",
+        "texto": { "es": "Las mujeres de Nueva Zelanda votan por primera vez en unas elecciones generales.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Universidad de Auckland: Women in NZ, country firsts", "url": "https://auckland.ac.nz/en/news/2018/11/28/women-in-nz-country-firsts.html" },
+          { "nombre": "DigitalNZ: story", "url": "https://digitalnz.org/stories/619d9b57f7cc42002b0b5c1f" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "NO usar nzhistory.net.nz (dominio comprometido, ahora muestra una web de casinos). La web oficial es nzhistory.govt.nz, pero no se pudo abrir. Elecciones de los distritos maoríes: 20 dic."
+      },
+      {
+        "principal": false, "tipo": "derecho", "anio": 1918, "pais": "Polonia", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa",
+        "texto": { "es": "Polonia firma el decreto electoral que reconoce a las mujeres el derecho a votar y a presentarse a las elecciones.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Polish Freedom: Decree on the electoral system", "url": "https://polishfreedom.pl/en/decree-on-the-electoral-system-for-the-constitutional-sejm-excerpt/" },
+          { "nombre": "Instytut Pileckiego: Doubly free", "url": "https://instytutpileckiego.pl/en/instytut/kalendarz/podwojnie-wolne-prawa-polityczne-kobiet-1918-wystawa-online" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "El 7 nov de 1918 el gobierno de Lublin ya había concedido esos derechos: es un acto distinto."
+      }
+    ],
+    "11-29": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 2019, "pais": "Sudán", "mujer": null, "tema": "derechos y libertades", "region": "África",
+        "texto": { "es": "Sudán anuncia la derogación de la ley de orden público que controlaba cómo se vestían y se movían las mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Africanews", "url": "https://www.africanews.com/2019/11/29/sudan-disbands-ex-ruling-party-abolishes-public-order-act/" },
+          { "nombre": "The Irish Times", "url": "https://www.irishtimes.com/news/world/africa/sudan-repeals-public-order-law-restricting-women-s-behaviour-1.4099134" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-10",
+        "nota": "Ninguna fuente leída da el día literal; una dice 29 y otras agencias 28 de noviembre. Irish Times habla de un plan anunciado. Activistas señalan que quedan otras normas penales. Decidir fecha y verbo antes de publicar."
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1832, "pais": "EE. UU.", "mujer": null, "tema": "arte y literatura", "region": "América del Norte",
+        "texto": { "es": "Nace Louisa May Alcott, escritora. Es la autora de «Mujercitas».", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "National Women's History Museum: Louisa May Alcott", "url": "https://www.womenshistory.org/education-resources/biographies/louisa-may-alcott" },
+          { "nombre": "American Battlefield Trust: Louisa May Alcott", "url": "https://www.battlefields.org/learn/biographies/louisa-may-alcott" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "Evitar ushistory.org: tiene un error en la fecha de publicación de la novela."
+      }
+    ],
+    "11-30": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1918, "pais": "Alemania", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa",
+        "texto": { "es": "La ley electoral alemana reconoce a las mujeres el derecho a votar y a ser elegidas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Deutscher Bundestag: Frauenwahlrecht 1918", "url": "https://www.bundestag.de/dokumente/textarchiv/1918-11-30-frauenwahlrecht-580156" },
+          { "nombre": "Library of Congress: 100 years of women's suffrage in Germany", "url": "https://blogs.loc.gov/law/2018/11/100-years-of-womens-suffrage-in-germany/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "Es la ley (Reichswahlgesetz). El anuncio previo es del 12 nov. Una página de la Fundación Adenauer escribe 1919 por error."
+      },
+      {
+        "principal": false, "tipo": "muerte", "anio": 1980, "pais": "Noruega", "mujer": null, "tema": "religión y sociedad", "region": "Europa",
+        "texto": { "es": "Muere Ingrid Bjerkås, teóloga. En 1961 fue la primera mujer ordenada sacerdote en la Iglesia de Noruega.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: Ingrid Bjerkås", "url": "https://en.wikipedia.org/wiki/Ingrid_Bjerk%C3%A5s" },
+          { "nombre": "Store norske leksikon: Ingrid Bjerkås", "url": "https://snl.no/Ingrid_Bjerk%C3%A5s" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-10",
+        "nota": "Ordenación: 19 mar 1961."
+      }
+    ]
+  }
 }

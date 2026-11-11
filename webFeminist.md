@@ -122,6 +122,10 @@
 - **"¿Qué quieres ser?":** para niñas y niños, mujeres reales en profesiones donde hay pocas (programadora, piloto, ingeniera, bombera…).
 - **Sección para docentes y familias:** guías didácticas por edad, actividades imprimibles y propuestas para el 8M, el 25N o el 11F.
 - **Itinerarios por edad:** recorridos recomendados según la edad de quien visita la web.
+- **"¿En qué año?" (idea de Mireia, 2026-11-11):** se muestra un hecho histórico (por ejemplo, "se aprueba el voto de las mujeres") con **dos tarjetas de países** y, en cada una, un hueco para escribir el año. Al pulsar "Resultado" se ve el año real y **por cuántos años te has equivocado en cada país**. Objetivo: buscar datos que impacten y hagan pensar ("¡allí se votó en 1918 y aquí en…!"). Herramienta prevista: JS / componente propio, que funcione con el dedo y teclado numérico en móvil.
+  - **Datos:** se reutilizan los de las efemérides del calendario (hitos y derechos con país, año y fuentes) para tener una sola base de datos verificada, también útil para la línea del tiempo.
+  - **A definir:** qué fecha cuenta (ley aprobada, primer voto real o voto universal), puntuación o insignia, niveles por edad, y si se muestra la fuente tras el resultado (sí: todo dato lleva fuente visible).
+  - **Cuidado:** elegir parejas de países con datos contrastados en dos fuentes, y redactar sin juzgar a ningún país; que sorprenda sin humillar.
 
 ### Descartado
 - **Mural colaborativo de frases:** descartado porque requiere moderación continua. Alternativa posible sin moderación: elegir entre frases predefinidas y mostrar cuántas personas apoyan cada una.
