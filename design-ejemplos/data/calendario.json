@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "aviso": "Textos en español redactados con palabras propias, pendientes de revisión de Mireia. ca y en: traducciones pendientes. El calendario solo enseña las entradas con estado 'verificada'. Más datos y dudas en docs/efemerides-noviembre-borrador.md",
+  "aviso": "Textos en español redactados con palabras propias, pendientes de revisión de Mireia. ca y en: traducciones pendientes. El calendario solo enseña las entradas con estado 'verificada'. calidadFuentes 'basica' = dos páginas abiertas pero sin fuente institucional: repasar antes de publicar. Más datos y dudas en docs/efemerides-noviembre-borrador.md",
   "dias": {
     "11-01": [
       {
@@ -12,6 +12,30 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-10",
         "nota": "Se dice «pionero» y no «el primero»: Wikipedia señala que lo de primero está disputado con otro colegio de Pensilvania. Otra fuente (WGBH) da el 9 nov para otro momento."
+      }
+    ],
+    "11-02": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1920, "pais": "EE. UU.", "mujer": null, "tema": "voto y derechos políticos", "region": "América del Norte",
+        "texto": { "es": "Millones de mujeres votan por primera vez en unas elecciones presidenciales de EE. UU., tras la 19.ª Enmienda.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Library of Congress: Women have the vote", "url": "https://blogs.loc.gov/headlinesandheroes/2020/11/women-have-the-vote/" },
+          { "nombre": "National Park Service: The Nineteenth Amendment", "url": "https://www.nps.gov/articles/the-nineteenth-amendment.htm" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11",
+        "nota": "El «en todo el país» del borrador original no lo respalda ninguna fuente abierta: se quitó. Cuenta para la cuota de voto de EE. UU."
+      }
+    ],
+    "11-03": [
+      {
+        "principal": true, "tipo": "muerte", "anio": 1793, "pais": "Francia", "mujer": "olimpia-de-gouges", "tema": "movimientos sociales", "region": "Europa",
+        "texto": { "es": "Muere guillotinada en París Olympe de Gouges, escritora. Autora de la Declaración de los derechos de la mujer y la ciudadana.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Fordham University (Internet History Sourcebooks): Declaration of the Rights of Woman", "url": "https://sourcebooks.fordham.edu/mod/1791degouge1.asp" },
+          { "nombre": "Encyclopaedia Universalis: Olympe de Gouges", "url": "https://www.universalis.fr/encyclopedie/gouges-marie-gouze-dite-olympe-de/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11",
+        "nota": "«Dramaturga» no se confirma en ninguna página abierta: las dos fuentes dicen «femme de lettres» (escritora), por eso el texto dice «escritora». Es una de las 11 fichas. Tono informativo (ejecución), sin detalles."
       }
     ],
     "11-04": [
@@ -72,6 +96,64 @@
         "nota": "La web oficial del Nobel dio error 403 en todos los intentos."
       }
     ],
+    "11-08": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1910, "pais": "EE. UU.", "mujer": null, "tema": "voto y derechos políticos", "region": "América del Norte",
+        "texto": { "es": "Los votantes del estado de Washington aprueban el voto femenino en su estado.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Cámara de Representantes de Washington: Resolución 2020-4656", "url": "https://lawfilesext.leg.wa.gov/Biennium/2019-20/Htm/Bills/House%20Resolutions/4656-Womens'%20right%20to%20vote.htm" },
+          { "nombre": "HistoryLink: Washington Amendment 6 (1910)", "url": "https://www.historylink.org/file/5213" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11",
+        "nota": "Votó solo el electorado masculino (lo dicen ambas fuentes): 52.299 a favor y 29.676 en contra según la resolución. Hito de voto de EE. UU."
+      }
+    ],
+    "11-09": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1909, "pais": "Reino Unido", "mujer": null, "tema": "movimientos sociales", "region": "Europa",
+        "texto": { "es": "Alice Paul y Amelia Brown interrumpen un banquete oficial en el Guildhall de Londres para reclamar el voto femenino.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "LSE History: LSE and the suffragettes, Alice Paul", "url": "https://blogs.lse.ac.uk/lsehistory/2018/07/18/lse-suffragettes-alice-paul" },
+          { "nombre": "Universidad de Johannesburgo, Cultural Studies Review", "url": "https://journals.uj.ac.za/index.php/csr/article/view/2542" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11",
+        "nota": "La segunda fuente da el arresto el 9 nov, no el banquete en sí. El 10 nov es la comparecencia en el tribunal (Women's History Network): no hay contradicción."
+      }
+    ],
+    "11-10": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1887, "pais": "Rumanía", "mujer": null, "tema": "ciencia y tecnología", "region": "Europa",
+        "texto": { "es": "Nace Elisa Leonida Zamfirescu, ingeniera. Fue una de las primeras mujeres ingenieras de Europa y se formó en Berlín.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: Elisa Leonida Zamfirescu", "url": "https://en.wikipedia.org/wiki/Elisa_Leonida_Zamfirescu" },
+          { "nombre": "The News Minute: Google Doodle recuerda a Elisa Leonida Zamfirescu", "url": "https://www.thenewsminute.com/news/google-doodle-remembers-engineer-elisa-leonida-zamfirescu-91321" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
+        "nota": "Fuentes básicas (Wikipedia y un medio): buscar una institucional. No decir «primera del mundo»: Alice Perry se graduó antes (1906). Europeana (europeana.eu/exhibitions/pioneers/elisa-leonida-zamfirescu) solo da el año."
+      }
+    ],
+    "11-11": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1926, "pais": "Italia", "mujer": null, "tema": "deporte", "region": "Europa",
+        "texto": { "es": "Nace María Teresa de Filippis, piloto. Fue la primera mujer en tomar la salida de un Gran Premio del Mundial de F1, en 1958.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Autosport: Maria Teresa de Filippis, obituary", "url": "https://www.autosport.com/f1/news/maria-teresa-de-filippis-obituary-and-f1-career-appreciation-4995060/4995060/" },
+          { "nombre": "F1 Forgotten Drivers: Maria Teresa de Filippis", "url": "https://f1forgottendrivers.com/drivers/maria-teresa-de-filippis/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
+        "nota": "Fuentes básicas (medios). Decir «tomar la salida», no «primera en puntuar»."
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1873, "pais": "México", "mujer": null, "tema": "movimientos sociales", "region": "América Latina",
+        "texto": { "es": "Nace Carmen Serdán, revolucionaria. Ayudó a llevar armas para el levantamiento maderista de Puebla en 1910.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Banco de México: Carmen Serdán, biografía", "url": "https://www.banxico.org.mx/banknotes-and-coins/carmen-serdan--biografia--b.html" },
+          { "nombre": "Infobae México: Quiénes fueron las hermanas Serdán", "url": "https://www.infobae.com/mexico/2024/11/14/quienes-fueron-las-hermanas-serdan-mujeres-homenajeadas-en-la-mananera-de-hoy-14-de-noviembre/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11",
+        "nota": "Un documento del ayuntamiento de Puebla (no abierto) duda entre 1873 y 1875."
+      }
+    ],
     "11-12": [
       {
         "principal": true, "tipo": "derecho", "anio": 1918, "pais": "Alemania", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa",
@@ -92,6 +174,28 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-10",
         "nota": ""
+      }
+    ],
+    "11-13": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1920, "pais": "México", "mujer": null, "tema": "arte y literatura", "region": "América Latina",
+        "texto": { "es": "Nace Guillermina Bravo, coreógrafa. En 1948 fundó el Ballet Nacional de México.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Universidad de São Paulo (Portal Latinoamericano): Guillermina Bravo", "url": "https://sites.usp.br/portalatinoamericano/es/espanol-bravo-guillermina" },
+          { "nombre": "Diario La Región: falleció la coreógrafa Guillermina Bravo", "url": "https://diariolaregion.net/2013/11/07/fallecio-la-coreografa-mexicana-guillermina-bravo-los-92-anos" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
+        "nota": "Una fuente universitaria y un medio. No usar «primera con el Premio Nacional de Ciencias y Artes» (una sola fuente). Ya hay otra mexicana el 11."
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1715, "pais": "Alemania", "mujer": null, "tema": "salud y medicina", "region": "Europa",
+        "texto": { "es": "Nace Dorothea Erxleben, médica. En 1754 fue la primera mujer de Alemania en doctorarse en medicina, en Halle.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: Erxleben, Dorothea (1715-1762)", "url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/erxleben-dorothea-1715-1762" },
+          { "nombre": "Wikipedia: Dorothea Erxleben", "url": "https://en.wikipedia.org/wiki/Dorothea_Erxleben" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11",
+        "nota": "La Universidad de Magdeburgo (bfg.ovgu.de/en/-p-222) confirma el doctorado del 12 jun 1754, sin día de nacimiento."
       }
     ],
     "11-14": [
@@ -118,6 +222,52 @@
         "nota": "Comprobar que access-ok.okeeffemuseum.org es el dominio oficial del museo. Otra fuente: Spencer Museum of Art (https://spencerart.ku.edu/art/collections-online/artist/18907)."
       }
     ],
+    "11-16": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1988, "pais": "Pakistán", "mujer": null, "tema": "política", "region": "Asia",
+        "texto": { "es": "Elecciones en Pakistán: el partido de Benazir Bhutto logra más escaños y ella será primera ministra.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Immigration and Refugee Board de Canadá (ecoi.net): Pakistán, elecciones de 1988", "url": "https://www.ecoi.net/en/document/190842" },
+          { "nombre": "Women's Parliamentary Caucus de Pakistán", "url": "https://wpc.org.pk/?p=795" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11",
+        "nota": "Ella juró el cargo el 2 dic 1988 (Encyclopedia.com). Su partido no tuvo mayoría y gobernó en coalición: por eso el texto no dice «gana». La segunda fuente confirma la fecha pero no el resultado."
+      }
+    ],
+    "11-17": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1866, "pais": "Argentina", "mujer": null, "tema": "arte y literatura", "region": "América Latina",
+        "texto": { "es": "Nace Lola Mora, escultora argentina. Hizo la Fuente de las Nereidas, inaugurada en Buenos Aires en 1903.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Infobae: La fascinante vida de Lola Mora", "url": "https://www.infobae.com/2015/11/21/1771241-la-fascinante-vida-lola-mora-la-primera-escultura-latinoamericana/" },
+          { "nombre": "Wikipedia: Lola Mora", "url": "https://en.wikipedia.org/wiki/Lola_Mora" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
+        "nota": "Fuentes básicas (medio y Wikipedia). Sin lugar de nacimiento: se disputan Tucumán y Salta."
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1889, "pais": "Argentina", "mujer": null, "tema": "trabajo y economía", "region": "América Latina",
+        "texto": { "es": "Nace Carolina Muzzilli, obrera y periodista. Investigó y denunció las condiciones laborales de mujeres y niños en Argentina.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Billiken: Carolina Muzzilli, pionera de los derechos laborales", "url": "https://billiken.lat/interesante/carolina-muzilli-pionera-argentina-en-la-lucha-por-los-derechos-laborales-de-mujeres-y-ninos/" },
+          { "nombre": "Wikipedia: Carolina Muzzilli", "url": "https://en.wikipedia.org/wiki/Carolina_Muzzilli" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
+        "nota": "Fuentes básicas (divulgación y Wikipedia). Cubre el tema de trabajo, que faltaba."
+      }
+    ],
+    "11-18": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1910, "pais": "Reino Unido", "mujer": null, "tema": "movimientos sociales", "region": "Europa",
+        "texto": { "es": "Unas 300 sufragistas marchan al Parlamento británico y chocan con la policía en el «Viernes Negro».", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "London Museum: How Black Friday changed the suffragette struggle", "url": "https://www.londonmuseum.org.uk/collections/london-stories/how-black-friday-changed-suffragette-struggle/" },
+          { "nombre": "Bodleian Libraries (Universidad de Oxford): 100 years ago today", "url": "https://blogs.bodleian.ox.ac.uk/archivesandmanuscripts/2010/11/18/100-years-ago-today-300-suffragettes-clash-with-police-over-conciliation-bill/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11",
+        "nota": "No usar la página del LSE para este día: tiene una errata («28 nov»)."
+      }
+    ],
     "11-19": [
       {
         "principal": true, "tipo": "derecho", "anio": 1933, "pais": "España", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa",
@@ -128,6 +278,16 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-10",
         "nota": "Sustituir la segunda fuente por una oficial (Congreso de los Diputados, Museo Reina Sofía)."
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1957, "pais": "Israel", "mujer": null, "tema": "arte y literatura", "region": "Asia",
+        "texto": { "es": "Nace Ofra Haza, cantante israelí. Sus canciones yemeníes y su éxito de 1988 la hicieron conocida en todo el mundo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Jewish Virtual Library: Ofra Haza", "url": "https://www.jewishvirtuallibrary.org/ofra-haza" },
+          { "nombre": "Encyclopedia.com: Haza, Ofra (1957-2001)", "url": "https://www.encyclopedia.com/women/dictionaries-thesauruses-pictures-and-press-releases/haza-ofra-1957-2001" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
+        "nota": "Fuentes básicas. Murió en el año 2000 (el título de la página dice 2001)."
       }
     ],
     "11-20": [
@@ -166,6 +326,28 @@
         "nota": "El texto no explica el motivo del seudónimo porque no se ha confirmado en las fuentes leídas."
       }
     ],
+    "11-23": [
+      {
+        "principal": true, "tipo": "muerte", "anio": 2023, "pais": "India", "mujer": null, "tema": "justicia y violencia", "region": "Asia",
+        "texto": { "es": "Muere Fathima Beevi, jueza. Fue la primera mujer magistrada del Tribunal Supremo de la India.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: Fathima Beevi", "url": "https://en.wikipedia.org/wiki/Fathima_Beevi" },
+          { "nombre": "South First: Obituary, Justice (retd) Fathima Beevi", "url": "https://thesouthfirst.com/news/obituary-justice-retd-fathima-beevi-the-woman-who-opened-the-door-to-the-supreme-court" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
+        "nota": "Fuentes básicas. Sin año de nombramiento (1986 o 1989 según la fuente). Tono informativo."
+      },
+      {
+        "principal": false, "tipo": "muerte", "anio": 1896, "pais": "Japón", "mujer": null, "tema": "arte y literatura", "region": "Asia",
+        "texto": { "es": "Muere Ichiyō Higuchi, escritora, a los 24 años. Está considerada pionera de la narrativa japonesa moderna.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Nippon.com: Higuchi Ichiyō, pionera de la literatura japonesa moderna", "url": "https://www.nippon.com/en/japan-topics/b07226/higuchi-ichiyo-a-pioneer-of-modern-japanese-literature.html" },
+          { "nombre": "Wikipedia: Ichiyō Higuchi", "url": "https://en.wikipedia.org/wiki/Ichiy%C5%8D_Higuchi" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11",
+        "nota": "Se redacta «pionera» y no «primera»: nippon.com dice «primera escritora profesional» pero esa afirmación no tiene fuente en Wikipedia."
+      }
+    ],
     "11-24": [
       {
         "principal": true, "tipo": "hito", "anio": 1810, "pais": "Reino Unido", "mujer": null, "tema": "justicia y colonialismo", "region": "África",
@@ -181,6 +363,18 @@
         "nota": "Propuesta de Mireia. El 24 nov 1810 está confirmado por dos fuentes abiertas como el día en que el caso llega al tribunal (Court of King's Bench); NO es el inicio del proceso (el expediente va del 21 al 28 nov). La frase final («gran simbolismo en la historia del racismo colonial») es una valoración de Mireia, suavizada a propósito; no tiene fuente abierta propia (candidatas aparecidas en búsqueda, sin abrir: UWC, UCT; el presidente Mbeki la calificó de emblema del abuso colonial en su entierro). Resultado del caso: una fuente dice «desestimado» y otra «declarada libre». Nombrarla Sarah Baartman; no usar el apodo colonial. Tema sensible: sin detalles gráficos; la ficha larga, en una capa «saber más». Idea: otra entrada el 9 ago (entierro, Día de la Mujer en Sudáfrica)."
       }
     ],
+    "11-25": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1960, "pais": "República Dominicana", "mujer": null, "tema": "justicia y violencia", "region": "América Latina",
+        "texto": { "es": "Mueren asesinadas las hermanas Mirabal, activistas dominicanas (1960). La ONU fija este día contra la violencia hacia las mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "ONU Mujeres (DAW): Día Internacional de la Eliminación de la Violencia contra la Mujer", "url": "https://www.un.org/womenwatch/daw/vaw/v-inter-day.htm" },
+          { "nombre": "UNESCO: Día Internacional de la Eliminación de la Violencia contra la Mujer", "url": "https://www.unesco.org/en/days/elimination-violence-against-women" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11",
+        "nota": "Resolución de la ONU 54/134, adoptada el 17 dic 1999 (static.un.org/womenwatch/daw/news/vawd.html). Tema delicado: tono informativo, sin detalles duros."
+      }
+    ],
     "11-26": [
       {
         "principal": true, "tipo": "muerte", "anio": 1883, "pais": "EE. UU.", "mujer": null, "tema": "movimientos sociales", "region": "América del Norte",
@@ -191,6 +385,28 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-10",
         "nota": ""
+      }
+    ],
+    "11-27": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1911, "pais": "Filipinas", "mujer": null, "tema": "salud y medicina", "region": "Asia",
+        "texto": { "es": "Nace Fe del Mundo, pediatra filipina. Fundó el primer hospital pediátrico de Filipinas, en 1957.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: Fe del Mundo", "url": "https://en.wikipedia.org/wiki/Fe_del_Mundo" },
+          { "nombre": "Google Doodles: Fe del Mundo's 107th birthday", "url": "https://doodles.google/doodle/fe-del-mundos-107th-birthday/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
+        "nota": "Fuentes básicas. No usar «primera en Harvard» (un archivero de Harvard dice que es anecdótico)."
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1970, "pais": "Corea del Sur", "mujer": null, "tema": "arte y literatura", "region": "Asia", "viva": true,
+        "texto": { "es": "Nace Han Kang, escritora surcoreana. En 2024 recibió el Nobel de Literatura.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Lex (Den Store Danske): Han Kang", "url": "https://lex.dk/Han_Kang" },
+          { "nombre": "Encyclopaedia Universalis: Han Kang", "url": "https://www.universalis.fr/encyclopedie/han-kang-1970/" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-11",
+        "nota": "Mujer viva: solo Wikipedia confirma que vive (revisado el 2026-11-11). Falta un segundo comprobante antes de mostrarla."
       }
     ],
     "11-28": [
