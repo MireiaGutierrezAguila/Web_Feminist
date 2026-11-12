@@ -62,4 +62,36 @@
 .fa-fuentes { border-top: 2px dashed rgba(217, 178, 95, .45); padding-top: 10px; font-size: .92rem; color: #cfd6f2; margin: 0; }
 .fa-fuentes strong { color: var(--fa-oro-claro); }
 .fa-pend { background: #E8CE86; color: #3a2a00; padding: 0 6px; border-radius: 4px; }
+/* Pista para girar las cartas: la espiral gira despacio (más rápido al pasar el ratón), sale el texto «Girar»
+   y, hasta que se gira la primera carta, una mano «toca» la espiral de la primera carta visible.
+   Las animaciones solo van con efectos activados (body.fx) y sin prefers-reduced-motion. */
+@keyframes fa-espiral { from { transform: translateX(-50%) rotate(0deg); } to { transform: translateX(-50%) rotate(360deg); } }
+.fx .tarjeta .cara.frente .icono-espiral { animation: fa-espiral 16s linear infinite; }
+.fx .tarjeta .giro:hover .cara.frente .icono-espiral, .fx .tarjeta .giro:focus-visible .cara.frente .icono-espiral { animation-duration: 3.5s; }
+.pista-giro { position: absolute; top: calc(7% + 42px); left: 50%; transform: translateX(-50%); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--fa-oro-claro, #F0D58A); text-shadow: 0 1px 3px #000, 0 0 6px #000; opacity: 0; transition: opacity .25s; pointer-events: none; }
+.giro:hover .pista-giro, .giro:focus-visible .pista-giro { opacity: 1; }
+.onda-pista { position: absolute; top: 7%; left: calc(50% - 17px); width: 34px; height: 34px; border-radius: 50%; border: 2px solid #F5F5F0; opacity: 0; pointer-events: none; }
+.mano-pista { position: absolute; top: calc(7% + 17px); left: calc(50% - 12px); width: 30px; z-index: 3; pointer-events: none; transform-origin: 40% 0; filter: drop-shadow(0 2px 3px rgba(0, 0, 0, .6)); }
+.mano-pista svg { display: block; width: 100%; height: auto; }
+@keyframes fa-mano { 0%, 12% { transform: translate(16px, 20px); opacity: 0; } 30% { transform: translate(0, 0) scale(1); opacity: 1; } 42% { transform: translate(0, 0) scale(.88); }
+  52% { transform: translate(0, 0) scale(1); } 85% { transform: translate(0, 0); opacity: 1; } 100% { transform: translate(16px, 20px); opacity: 0; } }
+@keyframes fa-onda { 0%, 41% { transform: scale(.6); opacity: 0; } 43% { opacity: .85; } 80%, 100% { transform: scale(2.4); opacity: 0; } }
+.fx .mano-pista { animation: fa-mano 3.6s ease-in-out infinite; }
+.fx .onda-pista { animation: fa-onda 3.6s ease-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .fx .tarjeta .cara.frente .icono-espiral, .fx .mano-pista, .fx .onda-pista { animation: none; }
+}
+
+/* Crédito de la imagen del dorso (autor y licencia, con enlaces) */
+.fa-credito { font-size: .85rem; color: #cfd6f2; margin: 10px 0 0; }
+.fa-credito strong { color: var(--fa-oro-claro); }
+.fa-credito a { color: var(--fa-oro-claro); }
+
+/* Dorso de la tarjeta con foto: la imagen llena el arco y el crédito corto va en una franja abajo */
+.arco.con-foto { background: #101010; }
+.arco.con-foto .foto-dorso { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+.arco.con-foto .foto-credito { position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 8px 7px; text-align: center; font-size: .7rem; line-height: 1.25; color: #fff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, .82) 55%); }
+
 .fa-rayas { display: block; width: 100%; height: auto; margin-top: 16px; opacity: .85; }

@@ -847,6 +847,15 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Relleno 2026-11-11. SENSIBLE (esclavitud; tono informativo, sin detalles). Una sola fuente abierta. Fuentes básicas."
+      },
+      {
+        "principal": false, "tipo": "premio", "anio": 2010, "pais": "EE. UU.", "mujer": null, "tema": "arte y literatura", "region": "América del Norte", "viva": true,
+        "texto": { "es": "Kathryn Bigelow gana el Óscar a la mejor dirección por «En tierra hostil».", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Academia de Hollywood: ceremonia de los Óscar de 2010", "url": "https://www.oscars.org/oscars/ceremonies/2010" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-12", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-12. Alternativa del 7 mar. MUJER VIVA: premio con tono informativo. La web de la Academia confirma el día y el premio, pero NO se ha leído en ella «primera mujer»: no usar esa frase hasta tener segunda fuente. Fuentes básicas."
       }
     ],
     "03-08": [
@@ -937,6 +946,15 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Relleno 2026-11-11. Año 1907 según la fuente oficial (ella a veces dio 1911). Fuentes básicas."
+      },
+      {
+        "principal": false, "tipo": "premio", "anio": 2013, "pais": "EE. UU. / Israel", "mujer": null, "tema": "ciencia y tecnología", "region": "América del Norte", "viva": true,
+        "texto": { "es": "Shafi Goldwasser recibe, junto a Silvio Micali, el Premio Turing (edición de 2012) por su trabajo en criptografía.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "MIT News: Goldwasser y Micali ganan el Premio Turing", "url": "https://news.mit.edu/2013/goldwasser-and-micali-win-turing-award-0313" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-12", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-12. Alternativa del 13 mar. MUJER VIVA: premio con tono informativo. El 13 mar 2013 es el anuncio (la ceremonia fue en junio). La nota de prensa de ACM da 403 (no abierta). Fuentes básicas."
       }
     ],
     "03-16": [
@@ -958,6 +976,28 @@
         ],
         "estado": "parcial", "comprobado": "2026-11-11",
         "nota": "Relleno 2026-11-11. Alternativa del 16 mar. Algunas fuentes dan 1934 o 1935. Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1919, "pais": "Egipto", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "África",
+        "texto": { "es": "Cientos de mujeres egipcias se manifiestan en El Cairo, con Huda Shaarawi al frente, contra la ocupación británica.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Women's eNews: una líder feminista egipcia encabeza la marcha de 1919", "url": "https://womensenews.org/2012/07/1919-egyptian-feminist-leads-liberation-march/" },
+          { "nombre": "Egyptian Streets: por qué Egipto celebra su propio Día de la Mujer", "url": "https://egyptianstreets.com/2022/03/16/why-does-egypt-celebrate-its-own-womens-day/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-12",
+        "nota": "Relleno 2026-11-12. Alternativa del 16 mar. Una fuente avisa de que el día exacto se apoya en memorias y que el 16 es la fecha más aceptada. Ese día hubo muertes, que el texto omite. Egipto la usa como Día de la Mujer Egipcia."
+      }
+    ],
+    "03-17": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1921, "pais": "Reino Unido", "mujer": null, "tema": "salud y derechos reproductivos", "region": "Europa",
+        "texto": { "es": "Se abre en Londres la Mothers' Clinic de Marie Stopes, la primera clínica de control de natalidad de Inglaterra.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wellcome Collection: Mothers' Clinic, Holloway", "url": "https://content.www.wellcomecollection.org/works/se5tgmja" },
+          { "nombre": "Women's History Network: Marie Stopes", "url": "https://womenshistorynetwork.org/womens-history-month-marie-stopes/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-12",
+        "nota": "Relleno 2026-11-12. Algunas fuentes dicen «primera de Gran Bretaña» y otras «de Inglaterra»: se usa «de Inglaterra». Marie Stopes defendió ideas eugenésicas: si se hace ficha, tratarlo con tono informativo."
       }
     ],
     "03-18": [
@@ -1080,6 +1120,16 @@
         ],
         "estado": "parcial", "comprobado": "2026-11-11",
         "nota": "Relleno 2026-11-11. Una sola fuente, derivada de Wikipedia; buscar Sahitya Akademi o Padma. Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1974, "pais": "India", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "Asia",
+        "texto": { "es": "Gaura Devi y otras mujeres de la aldea de Reni abrazan los árboles para frenar una tala, en un episodio clave del movimiento Chipko.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "The Leaflet: el legado del movimiento Chipko", "url": "https://theleaflet.in/environment/from-hugs-to-rights-the-chipko-movements-legacy-in-forest-conservation-and-governance" },
+          { "nombre": "Down To Earth: Chipko, un recuerdo lejano", "url": "https://www.downtoearth.org.in/amp/story/forests/chipko-a-distant-memory-95618" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-12",
+        "nota": "Relleno 2026-11-12. Alternativa del 26 mar. Una fuente habla de 1973 sin día; la mayoría y un testimonio dan el 26 mar 1974. El número de mujeres varía según la fuente (unas 28 o 300): no se cita."
       }
     ],
     "03-27": [
@@ -1103,6 +1153,30 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Relleno 2026-11-11. Las fuentes discrepan en el lugar (Ávila o Gotarrendura), no en el día: el texto no lo nombra."
+      }
+    ],
+    "03-29": [
+      {
+        "principal": true, "tipo": "premio", "anio": 1982, "pais": "EE. UU.", "mujer": null, "tema": "arte y literatura", "region": "América del Norte",
+        "texto": { "es": "Katharine Hepburn gana el Óscar a la mejor actriz por «En el estanque dorado»: su cuarto Óscar, el primero de una intérprete.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Academia de Hollywood: ceremonia de los Óscar de 1982", "url": "https://www.oscars.org/oscars/ceremonies/1982" },
+          { "nombre": "Academia de Hollywood: momentos memorables de 1982", "url": "https://www.oscars.org/oscars/ceremonies/1982/memorable-moments" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-12", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-12. Premio relevante. Las dos fuentes son de la misma institución, no independientes. Fuentes básicas. "
+      }
+    ],
+    "03-30": [
+      {
+        "principal": true, "tipo": "hito", "anio": 2022, "pais": "España", "mujer": null, "tema": "deporte", "region": "Europa",
+        "texto": { "es": "91.553 personas ven en el Camp Nou el Barcelona–Real Madrid de la Champions femenina, cifra récord de asistencia en fútbol femenino.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Sports Illustrated: récord de asistencia Barcelona–Real Madrid", "url": "https://www.si.com/soccer/2022/03/30/barcelona-real-madrid-womens-champions-league-attendance-world-record-camp-nou" },
+          { "nombre": "Sky Sports: el Camp Nou bate el récord de asistencia", "url": "https://www.skysports.com/football/news/28508/12578437/barcelona-5-2-real-madrid-nou-camp-breaks-womens-football-attendance-record" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-12",
+        "nota": "Relleno 2026-11-12. Dos medios, sin fuente institucional (UEFA o FC Barcelona sin abrir). El récord anterior depende de qué se compare (90.185 en la final del Mundial de 1999, o 60.739 en clubes): no se cita. Estado parcial: buscar fuente institucional. Cuenta como día de España."
       }
     ],
     "03-31": [

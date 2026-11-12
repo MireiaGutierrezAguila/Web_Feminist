@@ -12,8 +12,8 @@
 > variables de entorno) y avísame si algo choca con estas normas.
 >
 > El contexto completo del proyecto (objetivos, secciones, actividades, contenido) está en
-> `docs/webFeminist.md`. Léelo antes de empezar cualquier sección o actividad nueva:
-> @docs/webFeminist.md
+> `webFeminist.md`. Léelo antes de empezar cualquier sección o actividad nueva:
+> @webFeminist.md
 
 ## Sobre el proyecto
 - **Qué es:** web educativa sobre feminismo y mujeres de la historia que continúa el videojuego móvil *Feminist*, con fichas de mujeres, actividades interactivas y enlace al juego en Google Play.
@@ -90,7 +90,7 @@
 
 ## Documentación y registro de cambios
 - Mantener actualizado `README.md` cuando cambie cómo se instala o se usa el proyecto (avisando con 🔶).
-- Si se toma una decisión nueva sobre secciones o actividades, propón actualizar `docs/webFeminist.md` (avisando con 🔶).
+- Si se toma una decisión nueva sobre secciones o actividades, propón actualizar `webFeminist.md` (avisando con 🔶).
 - Anotar los cambios importantes en `CHANGELOG.md`.
 
 ## Notas y decisiones del proyecto

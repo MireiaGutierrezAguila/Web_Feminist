@@ -512,7 +512,7 @@
     var COLORES_TARJETA = ['#C2386Eb3', '#127C86b3', '#E8762Bb3', '#8a4fc2b3', '#2E7D4Fb3'];
     var COLORES_NOMBRE = ['#F27AA6', '#4FD0DB', '#FFA95C', '#C39BEE', '#7FD79E', '#F5F5F0'];
 
-    F.cargar().then(function () { return F.cargarObjetos(); }).then(function () {
+    F.cargar().then(function () { return F.cargarObjetos(); }).then(function () { return F.cargarFotos(); }).then(function () {
       var tarjetas = {}; // slug -> tarjeta de la fila, para abrir su ficha desde los nombres escondidos
       // Nombres escondidos en la oscuridad: cada uno lleva a su ficha
       var nombres = document.getElementById('nombres');
@@ -548,6 +548,7 @@
             cara.style.setProperty('--v', COLORES_TARJETA[n % COLORES_TARJETA.length]);
             var arco = F.el('span', 'arco');
             arco.appendChild(F.el('span', 'icono-espiral'));
+            arco.appendChild(F.el('span', 'pista-giro', F.txt.girar)); // aparece al pasar el ratón o con el teclado
             var colina = F.el('span', 'colina');
             colina.style.setProperty('--px', (25 + (n * 17) % 50) + '%'); // cada colina enseña otra parte del remolino
             arco.appendChild(colina);
@@ -558,11 +559,26 @@
           dorso: function (cara, m, n) {
             cara.classList.add('tarot');
             cara.style.setProperty('--v', COLORES_TARJETA[n % COLORES_TARJETA.length]);
-            var a = F.el('span', 'arco reverso');
-            a.appendChild(F.el('span', 'icono-espiral'));
-            a.appendChild(document.createTextNode('[FOTO REAL PENDIENTE]'));
-            a.appendChild(document.createElement('br'));
-            a.appendChild(document.createTextNode('autor y licencia por indicar'));
+            var ft = F.foto(m.slug); // data/fotos.json: imagen con su autor y licencia
+            var a;
+            if (ft) {
+              a = F.el('span', 'arco con-foto');
+              var im = F.imagen(F.RUTA + m.slug + '/' + ft.archivo, ft.alt.es, 'foto-dorso');
+              im.loading = 'lazy'; im.decoding = 'async';
+              a.appendChild(im);
+              a.appendChild(F.el('span', 'foto-credito', ft.creditoCorto));
+            } else {
+              a = F.el('span', 'arco reverso');
+              a.appendChild(F.el('span', 'icono-espiral'));
+              var sin = F.sinImagen(m.slug); // texto honesto cuando no hay imagen utilizable
+              if (sin) {
+                a.appendChild(document.createTextNode(sin.es));
+              } else {
+                a.appendChild(document.createTextNode('[FOTO REAL PENDIENTE]'));
+                a.appendChild(document.createElement('br'));
+                a.appendChild(document.createTextNode('autor y licencia por indicar'));
+              }
+            }
             cara.appendChild(a);
             cara.appendChild(F.el('span', 'nombre-carta', m.cabecera));
           }
@@ -570,6 +586,7 @@
         tarjetas[m.slug] = tarjeta;
         car.appendChild(tarjeta);
       });
+      F.pistaGiro(car); // la mano que enseña a girar las cartas, hasta que se gira la primera
     }).catch(F.errorDatos);
   </script>
 </body>

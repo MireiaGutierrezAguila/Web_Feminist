@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revisión del calendario</title>
+<!-- Página PROVISIONAL solo para repasar data/calendario.json. No forma parte de la web. Hay que abrirla desde el servidor local. -->
+<style>
+  :root { --fondo:#f6f4ee; --tinta:#1d1b18; --suave:#6b665c; --linea:#d8d3c6; --cab:#2b2340; --ok:#1d7a46; --par:#a86a00; --rev:#b3261e; --sens:#7b2d8e; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:16px; background:var(--fondo); color:var(--tinta); font:15px/1.45 system-ui, sans-serif; }
+  h1 { font-size:1.3rem; margin:0 0 4px; }
+  .aviso { color:var(--suave); margin:0 0 12px; }
+  .barra { position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap; gap:10px; align-items:center; padding:10px; margin:0 -16px 12px; background:#fffdf7; border-bottom:2px solid var(--linea); }
+  .barra label { display:flex; flex-direction:column; font-size:.8rem; color:var(--suave); gap:2px; }
+  select, input[type=search] { font:inherit; padding:6px 8px; border:1px solid var(--linea); border-radius:6px; background:#fff; min-width:140px; }
+  .cuenta { margin-left:auto; font-weight:600; }
+  .tabla-caja { overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; min-width:980px; background:#fff; }
+  th { position:sticky; top:62px; background:var(--cab); color:#fff; text-align:left; padding:8px; font-size:.85rem; }
+  td { padding:8px; border-bottom:1px solid var(--linea); vertical-align:top; }
+  tr.alt td { background:#faf8f2; }
+  tr.mes td { background:#ece6f7; font-weight:700; font-size:1rem; }
+  .dia { white-space:nowrap; font-weight:700; }
+  .anio { white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .etq { display:inline-block; padding:1px 7px; border-radius:99px; font-size:.78rem; border:1px solid currentColor; white-space:nowrap; }
+  .e-verificada { color:var(--ok); } .e-parcial { color:var(--par); } .e-revisar { color:var(--rev); }
+  .sens { color:var(--sens); } .basica { color:var(--par); }
+  .marca { display:flex; flex-wrap:wrap; gap:4px; margin-top:4px; }
+  .fuentes { margin:0; padding-left:16px; } .fuentes li { margin-bottom:2px; }
+  .fuentes a { color:#1a4fa0; word-break:break-word; }
+  .nota { color:var(--suave); font-size:.85rem; max-width:340px; }
+  .pais { color:var(--suave); font-size:.85rem; }
+  .vacio { padding:20px; text-align:center; color:var(--suave); }
+</style>
+</head>
+<body>
+<h1>Revisión del calendario</h1>
+<p class="aviso" id="aviso">Cargando…</p>
+
+<div class="barra">
+  <label>Mes <select id="fMes"><option value="">Todos</option></select></label>
+  <label>Tipo <select id="fTipo"><option value="">Todos</option></select></label>
+  <label>Estado <select id="fEstado"><option value="">Todos</option></select></label>
+  <label>Solo mostrar
+    <select id="fExtra">
+      <option value="">Todo</option>
+      <option value="principal">Solo principales</option>
+      <option value="alt">Solo alternativas</option>
+      <option value="basica">Fuentes básicas</option>
+      <option value="sensible">Sensibles</option>
+      <option value="ancla">Anclas</option>
+    </select>
+  </label>
+  <label>Buscar <input type="search" id="fBuscar" placeholder="nombre, país, texto…"></label>
+  <span class="cuenta" id="cuenta"></span>
+</div>
+
+<div class="tabla-caja">
+<table>
+  <thead><tr><th>Día</th><th>Año</th><th>Tipo</th><th>Texto (ES)</th><th>Fuentes</th><th>Estado</th><th>Nota</th></tr></thead>
+  <tbody id="cuerpo"></tbody>
+</table>
+</div>
+
+<script>
+(function () {
+  var MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  var filas = []; // cada fila: {mes, dia, e, sinDia}
+  var $ = function (id) { return document.getElementById(id); };
+
+  function el(tag, clase, texto) { var n = document.createElement(tag); if (clase) n.className = clase; if (texto !== undefined) n.textContent = texto; return n; }
+
+  fetch('data/calendario.json', { cache: 'reload' }).then(function (r) { return r.json(); }).then(function (d) {
+    $('aviso').textContent = 'Versión ' + d.version + '. ' + d.aviso;
+    Object.keys(d.dias).sort().forEach(function (k) {
+      d.dias[k].forEach(function (e) { filas.push({ mes: +k.slice(0, 2), dia: +k.slice(3), e: e, sinDia: false }); });
+    });
+    (d.sinDia || []).forEach(function (e) { filas.push({ mes: e.mes || 0, dia: 0, e: e, sinDia: true }); });
+    rellenarFiltros(); pintar();
+  }).catch(function () { $('aviso').textContent = 'No se ha podido cargar data/calendario.json. Abre esta página desde el servidor local.'; });
+
+  function rellenarFiltros() {
+    MESES.forEach(function (m, i) { var o = el('option', '', m); o.value = i + 1; $('fMes').appendChild(o); });
+    var o0 = el('option', '', 'Sin día ni mes'); o0.value = 0; $('fMes').appendChild(o0);
+    var unicos = function (campo) { var s = {}; filas.forEach(function (f) { s[f.e[campo]] = 1; }); return Object.keys(s).sort(); };
+    unicos('tipo').forEach(function (t) { var o = el('option', '', t); o.value = t; $('fTipo').appendChild(o); });
+    unicos('estado').forEach(function (t) { var o = el('option', '', t); o.value = t; $('fEstado').appendChild(o); });
+    ['fMes', 'fTipo', 'fEstado', 'fExtra'].forEach(function (id) { $(id).addEventListener('change', pintar); });
+    $('fBuscar').addEventListener('input', pintar);
+  }
+
+  function pasa(f) {
+    var e = f.e, mes = $('fMes').value, tipo = $('fTipo').value, est = $('fEstado').value, ex = $('fExtra').value, q = $('fBuscar').value.trim().toLowerCase();
+    if (mes !== '' && f.mes !== +mes) return false;
+    if (tipo && e.tipo !== tipo) return false;
+    if (est && e.estado !== est) return false;
+    if (ex === 'principal' && !(e.principal && !f.sinDia)) return false;
+    if (ex === 'alt' && !(e.principal === false)) return false;
+    if (ex === 'basica' && e.calidadFuentes !== 'basica') return false;
+    if (ex === 'sensible' && !e.sensible) return false;
+    if (ex === 'ancla' && !e.ancla) return false;
+    if (q) {
+      var texto = [e.texto && e.texto.es, e.pais, e.tema, e.region, e.nota, String(e.anio)].join(' ').toLowerCase();
+      if (texto.indexOf(q) < 0) return false;
+    }
+    return true;
+  }
+
+  function celdaDia(f) {
+    if (f.sinDia) return f.mes ? 'Este mes' : 'Sin día';
+    return f.dia + ' ' + MESES[f.mes - 1].slice(0, 3);
+  }
+
+  function pintar() {
+    var cuerpo = $('cuerpo'); cuerpo.textContent = '';
+    var vistas = filas.filter(pasa), mesActual = null;
+    vistas.forEach(function (f) {
+      var clave = f.sinDia ? 's' + f.mes : 'm' + f.mes;
+      if (clave !== mesActual) {
+        mesActual = clave;
+        var tr0 = el('tr', 'mes'), td0 = el('td', '', f.sinDia ? 'Sin día exacto' + (f.mes ? ' · ' + MESES[f.mes - 1] : '') : MESES[f.mes - 1].charAt(0).toUpperCase() + MESES[f.mes - 1].slice(1));
+        td0.colSpan = 7; tr0.appendChild(td0); cuerpo.appendChild(tr0);
+      }
+      var e = f.e, tr = el('tr', e.principal === false ? 'alt' : '');
+      var td = el('td', 'dia', celdaDia(f));
+      if (e.principal === false) { td.appendChild(el('div', 'pais', 'alternativa')); }
+      if (e.ancla) { td.appendChild(el('div', 'pais', '★ ancla')); }
+      tr.appendChild(td);
+      tr.appendChild(el('td', 'anio', e.anio));
+      td = el('td', '', e.tipo); td.appendChild(el('div', 'pais', e.pais + ' · ' + e.region)); tr.appendChild(td);
+      td = el('td', '', e.texto && e.texto.es);
+      var marca = el('div', 'marca');
+      if (e.sensible) marca.appendChild(el('span', 'etq sens', 'sensible'));
+      if (e.calidadFuentes === 'basica') marca.appendChild(el('span', 'etq basica', 'fuentes básicas'));
+      if (e.viva) marca.appendChild(el('span', 'etq basica', 'viva'));
+      if (marca.childNodes.length) td.appendChild(marca);
+      tr.appendChild(td);
+      td = el('td'); var ul = el('ul', 'fuentes');
+      (e.fuentes || []).forEach(function (fu) {
+        var li = el('li'), a = el('a', '', fu.nombre); a.href = fu.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; li.appendChild(a); ul.appendChild(li);
+      });
+      td.appendChild(ul); tr.appendChild(td);
+      td = el('td'); td.appendChild(el('span', 'etq e-' + e.estado, e.estado)); td.appendChild(el('div', 'pais', e.comprobado || '')); tr.appendChild(td);
+      tr.appendChild(el('td', 'nota', e.nota || ''));
+      cuerpo.appendChild(tr);
+    });
+    if (!vistas.length) { var t = el('tr'), c = el('td', 'vacio', 'Nada coincide con los filtros.'); c.colSpan = 7; t.appendChild(c); cuerpo.appendChild(t); }
+    $('cuenta').textContent = vistas.length + ' de ' + filas.length + ' entradas';
+  }
+})();
+</script>
+</body>
+</html>
