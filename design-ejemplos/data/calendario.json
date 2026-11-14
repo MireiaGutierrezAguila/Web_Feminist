@@ -1790,6 +1790,30 @@
         "nota": "Ancla (alternativa del 2 jul; la principal es ONU Mujeres, 2010). Representation of the People (Equal Franchise) Act 1928, sanción real el 2 jul 1928. La edad de 21 años sale del debate del proyecto, no del texto final (PDF ilegible); GOV.UK «Legal firsts» dice «all women above the age of 21». Las dos fuentes son del mismo Parlamento: independencia débil. Cuenta para la cuota de voto."
       }
     ],
+    "07-03": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1955, "pais": "México", "mujer": null, "tema": "voto y derechos políticos", "region": "América Latina",
+        "texto": { "es": "Las mexicanas votan por primera vez en unas elecciones federales, las de la Cámara de Diputados.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Gobierno de Jalisco (Homujal): las mujeres mexicanas votan por primera vez", "url": "https://homujal.stjjalisco.gob.mx/noticias/show/66ba6eed-5ce8-40d1-87cf-02adac1f2c84" },
+          { "nombre": "Milenio: por qué el 3 de julio cambió la historia de las mujeres en México", "url": "https://www.milenio.com/comunidad/por-que-el-3-de-julio-cambio-la-historia-de-las-mujeres-en-mexico" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el 3 jul 1955. El título de la página de Jalisco dice «1995» pero su texto dice 1955. La reforma constitucional es del 17 oct 1953. Uruguay tiene un 3 jul 1927 (primer voto en Cerro Chato) sin verificar."
+      }
+    ],
+    "07-04": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1876, "pais": "EE. UU.", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "América del Norte",
+        "texto": { "es": "Susan B. Anthony y otras sufragistas entregan en Filadelfia una Declaración de Derechos de las Mujeres y la leen en público, durante los actos del centenario del país.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Servicio de Parques Nacionales de EE. UU.: Declaración de Derechos de las Mujeres de 1876", "url": "https://www.nps.gov/articles/the-declaration-of-rights-of-the-women-of-the-united-states.htm" },
+          { "nombre": "Biblioteca del Congreso: el espíritu del 76 y la igualdad de las mujeres", "url": "https://blogs.loc.gov/manuscripts/2025/07/the-spirit-of-76-marches-on-inspiring-the-fight-for-womens-equality-2/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes institucionales abiertas. Ocurrió durante la celebración del centenario de la Declaración de Independencia. Se clasifica como movimientos sociales (no voto) para no sobrepasar la cuota de días de voto del mes."
+      }
+    ],
     "07-05": [
       {
         "principal": true, "tipo": "derecho", "anio": 1985, "pais": "España", "mujer": null, "tema": "salud y derechos reproductivos", "region": "Europa", "ancla": true, "precision": "dia",
@@ -1814,6 +1838,18 @@
         "nota": "Ancla. 7 jul 1981 = fecha de la ley; publicada en el BOE núm. 172 del 20 jul 1981; en vigor el 9 ago 1981. Aprobación en el Congreso el 22 jun 1981 (Abogacía). La fuente 2 es un portal jurídico, no institucional: repasar si se quiere reforzar. Una fuente dice «entró en vigor el 7 jul», lo que contradice al BOE."
       }
     ],
+    "07-09": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1935, "pais": "Argentina", "mujer": null, "tema": "arte y literatura", "region": "América Latina",
+        "texto": { "es": "Nace Mercedes Sosa, cantante argentina, referente de la música popular latinoamericana y figura del Nuevo Cancionero.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Gran Enciclopèdia Catalana: Mercedes Sosa", "url": "https://www.enciclopedia.cat/EC-GEC-0516704" },
+          { "nombre": "Gobierno de Argentina: Mercedes Sosa", "url": "https://www.argentina.gob.ar/node/516199" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el día. Murió el 4 oct 2009. No se cita el año de su cargo en la UNESCO porque las fuentes difieren (1999 u 2008)."
+      }
+    ],
     "07-15": [
       {
         "principal": true, "tipo": "muerte", "anio": 1907, "pais": "China", "mujer": null, "tema": "movimientos sociales y derechos", "region": "Asia", "ancla": true, "precision": "dia",
@@ -1834,6 +1870,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Ancla (alternativa del 15 jul; la principal es la muerte de Qiu Jin, 1907). Nacimiento el 15 jul 1858 en Moss Side, Manchester (Oxford DNB y SNL). Se dice que ella celebraba el 14 jul (resultado de búsqueda, no abierto). La frase del agente sobre la WSPU no se verificó y se quitó del texto: la fundación está en la ancla del 10 oct 1903. Cuenta para la cuota de voto."
+      }
+    ],
+    "07-17": [
+      {
+        "principal": true, "tipo": "curiosidad", "anio": 1959, "pais": "Tanzania", "mujer": null, "tema": "ciencia y tecnología", "region": "África",
+        "texto": { "es": "Mary Leakey descubre en Olduvai, en Tanzania, el cráneo fósil conocido como «Zinj».", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Fundación Leakey: el descubrimiento de Zinj", "url": "https://leakeyfoundation.org/the-discovery-of-zinj/" },
+          { "nombre": "Biblioteca Linda Hall: Zinj, científica del día", "url": "https://www.lindahall.org/about/news/scientist-of-the-day/zinj/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el 17 jul 1959. Es el hallazgo del cráneo, no de la especie completa."
       }
     ],
     "07-19": [
@@ -1860,6 +1908,88 @@
         "nota": "Ancla. 21 jul 1960. El Parlamento la llama «primera mujer jefa de gobierno» (no decir «elegida» ni «democráticamente»). Apoyo: Daily FT (prensa). Cuenta para la cuota de voto y política."
       }
     ],
+    "07-22": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1961, "pais": "España", "mujer": null, "tema": "trabajo y economía", "region": "Europa",
+        "texto": { "es": "Se aprueba en España la Ley 56/1961, sobre derechos políticos, profesionales y de trabajo de la mujer.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "BOE: Ley 56/1961, de 22 de julio", "url": "https://www.boe.es/boe/dias/1961/07/24/index.php?e=7723" },
+          { "nombre": "BOE: Decreto 258/1962, de aplicación laboral", "url": "https://boe.es/buscar/doc.php?id=BOE-A-1962-3718" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Las dos fuentes son del BOE: la ley lleva fecha del 22 jul y se publicó el 24 jul 1961 (BOE núm. 175). Un comentario doctrinal indica que la capacidad civil de la mujer casada quedó fuera: no exagerar su alcance. Cuenta como día de España."
+      }
+    ],
+    "07-28": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1866, "pais": "Reino Unido", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Nace Beatrix Potter, escritora e ilustradora británica; creó «Peter Rabbit» y legó sus tierras al National Trust.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "The Armitt: Beatrix Potter", "url": "https://www.armitt.com/beatrix-potter/" },
+          { "nombre": "National Trust: Beatrix Potter", "url": "https://www.nationaltrust.org.uk/article-1356396009885" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el 28 jul 1866 (Kensington, Londres). Peter Rabbit lo publicó Frederick Warne en 1902. Se descartó la petición neozelandesa de sufragio de 1893 (las fuentes dan 28 jul u 11 ago)."
+      }
+    ],
+    "07-30": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1950, "pais": "Costa Rica", "mujer": null, "tema": "voto y derechos políticos", "region": "América Latina",
+        "texto": { "es": "Las mujeres costarricenses votan por primera vez, en un plebiscito local en La Tigra, que decidió su paso al cantón de San Carlos.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "El Observador (Costa Rica): los primeros votos de las mujeres", "url": "https://observador.cr/los-primeros-votos-de-las-mujeres-en-costa-rica-cumplen-apenas-73-anos/" },
+          { "nombre": "La Nación (Costa Rica): Bernarda Vásquez Méndez, la primera mujer tica en votar", "url": "https://www.nacion.com/archivo/bernarda-vasquez-mendez-la-primera-mujer-tica-en-votar/CQBWUM2DN5CWRJGDXBOFDFJOGI/story/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos periódicos dan el domingo 30 jul 1950 (Bernarda Vásquez, primera mujer en votar). No citar su edad (27 o 32 según la fuente). El derecho se aprobó en la Constituyente en junio de 1949 (las fuentes discrepan entre el 19 y el 20)."
+      }
+    ],
+    "08-01": [
+      {
+        "principal": true, "tipo": "curiosidad", "anio": 1786, "pais": "Reino Unido (astrónoma nacida en Alemania)", "mujer": null, "tema": "ciencia y tecnología", "region": "Europa",
+        "texto": { "es": "Caroline Herschel descubre su primer cometa desde su observatorio de Slough, en Inglaterra.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "MacTutor (Universidad de St Andrews): Caroline Herschel", "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Herschel_Caroline/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. La página da el 1 ago 1786. No se escribe «primera mujer» porque la página abierta no lo afirma. Herschel ya aparece el 16 mar (nacimiento). Fuentes básicas."
+      }
+    ],
+    "08-02": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 2006, "pais": "México", "mujer": null, "tema": "derechos e igualdad", "region": "América Latina",
+        "texto": { "es": "Se publica en el Diario Oficial la Ley General para la Igualdad entre Mujeres y Hombres de México.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Cámara de Diputados de México: Ley General para la Igualdad entre Mujeres y Hombres (DOF 02-08-2006)", "url": "https://www.diputados.gob.mx/LeyesBiblio/ref/lgimh/LGIMH_orig_02ago06.pdf" },
+          { "nombre": "Orden Jurídico Nacional (Gobierno de México): Ley General para la Igualdad entre Mujeres y Hombres", "url": "http://www.ordenjuridico.gob.mx/Documentos/Federal/html/wo17106.html" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes oficiales; el día sale del título del PDF («DOF 02-08-2006»). La ley se reformó después y hoy se titula «Igualdad Sustantiva»: el texto habla de la publicación de 2006."
+      }
+    ],
+    "08-06": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1926, "pais": "EE. UU. (Canal de la Mancha)", "mujer": null, "tema": "deporte", "region": "América del Norte",
+        "texto": { "es": "Gertrude Ederle cruza a nado el Canal de la Mancha en su segundo intento: es la primera mujer en lograrlo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "History.com: Gertrude Ederle, primera mujer en cruzar el Canal a nado", "url": "https://www.history.com/this-day-in-history/august-6/gertrude-ederle-becomes-first-woman-to-swim-english-channel" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Las fuentes discrepan en el tiempo (14 h 31, 14 h 39 o 14 h 45): el texto no da cifras. Fuentes básicas."
+      }
+    ],
+    "08-07": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 2006, "pais": "Brasil", "mujer": null, "tema": "justicia y violencia", "region": "América Latina",
+        "texto": { "es": "Se sanciona en Brasil la Ley Maria da Penha, que crea mecanismos contra la violencia doméstica y familiar hacia las mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Cámara de Diputados de Brasil: Ley 11.340, de 7 de agosto de 2006", "url": "https://www2.camara.leg.br/legin/fed/lei/2006/lei-11340-7-agosto-2006-545133-norma-pl.html" },
+          { "nombre": "Tribunal de Justicia de Ceará: la Ley Maria da Penha", "url": "https://www.tjce.jus.br/?p=1220" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes dan el 7 ago 2006 (la página de Planalto redirigió y no se pudo leer). Tema delicado: tono informativo, sin detalles del caso. Una alternativa del día es Derartu Tulu (primera campeona olímpica negra africana, 10.000 m de Barcelona 1992, confirmado el 7 ago por World Athletics)."
+      }
+    ],
     "08-09": [
       {
         "principal": true, "tipo": "hito", "anio": 1956, "pais": "Sudáfrica", "mujer": null, "tema": "movimientos sociales y derechos", "region": "África", "ancla": true, "precision": "dia",
@@ -1870,6 +2000,41 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Ancla. 9 ago es hoy el Día Nacional de la Mujer en Sudáfrica. Nombrados Ngoyi y Joseph porque están en las fuentes; Albertina Sisulu y Sophia Williams-De Bruyn solo en alguna. Apoyo: SAHO. Posible entrada vinculada: entierro de Sarah Baartman (9 ago 2002)."
+      }
+    ],
+    "08-10": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1809, "pais": "Ecuador", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "América Latina",
+        "texto": { "es": "Quito crea una Junta Soberana en el Primer Grito de Independencia de Ecuador; la reunión de la noche anterior se celebró en la casa de Manuela Cañizares.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "El Comercio: el 10 de agosto de 1809", "url": "https://www.elcomercio.com/actualidad/10-de-agosto-de-1809-el-rugido-que-desperto-la-identidad-ecuatoriana/" },
+          { "nombre": "El Comercio: biografía de Manuela Cañizares", "url": "https://www.elcomercio.com/tendencias/biografia-manuelacanizareslavarez-historia-ecuador-quito" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Las dos fuentes son del mismo medio, no independientes: falta una académica o de museo. No reproducir su frase famosa (solo tradición). Fuentes básicas."
+      }
+    ],
+    "08-11": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1979, "pais": "Corea del Sur", "mujer": null, "tema": "trabajo y economía", "region": "Asia", "sensible": true,
+        "texto": { "es": "La policía desaloja a las obreras de la fábrica YH que ocupaban la sede de un partido en Seúl, en protesta por el cierre de la empresa.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Base de datos de acción no violenta (Swarthmore): las obreras de YH protestan por el cierre de la fábrica", "url": "https://nvdatabase.swarthmore.edu/content/south-korean-women-labourers-protest-closing-yh-wig-manufacturing-company-1979" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. SENSIBLE: una trabajadora murió durante el desalojo y las fuentes discrepan en cómo; el texto lo omite. Una sola fuente abierta (la de la Universidad de Monash dio 403). Fuentes básicas."
+      }
+    ],
+    "08-13": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1956, "pais": "Túnez", "mujer": null, "tema": "derechos e igualdad", "region": "África",
+        "texto": { "es": "Se promulga en Túnez el Código del Estatuto Personal, que prohíbe la poligamia.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: el Código del Estatuto Personal de Túnez", "url": "https://encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/tunisia-personal-status-code" },
+          { "nombre": "JusticeInfo: Túnez, pionera para las mujeres en el mundo árabe", "url": "https://www.justiceinfo.net/fr/38403-la-tunisie-pionniere-pour-les-femmes-dans-le-monde-arabe.html" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. COMPROBAR: las citas leídas confirman la prohibición de la poligamia, pero no se ha anotado que las páginas den el día 13 ago 1956 (es el día que se conmemora en Túnez). Entró en vigor el 1 ene 1957 y se matizó en reformas posteriores. Fuentes básicas."
       }
     ],
     "08-18": [
@@ -1884,6 +2049,54 @@
         "nota": "Ancla. Tennessee fue el 36.º estado, el 18 ago 1920 (Archivos Nacionales). [VERIFICAR] La certificación del 26 ago (secretario de Estado Colby) solo está en una fuente abierta. Los Archivos dicen que «muchas mujeres siguieron sin poder votar» durante décadas; las barreras concretas (leyes Jim Crow, tasas de voto) salen solo de búsquedas no abiertas. Cuenta para la cuota de voto. Fuentes básicas."
       }
     ],
+    "08-20": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1922, "pais": "Francia", "mujer": null, "tema": "deporte", "region": "Europa",
+        "texto": { "es": "Alice Milliat organiza en París los primeros Juegos Mundiales Femeninos, con atletas de cinco países.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: Juegos Mundiales Femeninos de 1922", "url": "https://en.wikipedia.org/wiki/1922_Women%27s_World_Games" },
+          { "nombre": "Olympedia: Juegos Mundiales Femeninos", "url": "https://www.olympedia.org/definitions/67" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Solo Wikipedia da el 20 ago; Olympedia y Paris.fr confirman 1922 y el estadio Pershing de Vincennes, sin día. Una fuente dice 10 de agosto, probablemente errata. Países: Checoslovaquia, Francia, Gran Bretaña, Suiza y EE. UU. Fuentes básicas."
+      }
+    ],
+    "08-21": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1943, "pais": "Australia", "mujer": null, "tema": "voto y derechos políticos", "region": "Oceanía",
+        "texto": { "es": "Dorothy Tangney y Enid Lyons son elegidas: las primeras mujeres en el Parlamento federal de Australia.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Educación Parlamentaria de Australia (PEO): las primeras mujeres en el Parlamento australiano", "url": "https://peo.gov.au/understand-our-parliament/history-of-parliament/history-milestones/australian-parliament-history-timeline/events/first-women-in-the-australian-parliament/" },
+          { "nombre": "Museo de la Democracia Australiana: Dorothy Tangney", "url": "https://explore.moadoph.gov.au/people/dame-dorothy-margaret-tangney.html" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes oficiales. La página del Parlamento dice «sworn in on 21 August 1943» (juramento); la elección federal fue ese mismo 21 ago 1943: comprobar la diferencia entre elección y juramento. Tangney ya aparece el 13 mar (nacimiento)."
+      }
+    ],
+    "08-22": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1907, "pais": "India (acto en Stuttgart, Alemania)", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "Asia",
+        "texto": { "es": "Bhikaiji Cama despliega una de las primeras banderas de la India en el Congreso Socialista Internacional de Stuttgart.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Live History India: la ardiente Madame Cama", "url": "https://livehistoryindia.com/story/herstory/the-fiery-madam-cama" },
+          { "nombre": "Wikipedia: Bhikaiji Cama", "url": "https://en.wikipedia.org/wiki/Bhikaiji_Cama" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Solo livehistoryindia da el 22 ago; otras páginas dan el 21 o el congreso del 18 al 24: el día está en duda. Evitar «primera bandera» y la descripción del diseño, que varía. Cuidado con el tono político. Estado parcial: buscar fuente institucional."
+      }
+    ],
+    "08-25": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1954, "pais": "Colombia", "mujer": null, "tema": "voto y derechos políticos", "region": "América Latina",
+        "texto": { "es": "La Asamblea Nacional Constituyente de Colombia aprueba el Acto Legislativo 3, que da a las mujeres el derecho a votar y a ser elegidas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Senado de Colombia: el legado del movimiento sufragista en Colombia", "url": "https://www.senado.gov.co/index.php/component/content/article/13-senadores/5621-aprobacion-del-proyecto-de-ley-que-reconoce-el-legado-del-movimiento-sufragista-en-colombia" },
+          { "nombre": "Wikipedia: aniversarios de feminismo, agosto", "url": "https://en.wikipedia.org/wiki/Portal:Feminism/Selected_anniversaries/August" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. El Senado da el 25 ago 1954. El texto oficial del acto (sidn.ramajudicial.gov.co) dio 403. Las colombianas votaron por primera vez el 1 dic 1957."
+      }
+    ],
     "08-26": [
       {
         "principal": true, "tipo": "hito", "anio": 1970, "pais": "EE. UU.", "mujer": null, "tema": "movimientos sociales y derechos", "region": "América del Norte", "ancla": true, "precision": "dia",
@@ -1894,6 +2107,152 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Ancla. [VERIFICAR] Solo la fuente 1 se pudo abrir (LOC, 26 ago 1970, convocada por NOW); Britannica dio 403 y no está verificada. Sin cifras (de 10.000 a 50.000 en Nueva York según fuentes) y sin atribuir la convocatoria a Betty Friedan: ninguna página abierta lo confirma. Fuentes básicas."
+      }
+    ],
+    "08-27": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1910, "pais": "Dinamarca", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "Europa",
+        "texto": { "es": "En Copenhague, la conferencia de mujeres socialistas (26 y 27 de agosto) acuerda celebrar cada año un Día de la Mujer.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Marxists Internet Archive: Día Internacional de la Mujer", "url": "https://www.marxists.org/glossary/events/i/n.htm" },
+          { "nombre": "Wikipedia: Clara Zetkin", "url": "https://en.wikipedia.org/wiki/Clara_Zetkin" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. La conferencia fue el 26 y 27; el 27 sale en una página de Alexander Street (403, no abierta). La autoría de la propuesta se discute (Zietz, Zetkin y otras): no atribuirla a una sola persona. El Día de la Mujer no tuvo fecha fija hasta 1921. Fuentes básicas."
+      }
+    ],
+    "08-29": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1911, "pais": "Reino Unido", "mujer": null, "tema": "exploración y aventura", "region": "Europa",
+        "texto": { "es": "Hilda Hewlett recibe el certificado nº 122 del Royal Aero Club, la primera británica con licencia de piloto.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: Hilda Hewlett", "url": "https://en.wikipedia.org/wiki/Hilda_Hewlett" },
+          { "nombre": "A Fleeting Peace: Hilda Hewlett", "url": "https://afleetingpeace.org/index.php/pioneering-women/hewlett-hilda-beatrice" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Dos fuentes dan el 29 ago 1911 (Brooklands). Otra fuente dice que aprobó la prueba el 18 ago y el certificado llegó el 29. Sin fuente institucional. Fuentes básicas."
+      }
+    ],
+    "08-31": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1919, "pais": "India (nacida en Gujranwala, hoy Pakistán)", "mujer": null, "tema": "arte y literatura", "region": "Asia",
+        "texto": { "es": "Nace Amrita Pritam, poeta y novelista en lengua punyabí.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Rekhta: Amrita Pritam", "url": "https://www.rekhta.org/poets/amrita-pritam/profile" },
+          { "nombre": "The Tribune: recordando a Amrita y su legado", "url": "https://tribuneindia.com/news/remembering-amrita-and-her-legacy" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el 31 ago 1919. Su obra trata la Partición y la violencia contra las mujeres: tono informativo. No se cita el año del Jnanpith (1981 o 1982 según la fuente)."
+      }
+    ],
+    "09-01": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1911, "pais": "Japón", "mujer": null, "tema": "arte y literatura", "region": "Asia",
+        "texto": { "es": "Sale en Japón el primer número de Seitō, revista literaria de mujeres que abre un espacio feminista.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Biblioteca Estatal de Victoria: Seitō, revista de mujeres", "url": "https://www.slv.vic.gov.au/node/4825890" },
+          { "nombre": "Wikipedia: Seitō (revista)", "url": "https://en.wikipedia.org/wiki/Seit%C5%8D_(magazine)" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Estado parcial: el día 1 solo consta en una página abierta (la de Wikipedia solo se vio en resultados, que dan «septiembre de 1911»). Las fuentes dan fechas distintas para la fundación del grupo Seitōsha (junio o primavera de 1911)."
+      }
+    ],
+    "09-03": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1981, "pais": "ONU (internacional)", "mujer": null, "tema": "derechos e igualdad", "region": "Mundial",
+        "texto": { "es": "Entra en vigor la CEDAW, el tratado de la ONU contra la discriminación hacia las mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "ONU Mujeres (DAW): historia de la CEDAW", "url": "https://www.un.org/womenwatch/daw/cedaw/history.htm" },
+          { "nombre": "Wikipedia: aniversarios de feminismo, septiembre", "url": "https://en.wikipedia.org/wiki/Portal:Feminism/Selected_anniversaries/September" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. La ONU da el 3 sep 1981 (30 días después de la vigésima ratificación). Segunda fuente débil (Wikipedia): falta una segunda institucional (legal.un.org redirige a mantenimiento). No se escribe «primer tratado» porque no se leyó en página abierta. Fuentes básicas."
+      }
+    ],
+    "09-07": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1955, "pais": "Perú", "mujer": null, "tema": "voto y derechos políticos", "region": "América Latina",
+        "texto": { "es": "Se promulga en Perú la Ley 12391, que reconoce a las mujeres la ciudadanía y el derecho al sufragio.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Congreso de la República del Perú: el voto femenino en el Perú", "url": "https://www3.congreso.gob.pe/primerasmujeresparlamentarias/6488-voto-femenino-en-el-peru/" },
+          { "nombre": "La República: a 66 años del sufragio femenino", "url": "https://larepublica.pe/sociedad/2021/09/07/a-66-anos-del-sufragio-femenino-aun-hay-peruanas-que-no-pueden-ejercer-su-derecho-al-voto-atmp" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Solo el Congreso da el día (7 sep 1955); la segunda fuente solo da el año. La ley exigía ser mayor de 21 años y saber leer y escribir, y se votó por primera vez en 1956: no decir «universal». Fuentes básicas."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1968, "pais": "EE. UU.", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "América del Norte",
+        "texto": { "es": "Mujeres de New York Radical Women protestan en Atlantic City contra el concurso de Miss América y despliegan una pancarta de «Women's Liberation».", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Women's eNews: septiembre de 1968, las mujeres protestan contra Miss América", "url": "https://womensenews.org/2005/09/september-1968-women-protest-miss-america/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Alternativa del 07. Más de 100 mujeres según la fuente. No usar el mito de «quemar sujetadores»: las fuentes dicen que no se quemó nada. Fuentes básicas."
+      }
+    ],
+    "09-09": [
+      {
+        "principal": true, "tipo": "curiosidad", "anio": 1947, "pais": "EE. UU.", "mujer": null, "tema": "ciencia y tecnología", "region": "América del Norte",
+        "texto": { "es": "Un equipo de la Harvard Mark II, del que formaba parte Grace Hopper según el Museo de Historia de la Computación, halla una polilla en un relé: el «primer caso real de bug».", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Museo de Historia de la Computación: 9 de septiembre", "url": "https://www.computerhistory.org/tdih/september/9/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. El museo sitúa a Hopper en el equipo y como difusora de la anécdota; una fuente del Smithsonian (no abierta) dice que el cuaderno probablemente no era suyo, por eso no se le atribuye el hallazgo. El término «bug» ya existía antes. Relación con las mujeres algo indirecta. Fuentes básicas."
+      }
+    ],
+    "09-10": [
+      {
+        "principal": true, "tipo": "muerte", "anio": 1797, "pais": "Reino Unido", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Muere Mary Wollstonecraft, escritora y filósofa británica, autora de «Vindicación de los derechos de la mujer».", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "New World Encyclopedia: Mary Wollstonecraft", "url": "https://www.newworldencyclopedia.org/entry/Mary_Wollstonecraft" },
+          { "nombre": "Early Modern Women (Swansea): Mary Wollstonecraft", "url": "https://emco.swansea.ac.uk/emco/person/591" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el 10 sep 1797. Tono informativo: falleció tras dar a luz, sin más detalle. El título de la obra y el año (1792) no se leyeron en una página abierta (ya figura en la entrada sin día del calendario)."
+      }
+    ],
+    "09-12": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1992, "pais": "EE. UU.", "mujer": null, "tema": "exploración y aventura", "region": "América del Norte", "viva": true,
+        "texto": { "es": "Mae Jemison viaja en el transbordador Endeavour (STS-47) y es la primera mujer afroamericana en el espacio.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Museo Nacional de Historia de la Mujer: Mae Jemison", "url": "https://www.womenshistory.org/education-resources/biographies/mae-jemison" },
+          { "nombre": "Space.com: este día en el espacio, 12 de septiembre", "url": "https://www.space.com/space-exploration/on-this-day-in-space-september-12-2026/amp/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. MUJER VIVA: se incluye un hecho histórico con tono informativo (no es un cumpleaños); la regla de Mireia solo admitía vivas en cumpleaños, pero decidió el 14-11-2026 «incluir todo». Dos fuentes abiertas."
+      },
+      {
+        "principal": false, "tipo": "derecho", "anio": 1927, "pais": "España", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa",
+        "texto": { "es": "Un Real Decreto Ley permite que mujeres solteras, viudas o casadas formen parte de la Asamblea Nacional de la dictadura de Primo de Rivera.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Congreso de los Diputados: Real Decreto Ley de 12 de septiembre de 1927", "url": "https://www.congreso.es/es/cem/docs12091927" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Alternativa del 12. Contexto delicado: era una dictadura y las casadas necesitaban permiso del marido. Las primeras 15 mujeres entraron el 10 oct 1927. Es el único día de España de septiembre. Fuentes básicas."
+      }
+    ],
+    "09-13": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1995, "pais": "Sudáfrica", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "África", "viva": true, "sensible": true,
+        "texto": { "es": "Beverley Ditsie defiende ante la conferencia de la ONU en Pekín que los derechos de las lesbianas son derechos de las mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "South African History Online: Beverley Ditsie", "url": "https://sahistory.org.za/node/123187" },
+          { "nombre": "Biblioteca audiovisual de la ONU: la IV Conferencia Mundial sobre la Mujer, 13 sep 1995", "url": "https://media.un.org/avlibrary/en/asset/d304/d3046971" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. MUJER VIVA: se incluye un hecho histórico con tono informativo (no es un cumpleaños); la regla de Mireia solo admitía vivas en cumpleaños, pero decidió el 14-11-2026 «incluir todo». SENSIBLE (derechos LGBT). Dos fuentes abiertas. No poner «primera lesbiana abierta en la ONU»: lo dicen medios y SAHO, no un organismo independiente."
+      },
+      {
+        "principal": false, "tipo": "derecho", "anio": 1933, "pais": "Nueva Zelanda", "mujer": null, "tema": "voto y derechos políticos", "region": "Oceanía",
+        "texto": { "es": "Elizabeth McCombs gana la elección parcial de Lyttelton y es la primera mujer elegida diputada de Nueva Zelanda.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "DigitalNZ: Elizabeth McCombs", "url": "https://digitalnz.org/stories/630701bdb87831001ce5f010" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Alternativa del 13. El día 13 sep 1933 sale de DigitalNZ, que cita a Manatū Taonga (nzhistory.govt.nz dio 403, no abierta). Fuentes básicas."
       }
     ],
     "09-15": [
@@ -1920,6 +2279,30 @@
         "nota": "Ancla. Tema MUY sensible: Mireia decide si se muestra (marcado «sensible»). Detenida el 13 sep, murió el 16 sep 2022. Atribuir siempre las causas: las autoridades iraníes lo niegan y hablan de un infarto; la misión de la ONU de 2024 concluyó que su muerte fue «ilícita y causada por violencia física». Las dos fuentes son de la ONU. No usar el lema «Mujer, Vida, Libertad» sin fuente abierta. Sin detalles gráficos."
       }
     ],
+    "09-17": [
+      {
+        "principal": true, "tipo": "muerte", "anio": 1179, "pais": "Alemania", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Muere Hildegarda de Bingen, abadesa y compositora; dejó obras visionarias, música sacra y tratados de medicina.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: Hildegarda de Bingen", "url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/hildegard-bingen-1098-1179" },
+          { "nombre": "New Advent (Enciclopedia Católica): Santa Hildegarda", "url": "https://www.newadvent.org/cathen/07351a.htm" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Edad Media. Solo la primera fuente da el día de la muerte; la segunda da 1179 y el 17 sep como fiesta litúrgica. Fuentes básicas."
+      }
+    ],
+    "09-18": [
+      {
+        "principal": true, "tipo": "hito", "anio": 2006, "pais": "Irán / EE. UU. (lanzamiento en Kazajistán)", "mujer": null, "tema": "exploración y aventura", "region": "Asia", "viva": true,
+        "texto": { "es": "Despega la Soyuz TMA-9 con Anousheh Ansari, la primera mujer turista espacial, rumbo a la Estación Espacial Internacional.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Guinness World Records: primera turista espacial", "url": "https://www.guinnessworldrecords.com/world-records/first-space-tourist-female" },
+          { "nombre": "Al Jazeera: la primera turista espacial despega", "url": "https://www.aljazeera.com/news/2006/9/18/first-female-space-tourist-blasts-off" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. MUJER VIVA: se incluye un hecho histórico con tono informativo (no es un cumpleaños); la regla de Mireia solo admitía vivas en cumpleaños, pero decidió el 14-11-2026 «incluir todo». Las dos páginas abiertas dicen «primera». La hora de despegue difiere entre fuentes: no se usa."
+      }
+    ],
     "09-19": [
       {
         "principal": true, "tipo": "derecho", "anio": 1893, "pais": "Nueva Zelanda", "mujer": null, "tema": "voto y derechos políticos", "region": "Oceanía", "ancla": true, "precision": "dia",
@@ -1930,6 +2313,42 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Ancla. 19 sep = firma del gobernador Lord Glasgow. Las dos fuentes repiten la misma frase (probable origen común en NZHistory, que dio 403). Decir «primer país autogobernado» y no «primero del mundo» si se amplía. Las mujeres no pudieron presentarse como candidatas hasta 1919. El 28 nov (primer voto) ya está en el calendario."
+      }
+    ],
+    "09-20": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1792, "pais": "Francia", "mujer": null, "tema": "derechos e igualdad", "region": "Europa",
+        "texto": { "es": "Se aprueba en Francia la ley que autoriza el divorcio y lo regula como trámite civil.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikisource: ley del 20 de septiembre de 1792 sobre el divorcio", "url": "https://fr.wikisource.org/wiki/Le_Divorce_(Gagneur)/Appendice/Loi_du_20_septembre_1792" },
+          { "nombre": "Hérodote: almanaque, 20 de septiembre", "url": "https://www.herodote.net/almanach-ID-3218.php" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. La ley no es específica para mujeres: el enfoque es el derecho al divorcio. Wikisource reproduce el texto con título y fecha."
+      }
+    ],
+    "09-21": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 2023, "pais": "India", "mujer": null, "tema": "voto y derechos políticos", "region": "Asia",
+        "texto": { "es": "El Parlamento de la India aprueba reservar un tercio de los escaños de la cámara baja y las asambleas estatales para mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "SCC Online: Enmienda 128 de la Constitución, aprobada por el Rajya Sabha", "url": "https://www.scconline.com/blog/post/2023/09/22/constitution-one-hundred-and-twenty-eighth-amendment-2023-passed-by-rajya-sabha" },
+          { "nombre": "Scroll.in: el Parlamento aprueba la reserva para mujeres", "url": "https://scroll.in/latest/1056364/parliament-clears-womens-reservation-bill" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. La cámara baja la aprobó el 20 sep 2023 y la alta el 21. La reserva solo se aplicará tras una nueva delimitación de distritos. Una fuente da la sanción presidencial el 28 y otra el 29 de septiembre: no se usa."
+      }
+    ],
+    "09-22": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1939, "pais": "Japón", "mujer": null, "tema": "exploración y aventura", "region": "Asia",
+        "texto": { "es": "Nace Junko Tabei, alpinista japonesa; en 1975 fue la primera mujer en subir al Everest.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "The Christian Science Monitor: Junko Tabei", "url": "https://www.csmonitor.com/World/2016/1023/Junko-Tabei-the-first-woman-to-climb-Everest-dies-41-years-after-feat" },
+          { "nombre": "Google Arts & Culture: Junko Tabei", "url": "https://artsandculture.google.com/story/fQUh_Fty-kST3Q" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Estado parcial: ninguna página abierta da el 22 de septiembre, solo el año 1939 (el día solo aparece en un resultado de búsqueda sin abrir). Subió al Everest el 16 mayo 1975. Murió en 2016."
       }
     ],
     "09-23": [
@@ -1944,6 +2363,84 @@
         "nota": "Ancla. No mezclar fechas: sanción 9 sep 1947; promulgación 23 sep; publicación en el Boletín Oficial 27 sep. Mujeres votaron por primera vez el 11 nov 1951 (CONICET). No nombrar a Eva Perón en el texto: ninguna fuente abierta describe su papel directo. Cuenta para la cuota de voto."
       }
     ],
+    "09-24": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1861, "pais": "India", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "Asia",
+        "texto": { "es": "Nace Bhikaiji Cama, activista india que en 1907 mostró una versión temprana de la bandera de la India en un congreso socialista en Stuttgart.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Live History India: la ardiente Madame Cama", "url": "https://livehistoryindia.com/story/people/the-fiery-madam-cama" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Una sola fuente abierta da el 24 sep 1861 (Bombay). Cama ya aparece el 22 ago (Stuttgart, 1907, estado parcial). Fuentes básicas."
+      }
+    ],
+    "09-25": [
+      {
+        "principal": true, "tipo": "hito", "anio": 2000, "pais": "Australia", "mujer": null, "tema": "deporte", "region": "Oceanía", "viva": true,
+        "texto": { "es": "Cathy Freeman gana la final de 400 m de los Juegos de Sídney 2000 ante unas 110.000 personas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Comité Olímpico Australiano: Sídney 2000, día 10, 25 de septiembre", "url": "https://www.olympics.com.au/news/sydney-2000-relived-day-10-25-september-2000" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. MUJER VIVA: se incluye un hecho histórico con tono informativo (no es un cumpleaños); la regla de Mireia solo admitía vivas en cumpleaños, pero decidió el 14-11-2026 «incluir todo». Estado parcial: la página abierta solo da el día 25 y no menciona la carrera; falta una fuente que confirme la victoria ese día (el Museo Nacional y la Filmoteca de Australia dieron 403). No decir «primera aborigen»."
+      }
+    ],
+    "09-26": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 2017, "pais": "Arabia Saudí", "mujer": null, "tema": "derechos e igualdad", "region": "Asia",
+        "texto": { "es": "Arabia Saudí publica el decreto real que permite conducir a las mujeres, con licencias para hombres y mujeres por igual.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "PBS NewsHour: Arabia Saudí permitirá conducir a las mujeres", "url": "https://www.pbs.org/newshour/world/saudi-arabia-says-will-start-allowing-women-drive" },
+          { "nombre": "Khaleej Times: Arabia Saudí permitirá conducir a las mujeres", "url": "https://www.khaleejtimes.com/region/saudi-arabia/saudi-arabia-to-allow-women-drive" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el martes 26 sep 2017. Texto informativo, sin comparar países. La aplicación fue en junio de 2018."
+      }
+    ],
+    "09-27": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1916, "pais": "Etiopía", "mujer": null, "tema": "poder político", "region": "África",
+        "texto": { "es": "Zewditu es proclamada emperatriz de Etiopía tras la destitución de Iyasu V.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Fundación Tigray World Lead: la caída de Lej Iyasu", "url": "https://twlethiopia.org/article/4-the-fall-of-lej-iyasu/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. El año 1916 se deduce del contexto del artículo, no de la frase que da el día. Su coronación fue el 11 feb 1917 (dato de un resultado no abierto). BlackPast y GlobalSecurity dieron 403. Fuentes básicas."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1962, "pais": "EE. UU.", "mujer": null, "tema": "ciencia y tecnología", "region": "América del Norte",
+        "texto": { "es": "Rachel Carson publica «Primavera silenciosa», que alerta sobre los efectos de los plaguicidas como el DDT.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Environment & Society Portal: Primavera silenciosa", "url": "https://www.environmentandsociety.org/mml/silent-spring" },
+          { "nombre": "Time: Primavera silenciosa, de Rachel Carson", "url": "https://content.time.com/time/specials/packages/article/0,28804,1977881_1977891_1978373,00.html" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Alternativa del 27. Dos fuentes abiertas. Una exposición dice agosto, pero la mayoría da el 27 de septiembre de 1962 (Houghton Mifflin)."
+      }
+    ],
+    "09-28": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1871, "pais": "Brasil", "mujer": null, "tema": "derechos e igualdad", "region": "América Latina", "sensible": true,
+        "texto": { "es": "Se promulga en Brasil la Ley del Vientre Libre: los hijos de mujeres esclavizadas nacen libres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Senado Federal de Brasil: Ley nº 2.040, de 28 de septiembre de 1871", "url": "https://www2.senado.leg.br/jspui/handle/id/496715" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. SENSIBLE (esclavitud; tono informativo). La relación con las mujeres es indirecta. La sancionó la princesa regente Isabel. El 28 de septiembre también es el Día por el Aborto Legal, pero esa jornada se proclamó en 1990. Fuentes básicas."
+      }
+    ],
+    "09-29": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1988, "pais": "EE. UU.", "mujer": null, "tema": "deporte", "region": "América del Norte",
+        "texto": { "es": "Florence Griffith-Joyner corre los 200 m en 21,34 s en los Juegos de Seúl, marca que figura como récord mundial femenino.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Guinness World Records: 200 m más rápidos, mujeres", "url": "https://www.guinnessworldrecords.com/world-records/fastest-run-200-metres-female" },
+          { "nombre": "USA Track & Field: Florence Griffith-Joyner", "url": "https://www.usatf.org/athlete-bios/florence-griffith-joyner" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el 29 sep 1988 y 21,34 s. La atleta murió en 1998."
+      }
+    ],
     "10-01": [
       {
         "principal": true, "tipo": "derecho", "anio": 1931, "pais": "España", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa", "ancla": true, "precision": "dia",
@@ -1956,6 +2453,73 @@
         "nota": "Ancla. El 1 oct se vota el artículo (art. 34 en el proyecto, 36 en la Constitución del 9 dic 1931). NO poner cifras de votos: las fuentes discrepan (161-121 / 161-131). Mencionar a Clara Campoamor en la versión larga."
       }
     ],
+    "10-02": [
+      {
+        "principal": true, "tipo": "premio", "anio": 2018, "pais": "Canadá", "mujer": null, "tema": "ciencia y tecnología", "region": "América del Norte", "viva": true,
+        "texto": { "es": "Donna Strickland gana el Nobel de Física por su investigación en física láser.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Universidad de Waterloo: una profesora de Waterloo gana el Nobel de Física de 2018", "url": "https://uwaterloo.ca/institute-for-quantum-computing/news/waterloo-professor-awarded-2018-nobel-prize-physics" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. MUJER VIVA: premio o hito histórico con tono informativo (Mireia decidió el 14-11-2026 «incluir todo»). La página da el 2 oct 2018; nobelprize.org dio 403. No se dice «tercera mujer en Física» porque no se abrió. Fuentes básicas."
+      }
+    ],
+    "10-03": [
+      {
+        "principal": true, "tipo": "premio", "anio": 1991, "pais": "Sudáfrica", "mujer": null, "tema": "arte y literatura", "region": "África",
+        "texto": { "es": "Nadine Gordimer gana el Nobel de Literatura; la Academia Sueca destaca las consecuencias del apartheid como tema central de su obra.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: comunicado del Nobel de Literatura de 1991", "url": "https://encyclopedia.com/arts/culture-magazines/press-release-nobel-prize-literature-1991" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Comunicado fechado el 3 oct 1991. SAHO solo da el año. Es el segundo día seguido de literatura con el 4 (Teresa de Jesús). Fuentes básicas."
+      }
+    ],
+    "10-04": [
+      {
+        "principal": true, "tipo": "muerte", "anio": 1582, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Muere Teresa de Jesús, escritora y reformadora carmelita, en Alba de Tormes; al día siguiente, 15 de octubre, entra en vigor el calendario gregoriano.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Catholic.net: el sepulcro de Santa Teresa", "url": "https://www.es.catholic.net/op/articulos/1099/cat/113/el-sepulcro-de-santa-teresa.html" },
+          { "nombre": "ACI Prensa: los últimos años de Santa Teresa", "url": "https://www.aciprensa.com/recurso/3753/ultimos-anos" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Cambio de calendario: el 4 oct es fecha juliana; su fiesta es el 15 oct. Las dos fuentes son católicas; falta una institucional (BNE o RAE). Teresa de Jesús ya aparece el 28 mar (nacimiento). Cubre España. Fuentes básicas."
+      }
+    ],
+    "10-05": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1936, "pais": "Nueva Zelanda", "mujer": null, "tema": "exploración y aventura", "region": "Oceanía",
+        "texto": { "es": "Jean Batten despega de Inglaterra en solitario rumbo a Nueva Zelanda, adonde llegará el 16 de octubre.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "DigitalNZ: Jean Batten", "url": "https://digitalnz.org/stories/632e76dd764f44001a30b3bf" },
+          { "nombre": "Encyclopedia.com: Jean Batten", "url": "https://encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/batten-jean" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el 5 oct 1936 (llegada a Auckland el 16 oct; otro sitio dice el 17, sin abrir). «Primera persona en volar sola» solo lo dice DigitalNZ: no se escribe."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1789, "pais": "Francia", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "Europa",
+        "texto": { "es": "Miles de mujeres de los mercados de París marchan sobre Versalles por la escasez de pan.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "World History Encyclopedia: la marcha de las mujeres sobre Versalles", "url": "https://www.worldhistory.org/Women's_March_on_Versailles/" },
+          { "nombre": "Universidad de Tréveris (EGO): la marcha de las mujeres sobre Versalles", "url": "https://ego-ploneui.uni-trier.de/en/mediainfo/women2019s-march-on-versailles" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Alternativa del 5 oct. Ninguna de las dos páginas se pudo abrir (403 o sin abrir). Estado parcial: el día o los datos salen de resultados de búsqueda y no se pudo abrir ninguna página que los confirme."
+      }
+    ],
+    "10-07": [
+      {
+        "principal": true, "tipo": "premio", "anio": 2011, "pais": "Liberia y Yemen", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "África", "viva": true,
+        "texto": { "es": "Ellen Johnson Sirleaf, Leymah Gbowee y Tawakkol Karman ganan el Nobel de la Paz por su lucha no violenta a favor de la seguridad de las mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "WBUR: el Nobel de la Paz de 2011", "url": "https://www.wbur.org/news/2011/10/07/nobel-peace-prize-2" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. MUJER VIVA: premio o hito histórico con tono informativo (Mireia decidió el 14-11-2026 «incluir todo»). Anuncio del viernes 7 oct 2011. Una de las laureadas era candidata a la reelección esas fechas y el premio fue criticado por su rival: redactar solo el hecho. Fuentes básicas."
+      }
+    ],
     "10-08": [
       {
         "principal": true, "tipo": "hito", "anio": 2004, "pais": "Kenia", "mujer": null, "tema": "medio ambiente y derechos", "region": "África", "ancla": true, "precision": "dia",
@@ -1966,6 +2530,17 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Ancla. [VERIFICAR] La página oficial del Nobel (nobelprize.org) no se pudo abrir (403); el 8 oct 2004 solo lo confirma la prensa (Al Jazeera y NBC). El Instituto Nobel noruego no da el día. Ceremonia del 10 dic sin confirmar. «Primera mujer africana» respaldado por Al Jazeera y ONU (Africa Renewal)."
+      }
+    ],
+    "10-09": [
+      {
+        "principal": true, "tipo": "premio", "anio": 2023, "pais": "EE. UU.", "mujer": null, "tema": "trabajo y economía", "region": "América del Norte", "viva": true,
+        "texto": { "es": "Claudia Goldin gana el Nobel de Economía por avanzar en la comprensión de los resultados de las mujeres en el mercado laboral.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "The Harvard Crimson: Claudia Goldin gana el Nobel", "url": "https://thecrimson.com/article/2023/10/9/claudia-goldin-nobel" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. MUJER VIVA: premio o hito histórico con tono informativo (Mireia decidió el 14-11-2026 «incluir todo»). Lunes 9 oct 2023. Sería el cuarto premio del tramo 2–14 oct (se incluye por no haber otra candidata ese día). Fuentes básicas."
       }
     ],
     "10-10": [
@@ -1990,6 +2565,61 @@
         "nota": "Ancla (alternativa del 10 oct; la principal es la WSPU de 1903). Malala está viva: el texto trata del premio, no de su cumpleaños. nobelprize.org no se pudo abrir (403): «la persona más joven» con 17 años solo sale de páginas de la ONU (no incluido). El ataque del 9 oct 2012 solo aparece en páginas de la ONU: [VERIFICAR] con fuente no ONU y sin detalles gráficos."
       }
     ],
+    "10-11": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1945, "pais": "Japón", "mujer": null, "tema": "voto y derechos políticos", "region": "Asia",
+        "texto": { "es": "El general MacArthur pide al primer ministro Shidehara reformas que incluyen, en primer lugar, la emancipación de las mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "EBSCO Research Starters: la Constitución japonesa concede nuevos derechos a las mujeres", "url": "https://www.ebsco.com/research-starters/history/japanese-constitution-grants-new-rights-women" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. EBSCO dice que fue una petición, no una orden. El voto llegó en diciembre de 1945 con la reforma de la ley electoral. Falta una fuente oficial (Biblioteca de la Dieta). Fuentes básicas."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1984, "pais": "EE. UU.", "mujer": null, "tema": "exploración y aventura", "region": "América del Norte", "viva": true,
+        "texto": { "es": "Kathryn Sullivan realiza desde el transbordador Challenger (misión STS-41G) el primer paseo espacial de una estadounidense.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "NASA: Kathryn Sullivan, la primera estadounidense en caminar por el espacio", "url": "https://www.nasa.gov/history/kathryn-sullivan-the-first-american-woman-to-walk-in-space" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Alternativa del 11 oct. MUJER VIVA: premio o hito histórico con tono informativo (Mireia decidió el 14-11-2026 «incluir todo»). El «primera» es solo para estadounidenses: la caminata anterior fue de Svetlana Savitskaya (1984). Fuentes básicas."
+      }
+    ],
+    "10-12": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1968, "pais": "México", "mujer": null, "tema": "deporte", "region": "América Latina",
+        "texto": { "es": "Enriqueta Basilio enciende el pebetero en la inauguración de los Juegos Olímpicos de México, la primera mujer en hacerlo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Gaceta UNAM: Enriqueta Basilio", "url": "https://www.gaceta.unam.mx/jo-enriqueta-basilio/" },
+          { "nombre": "La Razón: Enriqueta Basilio brilló hace 50 años", "url": "https://www.razon.com.mx/deportes/brilla-enriqueta-basilio-como-hace-50-anos/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Cada página aporta un dato distinto: La Razón da el sábado 12 oct 1968 y el pebetero, la UNAM «primera mujer». Falta una fuente olímpica (COI o Comité Olímpico Mexicano). Alternativa no pasada: Elinor Ostrom, Nobel de Economía, 12 oct 2009. Fuentes básicas."
+      }
+    ],
+    "10-13": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1975, "pais": "Nueva Zelanda", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "Oceanía",
+        "texto": { "es": "Whina Cooper lidera la marcha por la tierra māori, que llega al Parlamento de Wellington con una petición de 60.000 firmas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Ngā Taonga: los 50 años de la marcha por la tierra māori", "url": "https://www.ngataonga.org.nz/explore-stories/stories/new-zealand-history/te-ihi-te-mana-te-tapu-maranga-ra-50-years-of-the-maori-land-march/te-ihi-te-mana-te-tapu-maranga-ra-50-years-of-the-maori-land-march/" },
+          { "nombre": "RNZ: «ni un acre más»", "url": "https://www.rnz.co.nz/news/te-manu-korihi/284130/'not-one-more-acre'" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan la llegada el 13 oct 1975 (salió el 14 sep desde Te Hāpua). La marcha no era solo de mujeres: el texto se centra en su liderazgo."
+      }
+    ],
+    "10-14": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1920, "pais": "Reino Unido", "mujer": null, "tema": "educación", "region": "Europa",
+        "texto": { "es": "Oxford concede por primera vez títulos a mujeres, una semana después de su primera ceremonia de matriculación.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Asociación de Mujeres de Oxford: cronología", "url": "https://owcah.site.ox.ac.uk/timeline" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. La matriculación fue el 7 oct 1920 según la misma página. Las cifras de matriculadas difieren (110 o 130): no se citan. Fuentes básicas."
+      }
+    ],
     "10-15": [
       {
         "principal": true, "tipo": "hito", "anio": 2017, "pais": "EE. UU.", "mujer": null, "tema": "violencia y justicia", "region": "América del Norte", "ancla": true, "precision": "dia",
@@ -2000,6 +2630,28 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Ancla. Nombrar siempre a Tarana Burke como origen. [VERIFICAR] falta una fuente institucional (universidad, archivo) que fije el 15 oct 2017 y el mensaje de Alyssa Milano (TIME 2017 «Silence Breakers» lo cuenta, no abierto aquí como principal). No usar el artículo de Harvard International Review: tiene errores."
+      }
+    ],
+    "10-16": [
+      {
+        "principal": true, "tipo": "premio", "anio": 1992, "pais": "Guatemala", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "América Latina", "viva": true,
+        "texto": { "es": "Rigoberta Menchú gana el Nobel de la Paz por su lucha por la justicia social y los derechos de los pueblos indígenas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "The Christian Science Monitor: Rigoberta Menchú, Nobel de la Paz de 1992", "url": "https://www.csmonitor.com/1992/1019/19032.html" },
+          { "nombre": "Nobel Prize: comunicado de prensa de la Paz de 1992", "url": "https://www.nobelprize.org/nobel_prizes/peace/laureates/1992/press.html" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. MUJER VIVA: premio o hito histórico con tono informativo (Mireia decidió el 14-11-2026 «incluir todo»). Estado parcial: ninguna página abierta da el día 16 (el comunicado del Nobel está fechado en Oslo, 16/10/1992, pero dio 403)."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1916, "pais": "EE. UU.", "mujer": null, "tema": "salud y derechos reproductivos", "region": "América del Norte",
+        "texto": { "es": "Margaret Sanger abre en Brooklyn una de las primeras clínicas de control de natalidad de EE. UU.; la policía la cierra a los diez días.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Universidad de Nueva York: la clínica de Brownsville (Margaret Sanger)", "url": "https://sanger.hosting.nyu.edu/aboutms/organization_brownsville_clinic/" },
+          { "nombre": "Embryo Project (Arizona State University): la clínica de Brownsville, 1916", "url": "https://embryo.asu.edu/pages/first-american-birth-control-clinic-brownsville-clinic-1916" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Alternativa del 16 oct. Dos fuentes abiertas dan el 16 oct 1916. NYU dice «la primera» y ASU «una de las primeras»; PBS da por error 1918. Tono informativo. Pasa a ser la que se enseña en la portada mientras la principal (Menchú) esté en estado parcial."
       }
     ],
     "10-17": [
@@ -2014,6 +2666,38 @@
         "nota": "Ancla. Reforma de los artículos 34 y 115, DOF 17-10-1953 (presidencia de Ruiz Cortines). [VERIFICAR] Las dos fuentes son de la misma institución. Ninguna página abierta respalda «voto pleno». Primer voto federal: 3 jul 1955 (solo en búsquedas no abiertas); el voto municipal existía desde 1947. Cuenta para la cuota de voto. Fuentes básicas."
       }
     ],
+    "10-18": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1929, "pais": "Canadá", "mujer": null, "tema": "derechos e igualdad", "region": "América del Norte",
+        "texto": { "es": "El Consejo Privado británico declara que las mujeres son «personas» y pueden ser nombradas senadoras en Canadá.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Famous 5 Foundation: el caso de las personas", "url": "https://www.famous5.ca/the-persons-case" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. La página da el 18 oct 1929; una web da por error el 29. Es un hito de derechos civiles, no el voto. Fuentes básicas."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 2019, "pais": "EE. UU. (Estación Espacial Internacional)", "mujer": null, "tema": "exploración y aventura", "region": "América del Norte", "viva": true,
+        "texto": { "es": "Christina Koch y Jessica Meir realizan en la Estación Espacial Internacional el primer paseo espacial de dos mujeres solas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Guinness World Records: primer paseo espacial íntegramente femenino", "url": "https://www.guinnessworldrecords.com/world-records/601706-first-all-female-spacewalk" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Alternativa del 18 oct. MUJER VIVA: premio o hito histórico con tono informativo (Mireia decidió el 14-11-2026 «incluir todo»). Ninguna página abierta confirma el día 18 oct 2019 (Guinness solo en resultados; NPR dio timeout). Estado parcial: el día o los datos salen de resultados de búsqueda y no se pudo abrir ninguna página que los confirme."
+      }
+    ],
+    "10-19": [
+      {
+        "principal": true, "tipo": "hito", "anio": 2016, "pais": "Argentina", "mujer": null, "tema": "justicia y violencia", "region": "América Latina", "sensible": true,
+        "texto": { "es": "Miles de mujeres paran una hora y marchan en todo el país contra la violencia machista, tras un femicidio que conmocionó a Argentina.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Letra P: «Vivas nos queremos», histórica marcha en todo el país", "url": "https://www.letrap.com.ar/nota/2016-10-19--vivasnosqueremos-historica-marcha-en-todo-el-pais-contra-la-violencia-de-genero" },
+          { "nombre": "Tiempo Argentino: a cinco años del paro que consolidó el reclamo feminista", "url": "https://www.tiempoar.com.ar/ta_article/a-cinco-anos-del-paro-que-consolido-el-reclamo-feminista-contra-la-violencia-patriarcal/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. SENSIBLE (violencia; la víctima era una menor): el texto no la nombra ni da detalles. Dos medios abiertos dan el 19 oct 2016; ninguno es institucional."
+      }
+    ],
     "10-21": [
       {
         "principal": true, "tipo": "derecho", "anio": 1945, "pais": "Francia", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa", "ancla": true, "precision": "dia",
@@ -2024,6 +2708,39 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Ancla. Elecciones del 21 oct 1945 (33 diputadas elegidas); ordenanza del 21 abr 1944 (publicada en el Journal officiel el 22 abr 1944). Es el primer voto en un escrutinio NACIONAL, no el primero absoluto: ya votaron en las municipales del 29 abr 1945 (Asamblea Nacional). Decir siempre «escrutinio nacional». Cuenta para la cuota de voto."
+      }
+    ],
+    "10-22": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 2019, "pais": "Reino Unido (Irlanda del Norte)", "mujer": null, "tema": "salud y derechos reproductivos", "region": "Europa",
+        "texto": { "es": "Deja de ser delito el aborto en Irlanda del Norte, al entrar en vigor el cambio de ley aprobado en Westminster.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "ITV News: entra en vigor el cambio de ley que despenaliza el aborto en Irlanda del Norte", "url": "https://www.itv.com/news/2019-10-22/law-change-decriminalising-abortion-in-northern-ireland-comes-into-effect" },
+          { "nombre": "BMJ: despenalización del aborto en Irlanda del Norte", "url": "https://www.bmj.com/content/367/bmj.l6145.full" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Tema delicado: tono informativo, sin detalles. Estado parcial: el día o los datos salen de resultados de búsqueda y no se pudo abrir ninguna página que los confirme."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1977, "pais": "Argentina", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "América Latina",
+        "texto": { "es": "Se funda en Buenos Aires la asociación Abuelas de Plaza de Mayo, que busca a las nietas y nietos desaparecidos.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Página/12: Abuelas de Plaza de Mayo cumplen 25 años", "url": "https://www.pagina12.com.ar/diario/elpais/1-11842-2002-10-22.html" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Alternativa del 22 oct. Una sola fuente y no abierta (solo el titular en resultados de búsqueda). Estado parcial: el día o los datos salen de resultados de búsqueda y no se pudo abrir ninguna página que los confirme."
+      }
+    ],
+    "10-23": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1964, "pais": "Japón", "mujer": null, "tema": "deporte", "region": "Asia",
+        "texto": { "es": "El equipo femenino de voleibol de Japón gana el oro olímpico en Tokio al vencer 3-0 a la URSS.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Comité Olímpico Japonés: los Juegos de Tokio 1964", "url": "https://joc.or.jp/english/historyjapan/tokyo1964.html" },
+          { "nombre": "Olympics.com: Japón y el voleibol en Tokio 1964", "url": "https://olympics.com/en/news/olympic-history-21-27-october-japan-perfection-volleyball-victory-tokyo-1964" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Estado parcial: la página abierta (JOC) confirma el oro y el 3-0 pero no el día 23 (olympics.com dio timeout); los Juegos duraron del 10 al 24 oct 1964. Es una medalla de equipo."
       }
     ],
     "10-24": [
@@ -2050,6 +2767,18 @@
         "nota": "Ancla. Nace el 25 oct 1900 en Abeokuta (tres páginas abiertas, incluida la de la BYU-Idaho; ninguna es archivo primario). Una búsqueda no abierta da «2 de octubre» (probable error). Muerte: 12 o 13 abr 1978 según fuentes (no incluida)."
       }
     ],
+    "10-26": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1881, "pais": "Ecuador", "mujer": null, "tema": "educación", "region": "América Latina",
+        "texto": { "es": "Nace Dolores Cacuango, líder indígena que impulsó escuelas bilingües quechua-español en Cayambe.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Marxists Internet Archive: Dolores Cacuango", "url": "https://www.marxists.org/espanol/cacuango/index.htm" },
+          { "nombre": "Portal Latinoamericano (USP): Dolores Cacuango", "url": "https://sites.usp.br/portalatinoamericano/es/espanol-cacuando-dolores" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. El día 26 oct 1881 solo lo da el archivo marxista (con sesgo político); la USP da solo el año. Hay discrepancias en su fecha de muerte (1971 o 1973): no se usa. Fuentes básicas."
+      }
+    ],
     "10-27": [
       {
         "principal": true, "tipo": "nacimiento", "anio": 1931, "pais": "Egipto", "mujer": null, "tema": "arte y literatura", "region": "África", "ancla": true, "precision": "dia",
@@ -2060,6 +2789,50 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Ancla. [VERIFICAR] El día 27 oct 1931 solo lo da una fuente (Irish Times); Al Jazeera y The New Arab dan solo el año 1931. Murió el 21 mar 2021 en El Cairo, a los 89 años; su familia lo anunció ese día (no se afirma que muriera ese mismo día). Sin cifra de libros (no verificada). Fuentes básicas."
+      }
+    ],
+    "10-28": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1867, "pais": "India (nacida en Irlanda)", "mujer": null, "tema": "educación", "region": "Asia",
+        "texto": { "es": "Nace Margaret Noble, la futura Hermana Nivedita, educadora que en 1898 abrió en Calcuta una escuela para niñas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Who Was Who in Indology: Hermana Nivedita", "url": "https://whowaswho-indology.info/4388/" },
+          { "nombre": "Banglapedia: Hermana Nivedita", "url": "https://en.banglapedia.org/index.php/Nivedita,_Sister" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. El día 28 oct 1867 solo lo da la primera; Banglapedia da la escuela (noviembre de 1898). Actuó en India y nació en Dungannon (Irlanda). Fuentes básicas."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1958, "pais": "EE. UU.", "mujer": null, "tema": "trabajo y economía", "region": "América del Norte",
+        "texto": { "es": "Mary Roebling es elegida gobernadora de la Bolsa Americana, la primera mujer en ese cargo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Rutgers (Archivos Especiales): Mary Roebling", "url": "https://www.libraries.rutgers.edu/scua/roebling" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-14. Alternativa del 28 oct. El día 28 oct 1958 sale de una sola página no abierta. Estado parcial: el día o los datos salen de resultados de búsqueda y no se pudo abrir ninguna página que los confirme."
+      }
+    ],
+    "10-29": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1938, "pais": "Liberia", "mujer": null, "tema": "poder político", "region": "África", "viva": true,
+        "texto": { "es": "Nace Ellen Johnson Sirleaf, economista y política liberiana; fue la primera mujer elegida presidenta de un país africano.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "South African History Online: Ellen Johnson Sirleaf", "url": "https://www.sahistory.org.za/archive/biography-ellen-johnson-sirleaf-liberias-iron-lady-alistair-boddy-evans-updated-08-august" },
+          { "nombre": "Nobel Prize: Ellen Johnson Sirleaf, biografía", "url": "https://nobelprize.org/prizes/peace/2011/johnson_sirleaf/biographical" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. MUJER VIVA (cumpleaños; no se ha comprobado hoy que no haya noticia de fallecimiento). Sirleaf ya aparece el 16 ene (toma de posesión de 2006) y el 7 oct (Nobel de la Paz 2011): tres entradas de la misma persona. Una fuente solo en resultados (Nobel, 403). Fuentes básicas."
+      }
+    ],
+    "10-30": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1902, "pais": "México", "mujer": null, "tema": "arte y literatura", "region": "América Latina",
+        "texto": { "es": "Nace María Izquierdo, pintora mexicana pionera del arte moderno, que expuso en Nueva York a comienzos de los años treinta.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Vanguardia: María Izquierdo, autora de una pintura espontánea e inquietante", "url": "https://vanguardia.com.mx/show/artes/2963130-fue-maria-izquierdo-autora-de-una-pintura-espontanea-e-inquietante-BWVG2963130" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-14. Las fuentes discrepan en la exposición de Nueva York (1929, 1930 o 1931) y algunas dan 1906 como nacimiento: por eso no se escribe «primera». Fuentes básicas."
       }
     ],
     "10-31": [
