@@ -1,0 +1,97 @@
+{
+  "aviso": "Fuentes de las fichas de las mujeres (sustituyen al [FUENTE PENDIENTE]). Solo incluyen páginas que se abrieron de verdad el 2026-11-13; los textos de las fichas (mujeres.json) son de Mireia y no se han tocado. «provisional»: fuentes solo divulgativas o de comunidades, sin una fuente institucional o académica que respalde lo principal. Las discrepancias entre estas fuentes y los textos de las fichas están anotadas en la lista de tareas y en referencias.md. Los nombres de las fuentes son de redacción propia.",
+  "fichas": {
+    "frida-kahlo": {
+      "provisional": false,
+      "fuentes": [
+        { "nombre": "Google Arts & Culture: Frida Kahlo", "url": "https://artsandculture.google.com/entity/frida-kahlo/m015k04?hl=en" },
+        { "nombre": "Museo Nacional de Mujeres Artistas (Washington): Frida Kahlo", "url": "https://nmwa.org/art/artists/frida-kahlo/" },
+        { "nombre": "Tate Schools: Frida Kahlo", "url": "https://www.tate.org.uk/schools/resources/frida-kahlo" }
+      ]
+    },
+    "zheng-shi": {
+      "provisional": false,
+      "fuentes": [
+        { "nombre": "Neumann (1831): History of the Pirates Who Infested the China Sea, from 1807 to 1810 (Project Gutenberg)", "url": "https://www.gutenberg.org/cache/epub/44261/pg44261-images.html" },
+        { "nombre": "Queen Anne's Revenge Project (Oficina de Arqueología Estatal de Carolina del Norte): Cheng I Sao", "url": "https://qaronline.org/blog/2020-06-20/pirate-profile-cheng-i-sao" },
+        { "nombre": "Encyclopedia.com: Ching Shih", "url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/ching-shih-fl-1807-1810" },
+        { "nombre": "JSTOR Daily: Cheng I Sao, la pirata", "url": "https://daily.jstor.org/cheng-i-sao-female-pirate/" },
+        { "nombre": "The World of Chinese: la mayor pirata de la historia", "url": "https://www.theworldofchinese.com/2012/06/meet-the-chinese-woman-who-became-historys-greatest-pirate/" }
+      ]
+    },
+    "hipatia-de-alejandria": {
+      "provisional": false,
+      "fuentes": [
+        { "nombre": "MacTutor (Universidad de St Andrews): Hipatia", "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Hypatia/" },
+        { "nombre": "EBSCO Research Starters: Hipatia", "url": "https://www.ebsco.com/research-starters/history/mathematician-and-philosopher-hypatia-killed-alexandria" },
+        { "nombre": "New World Encyclopedia: Hipatia de Alejandría", "url": "https://www.newworldencyclopedia.org/entry/Hypatia_of_Alexandria" }
+      ]
+    },
+    "olimpia-de-gouges": {
+      "provisional": false,
+      "fuentes": [
+        { "nombre": "Encyclopedia.com: Olympe de Gouges", "url": "https://www.encyclopedia.com/social-sciences/encyclopedias-almanacs-transcripts-and-maps/gouges-olympe-de-1748-1793" },
+        { "nombre": "New World Encyclopedia: Olympe de Gouges", "url": "https://www.newworldencyclopedia.org/entry/Olympe_de_Gouges" },
+        { "nombre": "Center for History and New Media (Univ. George Mason): Declaración de los derechos de la mujer", "url": "https://www.revolution.chnm.org/d/477" }
+      ]
+    },
+    "rosa-parks": {
+      "provisional": false,
+      "fuentes": [
+        { "nombre": "Instituto Martin Luther King (Stanford): Rosa Parks", "url": "https://kinginstitute.stanford.edu/parks-rosa" },
+        { "nombre": "Servicio de Parques Nacionales de EE. UU.: lugares de Rosa Parks", "url": "https://www.nps.gov/articles/000/places-of-rosa-parks.htm" },
+        { "nombre": "Encyclopedia.com: Rosa Parks", "url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/parks-rosa-1913" }
+      ]
+    },
+    "aglaonice-de-tesalia": {
+      "provisional": true,
+      "fuentes": [
+        { "nombre": "Plutarco: Consejos conyugales (Conjugalia praecepta), 48, traducción Loeb (LacusCurtius, Universidad de Chicago)", "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/Coniugalia_praecepta*.html" },
+        { "nombre": "Wikipedia: Aglaonice", "url": "https://en.wikipedia.org/wiki/Aglaonice" },
+        { "nombre": "Lady Science: Aglaonice y los eclipses (divulgación)", "url": "https://ladyscience.com/essays/moonschemes-eclipse2017" }
+      ]
+    },
+    "ada-lovelace": {
+      "provisional": false,
+      "fuentes": [
+        { "nombre": "MacTutor (Universidad de St Andrews): Ada Lovelace", "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Lovelace/" },
+        { "nombre": "MacTutor: Ada Lovelace en el Oxford Dictionary of National Biography", "url": "https://mathshistory.st-andrews.ac.uk/DNB/Lovelace.html" }
+      ]
+    },
+    "lynn-margulis": {
+      "provisional": false,
+      "fuentes": [
+        { "nombre": "Embryo Project (Arizona State University): Lynn Margulis", "url": "https://embryo.asu.edu/pages/lynn-petra-alexander-sagan-margulis-1938-2011" },
+        { "nombre": "NASA Astrobiology: en memoria de Lynn Margulis", "url": "https://astrobiology.nasa.gov/news/in-memoriam-lynn-margulis-1938-2011/" }
+      ]
+    },
+    "julia-hermosilla": {
+      "provisional": true,
+      "fuentes": [
+        { "nombre": "Memoria Libertaria (CGT): Julia Hermosilla", "url": "http://memorialibertaria.org/content/hermosilla-julia" },
+        { "nombre": "Asociación Cultural Germinal: Julia Hermosilla Sagredo", "url": "https://www.asociaciongerminal.org/julia-hermosilla-sagredo/" },
+        { "nombre": "Kate Sharpley Library: libertarias españolas en la Resistencia francesa", "url": "https://www.katesharpleylibrary.net/2jm7kx" },
+        { "nombre": "libcom: Hermosilla Sagredo, Julia (1916-2009)", "url": "https://libcom.org/article/hermosilla-sagredo-julia-1916-2009" },
+        { "nombre": "El Salto: libertarias españolas en la Resistencia francesa", "url": "https://www.elsaltodiario.com/ni-cautivos-ni-desarmados/participacion-libertarias-espanolas-resistencia-francesa" },
+        { "nombre": "Encima de la niebla: Julia Hermosilla, «Paquita»", "url": "https://encimadelaniebla.com/julia-hermosilla-paquita/" }
+      ]
+    },
+    "emma-goldman": {
+      "provisional": false,
+      "fuentes": [
+        { "nombre": "Encyclopedia.com: Emma Goldman", "url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/goldman-emma-1869-1940" },
+        { "nombre": "My Jewish Learning: Emma Goldman", "url": "https://www.myjewishlearning.com/article/emma-goldman/" }
+      ]
+    },
+    "hedy-lamarr": {
+      "provisional": false,
+      "fuentes": [
+        { "nombre": "Google Patents: patente US 2.292.387, Sistema de comunicación secreta (Markey y Antheil)", "url": "https://patents.google.com/patent/US2292387A/en" },
+        { "nombre": "Salón de la Fama de Inventores de EE. UU.: Hedy Lamarr", "url": "https://www.invent.org/inductees/hedy-lamarr" },
+        { "nombre": "Museo Nacional del Aire y del Espacio (Smithsonian): GPS, una actriz y un piano mecánico", "url": "https://airandspace.si.edu/stories/editorial/gps-%E2%80%93-hollywood-actress-player-piano-and-hip-hop" },
+        { "nombre": "Archivos Nacionales de EE. UU. (blog Prologue): Hedy Lamarr", "url": "https://prologue.blogs.archives.gov/2020/05/26/the-world-war-ii-era-actress-that-invented-wi-fi-hedy-lamarr/" },
+        { "nombre": "All About Circuits: Hedy Lamarr y la base de la radiofrecuencia moderna", "url": "https://www.allaboutcircuits.com/news/how-actress-hedy-lamarr-the-mother-of-wi-fi--laid-foundation-for-modern-rf-tech/" }
+      ]
+    }
+  }
+}

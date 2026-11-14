@@ -61,6 +61,8 @@
 .fa-quien p { margin: 0 0 14px; font-size: 1.02rem; max-width: 62ch; white-space: pre-line; } /* pre-line respeta los saltos de línea del texto de Mireia */
 .fa-fuentes { border-top: 2px dashed rgba(217, 178, 95, .45); padding-top: 10px; font-size: .92rem; color: #cfd6f2; margin: 0; }
 .fa-fuentes strong { color: var(--fa-oro-claro); }
+.fa-fuentes a { color: var(--fa-oro-claro); overflow-wrap: anywhere; }
+.fa-prov { color: #b9c2e8; font-style: italic; }
 .fa-pend { background: #E8CE86; color: #3a2a00; padding: 0 6px; border-radius: 4px; }
 /* Pista para girar las cartas: la espiral gira despacio (más rápido al pasar el ratón), sale el texto «Girar»
    y, hasta que se gira la primera carta, una mano «toca» la espiral de la primera carta visible.

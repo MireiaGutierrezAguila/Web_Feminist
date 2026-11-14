@@ -768,39 +768,62 @@
         "nota": "Relleno 2026-11-11. [VERIFICAR] El día 28 solo lo da Encyclopedia.com; Universalis da el año. Sin el año del premio Nadal (1944 o 1945 según fuentes). Fuentes básicas."
       }
     ],
+    "02-29": [
+      {
+        "principal": true, "tipo": "premio", "anio": 1940, "pais": "EE. UU.", "mujer": null, "tema": "arte y literatura", "region": "América del Norte",
+        "texto": { "es": "Hattie McDaniel gana el Óscar a la mejor actriz de reparto por «Lo que el viento se llevó».", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "History.com: McDaniel gana el Óscar", "url": "https://www.history.com/this-day-in-history/february-29/mcdaniel-wins-oscar" },
+          { "nombre": "Academia de Hollywood: ceremonia de los Óscar de 1940", "url": "https://www.oscars.org/oscars/ceremonies/1940" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. Ceremonia del jueves 29 feb 1940 (la Academia). «Primera persona afroamericana premiada» no se ha leído en ninguna página abierta: no usar esa frase hasta tenerla. Premio relevante; fecha que solo ocurre en año bisiesto."
+      }
+    ],
     "03-01": [
       {
         "principal": true, "tipo": "hito", "anio": 1919, "pais": "Corea", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "Asia", "sensible": true,
-        "texto": { "es": "Comienza en Corea el Movimiento del 1 de Marzo contra el dominio japonés, con participación de estudiantes como Yu Gwan-sun.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "texto": { "es": "Comienza en Corea el Movimiento del 1 de Marzo, una oleada de protestas pacíficas contra el dominio japonés.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "Korean Culture Project: este mes en la historia coreana", "url": "https://koreancultureproject.org/newsletter/this-month-in-korean-history-mar-2026" },
           { "nombre": "The Korea Times: mujeres del movimiento de independencia", "url": "https://www.koreatimes.co.kr/lifestyle/koreanheritage/20190303/woman-of-independence-movements" }
         ],
-        "estado": "parcial", "comprobado": "2026-11-11",
-        "nota": "Relleno 2026-11-11. SENSIBLE (represión violenta; tono informativo). Solo la primera fuente da el día. No citar la condena de Yu Gwan-sun (3 o 5 años según la fuente). Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional."
+        "estado": "parcial", "comprobado": "2026-11-13",
+        "nota": "Relleno 2026-11-11. SENSIBLE (represión violenta; tono informativo). Solo la primera fuente da el día. No citar la condena de Yu Gwan-sun (3 o 5 años según la fuente). Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional. 2026-11-13: se quita el nombre de Yu Gwan-sun del texto: según una nota de resumen no participó en la manifestación del 1 de marzo (se unió a la del 5 de marzo en Seúl y organizó la de Aunae después). Korea.net dice que la marcha de Aunae empezó el 1 de marzo, lo que contradice a otras páginas de la misma web (1 de abril): no usarla para el día. Falta fuente que dé el 1 de marzo con cita (Enciclopedia de Cultura Coreana o Independence Hall, no abiertas). Si se quiere una mujer protagonista, cambiar de candidata."
       }
     ],
     "03-02": [
       {
         "principal": true, "tipo": "muerte", "anio": 1949, "pais": "India", "mujer": null, "tema": "arte y literatura", "region": "Asia",
-        "texto": { "es": "Muere Sarojini Naidu, poeta y activista india que presidió el Congreso Nacional Indio.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "texto": { "es": "Muere Sarojini Naidu, poeta y activista india que presidió el Congreso Nacional Indio en 1925.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
-          { "nombre": "EBSCO Research Starters: Sarojini Naidu", "url": "https://ebsco.com/research-starters/history/sarojini-naidu" }
+          { "nombre": "EBSCO Research Starters: Sarojini Naidu", "url": "https://ebsco.com/research-starters/history/sarojini-naidu" },
+          { "nombre": "Congreso Nacional Indio: presidentes anteriores, Sarojini Naidu", "url": "https://inc.in/leadership/past-party-presidents/mrs-sarojini-naidu" }
         ],
-        "estado": "parcial", "comprobado": "2026-11-11",
-        "nota": "Relleno 2026-11-11. Una sola fuente abierta. No usar «primera gobernadora» ni «primera presidenta» (Annie Besant presidió en 1917). Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional."
+        "estado": "parcial", "comprobado": "2026-11-13",
+        "nota": "Relleno 2026-11-11. Una sola fuente abierta. No usar «primera gobernadora» ni «primera presidenta» (Annie Besant presidió en 1917). Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional. 2026-11-13: la web del Congreso confirma la presidencia en 1925 (sesión 40 de Cawnpore), pero dice que murió «en su oficina de Londres», error evidente (murió en Lucknow como gobernadora de Uttar Pradesh): no usarla para el lugar. El día 2 sigue sin segunda fuente institucional abierta (PIB dio 403)."
       }
     ],
     "03-03": [
       {
-        "principal": true, "tipo": "hito", "anio": 1887, "pais": "EE. UU.", "mujer": null, "tema": "educación", "region": "América del Norte",
+        "principal": true, "tipo": "hito", "anio": 1913, "pais": "EE. UU.", "mujer": null, "tema": "voto y derechos políticos", "region": "América del Norte", "ancla": true, "precision": "dia",
+        "texto": { "es": "Las sufragistas desfilan en Washington D. C. el día antes de la investidura del presidente Wilson, en un desfile concebido por Alice Paul.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Servicio de Parques Nacionales de EE. UU.: el gran desfile sufragista de 1913", "url": "https://www.nps.gov/articles/000/the-great-suffrage-parade-of-1913.htm" },
+          { "nombre": "Museo Nacional de Historia de la Mujer: el desfile sufragista de 1913", "url": "https://womenshistory.org/node/679" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-13",
+        "nota": "Ancla verificada 2026-11-13. Las dos fuentes abiertas coinciden en el 3 mar 1913, víspera de la investidura, y en Alice Paul como organizadora (al frente del Comité del Congreso de la NAWSA). Las mujeres afroamericanas participaron, pero se les pidió ir al final; Ida B. Wells-Barnett se unió a la delegación de Illinois (NHM y NPS discrepan en los matices): si se amplía el texto, decirlo con tono informativo. No se cita número de participantes (no consta en las páginas abiertas)."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1887, "pais": "EE. UU.", "mujer": null, "tema": "educación", "region": "América del Norte",
         "texto": { "es": "Anne Sullivan llega a Tuscumbia (Alabama) y empieza a enseñar a Helen Keller, sordociega, lengua de signos manual.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "American Foundation for the Blind: cronología de Helen Keller", "url": "https://afb.org/about-afb/history/helen-keller/biography-and-chronology/chronology" },
           { "nombre": "American Printing House for the Blind: cómo enseñó Anne Sullivan a Helen Keller", "url": "https://aph.org/blog/embarking-on-an-educational-journey-how-anne-sullivan-taught-helen-keller" }
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
-        "nota": "Relleno 2026-11-11. 3 mar 1887 en las dos fuentes. No citar la edad de Sullivan (20 o 21 según la fuente)."
+        "nota": "Relleno 2026-11-11. 3 mar 1887 en las dos fuentes. No citar la edad de Sullivan (20 o 21 según la fuente). Pasa a alternativa el 2026-11-13 porque el 3 mar tiene un ancla (el desfile sufragista de 1913)."
       }
     ],
     "03-04": [
@@ -908,10 +931,11 @@
         "texto": { "es": "Muere Savitribai Phule, maestra india que en 1848 abrió en Pune lo que pudo ser la primera escuela para niñas del país.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "The News Minute: Savitribai Phule", "url": "https://www.thenewsminute.com/news/remembering-savitribai-phule-one-india-s-earliest-women-educators-her-119th-death" },
-          { "nombre": "Forward Press: Savitribai Phule", "url": "https://www.forwardpress.in/2021/01/savitribai-not-laxmibai-is-the-great-heroine-of-modern-india/" }
+          { "nombre": "Forward Press: Savitribai Phule", "url": "https://www.forwardpress.in/2021/01/savitribai-not-laxmibai-is-the-great-heroine-of-modern-india/" },
+          { "nombre": "Universidad de Pune (cátedra Mahatma Phule): vida y obra", "url": "https://www.unipune.ac.in/chairs/mahatma_phule_chair/mphule_webfiles/Life_%20&%20_Work.htm" }
         ],
-        "estado": "parcial", "comprobado": "2026-11-11",
-        "nota": "Relleno 2026-11-11. Mantener la cautela («pudo ser»). Dos medios, ninguna fuente institucional. Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional."
+        "estado": "parcial", "comprobado": "2026-11-13",
+        "nota": "Relleno 2026-11-11. Mantener la cautela («pudo ser»). Dos medios, ninguna fuente institucional. Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional. 2026-11-13: la Universidad de Pune confirma la escuela de niñas de 1848 (atribuida a Jotirao; Savitribai fue la maestra) pero no menciona la muerte, así que el 10 mar 1897 sigue sin fuente institucional. Un texto del NCERT discute si el trabajo se retomó en 1851 (no abierto): mantener «lo que pudo ser»."
       }
     ],
     "03-11": [
@@ -957,6 +981,18 @@
         "nota": "Relleno 2026-11-12. Alternativa del 13 mar. MUJER VIVA: premio con tono informativo. El 13 mar 2013 es el anuncio (la ceremonia fue en junio). La nota de prensa de ACM da 403 (no abierta). Fuentes básicas."
       }
     ],
+    "03-15": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1868, "pais": "Reino Unido", "mujer": null, "tema": "educación", "region": "Europa",
+        "texto": { "es": "Nace Grace Chisholm Young, matemática inglesa, la primera mujer en obtener oficialmente un doctorado en Alemania (Gotinga, 1895).", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Agnes Scott College: Grace Chisholm Young", "url": "https://mathwomen.agnesscott.org/women/young.htm" },
+          { "nombre": "MacTutor (Universidad de St Andrews): Grace Chisholm Young", "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Chisholm_Young/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. Dos fuentes dan el 15 mar 1868. Una fuente da 1896 para el título oficial; la tesis es de 1895."
+      }
+    ],
     "03-16": [
       {
         "principal": true, "tipo": "nacimiento", "anio": 1750, "pais": "Alemania", "mujer": null, "tema": "ciencia y tecnología", "region": "Europa",
@@ -970,12 +1006,13 @@
       },
       {
         "principal": false, "tipo": "nacimiento", "anio": 1933, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa",
-        "texto": { "es": "Nace Teresa Berganza, mezzosoprano española, la primera mujer en ingresar en la Real Academia de Bellas Artes de San Fernando (1995).", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "texto": { "es": "Nace Teresa Berganza, mezzosoprano española, la primera mujer académica de número de la Real Academia de Bellas Artes de San Fernando (1995).", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
-          { "nombre": "Buscabiografías: Teresa Berganza", "url": "https://www.buscabiografias.com/biografia/verDetalle/3292/Teresa%20Berganza" }
+          { "nombre": "Real Academia de Bellas Artes de San Fernando: en memoria de Teresa Berganza", "url": "https://www.realacademiabellasartessanfernando.com/noticias/academia/en-memoria-deteresa-berganza/" },
+          { "nombre": "Gran Enciclopèdia Catalana: Teresa Berganza", "url": "https://www.enciclopedia.cat/gran-enciclopedia-catalana/teresa-berganza" }
         ],
-        "estado": "parcial", "comprobado": "2026-11-11",
-        "nota": "Relleno 2026-11-11. Alternativa del 16 mar. Algunas fuentes dan 1934 o 1935. Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional."
+        "estado": "verificada", "comprobado": "2026-11-13", "calidadFuentes": "basica",
+        "nota": "Alternativa del 16 mar. 2026-11-13: la Academia confirma 1933 (sin día) y su ingreso en 1995 como primera mujer académica de número; el día 16 solo lo da la Enciclopèdia Catalana. Los años 1934 y 1935 que figuran en otros sitios son erróneos. Otra publicación de la Academia sitúa el ingreso el 23 abr 1995 en lugar del 5 mar: no se cita el día de ingreso. Fuentes básicas."
       },
       {
         "principal": false, "tipo": "hito", "anio": 1919, "pais": "Egipto", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "África",
@@ -1170,13 +1207,13 @@
     "03-30": [
       {
         "principal": true, "tipo": "hito", "anio": 2022, "pais": "España", "mujer": null, "tema": "deporte", "region": "Europa",
-        "texto": { "es": "91.553 personas ven en el Camp Nou el Barcelona–Real Madrid de la Champions femenina, cifra récord de asistencia en fútbol femenino.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "texto": { "es": "91.553 personas ven en el Camp Nou el Barcelona–Real Madrid de la Champions femenina, entonces récord de asistencia en un partido de fútbol femenino.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
-          { "nombre": "Sports Illustrated: récord de asistencia Barcelona–Real Madrid", "url": "https://www.si.com/soccer/2022/03/30/barcelona-real-madrid-womens-champions-league-attendance-world-record-camp-nou" },
-          { "nombre": "Sky Sports: el Camp Nou bate el récord de asistencia", "url": "https://www.skysports.com/football/news/28508/12578437/barcelona-5-2-real-madrid-nou-camp-breaks-womens-football-attendance-record" }
+          { "nombre": "UEFA: Barcelona 5-2 Real Madrid, Champions League femenina", "url": "https://www.uefa.com/womenschampionsleague/news/0273-14ca7a6d177a-1c4b8d54f3eb-1000--barcelona-5-2-real-madrid-8-3-agg-holders-progress-with-sho/" },
+          { "nombre": "FC Barcelona: récord mundial de asistencia con 91.553 personas", "url": "https://www.fcbarcelona.com/en/news/2555074/the-crowd-also-make-history-as-camp-nou-sees-a-world-record-attendance-of-91553" }
         ],
-        "estado": "parcial", "comprobado": "2026-11-12",
-        "nota": "Relleno 2026-11-12. Dos medios, sin fuente institucional (UEFA o FC Barcelona sin abrir). El récord anterior depende de qué se compare (90.185 en la final del Mundial de 1999, o 60.739 en clubes): no se cita. Estado parcial: buscar fuente institucional. Cuenta como día de España."
+        "estado": "verificada", "comprobado": "2026-11-13",
+        "nota": "Relleno 2026-11-12; fuentes oficiales añadidas 2026-11-13. UEFA da el miércoles 30 mar 2022 y las 91.553 personas; el FC Barcelona solo da la fecha de publicación de su noticia. Se escribe «entonces récord» porque lo superó la semifinal contra el Wolfsburgo (91.648). Cuenta como día de España."
       }
     ],
     "03-31": [
@@ -1225,13 +1262,13 @@
     "04-03": [
       {
         "principal": true, "tipo": "nacimiento", "anio": 1903, "pais": "India", "mujer": null, "tema": "trabajo y economía", "region": "Asia",
-        "texto": { "es": "Nace Kamaladevi Chattopadhyay, reformadora social india que impulsó la Junta de Artesanías de la India y cooperativas de refugiados.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "texto": { "es": "Nace Kamaladevi Chattopadhyay, reformadora social india, primera presidenta de la Junta de Artesanías de la India.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
-          { "nombre": "Wikipedia: Kamaladevi Chattopadhyay", "url": "https://en.wikipedia.org/wiki/Kamaladevi_Chattopadhyay" },
+          { "nombre": "Centro Nacional Indira Gandhi para las Artes (IGNCA): Kamaladevi Chattopadhyay", "url": "https://ignca.gov.in/?p=12991" },
           { "nombre": "The Better India: Kamaladevi Chattopadhyay", "url": "https://www.thebetterindia.com/94158/kamaladevi-chattopadhyay-feminist-freedom-fighter-cooperatives-" }
         ],
-        "estado": "parcial", "comprobado": "2026-11-11",
-        "nota": "Relleno 2026-11-11. Ninguna fuente institucional. Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional."
+        "estado": "parcial", "comprobado": "2026-11-13",
+        "nota": "Relleno 2026-11-11; actualizado 2026-11-13. El IGNCA (institución del Gobierno indio) confirma que fue la primera presidenta de la Junta de Artesanías, pero no el 3 abr 1903; el día sigue sin fuente institucional. Se quita «cooperativas de refugiados» (la fuente habla de la ciudad industrial de Faridabad para unas 50.000 personas llegadas tras la Partición). Se retira Wikipedia como fuente. Estado parcial."
       }
     ],
     "04-04": [
@@ -1296,11 +1333,12 @@
         "principal": true, "tipo": "derecho", "anio": 1946, "pais": "Japón", "mujer": null, "tema": "voto y derechos políticos", "region": "Asia",
         "texto": { "es": "Las mujeres japonesas votan por primera vez en unas elecciones generales y resultan elegidas 39 diputadas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
-          { "nombre": "Wikipedia: elecciones generales de Japón de 1946", "url": "https://en.wikipedia.org/wiki/1946_Japanese_general_election" },
+          { "nombre": "Oficina de Igualdad de Género del Gobierno de Japón: 70 años del sufragio femenino", "url": "https://www.gender.go.jp/policy/sanseiken70/" },
+          { "nombre": "Biblioteca de la Dieta de Japón: las elecciones de 1946", "url": "https://www.ndl.go.jp/modern/cha5/description05.html" },
           { "nombre": "Nippon.com: mujeres en la política japonesa", "url": "https://www.nippon.com/en/japan-data/h02587/" }
         ],
-        "estado": "parcial", "comprobado": "2026-11-11",
-        "nota": "Relleno 2026-11-11. El día 10 solo lo da Wikipedia; Nippon.com dice solo «abril de 1946». Un resumen lo fechaba el 1 de abril: aclarar. Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional."
+        "estado": "verificada", "comprobado": "2026-11-13",
+        "nota": "Relleno 2026-11-11; fuentes institucionales añadidas 2026-11-13. Las dos fuentes japonesas dan el 10 abr 1946 y las 39 diputadas. Un resumen anterior que decía 1 de abril era un error."
       }
     ],
     "04-11": [
@@ -1311,8 +1349,8 @@
           { "nombre": "Marathons.com: Stamata Revithi", "url": "https://www.marathons.com/en/inspiring-runners/stamata-revithi-the-unsung-pioneer_kp5y" },
           { "nombre": "Olympedia: Stamata Revithi", "url": "https://www.olympedia.org/athletes/1202145" }
         ],
-        "estado": "parcial", "comprobado": "2026-11-11",
-        "nota": "Relleno 2026-11-11. 11 abr gregoriano = 30 mar juliano. Olympedia no da el día. Hay relatos que mencionan a una «Melpomene»: no citar. Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional."
+        "estado": "parcial", "comprobado": "2026-11-13",
+        "nota": "Relleno 2026-11-11. 11 abr gregoriano = 30 mar juliano. Olympedia no da el día. Hay relatos que mencionan a una «Melpomene»: no citar. Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional. 2026-11-13: [VERIFICAR] ninguna fuente olímpica oficial abierta da el 11 abr; Olympedia dice solo «el día después de la competición oficial» y la lista como DNS en el maratón masculino. Hay debate sobre si «Melpomene» y Revithi son la misma persona."
       }
     ],
     "04-13": [
@@ -1363,6 +1401,18 @@
         "nota": "Relleno 2026-11-11. Nació en la India británica; las fuentes no coinciden en la ciudad: no se nombra."
       }
     ],
+    "04-19": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1966, "pais": "EE. UU.", "mujer": null, "tema": "deporte", "region": "América del Norte", "viva": true,
+        "texto": { "es": "Bobbi Gibb completa el maratón de Boston sin dorsal, porque las normas excluían a las mujeres; se la considera la primera mujer en terminarlo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: Bobbi Gibb", "url": "https://www.encyclopedia.com/sports/encyclopedias-almanacs-transcripts-and-maps/gibb-bobbi" },
+          { "nombre": "AIMS: Roberta Gibb", "url": "https://aims-worldrunning.org/articles/652-roberta-gibb.html" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. Dos fuentes dan el 19 abr 1966 (Patriots' Day). MUJER VIVA: hecho histórico con tono informativo, no cumpleaños. No confundir con Kathrine Switzer (1967)."
+      }
+    ],
     "04-21": [
       {
         "principal": true, "tipo": "nacimiento", "anio": 1879, "pais": "Indonesia", "mujer": null, "tema": "educación", "region": "Asia", "ancla": true, "precision": "dia",
@@ -1384,6 +1434,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Relleno 2026-11-11. La segunda fuente era Wikipedia: se deja una sola. Fuentes básicas."
+      }
+    ],
+    "04-24": [
+      {
+        "principal": true, "tipo": "hito", "anio": 2013, "pais": "Bangladés", "mujer": null, "tema": "trabajo y economía", "region": "Asia", "sensible": true,
+        "texto": { "es": "Se derrumba el edificio Rana Plaza, en Savar (Bangladés): mueren más de 1.100 personas, la mayoría trabajadoras textiles.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Naciones Unidas: Rana Plaza", "url": "https://news.un.org/en/audio/2014/04/588102" },
+          { "nombre": "OIT: Rana Plaza", "url": "https://webapps.ilo.org/infostories/en-GB/Stories/Country-Focus/rana-plaza.html" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. SENSIBLE (tragedia con muchas víctimas; tono informativo, sin detalles). Dos fuentes oficiales dan el 24 abr 2013. Las cifras varían (1.100 a 1.138). Se quita «llevó a nuevos acuerdos de seguridad» porque no se leyó en una página abierta."
       }
     ],
     "04-25": [
@@ -1433,6 +1495,54 @@
         "nota": "Ancla. Fecha confirmada. El «catorce» solo viene de páginas oficiales. No concretar el lugar (Catedral o Casa Rosada según fuentes). Tema sensible; tono informativo. No se ha comprobado el motivo en página abierta: no incluido."
       }
     ],
+    "05-05": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1930, "pais": "Reino Unido", "mujer": null, "tema": "exploración y aventura", "region": "Europa",
+        "texto": { "es": "Amy Johnson despega de Croydon en solitario rumbo a Australia, vuelo que la convertirá en la primera mujer en hacerlo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Museo de la Ciencia de Londres: la maravillosa señorita Johnson", "url": "https://blog.sciencemuseum.org.uk/wonderful-miss-johnson" },
+          { "nombre": "Historic Croydon Airport: Amy Johnson", "url": "https://www.historiccroydonairport.org.uk/?p=302" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. Dos fuentes abiertas dan el 5 mayo 1930. Llegó a Darwin el 24 mayo (se descarta repetirla ese día). Cuenta como Europa occidental."
+      }
+    ],
+    "05-08": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1429, "pais": "Francia", "mujer": null, "tema": "movimientos sociales y resistencia", "region": "Europa",
+        "texto": { "es": "Termina el asedio inglés de Orleans, con Juana de Arco en la ofensiva francesa.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "EBSCO Research Starters: el alivio de Orleans por Juana de Arco", "url": "https://www.ebsco.com/research-starters/history/joan-arcs-relief-orleans" },
+          { "nombre": "History.com: Juana de Arco libera Orleans", "url": "https://www.history.com/this-day-in-history/joan-of-arc-relieves-orleans" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. Edad Media. Dos fuentes abiertas (la segunda divulgativa). Mujer en un hecho militar: tono informativo, sin glorificar. Su muerte (30 mayo 1431) no se repite."
+      }
+    ],
+    "05-09": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1960, "pais": "EE. UU.", "mujer": null, "tema": "salud y derechos reproductivos", "region": "América del Norte",
+        "texto": { "es": "La FDA aprueba de forma condicional la primera píldora anticonceptiva de EE. UU., Enovid.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "ABA Journal: la FDA aprueba la píldora, 1960", "url": "https://www.abajournal.com/magazine/article/960-fda-birth-control-pill" },
+          { "nombre": "Museo de la Ciencia de Londres: la píldora", "url": "https://blog.sciencemuseum.org.uk/the-pill-many-happy-returns" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. Dos fuentes abiertas. La aprobación fue «condicional» y se comercializó como anticonceptivo meses después. Tema delicado: tono informativo."
+      }
+    ],
+    "05-10": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1924, "pais": "Ecuador", "mujer": null, "tema": "voto y derechos políticos", "region": "América Latina",
+        "texto": { "es": "Matilde Hidalgo vota en Ecuador, considerada la primera mujer en votar en unas elecciones de América Latina.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Primicias: Matilde Hidalgo y el voto", "url": "https://www.primicias.ec/noticias/politica/maltilde-hidalgo-democracia-voto-historia-aniversario" },
+          { "nombre": "KCH Comunicación: 100 años del voto femenino en Ecuador", "url": "https://kchcomunicacion.com/2024/05/10/100-anos-del-voto-femenino-en-ecuador-matilde-hidalgo-marco-la-ruta-de-las-mujeres-en-la-politica/" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. Dos fuentes de prensa dan el 10 mayo 1924 (elecciones legislativas); ninguna institucional, y «primera de Latinoamérica» solo viene de esas fuentes. Las fuentes discrepan en cuándo pidió inscribirse (2 o 10 mayo). Ecuador legalizó el voto femenino en 1924 y lo recogió en la Constitución de 1929. Estado parcial: buscar fuente institucional."
+      }
+    ],
     "05-11": [
       {
         "principal": true, "tipo": "derecho", "anio": 2011, "pais": "Consejo de Europa", "mujer": null, "tema": "violencia y justicia", "region": "Europa", "ancla": true, "precision": "dia",
@@ -1445,6 +1555,30 @@
         "nota": "Ancla. 11 may 2011 = fecha del convenio (hecho en Estambul); en vigor el 1 ago 2014. Las páginas del Consejo de Europa dieron 403: [VERIFICAR] si se quiere citar «se abre a la firma». Evitar comparaciones entre países (p. ej., Turquía)."
       }
     ],
+    "05-16": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 2005, "pais": "Kuwait", "mujer": null, "tema": "voto y derechos políticos", "region": "Asia",
+        "texto": { "es": "El Parlamento de Kuwait aprueba el derecho de las mujeres a votar y a presentarse a las elecciones, por 35 votos a 23.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Dawn: Kuwait aprueba el voto de las mujeres", "url": "https://www.dawn.com/news/139621" },
+          { "nombre": "Voice of America: Kuwait y el voto femenino", "url": "https://www.voanews.com/a/a-13-2005-06-03-voa18-67534892/285359.html" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. Votación definitiva tras una primera votación (15 feb) y una derrota (2 may). Las mujeres votaron por primera vez en 2007 y entraron en el Parlamento en 2009."
+      }
+    ],
+    "05-20": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1932, "pais": "EE. UU. (salida de Terranova)", "mujer": null, "tema": "exploración y aventura", "region": "América del Norte",
+        "texto": { "es": "Amelia Earhart despega de Terranova y al día siguiente aterriza en Irlanda del Norte: es la primera mujer en cruzar sola el Atlántico en avión.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Museo Nacional del Aire y del Espacio: Earhart parte en su vuelo transatlántico", "url": "https://airandspace.si.edu/multimedia-gallery/amelia-earhart-departs-solo-flight-across-atlantic-may-20-1932" },
+          { "nombre": "Guinness World Records: primer vuelo en solitario de una mujer a través del Atlántico", "url": "https://www.guinnessworldrecords.com/world-records/first-flight-across-the-atlantic-solo-female" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. Despega el 20 y aterriza el 21 mayo 1932 (mismo hecho). Earhart ya aparece el 11 enero (vuelo Hawái–Norteamérica)."
+      }
+    ],
     "05-25": [
       {
         "principal": true, "tipo": "derecho", "anio": 2018, "pais": "Irlanda", "mujer": null, "tema": "salud y derechos reproductivos", "region": "Europa", "ancla": true, "precision": "dia",
@@ -1455,6 +1589,29 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Ancla. Fecha confirmada por RTÉ (rte.ie/archives): 25 may 2018. Datos oficiales: 1.429.981 sí, 723.632 no (RTÉ da 733.632: no poner cifras absolutas), participación 64,13 %. Tono sobrio."
+      }
+    ],
+    "05-28": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1987, "pais": "Costa Rica", "mujer": null, "tema": "salud y derechos reproductivos", "region": "América Latina",
+        "texto": { "es": "Se declara el 28 de mayo Día Internacional de Acción por la Salud de las Mujeres, impulsado desde América Latina y el Caribe.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "WGNRR: 28 de mayo, Día Internacional de Acción por la Salud de las Mujeres", "url": "https://wgnrr.org/dayofaction/may-28-international-day-of-action-for-womens-health/" },
+          { "nombre": "UNAM Global: Día Internacional de Acción por la Salud de las Mujeres", "url": "https://unamglobal.unam.mx/global_revista/especial-dia-internacional-de-accion-por-la-salud-de-las-mujeres/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. Dos fuentes abiertas. Discrepan en quién lo propuso (WGNRR frente a la Red de Salud de las Mujeres Latinoamericana y del Caribe); se menciona un antecedente en 1984 (Colombia), sin abrir. Tema delicado: tono informativo."
+      }
+    ],
+    "05-29": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1970, "pais": "Reino Unido", "mujer": null, "tema": "trabajo y economía", "region": "Europa",
+        "texto": { "es": "Se aprueba en el Reino Unido la Equal Pay Act, que prohíbe la discriminación entre mujeres y hombres en el trato laboral.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Legislation.gov.uk: Equal Pay Act 1970", "url": "https://www.legislation.gov.uk/ukpga/1970/41/enacted" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-13. Una sola fuente (la oficial) da el día. Entró en vigor en 1975, no el día de la aprobación. Fuentes básicas."
       }
     ],
     "06-03": [
@@ -2352,10 +2509,12 @@
         "texto": { "es": "Sudán anuncia la derogación de la ley de orden público que controlaba cómo se vestían y se movían las mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "Africanews", "url": "https://www.africanews.com/2019/11/29/sudan-disbands-ex-ruling-party-abolishes-public-order-act/" },
-          { "nombre": "The Irish Times", "url": "https://www.irishtimes.com/news/world/africa/sudan-repeals-public-order-law-restricting-women-s-behaviour-1.4099134" }
+          { "nombre": "The Irish Times", "url": "https://www.irishtimes.com/news/world/africa/sudan-repeals-public-order-law-restricting-women-s-behaviour-1.4099134" },
+          { "nombre": "Amnistía Internacional: derogar las leyes de orden público en Sudán es un paso adelante", "url": "https://www.amnesty.org/en/latest/news/2019/11/sudan-decision-to-repeal-public-order-laws-a-step-forward-for-womens-rights-2/" },
+          { "nombre": "Dawn: Sudán anula una ley de vigilancia moral", "url": "https://www.dawn.com/news/1519648" }
         ],
-        "estado": "parcial", "comprobado": "2026-11-10",
-        "nota": "Ninguna fuente leída da el día literal; una dice 29 y otras agencias 28 de noviembre. Irish Times habla de un plan anunciado. Activistas señalan que quedan otras normas penales. Decidir fecha y verbo antes de publicar."
+        "estado": "parcial", "comprobado": "2026-11-13",
+        "nota": "Ninguna fuente leída da el día literal; una dice 29 y otras agencias 28 de noviembre. Irish Times habla de un plan anunciado. Activistas señalan que quedan otras normas penales. Decidir fecha y verbo antes de publicar. 2026-11-13: Amnistía fecha su comunicado el 29 nov 2019 y Dawn (30 nov) dice que se anunció «el viernes», o sea el 29. Según búsquedas (no abiertas), el Consejo Soberano y el Gabinete lo decidieron en una reunión que acabó pasada la medianoche del jueves 28. Sigue sin fuente de la ONU o de Human Rights Watch."
       },
       {
         "principal": false, "tipo": "nacimiento", "anio": 1832, "pais": "EE. UU.", "mujer": null, "tema": "arte y literatura", "region": "América del Norte",
@@ -2402,6 +2561,18 @@
         "nota": "Ancla. Año confirmado: 1955. AVISO: la ficha de Rosa Parks de la web puede decir «1950» (no modificar, solo avisar a Mireia). Es un hito de derechos civiles más que de género estricto: Mireia decide si encaja. No confundir con el inicio del boicot ni con la sentencia."
       }
     ],
+    "12-02": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1988, "pais": "Pakistán", "mujer": null, "tema": "voto y derechos políticos", "region": "Asia",
+        "texto": { "es": "Benazir Bhutto jura como primera ministra de Pakistán, la primera mujer al frente del gobierno de un país de mayoría musulmana.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Express Tribune: Benazir Bhutto jura como primera ministra", "url": "https://tribune.com.pk/story/1574158/today-history-benazir-bhutto-takes-oath-first-muslim-prime-minister?amp=1" },
+          { "nombre": "New World Encyclopedia: Benazir Bhutto", "url": "https://www.newworldencyclopedia.org/entry/Benazir_Bhutto" }
+        ],
+        "estado": "parcial", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. Dos fuentes abiertas (prensa y enciclopedia colaborativa), ninguna institucional. Una web menor da el 1 de diciembre; el resto, el 2. No mencionar su partido. Estado parcial: buscar fuente institucional."
+      }
+    ],
     "12-03": [
       {
         "principal": true, "tipo": "nacimiento", "anio": 1967, "pais": "Burkina Faso", "mujer": null, "tema": "ciencia y tecnología", "region": "África", "viva": true,
@@ -2426,6 +2597,18 @@
         "nota": "Diciembre, relleno. Muerte el 4 dic 1975 en Nueva York (dos fuentes abiertas, ninguna institucional fuerte; contemporarythinkers.org solo da el año). Sin la expresión «banalidad del mal» en el texto (no verificada aquí). Fuentes básicas."
       }
     ],
+    "12-06": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1978, "pais": "España", "mujer": null, "tema": "derechos e igualdad", "region": "Europa",
+        "texto": { "es": "España aprueba en referéndum su Constitución, que prohíbe en el artículo 14 la discriminación por razón de sexo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Congreso de los Diputados: la Constitución de 1978", "url": "https://www.congreso.es/cem/const1978" },
+          { "nombre": "BOE: Constitución Española", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. El Congreso da el referéndum del 6 dic 1978 y el BOE el artículo 14 (y su publicación el 29 dic 1978): cada fuente confirma una parte. Se evita deliberadamente la masacre de Montreal del 6 dic (tema sensible). Cuenta como día de España."
+      }
+    ],
     "12-07": [
       {
         "principal": true, "tipo": "nacimiento", "anio": 1878, "pais": "Japón", "mujer": null, "tema": "arte y literatura", "region": "Asia",
@@ -2436,6 +2619,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Diciembre, relleno. El día 7 solo lo da la Biblioteca de la Dieta; Encyclopedia.com solo da el año 1878 y confirma «Midaregami» y su papel feminista. Fuentes básicas."
+      }
+    ],
+    "12-08": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1919, "pais": "EE. UU.", "mujer": null, "tema": "ciencia y tecnología", "region": "América del Norte",
+        "texto": { "es": "Nace Julia Robinson, matemática estadounidense; su trabajo fue clave para resolver el décimo problema de Hilbert y presidió la Sociedad Matemática Americana.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "MacTutor (Universidad de St Andrews): Julia Robinson", "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Robinson_Julia/" },
+          { "nombre": "National Women's History Alliance: diciembre", "url": "https://nationalwomenshistoryalliance.org/december/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-14",
+        "nota": "Relleno 2026-11-13. 8 dic 1919 en St. Louis según las dos fuentes. MacTutor da 1982 como año de su presidencia de la AMS: el texto no cita el año."
       }
     ],
     "12-09": [
@@ -2460,6 +2655,16 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Ancla. 10 dic 1948, resolución 217 A (III) de la Asamblea General; ocho abstenciones y ningún voto en contra. El artículo 2 incluye «sex» entre los motivos de discriminación. Las dos fuentes son de la ONU (no independientes); OHCHR y Archivos de EE. UU. no se pudieron abrir. Región «Mundial» por convención."
+      },
+      {
+        "principal": false, "tipo": "derecho", "anio": 1869, "pais": "EE. UU. (Territorio de Wyoming)", "mujer": null, "tema": "voto y derechos políticos", "region": "América del Norte", "ancla": true, "precision": "dia",
+        "texto": { "es": "El Territorio de Wyoming aprueba el voto femenino y el acceso de las mujeres a cargos públicos.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Biblioteca de Wyoming: legislación del sufragio femenino en Wyoming", "url": "https://gowyld.libguides.com/wyomingwomenssuffrage/legislation" },
+          { "nombre": "WyoHistory.org: sufragio y derechos de las mujeres", "url": "https://www.wyohistory.org/encyclopedia/topics/womens-suffrage-and-womens-rights" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-13",
+        "nota": "Ancla verificada 2026-11-13. Las dos fuentes abiertas dan el 10 dic 1869 (la ley se aprobó el 10 de diciembre de 1869, firmada por el gobernador Campbell; llegó a su despacho el 6 dic). Es la ley de un territorio, no de un estado: no escribir «primer estado». «Primer territorio de EE. UU.» no consta en ninguna página abierta y se omite."
       }
     ],
     "12-11": [

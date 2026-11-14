@@ -512,7 +512,7 @@
     var COLORES_TARJETA = ['#C2386Eb3', '#127C86b3', '#E8762Bb3', '#8a4fc2b3', '#2E7D4Fb3'];
     var COLORES_NOMBRE = ['#F27AA6', '#4FD0DB', '#FFA95C', '#C39BEE', '#7FD79E', '#F5F5F0'];
 
-    F.cargar().then(function () { return F.cargarObjetos(); }).then(function () { return F.cargarFotos(); }).then(function () {
+    F.cargar().then(function () { return F.cargarObjetos(); }).then(function () { return F.cargarFotos(); }).then(function () { return F.cargarFuentes(); }).then(function () {
       var tarjetas = {}; // slug -> tarjeta de la fila, para abrir su ficha desde los nombres escondidos
       // Nombres escondidos en la oscuridad: cada uno lleva a su ficha
       var nombres = document.getElementById('nombres');

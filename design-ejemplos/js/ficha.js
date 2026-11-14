@@ -5,7 +5,7 @@
   var F = window.F;
   var RUTA_J = '../public/images/juego/';
   // Textos de interfaz (irán al archivo de idiomas). No son contenido de las fichas.
-  var TXT = { cerrar: 'Cerrar ficha', quienFue: '¿Quién fue ', fuentes: 'Fuentes: ', imagen: 'Imagen del dorso: ', origen: 'Origen', licencia: 'Licencia', girar: 'Girar' };
+  var TXT = { cerrar: 'Cerrar ficha', quienFue: '¿Quién fue ', fuentes: 'Fuentes: ', imagen: 'Imagen del dorso: ', origen: 'Origen', licencia: 'Licencia', girar: 'Girar', provisional: '(fuentes provisionales, pendientes de reforzar)' };
   F.txt = TXT; // la portada reutiliza estos textos de interfaz (irán al archivo de idiomas)
   var objetos = {};
   var abierta = null;
@@ -27,6 +27,14 @@
   F.foto = function (slug) { return fotos[slug] || null; };
   // Texto del dorso de las mujeres de las que no hay imagen utilizable (ni retrato fiable ni licencia libre)
   F.sinImagen = function (slug) { return sinImagen[slug] || null; };
+
+  // Fuentes de cada ficha (data/fuentes-fichas.json), con enlaces
+  var fuentesFicha = {};
+  F.cargarFuentes = function () {
+    return fetch('data/fuentes-fichas.json').then(function (r) { return r.json(); })
+      .then(function (o) { fuentesFicha = o.fichas || {}; })
+      .catch(function () { fuentesFicha = {}; }); // sin archivo, las fichas conservan el texto de «fuente pendiente»
+  };
 
   function enlace(texto, url) {
     var a = F.el('a', '', texto); a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
@@ -115,7 +123,17 @@
     q.appendChild(F.el('h4', '', TXT.quienFue + m.nombre + '?')); // el dato quienTitulo está incompleto («¿Quién fue ?»); no se modifica
     q.appendChild(F.el('p', '', m.quien)); der.appendChild(q);
     var fu = F.el('p', 'fa-fuentes'); fu.appendChild(F.el('strong', '', TXT.fuentes));
-    fu.appendChild(F.el('span', /PENDIENTE/.test(m.fuentes) ? 'fa-pend' : '', m.fuentes)); der.appendChild(fu);
+    var lista = fuentesFicha[m.slug]; // data/fuentes-fichas.json; sin ellas se muestra el texto de mujeres.json
+    if (lista && lista.fuentes && lista.fuentes.length) {
+      lista.fuentes.forEach(function (s, i) {
+        if (i) { fu.appendChild(document.createTextNode(' · ')); }
+        if (s.url) { fu.appendChild(enlace(s.nombre, s.url)); } else { fu.appendChild(document.createTextNode(s.nombre)); }
+      });
+      if (lista.provisional) { fu.appendChild(F.el('span', 'fa-prov', ' ' + TXT.provisional)); }
+    } else {
+      fu.appendChild(F.el('span', /PENDIENTE/.test(m.fuentes) ? 'fa-pend' : '', m.fuentes));
+    }
+    der.appendChild(fu);
     var ft = F.foto(m.slug);
     if (ft) { // crédito completo de la imagen del dorso, con enlaces al origen y a la licencia
       var cr = F.el('p', 'fa-credito'); cr.appendChild(F.el('strong', '', TXT.imagen));
