@@ -1,0 +1,734 @@
+{
+  "aviso": "Fragmentos reales elegidos por Mireia (hoja «CancionesFragmentos», 14-11-2026), copiados tal cual. Pendiente de Mireia: año, explicación (es/ca/en), fuente de la explicación, enlace de audio (todas están en Spotify), y confirmar nivel y lenguaje. Estructura igual que vinilos-ejemplo.json. «respuesta»: columna MACHISMO de la hoja = perpetua; segundo bloque = apoya (la hoja lo titulaba también MACHISMO por error; confirmado por Mireia el 14-11-2026 que son canciones que apoyan el feminismo). Los fragmentos conservan sus saltos de línea. Sin niveles por edad (decisión de Mireia, 14-11-2026): un solo grupo de discos y, en los que tienen palabras malsonantes (lenguaje «explicito»), una marca 🤬 con su explicación. Campos de palabrotas: «lenguaje» (el fragmento las tiene: se avisa con 🤬 bajo el disco), «tapar» (lista de palabras que salen como ●●●● si se elige taparlas) y «cancionConPalabrotas» (true/false para la CANCIÓN COMPLETA; null = Mireia aún no lo ha indicado y la ficha no dice nada). Los 4 true son porque su fragmento ya las lleva; el resto está por confirmar. Temas: cada disco tiene una lista «temas» (varios valen como respuesta; si solo toca uno, uno solo), con el vocabulario en «temas» de este archivo (perpetua / apoya): propuesta de Claude aprobada por Mireia el 14-11-2026. Años y enlaces de Spotify: solo los verificados (años con «anioFuente»); faltan los enlaces de 15 canciones y varios años (Reinas, Señora, Fabuloso, Pamela, La puerta violeta). Fuente de cada ficha: la propia canción (decisión de Mireia). Audio: «inicio» y «fin» en segundos desde el principio de la canción (Mireia, 14-11-2026, escritos como minutos.segundos; solo las 6 canciones con enlace de Spotify). Explicaciones («explicacion.es»): BORRADOR de Claude (14-11-2026) redactado a partir de cada fragmento, sin juzgar a quien canta ni repetir las palabrotas; pendiente de revisión de Mireia (campo «explicacionEstado»).",
+  "discos": [
+    {
+      "id": "v-01",
+      "fragmento": "Tú llegas y estas putas empiezan a envidiarte",
+      "cancion": "Hasta que Dios diga",
+      "grupo": "Bad Bunny/Anuel AA",
+      "anio": 2020,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "explicito",
+      "explicacion": {
+        "es": "Nos hace ver a otras mujeres como rivales y envidiosas, y usa un insulto hacia ellas como si fuera lo más normal.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Bad Bunny/Anuel AA: «Hasta que Dios diga» (2020)",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "tapar": [
+        "putas"
+      ],
+      "cancionConPalabrotas": true,
+      "temas": [
+        "rivalidad-mujeres",
+        "cosificacion"
+      ],
+      "anioFuente": "Wikipedia",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-02",
+      "fragmento": "Cobras menos y tu jefe siempre será un él\nHarta de tanta tontería\nMe tienen hasta el...\nPor no dejarme ser quien quiero",
+      "cancion": "Reinas",
+      "grupo": "SUU",
+      "anio": null,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de la desigualdad en el trabajo. En 2020, las mujeres ganaron de media 22.467 € al año y los hombres 27.643 €: unos 5.200 € menos, como si trabajaran 2 meses gratis. Y cuanto más arriba, menos mujeres: solo 4 de las 35 grandes empresas del IBEX 35 tienen una presidenta.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "SUU: «Reinas». Datos: Instituto de las Mujeres (Gobierno de España), «Mujeres en cifras», infografías «Brecha retributiva» (feb. 2023) y «Poder empresarial» (abr. 2024).",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. · Cifras salariales de 2020 (así lo dice la infografía).",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "igualdad",
+        "autonomia-libertad"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-03",
+      "fragmento": "Tití me preguntó\nSi tengo muchas novia'\nMuchas novia'\nHoy tengo a una, mañana otra\nEy, pero no hay boda",
+      "cancion": "Tití me preguntó",
+      "grupo": "Bad Bunny",
+      "anio": 2022,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Presume de tener muchas novias y de cambiarlas como si fueran cromos: hoy una, mañana otra. Imagina que lo cantara una mujer: ¿la juzgarían igual?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Bad Bunny: «Tití me preguntó» (2022)",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "cosificacion",
+        "juzgar-mujer"
+      ],
+      "anioFuente": "álbum Un Verano Sin Ti; fecha sin contrastar",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-04",
+      "fragmento": "Tengo una culpa que me aprieta\nSe posa en mis hombros, y me cuesta andar\n\nPero dibujé una puerta violeta en la pared\nY, al entrar, me liberé",
+      "cancion": "La puerta violeta",
+      "grupo": "Rozalen",
+      "anio": null,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de la culpa que sienten muchas mujeres por no hacerlo todo como se espera de ellas, en una sociedad que no mira igual a hombres y a mujeres ni les exige lo mismo. La «puerta violeta» es el feminismo (el violeta es su color), que ayuda y respalda a muchas mujeres en su día a día.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Rozalen: «La puerta violeta»",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. Explicación redactada solo con el fragmento: revisar con la letra completa.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "denuncia-violencia",
+        "autonomia-libertad"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-05",
+      "fragmento": "Siempre me dan lo que quiero\nChingan cuando yo les digo\nNinguna me pone pero",
+      "cancion": "Cuatro Babys",
+      "grupo": "Maluma",
+      "anio": 2016,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "explicito",
+      "explicacion": {
+        "es": "Dice que ellas le dan siempre lo que quiere: sin voz ni decisión, la mujer queda como un objeto para el deseo de él, y obedecer se presenta como una virtud. Pero una mujer no tiene el deber de complacer a nadie, y nunca hay que ceder a algo que no se quiere solo por dar gusto a otra persona. Frases así pueden hacer que alguien se sienta obligada a hacer cosas que no le apetecen, o culpable por no hacerlas. De ahí salen insultos como «frígida», «estrecha» o «puritana».",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Maluma: «Cuatro Babys» (2016)",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "tapar": [
+        "Chingan"
+      ],
+      "cancionConPalabrotas": true,
+      "temas": [
+        "cosificacion",
+        "control-posesion"
+      ],
+      "anioFuente": "Wikipedia",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-06",
+      "fragmento": "Señora, usted rebélese, déjele claro que no está de acuerdo\nQue las papas se las haga él, que su corazón vuelve a estar despierto",
+      "cancion": "Señora",
+      "grupo": "La flor del Otro",
+      "anio": null,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla sobre todo de las generaciones mayores y del machismo que se vivía dentro de casa. Anima a esas mujeres a rebelarse contra sus maridos y a dejar de ser sus criadas.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "La flor del Otro: «Señora»",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "igualdad",
+        "critica-roles"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-07",
+      "fragmento": "Con su carita de inocente\nElla me enamoró\nEs una diabla bien vestida\nElla me enamoró\nHace todo lo que pido\nElla me enamoró (Me enamoró)",
+      "cancion": "Carita de Inocente",
+      "grupo": "Prince Royce",
+      "anio": 2020,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Dice que es atractivo que ella haga todo lo que él pide, como si para gustar a alguien una mujer no pudiera tener opinión ni decir que no. Presenta la obediencia como algo bonito.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Prince Royce: «Carita de Inocente» (2020)",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "control-posesion",
+        "roles-desigualdad"
+      ],
+      "anioFuente": "Wikipedia",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-08",
+      "fragmento": "Y quiero volver por la noche\nSin echar la mirada atrás\nY quiero volver por la noche\nSin miedo a ir sola por esta ciudad",
+      "cancion": "No darás nunca la talla",
+      "grupo": "La flor del Otro",
+      "anio": null,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla del miedo que pasan muchísimas mujeres al caminar de noche por la calle, por las violaciones y los asesinatos a manos de hombres. Ella quiere volver tranquila, sin ese miedo.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "La flor del Otro: «No darás nunca la talla»",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "seguridad-calle",
+        "autonomia-libertad"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-09",
+      "fragmento": "Tan buena que\nera en la universidad, y ahora está dañá' / Se la pasaba estudiando, ahora vive\nperreando",
+      "cancion": "Sur y norte",
+      "grupo": "Ñengo Flow y Anuel AA",
+      "anio": 2020,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Juzga si una mujer es buena o mala: antes estudiaba y ahora «perrea». La critica como si divertirse y salir a bailar la hiciera valer menos o ser peor persona.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Ñengo Flow y Anuel AA: «Sur y norte» (2020)",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "juzgar-mujer"
+      ],
+      "anioFuente": "Recotop (fuente secundaria)",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-10",
+      "fragmento": "Nadie te pidió opinión sobre lo que me harías\nSi me dejaras, y como no me dejo\nSale tu macho alfa y te conviertes en un saco de complejos",
+      "cancion": "No darás nunca la talla",
+      "grupo": "La flor del Otro",
+      "anio": null,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de pedir permiso y de cómo reaccionan muchos hombres cuando alguien les dice que no a tener sexo: nadie les pidió su opinión y, al no conseguir lo que quieren, sale el «macho alfa» lleno de complejos.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "La flor del Otro: «No darás nunca la talla»",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "critica-roles",
+        "autonomia-libertad"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-11",
+      "fragmento": "Se van a todo, aunque tengan novio\nLas envidiosa' le tienen odio (yeh)",
+      "cancion": "Fabuloso",
+      "grupo": "Sech y Justin Quiles",
+      "anio": null,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Otra vez las mujeres aparecen como rivales y envidiosas, en lugar de como personas que pueden apoyarse.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Sech y Justin Quiles: «Fabuloso»",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "rivalidad-mujeres",
+        "cosificacion"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-12",
+      "fragmento": "Pam, Pam, Pam, Pamela\nTe hicieron sentir pequeña\nY no supimos quién eras\nMás allá de tu belleza",
+      "cancion": "Pamela",
+      "grupo": "Rigoberta bandini",
+      "anio": null,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de lo superficial: cuando una mujer encaja en los cánones de belleza, a menudo no se valora nada más de ella. Se quedan en el físico y no ven sus otras virtudes, seguramente más importantes que la apariencia. Es lo típico de la «rubia tonta».",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Rigoberta bandini: «Pamela»",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. Solo se ha encontrado «Pamela Anderson» (Rigoberta Bandini, 2025): Mireia debe confirmar que es esta canción. Revisar con la letra completa (¿Pamela Anderson?).",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "contra-cosificacion",
+        "belleza-autoestima"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-13",
+      "fragmento": "Baby, la vista es roja, yeh-eh\nPero se pone verde cuando empiece' a tomar\nY te empiece' a soltar",
+      "cancion": "El Manual",
+      "grupo": "Anuel AA",
+      "anio": 2020,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Cuando dice que, al beber, ella «se empieza a soltar», da a entender que una mujer que no quiere sexo puede acabar cediendo tras beber. Pero alguien bajo los efectos del alcohol o de las drogas puede no estar en condiciones de decidir, ni de saber lo que siente. Darse cuenta después de lo ocurrido puede ser un golpe muy duro y dejar secuelas psicológicas.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Anuel AA: «El Manual» (2020)",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "presion-consentimiento"
+      ],
+      "anioFuente": "Wikipedia",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-14",
+      "fragmento": "Muchos modales y muy poca moralidad\nInsultamos al que tarda pa aparcar por sexo o edad\nYo que creía que podía cambiar esto\nPero soy como el resto",
+      "cancion": "Ovarios y pelotas",
+      "grupo": "SFDK",
+      "anio": 2018,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de los prejuicios: quiere cambiar las cosas, por ejemplo que no se juzgue con tópicos sexistas (como que las mujeres no saben conducir), pero dice que él solo no puede y que al final nos influimos unos a otros.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "SFDK: «Ovarios y pelotas» (2018)",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "critica-roles"
+      ],
+      "anioFuente": "año del álbum Redención",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-15",
+      "fragmento": "Conmigo una rubia, tiene grande las tetas .\ntiene cara de atrevida pero sin alcohol es tímida",
+      "cancion": "La Jeepeta Remix",
+      "grupo": "Anuel AA",
+      "anio": 2020,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "explicito",
+      "explicacion": {
+        "es": "Habla de los pechos de ella de forma despectiva, como si solo fuera un cuerpo: eso es cosificar. Y al decir que «sin alcohol es tímida» da a entender que, si no quiere sexo, bebiendo puede ceder. Pero con alcohol o drogas una persona puede no estar en condiciones de decidir, y descubrir después lo ocurrido puede dejar secuelas psicológicas.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Anuel AA: «La Jeepeta Remix» (2020)",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "",
+        "inicio": 0,
+        "fin": 0
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. La Jeepeta Remix es de Nio García con Anuel AA, Myke Towers, Brray y Juanka; la hoja solo decía Anuel AA: Mireia debe decidir cómo acreditarla.",
+      "tapar": [
+        "tetas"
+      ],
+      "cancionConPalabrotas": true,
+      "temas": [
+        "cosificacion",
+        "presion-consentimiento"
+      ],
+      "anioFuente": "Wikipedia (versión Remix)",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-16",
+      "fragmento": "Como una potra salvaje\nQue en el oleaje no pierde el sentido\nNo quiero riendas ni herrajes\nY en los homenajes me pongo un vestido",
+      "cancion": "Potra Salvaje",
+      "grupo": "Isabel Aaiún",
+      "anio": 2021,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de mujeres que quieren ser libres y a veces sienten que llevan unas riendas que les dicen por dónde ir. Ella reivindica que quiere decidir por sí misma.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Isabel Aaiún: «Potra Salvaje» (2021). Spotify: https://open.spotify.com/track/7ulBZOeFHaCeN2ubZxHxsg",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "7ulBZOeFHaCeN2ubZxHxsg",
+        "inicio": 162,
+        "fin": 178
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "autonomia-libertad"
+      ],
+      "anioFuente": "Wikipedia",
+      "enlaceSpotify": "https://open.spotify.com/track/7ulBZOeFHaCeN2ubZxHxsg",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-17",
+      "fragmento": "Una ladrona. Que me has llevado a la ruina. Te has llevado mi corazón, mi orgullo, mi pasta, mi paz, mi vida",
+      "cancion": "Mala Mujer",
+      "grupo": "C. Tangana",
+      "anio": 2017,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "¿A qué se refiere cuando dice que se ha llevado su «pasta»? ¿Que le ha robado la cartera? No parece. Muchos hombres culpan a las mujeres de cosas que en realidad se comparten con la pareja: los hijos, la casa, el coche… No es que ella se lo quite: son cosas de los dos.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "C. Tangana: «Mala Mujer» (2017). Spotify: https://open.spotify.com/track/067QpM2xLhK24hTiovC3Zo",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "067QpM2xLhK24hTiovC3Zo",
+        "inicio": 152,
+        "fin": 171
+      },
+      "nota": "En la hoja aparecía «. Tangana» y «Mala Mujer. C»: corregido por Claude, a confirmar por Mireia. «tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. Palabras leves en la letra completa («culo», «perro») según dos transcripciones que no coinciden del todo: Mireia decide si cancionConPalabrotas es true.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "juzgar-mujer"
+      ],
+      "anioFuente": "álbum Ídolo / Shazam",
+      "enlaceSpotify": "https://open.spotify.com/track/067QpM2xLhK24hTiovC3Zo",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-18",
+      "fragmento": "Y olvido aquella niña que una vez\nEntre golpes y caricias\nSe convertiría en mujer",
+      "cancion": "Tatuajes",
+      "grupo": "Benito Kamelas",
+      "anio": 2017,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla claramente del maltrato: de una mujer que creció, o maduró, junto a un maltratador.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Benito Kamelas: «Tatuajes» (2017). Spotify: https://open.spotify.com/track/0fKM423ueJ9bJBIas0dAY7",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "0fKM423ueJ9bJBIas0dAY7",
+        "inicio": 43,
+        "fin": 70
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. La hoja decía «Benito Camelas»: el grupo es Benito Kamelas; Mireia debe confirmarlo. Revisar con la letra completa y el contexto de la canción.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "denuncia-violencia"
+      ],
+      "anioFuente": "Deezer / Amazon Music",
+      "enlaceSpotify": "https://open.spotify.com/track/0fKM423ueJ9bJBIas0dAY7",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-19",
+      "fragmento": "Y ahora te sientes libre\nEncerrada en una cárcel\nPerdiendo la vida\nPor culpa de un cobarde\nQue te hizo ser violenta",
+      "cancion": "Escapate",
+      "grupo": "Los de Marras",
+      "anio": 2011,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de mujeres que, tras ser maltratadas, han tenido que defenderse de sus agresores y, además de pasar por ese infierno, ahora tienen que cumplir una condena.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Los de Marras: «Escapate» (2011). Spotify: https://open.spotify.com/track/0O3d8fkNHawf6vUTtaT5jI",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "0O3d8fkNHawf6vUTtaT5jI",
+        "inicio": 8,
+        "fin": 34
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. Tiempos del fragmento 0:08 – 0:34: confirmados por Mireia el 14-11-2026. El fragmento dice que él «te hizo ser violenta»: revisar con la letra completa antes de fijar el texto.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "denuncia-violencia"
+      ],
+      "anioFuente": "Deezer / Apple Music",
+      "enlaceSpotify": "https://open.spotify.com/track/0O3d8fkNHawf6vUTtaT5jI",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-20",
+      "fragmento": "\"to'a las putas quieren kush... las putas se montan fácil como en GTA\" o \"borré toas' las putas de mis contactos.",
+      "cancion": "Krippy Kush",
+      "grupo": "Farruko, Bad Bunny y Rvssian",
+      "anio": 2017,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "explicito",
+      "explicacion": {
+        "es": "Insinúa que si una mujer tiene sexo sin poner resistencia, ya se la etiqueta como prostituta. En otras canciones se premia que ella ceda; aquí se la insulta por hacerlo. Haga lo que haga, no gana.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Farruko, Bad Bunny y Rvssian: «Krippy Kush» (2017). Spotify: https://open.spotify.com/track/4RtEGAXBoUGYmDF8puxM6V",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "4RtEGAXBoUGYmDF8puxM6V",
+        "inicio": 20,
+        "fin": 46
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. La hoja decía «Krippi Kush» de Bad Bunny: corregido según Spotify y Wikipedia; Mireia debe confirmarlo.",
+      "tapar": [
+        "putas"
+      ],
+      "cancionConPalabrotas": true,
+      "temas": [
+        "cosificacion",
+        "juzgar-mujer"
+      ],
+      "anioFuente": "Wikipedia",
+      "enlaceSpotify": "https://open.spotify.com/track/4RtEGAXBoUGYmDF8puxM6V",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-21",
+      "fragmento": "Siempre faltó la mitad\nMiro atrás y no están\nLas que estaban siempre a un lado\nLas que siempre faltarán",
+      "cancion": "Las Que Faltaron",
+      "grupo": "Mafalda y Rebeca Lane",
+      "anio": 2018,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de todas las mujeres artistas, científicas, inventoras… que tuvieron que firmar con otro nombre sus hallazgos u obras, o dejar que sus maridos se llevaran el mérito. Si firmaban ellas, sabían que la sociedad no las iba a apoyar, o que ni siquiera era legal.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "fuente": "Mafalda y Rebeca Lane: «Las Que Faltaron» (2018). Spotify: https://open.spotify.com/track/0Go5M1GUnttFOTUm88PAeB",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "0Go5M1GUnttFOTUm88PAeB",
+        "inicio": 13,
+        "fin": 34
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. La hoja decía «Mafalda»: la canción es con Rebeca Lane; Mireia debe confirmarlo.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "visibilidad"
+      ],
+      "anioFuente": "Apple Music",
+      "enlaceSpotify": "https://open.spotify.com/track/0Go5M1GUnttFOTUm88PAeB",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    }
+  ],
+  "temas": {
+    "perpetua": [
+      {
+        "id": "cosificacion",
+        "es": "Cosificación del cuerpo",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      {
+        "id": "control-posesion",
+        "es": "Control y posesión",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      {
+        "id": "violencia-genero",
+        "es": "Violencia de género",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      {
+        "id": "rivalidad-mujeres",
+        "es": "Rivalidad entre mujeres",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      {
+        "id": "juzgar-mujer",
+        "es": "Juzgar a la mujer (doble moral)",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      {
+        "id": "roles-desigualdad",
+        "es": "Roles y desigualdad",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      {
+        "id": "presion-consentimiento",
+        "es": "Presión y consentimiento",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    ],
+    "apoya": [
+      {
+        "id": "autonomia-libertad",
+        "es": "Autonomía y libertad",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      {
+        "id": "denuncia-violencia",
+        "es": "Denuncia de la violencia de género",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      {
+        "id": "igualdad",
+        "es": "Igualdad en el trabajo y en casa",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      {
+        "id": "critica-roles",
+        "es": "Crítica a los roles y la desigualdad",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      {
+        "id": "seguridad-calle",
+        "es": "Seguridad en la calle",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      {
+        "id": "belleza-autoestima",
+        "es": "Belleza y autoestima",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      {
+        "id": "contra-cosificacion",
+        "es": "Contra la cosificación",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      {
+        "id": "visibilidad",
+        "es": "Visibilidad de las mujeres",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    ]
+  }
+}

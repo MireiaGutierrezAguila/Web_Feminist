@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuentes · Feminist</title>
+<!-- BOCETO de la página pública de Fuentes. El diseño es provisional (se afinará al acabar la web); lo importante es la estructura de datos.
+     Une en una sola lista todo lo que la web enseña y de dónde sale: calendario, fichas, imágenes y (más adelante) actividades.
+     Vista pública: solo contenido verificado y visible en la web. Vista de trabajo: añadir ?interno=1 a la dirección. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --negro: #101010; --blanco: #F5F5F0; --morado: #6B2D8C; --oro: #C9A24B; --oro-claro: #E8CE86; --rosa: #C2386E; --verdeazul: #127C86; --naranja: #E8762B;
+    --fondo: #101010; --panel: #17121f; --linea: rgba(201, 162, 75, .35); --suave: #b9b1c9;
+    --fuente-titulos: "Cinzel Decorative", Georgia, serif; --fuente-nombres: "Cinzel", Georgia, serif;
+    --fuente-texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+    --cinta-colores: linear-gradient(90deg, #C2386E 0 25%, #127C86 25% 50%, #E8762B 50% 75%, #6B2D8C 75%);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fondo); color: var(--blanco); font-family: var(--fuente-texto); font-size: 1rem; line-height: 1.5; }
+  a { color: var(--oro-claro); overflow-wrap: anywhere; }
+  :focus-visible { outline: 3px solid var(--oro-claro); outline-offset: 3px; }
+  .envoltorio { width: min(1120px, 100% - 32px); margin-inline: auto; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+  header.cab { padding: 18px 0 8px; }
+  .logo { display: block; width: fit-content; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.4rem; color: var(--blanco); text-decoration: none; }
+  h1 { display: inline-block; margin: 26px 0 14px; padding: .25em .7em; background: var(--morado); color: var(--blanco); transform: rotate(-1.2deg); box-shadow: 5px 5px 0 var(--blanco);
+    font-family: var(--fuente-titulos); font-weight: 700; font-size: clamp(1.4rem, 5vw, 2.2rem); line-height: 1.25; }
+  .intro { max-width: 70ch; color: #e6e0f0; margin: 0 0 6px; }
+  .aviso-interno { display: none; margin: 12px 0 0; padding: 10px 14px; border-radius: 10px; background: #3a2f14; color: var(--oro-claro); border: 1px solid var(--oro); }
+  body.interno .aviso-interno { display: block; }
+
+  .filtros { margin: 22px 0 16px; padding: 16px; background: var(--panel); border: 2px solid var(--oro); border-radius: 14px; display: grid; gap: 12px; }
+  .fila { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+  .campo { display: grid; gap: 4px; flex: 1 1 170px; min-width: 0; }
+  .campo label { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--oro-claro); font-family: var(--fuente-nombres); font-weight: 600; }
+  select, input[type="search"] { font: inherit; color: var(--blanco); background: #0b0910; border: 1px solid var(--linea); border-radius: 8px; padding: 10px 11px; width: 100%; min-width: 0; }
+  select:disabled { opacity: .45; }
+  .cuenta { margin: 0 0 10px; color: var(--suave); }
+
+  .tabla-caja { border: 2px solid var(--oro); border-radius: 14px; overflow: hidden; background: var(--panel); }
+  table { width: 100%; border-collapse: collapse; }
+  thead { background: linear-gradient(135deg, #8a6a24, #E8CE86 30%, #C9A24B 55%, #7a5a1c 80%, #E8CE86); }
+  thead th { text-align: left; padding: 12px 14px; font-family: var(--fuente-nombres); font-weight: 700; font-size: .9rem; letter-spacing: .06em; text-transform: uppercase; color: #2b2418; }
+  tbody td { padding: 12px 14px; vertical-align: top; border-top: 1px solid var(--linea); }
+  tbody tr:nth-child(even) td { background: rgba(255, 255, 255, .025); }
+  td.donde { width: 16%; min-width: 130px; }
+  .donde-tipo { display: block; font-family: var(--fuente-nombres); font-weight: 700; color: var(--oro-claro); }
+  .donde-det { display: block; color: var(--suave); font-size: .9rem; }
+  td.dato { width: 40%; }
+  .dato-sub { display: block; color: var(--suave); font-size: .88rem; margin-top: 3px; }
+  td.fuentes { width: 30%; }
+  .fuentes ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
+  .fuentes li::before { content: "↗ "; color: var(--oro); }
+  .comp { display: block; margin-top: 6px; color: var(--suave); font-size: .82rem; }
+  .prov { display: block; margin-top: 4px; color: var(--suave); font-style: italic; font-size: .85rem; }
+  .mes-fila td { background: #231a33 !important; font-family: var(--fuente-nombres); font-weight: 700; color: var(--blanco); letter-spacing: .04em; }
+  .vacio { padding: 26px; text-align: center; color: var(--suave); }
+
+  /* columnas de trabajo: solo con ?interno=1 */
+  .solo-interno { display: none; }
+  body.interno .solo-interno { display: table-cell; }
+  td.interno-est, td.interno-nota { font-size: .85rem; color: #d9d2e6; }
+  body.interno td.donde { width: 12%; } body.interno td.dato { width: 28%; } body.interno td.fuentes { width: 24%; }
+  body.interno td.interno-est { width: 10%; } body.interno td.interno-nota { width: 26%; }
+  .etq { display: inline-block; margin: 0 4px 4px 0; padding: 1px 8px; border: 1px solid currentColor; border-radius: 99px; font-size: .75rem; }
+  .e-verificada { color: #7fd79e; } .e-parcial { color: #f0c46a; } .e-revisar { color: #ff9a90; } .e-otro { color: #c39bee; }
+
+  footer { margin-top: 44px; background: #000; border-top: 10px solid transparent; border-image: var(--cinta-colores) 10; }
+  footer .envoltorio { padding: 22px 0 28px; }
+  .firma { margin: 0; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.05rem; color: var(--oro-claro); }
+
+  /* móvil: cada fila pasa a ser una tarjeta */
+  @media (max-width: 760px) {
+    table, tbody, tr, td { display: block; width: 100% !important; }
+    thead { display: none; }
+    tbody tr { border-top: 1px solid var(--linea); padding: 12px 14px; }
+    tbody td { border: 0; padding: 4px 0; background: none !important; }
+    td.donde { min-width: 0; }
+    .mes-fila { padding: 0 !important; }
+    .mes-fila td { padding: 10px 14px !important; }
+    body.interno .solo-interno { display: block; }
+    td.fuentes::before { content: "Fuentes"; display: block; margin-top: 6px; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--oro-claro); font-family: var(--fuente-nombres); }
+  }
+</style>
+</head>
+<body>
+<header class="cab"><div class="envoltorio">
+  <a class="logo" href="propuesta-d-mezcla.html">♀ Feminist</a>
+  <h1 id="tituloPag">Fuentes</h1>
+  <p class="intro" id="intro"></p>
+  <p class="aviso-interno" id="avisoInterno"></p>
+</div></header>
+
+<main class="envoltorio">
+  <section class="filtros" aria-label="Filtros">
+    <div class="fila">
+      <div class="campo"><label for="fTipo" id="lTipo"></label>
+        <select id="fTipo"></select></div>
+      <div class="campo"><label for="fMes" id="lMes"></label>
+        <select id="fMes"></select></div>
+      <div class="campo"><label for="fRegion" id="lRegion"></label>
+        <select id="fRegion"></select></div>
+      <div class="campo" style="flex-basis: 260px"><label for="fBuscar" id="lBuscar"></label>
+        <input type="search" id="fBuscar"></div>
+    </div>
+  </section>
+  <p class="cuenta" id="cuenta" role="status"></p>
+  <div class="tabla-caja">
+    <table>
+      <caption class="sr" id="capTabla"></caption>
+      <thead><tr>
+        <th scope="col" id="thDonde"></th><th scope="col" id="thDato"></th><th scope="col" id="thFuentes"></th>
+        <th scope="col" class="solo-interno" id="thEstado"></th><th scope="col" class="solo-interno" id="thNota"></th>
+      </tr></thead>
+      <tbody id="cuerpo"></tbody>
+    </table>
+  </div>
+</main>
+
+<footer><div class="envoltorio"><p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p></div></footer>
+
+<script>
+(function () {
+  /* ---------- Textos de interfaz (irán a los archivos de idioma es / ca / en) ---------- */
+  var TXT = {
+    titulo: 'Fuentes', intro: 'Aquí puedes ver de dónde sale cada dato de la web: el calendario, las fichas de las mujeres, las imágenes y las actividades. Todo dato lleva su fuente.',
+    avisoInterno: 'Vista de trabajo: se enseñan también las entradas parciales, sensibles y alternativas, con su estado y sus notas. Quita «?interno=1» de la dirección para ver la vista pública.',
+    fTipo: 'Dónde se usa', fMes: 'Mes', fRegion: 'Región', fBuscar: 'Buscar', fBuscarPh: 'una mujer, un país, un tema…',
+    todos: 'Todos', todas: 'Todas', cap: 'Fuentes de cada dato de la web',
+    thDonde: 'Dónde se usa', thDato: 'Dato', thFuentes: 'Fuentes', thEstado: 'Estado', thNota: 'Nota',
+    comprobado: 'Comprobado el ', provisional: 'Fuentes provisionales, pendientes de reforzar.', sinDia: 'sin día exacto', sinFuentes: 'Sin fuentes todavía.',
+    cargando: 'Cargando las fuentes…', error: 'No se han podido cargar los datos. Abre esta página desde el servidor local.', vacio: 'Ningún dato coincide con los filtros.',
+    cuenta: function (n, t) { return n === t ? t + ' datos' : n + ' de ' + t + ' datos'; },
+    tipos: { calendario: 'Calendario', ficha: 'Ficha', imagen: 'Imagen', actividad: 'Actividad' },
+    tiposPlural: { calendario: 'Calendario', ficha: 'Fichas de las mujeres', imagen: 'Imágenes', actividad: 'Actividades' },
+    meses: ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'],
+    mesesCortos: ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'],
+    alternativa: 'alternativa', viva: 'viva', sensible: 'sensible', basica: 'fuentes básicas'
+  };
+  var params = new URLSearchParams(location.search);
+  var INTERNO = params.get('interno') === '1', SENSIBLES = INTERNO || params.get('sensibles') === '1';
+  if (INTERNO) { document.body.classList.add('interno'); }
+
+  /* ---------- Estructura común de cada fila (el «contrato» de la página) ----------
+     { donde:   { tipo: 'calendario' | 'ficha' | 'imagen' | 'actividad', etiqueta: 'Calendario · 16 mar', detalle: '', mes: 3 | null, orden: número },
+       dato:    'texto que ve el público',  sub: 'año · país' (opcional),
+       region:  'Europa' | ... | '',
+       fuentes: [ { nombre, url | null } ],  comprobado: 'AAAA-MM-DD' | '',  provisional: true | false,
+       interno: { estado, calidad, nota, sensible, viva, principal } }
+     Para añadir otra parte de la web (por ejemplo una actividad) basta con otra función «de …» que devuelva filas con esta forma. */
+
+  function el(tag, clase, texto) { var n = document.createElement(tag); if (clase) { n.className = clase; } if (texto !== undefined) { n.textContent = texto; } return n; }
+  function json(url, opcional) {
+    return fetch(url).then(function (r) { if (!r.ok) { throw new Error(url); } return r.json(); }).catch(function (e) { if (opcional) { return null; } throw e; });
+  }
+  function fechaLarga(iso) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || ''); if (!m) { return ''; }
+    return +m[3] + ' ' + TXT.mesesCortos[+m[2] - 1] + ' ' + m[1];
+  }
+
+  /* ---------- Adaptadores: de cada archivo de datos a filas ---------- */
+  function deCalendario(cal) {
+    var filas = [];
+    function fila(e, mes, dia, sinDia) {
+      var vis = e.estado === 'verificada' && !e.sensible && (e.principal !== false || sinDia);
+      if (!INTERNO && !vis) { return; }
+      if (!INTERNO && e.sensible && !SENSIBLES) { return; }
+      var etiqueta = sinDia ? TXT.tipos.calendario + ' · ' + (mes ? TXT.meses[mes - 1] + ' (' + TXT.sinDia + ')' : TXT.sinDia)
+                            : TXT.tipos.calendario + ' · ' + dia + ' ' + TXT.mesesCortos[mes - 1];
+      filas.push({
+        donde: { tipo: 'calendario', etiqueta: etiqueta, detalle: '', mes: mes || null, orden: (mes || 13) * 100 + (dia || 0) },
+        dato: e.anio + ': ' + e.texto.es, sub: [e.pais, e.tema].filter(Boolean).join(' · '), region: e.region || '',
+        fuentes: e.fuentes || [], comprobado: e.comprobado || '', provisional: false,
+        interno: { estado: e.estado, calidad: e.calidadFuentes, nota: e.nota, sensible: e.sensible, viva: e.viva, principal: e.principal !== false }
+      });
+    }
+    Object.keys(cal.dias).sort().forEach(function (k) { cal.dias[k].forEach(function (e) { fila(e, +k.slice(0, 2), +k.slice(3), false); }); });
+    (cal.sinDia || []).forEach(function (e) { fila(e, e.mes, 0, true); });
+    return filas;
+  }
+  function deFichas(mujeres, fuentes) {
+    return mujeres.map(function (m, i) {
+      var f = (fuentes.fichas || {})[m.slug];
+      return {
+        donde: { tipo: 'ficha', etiqueta: TXT.tipos.ficha + ' · ' + m.nombre, detalle: '', mes: null, orden: 2000 + i },
+        dato: m.nombre + ', ' + m.profesionLugar.replace(/\s+/g, ' ').trim() + ' (' + m.cabecera.replace(/^.*\(/, '').replace(/\)$/, '') + ')',
+        sub: '', region: '', fuentes: f ? f.fuentes : [], comprobado: '2026-11-13', provisional: !!(f && f.provisional),
+        interno: { estado: f ? (f.provisional ? 'parcial' : 'verificada') : 'revisar', nota: f ? '' : 'Sin fuentes' }
+      };
+    });
+  }
+  function deImagenes(fotos, mujeres) {
+    var nombres = {}; mujeres.forEach(function (m) { nombres[m.slug] = m.nombre; });
+    return Object.keys(fotos.fotos || {}).map(function (slug, i) {
+      var f = fotos.fotos[slug];
+      var fu = [{ nombre: 'Origen de la imagen', url: f.fuenteUrl }];
+      if (f.licenciaUrl && f.licenciaUrl !== f.fuenteUrl) { fu.push({ nombre: 'Licencia: ' + f.licencia, url: f.licenciaUrl }); }
+      return {
+        donde: { tipo: 'imagen', etiqueta: TXT.tipos.imagen + ' · ' + (nombres[slug] || slug), detalle: '', mes: null, orden: 3000 + i },
+        dato: f.creditoCorto, sub: f.credito, region: '', fuentes: fu, comprobado: f.comprobado || '', provisional: false,
+        interno: { estado: 'verificada', nota: f.nota }
+      };
+    });
+  }
+  function deActividades(act) { return act && Array.isArray(act.filas) ? act.filas : []; } // data/fuentes-actividades.json (opcional, aún no existe)
+
+  /* ---------- Estado de la página ---------- */
+  var filas = [], filtros = { tipo: '', mes: '', region: '', q: '' };
+
+  function cabecera() {
+    document.title = TXT.titulo + ' · Feminist';
+    $('tituloPag').textContent = TXT.titulo; $('intro').textContent = TXT.intro; $('avisoInterno').textContent = TXT.avisoInterno;
+    $('lTipo').textContent = TXT.fTipo; $('lMes').textContent = TXT.fMes; $('lRegion').textContent = TXT.fRegion; $('lBuscar').textContent = TXT.fBuscar;
+    $('fBuscar').placeholder = TXT.fBuscarPh; $('capTabla').textContent = TXT.cap;
+    $('thDonde').textContent = TXT.thDonde; $('thDato').textContent = TXT.thDato; $('thFuentes').textContent = TXT.thFuentes;
+    $('thEstado').textContent = TXT.thEstado; $('thNota').textContent = TXT.thNota;
+  }
+  function $(id) { return document.getElementById(id); }
+
+  function opciones(sel, primera, lista) {
+    sel.textContent = '';
+    var o = el('option', '', primera); o.value = ''; sel.appendChild(o);
+    lista.forEach(function (x) { var op = el('option', '', x[1]); op.value = x[0]; sel.appendChild(op); });
+  }
+  function rellenarFiltros() {
+    var tipos = []; ['calendario', 'ficha', 'imagen', 'actividad'].forEach(function (t) { if (filas.some(function (f) { return f.donde.tipo === t; })) { tipos.push([t, TXT.tiposPlural[t]]); } });
+    opciones($('fTipo'), TXT.todos, tipos);
+    var meses = []; TXT.meses.forEach(function (m, i) { if (filas.some(function (f) { return f.donde.mes === i + 1; })) { meses.push([String(i + 1), m.charAt(0).toUpperCase() + m.slice(1)]); } });
+    opciones($('fMes'), TXT.todos, meses);
+    var regs = {}; filas.forEach(function (f) { if (f.region) { regs[f.region] = 1; } });
+    opciones($('fRegion'), TXT.todas, Object.keys(regs).sort().map(function (r) { return [r, r]; }));
+    ['fTipo', 'fMes', 'fRegion'].forEach(function (id) { $(id).addEventListener('change', function () { filtros[id.slice(1).toLowerCase()] = this.value; if (id === 'fTipo') { actualizarMes(); } pintar(); }); });
+    $('fBuscar').addEventListener('input', function () { filtros.q = this.value.trim().toLowerCase(); pintar(); });
+  }
+  function actualizarMes() { // el filtro de mes solo tiene sentido para el calendario
+    var activo = !filtros.tipo || filtros.tipo === 'calendario';
+    $('fMes').disabled = !activo; if (!activo) { $('fMes').value = ''; filtros.mes = ''; }
+  }
+  function pasa(f) {
+    if (filtros.tipo && f.donde.tipo !== filtros.tipo) { return false; }
+    if (filtros.mes && String(f.donde.mes) !== filtros.mes) { return false; }
+    if (filtros.region && f.region !== filtros.region) { return false; }
+    if (filtros.q) {
+      var t = [f.donde.etiqueta, f.dato, f.sub, f.region, f.fuentes.map(function (s) { return s.nombre; }).join(' ')].join(' ').toLowerCase();
+      if (t.indexOf(filtros.q) < 0) { return false; }
+    }
+    return true;
+  }
+
+  function celdaFuentes(f) {
+    var td = el('td', 'fuentes');
+    if (f.fuentes.length) {
+      var ul = el('ul');
+      f.fuentes.forEach(function (s) {
+        var li = el('li');
+        if (s.url) { var a = el('a', '', s.nombre); a.href = s.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; li.appendChild(a); } else { li.textContent = s.nombre; }
+        ul.appendChild(li);
+      });
+      td.appendChild(ul);
+    } else { td.appendChild(el('span', 'comp', TXT.sinFuentes)); }
+    if (f.provisional) { td.appendChild(el('span', 'prov', TXT.provisional)); }
+    if (f.comprobado) { td.appendChild(el('span', 'comp', TXT.comprobado + fechaLarga(f.comprobado))); }
+    return td;
+  }
+  function celdasInternas(tr, f) {
+    var i = f.interno || {};
+    var te = el('td', 'solo-interno interno-est');
+    te.appendChild(el('span', 'etq e-' + (['verificada', 'parcial', 'revisar'].indexOf(i.estado) >= 0 ? i.estado : 'otro'), i.estado || '—'));
+    if (i.calidad === 'basica') { te.appendChild(el('span', 'etq e-parcial', TXT.basica)); }
+    if (i.sensible) { te.appendChild(el('span', 'etq e-revisar', TXT.sensible)); }
+    if (i.viva) { te.appendChild(el('span', 'etq e-otro', TXT.viva)); }
+    if (i.principal === false) { te.appendChild(el('span', 'etq e-otro', TXT.alternativa)); }
+    tr.appendChild(te);
+    tr.appendChild(el('td', 'solo-interno interno-nota', i.nota || ''));
+  }
+
+  function pintar() {
+    var cuerpo = $('cuerpo'); cuerpo.textContent = '';
+    var vistas = filas.filter(pasa), mesActual = null;
+    vistas.forEach(function (f) {
+      var grupo = f.donde.tipo === 'calendario' ? 'c' + (f.donde.mes || 0) : f.donde.tipo;
+      if (grupo !== mesActual) {
+        mesActual = grupo;
+        if (f.donde.tipo === 'calendario') {
+          var trm = el('tr', 'mes-fila'), tdm = el('td', '', f.donde.mes ? TXT.meses[f.donde.mes - 1].charAt(0).toUpperCase() + TXT.meses[f.donde.mes - 1].slice(1) : TXT.sinDia);
+          tdm.colSpan = INTERNO ? 5 : 3; trm.appendChild(tdm); cuerpo.appendChild(trm);
+        }
+      }
+      var tr = el('tr');
+      var td1 = el('td', 'donde'), partes = f.donde.etiqueta.split(' · ');
+      td1.appendChild(el('span', 'donde-tipo', partes[0])); td1.appendChild(el('span', 'donde-det', partes.slice(1).join(' · ')));
+      var td2 = el('td', 'dato'); td2.appendChild(document.createTextNode(f.dato));
+      if (f.sub) { td2.appendChild(el('span', 'dato-sub', f.sub)); }
+      tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(celdaFuentes(f)); celdasInternas(tr, f);
+      cuerpo.appendChild(tr);
+    });
+    if (!vistas.length) { var t = el('tr'), c = el('td', 'vacio', TXT.vacio); c.colSpan = INTERNO ? 5 : 3; t.appendChild(c); cuerpo.appendChild(t); }
+    $('cuenta').textContent = TXT.cuenta(vistas.length, filas.length);
+  }
+
+  /* ---------- Carga ---------- */
+  cabecera(); $('cuenta').textContent = TXT.cargando;
+  Promise.all([json('data/calendario.json'), json('data/mujeres.json'), json('data/fuentes-fichas.json'), json('data/fotos.json'), json('data/fuentes-actividades.json', true)])
+    .then(function (r) {
+      filas = deCalendario(r[0]).concat(deFichas(r[1], r[2]), deImagenes(r[3], r[1]), deActividades(r[4]))
+        .sort(function (a, b) { return a.donde.orden - b.donde.orden; });
+      rellenarFiltros(); actualizarMes(); pintar();
+    })
+    .catch(function () { $('cuenta').textContent = TXT.error; });
+})();
+</script>
+</body>
+</html>

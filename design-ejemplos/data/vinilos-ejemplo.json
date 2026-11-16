@@ -1,0 +1,69 @@
+{
+  "aviso": "DATOS DE EJEMPLO inventados para probar la mecánica de la actividad «El Vinilo Crítico». No son canciones reales ni letras reales. Las canciones, los fragmentos y las explicaciones definitivos los elige Mireia. Estructura de cada disco: nivel («todos» o «16»), fragmento (texto que va en la etiqueta del disco), cancion, grupo, anio, idioma, respuesta («apoya» o «perpetua»: una letra o perpetúa estereotipos o no), lenguaje («limpio» o «explicito»), explicacion (es/ca/en), fuente (de la explicación: estudio, artículo, la propia letra…) y audio (plataforma, id, inicio y fin en segundos; en el boceto no se usa).",
+  "discos": [
+    {
+      "id": "ej-01", "nivel": "todos",
+      "fragmento": "Sin ti no soy nadie. Quédate, o me rompo.",
+      "cancion": "[EJEMPLO] Sin ti", "grupo": "[Grupo de ejemplo]", "anio": 2010, "idioma": "es",
+      "respuesta": "perpetua", "lenguaje": "limpio",
+      "explicacion": { "es": "Presenta el amor como dependencia: la persona «no es nadie» sin su pareja. Es una idea muy repetida en las canciones románticas, y no es una relación entre iguales.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "fuente": "[FUENTE PENDIENTE: ejemplo]", "audio": { "plataforma": "youtube", "id": "", "inicio": 0, "fin": 8 }
+    },
+    {
+      "id": "ej-02", "nivel": "todos",
+      "fragmento": "Yo decido cuándo me quedo y cuándo me voy.",
+      "cancion": "[EJEMPLO] Decido yo", "grupo": "[Grupo de ejemplo]", "anio": 2018, "idioma": "es",
+      "respuesta": "apoya", "lenguaje": "limpio",
+      "explicacion": { "es": "Reivindica la autonomía personal: la decisión de irse o quedarse es de quien canta, no de nadie más.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "fuente": "[FUENTE PENDIENTE: ejemplo]", "audio": { "plataforma": "youtube", "id": "", "inicio": 0, "fin": 8 }
+    },
+    {
+      "id": "ej-03", "nivel": "todos",
+      "fragmento": "Solo me importa que me elijas, aunque me olvide de mí.",
+      "cancion": "[EJEMPLO] Elígeme", "grupo": "[Grupo de ejemplo]", "anio": 2014, "idioma": "es",
+      "respuesta": "perpetua", "lenguaje": "limpio",
+      "explicacion": { "es": "Presenta como algo bonito dejar de lado los propios deseos para ser elegida. Es el mito de la entrega total, que se repite mucho en el amor romántico.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "fuente": "[FUENTE PENDIENTE: ejemplo]", "audio": { "plataforma": "youtube", "id": "", "inicio": 0, "fin": 8 }
+    },
+    {
+      "id": "ej-04", "nivel": "todos",
+      "fragmento": "No soy un coro en tu canción: soy la canción entera.",
+      "cancion": "[EJEMPLO] La canción entera", "grupo": "[Grupo de ejemplo]", "anio": 2020, "idioma": "es",
+      "respuesta": "apoya", "lenguaje": "limpio",
+      "explicacion": { "es": "Rechaza ocupar un papel secundario en la vida de otra persona y reclama ser protagonista de la propia.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "fuente": "[FUENTE PENDIENTE: ejemplo]", "audio": { "plataforma": "youtube", "id": "", "inicio": 0, "fin": 8 }
+    },
+    {
+      "id": "ej-05", "nivel": "16",
+      "fragmento": "Eres mía y me importa una mierda lo que diga nadie.",
+      "cancion": "[EJEMPLO] Mía", "grupo": "[Grupo de ejemplo]", "anio": 2012, "idioma": "es",
+      "respuesta": "perpetua", "lenguaje": "explicito",
+      "explicacion": { "es": "El problema no es la palabrota, es «eres mía»: trata a la pareja como una posesión y presenta esa posesión como algo romántico.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "fuente": "[FUENTE PENDIENTE: ejemplo]", "audio": { "plataforma": "youtube", "id": "", "inicio": 0, "fin": 8 }
+    },
+    {
+      "id": "ej-06", "nivel": "16",
+      "fragmento": "Que le den a tus normas: me visto como me sale del coño.",
+      "cancion": "[EJEMPLO] Normas", "grupo": "[Grupo de ejemplo]", "anio": 2019, "idioma": "es",
+      "respuesta": "apoya", "lenguaje": "explicito",
+      "explicacion": { "es": "Tiene palabras fuertes, pero el mensaje es claro: reivindica el derecho a decidir sobre el propio cuerpo y la propia ropa frente a quien quiere imponer normas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "fuente": "[FUENTE PENDIENTE: ejemplo]", "audio": { "plataforma": "youtube", "id": "", "inicio": 0, "fin": 8 }
+    },
+    {
+      "id": "ej-07", "nivel": "16",
+      "fragmento": "Si no me celas, joder, es que no me quieres.",
+      "cancion": "[EJEMPLO] Celos", "grupo": "[Grupo de ejemplo]", "anio": 2016, "idioma": "es",
+      "respuesta": "perpetua", "lenguaje": "explicito",
+      "explicacion": { "es": "Romantiza los celos como prueba de amor, uno de los mitos del amor romántico que más se repiten. La palabrota es lo de menos: lo grave es confundir control con cariño.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "fuente": "[FUENTE PENDIENTE: ejemplo]", "audio": { "plataforma": "youtube", "id": "", "inicio": 0, "fin": 8 }
+    },
+    {
+      "id": "ej-08", "nivel": "16",
+      "fragmento": "Mi cuerpo, mi decisión, y a ti qué coño te importa.",
+      "cancion": "[EJEMPLO] Mi decisión", "grupo": "[Grupo de ejemplo]", "anio": 2021, "idioma": "es",
+      "respuesta": "apoya", "lenguaje": "explicito",
+      "explicacion": { "es": "Defiende la autonomía sobre el propio cuerpo. El tono es duro, pero lo que dice es una reivindicación de libertad personal.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "fuente": "[FUENTE PENDIENTE: ejemplo]", "audio": { "plataforma": "youtube", "id": "", "inicio": 0, "fin": 8 }
+    }
+  ]
+}

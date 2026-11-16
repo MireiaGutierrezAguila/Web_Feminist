@@ -52,7 +52,7 @@
     "julia-hermosilla": {
       "imagen": "objeto.png",
       "alt": {
-        "es": "Pistola antigua con la empuñadura marrón",
+        "es": "Gorra militar verde con una estrella roja y una borla granate",
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       }
@@ -84,7 +84,7 @@
     "zheng-shi": {
       "imagen": "objeto.png",
       "alt": {
-        "es": "Sable de hoja curva con la empuñadura dorada",
+        "es": "Catalejo de latón con el cuerpo de madera tallada",
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       }

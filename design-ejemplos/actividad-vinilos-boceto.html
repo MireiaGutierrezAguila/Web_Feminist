@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Vinilo Crítico · Feminist</title>
+<!-- BOCETO de la actividad de música. Mecánica y diseño provisionales; los datos de ejemplo son inventados (data/vinilos-ejemplo.json).
+     En el boceto NO suena nada: el audio real (reproductor oficial, cargado solo al tocar) se añadirá cuando Mireia elija las canciones.
+     Dos zonas: una letra o perpetúa estereotipos o no (decisión de Mireia, 14-11-2026). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --negro: #101010; --blanco: #F5F5F0; --morado: #6B2D8C; --oro: #C9A24B; --oro-claro: #E8CE86; --rosa: #C2386E; --verdeazul: #127C86; --naranja: #E8762B;
+    --fondo: #101010; --panel: #17121f; --linea: rgba(201, 162, 75, .35); --suave: #b9b1c9;
+    --bien: #3fbf7a; --alerta: #e8762b; --mal: #e0524b;
+    --fuente-titulos: "Cinzel Decorative", Georgia, serif; --fuente-nombres: "Cinzel", Georgia, serif;
+    --fuente-texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+    --cinta-colores: linear-gradient(90deg, #C2386E 0 25%, #127C86 25% 50%, #E8762B 50% 75%, #6B2D8C 75%);
+    --d: clamp(150px, 40vw, 220px); /* diámetro de cada disco normal; el del centro crece hasta ×1,5 con la propiedad scale */
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--fondo); color: var(--blanco); font-family: var(--fuente-texto); font-size: 1rem; line-height: 1.5; }
+  :focus-visible { outline: 3px solid var(--oro-claro); outline-offset: 3px; }
+  a { color: var(--oro-claro); }
+  .envoltorio { width: min(1040px, 100% - 32px); margin-inline: auto; }
+  header.cab { padding: 18px 0 4px; }
+  .logo { display: block; width: fit-content; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.4rem; color: var(--blanco); text-decoration: none; }
+  h1 { display: inline-block; margin: 22px 0 8px; padding: .25em .7em; background: var(--morado); color: var(--blanco); transform: rotate(-1.2deg); box-shadow: 5px 5px 0 var(--blanco);
+    font-family: var(--fuente-titulos); font-weight: 700; font-size: clamp(1.4rem, 5vw, 2.2rem); line-height: 1.25; }
+  .sub { max-width: 62ch; color: #e6e0f0; margin: 6px 0 0; }
+  .aviso-boceto { margin: 14px 0 0; padding: 8px 12px; border: 1px dashed var(--oro); border-radius: 10px; color: var(--oro-claro); font-size: .9rem; }
+
+  .pantalla { padding: 22px 0 8px; }
+  .pantalla[hidden], .fin[hidden] { display: none; }
+  h2 { font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.25rem; margin: 0 0 12px; color: var(--oro-claro); }
+  .btn { font: inherit; font-weight: 700; cursor: pointer; border-radius: 10px; padding: 12px 20px; border: 2px solid var(--oro); background: var(--panel); color: var(--blanco); }
+  .btn:hover { background: #231a33; }
+  .btn + .btn { margin-left: 10px; }
+  .btn.primario { background: var(--oro); color: #2b2418; }
+  .btn.primario:hover { background: var(--oro-claro); }
+
+  /* ---------- Elegir nivel ---------- */
+  .niveles { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .nivel { text-align: left; display: grid; gap: 8px; padding: 18px; border: 2px solid var(--oro); border-radius: 16px; background: var(--panel); color: var(--blanco); font: inherit; cursor: pointer; }
+  .nivel:hover { background: #231a33; }
+  .nivel strong { font-family: var(--fuente-nombres); font-size: 1.2rem; color: var(--oro-claro); }
+  .nivel span { color: #e6e0f0; }
+  .aviso-grid { display: grid; gap: 18px; }
+  @media (min-width: 900px) { .aviso-grid { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: start; } }
+  .aviso-grid .caja-mensaje { margin: 0; max-width: none; }
+  .opciones-pal { display: grid; gap: 12px; }
+  .opciones-pal h3 { margin: 0; font-family: var(--fuente-nombres); font-size: 1.05rem; color: var(--oro-claro); }
+  .opcion-pal { font: inherit; color: var(--blanco); cursor: pointer; text-align: left; display: grid; grid-template-columns: auto 1fr; column-gap: 14px; align-items: center; padding: 16px 18px; border: 2px solid var(--linea); border-radius: 16px; background: var(--panel); }
+  .opcion-pal:hover { background: #231a33; border-color: var(--oro); }
+  .opcion-pal.recomendada { border-color: var(--oro); }
+  .opcion-pal .ico { grid-row: span 2; font-size: 2.4rem; line-height: 1; }
+  .opcion-pal strong { font-family: var(--fuente-nombres); font-size: 1.05rem; }
+  .opcion-pal small { color: var(--suave); font-size: .85rem; line-height: 1.3; }
+  .caja-mensaje { margin: 0 0 18px; padding: 16px 18px; border-left: 6px solid var(--rosa); background: var(--panel); border-radius: 0 12px 12px 0; max-width: 70ch; }
+  .caja-mensaje p { margin: 0 0 8px; } .caja-mensaje p:last-child { margin: 0; }
+  .caja-mensaje .grande { font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.15rem; color: var(--oro-claro); }
+
+  /* ---------- Juego: zonas arriba, carrusel abajo ---------- */
+  .marcador { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 12px; color: var(--suave); }
+  .etq { display: inline-block; padding: 2px 10px; border: 1px solid currentColor; border-radius: 99px; font-size: .8rem; }
+  .zonas { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 6px; }
+  /* zonas compactas: icono a la izquierda y texto a la derecha, para dejar sitio al carrusel */
+  .zona { font: inherit; color: var(--blanco); cursor: pointer; border-radius: 14px; border: 3px dashed; padding: 8px 10px; display: grid; grid-template-columns: auto 1fr; grid-template-areas: "ico nom" "ico des"; column-gap: 10px; align-content: center; align-items: center; text-align: left; min-height: 68px; background: var(--panel); transition: transform .15s, background .15s; }
+  .zona .ico { grid-area: ico; font-size: 1.6rem; line-height: 1; }
+  .zona strong { grid-area: nom; font-family: var(--fuente-nombres); font-size: .92rem; line-height: 1.2; }
+  .zona small { grid-area: des; color: var(--suave); line-height: 1.2; font-size: .78rem; }
+  .z-apoya { border-color: var(--bien); } .z-perpetua { border-color: var(--alerta); } .z-neutral { border-color: #8c8799; }
+  .z-neutral.encima { background: rgba(140, 135, 153, .22); }
+  @media (max-width: 640px) { /* en móvil las tres zonas van en columnas estrechas: icono arriba y texto centrado */
+    .zonas { gap: 6px; }
+    .zona { grid-template-columns: 1fr; grid-template-areas: "ico" "nom" "des"; justify-items: center; text-align: center; padding: 8px 4px; min-height: 92px; row-gap: 2px; }
+    .zona .ico { font-size: 1.4rem; } .zona strong { font-size: .76rem; } .zona small { font-size: .66rem; }
+  }
+  /* pregunta del tema y reproductor */
+  .tema-lista { display: grid; gap: 10px; }
+  .opcion-tema { font: inherit; font-weight: 700; color: var(--blanco); cursor: pointer; text-align: left; padding: 12px 14px; border: 2px solid var(--linea); border-radius: 12px; background: #0b0910; }
+  .opcion-tema:hover, .opcion-tema:focus-visible { border-color: var(--oro); background: #231a33; }
+  .cab-cancion { display: grid; gap: 4px; min-width: 0; }
+  .cab-cancion iframe { width: 100%; height: 152px; border: 0; border-radius: 12px; display: block; }
+  .cab-cancion { gap: 10px; }
+  .tarjeta-cancion { display: grid; gap: 2px; padding: 2px 0 2px 12px; border-left: 4px solid var(--oro); }
+  .tarjeta-cancion h3 { margin: 0; font-family: var(--fuente-nombres); font-size: 1.4rem; line-height: 1.2; }
+  .tarjeta-cancion .titulo-cancion { margin: 0; color: var(--oro-claro); font-weight: 700; font-size: 1.1rem; }
+  .btn-texto { justify-self: start; font: inherit; color: var(--oro-claro); background: none; border: 0; text-decoration: underline; cursor: pointer; padding: 4px 0; }
+  .audio-caja { display: grid; gap: 8px; }
+  .audio-caja iframe { width: 100%; height: 152px; border: 0; border-radius: 12px; }
+  .audio-caja .btn { justify-self: start; }
+  .btn-spotify { display: inline-flex; align-items: center; gap: 8px; background: #000; }
+  .logo-spotify { width: 24px; height: 24px; display: block; }
+  .zona.encima { transform: scale(1.03); }
+  .z-apoya.encima { background: rgba(63, 191, 122, .2); } .z-perpetua.encima { background: rgba(232, 118, 43, .22); }
+  .zonas.listas .zona { animation: late 1.2s ease-in-out infinite alternate; }
+  @keyframes late { from { box-shadow: 0 0 0 0 rgba(232, 206, 134, 0); } to { box-shadow: 0 0 0 6px rgba(232, 206, 134, .25); } }
+  .ayuda { margin: 0; min-height: 1.5em; text-align: center; color: var(--oro-claro); font-size: .95rem; }
+
+  .carrusel-caja { position: relative; display: flex; align-items: center; gap: 6px; }
+  /* carrusel circular: el JS coloca cada disco según su distancia al centro y los discos dan la vuelta sin dejar huecos */
+  .carrusel { position: relative; flex: 1; min-width: 0; height: calc(var(--d) * 1.5 + 70px); overflow: hidden; touch-action: none; user-select: none; }
+  .celda { position: absolute; top: 50%; margin-top: calc(var(--d) / -2); width: var(--d); height: var(--d); }
+  .flecha { flex: 0 0 auto; width: 42px; height: 42px; border-radius: 50%; border: 2px solid var(--oro); background: var(--panel); color: var(--oro-claro); font-size: 1.5rem; line-height: 1; cursor: pointer; }
+  .flecha:hover { background: #231a33; }
+  /* en móvil las flechas van encima de los bordes del carrusel, para que se vea que se puede cambiar de disco */
+  @media (max-width: 640px) {
+    .carrusel-caja { gap: 0; }
+    .flecha { position: absolute; top: 50%; margin-top: -21px; z-index: 200; background: rgba(23, 18, 31, .88); }
+    #btnIzq { left: 0; } #btnDer { right: 0; }
+  }
+
+  .disco { position: relative; width: 100%; height: 100%; border-radius: 50%; touch-action: none; user-select: none; cursor: grab;
+    background: repeating-radial-gradient(circle at 50% 50%, #0c0c0c 0 2px, #1b1b1b 2px 4px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, .65), inset 0 0 0 5px #070707; scale: var(--e, 1); transition: transform .2s, box-shadow .2s, scale .12s linear; }
+  .disco::before { content: ""; position: absolute; inset: 0; border-radius: 50%; pointer-events: none;
+    background: conic-gradient(from 20deg, rgba(255, 255, 255, .09), transparent 18%, rgba(255, 255, 255, .06) 50%, transparent 68%, rgba(255, 255, 255, .09)); }
+  .disco.gira::before { animation: giro 7s linear infinite; }
+  .disco.sel { box-shadow: 0 0 0 4px var(--oro-claro), 0 18px 34px rgba(0, 0, 0, .75), inset 0 0 0 5px #070707; }
+  .disco.arrastrando { scale: 1; cursor: grabbing; z-index: 30; transition: none; box-shadow: 0 22px 40px rgba(0, 0, 0, .8), inset 0 0 0 5px #070707; }
+  .disco.arrastrando::before { animation-duration: 1.2s; }
+  .etiqueta { position: absolute; left: 50%; top: 50%; width: 66%; aspect-ratio: 1; overflow: hidden; transform: translate(-50%, -50%); border-radius: 50%; display: grid; place-items: center; padding: 8% 9% 12%; text-align: center; pointer-events: none;
+    background: radial-gradient(circle at 50% 35%, var(--e1, #8a45b0), var(--e2, var(--morado)) 60%, var(--e3, #3d1a52)); border: 3px solid var(--oro); box-shadow: inset 0 0 0 3px rgba(0, 0, 0, .25); }
+  .etiqueta p { margin: 0; font-family: var(--fuente-nombres); font-weight: 700; font-size: .76rem; line-height: 1.2; text-wrap: balance; }
+  .etiqueta p.largo { font-size: .7rem; } .etiqueta p.muy-largo { font-size: .62rem; }
+  .etiqueta::after { content: ""; position: absolute; left: 50%; bottom: 6%; width: 7px; height: 7px; transform: translateX(-50%); border-radius: 50%; background: #070707; border: 2px solid var(--oro); }
+  @media (max-width: 640px) { /* en móvil los discos son más pequeños: etiqueta más grande y letra más ajustada para que quepan los fragmentos largos */
+    :root { --d: 48vw; } /* disco más grande: se ve más parte negra alrededor de la etiqueta */
+    .etiqueta { width: 62%; padding: 5% 6% 10%; }
+    .etiqueta p { font-size: .7rem; } .etiqueta p.largo { font-size: .64rem; } .etiqueta p.muy-largo { font-size: .58rem; }
+  }
+  /* colores de la etiqueta: los cuatro de la cinta del pie (rosa, verdeazul, naranja y morado) */
+  .col-0 { --e1: #e0709b; --e2: #C2386E; --e3: #7a1f45; }
+  .col-1 { --e1: #3fb0ba; --e2: #127C86; --e3: #0a4a50; }
+  .col-2 { --e1: #f4a468; --e2: #E8762B; --e3: #a24a12; } .col-2 .etiqueta p { color: #1b1005; } /* letra oscura: el blanco sobre naranja no se lee bien */
+  .col-3 { --e1: #8a45b0; --e2: #6B2D8C; --e3: #3d1a52; }
+  @keyframes giro { to { rotate: 360deg; } }
+  /* disco ya clasificado: anillo verde o naranja y un sello con la marca */
+  .disco.hecho { cursor: pointer; filter: saturate(.75); }
+  .disco.res-ok { box-shadow: 0 0 0 4px var(--bien), 0 12px 26px rgba(0, 0, 0, .65), inset 0 0 0 5px #070707; }
+  .disco.res-mal { box-shadow: 0 0 0 4px var(--alerta), 0 12px 26px rgba(0, 0, 0, .65), inset 0 0 0 5px #070707; }
+  .disco[data-sello]::after { content: attr(data-sello); position: absolute; top: 2%; right: 2%; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--panel); border: 3px solid currentColor; font-weight: 700; font-size: 1.1rem; }
+  .disco.res-ok[data-sello]::after { color: var(--bien); } .disco.res-mal[data-sello]::after { color: var(--alerta); }
+  .disco.flash-ok { animation: pulso-ok .8s ease-out; } .disco.flash-mal { animation: parpadeo-mal .8s ease-in-out; }
+  @keyframes pulso-ok { 0% { filter: brightness(1.8); } 100% { filter: brightness(1); } }
+  @keyframes parpadeo-mal { 0%, 100% { filter: brightness(1); } 25%, 75% { filter: brightness(1.8) hue-rotate(-20deg); } 50% { filter: brightness(.8); } }
+  .estela { position: fixed; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; pointer-events: none; z-index: 29; background: radial-gradient(circle, var(--oro-claro), transparent 70%); animation: estela .6s ease-out forwards; }
+  @keyframes estela { from { opacity: .8; transform: scale(1); } to { opacity: 0; transform: scale(2.4); } }
+
+  /* fragmento completo del disco central, con los saltos de línea de la letra */
+  .letra { margin: 0 auto 10px; max-width: 52ch; min-height: 6.5em; padding: 8px 14px; border-left: 4px solid var(--oro); background: var(--panel); border-radius: 0 10px 10px 0; color: #e6e0f0; font-size: .98rem; line-height: 1.4; }
+  .letra blockquote { margin: 0; white-space: pre-line; font-style: italic; }
+  .letra-mal { margin: 6px 0 0; font-size: .88rem; color: var(--oro-claro); }
+  .letra-mal[hidden] { display: none; }
+  .fin { text-align: center; margin: 6px 0 12px; }
+
+  /* ---------- Tarjeta de revelación ---------- */
+  /* la tarjeta se abre como ventana flotante sobre el juego: así la página no se desplaza y las zonas siguen a la vista */
+  dialog.revelacion { width: min(94vw, 580px); max-height: 92vh; overflow: auto; margin: auto; padding: 0; border: 3px solid var(--oro); border-radius: 18px; background: var(--panel); color: var(--blanco); }
+  dialog.revelacion[open] { animation: entra .35s ease-out; }
+  dialog.revelacion::backdrop { background: rgba(0, 0, 0, .75); }
+  .rev-contenido { padding: 18px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; } /* minmax(0,…): el reproductor no puede ensanchar la columna */
+  @keyframes entra { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  .rev-cab { display: grid; grid-template-columns: 96px 1fr; gap: 14px; align-items: center; }
+  .portada { width: 96px; aspect-ratio: 1; border-radius: 8px; display: grid; place-items: center; text-align: center; font-size: .7rem; color: var(--suave); border: 2px dashed var(--linea); background: #0b0910; padding: 6px; }
+  .rev-cab h3 { margin: 0; font-family: var(--fuente-nombres); font-size: 1.15rem; }
+  .rev-cab p { margin: 2px 0 0; color: var(--suave); }
+  .resultado { margin: 0; font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.2rem; }
+  .resultado.ok { color: var(--bien); } .resultado.mal { color: var(--alerta); }
+  .etiquetas { display: grid; gap: 8px; }
+  .fila-tag { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .fila-tag .que { min-width: 82px; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--oro-claro); font-family: var(--fuente-nombres); }
+  .tag { padding: 3px 12px; border-radius: 99px; border: 2px solid; font-weight: 700; font-size: .9rem; }
+  .tag.t-apoya { color: var(--bien); } .tag.t-perpetua { color: var(--alerta); } .tag.t-neutro { color: var(--suave); border-style: dashed; }
+  .recuerda { margin: 0; padding: 10px 12px; border-radius: 10px; background: #231a33; color: #e6e0f0; font-size: .95rem; }
+  .explica { margin: 0; font-size: 1.02rem; }
+  .fuente { margin: 0; color: var(--suave); font-size: .85rem; overflow-wrap: anywhere; } /* las URL largas se parten en vez de salirse */
+  .suena { display: flex; align-items: center; gap: 10px; color: var(--suave); font-size: .9rem; }
+  .barras { display: inline-flex; gap: 3px; align-items: end; height: 20px; }
+  .barras i { display: block; width: 4px; background: var(--oro); border-radius: 2px; height: 30%; animation: barra .9s ease-in-out infinite alternate; }
+  .barras i:nth-child(2) { animation-delay: -.3s; } .barras i:nth-child(3) { animation-delay: -.6s; } .barras i:nth-child(4) { animation-delay: -.15s; }
+  @keyframes barra { to { height: 100%; } }
+  .barras.parado i { animation: none; }
+  .suena[hidden] { display: none; }
+  .acciones { display: flex; flex-wrap: wrap; gap: 10px; }
+  .acciones .btn + .btn { margin-left: 0; }
+
+  .final { max-width: 60ch; }
+  .final .puntos { font-family: var(--fuente-titulos); font-size: 2rem; color: var(--oro-claro); margin: 0 0 8px; }
+  main { padding-bottom: 36px; }
+  footer { margin-top: auto; background: #000; border-top: 10px solid transparent; border-image: var(--cinta-colores) 10; }
+  footer .envoltorio { padding: 22px 0 28px; } .firma { margin: 0; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.05rem; color: var(--oro-claro); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .disco.gira::before, .disco.arrastrando::before, .disco.flash-ok, .disco.flash-mal, .barras i, .estela, dialog.revelacion[open], .zonas.listas .zona { animation: none; }
+    .disco, .zona { transition: none; } 
+  }
+</style>
+</head>
+<body>
+<header class="cab"><div class="envoltorio">
+  <a class="logo" href="propuesta-d-mezcla.html">♀ Feminist</a>
+  <h1 id="titulo"></h1>
+  <p class="sub" id="subtitulo"></p>
+  <p class="aviso-boceto" id="avisoBoceto"></p>
+</div></header>
+
+<main class="envoltorio">
+  <section class="pantalla" id="pNivel" hidden aria-labelledby="hNivel">
+    <h2 id="hNivel"></h2>
+    <div class="niveles" id="niveles"></div>
+  </section>
+
+  <section class="pantalla" id="pAviso" hidden aria-labelledby="hAviso">
+    <h2 id="hAviso"></h2>
+    <div class="aviso-grid">
+      <div class="caja-mensaje" id="cajaAviso"></div>
+      <div class="opciones-pal" role="group" aria-labelledby="hPalabras">
+        <h3 id="hPalabras"></h3>
+        <button type="button" class="opcion-pal recomendada" id="btnEmpezar16"></button>
+        <button type="button" class="opcion-pal" id="btnVerTal"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="pantalla" id="pJuego" hidden aria-label="Juego">
+    <div class="marcador"><span id="progreso"></span></div>
+    <div class="zonas" id="zonas"></div>
+    <p class="ayuda" id="ayuda" role="status"></p>
+    <div class="carrusel-caja">
+      <button type="button" class="flecha" id="btnIzq" aria-label="Disco anterior">‹</button>
+      <div class="carrusel" id="carrusel" role="list" aria-label="Discos"></div>
+      <button type="button" class="flecha" id="btnDer" aria-label="Disco siguiente">›</button>
+    </div>
+    <div class="letra" id="letra" aria-live="polite"><blockquote id="letraTxt"></blockquote><p class="letra-mal" id="letraMal" hidden></p></div>
+    <div class="fin" id="fin" hidden><button type="button" class="btn primario" id="btnResumen"></button></div>
+    <dialog class="revelacion" id="dlg" aria-label="Resultado del disco"></dialog>
+  </section>
+
+  <section class="pantalla" id="pFinal" hidden aria-labelledby="hFinal">
+    <div class="final">
+      <h2 id="hFinal"></h2>
+      <p class="puntos" id="puntos"></p>
+      <div class="caja-mensaje" id="cajaFinal"></div>
+      <button type="button" class="btn primario" id="btnOtra"></button>
+    </div>
+  </section>
+</main>
+
+<footer><div class="envoltorio"><p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p></div></footer>
+
+<script>
+(function () {
+  /* ---------- Textos de interfaz (irán a los archivos de idioma es / ca / en) ---------- */
+  var TXT = {
+    titulo: 'El Vinilo Crítico', subtitulo: '¿Suma o resta? Elige el disco que quieras, clasifícalo y descubre qué dice de verdad la letra.',
+    aviso: 'Boceto: los fragmentos son los que Mireia lleva elegidos hasta ahora; faltan las explicaciones, algunos años y casi todos los enlaces de audio (solo hay 6 de Spotify, que salen en la ficha).',
+    elegirNivel: 'Elige tu nivel',
+    niveles: {
+      todos: { nombre: 'Para todas las edades', desc: 'Letras sin palabras malsonantes. Para jugar en familia o en clase.' },
+      '16': { nombre: 'Más de 16 años', desc: 'Letras reales, con palabrotas. Aquí lo que cuenta es el mensaje.' }
+    },
+    avisoTitulo: 'Antes de empezar',
+    avisoGrande: 'Algunas canciones tienen palabrotas.',
+    avisoP1: 'En esta sección hemos dado prioridad al mensaje de las canciones. No hemos dejado fuera canciones con un mensaje importante porque su vocabulario no sea el más adecuado para menores. Una palabrota puede acompañar un mensaje que reivindica la libertad o uno que normaliza los celos, el control o el desprecio, y lo que queremos es aprender a distinguirlos.',
+    avisoP2: 'Por eso, en cada disco separamos dos cosas: el mensaje y el lenguaje. Elige cómo quieres ver las letras: si un fragmento tiene palabras malsonantes, lo avisamos con 🤬 debajo del disco.',
+    elegirPalabras: 'Elige cómo ver las letras',
+    malFragTapado: '🤬 Este fragmento tiene palabras malsonantes (están tapadas).', malFrag: '🤬 Este fragmento tiene palabras malsonantes.',
+    tapar: 'Tapar las palabrotas', taparDesc: 'Salen como ●●●●. Recomendado para jugar en clase.', verTal: 'Ver las letras tal cual', verTalDesc: 'Las palabras aparecen como en la canción.', iconoTapar: '🙈', iconoVer: '🤬', atras: 'Volver',
+    progreso: function (n, t) { return n + ' de ' + t + ' discos clasificados'; },
+    ayuda: 'El disco grande del centro es el elegido: arrástralo a una zona o pulsa una zona. Desliza para cambiar de disco.',
+    sinSeleccion: 'Desliza el carrusel hasta un disco sin clasificar.',
+    zonas: {
+      apoya: { icono: '✊', nombre: 'Apoya el feminismo', desc: 'Rompe estereotipos' },
+      neutral: { icono: '😐', nombre: 'Neutral', desc: 'Ni apoya ni perpetúa' },
+      perpetua: { icono: '⚠️', nombre: 'Perpetúa estereotipos', desc: 'Machismo' }
+    },
+    noNeutral: 'Esta canción no es neutral.',
+    noNeutralExplica: { apoya: 'Una letra siempre dice algo. Que no te parezca que perpetúa no la hace neutral: esta apoya el feminismo.', perpetua: 'Una letra siempre dice algo. Que no te parezca que apoya no la hace neutral: esta perpetúa estereotipos, y a veces cuesta verlo porque nos suena normal.' },
+    temaPregunta: { apoya: '¿Qué defiende esta letra?', perpetua: '¿Qué estereotipo perpetúa?' },
+    temaAyuda: 'Elige una opción. Puede haber más de una respuesta correcta.',
+    queTema: 'Tema', temasValidos: 'Temas válidos: ',
+    parar: '⏸ Parar', sonando: 'Suena el fragmento…',
+    fragmento: function (a, b) { return '▶ Escuchar solo el fragmento (' + a + ' a ' + b + ')'; }, ocultar: 'Ocultar el reproductor', audioPend: 'Audio pendiente de añadir.', audioTit: 'Reproductor de Spotify',
+    aciertosTemas: function (a, n) { return a + ' de ' + n + ' temas identificados'; },
+    discoN: function (i) { return 'Disco ' + i; },
+    correcto: '¡Correcto!', matiz: 'Mira con calma: esta letra tiene matices distintos a los que parecía.',
+    queMensaje: 'Mensaje', queLenguaje: 'Lenguaje',
+    mensaje: { apoya: 'Apoya el feminismo', perpetua: 'Perpetúa estereotipos' },
+    lenguaje: { limpio: 'Sin palabrotas', explicito: '🤬 La canción tiene palabrotas' },
+    recuerda: 'Recuerda: una palabrota no cambia el mensaje. Lo que importa es qué defiende la letra.',
+    portada: 'Portada del disco', suena: 'Suena un fragmento de la canción (en el boceto no suena)', cancion: 'Canción', fuente: 'Fuente de la explicación: ',
+    seguir: 'Seguir eligiendo', verResumen: 'Ver el resumen',
+    final: 'Resumen', aciertos: function (a, n) { return a + ' de ' + n + ' aciertos'; },
+    finalMensaje: 'Lo importante no son los aciertos, sino fijarse en el mensaje de las canciones que escuchamos cada día: ¿quién decide?, ¿quién cuida de quién?, ¿qué se presenta como amor?',
+    otra: 'Jugar otra vez', anterior: 'Disco anterior', siguiente: 'Disco siguiente'
+  };
+  var $ = function (id) { return document.getElementById(id); };
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function el(tag, clase, texto) { var n = document.createElement(tag); if (clase) { n.className = clase; } if (texto !== undefined) { n.textContent = texto; } return n; }
+
+  var TEMAS = {}, todos = [], cola = [], estado = [], discos = [], nivel = '', sel = -1, pos = 0, animId = 0, g = null, centro = -1, taparPalabras = true;
+
+  function pantalla(id) { ['pNivel', 'pAviso', 'pJuego', 'pFinal'].forEach(function (p) { $(p).hidden = p !== id; }); window.scrollTo(0, 0); }
+
+  /* ---------- Cabecera y elección de nivel ---------- */
+  $('titulo').textContent = TXT.titulo; $('subtitulo').textContent = TXT.subtitulo; $('avisoBoceto').textContent = TXT.aviso; $('hNivel').textContent = TXT.elegirNivel;
+  function mostrarAviso() {
+    $('hAviso').textContent = TXT.avisoTitulo;
+    var c = $('cajaAviso'); c.textContent = '';
+    c.appendChild(el('p', 'grande', TXT.avisoGrande)); c.appendChild(el('p', '', TXT.avisoP1)); c.appendChild(el('p', '', TXT.avisoP2));
+    $('hPalabras').textContent = TXT.elegirPalabras;
+    [['btnEmpezar16', 'iconoTapar', 'tapar', 'taparDesc'], ['btnVerTal', 'iconoVer', 'verTal', 'verTalDesc']].forEach(function (o) {
+      var b = $(o[0]); b.textContent = ''; b.appendChild(el('span', 'ico', TXT[o[1]])); b.appendChild(el('strong', '', TXT[o[2]])); b.appendChild(el('small', '', TXT[o[3]]));
+    });
+    pantalla('pAviso');
+  }
+  $('btnEmpezar16').addEventListener('click', function () { taparPalabras = true; empezar(); });
+  $('btnVerTal').addEventListener('click', function () { taparPalabras = false; empezar(); });
+  $('btnOtra').addEventListener('click', function () { mostrarAviso(); });
+  $('btnResumen').textContent = TXT.verResumen; $('btnResumen').addEventListener('click', function () { terminar(); });
+  $('btnIzq').addEventListener('click', function () { moverCarrusel(-1); }); $('btnDer').addEventListener('click', function () { moverCarrusel(1); });
+  function moverCarrusel(dir) { animarA(Math.round(pos) + dir); }
+  window.addEventListener('resize', function () { if (!$('pJuego').hidden) { colocar(); } });
+
+  /* ---------- Zonas de destino (botones: sirven con teclado y con toque) ---------- */
+  function construirZonas() {
+    var z = $('zonas'); z.textContent = '';
+    ['apoya', 'neutral', 'perpetua'].forEach(function (t) {
+      var b = el('button', 'zona z-' + t); b.type = 'button'; b.dataset.zona = t;
+      b.appendChild(el('span', 'ico', TXT.zonas[t].icono)); b.appendChild(el('strong', '', TXT.zonas[t].nombre)); b.appendChild(el('small', '', TXT.zonas[t].desc));
+      b.setAttribute('aria-label', TXT.zonas[t].nombre + '. ' + TXT.zonas[t].desc);
+      b.addEventListener('click', function () { if (sel < 0) { $('ayuda').textContent = TXT.sinSeleccion; setTimeout(function () { $('ayuda').textContent = TXT.ayuda; }, 2500); } else { clasificar(sel, t); } });
+      z.appendChild(b);
+    });
+  }
+
+  /* ---------- Partida ---------- */
+  function empezar() {
+    cola = mezclarDiscos(todos);
+    estado = cola.map(function () { return null; }); sel = -1;
+    $('ayuda').textContent = TXT.ayuda; if ($('dlg').open) { $('dlg').close(); } $('dlg').textContent = ''; $('fin').hidden = true;
+    construirZonas(); construirCarrusel(); actualizarProgreso(); pantalla('pJuego');
+    colocar();
+  }
+
+  function actualizarProgreso() {
+    var n = estado.filter(Boolean).length; $('progreso').textContent = TXT.progreso(n, cola.length); $('fin').hidden = n < cola.length;
+  }
+
+  /* ---------- Carrusel circular: los discos dan la vuelta y siempre hay discos a los dos lados ---------- */
+  function medidas() { var c = $('carrusel'), ce = c.querySelector('.celda'); return { W: c.clientWidth, d: ce ? ce.offsetWidth : 160 }; }
+
+  // orden de los discos: al azar, pero sin más de 2 seguidos del mismo bando (así no se adivina por la racha ni quedan todos juntos)
+  function mezclarDiscos(lista) {
+    var m = lista.slice();
+    for (var intento = 0; intento < 300; intento++) {
+      barajar(m);
+      var ok = true; for (var k = 2; k < m.length; k++) { if (m[k].respuesta === m[k - 1].respuesta && m[k].respuesta === m[k - 2].respuesta) { ok = false; break; } }
+      if (ok) { break; }
+    }
+    return m;
+  }
+  // color de la etiqueta de cada disco (0 a 3): ciclo de cuatro; en el círculo, el último no repite el color de su vecino ni del primero
+  function coloresDiscos(n) {
+    var c = []; for (var k = 0; k < n; k++) { c.push(k % 4); }
+    if (n > 2 && (c[n - 1] === c[0] || c[n - 1] === c[n - 2])) { for (var x = 0; x < 4; x++) { if (x !== c[0] && x !== c[n - 2]) { c[n - 1] = x; break; } } }
+    return c;
+  }
+
+  // fragmento tal como se muestra: si se eligió tapar, cada palabra malsonante (lista «tapar» del disco) sale como ●●●●
+  function ver(d) {
+    var t = d.fragmento;
+    if (taparPalabras && d.tapar) { d.tapar.forEach(function (w) { t = t.replace(new RegExp(w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), function (m) { return new Array(m.length + 1).join('●'); }); }); }
+    return t;
+  }
+
+  // texto de la etiqueta: una sola línea corrida, recortada en una palabra si es muy largo
+  function extracto(f) {
+    var t = f.replace(/\s*\n\s*/g, ' ').trim(); if (t.length <= 84) { return t; }
+    return t.slice(0, 84).replace(/\s+\S*$/, '') + '…';
+  }
+
+  function construirCarrusel() {
+    var c = $('carrusel'); c.textContent = ''; discos = []; pos = 0; centro = -1; var cols = coloresDiscos(cola.length);
+    cola.forEach(function (d, i) {
+      var celda = el('div', 'celda'); celda.setAttribute('role', 'listitem');
+      var disco = el('div', 'disco gira col-' + cols[i]); disco.tabIndex = 0; disco.setAttribute('role', 'button'); disco.setAttribute('aria-pressed', 'false');
+      disco.setAttribute('aria-label', TXT.discoN(i + 1) + ': ' + ver(d));
+      var et = el('div', 'etiqueta'); // la etiqueta muestra un extracto (el fragmento completo se lee debajo del carrusel) y la letra se reduce según su longitud
+      var corto = extracto(ver(d));
+      et.appendChild(el('p', corto.length > 62 ? 'muy-largo' : (corto.length > 44 ? 'largo' : ''), corto)); disco.appendChild(et);
+      disco.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); seleccionar(i); }
+        else if (e.key === 'ArrowRight') { e.preventDefault(); moverCarrusel(1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); moverCarrusel(-1); }
+      });
+      celda.appendChild(disco); c.appendChild(celda); discos.push(disco);
+    });
+  }
+
+  // coloca cada disco según su distancia (off) al centro; al llegar a la mitad del círculo salta al otro lado, y se desvanece justo antes para que no se note
+  function colocar() {
+    var m = medidas(), n = discos.length;
+    discos.forEach(function (disco, k) {
+      var off = (((k - pos) % n) + n) % n; if (off > n / 2) { off -= n; }
+      var a = Math.abs(off), x = off * m.d * 1.15 + Math.sign(off) * Math.min(a, 1) * m.d * 0.3, celda = disco.parentNode;
+      celda.style.left = (m.W / 2 + x - m.d / 2) + 'px'; celda.style.zIndex = String(100 - Math.round(a * 10));
+      celda.style.opacity = String(Math.max(0, Math.min(1, (n / 2 - a) / 0.5)));
+      disco.style.setProperty('--e', (1 + 0.5 * Math.max(0, 1 - a)).toFixed(3));
+    });
+    actualizarSel();
+  }
+
+  // el disco del centro es el elegido (si aún no está clasificado)
+  function actualizarSel() {
+    var n = discos.length; if (!n) { return; }
+    var c = ((Math.round(pos) % n) + n) % n, nuevo = estado[c] ? -1 : c;
+    if (c !== centro) { centro = c; $('letraTxt').textContent = ver(cola[c]); $('letraMal').hidden = cola[c].lenguaje !== 'explicito'; $('letraMal').textContent = taparPalabras ? TXT.malFragTapado : TXT.malFrag; } // el fragmento completo del disco central, con sus saltos de línea
+    if (nuevo === sel) { return; }
+    sel = nuevo;
+    discos.forEach(function (d, k) { d.classList.toggle('sel', k === sel); d.setAttribute('aria-pressed', k === sel ? 'true' : 'false'); });
+    $('zonas').classList.toggle('listas', sel >= 0);
+  }
+
+  function animarA(t) {
+    cancelAnimationFrame(animId);
+    if (reduce) { pos = t; colocar(); return; }
+    var p0 = pos, t0 = performance.now(), dur = 260 + Math.min(400, Math.abs(t - p0) * 110);
+    (function frame(now) { var u = Math.min(1, (now - t0) / dur); u = 1 - Math.pow(1 - u, 3); pos = p0 + (t - p0) * u; colocar(); if (u < 1) { animId = requestAnimationFrame(frame); } })(t0);
+  }
+
+  function centrar(i) { var n = discos.length, dlt = ((i - pos) % n + n) % n; if (dlt > n / 2) { dlt -= n; } animarA(pos + dlt); }
+  // un toque en un disco lo lleva al centro (si ya estaba clasificado, además abre su explicación)
+  function seleccionar(i) { var e = estado[i]; if (e) { if (e.ok && !e.tema && tieneTemas(cola[i])) { abrirTema(i); } else { abrirRevelacion(i); } } centrar(i); }
+  // tras cerrar la explicación, el carrusel pasa al siguiente disco sin clasificar
+  function siguienteLibre(i) { for (var k = 1; k <= discos.length; k++) { var j = (i + k) % discos.length; if (!estado[j]) { return j; } } return -1; }
+
+  /* ---------- Gestos con dedo o ratón: horizontal = girar el carrusel; vertical sobre un disco = llevarlo a una zona ---------- */
+  (function () {
+    var stage = $('carrusel');
+    function zonaBajo(x, y) { var z = null; document.querySelectorAll('.zona').forEach(function (b) { var r = b.getBoundingClientRect(); if (x >= r.left && x <= r.right && y >= r.top && y <= r.bottom) { z = b; } }); return z; }
+    function marcar(z) { document.querySelectorAll('.zona').forEach(function (b) { b.classList.toggle('encima', b === z); }); }
+    function devolver(d) { d.classList.remove('arrastrando'); ['position', 'left', 'top', 'width', 'height', 'transform'].forEach(function (p) { d.style[p] = ''; }); }
+    stage.addEventListener('pointerdown', function (e) {
+      if (e.button > 0 || !discos.length) { return; }
+      var de = e.target.closest ? e.target.closest('.disco') : null; cancelAnimationFrame(animId);
+      g = { id: e.pointerId, x0: e.clientX, y0: e.clientY, pos0: pos, i: de ? discos.indexOf(de) : -1, modo: null, rect: de ? de.getBoundingClientRect() : null, ult: 0 };
+      try { stage.setPointerCapture(e.pointerId); } catch (err) { /* sin captura el gesto sigue con movimientos normales */ }
+    });
+    stage.addEventListener('pointermove', function (e) {
+      if (!g || e.pointerId !== g.id) { return; }
+      var dx = e.clientX - g.x0, dy = e.clientY - g.y0;
+      if (!g.modo && Math.hypot(dx, dy) > 8) {
+        if (g.i >= 0 && !estado[g.i] && Math.abs(dy) > Math.abs(dx)) { // sale del carrusel y sigue al puntero
+          g.modo = 'disco'; var d = discos[g.i], r = g.rect;
+          d.classList.add('arrastrando'); d.style.position = 'fixed'; d.style.left = r.left + 'px'; d.style.top = r.top + 'px'; d.style.width = r.width + 'px'; d.style.height = r.height + 'px';
+        } else { g.modo = 'carrusel'; }
+      }
+      if (g.modo === 'carrusel') { pos = g.pos0 - dx / (medidas().d * 1.15); colocar(); }
+      else if (g.modo === 'disco') {
+        discos[g.i].style.transform = 'translate(' + dx + 'px,' + dy + 'px) rotate(' + (dx * 0.05) + 'deg)'; marcar(zonaBajo(e.clientX, e.clientY));
+        var t = Date.now();
+        if (!reduce && t - g.ult > 45) { g.ult = t; var s = el('i', 'estela'); s.style.left = e.clientX + 'px'; s.style.top = e.clientY + 'px'; document.body.appendChild(s); setTimeout(function () { s.remove(); }, 650); }
+      }
+    });
+    function fin(e) {
+      if (!g || e.pointerId !== g.id) { return; }
+      var gg = g; g = null; marcar(null);
+      if (gg.modo === 'disco') { var z = e.type === 'pointerup' ? zonaBajo(e.clientX, e.clientY) : null; devolver(discos[gg.i]); if (z) { clasificar(gg.i, z.dataset.zona); } }
+      else if (gg.modo === 'carrusel') { animarA(Math.round(pos)); }
+      else if (e.type === 'pointerup' && gg.i >= 0) { seleccionar(gg.i); } // un toque sin mover: elegir ese disco
+    }
+    stage.addEventListener('pointerup', fin); stage.addEventListener('pointercancel', fin);
+  })();
+
+  /* ---------- Clasificar y comprobar ---------- */
+  function clasificar(i, zona) {
+    if (estado[i]) { return; }
+    var d = cola[i], ok = zona === d.respuesta, disco = discos[i];
+    estado[i] = { zona: zona, ok: ok, tema: null };
+    actualizarSel();
+    disco.classList.add('hecho', ok ? 'res-ok' : 'res-mal', ok ? 'flash-ok' : 'flash-mal'); disco.dataset.sello = ok ? '✓' : '✗'; disco.classList.remove('gira');
+    disco.setAttribute('aria-label', TXT.discoN(i + 1) + ': ' + (ok ? TXT.correcto : TXT.matiz) + ' ' + ver(d));
+    actualizarProgreso();
+    setTimeout(function () { disco.classList.remove('flash-ok', 'flash-mal'); if (ok && tieneTemas(d)) { abrirTema(i); } else { abrirRevelacion(i); } }, reduce ? 150 : 850);
+  }
+
+  /* ---------- Segunda parte: ¿qué tema? (solo si se acierta si apoya o perpetúa) ---------- */
+  function tieneTemas(d) { return !!(d.temas && d.temas.length && TEMAS[d.respuesta]); }
+  function nombreTema(grupo, id) { var t = (TEMAS[grupo] || []).filter(function (x) { return x.id === id; })[0]; return t ? t.es : id; }
+  function barajar(a) { for (var k = a.length - 1; k > 0; k--) { var j = Math.floor(Math.random() * (k + 1)), t = a[k]; a[k] = a[j]; a[j] = t; } return a; }
+  // 4 opciones: todos los temas válidos del disco (1 o 2) y el resto, de relleno, del mismo grupo
+  function opcionesTema(d) {
+    var vocab = TEMAS[d.respuesta], validas = vocab.filter(function (t) { return d.temas.indexOf(t.id) >= 0; });
+    var otras = barajar(vocab.filter(function (t) { return d.temas.indexOf(t.id) < 0; }));
+    return barajar(validas.concat(otras.slice(0, Math.max(2, 4 - validas.length))));
+  }
+  function alCerrar(i) { detenerAudio(); var j = siguienteLibre(i); if (j >= 0) { centrar(j); } discos[j >= 0 ? j : i].focus({ preventScroll: true }); } // al cerrar, el carrusel pasa al siguiente disco libre y el foco va a él
+
+  /* ---------- Audio: reproductor de Spotify (iFrame API) que suena solo el fragmento ---------- */
+  var ctrlAudio = null, apiSpotify = null;
+  function cargarApiSpotify() { // el script de Spotify se carga una sola vez, la primera vez que se abre una ficha con audio
+    if (!apiSpotify) {
+      apiSpotify = new Promise(function (ok, fallo) {
+        window.onSpotifyIframeApiReady = ok;
+        var sc = el('script'); sc.src = 'https://open.spotify.com/embed/iframe-api/v1'; sc.async = true; sc.onerror = fallo; document.head.appendChild(sc);
+        setTimeout(fallo, 8000);
+      });
+      apiSpotify.catch(function () { apiSpotify = null; });
+    }
+    return apiSpotify;
+  }
+  function detenerAudio() { if (ctrlAudio) { try { ctrlAudio.destroy(); } catch (e) { /* ya cerrado */ } ctrlAudio = null; } } // al cerrar la ficha deja de sonar
+  function mmss(seg) { return Math.floor(seg / 60) + ':' + (seg % 60 < 10 ? '0' : '') + (seg % 60); }
+
+  // cabecera de la ficha: primero, bien visible, quién canta y qué canción es; debajo, el reproductor de Spotify (con su portada) que se carga al abrir la ficha
+  // (decisión de Mireia, 14-11-2026). Con segundos de inicio y fin, un botón hace sonar solo el fragmento. Sin enlace, solo el bloque de texto.
+  function cabeceraCancion(d) {
+    var caja = el('div', 'cab-cancion'), t = el('div', 'tarjeta-cancion');
+    t.appendChild(el('h3', '', d.grupo)); t.appendChild(el('p', 'titulo-cancion', '♪ ' + d.cancion + (d.anio ? ' (' + d.anio + ')' : ''))); caja.appendChild(t);
+    if (!(d.audio && d.audio.plataforma === 'spotify' && d.audio.id)) { caja.appendChild(el('p', 'fuente', TXT.audioPend)); return caja; }
+    var uri = 'spotify:track:' + d.audio.id, ini = d.audio.inicio || 0, fin = d.audio.fin || 0, host = el('div'); caja.appendChild(host);
+    function reproductorSimple() { // si la API de Spotify no carga, el reproductor normal (sin recorte del fragmento)
+      var m = el('iframe'); m.src = 'https://open.spotify.com/embed/track/' + encodeURIComponent(d.audio.id) + '?theme=0'; m.title = TXT.audioTit; m.allow = 'encrypted-media'; m.setAttribute('loading', 'lazy'); host.replaceWith(m);
+    }
+    cargarApiSpotify().then(function (api) {
+      api.createController(host, { uri: uri, width: '100%', height: 152 }, function (ctrl) {
+        if (!caja.isConnected) { try { ctrl.destroy(); } catch (e) { /* ficha cerrada antes de cargar */ } return; }
+        detenerAudio(); ctrlAudio = ctrl;
+        if (fin <= ini) { return; }
+        // el fragmento se intenta reproducir solo al abrir la ficha (la apertura sigue a un toque de quien juega, así que muchos navegadores lo permiten);
+        // si el navegador lo bloquea, el botón sirve de respaldo. Las barras de «suena» salen solo cuando el reproductor dice que de verdad suena.
+        var b = el('button', 'btn', TXT.fragmento(mmss(ini), mmss(fin))); b.type = 'button';
+        var st = el('div', 'suena'); st.hidden = true; var bar = el('span', 'barras' + (reduce ? ' parado' : '')); for (var q = 0; q < 4; q++) { bar.appendChild(el('i')); } st.appendChild(bar); st.appendChild(el('span', '', TXT.sonando));
+        var fila = el('div', 'acciones'); fila.appendChild(b); fila.appendChild(st); caja.appendChild(fila);
+        var sonando = false, arrancado = false;
+        function sonar() { arrancado = true; ctrl.loadUri(uri, false, ini); ctrl.play(); }
+        b.addEventListener('click', function () { if (sonando) { ctrl.pause(); } else { sonar(); } });
+        ctrl.addListener('ready', function () { if (!arrancado) { sonar(); } });
+        setTimeout(function () { if (!arrancado && caja.isConnected) { sonar(); } }, 2500); // por si «ready» no llega
+        ctrl.addListener('playback_update', function (e) {
+          if (!e.data) { return; }
+          sonando = !e.data.isPaused; st.hidden = !sonando; b.textContent = sonando ? TXT.parar : TXT.fragmento(mmss(ini), mmss(fin));
+          if (sonando && e.data.position >= fin * 1000) { ctrl.pause(); } // para al llegar al final del fragmento
+        });
+      });
+    }).catch(reproductorSimple);
+    return caja;
+  }
+
+  function abrirTema(i) {
+    var d = cola[i], r = $('dlg'); r.textContent = '';
+    var c = el('div', 'rev-contenido');
+    c.appendChild(el('p', 'resultado ok', TXT.correcto));
+    c.appendChild(el('h3', '', TXT.temaPregunta[d.respuesta]));
+    c.appendChild(el('p', 'fuente', TXT.temaAyuda));
+    var lista = el('div', 'tema-lista'), primera = null;
+    opcionesTema(d).forEach(function (t) {
+      var b = el('button', 'opcion-tema', t.es); b.type = 'button'; if (!primera) { primera = b; }
+      b.addEventListener('click', function () { estado[i].tema = { elegido: t.id, ok: d.temas.indexOf(t.id) >= 0 }; abrirRevelacion(i); });
+      lista.appendChild(b);
+    });
+    c.appendChild(lista); r.appendChild(c);
+    r.onclose = function () { alCerrar(i); };
+    if (!r.open) { r.showModal(); } primera.focus({ preventScroll: true });
+  }
+
+  function tag(clase, texto) { return el('span', 'tag ' + clase, texto); }
+  function fila(que, t) { var f = el('div', 'fila-tag'); f.appendChild(el('span', 'que', que)); f.appendChild(t); return f; }
+
+  function abrirRevelacion(i) {
+    var d = cola[i], e = estado[i]; if (!e) { return; }
+    var r = $('dlg'); r.textContent = '';
+    var c = el('div', 'rev-contenido');
+    c.appendChild(cabeceraCancion(d));
+    c.appendChild(el('p', 'resultado ' + (e.ok ? 'ok' : 'mal'), e.ok ? TXT.correcto : (e.zona === 'neutral' ? TXT.noNeutral : TXT.matiz)));
+    var etiquetas = el('div', 'etiquetas');
+    etiquetas.appendChild(fila(TXT.queMensaje, tag('t-' + d.respuesta, TXT.mensaje[d.respuesta])));
+    if (d.cancionConPalabrotas === true || d.cancionConPalabrotas === false) { etiquetas.appendChild(fila(TXT.queLenguaje, tag('t-neutro', TXT.lenguaje[d.cancionConPalabrotas ? 'explicito' : 'limpio']))); } // se refiere a la canción completa; si no se sabe, no se muestra
+    if (e.tema) { etiquetas.appendChild(fila(TXT.queTema, tag(e.tema.ok ? 't-apoya' : 't-neutro', (e.tema.ok ? '✓ ' : '') + nombreTema(d.respuesta, e.tema.elegido)))); }
+    c.appendChild(etiquetas);
+    if (e.tema && !e.tema.ok) { c.appendChild(el('p', 'fuente', TXT.temasValidos + d.temas.map(function (t) { return nombreTema(d.respuesta, t); }).join(' · '))); }
+    if (e.zona === 'neutral') { c.appendChild(el('p', 'recuerda', TXT.noNeutralExplica[d.respuesta])); }
+    if (d.cancionConPalabrotas === true) { c.appendChild(el('p', 'recuerda', TXT.recuerda)); }
+    c.appendChild(el('p', 'explica', d.explicacion.es));
+    c.appendChild(el('p', 'fuente', TXT.fuente + d.fuente));
+    var acc = el('div', 'acciones');
+    var seg = el('button', 'btn primario', TXT.seguir); seg.type = 'button'; seg.addEventListener('click', function () { r.close(); });
+    acc.appendChild(seg);
+    if (estado.every(Boolean)) { var res = el('button', 'btn', TXT.verResumen); res.type = 'button'; res.addEventListener('click', function () { r.close(); terminar(); }); acc.appendChild(res); }
+    c.appendChild(acc); r.appendChild(c);
+    r.onclose = function () { alCerrar(i); };
+    if (!r.open) { r.showModal(); } seg.focus({ preventScroll: true });
+  }
+
+  function terminar() {
+    var a = estado.filter(function (e) { return e && e.ok; }).length;
+    $('hFinal').textContent = TXT.final; var conTema = estado.filter(function (e) { return e && e.tema; }), tOk = conTema.filter(function (e) { return e.tema.ok; }).length;
+    $('puntos').textContent = TXT.aciertos(a, cola.length) + (conTema.length ? ' · ' + TXT.aciertosTemas(tOk, conTema.length) : '');
+    var c = $('cajaFinal'); c.textContent = ''; c.appendChild(el('p', '', TXT.finalMensaje));
+    $('btnOtra').textContent = TXT.otra; pantalla('pFinal');
+  }
+
+  /* ---------- Carga de datos ---------- */
+  fetch('data/vinilos.json').then(function (r) { return r.json(); }).then(function (j) { todos = j.discos || []; TEMAS = j.temas || {}; mostrarAviso(); })
+    .catch(function () { $('avisoBoceto').textContent = 'No se han podido cargar los datos. Abre esta página desde el servidor local.'; });
+})();
+</script>
+</body>
+</html>
