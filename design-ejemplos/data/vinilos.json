@@ -15,12 +15,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "Bad Bunny/Anuel AA: «Hasta que Dios diga» (2020)",
+      "fuente": "Bad Bunny/Anuel AA: «Hasta que Dios diga» (2020). Spotify: https://open.spotify.com/track/06s3QtMJVXw1AJX3UfvZG1",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "06s3QtMJVXw1AJX3UfvZG1",
+        "inicio": 57,
+        "fin": 62
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
       "tapar": [
@@ -32,14 +32,15 @@
         "cosificacion"
       ],
       "anioFuente": "Wikipedia",
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/06s3QtMJVXw1AJX3UfvZG1"
     },
     {
       "id": "v-02",
       "fragmento": "Cobras menos y tu jefe siempre será un él\nHarta de tanta tontería\nMe tienen hasta el...\nPor no dejarme ser quien quiero",
       "cancion": "Reinas",
       "grupo": "SUU",
-      "anio": null,
+      "anio": 2018,
       "idioma": "es",
       "respuesta": "apoya",
       "lenguaje": "limpio",
@@ -48,12 +49,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "SUU: «Reinas». Datos: Instituto de las Mujeres (Gobierno de España), «Mujeres en cifras», infografías «Brecha retributiva» (feb. 2023) y «Poder empresarial» (abr. 2024).",
+      "fuente": "SUU: «Reinas» (2018). Spotify: https://open.spotify.com/track/5IzRE854ffPscZMDG0hJel. Datos: Instituto de las Mujeres (Gobierno de España), «Mujeres en cifras», infografías «Brecha retributiva» (feb. 2023) y «Poder empresarial» (abr. 2024).",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "5IzRE854ffPscZMDG0hJel",
+        "inicio": 70,
+        "fin": 123
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. · Cifras salariales de 2020 (así lo dice la infografía).",
       "cancionConPalabrotas": null,
@@ -61,7 +62,9 @@
         "igualdad",
         "autonomia-libertad"
       ],
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/5IzRE854ffPscZMDG0hJel",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
     },
     {
       "id": "v-03",
@@ -77,12 +80,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "Bad Bunny: «Tití me preguntó» (2022)",
+      "fuente": "Bad Bunny: «Tití me preguntó» (2022). Spotify: https://open.spotify.com/track/1IHWl5LamUGEuP4ozKQSXZ",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
+        "id": "1IHWl5LamUGEuP4ozKQSXZ",
         "inicio": 0,
-        "fin": 0
+        "fin": 21
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
       "cancionConPalabrotas": null,
@@ -91,14 +94,15 @@
         "juzgar-mujer"
       ],
       "anioFuente": "álbum Un Verano Sin Ti; fecha sin contrastar",
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/1IHWl5LamUGEuP4ozKQSXZ"
     },
     {
       "id": "v-04",
       "fragmento": "Tengo una culpa que me aprieta\nSe posa en mis hombros, y me cuesta andar\n\nPero dibujé una puerta violeta en la pared\nY, al entrar, me liberé",
       "cancion": "La puerta violeta",
       "grupo": "Rozalen",
-      "anio": null,
+      "anio": 2017,
       "idioma": "es",
       "respuesta": "apoya",
       "lenguaje": "limpio",
@@ -107,12 +111,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "Rozalen: «La puerta violeta»",
+      "fuente": "Rozalen: «La puerta violeta» (2017). Spotify: https://open.spotify.com/track/42ZASSKlh3UtYCgwZb8lBS",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "42ZASSKlh3UtYCgwZb8lBS",
+        "inicio": 40,
+        "fin": 77
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. Explicación redactada solo con el fragmento: revisar con la letra completa.",
       "cancionConPalabrotas": null,
@@ -120,7 +124,9 @@
         "denuncia-violencia",
         "autonomia-libertad"
       ],
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/42ZASSKlh3UtYCgwZb8lBS",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
     },
     {
       "id": "v-05",
@@ -136,12 +142,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "Maluma: «Cuatro Babys» (2016)",
+      "fuente": "Maluma: «Cuatro Babys» (2016). Spotify: https://open.spotify.com/track/0JoHqmlqE0W0i9prt6kcHR",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "0JoHqmlqE0W0i9prt6kcHR",
+        "inicio": 30,
+        "fin": 40
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
       "tapar": [
@@ -153,14 +159,15 @@
         "control-posesion"
       ],
       "anioFuente": "Wikipedia",
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/0JoHqmlqE0W0i9prt6kcHR"
     },
     {
       "id": "v-06",
       "fragmento": "Señora, usted rebélese, déjele claro que no está de acuerdo\nQue las papas se las haga él, que su corazón vuelve a estar despierto",
       "cancion": "Señora",
       "grupo": "La flor del Otro",
-      "anio": null,
+      "anio": 2016,
       "idioma": "es",
       "respuesta": "apoya",
       "lenguaje": "limpio",
@@ -169,12 +176,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "La flor del Otro: «Señora»",
+      "fuente": "La flor del Otro: «Señora» (2016). Spotify: https://open.spotify.com/track/6WBMnVvZNL9ZIKAXG8oLTA",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "6WBMnVvZNL9ZIKAXG8oLTA",
+        "inicio": 110,
+        "fin": 127
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
       "cancionConPalabrotas": null,
@@ -182,7 +189,9 @@
         "igualdad",
         "critica-roles"
       ],
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/6WBMnVvZNL9ZIKAXG8oLTA",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
     },
     {
       "id": "v-07",
@@ -198,12 +207,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "Prince Royce: «Carita de Inocente» (2020)",
+      "fuente": "Prince Royce: «Carita de Inocente» (2020). Spotify: https://open.spotify.com/track/5kQre7o8ky5DXeEPcyaCR1",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "5kQre7o8ky5DXeEPcyaCR1",
+        "inicio": 26,
+        "fin": 42
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
       "cancionConPalabrotas": null,
@@ -212,14 +221,15 @@
         "roles-desigualdad"
       ],
       "anioFuente": "Wikipedia",
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/5kQre7o8ky5DXeEPcyaCR1"
     },
     {
       "id": "v-08",
       "fragmento": "Y quiero volver por la noche\nSin echar la mirada atrás\nY quiero volver por la noche\nSin miedo a ir sola por esta ciudad",
       "cancion": "No darás nunca la talla",
       "grupo": "La flor del Otro",
-      "anio": null,
+      "anio": 2017,
       "idioma": "es",
       "respuesta": "apoya",
       "lenguaje": "limpio",
@@ -228,12 +238,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "La flor del Otro: «No darás nunca la talla»",
+      "fuente": "La flor del Otro: «No darás nunca la talla» (2017). Spotify: https://open.spotify.com/track/01vIuUCX6vbC9xf6vAR9cg",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "01vIuUCX6vbC9xf6vAR9cg",
+        "inicio": 40,
+        "fin": 56
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
       "cancionConPalabrotas": null,
@@ -241,7 +251,9 @@
         "seguridad-calle",
         "autonomia-libertad"
       ],
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/01vIuUCX6vbC9xf6vAR9cg",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
     },
     {
       "id": "v-09",
@@ -257,12 +269,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "Ñengo Flow y Anuel AA: «Sur y norte» (2020)",
+      "fuente": "Ñengo Flow y Anuel AA: «Sur y norte» (2020). Spotify: https://open.spotify.com/track/5SMNzC4twfxy9c9JVlwfCZ",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "5SMNzC4twfxy9c9JVlwfCZ",
+        "inicio": 142,
+        "fin": 160
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
       "cancionConPalabrotas": null,
@@ -270,14 +282,15 @@
         "juzgar-mujer"
       ],
       "anioFuente": "Recotop (fuente secundaria)",
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/5SMNzC4twfxy9c9JVlwfCZ"
     },
     {
       "id": "v-10",
       "fragmento": "Nadie te pidió opinión sobre lo que me harías\nSi me dejaras, y como no me dejo\nSale tu macho alfa y te conviertes en un saco de complejos",
       "cancion": "No darás nunca la talla",
       "grupo": "La flor del Otro",
-      "anio": null,
+      "anio": 2017,
       "idioma": "es",
       "respuesta": "apoya",
       "lenguaje": "limpio",
@@ -286,12 +299,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "La flor del Otro: «No darás nunca la talla»",
+      "fuente": "La flor del Otro: «No darás nunca la talla» (2017). Spotify: https://open.spotify.com/track/01vIuUCX6vbC9xf6vAR9cg",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "01vIuUCX6vbC9xf6vAR9cg",
+        "inicio": 76,
+        "fin": 88
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
       "cancionConPalabrotas": null,
@@ -299,14 +312,16 @@
         "critica-roles",
         "autonomia-libertad"
       ],
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/01vIuUCX6vbC9xf6vAR9cg",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
     },
     {
       "id": "v-11",
       "fragmento": "Se van a todo, aunque tengan novio\nLas envidiosa' le tienen odio (yeh)",
       "cancion": "Fabuloso",
       "grupo": "Sech y Justin Quiles",
-      "anio": null,
+      "anio": 2020,
       "idioma": "es",
       "respuesta": "perpetua",
       "lenguaje": "limpio",
@@ -315,12 +330,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "Sech y Justin Quiles: «Fabuloso»",
+      "fuente": "Sech y Justin Quiles: «Fabuloso» (2020). Spotify: https://open.spotify.com/track/3cg2Y9mIiYNdcPTLKaQgK3",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "3cg2Y9mIiYNdcPTLKaQgK3",
+        "inicio": 7,
+        "fin": 22
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
       "cancionConPalabrotas": null,
@@ -328,14 +343,16 @@
         "rivalidad-mujeres",
         "cosificacion"
       ],
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/3cg2Y9mIiYNdcPTLKaQgK3",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
     },
     {
       "id": "v-12",
       "fragmento": "Pam, Pam, Pam, Pamela\nTe hicieron sentir pequeña\nY no supimos quién eras\nMás allá de tu belleza",
       "cancion": "Pamela",
       "grupo": "Rigoberta bandini",
-      "anio": null,
+      "anio": 2025,
       "idioma": "es",
       "respuesta": "apoya",
       "lenguaje": "limpio",
@@ -344,12 +361,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "Rigoberta bandini: «Pamela»",
+      "fuente": "Rigoberta bandini: «Pamela» (2025). Spotify: https://open.spotify.com/track/14RuX6i71XGGWtN9jvuarp",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "14RuX6i71XGGWtN9jvuarp",
+        "inicio": 46,
+        "fin": 66
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. Solo se ha encontrado «Pamela Anderson» (Rigoberta Bandini, 2025): Mireia debe confirmar que es esta canción. Revisar con la letra completa (¿Pamela Anderson?).",
       "cancionConPalabrotas": null,
@@ -357,7 +374,9 @@
         "contra-cosificacion",
         "belleza-autoestima"
       ],
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/14RuX6i71XGGWtN9jvuarp",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
     },
     {
       "id": "v-13",
@@ -373,12 +392,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "Anuel AA: «El Manual» (2020)",
+      "fuente": "Anuel AA: «El Manual» (2020). Spotify: https://open.spotify.com/track/7kOf0qHO4Rcwk6QJifZDRJ",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "7kOf0qHO4Rcwk6QJifZDRJ",
+        "inicio": 150,
+        "fin": 165
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
       "cancionConPalabrotas": null,
@@ -386,7 +405,8 @@
         "presion-consentimiento"
       ],
       "anioFuente": "Wikipedia",
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/7kOf0qHO4Rcwk6QJifZDRJ"
     },
     {
       "id": "v-14",
@@ -402,12 +422,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "SFDK: «Ovarios y pelotas» (2018)",
+      "fuente": "SFDK: «Ovarios y pelotas» (2018). Spotify: https://open.spotify.com/track/07jXmYODipOueFYOfeBf7a",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "07jXmYODipOueFYOfeBf7a",
+        "inicio": 61,
+        "fin": 75
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
       "cancionConPalabrotas": null,
@@ -415,7 +435,8 @@
         "critica-roles"
       ],
       "anioFuente": "año del álbum Redención",
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/07jXmYODipOueFYOfeBf7a"
     },
     {
       "id": "v-15",
@@ -431,12 +452,12 @@
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "fuente": "Anuel AA: «La Jeepeta Remix» (2020)",
+      "fuente": "Anuel AA: «La Jeepeta Remix» (2020). Spotify: https://open.spotify.com/track/1mohfLaTJtB2RplHLQVM70",
       "audio": {
         "plataforma": "spotify",
-        "id": "",
-        "inicio": 0,
-        "fin": 0
+        "id": "1mohfLaTJtB2RplHLQVM70",
+        "inicio": 209,
+        "fin": 219
       },
       "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. La Jeepeta Remix es de Nio García con Anuel AA, Myke Towers, Brray y Juanka; la hoja solo decía Anuel AA: Mireia debe decidir cómo acreditarla.",
       "tapar": [
@@ -448,7 +469,8 @@
         "presion-consentimiento"
       ],
       "anioFuente": "Wikipedia (versión Remix)",
-      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/1mohfLaTJtB2RplHLQVM70"
     },
     {
       "id": "v-16",

@@ -1,0 +1,689 @@
+{
+  "aviso": "Datos extraídos de las infografías «Mujeres en cifras» del Instituto de las Mujeres (Gobierno de España). Cifras comprobadas en imagen por Claude; años de los datos (anioDatos) a confirmar cuando son null. Traducciones ca/en pendientes. En el juego NO se muestra una frase por dato: la fuente va en el pie y en la página de Fuentes («Actividad porcentajes: extraído de Instituto de las Mujeres, Mujeres en cifras»).",
+  "fuenteGeneral": "Instituto de las Mujeres (Gobierno de España), «Mujeres en cifras»",
+  "mecanicas": [
+    "contador",
+    "aguja",
+    "pintar",
+    "caraacara"
+  ],
+  "dado": "Antes de cada ronda sale un dado trucado: una bolsa que reparte las mecánicas para que todas se jueguen antes de repetir.",
+  "temas": {
+    "trabajo": {
+      "emoji": "💼",
+      "es": "Trabajo y dinero",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "deporte": {
+      "emoji": "⚽",
+      "es": "Deporte",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "musica": {
+      "emoji": "🎵",
+      "es": "Música",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "ciencia": {
+      "emoji": "🔬",
+      "es": "Ciencia",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "educacion": {
+      "emoji": "🎓",
+      "es": "Educación",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "cine": {
+      "emoji": "🎬",
+      "es": "Cine",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "clima": {
+      "emoji": "🌍",
+      "es": "Clima",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "salud": {
+      "emoji": "🩺",
+      "es": "Salud",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    }
+  },
+  "infografias": {
+    "brecha": {
+      "titulo": "Brecha retributiva",
+      "fecha": "feb. 2023",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2023/Brecha_Retributiva_2023.pdf"
+    },
+    "poder": {
+      "titulo": "Poder empresarial",
+      "fecha": "abr. 2024",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2024/202404_PoderEmpresarial.pdf"
+    },
+    "empleo": {
+      "titulo": "Empleo",
+      "fecha": "jul. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/202507_Empleo.pdf"
+    },
+    "deporte": {
+      "titulo": "Deporte",
+      "fecha": "ene. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2024/202501_Deporte.pdf"
+    },
+    "musica": {
+      "titulo": "Música y festivales",
+      "fecha": "mar. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/202503_Musica.pdf"
+    },
+    "stem": {
+      "titulo": "STEM",
+      "fecha": "feb. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/202502_MujeresSTEM.pdf"
+    },
+    "educacion": {
+      "titulo": "Educación",
+      "fecha": "abr. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/202504_Educacion.pdf"
+    },
+    "creadoras": {
+      "titulo": "Creadoras",
+      "fecha": "may. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/202505_Creadoras.pdf"
+    },
+    "clima": {
+      "titulo": "Cambio climático",
+      "fecha": "jun. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/202506_CambioClimatico.pdf"
+    },
+    "beijing": {
+      "titulo": "Beijing +30",
+      "fecha": "sep. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/09_septiembre.pdf"
+    }
+  },
+  "datos": [
+    {
+      "id": "p-01",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "brecha",
+      "pregunta": {
+        "es": "¿Cuánto menos ganan al año, de media, las mujeres que los hombres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 18.7,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de brecha salarial (ganancia media anual)",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "contador",
+        "aguja",
+        "pintar"
+      ],
+      "anioDatos": 2020,
+      "nota": "22.467 € ellas y 27.643 € ellos; equivale a unos 2 meses de trabajo gratis al año. Fuente de la cifra: INE (Encuesta de Estructura Salarial)."
+    },
+    {
+      "id": "p-02",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "brecha",
+      "pregunta": {
+        "es": "¿Cuánto menos cobran de pensión de jubilación las mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 33.1,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de brecha en las pensiones de jubilación",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "aguja",
+        "contador",
+        "pintar"
+      ],
+      "anioDatos": 2021,
+      "nota": "La infografía cita MITES (Pensiones Contributivas 2021)."
+    },
+    {
+      "id": "p-03",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "poder",
+      "pregunta": {
+        "es": "De las 35 empresas del IBEX 35, ¿cuántas tienen una presidenta?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 11.4,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "4 de 35 presidencias",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "pintar"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 4,
+        "de": 35
+      }
+    },
+    {
+      "id": "p-04",
+      "tipo": "dato",
+      "tema": "deporte",
+      "infografia": "deporte",
+      "pregunta": {
+        "es": "De las 100 personas deportistas mejor pagadas del mundo, ¿cuántas son mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 0,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "0 de 100",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "pintar"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 0,
+        "de": 100
+      }
+    },
+    {
+      "id": "p-05",
+      "tipo": "dato",
+      "tema": "musica",
+      "infografia": "musica",
+      "pregunta": {
+        "es": "De los 10 artistas más escuchados en Spotify en todo el mundo, ¿cuántos son mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 30,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "3 de 10 (en España, 1 de 10)",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 3,
+        "de": 10
+      },
+      "preguntaPct": {
+        "es": "¿Qué porcentaje de los 10 artistas más escuchados en Spotify en todo el mundo son mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "p-06",
+      "tipo": "dato",
+      "tema": "ciencia",
+      "infografia": "stem",
+      "pregunta": {
+        "es": "En 123 años de premios Nobel de Física, Química y Medicina, ¿qué porcentaje de premiadas son mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 4.0,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "25 mujeres frente a 624 hombres",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 25,
+        "de": 649
+      },
+      "nota": "25/649 = 3,85 %. En el juego se enseña como «25 de 649 premios» o ≈4 %; decidir cómo mostrarlo. Los 624 son hombres, los 25 mujeres."
+    },
+    {
+      "id": "p-07",
+      "tipo": "dato",
+      "tema": "cine",
+      "infografia": "creadoras",
+      "pregunta": {
+        "es": "De cada 10 puestos directivos en el cine, ¿cuántos ocupan mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 30,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "3 de cada 10",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador"
+      ],
+      "anioDatos": 2023,
+      "fraccion": {
+        "n": 3,
+        "de": 10
+      },
+      "preguntaPct": {
+        "es": "¿Qué porcentaje de los puestos directivos del cine ocupan mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "p-08",
+      "tipo": "dato",
+      "tema": "clima",
+      "infografia": "clima",
+      "pregunta": {
+        "es": "De cada 100 personas que van a buscar agua para el hogar donde no hay agua corriente, ¿cuántas son mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 70,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de quienes van a buscar el agua",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "contador",
+        "aguja",
+        "pintar"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 70,
+        "de": 100
+      }
+    },
+    {
+      "id": "p-09",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "empleo",
+      "pregunta": {
+        "es": "De cada 100 personas que piden excedencia para cuidar a menores, ¿cuántas son mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 87,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de las excedencias por cuidado de menores",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "aguja",
+        "contador",
+        "pintar"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 87,
+        "de": 100
+      }
+    },
+    {
+      "id": "p-10",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "beijing",
+      "pregunta": {
+        "es": "¿Cuál era la brecha salarial en 2023? En 1995 era del 31 %.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 16,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de brecha salarial en 2023 (31 % en 1995)",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "contador",
+        "aguja"
+      ],
+      "anioDatos": 2023,
+      "nota": "Datos de España; mejora real: la brecha se ha reducido a la mitad."
+    }
+  ],
+  "parejas": [
+    {
+      "id": "c-01",
+      "tipo": "caraacara",
+      "tema": "salud",
+      "infografia": "beijing",
+      "anioDatos": null,
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "¿Quién vive más años, ellas o ellos?",
+            "ca": "[TRADUCCIÓN PENDIENTE]",
+            "en": "[TRADUCCIÓN PENDIENTE]"
+          },
+          "opciones": [
+            {
+              "id": "ellas",
+              "etiqueta": {
+                "es": "Ellas",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 86.3,
+              "unidad": "años"
+            },
+            {
+              "id": "ellos",
+              "etiqueta": {
+                "es": "Ellos",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 81.1,
+              "unidad": "años"
+            }
+          ],
+          "correcta": "ellas"
+        },
+        {
+          "pregunta": {
+            "es": "¿Y quién vive más años con buena salud?",
+            "ca": "[TRADUCCIÓN PENDIENTE]",
+            "en": "[TRADUCCIÓN PENDIENTE]"
+          },
+          "opciones": [
+            {
+              "id": "ellas",
+              "etiqueta": {
+                "es": "Ellas",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 60.6,
+              "unidad": "años"
+            },
+            {
+              "id": "ellos",
+              "etiqueta": {
+                "es": "Ellos",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 61.7,
+              "unidad": "años"
+            }
+          ],
+          "correcta": "ellos"
+        }
+      ],
+      "nota": "Esperanza de vida y años de vida con buena salud, a partir de la infografía Beijing +30."
+    },
+    {
+      "id": "c-02",
+      "tipo": "caraacara",
+      "tema": "educacion",
+      "infografia": "educacion",
+      "anioDatos": null,
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "¿Dónde hay más mujeres: entre quienes terminan la universidad o entre los rectorados?",
+            "ca": "[TRADUCCIÓN PENDIENTE]",
+            "en": "[TRADUCCIÓN PENDIENTE]"
+          },
+          "opciones": [
+            {
+              "id": "univ",
+              "etiqueta": {
+                "es": "Terminan la universidad (curso 2022-23)",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 60.9,
+              "unidad": "%"
+            },
+            {
+              "id": "rect",
+              "etiqueta": {
+                "es": "Rectorados (2024)",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 23,
+              "unidad": "%"
+            }
+          ],
+          "correcta": "univ"
+        }
+      ]
+    },
+    {
+      "id": "c-03",
+      "tipo": "caraacara",
+      "tema": "deporte",
+      "infografia": "deporte",
+      "anioDatos": null,
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "Las deportistas, ¿tienen más o menos seguimiento en redes sociales que los deportistas?",
+            "ca": "[TRADUCCIÓN PENDIENTE]",
+            "en": "[TRADUCCIÓN PENDIENTE]"
+          },
+          "opciones": [
+            {
+              "id": "mas",
+              "etiqueta": {
+                "es": "Más (un 14 % más)",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 14,
+              "unidad": "%"
+            },
+            {
+              "id": "menos",
+              "etiqueta": {
+                "es": "Menos",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": null,
+              "unidad": "%"
+            }
+          ],
+          "correcta": "mas"
+        },
+        {
+          "pregunta": {
+            "es": "¿Y cuánto del deporte que sale en los medios es femenino?",
+            "ca": "[TRADUCCIÓN PENDIENTE]",
+            "en": "[TRADUCCIÓN PENDIENTE]"
+          },
+          "opciones": [
+            {
+              "id": "mas",
+              "etiqueta": {
+                "es": "Más de la mitad",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": null,
+              "unidad": "%"
+            },
+            {
+              "id": "menos",
+              "etiqueta": {
+                "es": "Menos del 16 %",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 16,
+              "unidad": "%"
+            }
+          ],
+          "correcta": "menos"
+        }
+      ],
+      "nota": "El 16 % de la infografía es «menos del 16 % del total» de cobertura mediática."
+    },
+    {
+      "id": "c-04",
+      "tipo": "caraacara",
+      "tema": "trabajo",
+      "infografia": "empleo",
+      "anioDatos": null,
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "En servicios de salud y cuidados (un sector con mayoría de mujeres), ¿quién cobra más al año?",
+            "ca": "[TRADUCCIÓN PENDIENTE]",
+            "en": "[TRADUCCIÓN PENDIENTE]"
+          },
+          "opciones": [
+            {
+              "id": "ellas",
+              "etiqueta": {
+                "es": "Ellas",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 29198.31,
+              "unidad": "€"
+            },
+            {
+              "id": "ellos",
+              "etiqueta": {
+                "es": "Ellos",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 38317.12,
+              "unidad": "€"
+            }
+          ],
+          "correcta": "ellos",
+          "nota": "Ellas cobran un 24 % menos."
+        }
+      ]
+    },
+    {
+      "id": "c-05",
+      "tipo": "caraacara",
+      "tema": "clima",
+      "infografia": "clima",
+      "anioDatos": null,
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "¿Quién se preocupa más por el cambio climático?",
+            "ca": "[TRADUCCIÓN PENDIENTE]",
+            "en": "[TRADUCCIÓN PENDIENTE]"
+          },
+          "opciones": [
+            {
+              "id": "ellas",
+              "etiqueta": {
+                "es": "Ellas",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 79,
+              "unidad": "%"
+            },
+            {
+              "id": "ellos",
+              "etiqueta": {
+                "es": "Ellos",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 62,
+              "unidad": "%"
+            }
+          ],
+          "correcta": "ellas"
+        }
+      ]
+    },
+    {
+      "id": "c-06",
+      "tipo": "caraacara",
+      "tema": "clima",
+      "infografia": "clima",
+      "anioDatos": null,
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "En Europa, con la subida de las temperaturas, ¿en quién aumentan más las muertes?",
+            "ca": "[TRADUCCIÓN PENDIENTE]",
+            "en": "[TRADUCCIÓN PENDIENTE]"
+          },
+          "opciones": [
+            {
+              "id": "ellas",
+              "etiqueta": {
+                "es": "Ellas",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 21.5,
+              "unidad": "pp al año"
+            },
+            {
+              "id": "ellos",
+              "etiqueta": {
+                "es": "Ellos",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 13.8,
+              "unidad": "pp al año"
+            }
+          ],
+          "correcta": "ellas"
+        }
+      ],
+      "nota": "Revisar: la infografía da 21,5 y 13,8 «pp/año» (puntos porcentuales por año) sin explicar más; confirmar qué mide exactamente con su fuente antes de publicar."
+    }
+  ]
+}
