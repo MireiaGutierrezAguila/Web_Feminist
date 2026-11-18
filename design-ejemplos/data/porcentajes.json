@@ -11,48 +11,56 @@
   "temas": {
     "trabajo": {
       "emoji": "💼",
+      "imagen": "img/opt/tema-trabajo.webp",
       "es": "Trabajo y dinero",
       "ca": "[TRADUCCIÓN PENDIENTE]",
       "en": "[TRADUCCIÓN PENDIENTE]"
     },
     "deporte": {
       "emoji": "⚽",
+      "imagen": "img/opt/tema-deporte.webp",
       "es": "Deporte",
       "ca": "[TRADUCCIÓN PENDIENTE]",
       "en": "[TRADUCCIÓN PENDIENTE]"
     },
     "musica": {
       "emoji": "🎵",
+      "imagen": "img/opt/tema-musica.webp",
       "es": "Música",
       "ca": "[TRADUCCIÓN PENDIENTE]",
       "en": "[TRADUCCIÓN PENDIENTE]"
     },
     "ciencia": {
       "emoji": "🔬",
+      "imagen": "img/opt/tema-ciencia.webp",
       "es": "Ciencia",
       "ca": "[TRADUCCIÓN PENDIENTE]",
       "en": "[TRADUCCIÓN PENDIENTE]"
     },
     "educacion": {
       "emoji": "🎓",
+      "imagen": "img/opt/tema-educacion.webp",
       "es": "Educación",
       "ca": "[TRADUCCIÓN PENDIENTE]",
       "en": "[TRADUCCIÓN PENDIENTE]"
     },
     "cine": {
       "emoji": "🎬",
+      "imagen": "img/opt/tema-cine.webp",
       "es": "Cine",
       "ca": "[TRADUCCIÓN PENDIENTE]",
       "en": "[TRADUCCIÓN PENDIENTE]"
     },
     "clima": {
       "emoji": "🌍",
+      "imagen": "img/opt/tema-clima.webp",
       "es": "Clima",
       "ca": "[TRADUCCIÓN PENDIENTE]",
       "en": "[TRADUCCIÓN PENDIENTE]"
     },
     "salud": {
       "emoji": "🩺",
+      "imagen": "img/opt/tema-salud.webp",
       "es": "Salud",
       "ca": "[TRADUCCIÓN PENDIENTE]",
       "en": "[TRADUCCIÓN PENDIENTE]"
@@ -667,7 +675,7 @@
                 "en": "[TRADUCCIÓN PENDIENTE]"
               },
               "valor": 21.5,
-              "unidad": "pp al año"
+              "unidad": "puntos porcentuales al año"
             },
             {
               "id": "ellos",
@@ -677,7 +685,7 @@
                 "en": "[TRADUCCIÓN PENDIENTE]"
               },
               "valor": 13.8,
-              "unidad": "pp al año"
+              "unidad": "puntos porcentuales al año"
             }
           ],
           "correcta": "ellas"
