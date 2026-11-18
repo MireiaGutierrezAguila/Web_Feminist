@@ -1,0 +1,1774 @@
+{
+ "version": 1,
+ "aviso": "PROPUESTA (no es calendario.json). Solo entradas NUEVAS o MOVIDAS. Textos es redactados con palabras propias; ca y en pendientes. El calendario solo enseña estado «verificada». Generado el 2026-11-18. Ver calendario-propuesta-informe.md",
+ "dias": {
+  "01-01": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1932,
+    "pais": "EE. UU. (trabajó en Ruanda)",
+    "mujer": null,
+    "tema": "ciencia y tecnología",
+    "region": "América del Norte",
+    "texto": {
+     "es": "El 16 de enero de 1932: Nace Dian Fossey, zoóloga estadounidense. Estudió a los gorilas de montaña en Ruanda y fundó allí el centro de investigación Karisoke.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Encyclopedia.com (Women in World History): Fossey, Dian",
+      "url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/fossey-dian-1932-1985"
+     },
+     {
+      "nombre": "New World Encyclopedia: Dian Fossey",
+      "url": "https://www.newworldencyclopedia.org/entry/Dian_Fossey"
+     }
+    ],
+    "estado": "verificada",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 2 (ene 5, Calendario NG): el CSV da el 5 de enero, pero sus nacimiento es el 16 de enero de 1932 (las dos fuentes abiertas coinciden). Una fuente la sitúa en San Francisco y otra en Atherton/Fairfax: el texto no cita el lugar de nacimiento. El 16 de enero ya tiene la entrada de Liberia. | MOVIDA del 01-16 al 01-01 (choque en el 01-16). El texto lleva la fecha real porque el día mostrado no es el del hecho."
+   }
+  ],
+  "02-15": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1820,
+    "pais": "EE. UU.",
+    "mujer": null,
+    "tema": "voto y derechos políticos",
+    "region": "América del Norte",
+    "texto": {
+     "es": "Nace Susan B. Anthony, activista estadounidense. Fue una de las líderes del movimiento por el voto de las mujeres.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "National Women's History Museum: Susan B. Anthony",
+      "url": "https://www.womenshistory.org/education-resources/biographies/susan-b-anthony"
+     },
+     {
+      "nombre": "National Park Service: Susan B. Anthony",
+      "url": "https://www.nps.gov/people/susan-b-anthony.htm"
+     }
+    ],
+    "estado": "verificada",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "buena",
+    "nota": "CSV fila 8 (feb 15, NG). Fecha confirmada en las dos páginas abiertas. Entra en la cuota de voto y EE. UU. (ya muy cubiertas): Mireia puede descartarla."
+   }
+  ],
+  "03-10": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 2021,
+    "pais": "ONU (internacional)",
+    "mujer": null,
+    "tema": "justicia y derechos",
+    "region": "Mundial",
+    "texto": {
+     "es": "La ONU proclama el 10 de marzo como Día Internacional de las Juezas, para reconocer el papel de las mujeres en la justicia.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Día Internacional de… (ficha Día de las Juezas)",
+      "url": "https://www.diainternacionalde.com/ficha/dia-internacional-juezas"
+     },
+     {
+      "nombre": "ONU: Día Internacional de las Juezas",
+      "url": "https://www.un.org/en/observances/women-judges-day"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "Fecha FIJA (CSV lista de días ONU, fila 123). Abierta: diainternacionalde (dice que la Asamblea General lo proclamó en abril de 2021). La página de la ONU dio 403 (no abierta). Falta confirmar el número de resolución."
+   }
+  ],
+  "03-14": [
+   {
+    "principal": true,
+    "tipo": "muerte",
+    "anio": 1897,
+    "pais": "India",
+    "mujer": null,
+    "tema": "educación",
+    "region": "Asia",
+    "texto": {
+     "es": "El 10 de marzo de 1897: Muere Savitribai Phule, maestra india que en 1848 abrió en Pune lo que pudo ser la primera escuela para niñas del país.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "The News Minute: Savitribai Phule",
+      "url": "https://www.thenewsminute.com/news/remembering-savitribai-phule-one-india-s-earliest-women-educators-her-119th-death"
+     },
+     {
+      "nombre": "Forward Press: Savitribai Phule",
+      "url": "https://www.forwardpress.in/2021/01/savitribai-not-laxmibai-is-the-great-heroine-of-modern-india/"
+     },
+     {
+      "nombre": "Universidad de Pune (cátedra Mahatma Phule): vida y obra",
+      "url": "https://www.unipune.ac.in/chairs/mahatma_phule_chair/mphule_webfiles/Life_%20&%20_Work.htm"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-13",
+    "nota": "Relleno 2026-11-11. Mantener la cautela («pudo ser»). Dos medios, ninguna fuente institucional. Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional. 2026-11-13: la Universidad de Pune confirma la escuela de niñas de 1848 (atribuida a Jotirao; Savitribai fue la maestra) pero no menciona la muerte, así que el 10 mar 1897 sigue sin fuente institucional. Un texto del NCERT discute si el trabajo se retomó en 1851 (no abierto): mantener «lo que pudo ser». | MOVIDA desde 03-10 (entrada YA EXISTENTE en calendario.json) a 03-14 por choque con un Día Internacional fijo. Si se acepta: borrar la original del 03-10."
+   }
+  ],
+  "03-31": [
+   {
+    "principal": false,
+    "tipo": "hito",
+    "anio": 2009,
+    "pais": "EE. UU.",
+    "mujer": null,
+    "tema": "movimientos sociales y derechos",
+    "region": "América del Norte",
+    "texto": {
+     "es": "Se celebra por primera vez el Día Internacional de la Visibilidad Transgénero, propuesto por la activista Rachel Crandall.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "PBS NewsHour: la historia del Día de la Visibilidad Transgénero",
+      "url": "https://www.pbs.org/newshour/nation/the-history-behind-international-transgender-day-of-visibility"
+     },
+     {
+      "nombre": "Ms. Magazine: historia del Día de la Visibilidad Transgénero",
+      "url": "https://msmagazine.com/2021/03/31/history-international-transgender-day-of-visibility/"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "Fecha FIJA (CSV fila 148). Fuentes solo vistas en el buscador (NO ABIERTAS); la ficha de diainternacionalde dio 404. El 31 de marzo ya tiene dos entradas verificadas (Ramjee y Anandi Joshi): NO se mueven mientras esta entrada no esté verificada. Tema sensible para público infantil: decide Mireia. [Choque sin resolver: la entrada existente se mantiene como principal.]"
+   }
+  ],
+  "04-02": [
+   {
+    "principal": true,
+    "tipo": "muerte",
+    "anio": 1930,
+    "pais": "Etiopía",
+    "mujer": null,
+    "tema": "poder político",
+    "region": "África",
+    "texto": {
+     "es": "Muere Zewditu, emperatriz de Etiopía, que gobernó el país desde 1916.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "BlackPast: Empress Zewditu (1876-1930)",
+      "url": "https://blackpast.org/global-african-history/empress-zewditu-1876-1930/"
+     },
+     {
+      "nombre": "Wikipedia (es): Zauditu",
+      "url": "https://es.wikipedia.org/wiki/Zauditu"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV filas 14-15. El 2 de abril de 1930 solo sale en Wikipedia (abierta, sin referencias). BlackPast dio 403. El enlace de National Geographic del CSV trata de Haile Selassie, no de ella. No se afirma «primera». Falta una segunda fuente abierta."
+   }
+  ],
+  "04-05": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1918,
+    "pais": "Polonia",
+    "mujer": null,
+    "tema": "ciencia y tecnología",
+    "region": "Europa",
+    "texto": {
+     "es": "Nace Wanda Szmielew, matemática polaca especialista en lógica y en los fundamentos de la geometría.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "MacTutor (Univ. de St Andrews): Wanda Szmielew",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Szmielew/"
+     },
+     {
+      "nombre": "Universidad de Varsovia (Otwarta): Wanda Szmielew",
+      "url": "https://otowim.mimuw.edu.pl/wanda_szmielew.html"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 16. MacTutor abierta: 5 de abril de 1918, Varsovia. La página de la Univ. de Varsovia dio 403 (no abierta). El CSV citaba también un sitio infantil de Wikipedia (kiddle): descartado como fuente."
+   }
+  ],
+  "04-12": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1933,
+    "pais": "España",
+    "mujer": null,
+    "tema": "arte y literatura",
+    "region": "Europa",
+    "texto": {
+     "es": "Nace Montserrat Caballé, soprano catalana. En 1965 saltó a la fama internacional en el Carnegie Hall, y grabó «Barcelona» con Freddie Mercury.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Wikipedia (es): Montserrat Caballé",
+      "url": "https://es.wikipedia.org/wiki/Montserrat_Caball%C3%A9"
+     },
+     {
+      "nombre": "Fundació Montserrat Caballé: biografía",
+      "url": "https://www.fundaciomontserratcaballe.org/biograf%C3%ADa"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 17. El 12 de abril de 1933 solo se confirma en Wikipedia (abierta). La Fundación (abierta) confirma el resto de datos pero no da la fecha. El blog de AMC del CSV no se usa. Falta fuente institucional con la fecha (p. ej. RAH, no cargó)."
+   }
+  ],
+  "04-14": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1868,
+    "pais": "Reino Unido (nacida en Irlanda)",
+    "mujer": null,
+    "tema": "ciencia y tecnología",
+    "region": "Europa",
+    "texto": {
+     "es": "Nace Annie Maunder, astrónoma. Fotografió la corona del Sol y descubrió con su marido el «diagrama de mariposa» de las manchas solares.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "MacTutor (Univ. de St Andrews): Annie Maunder",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Maunder/"
+     },
+     {
+      "nombre": "Mujeres con ciencia: Annie Russell Maunder",
+      "url": "https://mujeresconciencia.com/2017/04/14/annie-russell-maunder-astronoma/"
+     }
+    ],
+    "estado": "verificada",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV filas 18-19. El enlace de NG del CSV trata de fotografía astronómica, sin relación; se usan las dos fuentes de la fila 19. Las dos páginas abiertas dan el 14 de abril de 1868."
+   }
+  ],
+  "04-15": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1895,
+    "pais": "República Dominicana",
+    "mujer": null,
+    "tema": "movimientos sociales y derechos",
+    "region": "América Latina",
+    "texto": {
+     "es": "Nace Abigaíl Mejía, escritora y activista dominicana. Fundó el Club Nosotras (1927) y Acción Feminista Dominicana (1931).",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Wikipedia (es): Abigail Mejía",
+      "url": "https://es.wikipedia.org/wiki/Abigail_Mej%C3%ADa"
+     },
+     {
+      "nombre": "Ministerio de la Mujer (RD): Abigaíl Mejía, ilustre dominicana",
+      "url": "https://mujer.gob.do/index.php/noticias/item/1195-reportaje-abigail-mejia-una-dominicana-ilustre-septima-en-reposar-en-el-panteon-de-la-patria"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 20. Wikipedia abierta (15 abril 1895; Club Nosotras 1927; AFD 1931). El Ministerio dio 403 (no abierto). Murió el 14 de marzo de 1941 (algunas fuentes, 15)."
+   }
+  ],
+  "04-20": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1981,
+    "pais": "Nueva Zelanda",
+    "mujer": null,
+    "tema": "deporte",
+    "region": "Oceanía",
+    "texto": {
+     "es": "Allison Roe gana el maratón de Boston con un tiempo de 2 h 26 min 46 s, y rebaja en casi ocho minutos el récord de la prueba.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Athletics New Zealand: leyendas, Allison Roe",
+      "url": "https://athletics.org.nz/legends/allison-roe/"
+     },
+     {
+      "nombre": "NZHistory (gobierno de N. Zelanda): Allison Roe gana el maratón de Boston",
+      "url": "https://nzhistory.govt.nz/node/50932"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 21. Athletics NZ abierta: tiempo y récord, pero SIN fecha. El 20 de abril de 1981 sale en el buscador (tabla oficial de récords de Boston) pero no se abrió. NZHistory dio 403."
+   }
+  ],
+  "04-23": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 2011,
+    "pais": "ONU / UIT (internacional)",
+    "mujer": null,
+    "tema": "ciencia y tecnología",
+    "region": "Mundial",
+    "texto": {
+     "es": "Se celebra por primera vez el Día Internacional de las Niñas en las TIC, impulsado por la UIT para animar a las niñas a estudiar tecnología.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "UIT: establecimiento del Día de las Niñas en las TIC (2011)",
+      "url": "https://itu.int/en/ITU-D/Digital-Inclusion/Women-and-Girls/Girls-in-ICT-Portal/Pages/GirlsInICTDay/2011/default.aspx"
+     },
+     {
+      "nombre": "UIT: Acerca del Día Internacional de las Niñas en las TIC",
+      "url": "https://www.itu.int/women-and-girls/girls-in-ict/?p=2708"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "buena",
+    "nota": "CSV fila 22: Mireia pide sustituir a Pandita Ramabai por este día. OJO: es una fecha MÓVIL (cuarto jueves de abril; la 1.ª edición fue el 28/04/2011 y en 2026 cae el 23). Se propone fijarla en el 23-04 como etiqueta, a decidir. Fuentes vistas en el buscador (NO ABIERTAS). Ramabai queda fuera (nació el 23 de abril de 1858, de memoria, sin verificar)."
+   }
+  ],
+  "04-26": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 2008,
+    "pais": "España",
+    "mujer": null,
+    "tema": "movimientos sociales y derechos",
+    "region": "Europa",
+    "texto": {
+     "es": "Se adopta en España el 26 de abril como Día de la Visibilidad Lésbica, por iniciativa del propio colectivo (FELGTB).",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Ministerio de Igualdad: 26A, Día de la Visibilidad Lésbica",
+      "url": "https://www.igualdad.gob.es/comunicacion/sala-de-prensa/26a-dia-de-la-visibilidad-lesbica/"
+     },
+     {
+      "nombre": "Día Internacional de… : Día de la Visibilidad Lésbica",
+      "url": "https://www.diainternacionalde.com/ficha/dia-visibilidad-lesbica"
+     }
+    ],
+    "estado": "verificada",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "Fecha FIJA (CSV filas 23 y 149; la fila 23 está como «sin candidata» pero trae enlaces). Las dos páginas abiertas dan 2008 en España. La de ONU Mujeres del CSV no se abrió. No es un día de la ONU: se presenta como fecha española."
+   }
+  ],
+  "04-27": [
+   {
+    "principal": true,
+    "tipo": "premio",
+    "anio": 2011,
+    "pais": "España",
+    "mujer": null,
+    "tema": "arte y literatura",
+    "region": "Europa",
+    "texto": {
+     "es": "Ana María Matute recibe en Alcalá de Henares el Premio Cervantes, el más importante de las letras en español.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Ministerio de Cultura: Premio Cervantes, Ana María Matute",
+      "url": "https://www.cultura.gob.es/premiado/mostrarDetalleAction.do?prev_layout=premioMiguelCervantesLibro&layout=premioMiguelCervantesLibro&language=es&id=155&cache=init"
+     },
+     {
+      "nombre": "Wikipedia (en): Ana María Matute",
+      "url": "https://en.wikipedia.org/wiki/Ana_Mar%C3%ADa_Matute"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV filas 24-25. El premio se concedió en 2010 (Ministerio, abierta). La ENTREGA el 27-04-2011 solo sale en un resultado del buscador: no confirmada. Alternativa del CSV (Sudáfrica 1994, primeras elecciones multirraciales el 27-04-1994): no investigada, sin mujeres."
+   }
+  ],
+  "05-02": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1748,
+    "pais": "Francia",
+    "mujer": null,
+    "tema": "movimientos sociales y derechos",
+    "region": "Europa",
+    "texto": {
+     "es": "El 7 de mayo de 1748: Nace Olympe de Gouges, escritora francesa. En 1791 publicó la «Declaración de los derechos de la mujer y de la ciudadana».",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Britannica: Olympe de Gouges",
+      "url": "https://www.britannica.com/biography/Olympe-de-Gouges"
+     },
+     {
+      "nombre": "Encyclopedia.com (Women in World History): Gouges, Olympe de",
+      "url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/gouges-olympe-de-1748-1793"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 8 (feb 26, NG): ERROR del CSV. Olympe nació el 7 de MAYO de 1748 en Montauban (resultados de Britannica y un documento escolar francés, NO abiertos). Su muerte (3-11) y la Declaración (sept. 1791) ya están en el calendario. Coincide con Eva Perón: una se mueve. | MOVIDA del 05-07 al 05-02 (choque en el 05-07). El texto lleva la fecha real porque el día mostrado no es el del hecho."
+   }
+  ],
+  "05-04": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1979,
+    "pais": "Reino Unido",
+    "mujer": null,
+    "tema": "poder político",
+    "region": "Europa",
+    "texto": {
+     "es": "Margaret Thatcher se convierte en la primera mujer al frente del gobierno británico, aunque ella no se identificaba con el feminismo.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "HISTORY: Thatcher jura como primera ministra (1979)",
+      "url": "https://www.history.com/this-day-in-history/margaret-thatcher-sworn-in"
+     },
+     {
+      "nombre": "Uniandes: La Dama de Hierro, ¿símbolo para las mujeres o traición al feminismo?",
+      "url": "https://cienciassociales.uniandes.edu.co/ciencia-politica-estudios-globales/sin-corbata/la-dama-de-hierro-simbolo-para-las-mujeres-o-traicion-al-feminismo/"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 29 (Mireia: «especificar que no era feminista»). HISTORY abierta: 4 mayo 1979 y «first female PM». La parte «no se identificaba con el feminismo» se apoya en la fuente de Uniandes del CSV, NO abierta; la frase «No le debo nada a la liberación femenina» no se incluye (sin fuente primaria con fecha). Política partidista: Mireia decide."
+   }
+  ],
+  "05-06": [
+   {
+    "principal": true,
+    "tipo": "curiosidad",
+    "anio": 2016,
+    "pais": "Internacional",
+    "mujer": null,
+    "tema": "salud y derechos reproductivos",
+    "region": "Mundial",
+    "texto": {
+     "es": "Se celebra por primera vez el Día Mundial de la Salud Mental Materna, para hablar de cómo se sienten las madres durante el embarazo y el primer año del bebé.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Postpartum Support International: concienciación sobre salud mental materna",
+      "url": "https://www.postpartum.net/psi-focuses-on-raising-awareness-of-maternal-mental-health/"
+     },
+     {
+      "nombre": "Cambridge (European Psychiatry): World Maternal Mental Health Day",
+      "url": "https://www.cambridge.org/core/journals/european-psychiatry/article/world-maternal-mental-health-day/D29BF49472B65A1698366B586707196C"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 30 (resumir). Fecha MÓVIL: primer miércoles de mayo; la 1.ª edición fue el 4-05-2016 y en 2026 cae el 6 de mayo. Se coloca en el 05-06 como etiqueta. Fuentes vistas en el buscador (NO ABIERTAS). Los enlaces del CSV (saludmentalperinatal.es, sociedadmarce.org) no se abrieron."
+   }
+  ],
+  "05-07": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1919,
+    "pais": "Argentina",
+    "mujer": null,
+    "tema": "voto y derechos políticos",
+    "region": "América Latina",
+    "texto": {
+     "es": "Nace Eva Perón («Evita»), política y activista argentina. Impulsó el voto de las mujeres y en 1949 fundó el Partido Peronista Femenino.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Biografías y Vidas: Eva Perón",
+      "url": "https://www.biografiasyvidas.com/biografia/p/peron_eva.htm"
+     },
+     {
+      "nombre": "Infobae: la infancia de Eva Perón",
+      "url": "https://www.infobae.com/sociedad/2025/05/07/la-infancia-de-eva-peron-la-muerte-de-su-padre-los-esfuerzos-de-su-madre-por-salir-adelante-y-los-suenos-de-la-actuacion/"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 31. Biografías y Vidas (abierta) da solo el año 1919 y el Partido Peronista Femenino (1949), NO el día ni la ley 13.010. El 7-05-1919 sale en varias fuentes del buscador (ella llegó a declarar 1922). La Ley 13.010 de voto (1947) ya está en el 23-09. El enlace de buenosaires.gob.ar del CSV trata de su muerte (26 julio). Figura política polémica en Argentina: Mireia decide."
+   }
+  ],
+  "05-12": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1820,
+    "pais": "Reino Unido",
+    "mujer": null,
+    "tema": "salud y derechos reproductivos",
+    "region": "Europa",
+    "texto": {
+     "es": "Nace Florence Nightingale, enfermera británica y figura clave de la enfermería moderna. Su cumpleaños es el Día Internacional de la Enfermería.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Florence Nightingale Museum: Día Internacional de la Enfermería",
+      "url": "https://florence-nightingale.co.uk/?p=25615"
+     },
+     {
+      "nombre": "Guy's and St Thomas' NHS: bicentenario de Nightingale",
+      "url": "https://guysandstthomas.nhs.uk/news/guys-and-st-thomas-celebrates-nightingale-bicentenary-projection"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 32 (NG: nacimiento 12 mayo, correcto). Fuentes SOLO vistas en el buscador (no abiertas); el enlace de NG del CSV no se abrió. Tema «salud»: se ha puesto salud y derechos reproductivos por vocabulario; mejor «salud». Dorothy Hodgkin también nació un 12 de mayo (idea de Mireia, fila 140)."
+   }
+  ],
+  "05-13": [
+   {
+    "principal": true,
+    "tipo": "muerte",
+    "anio": 2022,
+    "pais": "España",
+    "mujer": null,
+    "tema": "arte y literatura",
+    "region": "Europa",
+    "texto": {
+     "es": "Muere Teresa Berganza, cantante de ópera española. Recibió el Premio Príncipe de Asturias de las Artes en 1991.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Wikipedia (es): Teresa Berganza",
+      "url": "https://es.wikipedia.org/wiki/Teresa_Berganza"
+     },
+     {
+      "nombre": "Real Academia de la Historia: Teresa Berganza Vargas",
+      "url": "https://historia-hispanica.rah.es/biografias/52518-teresa-berganza-vargas"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 33. Wikipedia abierta: 13 de mayo de 2022. La RAH abrió sin contenido de la biografía (no cuenta). Falta 2.ª fuente (p. ej. nota de prensa de Cultura o la Fundación Princesa de Asturias)."
+   }
+  ],
+  "05-14": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1984,
+    "pais": "India",
+    "mujer": null,
+    "tema": "exploración y aventura",
+    "region": "Asia",
+    "texto": {
+     "es": "El 23 de mayo de 1984: Bachendri Pal llega a la cima del Everest y se convierte en la primera mujer india en lograrlo.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Wikipedia (en): Bachendri Pal",
+      "url": "https://en.wikipedia.org/wiki/Bachendri_Pal"
+     },
+     {
+      "nombre": "Britannica: Bachendri Pal",
+      "url": "https://www.britannica.com/biography/Bachendri-Pal"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV filas 42-43. Wikipedia abierta: 23 mayo 1984 a las 13:07. Britannica dio 403. «Primera mujer india» se apoya en Wikipedia: pedir confirmación en 2.ª fuente. | MOVIDA del 05-23 al 05-14 (choque en el 05-23). El texto lleva la fecha real porque el día mostrado no es el del hecho."
+   }
+  ],
+  "05-15": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1863,
+    "pais": "España",
+    "mujer": null,
+    "tema": "arte y literatura",
+    "region": "Europa",
+    "texto": {
+     "es": "El 17 de mayo de 1863: Se publica «Cantares gallegos», de Rosalía de Castro; desde 1963 el 17 de mayo es el Día de las Letras Gallegas.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Parlamento de Galicia: Cantares gallegos (edición)",
+      "url": "https://www.parlamentodegalicia.es/sitios/web/Publicacions/Cantares%20Gallegos.pdf"
+     },
+     {
+      "nombre": "Wikipedia (en): Galician Literature Day",
+      "url": "https://en.wikipedia.org/wiki/Galician_Literature_Day"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV filas 36-37. NING una fuente abierta (rag.gal no existe con ese dominio). El 17-05-1863 y el origen en 1963 aparecen en varios resultados del buscador. Falta abrir fuente de la Real Academia Galega. Nota: es posible que la Real Academia Galega use www.academia.gal. | MOVIDA del 05-17 al 05-15 (choque en el 05-17). El texto lleva la fecha real porque el día mostrado no es el del hecho."
+   }
+  ],
+  "05-17": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1990,
+    "pais": "OMS / internacional",
+    "mujer": null,
+    "tema": "movimientos sociales y derechos",
+    "region": "Mundial",
+    "texto": {
+     "es": "Se escoge el 17 de mayo como Día contra la Homofobia, la Transfobia y la Bifobia, en recuerdo de que en 1990 la OMS dejó de considerar la homosexualidad una enfermedad.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "May17.org: sobre el Día Internacional contra la Homofobia, la Transfobia y la Bifobia",
+      "url": "https://may17.org/about/"
+     },
+     {
+      "nombre": "Canadian Equality: 17 de mayo, Día contra la Homofobia, Transfobia y Bifobia",
+      "url": "https://canadianequality.ca/may-17-international-day-against-homophobia-transphobia-and-biphobia/"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "Fecha FIJA (CSV fila 150). Fuentes solo vistas en el buscador. El año 1990 es el de la OMS; la primera celebración es 2004 o 2005 según la fuente (por eso se usa 1990). La ficha de diainternacionalde dio 404. Tema sensible para público infantil: decide Mireia."
+   }
+  ],
+  "05-23": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 2012,
+    "pais": "ONU (internacional)",
+    "mujer": null,
+    "tema": "salud y derechos reproductivos",
+    "region": "Mundial",
+    "texto": {
+     "es": "La ONU fija el 23 de mayo como Día Internacional para la Eliminación de la Fístula Obstétrica, una lesión que puede evitarse con una buena atención en el parto.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "UNFPA: Día Internacional para Acabar con la Fístula Obstétrica",
+      "url": "https://www.unfpa.org/events/international-day-end-obstetric-fistula"
+     },
+     {
+      "nombre": "ONU: Día Internacional para la Eliminación de la Fístula Obstétrica",
+      "url": "https://www.un.org/en/observances/fistula-day"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "Fecha FIJA (CSV fila 124). UNFPA abierta: 23 de mayo, pero NO da el año de la resolución. El año 2012 es de memoria: [VERIFICAR]. La ONU dio 403. Tema delicado: texto sin detalles."
+   }
+  ],
+  "05-24": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1982,
+    "pais": "Internacional",
+    "mujer": null,
+    "tema": "movimientos sociales y resistencia",
+    "region": "Mundial",
+    "texto": {
+     "es": "Desde 1982 se celebra el 24 de mayo el Día Internacional de las Mujeres por la Paz y el Desarme, nacido del movimiento pacifista de mujeres.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Día Internacional de… : Mujeres por la Paz y el Desarme",
+      "url": "https://www.diainternacionalde.com/ficha/dia-internacional-mujeres-paz-desarme"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "Fecha FIJA (CSV fila 151). Solo UNA fuente abierta (diainternacionalde: «desde 1982»; dice que el Congreso de La Haya de 1915 es solo antecedente). Falta 2.ª fuente (p. ej. WILPF)."
+   }
+  ],
+  "05-26": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1956,
+    "pais": "EE. UU.",
+    "mujer": null,
+    "tema": "deporte",
+    "region": "América del Norte",
+    "texto": {
+     "es": "Althea Gibson gana el torneo de Roland Garros y es la primera tenista negra en ganar un título de Grand Slam.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Tennis Majors: 26 de mayo de 1956, Althea Gibson",
+      "url": "https://www.tennismajors.com/?p=260009"
+     },
+     {
+      "nombre": "National Women's History Museum: Althea Gibson",
+      "url": "https://www.womenshistory.org/education-resources/biographies/althea-gibson"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 45 («fecha dudosa»). El 26-05-1956 lo da Tennis Majors (abierta); una fuente del buscador dice 27. El museo (abierta) confirma solo el año y «primera afroamericana». Falta fuente oficial (Roland Garros / ITHF) con el día."
+   }
+  ],
+  "05-27": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1967,
+    "pais": "Australia",
+    "mujer": null,
+    "tema": "movimientos sociales y derechos",
+    "region": "Oceanía",
+    "texto": {
+     "es": "Australia vota en referéndum cambiar su Constitución para quitar normas discriminatorias hacia los aborígenes; Faith Bandler fue una de las líderes de la campaña.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Museo Nacional de Australia: el referéndum indígena",
+      "url": "https://digital-classroom.nma.gov.au/defining-moments/indigenous-referendum"
+     },
+     {
+      "nombre": "Wikipedia (en): Faith Bandler",
+      "url": "https://en.wikipedia.org/wiki/Faith_Bandler"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 46. Wikipedia abierta: papel de Bandler y cerca del 91 % de apoyo, pero SIN el día. El 27-05-1967 y el 91 % salen del Museo Nacional (buscador, página no abierta: dio 403)."
+   }
+  ],
+  "06-01": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1975,
+    "pais": "México",
+    "mujer": null,
+    "tema": "movimientos sociales y derechos",
+    "region": "América Latina",
+    "ancla": true,
+    "precision": "dia",
+    "texto": {
+     "es": "El 19 de junio de 1975: Comienza en Ciudad de México la primera conferencia mundial de la ONU sobre la condición de la mujer, que dura hasta el 2 de julio.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "ONU: Conferencia Mundial de Ciudad de México, 1975",
+      "url": "https://www.un.org/en/conferences/women/mexico-city1975"
+     },
+     {
+      "nombre": "ONU Mujeres: conferencias mundiales sobre las mujeres",
+      "url": "https://www.unwomen.org/en/how-we-work/intergovernmental-support/world-conferences-on-women"
+     }
+    ],
+    "estado": "verificada",
+    "comprobado": "2026-11-11",
+    "nota": "Ancla. 19 jun–2 jul 1975, «World Conference of the International Women's Year», la primera conferencia mundial sobre la condición de la mujer. ONU Mujeres da 133 gobiernos y unos 6.000 representantes de ONG (no incluido). Las fechas vienen de la ONU y de su archivo fotográfico (misma organización). Apoyo: media.un.org (apertura el 19 jun 1975). | MOVIDA desde 06-19 (entrada YA EXISTENTE en calendario.json) a 06-01 por choque con un Día Internacional fijo. Si se acepta: borrar la original del 06-19."
+   }
+  ],
+  "06-02": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 2022,
+    "pais": "EE. UU.",
+    "mujer": null,
+    "tema": "salud y derechos reproductivos",
+    "region": "América del Norte",
+    "ancla": true,
+    "precision": "dia",
+    "texto": {
+     "es": "El 24 de junio de 2022: El Tribunal Supremo de EE. UU. resuelve Dobbs contra Jackson y anula la sentencia Roe contra Wade; la regulación del aborto pasa a los legisladores.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Cornell Law School: Dobbs v. Jackson Women's Health Organization (2022)",
+      "url": "https://www.law.cornell.edu/supremecourt/text/19-1392"
+     },
+     {
+      "nombre": "Congressional Research Service (copia en EveryCRSReport): Dobbs v. Jackson",
+      "url": "https://www.everycrsreport.com/reports/LSB10768.html"
+     }
+    ],
+    "estado": "verificada",
+    "comprobado": "2026-11-11",
+    "nota": "Ancla (alternativa del 24 jun; la principal es la conducción saudí de 2018). Decidida el 24 jun 2022: «We hold that Roe and Casey must be overruled». La fuente 2 es una copia de un informe institucional, no su sitio original. Los votos se citan como 6-3 o 5-4: no incluidos. Tono neutral y estrictamente informativo. | MOVIDA desde 06-24 (entrada YA EXISTENTE en calendario.json) a 06-02 por choque con un Día Internacional fijo. Si se acepta: borrar la original del 06-24."
+   }
+  ],
+  "06-05": [
+   {
+    "principal": true,
+    "tipo": "derecho",
+    "anio": 2018,
+    "pais": "Arabia Saudí",
+    "mujer": null,
+    "tema": "movimientos sociales y derechos",
+    "region": "Asia",
+    "ancla": true,
+    "precision": "dia",
+    "texto": {
+     "es": "El 24 de junio de 2018: Arabia Saudí permite que las mujeres obtengan licencia y conduzcan; el decreto real es de septiembre de 2017.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Al Jazeera: las saudíes salen a la carretera al levantarse la prohibición de conducir",
+      "url": "https://www.aljazeera.com/amp/news/2018/6/24/saudi-women-hit-the-road-as-driving-ban-is-lifted"
+     },
+     {
+      "nombre": "Arab News: el día en que las saudíes pudieron conducir",
+      "url": "https://www.arabnews.com/news/the-day-saudi-women-could-drive-1661511"
+     }
+    ],
+    "estado": "verificada",
+    "comprobado": "2026-11-11",
+    "calidadFuentes": "basica",
+    "nota": "Ancla. [VERIFICAR] Las dos fuentes abiertas son prensa; ninguna institucional da ambas fechas (decreto real del 26 sep 2017, entrada en vigor el 24 jun 2018). UN News (news.un.org/en/story/2017/09/567232) muestra una infografía del Ministerio de Exteriores saudí del 26 sep 2017. Evitar «primera vez»: las restricciones de tutela seguían en 2018 (ADHRB, no abierta). Fuentes básicas. | MOVIDA desde 06-24 (entrada YA EXISTENTE en calendario.json) a 06-05 por choque con un Día Internacional fijo. Si se acepta: borrar la original del 06-24."
+   }
+  ],
+  "06-19": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 2015,
+    "pais": "ONU (internacional)",
+    "mujer": null,
+    "tema": "justicia y violencia",
+    "region": "Mundial",
+    "texto": {
+     "es": "La ONU proclama el 19 de junio como Día Internacional para la Eliminación de la Violencia Sexual en los Conflictos.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "ONU: resolución A/RES/69/293 (Biblioteca Digital)",
+      "url": "https://digitallibrary.un.org/record/796875/files/A_RES_69_293-EN.pdf"
+     },
+     {
+      "nombre": "Ministerio de Igualdad (España): texto de la resolución 69/293",
+      "url": "https://violenciagenero.igualdad.gob.es/wp-content/uploads/RES_69_293.pdf"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "buena",
+    "nota": "Fecha FIJA (CSV filas 125 y 153). Resolución del 19-06-2015 vista en el buscador (NO ABIERTA). Tono informativo, sin detalles. Cuenta en la cuota de «justicia y violencia»."
+   }
+  ],
+  "06-23": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 2010,
+    "pais": "ONU (internacional)",
+    "mujer": null,
+    "tema": "derechos e igualdad",
+    "region": "Mundial",
+    "texto": {
+     "es": "La ONU proclama el 23 de junio como Día Internacional de las Viudas, para dar visibilidad a las mujeres que han perdido a su pareja.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "ONU: resolución A/RES/65/189 (Biblioteca Digital)",
+      "url": "https://digitallibrary.un.org/record/699035"
+     },
+     {
+      "nombre": "Wikipedia (en): International Widows Day",
+      "url": "https://en.wikipedia.org/wiki/International_Widows_Day"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "buena",
+    "nota": "Fecha FIJA (CSV fila 126). Resolución del 21-12-2010; se celebra desde 2011 (buscador, NO ABIERTA). La Fundación Loomba ya lo celebraba desde 2005."
+   }
+  ],
+  "06-24": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 2022,
+    "pais": "ONU (internacional)",
+    "mujer": null,
+    "tema": "trabajo y economía",
+    "region": "Mundial",
+    "texto": {
+     "es": "La Asamblea General de la ONU proclama el 24 de junio como Día Internacional de las Mujeres en la Diplomacia.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "ONU: resolución A/RES/76/269 (Biblioteca Digital)",
+      "url": "https://digitallibrary.un.org/record/3978483/files/A_RES_76_269-EN.pdf"
+     },
+     {
+      "nombre": "ONU (prensa): la Asamblea General proclama el día",
+      "url": "https://press.un.org/en/2022/ga12427.doc.htm"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "buena",
+    "nota": "Fecha FIJA (CSV fila 127). Resolución del 20-06-2022 (buscador, NO ABIERTA). Choca con dos entradas existentes (Arabia Saudí y Dobbs)."
+   }
+  ],
+  "07-06": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1984,
+    "pais": "Unión Soviética",
+    "mujer": null,
+    "tema": "exploración y aventura",
+    "region": "Europa",
+    "texto": {
+     "es": "El 25 de julio de 1984: Svetlana Savitskaya, cosmonauta soviética, hace desde la estación Salyut 7 el primer paseo espacial de una mujer.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Wikipedia (en): Svetlana Savitskaya",
+      "url": "https://en.wikipedia.org/wiki/Svetlana_Savitskaya"
+     },
+     {
+      "nombre": "Space.com: Svetlana Savitskaya",
+      "url": "https://www.space.com/svetlana-savitskaya-biography"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV filas 65-66. Space.com (abierta) dice que el 25-07-1984 es el día del LANZAMIENTO de la Soyuz T-12; otras fuentes (buscador) dan el 25-07 como día del paseo y el 17-07 como lanzamiento. Falta fuente institucional (Roscosmos/NASA/ESA). Choca con el Día de la Mujer Afrolatina del 25-07. | MOVIDA del 07-25 al 07-06 (choque en el 07-25). El texto lleva la fecha real porque el día mostrado no es el del hecho."
+   }
+  ],
+  "07-10": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1999,
+    "pais": "EE. UU.",
+    "mujer": null,
+    "tema": "deporte",
+    "region": "América del Norte",
+    "texto": {
+     "es": "EE. UU. gana el Mundial de fútbol femenino de 1999 ante China, en una final vista en directo por más de 90 000 personas en el Rose Bowl.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "FIFA: EE. UU. - China, final de 1999",
+      "url": "https://inside.fifa.com/en/news/mo-3003-usa-v-chn-1999-wwc-3069388"
+     },
+     {
+      "nombre": "U.S. Soccer: Mundial femenino FIFA 1999",
+      "url": "https://www.ussoccer.com/history/us-soccer-as-host/1999-fifa-womens-world-cup"
+     }
+    ],
+    "estado": "verificada",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "buena",
+    "nota": "CSV fila 54 (jul 10). Las dos páginas abiertas dan 10-07-1999, 0-0 y 5-4 en penaltis. Aforo: FIFA 90 185 y U.S. Soccer 90 125: por eso el texto dice «más de 90 000»."
+   }
+  ],
+  "07-11": [
+   {
+    "principal": true,
+    "tipo": "derecho",
+    "anio": 2003,
+    "pais": "Unión Africana (Mozambique)",
+    "mujer": null,
+    "tema": "derechos e igualdad",
+    "region": "África",
+    "texto": {
+     "es": "La Unión Africana adopta en Maputo, en Mozambique, el Protocolo sobre los derechos de las mujeres en África.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Unión Africana: tratado, Protocolo sobre los derechos de las mujeres en África",
+      "url": "https://au.int/en/treaties/protocol-african-charter-human-and-peoples-rights-rights-women-africa"
+     },
+     {
+      "nombre": "Wikipedia (en): Maputo Protocol",
+      "url": "https://en.wikipedia.org/wiki/Maputo_Protocol"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 55 («Adoptado en 2003»). DISCREPANCIA: la página de la UA (abierta) da la fecha de adopción como 1-07-2003; el texto oficial y Wikipedia (buscador, no abiertas) dicen 11-07-2003 (2.ª Sesión Ordinaria, Maputo). Entró en vigor el 25-11-2005 (UA, abierta). Falta aclarar el día."
+   }
+  ],
+  "07-18": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1976,
+    "pais": "Rumanía",
+    "mujer": null,
+    "tema": "deporte",
+    "region": "Europa",
+    "texto": {
+     "es": "Nadia Comăneci consigue en Montreal el primer 10 de la gimnasia olímpica; el marcador no podía mostrarlo y puso 1,00.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Olympics.com: Nadia Comăneci y el primer 10 perfecto",
+      "url": "https://olympics.com/en/news/this-week-in-olympic-history-july-15-21-nadia-comaneci-scores-the-first-perfect-10-in-gymnastics"
+     },
+     {
+      "nombre": "HISTORY: el primer 10 de Nadia Comăneci (18 de julio)",
+      "url": "https://www.history.com/this-day-in-history/nadia-comaneci-first-perfect-10-gymnastics-montreal-olympics"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "buena",
+    "nota": "CSV filas 60-61. Olympics.com dio timeout y HISTORY no se abrió: la fecha (18-07-1976), el «primer 10» y el 1,00 salen del buscador. El enlace de NG del CSV es un calendario genérico; no se usa. Nellie Kim también sacó 10 en esos Juegos."
+   }
+  ],
+  "07-25": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1992,
+    "pais": "República Dominicana",
+    "mujer": null,
+    "tema": "movimientos sociales y derechos",
+    "region": "América Latina",
+    "texto": {
+     "es": "Tras el primer Encuentro de Mujeres Negras de América Latina y el Caribe, en Santo Domingo, se fija el 25 de julio como Día de la Mujer Afrolatina, Afrocaribeña y de la Diáspora.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Presidencia de Argentina: Día de la Mujer Afrolatina, Afrocaribeña y de la Diáspora",
+      "url": "https://www.argentina.gob.ar/node/328117"
+     },
+     {
+      "nombre": "Wikipedia (en): Primer Encuentro de Mujeres Negras de América Latina y el Caribe",
+      "url": "https://en.wikipedia.org/wiki/Primer_Encuentro_de_Mujeres_Negras_de_Am%C3%A9rica_Latina_y_El_Caribe"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "Fecha FIJA (CSV fila 154). Fuentes solo vistas en el buscador. La ficha de diainternacionalde dio 404. La ONU lo reconoció después (2011, de memoria): no se afirma."
+   }
+  ],
+  "07-29": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1974,
+    "pais": "EE. UU.",
+    "mujer": null,
+    "tema": "religión y sociedad",
+    "region": "América del Norte",
+    "texto": {
+     "es": "Once mujeres son ordenadas sacerdotes en la Iglesia Episcopal, en Filadelfia, dos años antes de que la Iglesia lo autorizara oficialmente.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Archivos de la Iglesia Episcopal: ordenación irregular",
+      "url": "https://exhibits.episcopalarchives.org/s/episcopal-church-women/page/irregular-ordination"
+     },
+     {
+      "nombre": "Iglesia Episcopal: «The Philadelphia Eleven»",
+      "url": "https://www.episcopalchurch.org/glossary/philadelphia-eleven-the/"
+     }
+    ],
+    "estado": "verificada",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "buena",
+    "nota": "CSV fila 69. Las dos páginas abiertas dan 29-07-1974 (Iglesia del Abogado, Filadelfia). La Convención General de 1976 lo autorizó. El archivo la llama «primeras once mujeres sacerdotes» de esa Iglesia; el texto evita «primeras»."
+   }
+  ],
+  "07-31": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1962,
+    "pais": "Tanzania",
+    "mujer": null,
+    "tema": "movimientos sociales y derechos",
+    "region": "África",
+    "texto": {
+     "es": "Mujeres de todo el continente se reúnen en Dar es Salaam en la primera Conferencia de Mujeres Africanas; el 31 de julio es hoy el Día de la Mujer Panafricana.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "APA News: nacimiento en Dar es Salaam del movimiento continental de mujeres africanas",
+      "url": "https://fr.apanews.net/news/31-juillet-1962-naissance-a-dar-es-salaam-du-mouvement-continental-des-femmes-africaines/"
+     },
+     {
+      "nombre": "NEPAD: Día de la Mujer Panafricana",
+      "url": "https://nepad.org/node/17294"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "Fecha FIJA (CSV filas 70 y 155). Fuentes solo vistas en el buscador (NO ABIERTAS). La ficha de diainternacionalde dio 404. Discrepancias sobre el nombre de la organización y el año de reconocimiento del día (1970): no se citan."
+   }
+  ],
+  "08-03": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1992,
+    "pais": "Etiopía",
+    "mujer": null,
+    "tema": "deporte",
+    "region": "África",
+    "texto": {
+     "es": "El 7 de agosto de 1992: Derartu Tulu, de Etiopía, gana los 10 000 metros de los Juegos de Barcelona 1992 por delante de la sudafricana Elana Meyer.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "World Athletics: Tulu y Meyer, Barcelona 1992",
+      "url": "https://worldathletics.org/news/feature/tulu-meyer-1992-olympic-barcelona-10000m-victory-lap-unite-africa"
+     },
+     {
+      "nombre": "Fundació Barcelona Olímpica: Tulu y Meyer, 30 años después",
+      "url": "https://fundaciobarcelonaolimpica.es/en/?p=26140"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "buena",
+    "nota": "CSV fila 74 («alternativa al día ya rellenado»). World Athletics abierta: 7-08-1992 y orden de llegada. La Fundació no se abrió. No se afirma «primera mujer negra africana campeona» (sale en el buscador, sin página abierta). | MOVIDA del 08-07 al 08-03 (choque en el 08-07). El texto lleva la fecha real porque el día mostrado no es el del hecho."
+   }
+  ],
+  "08-05": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1939,
+    "pais": "España",
+    "mujer": null,
+    "tema": "justicia y violencia",
+    "region": "Europa",
+    "texto": {
+     "es": "Son fusiladas en Madrid las Trece Rosas, jóvenes encarceladas tras la Guerra Civil. Cada 5 de agosto se las recuerda en el cementerio de la Almudena.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Amnistía Internacional España: las 13 Rosas, quiénes fueron y qué significan hoy",
+      "url": "https://www.es.amnesty.org/en-que-estamos/blog/historia/articulo/las-13-rosas-quienes-fueron-que-significan-hoy-y-por-que-su-memoria-esta-amenazada/"
+     },
+     {
+      "nombre": "Newtral: por qué fusilaron a las Trece Rosas",
+      "url": "https://www.newtral.es/explainer/por-que-fusilaron-a-las-trece-rosas/"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 73 (marcada «sin candidata», pero con enlaces). Amnistía abierta: madrugada del 5-08-1939, junto a otros 43 hombres. Newtral dio 403. Una de ellas, Antonia Torre Yela («la catorce rosa»), murió en 1940: el texto no dice «todas». Tema muy delicado y público infantil: redacción sin detalles; decide Mireia. Cuenta en el máximo de 3 días de «justicia y violencia»."
+   }
+  ],
+  "08-08": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1865,
+    "pais": "Chile",
+    "mujer": null,
+    "tema": "salud y derechos reproductivos",
+    "region": "América Latina",
+    "texto": {
+     "es": "Nace Ernestina Pérez Barahona, médica chilena. Se tituló en 1887 y fue la segunda mujer médica de Chile, después de Eloísa Díaz.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Revista Médica de Chile: Eloísa Díaz y Ernestina Pérez, las primeras médicas de Chile",
+      "url": "https://revistamedicadechile.cl/index.php/rmedica/article/view/7007"
+     },
+     {
+      "nombre": "BCN (Chile): Ernestina Pérez Barahona",
+      "url": "https://www.bcn.cl/mujerescientificas/detalle/ernestina_perez_barahona/"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 75 («sin pasar»). NO ABIERTAS. El 8-08 es su NACIMIENTO (no el título, que fue el 10-01-1887) y el año es 1865 según una fuente y 1868 según Memoria Chilena: discrepancia. Con el año dudoso no debe publicarse. Hay una alternativa mejor: su título (enero de 1887)."
+   }
+  ],
+  "08-15": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1881,
+    "pais": "Nueva Zelanda",
+    "mujer": null,
+    "tema": "educación",
+    "region": "Oceanía",
+    "texto": {
+     "es": "Helen Connon obtiene en Nueva Zelanda un máster en Artes con honores, un logro pionero para las mujeres en el Imperio británico.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "NZHistory: primera mujer con máster con honores del Imperio británico",
+      "url": "https://nzhistory.govt.nz/page/first-woman-master-arts-british-empire-graduates"
+     },
+     {
+      "nombre": "Universidad de Canterbury: Helen Connon",
+      "url": "https://www.canterbury.ac.nz/about-uc/why-uc/our-alumni/uc-legends/helen-connon"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 80 («sin pasar»). Ninguna abierta (403). El año 1881 es seguro; el 15-08 viene de una página con esa fecha vista en el buscador, sin saber si es la fecha del grado. Decide Mireia si se deja como «durante este mes» o se busca la fecha."
+   }
+  ],
+  "08-17": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1896,
+    "pais": "Italia (activa en México)",
+    "mujer": null,
+    "tema": "arte y literatura",
+    "region": "Europa",
+    "texto": {
+     "es": "Nace Tina Modotti, fotógrafa italiana. Se hizo conocida por sus fotos en México y fue activista política.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Encyclopedia.com (Women in World History): Modotti, Tina",
+      "url": "https://encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/modotti-tina-1896-1942"
+     },
+     {
+      "nombre": "Portal Antenati (Archivos de Italia): Tina Modotti",
+      "url": "https://antenati.cultura.gov.it/storie/tina-modotti-1896-1942/?lang=en"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV filas 81-83. DÍA DISCUTIDO: la enciclopedia (abierta) da el 16 y el portal de los Archivos de Italia (buscador, 403) da el 17. El CSV dudaba entre 16 y 17. Se pone el 17 (fuente archivística) hasta confirmar. No se publica con la fecha dudosa. Tampoco se nombra su muerte (5 o 6 enero 1942)."
+   }
+  ],
+  "08-30": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1797,
+    "pais": "Reino Unido",
+    "mujer": null,
+    "tema": "arte y literatura",
+    "region": "Europa",
+    "texto": {
+     "es": "Nace Mary Shelley, escritora británica. A los 20 años publicó, de forma anónima, «Frankenstein» (1818).",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Linda Hall Library: Mary Shelley",
+      "url": "https://www.lindahall.org/about/news/scientist-of-the-day/mary-shelley"
+     },
+     {
+      "nombre": "Orlando (Cambridge): Mary Shelley",
+      "url": "https://orlando.cambridge.org/index.php/profiles/shelma"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV filas 89-90. Linda Hall abierta: 30-08-1797 y Frankenstein en 1818. Orlando solo vista en el buscador. La Frankenstein salió en enero de 1818."
+   }
+  ],
+  "09-04": [
+   {
+    "principal": true,
+    "tipo": "curiosidad",
+    "anio": 2010,
+    "pais": "Internacional",
+    "mujer": null,
+    "tema": "salud y derechos reproductivos",
+    "region": "Mundial",
+    "texto": {
+     "es": "Desde 2010 se celebra el 4 de septiembre el Día Mundial de la Salud Sexual, impulsado por la Asociación Mundial para la Salud Sexual (WAS).",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "WAS (Asociación Mundial para la Salud Sexual): Día Mundial de la Salud Sexual",
+      "url": "https://www.worldsexualhealth.net/about-world-sexual-health-day"
+     },
+     {
+      "nombre": "ISSM: Día Mundial de la Salud Sexual",
+      "url": "https://www.issm.info/news/world-sexual-health-day-september-4-2023-embracing-consent-for-a-healthier-world"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 94 (enlace del Ayuntamiento de Barcelona: solo un listado de festividades; no se usa). Fuentes solo vistas en el buscador. Público infantil: texto neutral; decide Mireia si se incluye."
+   }
+  ],
+  "09-05": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 1983,
+    "pais": "Bolivia",
+    "mujer": null,
+    "tema": "movimientos sociales y derechos",
+    "region": "América Latina",
+    "texto": {
+     "es": "En Tiahuanaco (Bolivia), organizaciones indígenas de América fijan el 5 de septiembre como Día Internacional de la Mujer Indígena, en homenaje a Bartolina Sisa.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "CONAP (Guatemala): Día Internacional de la Mujer Indígena",
+      "url": "https://conap.gob.gt/wp-content/uploads/2021/09/Dia-internacional-de-la-mujer-indigena-Final.pdf"
+     },
+     {
+      "nombre": "Ministerio Público Fiscal (Argentina): Día de la mujer indígena",
+      "url": "https://www.mpf.gob.ar/direccion-general-de-politicas-de-genero/files/2021/09/D%C3%ADa-de-la-mujer-%C3%ADndigena.pdf"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "Fecha FIJA (CSV fila 95). Fuentes solo vistas en el buscador (NO ABIERTAS). La fecha es de 1983 (2.º Encuentro de Organizaciones y Movimientos de América); no es un día de la ONU (la ONU tiene el 9 de agosto para los pueblos indígenas). Año de nacimiento de Bartolina Sisa discutido: no se cita."
+   }
+  ],
+  "09-28": [
+   {
+    "principal": false,
+    "tipo": "hito",
+    "anio": 1990,
+    "pais": "Argentina / América Latina",
+    "mujer": null,
+    "tema": "salud y derechos reproductivos",
+    "region": "América Latina",
+    "texto": {
+     "es": "El Encuentro Feminista Latinoamericano y del Caribe, celebrado en Argentina, fija el 28 de septiembre como día de acción por el acceso al aborto legal y seguro.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Gaceta UNAM: #28S, día de acción por el aborto legal",
+      "url": "https://www.gaceta.unam.mx/28s-el-dia-a-favor-de-acciones-globales-por-el-aborto-legal/"
+     },
+     {
+      "nombre": "Agencia Presentes: por qué el 28S es una fecha clave",
+      "url": "https://agenciapresentes.org/en/2023/09/27/28s-por-que-es-una-fecha-clave-para-los-feminismos/"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "Fecha FIJA (CSV fila 156). Fuentes solo vistas en el buscador. La ficha de diainternacionalde dio 404. No es un día de la ONU. Elegida por las delegadas brasileñas en recuerdo de la Ley de Vientre Libre (28-09-1871), que ya está en el calendario. TEMA SENSIBLE para público infantil: decide Mireia. Mientras no se verifique, no se mueve la entrada existente del 28-09. [Choque sin resolver: la entrada existente se mantiene como principal.]"
+   }
+  ],
+  "10-06": [
+   {
+    "principal": true,
+    "tipo": "premio",
+    "anio": 2022,
+    "pais": "Francia",
+    "mujer": null,
+    "tema": "arte y literatura",
+    "region": "Europa",
+    "texto": {
+     "es": "Se anuncia que la escritora francesa Annie Ernaux recibe el Premio Nobel de Literatura 2022, por el coraje y la agudeza de su obra sobre la memoria personal.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Wikipedia (en): Annie Ernaux",
+      "url": "https://en.wikipedia.org/wiki/Annie_Ernaux"
+     },
+     {
+      "nombre": "Premios Nobel: comunicado, Literatura 2022",
+      "url": "https://www.nobelprize.org/prizes/literature/2022/press-release/"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV filas 105-106. Wikipedia abierta: anuncio el 6-10-2022 y motivación. Nobel dio 403. NG: enlace no abierto. «Primera francesa» sale en Wikipedia: no se usa hasta confirmarlo en la fuente oficial."
+   }
+  ],
+  "10-11": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 2011,
+    "pais": "ONU (internacional)",
+    "mujer": null,
+    "tema": "educación",
+    "region": "Mundial",
+    "texto": {
+     "es": "La Asamblea General de la ONU proclama el 11 de octubre como Día Internacional de la Niña, para defender sus derechos.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "UNESCO: Día Internacional de la Niña",
+      "url": "https://www.unesco.org/en/days/girl-child"
+     },
+     {
+      "nombre": "ONU: Día Internacional de la Niña",
+      "url": "https://www.un.org/en/observances/day-of-the-girl-child"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "buena",
+    "nota": "Fecha FIJA (CSV filas 107, 128 y 157). UNESCO abierta: 11 de octubre; resolución del 19-12-2011. La página de la ONU dio 403. Choca con dos entradas existentes (Japón 1945 y Sullivan 1984)."
+   }
+  ],
+  "10-15": [
+   {
+    "principal": true,
+    "tipo": "hito",
+    "anio": 2007,
+    "pais": "ONU (internacional)",
+    "mujer": null,
+    "tema": "trabajo y economía",
+    "region": "Mundial",
+    "texto": {
+     "es": "La Asamblea General de la ONU proclama el 15 de octubre como Día Internacional de las Mujeres Rurales; se celebra por primera vez en 2008.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "ONU: resolución A/RES/62/136 (Biblioteca Digital)",
+      "url": "https://digitallibrary.un.org/record/614259"
+     },
+     {
+      "nombre": "ONU Mujeres (WomenWatch): Día Internacional de las Mujeres Rurales",
+      "url": "https://www.un.org/womenwatch/feature/idrw/index-2008.html"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "buena",
+    "nota": "Fecha FIJA (CSV filas 129 y 158). Resolución del 18-12-2007 (buscador, NO ABIERTAS). Choca con #MeToo (existente, 15-10-2017)."
+   }
+  ],
+  "10-20": [
+   {
+    "principal": true,
+    "tipo": "premio",
+    "anio": 1966,
+    "pais": "Alemania (exiliada en Suecia)",
+    "mujer": null,
+    "tema": "arte y literatura",
+    "region": "Europa",
+    "texto": {
+     "es": "Nelly Sachs, poeta alemana exiliada en Suecia, recibe el Premio Nobel de Literatura de 1966, que comparte con S. Y. Agnon.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Wikipedia (en): Nelly Sachs",
+      "url": "https://en.wikipedia.org/wiki/Nelly_Sachs"
+     },
+     {
+      "nombre": "Premios Nobel: Nelly Sachs, hechos",
+      "url": "https://www.nobelprize.org/prizes/literature/1966/sachs/facts/"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV filas 108-109 («pista sin confirmar»). Wikipedia abierta: Nobel 1966 compartido con Agnon, PERO sin el día; Nobel dio 403. El enlace de NG del CSV (nationalgeographic.com.es/cultura/…) no se abrió. El 20-10-1966 es de memoria: [VERIFICAR]. "
+   }
+  ],
+  "12-05": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1815,
+    "pais": "Reino Unido",
+    "mujer": null,
+    "tema": "ciencia y tecnología",
+    "region": "Europa",
+    "texto": {
+     "es": "El 10 de diciembre de 1815: Nace Ada Lovelace, matemática británica. Sus notas de 1843 sobre la máquina analítica de Babbage se consideran el primer programa informático.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "MacTutor (Univ. de St Andrews): Ada Lovelace",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Lovelace/"
+     },
+     {
+      "nombre": "Britannica: Ada Lovelace",
+      "url": "https://www.britannica.com/biography/Ada-Lovelace"
+     }
+    ],
+    "estado": "parcial",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 113 (dic 10, «Ada Lovelace / Premios Nobel»). Ada nació el 10-12-1815 (MacTutor abierta). Britannica no se abrió. El 10-12 ya tiene DOS entradas (ONU y Wyoming). La parte «Premios Nobel» (ceremonia anual) es demasiado genérica y se descarta. La fila 12 de marzo (24-03, Ada) es un error: no es una fecha suya. Existe ficha de Mireia? Valorar enlazar. | MOVIDA del 12-10 al 12-05 (choque en el 12-10). El texto lleva la fecha real porque el día mostrado no es el del hecho."
+   }
+  ],
+  "12-15": [
+   {
+    "principal": true,
+    "tipo": "nacimiento",
+    "anio": 1875,
+    "pais": "Serbia (entonces Austria-Hungría)",
+    "mujer": null,
+    "tema": "ciencia y tecnología",
+    "region": "Europa",
+    "texto": {
+     "es": "El 19 de diciembre de 1875: Nace Mileva Marić, matemática y física serbia. Estudió Física y Matemáticas en el Politécnico de Zúrich, donde era la única mujer de su grupo.",
+     "ca": "[TRADUCCIÓN PENDIENTE]",
+     "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fuentes": [
+     {
+      "nombre": "Wikipedia (en): Mileva Marić",
+      "url": "https://en.wikipedia.org/wiki/Mileva_Mari%C4%87"
+     },
+     {
+      "nombre": "UPC (Igualtat): Mileva Marić",
+      "url": "https://igualtat.iri.upc.edu/en/posts/distinguished-women-scientists/mileva-maric"
+     }
+    ],
+    "estado": "revisar",
+    "comprobado": "2026-11-18",
+    "calidadFuentes": "basica",
+    "nota": "CSV fila 114 (dic 19). NO ABIERTAS (solo buscador): 19-12-1875 en Titel. Su papel en la obra de Einstein está discutido: el texto no lo afirma. Choca con el nacimiento de Bernice Pauahi Bishop (existente). | MOVIDA del 12-19 al 12-15 (choque en el 12-19). El texto lleva la fecha real porque el día mostrado no es el del hecho."
+   }
+  ]
+ },
+ "sinDia": [
+  {
+   "tipo": "hito",
+   "anio": 1945,
+   "pais": "Japón",
+   "mujer": null,
+   "tema": "voto y derechos políticos",
+   "region": "Asia",
+   "texto": {
+    "es": "Durante este mes, el 11 de octubre de 1945: El general MacArthur pide al primer ministro Shidehara reformas que incluyen, en primer lugar, la emancipación de las mujeres.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "EBSCO Research Starters: la Constitución japonesa concede nuevos derechos a las mujeres",
+     "url": "https://www.ebsco.com/research-starters/history/japanese-constitution-grants-new-rights-women"
+    }
+   ],
+   "estado": "verificada",
+   "comprobado": "2026-11-14",
+   "calidadFuentes": "basica",
+   "nota": "Relleno 2026-11-14. EBSCO dice que fue una petición, no una orden. El voto llegó en diciembre de 1945 con la reforma de la ley electoral. Falta una fuente oficial (Biblioteca de la Dieta). Fuentes básicas. | MOVIDA desde 10-11 (entrada YA EXISTENTE) a «durante este mes» (no queda día libre en el mes). Si se acepta: borrar la original.",
+   "mes": 10,
+   "precision": "mes",
+   "ancla": false
+  },
+  {
+   "tipo": "hito",
+   "anio": 1984,
+   "pais": "EE. UU.",
+   "mujer": null,
+   "tema": "exploración y aventura",
+   "region": "América del Norte",
+   "viva": true,
+   "texto": {
+    "es": "Durante este mes, el 11 de octubre de 1984: Kathryn Sullivan realiza desde el transbordador Challenger (misión STS-41G) el primer paseo espacial de una estadounidense.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "NASA: Kathryn Sullivan, la primera estadounidense en caminar por el espacio",
+     "url": "https://www.nasa.gov/history/kathryn-sullivan-the-first-american-woman-to-walk-in-space"
+    }
+   ],
+   "estado": "verificada",
+   "comprobado": "2026-11-14",
+   "calidadFuentes": "basica",
+   "nota": "Relleno 2026-11-14. Alternativa del 11 oct. MUJER VIVA: premio o hito histórico con tono informativo (Mireia decidió el 14-11-2026 «incluir todo»). El «primera» es solo para estadounidenses: la caminata anterior fue de Svetlana Savitskaya (1984). Fuentes básicas. | MOVIDA desde 10-11 (entrada YA EXISTENTE) a «durante este mes» (no queda día libre en el mes). Si se acepta: borrar la original.",
+   "mes": 10,
+   "precision": "mes",
+   "ancla": false
+  },
+  {
+   "tipo": "hito",
+   "anio": 2017,
+   "pais": "EE. UU.",
+   "mujer": null,
+   "tema": "violencia y justicia",
+   "region": "América del Norte",
+   "ancla": false,
+   "precision": "mes",
+   "texto": {
+    "es": "Durante este mes, el 15 de octubre de 2017: Tarana Burke inició en 2006 el movimiento «me too»; el 15 de octubre de 2017 el hashtag #MeToo se hizo viral en las redes.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "Me Too Movement: historia y origen",
+     "url": "https://metoomvmt.org/get-to-know-us/history-inception/"
+    },
+    {
+     "nombre": "TIME: aniversario de #MeToo y Tarana Burke",
+     "url": "https://time.com/6221110/tarana-burke-me-too-anniversary/"
+    }
+   ],
+   "estado": "verificada",
+   "comprobado": "2026-11-11",
+   "calidadFuentes": "basica",
+   "nota": "Ancla. Nombrar siempre a Tarana Burke como origen. [VERIFICAR] falta una fuente institucional (universidad, archivo) que fije el 15 oct 2017 y el mensaje de Alyssa Milano (TIME 2017 «Silence Breakers» lo cuenta, no abierto aquí como principal). No usar el artículo de Harvard International Review: tiene errores. | MOVIDA desde 10-15 (entrada YA EXISTENTE) a «durante este mes» (no queda día libre en el mes). Si se acepta: borrar la original.",
+   "mes": 10
+  },
+  {
+   "mes": 11,
+   "anio": 2022,
+   "tipo": "hito",
+   "pais": "España / ESA (Europa)",
+   "mujer": null,
+   "tema": "ciencia y tecnología",
+   "region": "Europa",
+   "ancla": false,
+   "precision": "mes",
+   "texto": {
+    "es": "Durante este mes, el 23 de noviembre de 2022: la Agencia Espacial Europea presenta a su nueva generación de astronautas y la española Sara García Alonso entra en el grupo de reserva.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "Ministerio de Ciencia: La Agencia Espacial Europea selecciona a dos astronautas españoles",
+     "url": "https://www.ciencia.gob.es/Noticias/2022/Noviembre/La-Agencia-Espacial-Europea-selecciona-a-dos-astronautas-espa-oles.html"
+    },
+    {
+     "nombre": "ESA: la ESA presenta a su nueva generación de astronautas (nota 63-2022)",
+     "url": "https://www.esa.int/Newsroom/Press_Releases/ESA_presents_new_generation_of_ESA_astronauts"
+    }
+   ],
+   "estado": "verificada",
+   "comprobado": "2026-11-18",
+   "calidadFuentes": "buena",
+   "nota": "CSV fila 111 (marcada «diciembre» pero habla del 23-11-2022; instrucción de Mireia: cambiar lo que hay o ponerla «durante este mes»). El 23-11 ya tiene dos muertes (Beevi 2023, Higuchi 1896) y noviembre no tiene ningún día libre: se pone en sinDia. Las dos páginas abiertas dan el 23-11-2022. Está viva: es un hito, no un cumpleaños. El enlace esa.int genérico del CSV se cambia por la nota de prensa. Alternativa: hacerla principal del 23-11 y mover las dos muertes."
+  }
+ ]
+}
