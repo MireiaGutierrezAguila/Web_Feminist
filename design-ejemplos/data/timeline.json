@@ -1,0 +1,508 @@
+{
+ "version": 1,
+ "aviso": "Datos de PRUEBA. Cartas tomadas de calendario.json (estado verificada). Islas: informe de fechas del 2026-11-18; las de estado «parcial» necesitan una segunda fuente antes de publicar.",
+ "escala": {
+  "inicio": 1750,
+  "fin": 2025
+ },
+ "islas": [
+  {
+   "id": "industrial",
+   "nombre": {
+    "es": "La Revolución Industrial",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "inicio": 1760,
+   "fin": 1830,
+   "imagen": "img/opt/isla-industrial.webp",
+   "ratio": 1.021,
+   "fuentes": [
+    {
+     "nombre": "Science Museum Group (blog)",
+     "url": "https://blog.sciencemuseum.org.uk/steaming-through-the-centuries/"
+    },
+    {
+     "nombre": "National Geographic Education",
+     "url": "https://education.nationalgeographic.org/resource/industrial-revolution-and-technology/7th-grade/"
+    }
+   ],
+   "estado": "parcial",
+   "nota": "Las fuentes discrepan: Science Museum 1760–1830; National Geographic 1750–1850. Se usa 1760–1830 y se muestra como «hacia». Fin pendiente de verificar."
+  },
+  {
+   "id": "francesa",
+   "nombre": {
+    "es": "La Revolución Francesa",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "inicio": 1789,
+   "fin": 1799,
+   "imagen": "img/opt/isla-francesa.webp",
+   "ratio": 1.037,
+   "fuentes": [
+    {
+     "nombre": "BnF Essentiels",
+     "url": "https://essentiels.bnf.fr/fr/en-images/720f93c1-225a-4fb4-b2b3-cec167b6e239-revolution-francaise-1789-1799"
+    },
+    {
+     "nombre": "Assemblée nationale (juniors)",
+     "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/juniors/histoire/1789-1799-la-revolution-francaise"
+    }
+   ],
+   "estado": "verificada",
+   "nota": "Inicio 5 may 1789 (Estados Generales); fin 9 nov 1799 (golpe de Bonaparte)."
+  },
+  {
+   "id": "primera-republica",
+   "nombre": {
+    "es": "La Primera República española",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "inicio": 1873,
+   "fin": 1874,
+   "imagen": "img/opt/isla-primera-republica.webp",
+   "ratio": 0.755,
+   "fuentes": [
+    {
+     "nombre": "Congreso de los Diputados",
+     "url": "https://www.congreso.es/es/cem/sexrevol"
+    },
+    {
+     "nombre": "Gran Enciclopèdia Catalana",
+     "url": "https://www.enciclopedia.cat/gran-enciclopedia-catalana/primera-republica-espanyola"
+    }
+   ],
+   "estado": "verificada",
+   "nota": "Proclamada el 11 feb 1873. Fin: 3 ene 1874 (golpe de Pavía) según el Congreso; la GEC cierra el periodo el 29 dic 1874. Redactar con prudencia."
+  },
+  {
+   "id": "primera-guerra-mundial",
+   "nombre": {
+    "es": "La Primera Guerra Mundial",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "inicio": 1914,
+   "fin": 1918,
+   "imagen": "img/opt/isla-primera-guerra-mundial.webp",
+   "ratio": 1.15,
+   "fuentes": [
+    {
+     "nombre": "Australian War Memorial",
+     "url": "https://wm.awm.gov.au/read/armistice"
+    }
+   ],
+   "estado": "parcial",
+   "nota": "Solo una fuente abierta, y solo para el fin (armisticio 11 nov 1918). Falta segunda fuente para el inicio (28 jul 1914)."
+  },
+  {
+   "id": "segunda-republica",
+   "nombre": {
+    "es": "La Segunda República española",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "inicio": 1931,
+   "fin": 1939,
+   "imagen": "img/opt/isla-segunda-republica.webp",
+   "ratio": 0.672,
+   "fuentes": [
+    {
+     "nombre": "Congreso de los Diputados (II República)",
+     "url": "https://www.congreso.es/es/cem/vidparl1931-2"
+    },
+    {
+     "nombre": "Congreso de los Diputados (Cortes franquistas)",
+     "url": "https://www.congreso.es/es/cem/cortesp"
+    }
+   ],
+   "estado": "parcial",
+   "nota": "Proclamada el 14 abr 1931. Las dos fuentes son del mismo organismo y el fin como fecha de la República (1 abr 1939 u otra) está sin verificar."
+  },
+  {
+   "id": "guerra-civil",
+   "nombre": {
+    "es": "La Guerra Civil española",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "inicio": 1936,
+   "fin": 1939,
+   "imagen": "img/opt/isla-guerra-civil.webp",
+   "ratio": 1.23,
+   "fuentes": [
+    {
+     "nombre": "Gran Enciclopèdia Catalana",
+     "url": "https://www.enciclopedia.cat/gran-enciclopedia-catalana/guerra-civil-espanyola"
+    },
+    {
+     "nombre": "Encyclopædia Universalis",
+     "url": "https://www.universalis.fr/encyclopedie/guerre-civile-espagnole-reperes-chronologiques/"
+    }
+   ],
+   "estado": "verificada",
+   "nota": "Inicio 17-19 jul 1936 según la fuente (convencional: 18 jul); fin 1 abr 1939."
+  },
+  {
+   "id": "franco",
+   "nombre": {
+    "es": "La dictadura de Franco",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "inicio": 1939,
+   "fin": 1975,
+   "imagen": "img/opt/isla-franco.webp",
+   "ratio": 1.321,
+   "fuentes": [
+    {
+     "nombre": "Origins (Ohio State University)",
+     "url": "https://origins.osu.edu/milestones/death-franco-spanish-civil-war"
+    },
+    {
+     "nombre": "Congreso de los Diputados (Cortes franquistas)",
+     "url": "https://www.congreso.es/es/cem/cortesp"
+    }
+   ],
+   "estado": "verificada",
+   "nota": "El régimen se cuenta desde 1939; hay quien lo cuenta desde 1936. Fin: muerte de Franco, 20 nov 1975."
+  },
+  {
+   "id": "segunda-guerra-mundial",
+   "nombre": {
+    "es": "La Segunda Guerra Mundial",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "inicio": 1939,
+   "fin": 1945,
+   "imagen": "img/opt/isla-segunda-guerra-mundial.webp",
+   "ratio": 0.959,
+   "fuentes": [
+    {
+     "nombre": "USHMM: World War II key dates",
+     "url": "https://encyclopedia.ushmm.org/content/en/article/world-war-ii-key-dates"
+    },
+    {
+     "nombre": "National Archives (EE. UU.): rendición de Japón",
+     "url": "https://www.archives.gov/milestone-documents/surrender-of-japan"
+    }
+   ],
+   "estado": "parcial",
+   "nota": "Inicio 1 sep 1939 con una sola fuente abierta (USHMM); fin 2 sep 1945 con dos. Pendiente: imagen sin cuchillo."
+  },
+  {
+   "id": "apolo-11",
+   "nombre": {
+    "es": "La misión Apolo 11",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "inicio": 1969,
+   "fin": 1969,
+   "imagen": "img/opt/isla-apolo-11.webp",
+   "ratio": 1.997,
+   "fuentes": [
+    {
+     "nombre": "NASA: Apollo 11 mission overview",
+     "url": "https://www.nasa.gov/history/apollo-11-mission-overview/"
+    },
+    {
+     "nombre": "Smithsonian NASM: Apollo 11 timeline",
+     "url": "https://airandspace.si.edu/explore/stories/apollo-missions/apollo-11-moon-landing/apollo-11-timeline"
+    }
+   ],
+   "estado": "verificada",
+   "nota": "Alunizaje: 20 jul 1969."
+  },
+  {
+   "id": "muro-berlin",
+   "nombre": {
+    "es": "La caída del Muro de Berlín",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "inicio": 1989,
+   "fin": 1989,
+   "imagen": "img/opt/isla-muro-berlin.webp",
+   "ratio": 1.277,
+   "fuentes": [
+    {
+     "nombre": "Stiftung Berliner Mauer",
+     "url": "https://www.stiftung-berliner-mauer.de/en/topics/berlin-wall"
+    },
+    {
+     "nombre": "U.S. Department of State, Office of the Historian",
+     "url": "https://history.state.gov/milestones/1989-1992/fall-of-communism"
+    }
+   ],
+   "estado": "verificada",
+   "nota": "9 nov 1989."
+  }
+ ],
+ "cartas": [
+  {
+   "id": "c-1792",
+   "anio": 1792,
+   "mes": 9,
+   "dia": 20,
+   "pais": "Francia",
+   "tema": "derechos e igualdad",
+   "texto": {
+    "es": "Se aprueba en Francia la ley que autoriza el divorcio y lo regula como trámite civil.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "Wikisource: ley del 20 de septiembre de 1792 sobre el divorcio",
+     "url": "https://fr.wikisource.org/wiki/Le_Divorce_(Gagneur)/Appendice/Loi_du_20_septembre_1792"
+    },
+    {
+     "nombre": "Hérodote: almanaque, 20 de septiembre",
+     "url": "https://www.herodote.net/almanach-ID-3218.php"
+    }
+   ],
+   "origen": "calendario.json 09-20",
+   "estado": "verificada",
+   "nota": "Relleno 2026-11-14. La ley no es específica para mujeres: el enfoque es el derecho al divorcio. Wikisource reproduce el texto con título y fecha."
+  },
+  {
+   "id": "c-1848",
+   "anio": 1848,
+   "mes": 7,
+   "dia": 19,
+   "pais": "EE. UU.",
+   "tema": "movimientos sociales y derechos",
+   "texto": {
+    "es": "Comienza en Seneca Falls (Nueva York) la primera convención de derechos de las mujeres de EE. UU.; 100 personas firman su Declaración de Sentimientos.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "National Park Service: Declaración de Sentimientos y la primera convención",
+     "url": "https://www.nps.gov/articles/declaration-of-sentiments-the-first-women-s-rights-convention.htm"
+    },
+    {
+     "nombre": "Archivos Nacionales de EE. UU.: «A Declaration for the Rights of Women»",
+     "url": "https://prologue.blogs.archives.gov/2019/07/08/a-declaration-for-the-rights-of-women/"
+    }
+   ],
+   "origen": "calendario.json 07-19",
+   "estado": "verificada",
+   "nota": "Ancla. Convención 19–20 jul 1848; la Declaración se firmó el 20 jul (NPS). Firmantes: 100, de ellos 68 mujeres y 32 hombres. «Primera» respaldado por NPS y Census, siempre referido a EE. UU. Cuenta también para la cuota de voto y política."
+  },
+  {
+   "id": "c-1893",
+   "anio": 1893,
+   "mes": 9,
+   "dia": 19,
+   "pais": "Nueva Zelanda",
+   "tema": "voto y derechos políticos",
+   "texto": {
+    "es": "El gobernador firma la ley electoral que reconoce el voto a las mujeres en las elecciones parlamentarias de Nueva Zelanda.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "Ministerio de la Mujer de Nueva Zelanda: historia del sufragio",
+     "url": "https://www.women.govt.nz/about-us/history-womens-suffrage-aotearoa-new-zealand"
+    },
+    {
+     "nombre": "DigitalNZ (Biblioteca Nacional): historia del sufragio",
+     "url": "https://digitalnz.org/stories/522f8cc6fb002c84f2000002"
+    }
+   ],
+   "origen": "calendario.json 09-19",
+   "estado": "verificada",
+   "nota": "Ancla. 19 sep = firma del gobernador Lord Glasgow. Las dos fuentes repiten la misma frase (probable origen común en NZHistory, que dio 403). Decir «primer país autogobernado» y no «primero del mundo» si se amplía. Las mujeres no pudieron presentarse como candidatas hasta 1919. El 28 nov (primer voto) ya está en el calendario."
+  },
+  {
+   "id": "c-1920",
+   "anio": 1920,
+   "mes": 8,
+   "dia": 18,
+   "pais": "EE. UU.",
+   "tema": "voto y derechos políticos",
+   "texto": {
+    "es": "Tennessee ratifica la 19.ª Enmienda de EE. UU., sobre el voto de las mujeres, y completa los estados necesarios; se certifica el 26 de agosto.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "Archivos Nacionales de EE. UU.: 19.ª Enmienda",
+     "url": "https://www.archives.gov/milestone-documents/19th-amendment"
+    },
+    {
+     "nombre": "National Constitution Center: la 19.ª Enmienda entra en la Constitución",
+     "url": "https://constitutioncenter.org/amp/blog/on-this-day-the-19th-amendment-joins-the-constitution"
+    }
+   ],
+   "origen": "calendario.json 08-18",
+   "estado": "verificada",
+   "nota": "Ancla. Tennessee fue el 36.º estado, el 18 ago 1920 (Archivos Nacionales). [VERIFICAR] La certificación del 26 ago (secretario de Estado Colby) solo está en una fuente abierta. Los Archivos dicen que «muchas mujeres siguieron sin poder votar» durante décadas; las barreras concretas (leyes Jim Crow, tasas de voto) salen solo de búsquedas no abiertas. Cuenta para la cuota de voto. Fuentes básicas."
+  },
+  {
+   "id": "c-1931",
+   "anio": 1931,
+   "mes": 10,
+   "dia": 1,
+   "pais": "España",
+   "tema": "voto y derechos políticos",
+   "texto": {
+    "es": "Las Cortes españolas aprueban que los ciudadanos de ambos sexos mayores de 23 años tengan los mismos derechos electorales.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "Congreso de los Diputados (blog): la sesión del 1 de octubre de 1931",
+     "url": "https://blog.congreso.es/1-de-octubre-de-1931-la-sesion-en-la-que-las-mujeres-dan-el-gran-paso-hacia-la-plena-ciudadania-politica/"
+    },
+    {
+     "nombre": "Universidad de Barcelona: Constitución de 1931 (art. 36)",
+     "url": "https://www.ub.edu/ciudadania/textos/constituciones/ce1931.htm"
+    }
+   ],
+   "origen": "calendario.json 10-01",
+   "estado": "verificada",
+   "nota": "Ancla. El 1 oct se vota el artículo (art. 34 en el proyecto, 36 en la Constitución del 9 dic 1931). NO poner cifras de votos: las fuentes discrepan (161-121 / 161-131). Mencionar a Clara Campoamor en la versión larga."
+  },
+  {
+   "id": "c-1933",
+   "anio": 1933,
+   "mes": 11,
+   "dia": 19,
+   "pais": "España",
+   "tema": "voto y derechos políticos",
+   "texto": {
+    "es": "Las mujeres españolas votan por primera vez en unas elecciones generales.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "Wikipedia: 1933 Spanish general election",
+     "url": "https://en.wikipedia.org/wiki/1933_Spanish_general_election"
+    },
+    {
+     "nombre": "Euro Weekly News",
+     "url": "https://euroweeklynews.com/2018/11/19/female-suffrage-spain-marks-85-years-since-women-first-voted-in-elections-today/"
+    }
+   ],
+   "origen": "calendario.json 11-19",
+   "estado": "verificada",
+   "nota": "Sustituir la segunda fuente por una oficial (Congreso de los Diputados, Museo Reina Sofía)."
+  },
+  {
+   "id": "c-1945",
+   "anio": 1945,
+   "mes": 10,
+   "dia": 21,
+   "pais": "Francia",
+   "tema": "voto y derechos políticos",
+   "texto": {
+    "es": "Las francesas votan por primera vez en un escrutinio nacional, un año después de que una ordenanza les reconociera el voto.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "Asamblea Nacional de Francia: las 33 mujeres elegidas diputadas en 1945",
+     "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/histoire/le-suffrage-universel/la-conquete-de-la-citoyennete-politique-des-femmes/les-33-femmes-elues-deputees-pour-la-premiere-fois-en-1945"
+    },
+    {
+     "nombre": "Ministerio de Cultura de Francia: exposición de los Archivos Nacionales sobre el voto de las mujeres",
+     "url": "https://www.culture.gouv.fr/fr/Actualites/Archives-nationales-trois-raisons-de-ne-pas-manquer-l-exposition-sur-le-droit-de-vote-des-femmes"
+    }
+   ],
+   "origen": "calendario.json 10-21",
+   "estado": "verificada",
+   "nota": "Ancla. Elecciones del 21 oct 1945 (33 diputadas elegidas); ordenanza del 21 abr 1944 (publicada en el Journal officiel el 22 abr 1944). Es el primer voto en un escrutinio NACIONAL, no el primero absoluto: ya votaron en las municipales del 29 abr 1945 (Asamblea Nacional). Decir siempre «escrutinio nacional». Cuenta para la cuota de voto."
+  },
+  {
+   "id": "c-1971",
+   "anio": 1971,
+   "mes": 2,
+   "dia": 7,
+   "pais": "Suiza",
+   "tema": "voto y derechos políticos",
+   "texto": {
+    "es": "Los votantes suizos, solo hombres, aprueban en referéndum el voto y la elegibilidad de las mujeres a nivel federal, con un 65,7 % a favor.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "Parlamento suizo: las mujeres votan",
+     "url": "https://www.parlament.ch/de/%C3%BCber-das-parlament/Seiten/Frauen-stimmen.aspx"
+    },
+    {
+     "nombre": "Biblioteca del Congreso de EE. UU.: 50 años del voto femenino en Suiza",
+     "url": "https://blogs.loc.gov/law/2021/04/50-years-of-womens-suffrage-in-switzerland/"
+    }
+   ],
+   "origen": "calendario.json 02-07",
+   "estado": "verificada",
+   "nota": "Ancla. 7 feb 1971, 65,7 % sí / 34,3 % no. Appenzell Innerrhoden: sentencia del Tribunal Federal el 27 nov 1990 y primer voto de mujeres allí el 28 abr 1991. No afirmar «último cantón» (ninguna fuente abierta lo dice). Cuenta para la cuota de voto."
+  },
+  {
+   "id": "c-1978",
+   "anio": 1978,
+   "mes": 12,
+   "dia": 6,
+   "pais": "España",
+   "tema": "derechos e igualdad",
+   "texto": {
+    "es": "España aprueba en referéndum su Constitución, que prohíbe en el artículo 14 la discriminación por razón de sexo.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "Congreso de los Diputados: la Constitución de 1978",
+     "url": "https://www.congreso.es/cem/const1978"
+    },
+    {
+     "nombre": "BOE: Constitución Española",
+     "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+    }
+   ],
+   "origen": "calendario.json 12-06",
+   "estado": "verificada",
+   "nota": "Relleno 2026-11-13. El Congreso da el referéndum del 6 dic 1978 y el BOE el artículo 14 (y su publicación el 29 dic 1978): cada fuente confirma una parte. Se evita deliberadamente la masacre de Montreal del 6 dic (tema sensible). Cuenta como día de España."
+  },
+  {
+   "id": "c-1981",
+   "anio": 1981,
+   "mes": 7,
+   "dia": 7,
+   "pais": "España",
+   "tema": "derechos civiles",
+   "texto": {
+    "es": "España promulga la Ley 30/1981, que regula la nulidad, la separación y el divorcio del matrimonio.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+   },
+   "fuentes": [
+    {
+     "nombre": "BOE: Ley 30/1981, de 7 de julio",
+     "url": "https://www.boe.es/eli/es/l/1981/07/07/30/con/19810720"
+    },
+    {
+     "nombre": "El Derecho: reflexiones sobre el aniversario de la ley del divorcio",
+     "url": "https://elderecho.com/reflexiones-sobre-el-aniversario-de-la-ley-del-divorcio"
+    }
+   ],
+   "origen": "calendario.json 07-07",
+   "estado": "verificada",
+   "nota": "Ancla. 7 jul 1981 = fecha de la ley; publicada en el BOE núm. 172 del 20 jul 1981; en vigor el 9 ago 1981. Aprobación en el Congreso el 22 jun 1981 (Abogacía). La fuente 2 es un portal jurídico, no institucional: repasar si se quiere reforzar. Una fuente dice «entró en vigor el 7 jul», lo que contradice al BOE."
+  }
+ ]
+}

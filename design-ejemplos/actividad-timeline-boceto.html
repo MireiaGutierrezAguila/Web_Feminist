@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La línea del tiempo · Feminist</title>
+<!-- BOCETO de la actividad «La línea del tiempo» (paso 3: maqueta).
+     Camino sinuoso vertical de 1700 a hoy con las islas-hito fijas (data/timeline.json). Las cartas son de PRUEBA, tomadas de calendario.json.
+     Todavía NO se arrastra ni se coloca la carta (paso 4): ahora solo se ve la escala y se puede tocar la línea para marcar un año. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --negro: #101010; --blanco: #F5F5F0; --morado: #6B2D8C; --oro: #C9A24B; --oro-claro: #E8CE86; --rosa: #C2386E; --plata: #b9b1c9;
+    --fondo: #101010; --panel: #17121f; --suave: #b9b1c9;
+    --fuente-titulos: "Cinzel Decorative", Georgia, serif; --fuente-nombres: "Cinzel", Georgia, serif;
+    --fuente-texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--fondo); color: var(--blanco); font-family: var(--fuente-texto); font-size: 1rem; line-height: 1.5; }
+  :focus-visible { outline: 3px solid var(--oro-claro); outline-offset: 3px; }
+  a { color: var(--oro-claro); }
+  .envoltorio { width: min(1040px, 100% - 32px); margin-inline: auto; }
+  header.cab { position: relative; padding: 18px 0 4px; }
+  header.cab .envoltorio { position: relative; }
+  .logo { display: block; width: fit-content; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.4rem; color: var(--blanco); text-decoration: none; }
+  h1 { display: inline-block; margin: 22px 0 8px; padding: .25em .7em; background: var(--morado); color: var(--blanco); transform: rotate(-1.2deg); box-shadow: 5px 5px 0 var(--blanco);
+    font-family: var(--fuente-titulos); font-weight: 700; font-size: clamp(1.4rem, 5vw, 2.2rem); line-height: 1.25; }
+  .sub { max-width: 62ch; color: #e6e0f0; margin: 6px 0 0; }
+  .aviso-boceto { margin: 14px 0 0; padding: 8px 12px; border-left: 4px solid var(--oro); background: rgba(201, 162, 75, .08); border-radius: 0 10px 10px 0; color: var(--oro-claro); font-size: .9rem; }
+  main { position: relative; z-index: 1; padding-bottom: 0; }
+
+  /* botones: las pastillas rayadas de la UI del videojuego */
+  .btn { font: inherit; font-family: var(--fuente-nombres); font-weight: 700; letter-spacing: .04em; cursor: pointer; min-height: 64px; min-width: 130px; padding: 0 6px; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, .7);
+    border: 20px solid transparent; border-width: 20px 24px; background: none; border-image: url("img/opt/boton-verde.webp") 30% 26% fill / 20px 24px stretch; transition: filter .15s, transform .1s; }
+  .btn:hover { filter: brightness(1.15); }
+  .btn:active:not(:disabled) { transform: translateY(2px) scale(.97); filter: brightness(.85); }
+  .btn:disabled { filter: grayscale(.85) brightness(.65); cursor: default; }
+  .btn.primario { color: #2b1805; text-shadow: 0 1px 0 rgba(255, 255, 255, .35); border-image-source: url("img/opt/boton-naranja.webp"); }
+
+  /* ---------- La línea del tiempo ---------- */
+  .linea { position: relative; width: min(1040px, 100% - 32px); margin: 18px auto 0; touch-action: pan-y; cursor: crosshair; user-select: none; -webkit-user-select: none; }
+  .camino, .conectores { position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+  .camino .via { fill: none; stroke: rgba(185, 177, 201, .55); stroke-width: 4; stroke-linecap: round; }
+  .camino .via-luz { fill: none; stroke: rgba(232, 206, 134, .35); stroke-width: 1.5; stroke-linecap: round; }
+  .camino .tramo { fill: none; stroke-width: 6; stroke-linecap: round; opacity: .95; }
+  .conectores path { fill: none; stroke-width: 1.5; stroke-linejoin: round; opacity: .75; }
+  .marca { position: absolute; transform: translate(-50%, -50%); padding: 1px 9px; border-radius: 99px; background: var(--panel); border: 1px solid rgba(185, 177, 201, .5); font-family: var(--fuente-nombres); font-weight: 700; font-size: .78rem; color: var(--blanco); pointer-events: none; white-space: nowrap; }
+  .marca.siglo { border-color: var(--oro); color: var(--oro-claro); font-size: .9rem; padding: 2px 11px; }
+  .isla { position: absolute; margin: 0; padding: 0; background: none; border: 0; color: inherit; font: inherit; text-align: center; cursor: pointer; }
+  .isla img { display: block; width: 100%; height: auto; animation: flota 7s ease-in-out infinite; filter: drop-shadow(0 10px 14px rgba(0, 0, 0, .55)); }
+  .isla:nth-of-type(even) img { animation-delay: -3s; }
+  .isla .nombre { display: block; margin-top: 2px; font-family: var(--fuente-nombres); font-weight: 700; font-size: .84rem; line-height: 1.2; color: var(--oro-claro); text-shadow: 0 1px 3px #000; }
+  .isla .anios { display: block; font-size: .8rem; color: var(--blanco); text-shadow: 0 1px 3px #000; }
+  .isla:hover .nombre, .isla:focus-visible .nombre { color: #fff; }
+  @keyframes flota { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+  /* línea guía que se coloca al tocar */
+  .guia { position: absolute; pointer-events: none; z-index: 4; box-shadow: 0 0 10px rgba(232, 206, 134, .6); }
+  .guia.hor { left: 0; right: 0; height: 0; border-top: 2px solid var(--oro-claro); }
+  .guia.ver { width: 0; border-left: 2px solid var(--oro-claro); }
+  .guia[hidden] { display: none; }
+  .guia .anio { position: absolute; top: -17px; transform: translateX(-50%); min-width: 72px; padding: 2px 10px; text-align: center; border-radius: 99px; background: var(--oro); color: #2b1805; font-family: var(--fuente-nombres); font-weight: 700; font-size: .95rem; }
+
+  /* ---------- Bandeja con la carta ---------- */
+  .bandeja { position: sticky; bottom: 0; z-index: 5; margin-top: 18px; padding: 12px 14px 14px; background: linear-gradient(180deg, rgba(23, 18, 31, .96), #0c0912); border-top: 2px solid rgba(185, 177, 201, .45); border-radius: 18px 18px 0 0; box-shadow: 0 -10px 24px rgba(0, 0, 0, .55); }
+  .bandeja .cont { display: flex; align-items: center; gap: 14px; }
+  .carta { flex: 1; min-width: 0; padding: 10px 14px; border: 1px solid rgba(185, 177, 201, .5); border-radius: 12px; background: rgba(245, 245, 240, .06); }
+  .carta .cuenta { margin: 0 0 2px; font-family: var(--fuente-nombres); font-weight: 700; font-size: .78rem; letter-spacing: .06em; color: var(--oro-claro); }
+  .carta .pais { color: var(--plata); font-size: .85rem; }
+  .carta .texto { margin: 2px 0 0; font-size: .95rem; line-height: 1.35; }
+  .bandeja .ayuda { margin: 8px 0 0; font-size: .85rem; color: var(--suave); }
+
+  /* ---------- Cuadro de información de una isla ---------- */
+  dialog.info { width: min(460px, calc(100% - 28px)); padding: 22px 24px 20px; color: var(--blanco); background: var(--panel); border: 1px solid rgba(185, 177, 201, .6); border-radius: 14px; box-shadow: 0 0 0 4px #0c0912, 0 0 0 5px rgba(201, 162, 75, .55), 0 20px 50px rgba(0, 0, 0, .7); }
+  dialog.info::backdrop { background: rgba(0, 0, 0, .75); }
+  dialog.info h2 { margin: 0 0 4px; font-family: var(--fuente-nombres); font-size: 1.25rem; color: var(--oro-claro); }
+  dialog.info .anios { margin: 0 0 10px; font-family: var(--fuente-titulos); font-size: 1.3rem; }
+  dialog.info p { margin: 6px 0; }
+  dialog.info ul { margin: 6px 0 14px; padding-left: 20px; }
+  dialog.info .nota { font-size: .88rem; color: var(--suave); }
+  dialog.info .btn { min-height: 56px; }
+
+  footer { position: relative; z-index: 1; background: #000; border-top: 2px solid rgba(185, 177, 201, .35); }
+  footer .envoltorio { padding: 22px 0 28px; } .firma { margin: 0; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.05rem; color: var(--oro-claro); }
+
+  /* fondo de espirales irregulares, muy suaves, y botón «Parar efectos» (iguales que en las otras actividades) */
+  .fondo-esp { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+  .esp { position: absolute; }
+  .esp.e1 { left: 3%; top: 9%; width: min(250px, 55vw); opacity: .075; animation: gira2 80s linear infinite; }
+  .esp.e2 { right: 2%; top: 34%; width: min(400px, 80vw); opacity: .065; animation: gira1 110s linear infinite; }
+  .esp.e3 { left: 9%; bottom: 3%; width: min(540px, 100vw); opacity: .055; animation: gira2 140s linear infinite; }
+  @keyframes gira1 { to { transform: rotate(360deg); } } @keyframes gira2 { to { transform: rotate(-360deg); } }
+  .btn-efectos { position: absolute; right: 0; top: 18px; z-index: 3; display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; min-height: 40px; font: inherit; font-size: .9rem; font-weight: 700; color: var(--blanco); background: rgba(23, 18, 31, .85); border: 1px solid rgba(185, 177, 201, .5); border-radius: 99px; cursor: pointer; }
+  .btn-efectos:hover { border-color: var(--oro-claro); color: var(--oro-claro); }
+  body.sin-efectos .esp, body.sin-efectos .isla img { animation: none !important; }
+  @media (prefers-reduced-motion: reduce) { .esp, .isla img { animation: none; } }
+  @media (min-width: 760px) { .isla .nombre { font-size: 1rem; } .isla .anios { font-size: .9rem; } .marca { font-size: .85rem; } }
+  /* escritorio: serpiente de 4 filas a todo el ancho de la pantalla; la leyenda va sobre la parte baja de la isla */
+  @media (min-width: 900px) {
+    .linea { width: calc(100% - 48px); margin-top: 6px; }
+    .envoltorio { width: calc(100% - 48px); }
+    header.cab { padding: 12px 0 0; } header.cab .envoltorio { display: flex; flex-wrap: wrap; align-items: center; column-gap: 28px; }
+    h1 { margin: 0; font-size: 1.6rem; } .sub { flex: 1 1 320px; margin: 0; font-size: .95rem; } .aviso-boceto { flex-basis: 100%; margin-top: 8px; padding: 4px 12px; font-size: .82rem; }
+    .bandeja { padding: 8px 0 10px; margin-top: 6px; } .bandeja .envoltorio { display: flex; align-items: center; gap: 22px; } .bandeja .cont { flex: 1; }
+    .carta { padding: 6px 14px; } .carta .cuenta { display: inline-block; margin-right: 10px; } .carta .texto { font-size: .92rem; } .bandeja .ayuda { margin: 0; max-width: 240px; }
+  }
+  .isla.serp { overflow: visible; }
+  .isla.serp .leyenda { position: absolute; left: 0; right: 0; bottom: 0; padding-top: 16px; background: linear-gradient(180deg, transparent, rgba(8, 5, 12, .72) 55%); border-radius: 0 0 14px 14px; }
+  .isla.serp .nombre { margin: 0; font-size: .74rem; line-height: 1.15; } .isla.serp .anios { font-size: .72rem; line-height: 1.2; }
+  @media (min-width: 1500px) { .isla.serp .nombre { font-size: .86rem; } .isla.serp .anios { font-size: .8rem; } }
+</style>
+</head>
+<body>
+<div class="fondo-esp" aria-hidden="true"><svg class="esp e1" id="esp1" viewBox="-400 -400 800 800"></svg><svg class="esp e2" id="esp2" viewBox="-400 -400 800 800"></svg><svg class="esp e3" id="esp3" viewBox="-400 -400 800 800"></svg></div>
+<header class="cab"><div class="envoltorio">
+  <a class="logo" href="#">FEMINIST</a>
+  <button class="btn-efectos" id="btnEfectos" type="button" aria-pressed="false"></button>
+  <h1 id="titulo"></h1>
+  <p class="sub" id="subtitulo"></p>
+  <p class="aviso-boceto" id="avisoBoceto"></p>
+</div></header>
+<main>
+  <div class="linea" id="linea">
+    <svg class="camino" id="camino" aria-hidden="true"></svg>
+    <svg class="conectores" id="conectores" aria-hidden="true"></svg>
+    <div class="guia" id="guia" hidden><span class="anio" id="guiaAnio"></span></div>
+  </div>
+  <div class="bandeja" id="bandeja"><div class="envoltorio">
+    <div class="cont"><div class="carta" id="carta"></div></div>
+    <p class="ayuda" id="ayuda"></p>
+  </div></div>
+</main>
+<dialog class="info" id="info" aria-labelledby="infoTitulo">
+  <h2 id="infoTitulo"></h2><p class="anios" id="infoAnios"></p><p class="nota" id="infoNota"></p>
+  <p id="infoFuentesT"></p><ul id="infoFuentes"></ul>
+  <button class="btn" id="infoCerrar" type="button"></button>
+</dialog>
+<footer><div class="envoltorio"><p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p></div></footer>
+
+<script>
+(function () {
+  'use strict';
+  /* Textos de interfaz (castellano). Catalán e inglés: pendientes de traducir. */
+  var TXT = {
+    titulo: 'La línea del tiempo', subtitulo: 'Coloca cada hecho feminista en su año. Las islas te marcan los grandes momentos de la historia para orientarte.',
+    aviso: 'Boceto (paso 3): ya se ve la escala y las islas. Toca la línea para marcar un año; arrastrar y colocar la carta llega en el siguiente paso. Cartas de prueba.',
+    cuenta: function (i, n) { return 'Carta ' + i + ' de ' + n; },
+    ayuda: 'Toca la línea del tiempo para marcar un año.', anio: function (a) { return '≈ ' + a; },
+    anios: function (a, b) { return a === b ? String(a) : a + ' – ' + b; }, aproxima: 'hacia ',
+    fuentes: 'Fuentes:', sinFuente: '[FUENTE PENDIENTE]', cerrar: 'Cerrar',
+    verde: { verificada: '', parcial: 'Fechas pendientes de segunda fuente.' },
+    efectosOn: '⏸ Parar efectos', efectosOff: '▶ Activar efectos'
+  };
+  var $ = function (id) { return document.getElementById(id); };
+  var NS = 'http://www.w3.org/2000/svg';
+  function el(tag, clase, texto) { var n = document.createElement(tag); if (clase) { n.className = clase; } if (texto !== undefined) { n.textContent = texto; } return n; }
+  function svg(tag, attrs) { var n = document.createElementNS(NS, tag); for (var k in attrs) { n.setAttribute(k, attrs[k]); } return n; }
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var sinEfectos = reduce;
+  try { var gE = localStorage.getItem('feminist-sin-efectos'); if (gE !== null) { sinEfectos = gE === '1'; } } catch (e) { /* sin almacenamiento: valor por defecto */ }
+  function pintarEfectos() { document.body.classList.toggle('sin-efectos', sinEfectos); $('btnEfectos').textContent = sinEfectos ? TXT.efectosOff : TXT.efectosOn; $('btnEfectos').setAttribute('aria-pressed', sinEfectos ? 'true' : 'false'); }
+  $('btnEfectos').addEventListener('click', function () { sinEfectos = !sinEfectos; try { localStorage.setItem('feminist-sin-efectos', sinEfectos ? '1' : '0'); } catch (e) { /* sin almacenamiento */ } pintarEfectos(); });
+  pintarEfectos();
+
+  /* espirales de fondo (irregulares, como las de la portada) */
+  (function () {
+    function irregular(vueltas, escala, semilla) {
+      var pts = [];
+      for (var t = 0; t <= vueltas * 2 * Math.PI; t += 0.12) {
+        var r = escala * t * (1 + 0.11 * Math.sin(t * 1.3 + semilla) + 0.07 * Math.sin(t * 3.1 + 2 * semilla)), a = t + 0.06 * Math.sin(t * 2.2 + semilla);
+        pts.push((r * Math.cos(a)).toFixed(1) + ' ' + (r * Math.sin(a)).toFixed(1));
+      }
+      return 'M' + pts.join(' L');
+    }
+    [['esp1', 11, 4.4, 1.7], ['esp2', 8, 6.2, 4.1], ['esp3', 9, 5.2, 2.9]].forEach(function (e) {
+      $(e[0]).appendChild(svg('path', { d: irregular(e[1], e[2], e[3]), fill: 'none', stroke: '#F5F5F0', 'stroke-width': 15, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }));
+    });
+  })();
+
+  $('titulo').textContent = TXT.titulo; $('subtitulo').textContent = TXT.subtitulo; $('avisoBoceto').textContent = TXT.aviso; $('ayuda').textContent = TXT.ayuda;
+  $('infoFuentesT').textContent = TXT.fuentes; $('infoCerrar').textContent = TXT.cerrar;
+
+  var datos = null, geo = null, anioGuia = null;
+  var COLORES = ['#8b4cc0', '#C9A24B', '#b9b1c9'];  /* violeta, oro y plata: la paleta de efectos de las actividades */
+  var PASO = 4;                                      /* separación (px) de las muestras con que se mide el camino */
+
+  /* ---------- El camino: una curva muestreada (año ↔ posición) que sirve para los dos formatos ----------
+     · móvil: camino sinuoso vertical.
+     · escritorio: serpiente de 4 filas horizontales unidas por curvas en U, como el ejemplo, a todo el ancho. */
+  function medir() {
+    var linea = $('linea'), W = linea.clientWidth, e = datos.escala, serp = window.innerWidth >= 900;
+    var g = { W: W, serp: serp, pts: [], filas: 4 };
+    function meter(x, y, fila) { g.pts.push({ x: x, y: y, fila: fila }); }
+    if (!serp) {
+      g.px = 10; g.top = 56; g.amp = 10; g.per = 820; g.maxH = 135; g.cx = Math.round(W / 2);
+      g.gap = g.amp + 40; g.colW = g.cx - g.gap;
+      var yFin = g.top + (e.fin - e.inicio) * g.px;
+      for (var y = g.top; y <= yFin + 0.1; y += PASO) { meter(g.cx + g.amp * Math.sin(2 * Math.PI * y / g.per), y, 0); }
+      g.alto = yFin + 90;
+    } else {
+      var topLinea = linea.getBoundingClientRect().top + window.pageYOffset;
+      var disp = window.innerHeight - topLinea - $('bandeja').offsetHeight - 14;   /* que quepa en una pantalla */
+      var H = Math.max(480, disp), R = H / 4, r = R / 2, pad = 30;
+      g.R = R; g.alto = H; g.maxH = 190;
+      var xL = pad + r, xR = W - pad - r, L = xR - xL; g.xL = xL; g.xR = xR;
+      var yf = function (i) { return R * (i + 1) - 18; };   /* altura del camino de cada fila: arriba queda sitio para las islas */
+      for (var i = 0; i < 4; i++) {
+        var dir = i % 2 === 0 ? 1 : -1;
+        for (var t = 0; t < L; t += PASO) { meter(dir > 0 ? xL + t : xR - t, yf(i), i); }
+        if (i < 3) {
+          var cxb = dir > 0 ? xR : xL, cyb = (yf(i) + yf(i + 1)) / 2;
+          for (var f = 0; f < Math.PI; f += PASO / r) { meter(cxb + dir * r * Math.sin(f), cyb - r * Math.cos(f), i); }
+        }
+      }
+      meter(xR - L, yf(3), 3);   /* la última fila va de derecha a izquierda: acaba en el borde izquierdo */
+      g.yf = yf;
+    }
+    var n = g.pts.length; g.pts.forEach(function (q, k) { q.a = e.inicio + (e.fin - e.inicio) * k / (n - 1); });
+    g.pxAnio = (n - 1) * PASO / (e.fin - e.inicio);
+    g.punto = function (a) {   /* posición del año a en el camino */
+      var k = (a - e.inicio) / (e.fin - e.inicio) * (n - 1); k = Math.max(0, Math.min(n - 1, k));
+      var i0 = Math.floor(k), i1 = Math.min(n - 1, i0 + 1), f = k - i0;
+      return { x: g.pts[i0].x + (g.pts[i1].x - g.pts[i0].x) * f, y: g.pts[i0].y + (g.pts[i1].y - g.pts[i0].y) * f, fila: g.pts[i0].fila };
+    };
+    g.cerca = function (x, y) {   /* año del punto del camino más cercano a (x, y) */
+      var mejor = 1e12, ma = e.inicio;
+      g.pts.forEach(function (q) { var d = (q.x - x) * (q.x - x) + (q.y - y) * (q.y - y); if (d < mejor) { mejor = d; ma = q.a; } });
+      return ma;
+    };
+    return g;
+  }
+  function trazo(a1, a2, dx, dy) {   /* tramo del camino entre dos años, desplazado dx, dy */
+    var p = [];
+    geo.pts.forEach(function (q) { if (q.a >= a1 && q.a <= a2) { p.push((q.x + dx).toFixed(1) + ' ' + (q.y + dy).toFixed(1)); } });
+    return p.length > 1 ? 'M' + p.join(' L') : '';
+  }
+
+  function dibujar() {
+    var linea = $('linea'), cam = $('camino'), con = $('conectores');
+    geo = medir();
+    Array.prototype.slice.call(linea.querySelectorAll('.isla, .marca')).forEach(function (n) { n.remove(); });
+    cam.textContent = ''; con.textContent = '';
+    var e = datos.escala, serp = geo.serp;
+    var alto = geo.alto;
+    cam.appendChild(svg('path', { 'class': 'via', d: trazo(e.inicio, e.fin, 0, 0) }));
+    cam.appendChild(svg('path', { 'class': 'via-luz', d: trazo(e.inicio, e.fin, 0, 0) }));
+
+    /* marcas de año cada 25 años (cada 100 destacada) */
+    for (var a = e.inicio; a <= e.fin; a += 25) {
+      var q = geo.punto(a), m = el('div', 'marca' + (a % 100 === 0 ? ' siglo' : ''), String(a));
+      m.style.left = q.x + 'px'; m.style.top = q.y + 'px'; linea.appendChild(m);
+    }
+
+    var minLong = 9 / geo.pxAnio / 2;   /* un tramo de un solo año se ve al menos con unos 9 px */
+    var finCarril = { r: [], l: [], s: [] }, libre = { r: 0, l: 0 }, filas = [[], [], [], []];
+    datos.islas.forEach(function (isl, i) {
+      var col = COLORES[i % 3], mid = (isl.inicio + isl.fin) / 2, pm = geo.punto(mid);
+      var h, w, lado;
+      if (!serp) { h = Math.min(geo.maxH, geo.colW / isl.ratio); w = Math.min(h * isl.ratio, geo.colW); }
+      else { h = Math.min(geo.maxH, geo.R - 34); w = h * isl.ratio; if (w > 170 + h * 0.4) { w = 170 + h * 0.4; h = w / isl.ratio; } }
+      var info = { isl: isl, i: i, col: col, mid: mid, pm: pm, h: h, w: w };
+      if (!serp) {
+        /* móvil: la isla va al lado con más sitio libre cerca de su año; su tramo de años va junto al camino, en su carril */
+        var alto2 = h + 44, ideal = Math.max(pm.y - h / 2, 6), tr = Math.max(ideal, libre.r), tl = Math.max(ideal, libre.l);
+        lado = tl < tr ? 'l' : 'r'; var sg = lado === 'r' ? 1 : -1, top = lado === 'r' ? tr : tl; libre[lado] = top + alto2 + 10;
+        var c = 0; while (finCarril[lado][c] !== undefined && finCarril[lado][c] >= isl.inicio) { c++; }
+        finCarril[lado][c] = Math.max(isl.fin, isl.inicio + 1);
+        cam.appendChild(svg('path', { 'class': 'tramo', d: trazo(isl.inicio - minLong, isl.fin + minLong, sg * (10 + c * 8), 0), stroke: col }));
+        var bx0 = lado === 'r' ? geo.cx + geo.gap : geo.cx - geo.gap - geo.colW;
+        var b = crearIsla(info, 0); b.style.left = bx0 + 'px'; b.style.top = top + 'px'; b.style.width = geo.colW + 'px';
+        var bx = pm.x + sg * (13 + c * 8), ex = geo.cx + sg * (geo.amp + 31 + (i % 3) * 4), yi = top + h / 2, fin = lado === 'r' ? bx0 - 3 : bx0 + geo.colW + 3;
+        con.appendChild(svg('path', { stroke: col, d: 'M' + bx + ' ' + pm.y + ' L' + ex + ' ' + pm.y + ' L' + ex + ' ' + yi + ' L' + fin + ' ' + yi }));
+        alto = Math.max(alto, top + alto2 + 30);
+      } else {
+        /* escritorio: la isla va encima del camino de su fila; su tramo se dibuja sobre el camino, en un carril si se solapa */
+        var c2 = 0; while (finCarril.s[c2] !== undefined && finCarril.s[c2] >= isl.inicio) { c2++; }
+        finCarril.s[c2] = Math.max(isl.fin, isl.inicio + 1); info.c = c2;
+        cam.appendChild(svg('path', { 'class': 'tramo', d: trazo(isl.inicio - minLong, isl.fin + minLong, 0, -(7 + c2 * 7)), stroke: col }));
+        info.fila = Math.min(3, pm.fila); info.x = pm.x; filas[info.fila].push(info);
+      }
+    });
+    if (serp) {
+      filas.forEach(function (lista, f) {
+        lista.sort(function (u, v) { return u.x - v.x; });
+        var sep = 12, min = 8 + 0, max = geo.W - 8;
+        lista.forEach(function (it, k) { var prev = lista[k - 1]; it.x = Math.max(it.x, prev ? prev.x + (prev.w + it.w) / 2 + sep : it.w / 2 + min); });
+        for (var k = lista.length - 1; k >= 0; k--) { var it = lista[k], sig = lista[k + 1]; it.x = Math.min(it.x, sig ? sig.x - (sig.w + it.w) / 2 - sep : max - it.w / 2); }
+        lista.forEach(function (it) {
+          var yRoad = geo.yf(f), top = yRoad - 20 - it.h;
+          var b = crearIsla(it, 1); b.style.left = (it.x - it.w / 2) + 'px'; b.style.top = top + 'px'; b.style.width = it.w + 'px'; b.style.height = it.h + 'px';
+          con.appendChild(svg('path', { stroke: it.col, d: 'M' + it.x + ' ' + (top + it.h) + ' L' + it.pm.x + ' ' + (it.pm.y - (7 + it.c * 7) - 3) }));
+        });
+      });
+    }
+    linea.style.height = alto + 'px';
+    if (anioGuia !== null) { ponerGuia(anioGuia); }
+  }
+
+  /* botón de una isla: imagen + leyenda (nombre y años) */
+  function crearIsla(it, serp) {
+    var isl = it.isl, b = el('button', 'isla' + (serp ? ' serp' : '')); b.type = 'button';
+    var img = el('img'); img.src = isl.imagen; img.alt = ''; img.style.width = it.w + 'px'; img.style.margin = '0 auto'; img.width = Math.round(it.w); img.height = Math.round(it.h); img.decoding = 'async';
+    var nom = el('span', 'nombre', isl.nombre.es), an = el('span', 'anios', (isl.id === 'industrial' ? TXT.aproxima : '') + TXT.anios(isl.inicio, isl.fin));
+    b.appendChild(img);
+    if (serp) { var ley = el('span', 'leyenda'); ley.appendChild(nom); ley.appendChild(an); b.appendChild(ley); } else { b.appendChild(nom); b.appendChild(an); }
+    b.setAttribute('aria-label', isl.nombre.es + ', ' + TXT.anios(isl.inicio, isl.fin));
+    b.addEventListener('click', function (ev) { ev.stopPropagation(); abrirInfo(isl); });
+    $('linea').appendChild(b);
+    return b;
+  }
+
+  /* ---------- Línea guía: se marca un año tocando el camino ---------- */
+  function ponerGuia(a) {
+    var e = datos.escala; a = Math.max(e.inicio, Math.min(e.fin, Math.round(a))); anioGuia = a;
+    var q = geo.punto(a), g = $('guia'), an = $('guiaAnio'); g.hidden = false;
+    if (!geo.serp) { g.className = 'guia hor'; g.style.cssText = 'top:' + q.y + 'px'; an.style.left = q.x + 'px'; an.style.top = ''; }
+    else { var hh = geo.R * 0.8; g.className = 'guia ver'; g.style.cssText = 'left:' + q.x + 'px;top:' + (q.y - hh / 2) + 'px;height:' + hh + 'px'; an.style.left = '0'; an.style.top = '-24px'; }
+    an.textContent = TXT.anio(a);
+  }
+  $('linea').addEventListener('click', function (ev) {
+    var r = $('linea').getBoundingClientRect(); ponerGuia(geo.cerca(ev.clientX - r.left, ev.clientY - r.top));
+  });
+
+  /* ---------- Cuadro de información de una isla ---------- */
+  function abrirInfo(isl) {
+    $('infoTitulo').textContent = isl.nombre.es; $('infoAnios').textContent = TXT.anios(isl.inicio, isl.fin);
+    $('infoNota').textContent = isl.nota || '';
+    var ul = $('infoFuentes'); ul.textContent = '';
+    isl.fuentes.forEach(function (f) {
+      var li = el('li');
+      if (f.url) { var a = el('a', '', f.nombre); a.href = f.url; a.target = '_blank'; a.rel = 'noopener'; li.appendChild(a); } else { li.textContent = f.nombre || TXT.sinFuente; }
+      ul.appendChild(li);
+    });
+    $('info').showModal();
+  }
+  $('infoCerrar').addEventListener('click', function () { $('info').close(); });
+  $('info').addEventListener('click', function (ev) { if (ev.target === $('info')) { $('info').close(); } });
+
+  /* ---------- Carta de la bandeja (primera de prueba) ---------- */
+  function pintarCarta() {
+    var c = datos.cartas[0], cont = $('carta'); cont.textContent = '';
+    cont.appendChild(el('p', 'cuenta', TXT.cuenta(1, datos.cartas.length)));
+    cont.appendChild(el('span', 'pais', c.pais));
+    cont.appendChild(el('p', 'texto', c.texto.es));
+  }
+
+  fetch('data/timeline.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (d) {
+    datos = d; pintarCarta(); dibujar();
+    var t; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(dibujar, 150); });
+  }).catch(function () { $('linea').textContent = 'No se han podido cargar los datos.'; });
+})();
+</script>
+</body>
+</html>
