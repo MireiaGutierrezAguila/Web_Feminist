@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La línea del tiempo · Feminist</title>
-<!-- BOCETO de la actividad «La línea del tiempo» (paso 3: maqueta).
-     Camino sinuoso vertical de 1700 a hoy con las islas-hito fijas (data/timeline.json). Las cartas son de PRUEBA, tomadas de calendario.json.
-     Todavía NO se arrastra ni se coloca la carta (paso 4): ahora solo se ve la escala y se puede tocar la línea para marcar un año. -->
+<!-- BOCETO de la actividad «La línea del tiempo» (paso 4).
+     Cada ronda trae DOS cartas relacionadas (pregunta sin año; la explicación llega al terminar la pareja) (data/timeline.json, «parejas»). Lo que se arrastra es el PUNTERO de cada carta: se suelta donde se cree que va,
+     se corrige solo hasta su año real y se queda en la línea, pequeño; al pasar el ratón (o tocarlo) se amplía para leerlo.
+     Camino sinuoso vertical en móvil y serpiente de 4 filas en escritorio, de 1750 a hoy, con las islas-hito fijas. Datos de PRUEBA. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
     --fuente-texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--fondo); color: var(--blanco); font-family: var(--fuente-texto); font-size: 1rem; line-height: 1.5; }
+  body { margin: 0; overflow-x: clip; min-height: 100vh; display: flex; flex-direction: column; background: var(--fondo); color: var(--blanco); font-family: var(--fuente-texto); font-size: 1rem; line-height: 1.5; }
   :focus-visible { outline: 3px solid var(--oro-claro); outline-offset: 3px; }
   a { color: var(--oro-claro); }
   .envoltorio { width: min(1040px, 100% - 32px); margin-inline: auto; }
@@ -53,6 +54,7 @@
   .isla:nth-of-type(even) img { animation-delay: -3s; }
   .isla .nombre { display: block; margin-top: 2px; font-family: var(--fuente-nombres); font-weight: 700; font-size: .84rem; line-height: 1.2; color: var(--oro-claro); text-shadow: 0 1px 3px #000; }
   .isla .anios { display: block; font-size: .8rem; color: var(--blanco); text-shadow: 0 1px 3px #000; }
+  .isla { transition: transform .25s ease; transform-origin: 50% 100%; } .isla:hover, .isla:focus-visible { transform: scale(1.55); z-index: 9; }
   .isla:hover .nombre, .isla:focus-visible .nombre { color: #fff; }
   @keyframes flota { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
   /* línea guía que se coloca al tocar */
@@ -62,23 +64,122 @@
   .guia[hidden] { display: none; }
   .guia .anio { position: absolute; top: -17px; transform: translateX(-50%); min-width: 72px; padding: 2px 10px; text-align: center; border-radius: 99px; background: var(--oro); color: #2b1805; font-family: var(--fuente-nombres); font-weight: 700; font-size: .95rem; }
 
-  /* ---------- Bandeja con la carta ---------- */
-  .bandeja { position: sticky; bottom: 0; z-index: 5; margin-top: 18px; padding: 12px 14px 14px; background: linear-gradient(180deg, rgba(23, 18, 31, .96), #0c0912); border-top: 2px solid rgba(185, 177, 201, .45); border-radius: 18px 18px 0 0; box-shadow: 0 -10px 24px rgba(0, 0, 0, .55); }
-  .bandeja .cont { display: flex; align-items: center; gap: 14px; }
-  .carta { flex: 1; min-width: 0; padding: 10px 14px; border: 1px solid rgba(185, 177, 201, .5); border-radius: 12px; background: rgba(245, 245, 240, .06); }
-  .carta .cuenta { margin: 0 0 2px; font-family: var(--fuente-nombres); font-weight: 700; font-size: .78rem; letter-spacing: .06em; color: var(--oro-claro); }
-  .carta .pais { color: var(--plata); font-size: .85rem; }
-  .carta .texto { margin: 2px 0 0; font-size: .95rem; line-height: 1.35; }
+  /* ---------- Bandeja con las dos cartas ---------- */
+  .bandeja { position: sticky; bottom: 0; z-index: 20; margin-top: 18px; padding: 12px 0 14px; max-height: 62vh; overflow-y: auto; background: linear-gradient(180deg, rgba(23, 18, 31, .97), #0c0912); border-top: 2px solid rgba(185, 177, 201, .45); border-radius: 18px 18px 0 0; box-shadow: 0 -10px 24px rgba(0, 0, 0, .55); }
+  .bandeja .ronda { margin: 0 0 8px; font-family: var(--fuente-nombres); font-weight: 700; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--oro-claro); }
+  .cartas { display: grid; gap: 12px; grid-template-columns: 1fr 1fr; padding: 8px; }
+  /* cada carta: marco de plata fino con las esquineras de rosas de Mireia, como las cajas de las otras actividades */
+  .carta { position: relative; display: grid; grid-template-columns: auto 1fr; gap: 8px; align-items: center; padding: 8px 10px 8px 8px; cursor: pointer; border: 1px solid rgba(185, 177, 201, .5); border-radius: 14px; background: rgba(245, 245, 240, .05); }
+  .carta::before { content: ""; position: absolute; inset: -7px; pointer-events: none; z-index: 2; --esq: clamp(30px, 8vw, 40px);
+    background: url("img/opt/esquina-rosas-tl.webp") left top / var(--esq) auto no-repeat, url("img/opt/esquina-rosas-tr.webp") right top / var(--esq) auto no-repeat,
+                url("img/opt/esquina-rosas-bl.webp") left bottom / var(--esq) auto no-repeat, url("img/opt/esquina-rosas-br.webp") right bottom / var(--esq) auto no-repeat;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .6)); }
+  .carta.sel { border-color: var(--oro-claro); box-shadow: 0 0 14px rgba(232, 206, 134, .25); }
+  .carta .txt p { margin: 0 0 6px; font-size: .86rem; line-height: 1.34; }
+  .carta .txt .pregunta { font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.12rem; color: var(--oro-claro); line-height: 1.3; }
+  .carta .txt .res { color: var(--oro-claro); font-weight: 700; }
+  .carta .txt h3 { margin: 0 0 4px; font-family: var(--fuente-nombres); font-size: 1.05rem; line-height: 1.25; color: var(--oro-claro); }
+  .cartas.expl .txt p { font-size: 1rem; line-height: 1.42; }
+  /* móvil: antes de explicar solo se ven los dos punteros grandes; la pregunta de la carta elegida va debajo */
+  .cartas:not(.expl) .txt { display: none; }
+  .cartas:not(.expl) .carta { grid-template-columns: 1fr; justify-items: center; padding: 8px 6px; }
+  .cartas.expl { grid-template-columns: 1fr; } .cartas.expl .pin-b { display: none; } .cartas.expl .carta { grid-template-columns: 1fr; cursor: default; }
+  .texto-sel { margin: 4px 8px 0; padding: 8px 12px; border-left: 3px solid var(--oro); font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.08rem; line-height: 1.3; color: var(--oro-claro); }
+  .texto-sel p { margin: 0; }
   .bandeja .ayuda { margin: 8px 0 0; font-size: .85rem; color: var(--suave); }
+  .bandeja .comp { margin: 8px 0 0; font-family: var(--fuente-nombres); font-weight: 700; color: var(--oro-claro); }
+  .bandeja .comp:empty { display: none; }
+  .bandeja #acc { margin-top: 6px; } .bandeja #acc .btn { min-height: 56px; }
+  .bandeja .final { margin: 4px 6px; font-size: 1rem; }
+  /* móvil: al terminar de colocar solo queda el comentario y el botón; en la explicación el botón va arriba y las cartas se leen debajo */
+  @media (max-width: 899px) {
+    .bandeja .envoltorio { display: flex; flex-direction: column; }
+    body[data-fase="listo"] .cartas, body[data-fase="listo"] .texto-sel, body[data-fase="explicado"] .ronda { display: none; }
+    body[data-fase="explicado"] .zona-acc { order: -1; margin-bottom: 8px; }
+    .bandeja .comp { font-size: .95rem; }
+  }
+  .btn.brilla { animation: brilla 1.4s ease-in-out infinite; }
+  @keyframes brilla { 0%, 100% { filter: brightness(1) drop-shadow(0 0 0 rgba(255, 200, 90, 0)); } 50% { filter: brightness(1.25) drop-shadow(0 0 14px rgba(255, 200, 90, .95)); } }
+  .oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
-  /* ---------- Cuadro de información de una isla ---------- */
-  dialog.info { width: min(460px, calc(100% - 28px)); padding: 22px 24px 20px; color: var(--blanco); background: var(--panel); border: 1px solid rgba(185, 177, 201, .6); border-radius: 14px; box-shadow: 0 0 0 4px #0c0912, 0 0 0 5px rgba(201, 162, 75, .55), 0 20px 50px rgba(0, 0, 0, .7); }
+  /* ---------- Los punteros (de Mireia) ----------
+     · en la bandeja y en la línea: el modelo liso con la frase dentro; al pasar el ratón se agrandan para leerla.
+     · al pulsar uno colocado, gira y enseña el año por detrás (modelo de relieve) y después vuelve a mostrar la frase. */
+  .pin-centro { position: absolute; left: 50%; top: 33%; transform: translate(-50%, -50%); width: 72%; text-align: center; pointer-events: none; color: var(--oro-claro); text-shadow: 0 1px 2px #000, 0 0 6px rgba(0, 0, 0, .85); }
+  .pin-centro.frase { font-family: var(--fuente-texto); font-weight: 700; text-transform: uppercase; font-size: calc(var(--pw) * .12); line-height: 1.1; }
+  .pin-centro.anio.largo { font-size: calc(var(--pw) * .15); width: 84%; }
+  .pin-centro.anio { font-family: var(--fuente-nombres); font-weight: 700; font-size: calc(var(--pw) * .25); line-height: 1; width: 80%; }
+  .pin-b { --pw: 84px; position: relative; display: block; width: var(--pw); padding: 0; border: 0; background: none; cursor: grab; touch-action: none; -webkit-user-select: none; user-select: none; }
+  .pin-b { animation: oscila 3.2s ease-in-out infinite; transform-origin: 50% 100%; }   /* se mece el puntero entero, con su texto */
+  .pin-b img { display: block; width: 100%; height: auto; pointer-events: none; filter: drop-shadow(0 0 7px rgba(201, 162, 75, .55)) drop-shadow(0 4px 6px rgba(0, 0, 0, .6)); }
+  .pin-b.en-mano { opacity: .3; animation: none; }
+  .pin-b.puesto { cursor: default; opacity: .55; animation: none; }
+  @keyframes oscila { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+  .pin { position: absolute; width: var(--pw); z-index: 7; transform: translate(-50%, -100%); transform-origin: 50% 100%; cursor: pointer; perspective: 700px; transition: transform .2s; }
+  .pin-giro { position: relative; transform-style: preserve-3d; transition: transform .6s cubic-bezier(.3, 1.2, .5, 1); }
+  .pin.girado .pin-giro { transform: rotateY(180deg); }
+  .pin .cara { position: relative; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+  .pin .cara img { display: block; width: 100%; height: auto; filter: drop-shadow(0 0 7px rgba(201, 162, 75, .55)) drop-shadow(0 4px 6px rgba(0, 0, 0, .7)); }
+  .pin .dorso { position: absolute; inset: 0; transform: rotateY(180deg); }
+  .pin:not(.antiguo) { transform: translate(-50%, -100%) scale(1.3); }   /* los de la ronda actual se quedan un poco más grandes hasta que cambian las preguntas */
+  .pin .etq-antes { position: absolute; left: 100%; bottom: 2px; margin-left: 5px; padding: 1px 8px; border-radius: 99px; background: var(--oro); color: #2b1805; font-family: var(--fuente-nombres); font-weight: 700; font-size: .72rem; white-space: nowrap; pointer-events: none; }
+  .pin.antiguo .cara img { filter: drop-shadow(0 0 8px rgba(139, 76, 192, .95)) drop-shadow(0 4px 6px rgba(0, 0, 0, .7)); opacity: .82; }   /* ya jugados: brillo violeta; los de la ronda actual, dorado */
+  .pin:focus-visible { z-index: 14; }
+  @media (hover: hover) { .pin:hover { transform: translate(-50%, -100%) scale(2.3); z-index: 14; } }
+  .pin.auto { transform: translate(-50%, -100%) scale(2.3); z-index: 14; transition: transform .45s cubic-bezier(.3, 1.3, .5, 1); }   /* se agranda solo al colocarse */
+  .pin.vuela { transition: left .9s cubic-bezier(.3, 1.35, .5, 1), top .9s cubic-bezier(.3, 1.35, .5, 1), transform .2s; }
+  .pin.flot { position: fixed; z-index: 1000; transform: none; pointer-events: none; opacity: .92; perspective: none; }
+  .pin.flot > img { display: block; width: 100%; height: auto; transform: scale(1.12); filter: drop-shadow(0 10px 12px rgba(0, 0, 0, .7)); }
+  .pin.flot.ok > img { filter: drop-shadow(0 0 12px rgba(232, 206, 134, .9)); }
+  body.arrastrando { cursor: grabbing; }
+  /* año de la guía por encima de la imagen de contexto: solo se ve cuando la guía pasa por debajo de ella */
+  .guia-top { position: fixed; z-index: 1001; transform: translateX(-50%); min-width: 72px; padding: 2px 10px; text-align: center; border-radius: 99px; background: var(--oro); color: #2b1805; font-family: var(--fuente-nombres); font-weight: 700; font-size: .95rem; box-shadow: 0 0 10px rgba(232, 206, 134, .6); pointer-events: none; }
+  .guia-top[hidden] { display: none; }
+  /* imagen de contexto de una pareja (p. ej. un cartel): sale en el centro al aparecer las preguntas y viaja a la esquina superior derecha para no molestar */
+  .contexto { position: fixed; z-index: 60; right: 14px; top: 104px; margin: 0; width: min(300px, 70vw); padding: 8px 8px 6px; text-align: center; cursor: pointer; transform-origin: 100% 0;
+    background: var(--panel); border: 1px solid rgba(201, 162, 75, .6); border-radius: 12px; box-shadow: 0 18px 50px rgba(0, 0, 0, .85);
+    opacity: 0; transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(.7); transition: transform .9s cubic-bezier(.3, 1.1, .5, 1), opacity .5s; }
+  .contexto[hidden] { display: none; }
+  .contexto { padding: 26px 8px 24px; }
+  .contexto::before, .contexto::after { content: ""; position: absolute; left: 0; right: 0; height: 40px; pointer-events: none; background: url("img/opt/enredadera-fina.webp") center / auto 100% repeat-x; filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .7)); }
+  .contexto::before { top: -17px; } .contexto::after { bottom: -17px; transform: scaleY(-1); }   /* enredadera fina de Mireia, arriba y abajo */
+  /* rótulo escrito sobre la imagen (p. ej. «Real Academia Española»), como texto para poder traducirlo */
+  .contexto .rotulo { position: absolute; left: 8px; right: 8px; bottom: 24px; padding: 28px 8px 9px; text-align: center; font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.12rem; letter-spacing: .03em; line-height: 1.15; color: var(--oro-claro); text-shadow: 0 1px 3px #000, 0 0 8px rgba(0, 0, 0, .9); background: linear-gradient(180deg, transparent, rgba(8, 5, 12, .82) 70%); border-radius: 0 0 6px 6px; pointer-events: none; }
+  .contexto .rotulo[hidden] { display: none; }
+  .contexto img { display: block; width: 100%; height: auto; border-radius: 6px; }
+  .contexto.centro { opacity: 1; transform: translate(var(--dx, 0px), var(--dy, 0px)) scale(1); }
+  .contexto.rincon { opacity: .97; transform: scale(.62); }
+  @media (max-width: 899px) { .contexto.rincon { transform: scale(.46); } }
+  @media (hover: hover) { .contexto.rincon:hover { transform: scale(1); z-index: 70; } }
+  body.sin-efectos .contexto { transition: none !important; }
+  /* recorrido que se ilumina entre los dos puntos de la pareja, con los años de diferencia */
+  .camino .ruta { fill: none; stroke: var(--oro-claro); stroke-width: 8; stroke-linecap: round; filter: drop-shadow(0 0 8px rgba(232, 206, 134, .95)); transition: opacity .7s; }
+  .camino .ruta.apaga { opacity: 0; }
+  .dif { position: absolute; z-index: 9; transform: translate(-50%, -190%); padding: 6px 18px; border-radius: 99px; background: var(--oro); color: #2b1805; font-family: var(--fuente-nombres); font-weight: 700; font-size: 1rem; box-shadow: 0 0 16px rgba(232, 206, 134, .8); pointer-events: none; transition: opacity .7s; white-space: nowrap; animation: crece .9s cubic-bezier(.3, 1.5, .5, 1) both; }
+  @keyframes crece { 0% { transform: translate(-50%, -190%) scale(.2); opacity: 0; } 55% { transform: translate(-50%, -190%) scale(1.45); opacity: 1; } 100% { transform: translate(-50%, -190%) scale(1.15); opacity: 1; } }
+  .dif.apaga { opacity: 0; }
+  .corrige { position: absolute; z-index: 10; transform: translate(-50%, -100%); max-width: 240px; padding: 6px 12px; text-align: center; border-radius: 12px; background: var(--panel); border: 1px solid var(--oro); color: var(--blanco); font-size: .82rem; font-weight: 700; line-height: 1.3; box-shadow: 0 6px 18px rgba(0, 0, 0, .7); pointer-events: none; transition: opacity .6s; animation: aparece .35s ease-out both; }
+  .corrige.apaga { opacity: 0; }
+  @keyframes aparece { from { opacity: 0; margin-top: 8px; } to { opacity: 1; margin-top: 0; } }
+  body.sin-efectos .pin.auto, body.sin-efectos .pin.vuela, body.sin-efectos .pin-giro, body.sin-efectos .pin-b, body.sin-efectos .btn.brilla, body.sin-efectos .dif, body.sin-efectos .corrige { transition: none !important; animation: none !important; }
+  .ref-enlace { margin: 8px 0 0; font-size: .88rem; color: var(--suave); }
+  @media (min-width: 900px) { .ref-enlace { flex-basis: 100%; margin: 4px 0 0; font-size: .82rem; } }
+
+  /* ---------- Cuadro de información de una isla: esquineras de filigrana doradas e hilo dorado, como las ventanas del Vinilo ---------- */
+  dialog.info { position: relative; overflow-x: clip; overflow-y: auto; max-height: calc(100vh - 20px); width: min(560px, calc(100% - 28px)); padding: 34px clamp(34px, 9vw, 46px) 30px; color: var(--blanco); background: var(--panel); border: 1px solid rgba(201, 162, 75, .55); border-radius: 14px; box-shadow: 0 20px 50px rgba(0, 0, 0, .7); }
   dialog.info::backdrop { background: rgba(0, 0, 0, .75); }
-  dialog.info h2 { margin: 0 0 4px; font-family: var(--fuente-nombres); font-size: 1.25rem; color: var(--oro-claro); }
-  dialog.info .anios { margin: 0 0 10px; font-family: var(--fuente-titulos); font-size: 1.3rem; }
+  dialog.info::before { content: ""; position: absolute; inset: 6px; pointer-events: none; z-index: 2; --esq: clamp(64px, 17vw, 96px);
+    background: url("img/opt/esquina-dorada-tl.webp") left top / var(--esq) auto no-repeat, url("img/opt/esquina-dorada-tr.webp") right top / var(--esq) auto no-repeat,
+                url("img/opt/esquina-dorada-bl.webp") left bottom / var(--esq) auto no-repeat, url("img/opt/esquina-dorada-br.webp") right bottom / var(--esq) auto no-repeat; }
+  dialog.info > * { position: relative; z-index: 1; }
+  dialog.info .foto { display: block; width: 100%; height: clamp(200px, 40vh, 340px); object-fit: contain; margin: 0 auto 10px; filter: drop-shadow(0 10px 14px rgba(0, 0, 0, .55)); }   /* mismo tamaño para todas las islas, sean altas o apaisadas */
+  dialog.info .frase { margin: 4px 0 6px; text-align: center; font-size: 1.05rem; line-height: 1.4; }
+  dialog.info h2 { margin: 0 0 4px; font-family: var(--fuente-nombres); font-size: 1.25rem; color: var(--oro-claro); text-align: center; }
+  dialog.info .anios { margin: 0 0 10px; font-family: var(--fuente-titulos); font-size: 1.3rem; text-align: center; }
   dialog.info p { margin: 6px 0; }
   dialog.info ul { margin: 6px 0 14px; padding-left: 20px; }
   dialog.info .nota { font-size: .88rem; color: var(--suave); }
+  dialog.info .cierre { text-align: center; margin: 18px 0 0; }
   dialog.info .btn { min-height: 56px; }
 
   footer { position: relative; z-index: 1; background: #000; border-top: 2px solid rgba(185, 177, 201, .35); }
@@ -102,8 +203,15 @@
     .envoltorio { width: calc(100% - 48px); }
     header.cab { padding: 12px 0 0; } header.cab .envoltorio { display: flex; flex-wrap: wrap; align-items: center; column-gap: 28px; }
     h1 { margin: 0; font-size: 1.6rem; } .sub { flex: 1 1 320px; margin: 0; font-size: .95rem; } .aviso-boceto { flex-basis: 100%; margin-top: 8px; padding: 4px 12px; font-size: .82rem; }
-    .bandeja { padding: 8px 0 10px; margin-top: 6px; } .bandeja .envoltorio { display: flex; align-items: center; gap: 22px; } .bandeja .cont { flex: 1; }
-    .carta { padding: 6px 14px; } .carta .cuenta { display: inline-block; margin-right: 10px; } .carta .texto { font-size: .92rem; } .bandeja .ayuda { margin: 0; max-width: 240px; }
+    .bandeja { padding: 8px 0 10px; margin-top: 6px; max-height: none; overflow: visible; }
+    .bandeja .envoltorio { display: grid; grid-template-columns: 1fr 250px; column-gap: 24px; align-items: center; }
+    .cartas:not(.expl) .txt { display: block; } .cartas:not(.expl) .carta { grid-template-columns: auto 1fr; justify-items: stretch; gap: 12px; padding: 8px 14px 8px 10px; cursor: default; }
+    .cartas.expl { grid-template-columns: 1fr 1fr; } .cartas.expl .carta { grid-template-columns: 1fr; padding: 10px 18px; cursor: default; } .texto-sel { display: none; }
+    .carta .txt p { font-size: .82rem; } .carta .txt .pregunta { font-size: 1.2rem; line-height: 1.3; } .bandeja .ayuda { margin: 0 0 6px; } .pin-b { --pw: 108px; }
+    /* tarjetas menos alargadas: ancho limitado y más altas, con el puntero grande; quedan centradas */
+    .cartas { grid-template-columns: repeat(2, minmax(0, 470px)); justify-content: center; gap: 22px; }
+    .cartas.expl { grid-template-columns: repeat(2, minmax(0, 520px)); }
+    .cartas:not(.expl) .carta { padding: 14px 20px 14px 14px; gap: 16px; }
   }
   .isla.serp { overflow: visible; }
   .isla.serp .leyenda { position: absolute; left: 0; right: 0; bottom: 0; padding-top: 16px; background: linear-gradient(180deg, transparent, rgba(8, 5, 12, .72) 55%); border-radius: 0 0 14px 14px; }
@@ -119,6 +227,7 @@
   <h1 id="titulo"></h1>
   <p class="sub" id="subtitulo"></p>
   <p class="aviso-boceto" id="avisoBoceto"></p>
+  <p class="ref-enlace" id="refEnlace"></p>   <!-- se queda aquí, justo debajo del aviso: cuando el aviso de boceto se quite, ocupa su sitio -->
 </div></header>
 <main>
   <div class="linea" id="linea">
@@ -127,15 +236,18 @@
     <div class="guia" id="guia" hidden><span class="anio" id="guiaAnio"></span></div>
   </div>
   <div class="bandeja" id="bandeja"><div class="envoltorio">
-    <div class="cont"><div class="carta" id="carta"></div></div>
-    <p class="ayuda" id="ayuda"></p>
+    <div class="zona-cartas"><div class="cartas" id="cartas"></div><div class="texto-sel" id="textoSel"></div></div>
+    <div class="zona-acc"><p class="ronda" id="ronda"></p><p class="ayuda" id="ayuda"></p><p class="comp" id="comp"></p><div id="acc"></div></div>
   </div></div>
+  <p class="oculto" id="anuncio" aria-live="polite"></p>
+  <figure class="contexto" id="contexto" hidden><img id="ctxImg" alt=""><span class="rotulo" id="ctxRotulo" hidden></span></figure>
 </main>
 <dialog class="info" id="info" aria-labelledby="infoTitulo">
-  <h2 id="infoTitulo"></h2><p class="anios" id="infoAnios"></p><p class="nota" id="infoNota"></p>
-  <p id="infoFuentesT"></p><ul id="infoFuentes"></ul>
-  <button class="btn" id="infoCerrar" type="button"></button>
+  <img class="foto" id="infoImg" alt="">
+  <h2 id="infoTitulo"></h2><p class="anios" id="infoAnios"></p><p class="frase" id="infoFrase"></p><p class="nota" id="infoNota"></p>
+  <p class="cierre"><button class="btn" id="infoCerrar" type="button"></button></p>
 </dialog>
+<span class="guia-top" id="guiaTop" hidden aria-hidden="true"></span>
 <footer><div class="envoltorio"><p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p></div></footer>
 
 <script>
@@ -143,10 +255,20 @@
   'use strict';
   /* Textos de interfaz (castellano). Catalán e inglés: pendientes de traducir. */
   var TXT = {
-    titulo: 'La línea del tiempo', subtitulo: 'Coloca cada hecho feminista en su año. Las islas te marcan los grandes momentos de la historia para orientarte.',
-    aviso: 'Boceto (paso 3): ya se ve la escala y las islas. Toca la línea para marcar un año; arrastrar y colocar la carta llega en el siguiente paso. Cartas de prueba.',
-    cuenta: function (i, n) { return 'Carta ' + i + ' de ' + n; },
-    ayuda: 'Toca la línea del tiempo para marcar un año.', anio: function (a) { return '≈ ' + a; },
+    titulo: 'La línea del tiempo', subtitulo: 'Coloca cada hecho feminista en su año arrastrando su puntero a la línea del tiempo. Las islas te marcan los grandes momentos de la historia para orientarte.',
+    aviso: 'Boceto (paso 4): una pareja de prueba. Arrastra cada puntero hasta su año. Pasa el ratón por un puntero para leerlo mejor y púlsalo para girarlo y ver el año.',
+    ronda: function (i, n) { return 'Pareja ' + i + ' de ' + n; },
+    ayudaArrastra: 'Arrastra el puntero o toca la línea del tiempo.',
+    antes: function (a) { return 'Antes de ' + a; }, verExplicacion: 'Ver explicación', girar: 'Púlsalo para ver el año.', difAnios: function (n) { return n + (n === 1 ? ' año' : ' años') + ' de diferencia'; },
+    refEnlaceAntes: 'Puedes ver todas las referencias de la web en ', refEnlaceEnlace: 'esta página', refEnlaceDespues: ', filtrando por la actividad.', verReferencias: 'Fuentes: consúltalas en la página de referencias.',
+    sueltaEnCamino: 'Suelta el puntero sobre el camino de la línea del tiempo.',
+    colocarEn: function (a) { return 'Colocar en ≈ ' + a; }, siguiente: 'Seguir jugando', verResumen: 'Ver el resumen', jugarOtra: 'Jugar otra vez',
+    resultado: function (g, r, d) { return 'Tu año: ' + g + ' · Año real: ' + r + ' · ' + (d === 0 ? '¡Exacto!' : d + (d === 1 ? ' año' : ' años') + ' de diferencia'); },
+    tuAnio: function (g, d) { return d === 0 ? 'Tu año: ' + g + ' · ¡Exacto!' : 'Tu año: ' + g + ' · ' + d + (d === 1 ? ' año' : ' años') + ' de diferencia'; },
+    punteroDe: function (t) { return 'Puntero: ' + t + '. Pulsa Intro para elegir un año y usa las flechas para moverlo.'; },
+    resumen: 'Resumen', finalTexto: function (n, m) { return 'Has colocado ' + n + ' punteros y te has equivocado, de media, en ' + m + (m === 1 ? ' año.' : ' años.'); },
+    finalMensaje: 'Lo importante no es acertar a la primera: cada hecho que colocas deja su huella en la línea del tiempo.',
+    anio: function (a) { return '≈ ' + a; },
     anios: function (a, b) { return a === b ? String(a) : a + ' – ' + b; }, aproxima: 'hacia ',
     fuentes: 'Fuentes:', sinFuente: '[FUENTE PENDIENTE]', cerrar: 'Cerrar',
     verde: { verificada: '', parcial: 'Fechas pendientes de segunda fuente.' },
@@ -179,8 +301,11 @@
     });
   })();
 
-  $('titulo').textContent = TXT.titulo; $('subtitulo').textContent = TXT.subtitulo; $('avisoBoceto').textContent = TXT.aviso; $('ayuda').textContent = TXT.ayuda;
-  $('infoFuentesT').textContent = TXT.fuentes; $('infoCerrar').textContent = TXT.cerrar;
+  $('titulo').textContent = TXT.titulo; $('subtitulo').textContent = TXT.subtitulo; $('avisoBoceto').textContent = TXT.aviso;
+  $('infoCerrar').textContent = TXT.cerrar;
+  /* una sola página de referencias para toda la web (por crear): aquí solo se enlaza */
+  var URL_REFERENCIAS = 'fuentes-boceto.html?tipo=actividad&actividad=timeline';   /* llega ya filtrado por actividades */
+  (function () { var r = $('refEnlace'), a = el('a', '', TXT.refEnlaceEnlace); a.href = URL_REFERENCIAS; r.appendChild(document.createTextNode(TXT.refEnlaceAntes)); r.appendChild(a); r.appendChild(document.createTextNode(TXT.refEnlaceDespues)); })();
 
   var datos = null, geo = null, anioGuia = null;
   var COLORES = ['#8b4cc0', '#C9A24B', '#b9b1c9'];  /* violeta, oro y plata: la paleta de efectos de las actividades */
@@ -240,7 +365,7 @@
   function dibujar() {
     var linea = $('linea'), cam = $('camino'), con = $('conectores');
     geo = medir();
-    Array.prototype.slice.call(linea.querySelectorAll('.isla, .marca')).forEach(function (n) { n.remove(); });
+    Array.prototype.slice.call(linea.querySelectorAll('.isla, .marca, .pin, .dif, .corrige')).forEach(function (n) { n.remove(); });
     cam.textContent = ''; con.textContent = '';
     var e = datos.escala, serp = geo.serp;
     var alto = geo.alto;
@@ -294,7 +419,8 @@
         });
       });
     }
-    linea.style.height = alto + 'px';
+    linea.style.height = alto + 'px'; linea.style.setProperty('--pw', tamPin() + 'px');
+    puestos.forEach(function (pp) { colocarPin(pinLinea(pp), pp.real); });
     if (anioGuia !== null) { ponerGuia(anioGuia); }
   }
 
@@ -307,6 +433,7 @@
     if (serp) { var ley = el('span', 'leyenda'); ley.appendChild(nom); ley.appendChild(an); b.appendChild(ley); } else { b.appendChild(nom); b.appendChild(an); }
     b.setAttribute('aria-label', isl.nombre.es + ', ' + TXT.anios(isl.inicio, isl.fin));
     b.addEventListener('click', function (ev) { ev.stopPropagation(); abrirInfo(isl); });
+    if (serp) { b.style.transformOrigin = it.x < geo.W * 0.15 ? '0% 100%' : (it.x > geo.W * 0.85 ? '100% 100%' : '50% 100%'); }
     $('linea').appendChild(b);
     return b;
   }
@@ -319,36 +446,296 @@
     else { var hh = geo.R * 0.8; g.className = 'guia ver'; g.style.cssText = 'left:' + q.x + 'px;top:' + (q.y - hh / 2) + 'px;height:' + hh + 'px'; an.style.left = '0'; an.style.top = '-24px'; }
     an.textContent = TXT.anio(a);
   }
+  /* si el año de la guía queda debajo de la imagen de contexto, se repite por encima de ella */
+  function sincGuiaTop() {
+    var g = $('guia'), top = $('guiaTop'), c = $('contexto');
+    if (g.hidden || c.hidden) { top.hidden = true; return; }
+    var a = $('guiaAnio').getBoundingClientRect(), r = c.getBoundingClientRect();
+    var tapa = a.right > r.left && a.left < r.right && a.bottom > r.top && a.top < r.bottom;
+    top.hidden = !tapa; if (!tapa) { return; }
+    top.textContent = $('guiaAnio').textContent; top.style.left = (a.left + a.width / 2) + 'px'; top.style.top = a.top + 'px';
+  }
+  new MutationObserver(sincGuiaTop).observe($('guia'), { attributes: true, attributeFilter: ['hidden', 'style', 'class'] });
+  new MutationObserver(sincGuiaTop).observe($('guiaAnio'), { characterData: true, childList: true, attributes: true, attributeFilter: ['style'] });
+  window.addEventListener('scroll', sincGuiaTop, { passive: true });
   $('linea').addEventListener('click', function (ev) {
-    var r = $('linea').getBoundingClientRect(); ponerGuia(geo.cerca(ev.clientX - r.left, ev.clientY - r.top));
+    if (arr) { return; }
+    var r = $('linea').getBoundingClientRect(); ponerGuia(geo.cerca(ev.clientX - r.left, ev.clientY - r.top)); actualizarAcc();
   });
 
   /* ---------- Cuadro de información de una isla ---------- */
   function abrirInfo(isl) {
-    $('infoTitulo').textContent = isl.nombre.es; $('infoAnios').textContent = TXT.anios(isl.inicio, isl.fin);
-    $('infoNota').textContent = isl.nota || '';
-    var ul = $('infoFuentes'); ul.textContent = '';
-    isl.fuentes.forEach(function (f) {
-      var li = el('li');
-      if (f.url) { var a = el('a', '', f.nombre); a.href = f.url; a.target = '_blank'; a.rel = 'noopener'; li.appendChild(a); } else { li.textContent = f.nombre || TXT.sinFuente; }
-      ul.appendChild(li);
-    });
+    $('infoImg').src = isl.imagen; $('infoTitulo').textContent = isl.nombre.es; $('infoAnios').textContent = TXT.anios(isl.inicio, isl.fin);
+    $('infoNota').textContent = isl.descripcion ? isl.descripcion.es : '';   /* solo texto pensado para el público; la «nota» de los datos es interna */
+    $('infoNota').hidden = !isl.descripcion; $('infoNota').style.textAlign = 'center'; $('infoFrase').textContent = isl.frase ? isl.frase.es : ''; $('infoFrase').hidden = !isl.frase;
     $('info').showModal();
   }
   $('infoCerrar').addEventListener('click', function () { $('info').close(); });
   $('info').addEventListener('click', function (ev) { if (ev.target === $('info')) { $('info').close(); } });
 
-  /* ---------- Carta de la bandeja (primera de prueba) ---------- */
-  function pintarCarta() {
-    var c = datos.cartas[0], cont = $('carta'); cont.textContent = '';
-    cont.appendChild(el('p', 'cuenta', TXT.cuenta(1, datos.cartas.length)));
-    cont.appendChild(el('span', 'pais', c.pais));
-    cont.appendChild(el('p', 'texto', c.texto.es));
+  /* ---------- El juego: parejas de cartas y punteros ----------
+     Fases de cada ronda: «juego» (se colocan los dos punteros) → «listo» (se ilumina el recorrido y la diferencia; botón «Ver explicación»)
+     → «explicado» (las cartas pasan de pregunta a explicación) → siguiente pareja. */
+  var IMG_REL = 'img/opt/puntero-relieve.webp', IMG_LISO = 'img/opt/puntero-liso.webp', RATIO_PIN = 1.51;
+  var ronda = 0, fase = 'juego', puestos = [], hechas = {}, seleccion = null, arr = null, cartasRonda = [], rondasHechas = 0;
+
+  function tamPin() { return geo && geo.serp ? 66 : 56; }
+  function anuncia(t) { $('anuncio').textContent = ''; setTimeout(function () { $('anuncio').textContent = t; }, 40); }
+  function elPin(clase, img, centro, tipo) {
+    var p = el('div', clase), i = el('img'); i.src = img; i.alt = ''; i.draggable = false; p.appendChild(i);
+    p.appendChild(el('span', 'pin-centro ' + (tipo || 'frase'), centro)); return p;
   }
 
+  /* puntero en la línea: de frente, la frase; al pulsarlo gira y enseña el año (relieve) y a los 3 s vuelve a la frase */
+  function pinLinea(p) {
+    var pin = el('div', 'pin'), giro = el('div', 'pin-giro');
+    pin.tabIndex = 0; pin.setAttribute('role', 'button'); pin.setAttribute('aria-label', p.c.titulo.es + '. ' + TXT.girar);
+    if (p.ronda !== ronda) { pin.classList.add('antiguo'); }
+    if (p.real < datos.escala.inicio) { pin.classList.add('fuera'); pin.appendChild(el('span', 'etq-antes', TXT.antes(datos.escala.inicio))); }   /* el puntero se queda en el borde de la línea */
+    giro.appendChild(elPin('cara frente', IMG_LISO, p.c.titulo.es, 'frase')); giro.appendChild(elPin('cara dorso', IMG_REL, p.c.anioPin ? p.c.anioPin.es : String(p.real), p.c.anioPin ? 'anio largo' : 'anio')); pin.appendChild(giro);
+    function alternar() {
+      var v = pin.classList.toggle('girado'); clearTimeout(pin._t);
+      if (v) { pin._t = setTimeout(function () { pin.classList.remove('girado'); }, 3200); anuncia(p.c.titulo.es + ': ' + p.realTxt); }
+    }
+    pin.addEventListener('click', function (ev) { ev.stopPropagation(); alternar(); });
+    pin.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); alternar(); } });
+    $('linea').appendChild(pin); return pin;
+  }
+  /* si el punto queda fuera de la zona cómoda de la pantalla (solo en móvil) se desplaza lo justo para verlo */
+  function asegurarVisible(a) {
+    if (geo.serp) { return; }
+    var r = $('linea').getBoundingClientRect(), y = r.top + geo.punto(a).y, tope = $('bandeja').getBoundingClientRect().top;
+    if (y < 110 || y > tope - 60) { window.scrollTo({ top: window.pageYOffset + y - Math.max(130, tope * 0.35), behavior: sinEfectos ? 'auto' : 'smooth' }); }
+  }
+  /* al corregirse el puntero se dice, junto a él, el año que se puso, el real y la diferencia */
+  function mostrarCorrige(p) {
+    var q = geo.punto(p.real), t = el('div', 'corrige', TXT.resultado(p.guess, p.realTxt, p.diff));
+    t.style.left = Math.max(125, Math.min(geo.W - 125, q.x)) + 'px'; t.style.top = (q.y - tamPin() * RATIO_PIN - 6) + 'px'; $('linea').appendChild(t);
+    setTimeout(function () { t.classList.add('apaga'); }, 4200); setTimeout(function () { t.remove(); }, 4900);
+  }
+  /* puntero recién colocado: llega a su sitio, se agranda solo, gira para enseñar el año, vuelve a girar para la frase,
+     se hace pequeño y entonces sale el aviso con lo que se ha fallado. Devuelve cuánto dura (0 sin efectos). */
+  function secuenciaPin(pin, p, dur) {
+    if (sinEfectos) { mostrarCorrige(p); return 0; }
+    var t0 = dur + 50;   /* cuando el puntero ya ha recorrido el camino */
+    setTimeout(function () { pin.classList.add('auto'); }, t0);
+    setTimeout(function () { pin.classList.add('girado'); }, t0 + 400);
+    setTimeout(function () { pin.classList.remove('girado'); }, t0 + 1900);
+    setTimeout(function () { pin.classList.remove('auto'); }, t0 + 2600);
+    setTimeout(function () { mostrarCorrige(p); }, t0 + 2950);
+    return t0 + 2950;
+  }
+  /* el puntero recorre el camino de la línea, año a año, desde donde se soltó hasta su sitio (también por las curvas de la serpiente) */
+  function viajar(pin, desde, hasta, dur, fin) {
+    var t0 = null;
+    function paso(t) {
+      if (t0 === null) { t0 = t; }
+      var k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);   /* frena al llegar */
+      colocarPin(pin, desde + (hasta - desde) * e);
+      if (k < 1) { requestAnimationFrame(paso); } else if (fin) { fin(); }
+    }
+    requestAnimationFrame(paso);
+  }
+  function colocarPin(pin, anio) { var q = geo.punto(anio); pin.style.left = q.x + 'px'; pin.style.top = q.y + 'px'; }
+
+  /* el recorrido entre los dos puntos se ilumina un momento y se comenta la diferencia en años */
+  function mostrarRuta() {
+    if (fase === 'juego') { return; }
+    var ys = cartasRonda.map(function (c) { return c.anio; }), a = Math.min.apply(null, ys), b = Math.max.apply(null, ys), d = trazo(a, b, 0, 0);
+    if (!d) { return; }
+    var path = svg('path', { 'class': 'ruta', d: d }); $('camino').appendChild(path);
+    var len = path.getTotalLength(); path.style.strokeDasharray = len; path.style.strokeDashoffset = sinEfectos ? 0 : len; void path.getBoundingClientRect();
+    if (!sinEfectos) { path.style.transition = 'stroke-dashoffset 1.6s ease-in-out, opacity .7s'; } path.style.strokeDashoffset = 0;
+    var m = geo.punto((a + b) / 2), pill = el('div', 'dif', (cartasRonda.some(function (c) { return c.rango; }) ? 'Unos ' : '') + TXT.difAnios(b - a)); var lim = $('bandeja').getBoundingClientRect().top - $('linea').getBoundingClientRect().top - 12;   /* que el cartel no quede debajo de la bandeja */
+    pill.style.left = Math.max(130, Math.min(geo.W - 130, m.x)) + 'px'; pill.style.top = Math.min(m.y, lim + 30) + 'px'; $('linea').appendChild(pill);
+    asegurarVisible((a + b) / 2);
+    setTimeout(function () { path.classList.add('apaga'); pill.classList.add('apaga'); }, 5000);
+    setTimeout(function () { path.remove(); pill.remove(); }, 5800);
+  }
+
+  /* colocar: el puntero aparece donde lo soltó la jugadora y se corrige hasta su año real */
+  function colocar(c, guess) {
+    var real = c.anio, rg = c.rango, diff = rg ? (guess >= rg[0] && guess <= rg[1] ? 0 : Math.min(Math.abs(guess - rg[0]), Math.abs(guess - rg[1]))) : (real < datos.escala.inicio ? Math.max(0, guess - datos.escala.inicio - 2) : Math.abs(guess - real)),   /* un hecho anterior a la escala se «acierta» colocándolo en el borde */
+        p = { c: c, ronda: ronda, guess: guess, real: real, diff: diff, realTxt: c.anioTexto ? c.anioTexto.es : String(real) + (real < datos.escala.inicio ? ' (' + TXT.antes(datos.escala.inicio).toLowerCase() + ')' : '') };   /* si el hecho es de una década («rango»), cualquier año dentro cuenta como acierto */
+    hechas[c.id] = p; puestos.push(p);
+    var pin = pinLinea(p), meta = Math.max(real, datos.escala.inicio), dur = sinEfectos ? 0 : Math.max(700, Math.min(2200, 500 + Math.abs(guess - meta) * 9));
+    colocarPin(pin, guess);
+    if (dur) { viajar(pin, guess, meta, dur); } else { colocarPin(pin, meta); }
+    asegurarVisible(meta); var espera = secuenciaPin(pin, p, dur);
+    /* en la bandeja el puntero se queda como hueco apagado, con el año en el relieve */
+    var b = $('carta-' + c.id).querySelector('.pin-b'); b.classList.add('puesto'); b.querySelector('img').src = IMG_REL; b.tabIndex = -1;
+    var cen = b.querySelector('.pin-centro'); cen.className = 'pin-centro anio' + (c.anioPin ? ' largo' : ''); cen.textContent = c.anioPin ? c.anioPin.es : String(real);
+    anuncia(c.titulo.es + ': colocado.');
+    $('guia').hidden = true; anioGuia = null;
+    var libre = cartasRonda.filter(function (x) { return !hechas[x.id]; })[0];
+    if (libre) { seleccionar(libre); }
+    else {
+      seleccion = c.id; Array.prototype.forEach.call(document.querySelectorAll('.carta'), function (n) { n.classList.remove('sel'); });
+      /* cuando acaba la secuencia del segundo puntero: se ilumina el recorrido y aparece «Ver explicación» */
+      setTimeout(function () { fase = 'listo'; document.body.dataset.fase = fase; pintarTextoSel(); actualizarAcc(); mostrarRuta(); }, espera);
+    }
+  }
+
+  /* ----- arrastrar el puntero de la bandeja ----- */
+  function actualizarArr() {
+    var tipX = arr.px, tipY = arr.py - (arr.touch ? 36 : 0), pw = tamPin(), ph = pw * RATIO_PIN;
+    arr.f.style.left = (tipX - pw / 2) + 'px'; arr.f.style.top = (tipY - ph) + 'px';
+    var r = $('linea').getBoundingClientRect(), lx = tipX - r.left, ly = tipY - r.top, a = Math.round(geo.cerca(lx, ly)), q = geo.punto(a);
+    arr.ok = Math.hypot(q.x - lx, q.y - ly) < (geo.serp ? geo.R * 0.6 : 120) && lx > -30 && lx < r.width + 30;
+    arr.anio = a; arr.f.classList.toggle('ok', arr.ok);
+    if (arr.ok) { ponerGuia(a); } else { $('guia').hidden = true; anioGuia = null; }
+  }
+  function moverArr(ev) {
+    arr.px = ev.clientX; arr.py = ev.clientY;
+    if (!arr.mov && Math.hypot(arr.px - arr.x0, arr.py - arr.y0) > 6) {
+      arr.mov = true; arr.b.classList.add('en-mano');
+      arr.f = elPin('pin flot', IMG_LISO, arr.c.titulo.es, 'frase'); arr.f.style.setProperty('--pw', tamPin() + 'px'); document.body.appendChild(arr.f);
+    }
+    if (arr.mov) { actualizarArr(); }
+  }
+  function soltarArr(cancelar) {
+    var a = arr; arr = null; document.body.classList.remove('arrastrando');
+    if (a.f) { a.f.remove(); } a.b.classList.remove('en-mano');
+    if (!a.mov) { if (!cancelar) { seleccionar(a.c); } return; }
+    $('guia').hidden = true; anioGuia = null;
+    if (!cancelar && a.ok) { colocar(a.c, a.anio); }
+    else { $('ayuda').textContent = TXT.sueltaEnCamino; setTimeout(function () { if (!arr && fase === 'juego') { $('ayuda').textContent = TXT.ayudaArrastra; } }, 2600); actualizarAcc(); }
+  }
+  /* El seguimiento del arrastre va a nivel de ventana, con varias vías de escape, para que el puntero nunca se quede «encallado»
+     si el navegador pierde el aviso de que se ha soltado (ratón fuera de la ventana, cambio de pestaña, menú contextual…). */
+  window.addEventListener('pointermove', function (ev) {
+    if (!arr) { return; }
+    if (ev.pointerType === 'mouse' && ev.buttons === 0) { soltarArr(false); return; }   /* se soltó el botón sin que llegara el aviso */
+    moverArr(ev);
+  });
+  window.addEventListener('pointerup', function () { if (arr) { soltarArr(false); } });
+  window.addEventListener('pointercancel', function () { if (arr) { soltarArr(true); } });
+  window.addEventListener('blur', function () { if (arr) { soltarArr(true); } });
+  document.addEventListener('visibilitychange', function () { if (arr) { soltarArr(true); } });
+  document.addEventListener('contextmenu', function () { if (arr) { soltarArr(true); } });
+  document.addEventListener('keydown', function (ev) { if (arr && ev.key === 'Escape') { soltarArr(true); } });
+
+  /* al acercarse al borde de la pantalla, la página se desplaza sola para llegar a cualquier año */
+  function bucle() {
+    if (!arr) { return; }
+    /* solo en móvil (camino vertical) y solo si el dedo se queda un momento junto al borde: en escritorio la línea cabe entera y no hace falta */
+    if (arr.mov && !geo.serp) {
+      var tope = $('bandeja').getBoundingClientRect().top, v = 0, zona = 0;
+      if (arr.py < 70) { v = -Math.ceil((70 - arr.py) / 7); zona = -1; } else if (arr.py > tope - 70 && arr.py < tope) { v = Math.ceil((arr.py - (tope - 70)) / 7); zona = 1; }
+      if (zona !== arr.zona) { arr.zona = zona; arr.desde = performance.now(); }
+      if (v && performance.now() - arr.desde > 350) { window.scrollBy(0, v); actualizarArr(); }
+    }
+    requestAnimationFrame(bucle);
+  }
+
+  /* ----- cartas de la bandeja ----- */
+  /* ----- imagen de contexto de la pareja (campo «contexto» en timeline.json): centro → esquina superior derecha ----- */
+  var ctxT = 0;
+  function posContexto() {   /* cuánto hay que desplazarla desde su esquina hasta el centro de la pantalla */
+    var f = $('contexto'), w = f.offsetWidth, h = f.offsetHeight;
+    f.style.setProperty('--dx', -(window.innerWidth / 2 - 14 - w / 2) + 'px'); f.style.setProperty('--dy', (window.innerHeight / 2 - 104 - h / 2) + 'px');
+  }
+  function llevarRincon() { clearTimeout(ctxT); var f = $('contexto'); f.classList.remove('centro'); f.classList.add('rincon'); }
+  function llevarCentro() { clearTimeout(ctxT); var f = $('contexto'); posContexto(); f.classList.remove('rincon'); f.classList.add('centro'); ctxT = setTimeout(llevarRincon, 4500); }
+  function mostrarContexto(pa) {
+    var f = $('contexto'); clearTimeout(ctxT); f.className = 'contexto';
+    if (!pa.contexto) { f.hidden = true; return; }
+    var c = pa.contexto, img = $('ctxImg');
+    img.alt = c.alt ? c.alt.es : ''; var ro = $('ctxRotulo'); ro.hidden = !c.rotulo; ro.textContent = c.rotulo ? c.rotulo.es : '';
+    function sale() { f.hidden = false; posContexto(); void f.offsetWidth; f.classList.add('centro'); ctxT = setTimeout(llevarRincon, sinEfectos ? 1800 : 3200); }
+    img.onload = sale; img.onerror = function () { f.hidden = true; }; img.src = c.imagen; if (img.complete && img.naturalWidth) { img.onload = null; sale(); }
+  }
+  $('contexto').addEventListener('click', function () { if (this.classList.contains('centro')) { llevarRincon(); } else { llevarCentro(); } });
+  window.addEventListener('resize', function () { if ($('contexto').classList.contains('centro')) { posContexto(); } });
+
+  function seleccionar(c) {
+    seleccion = c.id;
+    Array.prototype.forEach.call(document.querySelectorAll('.carta'), function (n) { n.classList.toggle('sel', n.id === 'carta-' + c.id); });
+    pintarTextoSel(); actualizarAcc();
+  }
+  /* en móvil antes de explicar solo se ven los punteros: aquí se lee la pregunta de la carta elegida */
+  function pintarTextoSel() {
+    var t = $('textoSel'); t.textContent = ''; t.hidden = fase === 'explicado';
+    var c = cartasRonda.filter(function (x) { return x.id === seleccion; })[0]; if (!c || fase === 'explicado') { return; }
+    t.appendChild(el('p', '', c.pregunta.es));
+  }
+  /* texto de la carta: la pregunta (sin año) mientras se juega y la explicación (con el resultado) al terminar la pareja */
+  function pintarTxt(c) {
+    var txt = $('carta-' + c.id).querySelector('.txt'); txt.textContent = '';
+    if (fase === 'explicado' && hechas[c.id]) { txt.appendChild(el('h3', '', (c.tituloLargo || c.titulo).es)); txt.appendChild(el('p', '', c.explicacion.es)); }
+    else { txt.appendChild(el('p', 'pregunta', c.pregunta.es)); }
+  }
+  function crearCarta(c) {
+    var art = el('article', 'carta'); art.id = 'carta-' + c.id;
+    var b = el('button', 'pin-b'); b.type = 'button'; b.setAttribute('aria-label', TXT.punteroDe(c.titulo.es));
+    var i = el('img'); i.src = IMG_LISO; i.alt = ''; i.draggable = false; b.appendChild(i); b.appendChild(el('span', 'pin-centro frase', c.titulo.es));
+    b.addEventListener('pointerdown', function (ev) {
+      if (hechas[c.id] || ev.button > 0) { return; }
+      if (arr) { soltarArr(true); }   /* un arrastre anterior sin cerrar (p. ej. un segundo dedo): se cancela y se limpia */
+      Array.prototype.forEach.call(document.querySelectorAll('.pin.flot'), function (n) { n.remove(); });
+      ev.preventDefault(); try { b.setPointerCapture(ev.pointerId); } catch (e) { /* sin captura */ }
+      arr = { c: c, b: b, x0: ev.clientX, y0: ev.clientY, px: ev.clientX, py: ev.clientY, mov: false, touch: ev.pointerType !== 'mouse', f: null, ok: false, anio: null };
+      document.body.classList.add('arrastrando'); if ($('contexto').classList.contains('centro')) { llevarRincon(); } requestAnimationFrame(bucle);
+    });
+    /* con teclado: Intro elige un año, flechas lo mueven (Mayús = de 10 en 10), Intro otra vez lo coloca, Esc cancela */
+    b.addEventListener('keydown', function (ev) {
+      if (hechas[c.id]) { return; }
+      var k = ev.key;
+      if (k === 'Enter' || k === ' ') {
+        ev.preventDefault();
+        if (seleccion === c.id && anioGuia !== null) { var a = anioGuia; $('guia').hidden = true; anioGuia = null; colocar(c, a); }
+        else { seleccionar(c); ponerGuia(anioGuia !== null ? anioGuia : 1900); anuncia(TXT.anio(anioGuia)); actualizarAcc(); }
+      } else if (seleccion === c.id && anioGuia !== null && (k === 'ArrowLeft' || k === 'ArrowDown' || k === 'ArrowRight' || k === 'ArrowUp')) {
+        ev.preventDefault(); ponerGuia(anioGuia + ((k === 'ArrowLeft' || k === 'ArrowDown') ? -1 : 1) * (ev.shiftKey ? 10 : 1));
+        anuncia(TXT.anio(anioGuia)); $('guia').scrollIntoView({ block: 'nearest' }); actualizarAcc();
+      } else if (k === 'Escape') { $('guia').hidden = true; anioGuia = null; actualizarAcc(); }
+    });
+    art.appendChild(b); art.appendChild(el('div', 'txt')); art.addEventListener('click', function () { if (fase !== 'explicado') { seleccionar(c); } });
+    return art;
+  }
+
+  /* botones de la bandeja: «Colocar» (al tocar la línea), «Ver explicación», «Siguiente pareja» y «Ver el resumen» */
+  function actualizarAcc() {
+    var acc = $('acc'); acc.textContent = '';
+    if (!cartasRonda.length) { return; }
+    if (fase === 'listo' || fase === 'explicado') {
+      var pa = datos.parejas[ronda], n = Math.abs(cartasRonda[0].anio - cartasRonda[1].anio), bt;
+      $('comp').textContent = pa.comparacion ? pa.comparacion.es.replace('{n}', n) : ''; $('ayuda').textContent = '';
+      if (fase === 'listo') { bt = el('button', 'btn primario brilla', TXT.verExplicacion); bt.addEventListener('click', verExplicacion); }
+      else { bt = el('button', 'btn primario', ronda + 1 < datos.parejas.length ? TXT.siguiente : TXT.verResumen); bt.addEventListener('click', siguienteRonda); }
+      bt.type = 'button'; acc.appendChild(bt);
+    } else if (seleccion && anioGuia !== null && !hechas[seleccion]) {
+      var cc = cartasRonda.filter(function (x) { return x.id === seleccion; })[0], b2 = el('button', 'btn primario', TXT.colocarEn(anioGuia)); b2.type = 'button';
+      b2.addEventListener('click', function () { var a = anioGuia; $('guia').hidden = true; anioGuia = null; colocar(cc, a); });
+      acc.appendChild(b2);
+    }
+  }
+  function verExplicacion() {
+    fase = 'explicado'; document.body.dataset.fase = fase; rondasHechas = Math.max(rondasHechas, ronda + 1);
+    $('cartas').classList.add('expl'); cartasRonda.forEach(pintarTxt); pintarTextoSel(); actualizarAcc();
+    $('bandeja').scrollTop = 0;
+  }
+  /* tras cada pareja: «Seguir jugando» pasa a las siguientes cartas; tras la última sale el resumen final, con «Jugar otra vez» */
+  function siguienteRonda() { ronda++; if (ronda < datos.parejas.length) { iniciarRonda(); } else { mostrarFinal(); } }
+  function iniciarRonda() {
+    var pa = datos.parejas[ronda]; cartasRonda = pa.cartas; hechas = {}; fase = 'juego'; document.body.dataset.fase = fase;
+    Array.prototype.forEach.call(document.querySelectorAll('.pin'), function (n) { n.classList.add('antiguo'); });   /* los de la ronda anterior pasan a «ya jugados» */
+    $('ronda').textContent = TXT.ronda(ronda + 1, datos.parejas.length); $('comp').textContent = ''; $('ayuda').textContent = TXT.ayudaArrastra;
+    var cont = $('cartas'); cont.textContent = ''; cont.className = 'cartas'; pa.cartas.forEach(function (c) { cont.appendChild(crearCarta(c)); pintarTxt(c); });
+    seleccionar(pa.cartas[0]); mostrarContexto(pa);
+  }
+  function mostrarFinal() {
+    $('contexto').hidden = true; clearTimeout(ctxT); cartasRonda = []; var cont = $('cartas'); cont.textContent = ''; cont.className = 'cartas'; $('ronda').textContent = TXT.resumen; $('ayuda').textContent = ''; $('textoSel').textContent = '';
+    var media = Math.round(puestos.reduce(function (t, p) { return t + p.diff; }, 0) / Math.max(1, puestos.length));
+    cont.appendChild(el('p', 'final', TXT.finalTexto(puestos.length, media))); $('comp').textContent = TXT.finalMensaje;
+    var acc = $('acc'); acc.textContent = ''; var o = el('button', 'btn primario', TXT.jugarOtra); o.type = 'button';
+    o.addEventListener('click', function () { puestos = []; ronda = 0; iniciarRonda(); dibujar(); }); acc.appendChild(o);
+  }
+
+
   fetch('data/timeline.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (d) {
-    datos = d; pintarCarta(); dibujar();
-    var t; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(dibujar, 150); });
+    datos = d; iniciarRonda(); dibujar();
+    var t; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(function () { if (!arr) { dibujar(); } }, 150); });
   }).catch(function () { $('linea').textContent = 'No se han podido cargar los datos.'; });
 })();
 </script>

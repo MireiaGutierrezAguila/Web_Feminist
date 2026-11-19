@@ -35,6 +35,11 @@
 
   .filtros { margin: 22px 0 16px; padding: 16px; background: var(--panel); border: 2px solid var(--oro); border-radius: 14px; display: grid; gap: 12px; }
   .fila { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+  .acciones-filtros { display: flex; justify-content: flex-end; }
+  .btn-limpiar { font: inherit; font-size: .9rem; font-weight: 700; padding: 8px 18px; min-height: 40px; color: var(--blanco); background: transparent; border: 1px solid rgba(185, 177, 201, .6); border-radius: 99px; cursor: pointer; }
+  .btn-limpiar:hover:not(:disabled) { border-color: var(--oro-claro); color: var(--oro-claro); }
+  .btn-limpiar:disabled { opacity: .4; cursor: default; }
+  .campo select:disabled { opacity: .5; }
   .campo { display: grid; gap: 4px; flex: 1 1 170px; min-width: 0; }
   .campo label { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--oro-claro); font-family: var(--fuente-nombres); font-weight: 600; }
   select, input[type="search"] { font: inherit; color: var(--blanco); background: #0b0910; border: 1px solid var(--linea); border-radius: 8px; padding: 10px 11px; width: 100%; min-width: 0; }
@@ -54,7 +59,8 @@
   .dato-sub { display: block; color: var(--suave); font-size: .88rem; margin-top: 3px; }
   td.fuentes { width: 30%; }
   .fuentes ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
-  .fuentes li::before { content: "↗ "; color: var(--oro); }
+  .fuentes li:has(a)::before { content: "↗ "; color: var(--oro); }   /* la flecha solo en las fuentes que son enlace */
+  .fuentes li:not(:has(a))::before { content: "• "; color: var(--suave); }
   .comp { display: block; margin-top: 6px; color: var(--suave); font-size: .82rem; }
   .prov { display: block; margin-top: 4px; color: var(--suave); font-style: italic; font-size: .85rem; }
   .mes-fila td { background: #231a33 !important; font-family: var(--fuente-nombres); font-weight: 700; color: var(--blanco); letter-spacing: .04em; }
@@ -107,6 +113,7 @@
       <div class="campo" style="flex-basis: 260px"><label for="fBuscar" id="lBuscar"></label>
         <input type="search" id="fBuscar"></div>
     </div>
+    <div class="acciones-filtros"><button type="button" class="btn-limpiar" id="btnLimpiar"></button></div>
   </section>
   <p class="cuenta" id="cuenta" role="status"></p>
   <div class="tabla-caja">
@@ -129,7 +136,8 @@
   var TXT = {
     titulo: 'Fuentes', intro: 'Aquí puedes ver de dónde sale cada dato de la web: el calendario, las fichas de las mujeres, las imágenes y las actividades. Todo dato lleva su fuente.',
     avisoInterno: 'Vista de trabajo: se enseñan también las entradas parciales, sensibles y alternativas, con su estado y sus notas. Quita «?interno=1» de la dirección para ver la vista pública.',
-    fTipo: 'Dónde se usa', fMes: 'Mes', fRegion: 'Región', fBuscar: 'Buscar', fBuscarPh: 'una mujer, un país, un tema…',
+    fTipo: 'Dónde se usa', fMes: 'Mes', fActividad: 'Actividad', todasAct: 'Todas las actividades', quitarFiltros: 'Quitar filtros',
+    actividadSinFuentes: 'Las fuentes de esta actividad todavía no están en esta página.', fRegion: 'Región', fBuscar: 'Buscar', fBuscarPh: 'una mujer, un país, un tema…',
     todos: 'Todos', todas: 'Todas', cap: 'Fuentes de cada dato de la web',
     thDonde: 'Dónde se usa', thDato: 'Dato', thFuentes: 'Fuentes', thEstado: 'Estado', thNota: 'Nota',
     comprobado: 'Comprobado el ', provisional: 'Fuentes provisionales, pendientes de reforzar.', sinDia: 'sin día exacto', sinFuentes: 'Sin fuentes todavía.',
@@ -141,6 +149,8 @@
     mesesCortos: ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'],
     alternativa: 'alternativa', viva: 'viva', sensible: 'sensible', basica: 'fuentes básicas'
   };
+  /* Actividades de la web: para añadir otra, basta una línea aquí y que sus filas lleven donde.actividad con esta clave */
+  var ACTIVIDADES = [['vinilos', 'El Vinilo Crítico'], ['timeline', 'La línea del tiempo'], ['porcentajes', 'Adivina el porcentaje']];
   var params = new URLSearchParams(location.search);
   var INTERNO = params.get('interno') === '1', SENSIBLES = INTERNO || params.get('sensibles') === '1';
   if (INTERNO) { document.body.classList.add('interno'); }
@@ -207,9 +217,83 @@
     });
   }
   function deActividades(act) { return act && Array.isArray(act.filas) ? act.filas : []; } // data/fuentes-actividades.json (opcional, aún no existe)
+  /* Actividad «El Vinilo Crítico»: una fila por disco, leída de data/vinilos.json. El campo «fuente» de cada disco es un texto con el enlace de Spotify
+     dentro (y, a veces, «Datos: …»): aquí se separa en fuentes. El año de la canción se muestra con su procedencia, y es provisional si no está contrastado. */
+  function deVinilos(v) {
+    if (!v || !Array.isArray(v.discos)) { return []; }
+    return v.discos.map(function (d, i) {
+      var txt = d.fuente || '', fuentes = [];
+      var url = d.enlaceSpotify || (txt.match(/https?:\/\/open\.spotify\.com\/[^\s]+/) || [''])[0].replace(/[.,;]+$/, '');
+      if (url) { fuentes.push({ nombre: 'Spotify: «' + d.cancion + '» (' + d.grupo + ')', url: url }); }
+      var datos = /Datos:\s*(.+)$/.exec(txt); if (datos) { fuentes.push({ nombre: datos[1].replace(/\.$/, ''), url: null }); }
+      var origenAnio = d.anioFuente || '';
+      if (origenAnio) { fuentes.push({ nombre: 'Año de la canción: ' + origenAnio, url: null }); }
+      var dudoso = /Mireia|sin contrastar|sin verificar|secundaria/i.test(origenAnio);
+      return {
+        donde: { tipo: 'actividad', actividad: 'vinilos', etiqueta: TXT.tipos.actividad + ' · El Vinilo Crítico · Canción', detalle: '', mes: null, orden: 5000 + i },
+        dato: '«' + d.cancion + '», ' + d.grupo + ' (' + d.anio + ')', sub: 'Canción del Vinilo Crítico', region: '',
+        fuentes: fuentes, comprobado: '', provisional: dudoso,
+        interno: { estado: d.explicacionEstado || 'revisar', nota: d.nota || '' }
+      };
+    });
+  }
+  /* Actividad «Adivina el porcentaje»: una fila por dato y por pareja «cara a cara», leída de data/porcentajes.json. Cada uno apunta a la infografía
+     de «Mujeres en cifras» (Instituto de las Mujeres) de la que sale; las fuentes que esa infografía cita (INE, Ministerio de Trabajo) se añaden como texto. */
+  function dePorcentajes(pc) {
+    if (!pc || !pc.infografias) { return []; }
+    var SECUNDARIAS = { 'p-01': 'INE: Encuesta de Estructura Salarial (cifra citada por la infografía)', 'p-02': 'Ministerio de Trabajo (MITES): Pensiones Contributivas 2021 (citado por la infografía)' };
+    function num(v, u) { return String(v).replace('.', ',') + (u === '%' ? ' %' : ' ' + u); }
+    function fuentesDe(id, key) {
+      var inf = pc.infografias[key], fs = [];
+      if (inf) { fs.push({ nombre: (pc.fuenteGeneral || 'Instituto de las Mujeres') + ': infografía «' + inf.titulo + '» (' + inf.fecha + ')', url: inf.url }); }
+      if (SECUNDARIAS[id]) { fs.push({ nombre: SECUNDARIAS[id], url: null }); }
+      return fs;
+    }
+    var filas = [], n = 0, lugar = TXT.tipos.actividad + ' · Adivina el porcentaje';
+    (pc.datos || []).forEach(function (d) {
+      filas.push({
+        donde: { tipo: 'actividad', actividad: 'porcentajes', etiqueta: lugar + ' · Dato', detalle: '', mes: null, orden: 6000 + n++ },
+        dato: d.pregunta.es + ' → ' + num(d.valor, d.unidad), sub: [d.tema, d.anioDatos ? 'datos de ' + d.anioDatos : ''].filter(Boolean).join(' · '), region: '',
+        fuentes: fuentesDe(d.id, d.infografia), comprobado: '', provisional: false,
+        interno: { estado: d.anioDatos ? 'verificada' : 'parcial', nota: (d.anioDatos ? '' : 'Año de los datos por confirmar. ') + (d.nota || '') }
+      });
+    });
+    (pc.parejas || []).forEach(function (pa) {
+      var partes = pa.rondas.map(function (r) {
+        return r.pregunta.es + ' ' + r.opciones.filter(function (o) { return o.valor !== null; }).map(function (o) { return o.etiqueta.es + ': ' + num(o.valor, o.unidad); }).join(' · ');
+      });
+      var dudoso = /Revisar/.test(pa.nota || '') || pa.rondas.some(function (r) { return r.opciones.some(function (o) { return o.valor === null; }); });
+      filas.push({
+        donde: { tipo: 'actividad', actividad: 'porcentajes', etiqueta: lugar + ' · Cara a cara', detalle: '', mes: null, orden: 6000 + n++ },
+        dato: partes.join(' — '), sub: [pa.tema, pa.anioDatos ? 'datos de ' + pa.anioDatos : ''].filter(Boolean).join(' · '), region: '',
+        fuentes: fuentesDe(pa.id, pa.infografia), comprobado: '', provisional: dudoso,
+        interno: { estado: dudoso ? 'revisar' : (pa.anioDatos ? 'verificada' : 'parcial'), nota: (pa.anioDatos ? '' : 'Año de los datos por confirmar. ') + (pa.nota || '') }
+      });
+    });
+    return filas;
+  }
+  /* Actividad «La línea del tiempo»: se lee directamente de data/timeline.json (islas-hito y hechos de las parejas), para tener una sola copia de las fuentes. */
+  function deLineaTiempo(t) {
+    if (!t) { return []; }
+    var filas = [], n = 0, lugar = TXT.tipos.actividad + ' · La línea del tiempo';
+    function anios(a, b) { return a === b ? String(a) : a + '–' + b; }
+    (t.islas || []).forEach(function (i) {
+      filas.push({ donde: { tipo: 'actividad', actividad: 'timeline', etiqueta: lugar + ' · Isla', detalle: '', mes: null, orden: 4000 + n++ },
+        dato: i.nombre.es + ' (' + anios(i.inicio, i.fin) + ')', sub: 'Hito de la historia que sirve de referencia', region: '',
+        fuentes: i.fuentes || [], comprobado: i.comprobado || '', provisional: i.estado === 'parcial', interno: { estado: i.estado, nota: i.nota || '' } });
+    });
+    (t.parejas || []).forEach(function (pa) {
+      pa.cartas.forEach(function (c) {
+        filas.push({ donde: { tipo: 'actividad', actividad: 'timeline', etiqueta: lugar + ' · Hecho feminista', detalle: '', mes: null, orden: 4000 + n++ },
+          dato: c.titulo.es + ' (' + (c.anioPin ? c.anioPin.es : c.anio) + ')', sub: c.pais, region: '',
+          fuentes: c.fuentes || [], comprobado: c.comprobado || '', provisional: c.estado === 'parcial', interno: { estado: c.estado, nota: c.nota || '' } });
+      });
+    });
+    return filas;
+  }
 
   /* ---------- Estado de la página ---------- */
-  var filas = [], filtros = { tipo: '', mes: '', region: '', q: '' };
+  var filas = [], filtros = { tipo: '', mes: '', actividad: '', region: '', q: '' };
 
   function cabecera() {
     document.title = TXT.titulo + ' · Feminist';
@@ -217,6 +301,7 @@
     $('lTipo').textContent = TXT.fTipo; $('lMes').textContent = TXT.fMes; $('lRegion').textContent = TXT.fRegion; $('lBuscar').textContent = TXT.fBuscar;
     $('fBuscar').placeholder = TXT.fBuscarPh; $('capTabla').textContent = TXT.cap;
     $('thDonde').textContent = TXT.thDonde; $('thDato').textContent = TXT.thDato; $('thFuentes').textContent = TXT.thFuentes;
+    $('btnLimpiar').textContent = TXT.quitarFiltros;
     $('thEstado').textContent = TXT.thEstado; $('thNota').textContent = TXT.thNota;
   }
   function $(id) { return document.getElementById(id); }
@@ -233,19 +318,40 @@
     opciones($('fMes'), TXT.todos, meses);
     var regs = {}; filas.forEach(function (f) { if (f.region) { regs[f.region] = 1; } });
     opciones($('fRegion'), TXT.todas, Object.keys(regs).sort().map(function (r) { return [r, r]; }));
-    ['fTipo', 'fMes', 'fRegion'].forEach(function (id) { $(id).addEventListener('change', function () { filtros[id.slice(1).toLowerCase()] = this.value; if (id === 'fTipo') { actualizarMes(); } pintar(); }); });
-    $('fBuscar').addEventListener('input', function () { filtros.q = this.value.trim().toLowerCase(); pintar(); });
+    ['fTipo', 'fMes', 'fRegion'].forEach(function (id) { $(id).addEventListener('change', function () {
+      var clave = id === 'fMes' && filtros.tipo === 'actividad' ? 'actividad' : id.slice(1).toLowerCase();   /* con «Actividades» elegido, este desplegable es el de actividad */
+      if (id === 'fTipo') { filtros.mes = ''; filtros.actividad = ''; filtros.region = ''; $('fRegion').value = ''; }   /* al cambiar de tipo se quitan los filtros que dependían del anterior */
+      filtros[clave] = this.value; if (id === 'fTipo') { actualizarMes(); } pintar(); }); });
+    $('btnLimpiar').addEventListener('click', limpiar);
+    $('fBuscar').addEventListener('input', function () { filtros.q = plano(this.value.trim()); pintar(); });
   }
-  function actualizarMes() { // el filtro de mes solo tiene sentido para el calendario
-    var activo = !filtros.tipo || filtros.tipo === 'calendario';
-    $('fMes').disabled = !activo; if (!activo) { $('fMes').value = ''; filtros.mes = ''; }
+  /* el segundo desplegable es «Mes» para el calendario y «Actividad» cuando se elige Actividades; para lo demás no tiene sentido */
+  function actualizarMes() {
+    var sel = $('fMes'), act = filtros.tipo === 'actividad';
+    /* la región solo existe en los datos del calendario: con otro tipo se desactiva, como el mes */
+    var conRegion = !filtros.tipo || filtros.tipo === 'calendario'; $('fRegion').disabled = !conRegion; if (!conRegion) { filtros.region = ''; $('fRegion').value = ''; }
+    if (act) {
+      $('lMes').textContent = TXT.fActividad; opciones(sel, TXT.todasAct, ACTIVIDADES); sel.disabled = false; sel.value = filtros.actividad; filtros.mes = '';
+    } else {
+      $('lMes').textContent = TXT.fMes; filtros.actividad = '';
+      var meses = []; TXT.meses.forEach(function (m, i) { if (filas.some(function (f) { return f.donde.mes === i + 1; })) { meses.push([String(i + 1), m.charAt(0).toUpperCase() + m.slice(1)]); } });
+      opciones(sel, TXT.todos, meses);
+      var activo = !filtros.tipo || filtros.tipo === 'calendario';
+      sel.disabled = !activo; if (!activo) { filtros.mes = ''; } sel.value = filtros.mes;
+    }
   }
+  function limpiar() {
+    filtros = { tipo: '', mes: '', actividad: '', region: '', q: '' };
+    $('fTipo').value = ''; $('fRegion').value = ''; $('fBuscar').value = ''; actualizarMes(); pintar(); $('fTipo').focus();
+  }
+  function plano(t) { return String(t).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); }   /* «mexico» encuentra «México» */
   function pasa(f) {
     if (filtros.tipo && f.donde.tipo !== filtros.tipo) { return false; }
     if (filtros.mes && String(f.donde.mes) !== filtros.mes) { return false; }
+    if (filtros.actividad && f.donde.actividad !== filtros.actividad) { return false; }
     if (filtros.region && f.region !== filtros.region) { return false; }
     if (filtros.q) {
-      var t = [f.donde.etiqueta, f.dato, f.sub, f.region, f.fuentes.map(function (s) { return s.nombre; }).join(' ')].join(' ').toLowerCase();
+      var t = plano([f.donde.etiqueta, f.dato, f.sub, f.region, f.fuentes.map(function (s) { return s.nombre; }).join(' ')].join(' '));
       if (t.indexOf(filtros.q) < 0) { return false; }
     }
     return true;
@@ -298,17 +404,23 @@
       tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(celdaFuentes(f)); celdasInternas(tr, f);
       cuerpo.appendChild(tr);
     });
-    if (!vistas.length) { var t = el('tr'), c = el('td', 'vacio', TXT.vacio); c.colSpan = INTERNO ? 5 : 3; t.appendChild(c); cuerpo.appendChild(t); }
+    if (!vistas.length) { var t = el('tr'), c = el('td', 'vacio', filtros.actividad ? TXT.actividadSinFuentes : TXT.vacio); c.colSpan = INTERNO ? 5 : 3; t.appendChild(c); cuerpo.appendChild(t); }
     $('cuenta').textContent = TXT.cuenta(vistas.length, filas.length);
+    $('btnLimpiar').disabled = !(filtros.tipo || filtros.mes || filtros.actividad || filtros.region || filtros.q);
   }
 
   /* ---------- Carga ---------- */
   cabecera(); $('cuenta').textContent = TXT.cargando;
-  Promise.all([json('data/calendario.json'), json('data/mujeres.json'), json('data/fuentes-fichas.json'), json('data/fotos.json'), json('data/fuentes-actividades.json', true)])
+  Promise.all([json('data/calendario.json'), json('data/mujeres.json'), json('data/fuentes-fichas.json'), json('data/fotos.json'), json('data/fuentes-actividades.json', true), json('data/timeline.json', true), json('data/vinilos.json', true), json('data/porcentajes.json', true)])
     .then(function (r) {
-      filas = deCalendario(r[0]).concat(deFichas(r[1], r[2]), deImagenes(r[3], r[1]), deActividades(r[4]))
+      filas = deCalendario(r[0]).concat(deFichas(r[1], r[2]), deImagenes(r[3], r[1]), deActividades(r[4]), deLineaTiempo(r[5]), deVinilos(r[6]), dePorcentajes(r[7]))
         .sort(function (a, b) { return a.donde.orden - b.donde.orden; });
-      rellenarFiltros(); actualizarMes(); pintar();
+      rellenarFiltros();
+      /* ?tipo=actividad (o calendario, ficha, imagen) en la dirección llega con el filtro ya puesto */
+      var tipoUrl = params.get('tipo');
+      if (tipoUrl && filas.some(function (f) { return f.donde.tipo === tipoUrl; })) { filtros.tipo = tipoUrl; $('fTipo').value = tipoUrl; }
+      var actUrl = params.get('actividad'); if (actUrl && filtros.tipo === 'actividad') { filtros.actividad = actUrl; }
+      actualizarMes(); pintar();
     })
     .catch(function () { $('cuenta').textContent = TXT.error; });
 })();
