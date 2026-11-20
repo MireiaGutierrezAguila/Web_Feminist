@@ -150,7 +150,7 @@
     alternativa: 'alternativa', viva: 'viva', sensible: 'sensible', basica: 'fuentes básicas'
   };
   /* Actividades de la web: para añadir otra, basta una línea aquí y que sus filas lleven donde.actividad con esta clave */
-  var ACTIVIDADES = [['vinilos', 'El Vinilo Crítico'], ['timeline', 'La línea del tiempo'], ['porcentajes', 'Adivina el porcentaje']];
+  var ACTIVIDADES = [['vinilos', 'El Vinilo Crítico'], ['timeline', 'La línea del tiempo'], ['porcentajes', 'Adivina el porcentaje'], ['mapa', 'La mujer en el mundo']];
   var params = new URLSearchParams(location.search);
   var INTERNO = params.get('interno') === '1', SENSIBLES = INTERNO || params.get('sensibles') === '1';
   if (INTERNO) { document.body.classList.add('interno'); }

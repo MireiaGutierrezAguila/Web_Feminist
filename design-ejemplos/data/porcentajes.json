@@ -392,6 +392,31 @@
       ],
       "anioDatos": 2023,
       "nota": "Datos de España; mejora real: la brecha se ha reducido a la mitad."
+    },
+    {
+      "id": "p-11",
+      "tipo": "dato",
+      "tema": "deporte",
+      "infografia": "deporte",
+      "pregunta": {
+        "es": "¿De todo el deporte que sale en los medios de comunicación, qué porcentaje crees que es de deportes femeninos?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 16,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "del deporte en los medios es femenino (menos del 16 %)",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "contador",
+        "aguja",
+        "pintar"
+      ],
+      "anioDatos": null,
+      "nota": "KAN-1 1.7. El 16 % de la infografía es «menos del 16 % del total» de cobertura mediática. Mireia lo redactó como «televisión», pero la infografía habla de cobertura mediática en general: por confirmar con la infografía antes de publicar. La cifra es un tope («menos del 16 %»)."
     }
   ],
   "parejas": [
@@ -466,45 +491,6 @@
       "nota": "Esperanza de vida y años de vida con buena salud, a partir de la infografía Beijing +30."
     },
     {
-      "id": "c-02",
-      "tipo": "caraacara",
-      "tema": "educacion",
-      "infografia": "educacion",
-      "anioDatos": null,
-      "rondas": [
-        {
-          "pregunta": {
-            "es": "¿Dónde hay más mujeres: entre quienes terminan la universidad o entre los rectorados?",
-            "ca": "[TRADUCCIÓN PENDIENTE]",
-            "en": "[TRADUCCIÓN PENDIENTE]"
-          },
-          "opciones": [
-            {
-              "id": "univ",
-              "etiqueta": {
-                "es": "Terminan la universidad (curso 2022-23)",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
-              },
-              "valor": 60.9,
-              "unidad": "%"
-            },
-            {
-              "id": "rect",
-              "etiqueta": {
-                "es": "Rectorados (2024)",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
-              },
-              "valor": 23,
-              "unidad": "%"
-            }
-          ],
-          "correcta": "univ"
-        }
-      ]
-    },
-    {
       "id": "c-03",
       "tipo": "caraacara",
       "tema": "deporte",
@@ -513,66 +499,45 @@
       "rondas": [
         {
           "pregunta": {
-            "es": "Las deportistas, ¿tienen más o menos seguimiento en redes sociales que los deportistas?",
+            "es": "Entre las personas deportistas, ¿quién tiene más seguimiento en redes sociales, ellas o ellos?",
             "ca": "[TRADUCCIÓN PENDIENTE]",
             "en": "[TRADUCCIÓN PENDIENTE]"
           },
           "opciones": [
             {
-              "id": "mas",
+              "id": "ellas",
               "etiqueta": {
-                "es": "Más (un 14 % más)",
+                "es": "Ellas",
                 "ca": "[TRADUCCIÓN PENDIENTE]",
                 "en": "[TRADUCCIÓN PENDIENTE]"
               },
               "valor": 14,
-              "unidad": "%"
+              "unidad": "%",
+              "texto": {
+                "es": "14 % más",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              }
             },
             {
-              "id": "menos",
+              "id": "ellos",
               "etiqueta": {
+                "es": "Ellos",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": null,
+              "unidad": "%",
+              "texto": {
                 "es": "Menos",
                 "ca": "[TRADUCCIÓN PENDIENTE]",
                 "en": "[TRADUCCIÓN PENDIENTE]"
-              },
-              "valor": null,
-              "unidad": "%"
+              }
             }
           ],
-          "correcta": "mas"
-        },
-        {
-          "pregunta": {
-            "es": "¿Y cuánto del deporte que sale en los medios es femenino?",
-            "ca": "[TRADUCCIÓN PENDIENTE]",
-            "en": "[TRADUCCIÓN PENDIENTE]"
-          },
-          "opciones": [
-            {
-              "id": "mas",
-              "etiqueta": {
-                "es": "Más de la mitad",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
-              },
-              "valor": null,
-              "unidad": "%"
-            },
-            {
-              "id": "menos",
-              "etiqueta": {
-                "es": "Menos del 16 %",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
-              },
-              "valor": 16,
-              "unidad": "%"
-            }
-          ],
-          "correcta": "menos"
+          "correcta": "ellas"
         }
-      ],
-      "nota": "El 16 % de la infografía es «menos del 16 % del total» de cobertura mediática."
+      ]
     },
     {
       "id": "c-04",
@@ -693,5 +658,49 @@
       ],
       "nota": "Revisar: la infografía da 21,5 y 13,8 «pp/año» (puntos porcentuales por año) sin explicar más; confirmar qué mide exactamente con su fuente antes de publicar."
     }
-  ]
+  ],
+  "reserva": [
+    {
+      "id": "c-02",
+      "tipo": "caraacara",
+      "tema": "educacion",
+      "infografia": "educacion",
+      "anioDatos": null,
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "¿Dónde hay más mujeres: entre quienes terminan la universidad o entre los rectorados?",
+            "ca": "[TRADUCCIÓN PENDIENTE]",
+            "en": "[TRADUCCIÓN PENDIENTE]"
+          },
+          "opciones": [
+            {
+              "id": "univ",
+              "etiqueta": {
+                "es": "Terminan la universidad (curso 2022-23)",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 60.9,
+              "unidad": "%"
+            },
+            {
+              "id": "rect",
+              "etiqueta": {
+                "es": "Rectorados (2024)",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 23,
+              "unidad": "%"
+            }
+          ],
+          "correcta": "univ"
+        }
+      ]
+    }
+  ],
+  "reserva_aviso": {
+    "es": "Parejas retiradas del juego por decisión de Mireia (KAN-1, punto 1.4, 20-11-2026). No se muestran ni se cuentan en las fuentes; se guardan por si se quieren recuperar."
+  }
 }

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ruleta de actividades</title>
+<!-- PRUEBA (20-11-2026): la ruleta de Mireia sustituye al dado de «Adivina el porcentaje».
+     Gira solo el disco; la aguja y el botón Play se quedan quietos. La actividad que sale la decide el mismo «dado trucado»
+     de la actividad (la que menos ha salido, y si empatan, al azar): la ruleta solo se encarga de parar en ella. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --negro: #101010; --blanco: #F5F5F0; --morado: #6B2D8C; --oro: #C9A24B; --oro-claro: #E8CE86;
+    --fondo: #101010; --panel: #17121f; --linea: rgba(201, 162, 75, .35); --suave: #b9b1c9;
+    --fuente-titulos: "Cinzel Decorative", Georgia, serif; --fuente-nombres: "Cinzel", Georgia, serif;
+    --fuente-texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; overflow-x: clip; min-height: 100vh; display: flex; flex-direction: column; background: var(--fondo); color: var(--blanco); font-family: var(--fuente-texto); font-size: 1rem; line-height: 1.5; }
+  :focus-visible { outline: 3px solid var(--oro-claro); outline-offset: 3px; }
+  main { flex: 1; width: min(100% - 32px, 760px); margin: 0 auto; padding: 18px 0 40px; text-align: center; }
+  h1 { display: inline-block; margin: 6px 0 8px; padding: .25em .7em; background: var(--morado); color: var(--blanco); transform: rotate(-1.2deg); box-shadow: 5px 5px 0 var(--blanco); font-family: var(--fuente-titulos); font-size: 1.5rem; }
+  .aviso-boceto { display: block; width: fit-content; margin: 10px auto 18px; padding: 4px 12px; border-radius: 99px; border: 1px solid var(--linea); color: var(--suave); font-size: .82rem; }
+  .sub { margin: 0 auto 18px; max-width: 34em; color: var(--suave); }
+
+  /* ---------- la ruleta ---------- */
+  .ruleta-caja { display: grid; justify-items: center; gap: 18px; padding: 34px 16px 30px; border: 2px solid var(--linea); border-radius: 20px; background: var(--panel); }
+  .ruleta { position: relative; width: clamp(280px, min(88vw, 56vh), 540px); aspect-ratio: 1; }   /* no más alta que la pantalla, para ver también el resultado */
+  /* sombra fija bajo el disco (el disco gira, así que la sombra no puede ir en él) */
+  .ruleta::before { content: ""; position: absolute; inset: 2%; border-radius: 50%; box-shadow: 0 0 44px rgba(138, 76, 194, .5), 0 16px 30px rgba(0, 0, 0, .7); }
+  .disco { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; will-change: transform; user-select: none; -webkit-user-drag: none; }
+  /* la aguja: fija, encima del aro; al pasar cada sector da un golpecito (tic) */
+  .aguja { position: absolute; z-index: 3; top: -1.2%; left: 50%; width: 7.6%; height: auto; transform: translateX(-50%); transform-origin: 50% 12%; pointer-events: none; filter: drop-shadow(0 3px 4px rgba(0, 0, 0, .6)); }
+  .aguja.tic { animation: tic .2s ease-out; }
+  @keyframes tic { 0% { transform: translateX(-50%) rotate(0); } 35% { transform: translateX(-50%) rotate(-17deg); } 100% { transform: translateX(-50%) rotate(0); } }
+  /* el Play del centro: es el botón, no gira */
+  .play { position: absolute; z-index: 2; left: 50%; top: 50%; width: 35%; aspect-ratio: 1; transform: translate(-50%, -50%); padding: 0; border: 0; border-radius: 50%; cursor: pointer; font-size: 0; touch-action: manipulation;
+          background: url("img/opt/play-normal.webp") center / contain no-repeat; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, .6)); animation: latido 1.2s ease-in-out infinite; }
+  .play:hover { background-image: url("img/opt/play-hover.webp"); }
+  .play:active:not(:disabled) { background-image: url("img/opt/play-pulsado.webp"); }
+  .play:disabled { background-image: url("img/opt/play-apagado.webp"); animation: none; cursor: default; }
+  @keyframes latido { 50% { transform: translate(-50%, -50%) scale(1.07); } }
+  .ruleta-texto { margin: 0; min-height: 4.6em; font-family: var(--fuente-nombres); font-size: 1.25rem; color: var(--oro-claro); }
+  .ruleta-texto small { display: block; margin-top: 2px; font-family: var(--fuente-texto); font-size: .9rem; color: var(--suave); }
+
+  /* ---------- solo para pruebas ---------- */
+  .pruebas { margin: 22px auto 0; max-width: 520px; padding: 10px 14px; border: 1px dashed rgba(185, 177, 201, .5); border-radius: 12px; text-align: left; font-size: .9rem; color: var(--suave); }
+  .pruebas summary { cursor: pointer; }
+  .pruebas .fila { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+  .pruebas button { padding: 6px 14px; border-radius: 99px; border: 1px solid var(--oro); background: transparent; color: var(--oro-claro); font: inherit; cursor: pointer; }
+  .pruebas button:disabled { opacity: .4; cursor: default; }
+  .pruebas output { display: block; margin-top: 6px; font-size: .85rem; }
+
+  footer { padding: 16px; text-align: center; color: var(--suave); font-size: .85rem; border-top: 1px solid var(--linea); }
+  .firma { margin: 0; }
+
+  @media (prefers-reduced-motion: reduce) { .aguja.tic, .play { animation: none; } }
+</style>
+</head>
+<body>
+<main>
+  <h1 id="titulo"></h1>
+  <span class="aviso-boceto" id="aviso"></span>
+  <p class="sub" id="sub"></p>
+
+  <div class="ruleta-caja">
+    <div class="ruleta" id="ruleta">
+      <img class="disco" id="disco" src="img/opt/ruleta-disco.webp" alt="" width="1100" height="1100" draggable="false">
+      <img class="aguja" id="aguja" src="img/opt/ruleta-aguja.webp" alt="" width="300" height="409">
+      <button class="play" id="btnGirar" type="button"></button>
+    </div>
+    <p class="ruleta-texto" id="ruletaTxt" aria-live="polite"></p>
+  </div>
+
+  <details class="pruebas" id="pruebas">
+    <summary id="pruebasT"></summary>
+    <div class="fila" id="pruebasFila"></div>
+    <output id="pruebasSal"></output>
+  </details>
+</main>
+<footer><p class="firma" id="firma"></p></footer>
+
+<script>
+(function () {
+  'use strict';
+  var $ = function (id) { return document.getElementById(id); };
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Textos (después irán a los archivos de idioma; ca/en pendientes de traducir y de revisión de Mireia) */
+  var TXT = {
+    es: {
+      titulo: 'La ruleta', aviso: 'Boceto de prueba · la ruleta sustituye al dado',
+      sub: 'Gira la ruleta y descubre cómo te toca responder.',
+      girar: 'Girar la ruleta', toca: 'Toca el Play para girar la ruleta', girando: 'Girando…', teToca: 'Te toca:',
+      pruebasT: 'Solo para pruebas (esto no irá en la web)', pruebasInfo: 'Forzar el resultado para comprobar que la ruleta para donde debe:',
+      firma: 'Diseñada, programada y probada por Mireia Gutiérrez',
+      /* nombres y descripciones: los de la actividad «Adivina el porcentaje» */
+      mecanicas: {
+        contador: { nombre: 'El contador loco', desc: 'La cifra sube sin parar: pulsa PARAR en el número que creas.' },
+        aguja: { nombre: 'El cuentakilómetros', desc: 'Acelera, frena y fija la aguja en la cifra.' },
+        pintar: { nombre: 'Pinta a la gente', desc: 'Toca (o arrastra sobre) las personas que crees que cumplen el dato.' },
+        caraacara: { nombre: 'Cara a cara', desc: 'Dos cartas boca abajo: toca la que crees.' }
+      }
+    }
+  };
+  var T = TXT.es;
+
+  /* El disco tiene 8 sectores de 45°. Ángulo del CENTRO de cada sector contando desde la aguja (arriba) en el sentido del reloj:
+     cada actividad aparece dos veces, en sectores opuestos (así hay más sitios donde parar). */
+  var CLAVES = ['contador', 'aguja', 'pintar', 'caraacara'];
+  var SECTORES = { pintar: [0, 180], contador: [45, 225], caraacara: [90, 270], aguja: [135, 315] };
+  var usos = {};
+
+  /* «dado trucado»: la actividad que menos ha salido; si empatan, al azar (igual que en la actividad) */
+  function elegirMecanica() {
+    var min = Math.min.apply(null, CLAVES.map(function (m) { return usos[m] || 0; }));
+    var c = CLAVES.filter(function (m) { return (usos[m] || 0) === min; });
+    return c[Math.floor(Math.random() * c.length)];
+  }
+
+  var disco = $('disco'), aguja = $('aguja'), btn = $('btnGirar'), txt = $('ruletaTxt');
+  var rot = 0, girando = false;   // rot = grados acumulados que lleva girado el disco (sentido del reloj)
+
+  function el(tag, cls, t) { var e = document.createElement(tag); if (cls) { e.className = cls; } if (t) { e.textContent = t; } return e; }
+
+  /* golpecito de la aguja cada vez que pasa de un sector al siguiente */
+  var sectorAnterior = null, rafId = 0;
+  function sectorBajoAguja() {
+    var m = getComputedStyle(disco).transform, ang = 0;
+    if (m && m !== 'none') { var v = m.match(/matrix\(([^)]+)\)/); if (v) { var p = v[1].split(','); ang = Math.atan2(parseFloat(p[1]), parseFloat(p[0])) * 180 / Math.PI; } }
+    var bajo = (360 - ang) % 360;                        // ángulo del disco que está bajo la aguja
+    return Math.floor(((bajo + 22.5) % 360) / 45);       // 0..7
+  }
+  function vigilar() {
+    var s = sectorBajoAguja();
+    if (sectorAnterior !== null && s !== sectorAnterior) { aguja.classList.remove('tic'); void aguja.offsetWidth; aguja.classList.add('tic'); }
+    sectorAnterior = s;
+    if (girando) { rafId = requestAnimationFrame(vigilar); }
+  }
+
+  function mostrarResultado(mec) {
+    var m = T.mecanicas[mec];
+    txt.textContent = T.teToca + ' ' + m.nombre; txt.appendChild(el('small', '', m.desc));
+    btn.disabled = false; girando = false;
+    $('pruebasSal').textContent = 'Última: ' + m.nombre + ' · veces que ha salido → ' + CLAVES.map(function (k) { return T.mecanicas[k].nombre + ' ' + (usos[k] || 0); }).join(' · ');
+  }
+
+  function girar(mec) {
+    if (girando) { return; }
+    mec = mec || elegirMecanica();
+    usos[mec] = (usos[mec] || 0) + 1;
+    girando = true; btn.disabled = true; txt.textContent = T.girando;
+    /* se elige uno de los dos sectores de esa actividad y se para en su centro (±3°, para que no sea siempre igual):
+       así la aguja cae en el hueco entre las dos palabras del nombre y no lo tapa */
+    var lista = SECTORES[mec], destino = lista[Math.floor(Math.random() * 2)] + (Math.random() * 6 - 3);
+    var falta = (((-destino - rot) % 360) + 360) % 360;   // lo que hay que girar para que ese punto quede bajo la aguja
+    var total = (reduce ? 0 : 360 * (4 + Math.floor(Math.random() * 3))) + falta;
+    rot += total;
+    if (reduce) {          // sin movimiento: el disco salta a su sitio
+      disco.style.transition = 'none'; disco.style.transform = 'rotate(' + rot + 'deg)'; mostrarResultado(mec); return;
+    }
+    disco.style.transition = 'transform 5s cubic-bezier(.12, .62, .12, 1)';
+    disco.style.transform = 'rotate(' + rot + 'deg)';
+    sectorAnterior = sectorBajoAguja(); rafId = requestAnimationFrame(vigilar);
+    var hecho = false;
+    function fin() { if (hecho) { return; } hecho = true; cancelAnimationFrame(rafId); disco.removeEventListener('transitionend', alFinal); mostrarResultado(mec); }
+    function alFinal(e) { if (e.target === disco && e.propertyName === 'transform') { fin(); } }
+    disco.addEventListener('transitionend', alFinal);
+    setTimeout(fin, 5300);   // por si el navegador no avisa del final (pestaña oculta…)
+  }
+
+  /* ---------- arranque ---------- */
+  document.documentElement.lang = 'es';
+  $('titulo').textContent = T.titulo; $('aviso').textContent = T.aviso; $('sub').textContent = T.sub;
+  btn.setAttribute('aria-label', T.girar); txt.textContent = T.toca; $('firma').textContent = T.firma;
+  $('pruebasT').textContent = T.pruebasT;
+  $('pruebasFila').appendChild(el('span', '', T.pruebasInfo)).style.flexBasis = '100%';
+  CLAVES.forEach(function (k) { var b = el('button', '', T.mecanicas[k].nombre); b.type = 'button'; b.addEventListener('click', function () { girar(k); }); $('pruebasFila').appendChild(b); });
+  btn.addEventListener('click', function () { girar(); });
+  $('ruleta').addEventListener('click', function (e) { if (e.target === $('ruleta')) { girar(); } });
+  /* los botones de prueba también se apagan mientras gira */
+  new MutationObserver(function () { Array.prototype.forEach.call($('pruebasFila').querySelectorAll('button'), function (b) { b.disabled = btn.disabled; }); }).observe(btn, { attributes: true, attributeFilter: ['disabled'] });
+})();
+</script>
+</body>
+</html>

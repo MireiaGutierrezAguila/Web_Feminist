@@ -1,0 +1,79 @@
+{
+  "aviso": "Fuentes de actividades que no tienen su propio archivo de datos con fuentes. Una fila por dato; mismo formato que el resto de la página de fuentes.",
+  "filas": [
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mapa",
+        "detalle": "",
+        "mes": null,
+        "orden": 7000
+      },
+      "dato": "Países, fronteras y nombres del mapa (castellano e inglés)",
+      "sub": "Natural Earth, ne_50m_admin_0_countries: 241 territorios, sin la Antártida",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Natural Earth: términos de uso (dominio público; no exige atribución)",
+          "url": "https://www.naturalearthdata.com/about/terms-of-use/"
+        },
+        {
+          "nombre": "Natural Earth: archivo de datos usado (ne_50m_admin_0_countries, GeoJSON)",
+          "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson"
+        }
+      ],
+      "comprobado": "2026-11-20",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Los nombres en catalán no vienen en Natural Earth: [TRADUCCIÓN PENDIENTE]."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mapa",
+        "detalle": "",
+        "mes": null,
+        "orden": 7001
+      },
+      "dato": "Proyección Equal Earth (igual área): los países se ven a su tamaño real",
+      "sub": "Los tamaños de los países son los reales; África sale de su tamaño",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Equal Earth: web y términos de uso de los mapas (Tom Patterson; dominio público)",
+          "url": "https://www.equal-earth.com/#maps"
+        }
+      ],
+      "comprobado": "2026-11-20",
+      "provisional": true,
+      "interno": {
+        "estado": "parcial",
+        "nota": "Los términos de uso los comprobó Mireia en una captura de la web (la web bloquea la lectura automática). Pendiente: autores y artículo científico de la proyección, para citarla. Los mapas de Equal Earth no se usan: el mapa se dibuja desde Natural Earth con esta proyección."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mapa",
+        "detalle": "",
+        "mes": null,
+        "orden": 7002
+      },
+      "dato": "Territorios en disputa (Sáhara Occidental, Palestina, Kosovo, Taiwán, Somalilandia, Norte de Chipre…)",
+      "sub": "Cómo se dibujan es una decisión pendiente",
+      "region": "",
+      "fuentes": [],
+      "comprobado": "",
+      "provisional": true,
+      "interno": {
+        "estado": "revisar",
+        "nota": "Los términos de Natural Earth no dicen qué criterio siguen con las fronteras en disputa. Decisión de Mireia, con neutralidad."
+      }
+    }
+  ]
+}

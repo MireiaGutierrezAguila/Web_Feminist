@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La mujer en el mundo · Feminist</title>
+<!-- BOCETO (paso 1) de la actividad del mapamundi. Todavía SIN datos feministas: solo se comprueba el mapa (países, nombres que caben,
+     tocar un país, zoom y desplazamiento). Mapa: países de Natural Earth (dominio público) en data/mapa-paises.json, dibujados con la
+     proyección Equal Earth (igual área: los tamaños son los reales, África sale de su tamaño). La proyección se calcula aquí, sin librerías.
+     Estilo: el de las demás actividades (fondo de espirales, cabecera morada, marco de rosas, Cinzel, dorado y violeta). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --negro: #101010; --blanco: #F5F5F0; --morado: #6B2D8C; --oro: #C9A24B; --oro-claro: #E8CE86; --rosa: #C2386E; --violeta: #8a4cc2;
+    --fondo: #101010; --panel: #17121f; --linea: rgba(201, 162, 75, .35); --suave: #b9b1c9;
+    --tierra: #3a3050; --tierra-borde: rgba(185, 177, 201, .4);
+    --fuente-titulos: "Cinzel Decorative", Georgia, serif; --fuente-nombres: "Cinzel", Georgia, serif;
+    --fuente-texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--fondo); color: var(--blanco); font-family: var(--fuente-texto); font-size: 1rem; line-height: 1.5; }
+  :focus-visible { outline: 3px solid var(--oro-claro); outline-offset: 3px; }
+  a { color: var(--oro-claro); }
+  [hidden] { display: none !important; }
+  .envoltorio { width: min(1700px, 100% - 32px); margin-inline: auto; }   /* más ancho que otras actividades: el mapa gana sitio y caben más nombres */
+  header.cab { padding: 18px 0 4px; }
+  .logo { display: block; width: fit-content; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.4rem; color: var(--blanco); text-decoration: none; }
+  h1 { display: inline-block; margin: 22px 0 8px; padding: .25em .7em; background: var(--morado); color: var(--blanco); transform: rotate(-1.2deg); box-shadow: 5px 5px 0 var(--blanco);
+    font-family: var(--fuente-titulos); font-weight: 700; font-size: clamp(1.4rem, 5vw, 2.2rem); line-height: 1.25; }
+  .sub { max-width: 62ch; color: #e6e0f0; margin: 6px 0 0; }
+  .aviso-boceto { margin: 14px 0 0; padding: 8px 12px; border: 0; border-left: 4px solid var(--oro); background: rgba(201, 162, 75, .08); border-radius: 0 10px 10px 0; color: var(--oro-claro); font-size: .9rem; }
+  .ref-enlace { margin: 8px 0 0; font-size: .88rem; color: var(--suave); }
+  main { padding-bottom: 36px; }
+  h2 { font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.25rem; margin: 0 0 12px; color: var(--oro-claro); }
+
+  /* ---------- controles: pastillas redondeadas de oro y plata, como el botón «Parar efectos» ---------- */
+  .controles { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 22px 0 14px; }
+  .controles .rotulo { font-family: var(--fuente-nombres); font-weight: 700; font-size: .95rem; color: var(--oro-claro); margin-right: 4px; }
+  .chip, .zoom button, .btn-efectos { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 6px 14px; font: inherit; font-size: .9rem; font-weight: 700; color: var(--blanco);
+    background: rgba(23, 18, 31, .85); border: 1px solid rgba(185, 177, 201, .5); border-radius: 99px; cursor: pointer; touch-action: manipulation; }
+  .chip:hover, .zoom button:hover, .btn-efectos:hover { border-color: var(--oro-claro); color: var(--oro-claro); }
+  .chip[aria-pressed="true"] { background: var(--oro); border-color: var(--oro-claro); color: #2b1805; }
+  .zoom { display: flex; gap: 8px; margin-left: auto; }
+  .zoom button { min-width: 40px; padding: 6px 10px; font-size: 1.15rem; line-height: 1; }
+  .buscador { display: inline-flex; align-items: center; gap: 8px; }
+  .buscador select { min-height: 40px; max-width: 220px; padding: 6px 12px; font: inherit; font-size: .9rem; color: var(--blanco); background: rgba(23, 18, 31, .85); border: 1px solid rgba(185, 177, 201, .5); border-radius: 99px; }
+
+  /* ---------- el mapa, en el marco de rosas de las otras actividades ---------- */
+  .tablero { position: relative; padding: 14px; border: 2px solid rgba(185, 177, 201, .5); border-radius: 20px; background: var(--panel); }
+  .tablero::before { content: ""; position: absolute; inset: -14px; pointer-events: none; z-index: 2; --esq: clamp(96px, 20vw, 136px);
+    background: url("img/opt/esquina-rosas-tl.webp") left top / var(--esq) auto no-repeat, url("img/opt/esquina-rosas-tr.webp") right top / var(--esq) auto no-repeat,
+                url("img/opt/esquina-rosas-bl.webp") left bottom / var(--esq) auto no-repeat, url("img/opt/esquina-rosas-br.webp") right bottom / var(--esq) auto no-repeat;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .6)); }
+  .mapa-caja { position: relative; border-radius: 12px; overflow: hidden; background: radial-gradient(ellipse at 50% 40%, #1d1530 0%, #120d1d 100%); touch-action: none; cursor: grab; }
+  .mapa-caja.arrastrando { cursor: grabbing; }
+  #mapa { display: block; width: 100%; height: auto; user-select: none; -webkit-user-select: none; }
+  .pais { fill: var(--tierra); stroke: var(--tierra-borde); stroke-width: .7; vector-effect: non-scaling-stroke; fill-rule: evenodd; transition: fill .2s; cursor: pointer; }
+  .pais:hover { fill: #4d4268; }
+  .pais.pintado { fill: var(--oro); fill-opacity: .88; }
+  .pais.pintado:hover { fill: var(--oro-claro); }
+  .pais.sel { stroke: var(--oro-claro); stroke-width: 2.2; }
+  .etiqueta { fill: var(--blanco); font-family: var(--fuente-texto); font-weight: 700; text-anchor: middle; dominant-baseline: central; paint-order: stroke; stroke: rgba(16, 16, 16, .78); stroke-linejoin: round; pointer-events: none; }
+  .leyenda { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin: 12px 4px 0; font-size: .88rem; color: var(--suave); }
+  .leyenda i { display: inline-block; width: 16px; height: 16px; border-radius: 4px; margin-right: 6px; vertical-align: -3px; border: 1px solid var(--tierra-borde); }
+  .leyenda .oro { background: var(--oro); border-color: var(--oro-claro); } .leyenda .tierra { background: var(--tierra); }
+  .ayuda-mapa { margin: 8px 4px 0; font-size: .85rem; color: var(--suave); }
+
+  /* ---------- ficha del país tocado ---------- */
+  .ficha { margin: 22px 0 0; padding: 16px 18px; border-left: 6px solid var(--rosa); background: var(--panel); border-radius: 0 12px 12px 0; max-width: 70ch; min-height: 5.2em; }
+  .ficha h3 { margin: 0 0 4px; font-family: var(--fuente-nombres); font-size: 1.3rem; color: var(--oro-claro); }
+  .ficha p { margin: 0; color: #e6e0f0; } .ficha .en { color: var(--suave); font-size: .9rem; }
+
+  footer { margin-top: auto; background: #000; border-top: 2px solid rgba(185, 177, 201, .35); }
+  footer .envoltorio { padding: 20px 0 26px; }
+  .firma { margin: 0; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.05rem; color: var(--oro-claro); }
+  .fuente-pie { margin: 10px 0 0; font-size: .8rem; color: var(--suave); }
+
+  /* fondo de espirales irregulares como las de la portada, muy suaves y girando despacio */
+  .fondo-esp { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+  .esp { position: absolute; }
+  .esp.e1 { left: 3%; top: 9%; width: min(250px, 55vw); opacity: .075; animation: gira2 80s linear infinite; }
+  .esp.e2 { right: 2%; top: 34%; width: min(400px, 80vw); opacity: .065; animation: gira1 110s linear infinite; }
+  .esp.e3 { left: 9%; bottom: 3%; width: min(540px, 100vw); opacity: .055; animation: gira2 140s linear infinite; }
+  @keyframes gira1 { to { transform: rotate(360deg); } }
+  @keyframes gira2 { to { transform: rotate(-360deg); } }
+  header.cab, main, footer { position: relative; z-index: 1; }
+  header.cab .envoltorio { position: relative; }
+  .btn-efectos { position: absolute; right: 0; top: 18px; }
+  body.sin-efectos .esp { animation: none !important; }
+  body.sin-efectos .pais { transition: none; }
+  @media (prefers-reduced-motion: reduce) { .esp { animation: none; } .pais { transition: none; } }
+  @media (max-width: 640px) { .zoom { margin-left: 0; } .buscador select { max-width: 160px; } }
+</style>
+</head>
+<body>
+<div class="fondo-esp" aria-hidden="true"><svg class="esp e1" id="esp1" viewBox="-400 -400 800 800"></svg><svg class="esp e2" id="esp2" viewBox="-400 -400 800 800"></svg><svg class="esp e3" id="esp3" viewBox="-400 -400 800 800"></svg></div>
+
+<header class="cab"><div class="envoltorio">
+  <button class="btn-efectos" id="btnEfectos" type="button" aria-pressed="false"></button>
+  <a class="logo" href="propuesta-d-mezcla.html">♀ Feminist</a>
+  <h1 id="titulo"></h1>
+  <p class="sub" id="subtitulo"></p>
+  <p class="aviso-boceto" id="avisoBoceto"></p>
+  <p class="ref-enlace" id="refEnlace"></p>   <!-- justo debajo del aviso; cuando el aviso de boceto se quite, ocupa su sitio -->
+</div></header>
+
+<main class="envoltorio">
+  <div class="controles" id="controles" role="group">
+    <span class="rotulo" id="rotDemo"></span>
+    <span id="chips" style="display: contents"></span>
+    <label class="buscador"><span class="rotulo" id="rotBuscar"></span><select id="selPais"></select></label>
+    <div class="zoom" role="group" id="zoomGrupo"><button type="button" id="zMas">+</button><button type="button" id="zMenos">−</button><button type="button" id="zReset"></button></div>
+  </div>
+
+  <div class="tablero">
+    <div class="mapa-caja" id="mapaCaja">
+      <svg id="mapa" role="img" aria-labelledby="mapaTit"><title id="mapaTit"></title><g id="paises"></g><g id="etiquetas" aria-hidden="true"></g></svg>
+    </div>
+    <div class="leyenda" id="leyenda"></div>
+    <p class="ayuda-mapa" id="ayudaMapa"></p>
+  </div>
+
+  <div class="ficha" id="ficha" aria-live="polite"></div>
+</main>
+
+<footer><div class="envoltorio">
+  <p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p>
+  <p class="fuente-pie" id="fuentePie"></p>
+</div></footer>
+
+<script>
+(function () {
+  'use strict';
+  var $ = function (id) { return document.getElementById(id); };
+  function el(tag, cls, t) { var e = document.createElement(tag); if (cls) { e.className = cls; } if (t) { e.textContent = t; } return e; }
+  var SVGNS = 'http://www.w3.org/2000/svg';
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Textos (después irán a los archivos de idioma; ca/en pendientes de traducir y de revisión de Mireia) */
+  var TXT = {
+    titulo: 'La mujer en el mundo',
+    subtitulo: 'Un mapamundi con los países a su tamaño real. Toca un país para conocerlo.',
+    aviso: 'Boceto (paso 1): todavía sin datos feministas. Solo se prueba el mapa: países, nombres, zoom y selección. El color dorado de abajo es una demostración con datos geográficos (continentes), no son datos sobre mujeres.',
+    rotDemo: 'Demostración:', todos: 'Ninguno', rotBuscar: 'Ir a un país:', elegir: 'Elige un país…', zoomMas: 'Acercar', zoomMenos: 'Alejar', reset: 'Ver todo',
+    mapaTit: 'Mapamundi en proyección Equal Earth, con los países a su tamaño real',
+    leyendaPintado: function (c) { return 'Continente pintado: ' + c + ' (demostración)'; }, leyendaTierra: 'Resto de países y territorios',
+    ayuda: 'Arrastra para mover el mapa. Rueda del ratón, pellizco con dos dedos o los botones + y − para acercar. Los nombres aparecen cuando caben dentro del país.',
+    fichaVacia: 'Toca un país del mapa para ver aquí su nombre.', continente: 'Continente', clasif: 'Clasificación en Natural Earth',
+    efectosOn: '⏸ Parar efectos', efectosOff: '▶ Activar efectos',
+    fuentePie: 'Mapa hecho con Natural Earth y proyección Equal Earth.',
+    refEnlaceAntes: 'Puedes ver todas las referencias de la web en ', refEnlaceEnlace: 'esta página', refEnlaceDespues: ', filtrando por la actividad.', nuevaPestana: ' (se abre en una pestaña nueva)',
+    efectos: '', carga: 'No se ha podido cargar el mapa. Abre esta página desde el servidor local.'
+  };
+  var CONT = { 'Africa': 'África', 'Asia': 'Asia', 'Europe': 'Europa', 'North America': 'América del Norte', 'South America': 'América del Sur', 'Oceania': 'Oceanía', 'Seven seas (open ocean)': 'Islas de alta mar' };
+  var TIPO = { 'Sovereign country': 'País soberano', 'Country': 'País', 'Sovereignty': 'País', 'Dependency': 'Territorio dependiente', 'Disputed': 'Territorio en disputa', 'Indeterminate': 'Estatus no determinado' };
+  var DEMO = ['Africa', 'Asia', 'Europe', 'North America', 'South America', 'Oceania'];
+
+  /* ---------- fondo de espirales y botón «Parar efectos» (los mismos que en las otras actividades) ---------- */
+  var sinEfectos = reduce;
+  try { var gE = localStorage.getItem('feminist-sin-efectos'); if (gE !== null) { sinEfectos = gE === '1'; } } catch (e) { /* sin almacenamiento */ }
+  function pintarEfectos() { document.body.classList.toggle('sin-efectos', sinEfectos); $('btnEfectos').textContent = sinEfectos ? TXT.efectosOff : TXT.efectosOn; $('btnEfectos').setAttribute('aria-pressed', sinEfectos ? 'true' : 'false'); }
+  pintarEfectos();
+  $('btnEfectos').addEventListener('click', function () { sinEfectos = !sinEfectos; try { localStorage.setItem('feminist-sin-efectos', sinEfectos ? '1' : '0'); } catch (e) { /* sin almacenamiento */ } pintarEfectos(); });
+  function irregular(vueltas, escala, semilla) {
+    var pts = [];
+    for (var t = 0; t <= vueltas * 2 * Math.PI; t += 0.12) {
+      var r = escala * t * (1 + 0.11 * Math.sin(t * 1.3 + semilla) + 0.07 * Math.sin(t * 3.1 + 2 * semilla)), a = t + 0.06 * Math.sin(t * 2.2 + semilla);
+      pts.push((r * Math.cos(a)).toFixed(1) + ' ' + (r * Math.sin(a)).toFixed(1));
+    }
+    return 'M' + pts.join(' L');
+  }
+  [['esp1', 11, 4.4, 1.7], ['esp2', 8, 6.2, 4.1], ['esp3', 9, 5.2, 2.9]].forEach(function (e) {
+    var p = document.createElementNS(SVGNS, 'path');
+    p.setAttribute('d', irregular(e[1], e[2], e[3])); p.setAttribute('fill', 'none'); p.setAttribute('stroke', '#F5F5F0');
+    p.setAttribute('stroke-width', '15'); p.setAttribute('stroke-linecap', 'round'); p.setAttribute('stroke-linejoin', 'round');
+    $(e[0]).appendChild(p);
+  });
+
+  /* ---------- proyección Equal Earth (Šavrič, Patterson y Jenny): igual área, fórmula directa ---------- */
+  var A1 = 1.340264, A2 = -0.081106, A3 = 0.000893, A4 = 0.003796, M = Math.sqrt(3) / 2, ESC = 300;
+  function proyecta(lon, lat) {
+    var l = lon * Math.PI / 180, f = lat * Math.PI / 180, th = Math.asin(M * Math.sin(f)), t2 = th * th, t6 = t2 * t2 * t2;
+    var x = (2 * Math.sqrt(3) * l * Math.cos(th)) / (3 * (9 * A4 * t6 * t2 + 7 * A3 * t6 + 3 * A2 * t2 + A1));
+    var y = th * (A1 + A2 * t2 + t6 * (A3 + A4 * t2));
+    return [x * ESC, -y * ESC];   // y hacia abajo, como en SVG
+  }
+
+  /* ---------- datos ---------- */
+  var paises = [], porId = {}, base = null, vista = null, selId = null, pintado = null, mapa = $('mapa'), aspecto = 2, estrecha = window.matchMedia('(max-width: 700px)');
+  function fijaAspecto() { aspecto = estrecha.matches ? 0.95 : base.w / base.h; mapa.style.aspectRatio = String(aspecto); }   // ancho / alto de la caja
+  function ringPath(r) { var d = ''; for (var i = 0; i < r.length; i++) { d += (i ? 'L' : 'M') + r[i][0].toFixed(1) + ' ' + r[i][1].toFixed(1); } return d + 'Z'; }
+  function areaRing(r) { var a = 0; for (var i = 0, n = r.length; i < n; i++) { var p = r[i], q = r[(i + 1) % n]; a += p[0] * q[1] - q[0] * p[1]; } return a / 2; }
+  function dentro(pt, r) { var c = false, x = pt[0], y = pt[1]; for (var i = 0, j = r.length - 1; i < r.length; j = i++) { if ((r[i][1] > y) !== (r[j][1] > y) && x < (r[j][0] - r[i][0]) * (y - r[i][1]) / (r[j][1] - r[i][1]) + r[i][0]) { c = !c; } } return c; }
+
+  fetch('data/mapa-paises.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (d) {
+    var minx = 1e9, miny = 1e9, maxx = -1e9, maxy = -1e9;
+    d.features.forEach(function (f) {
+      var p = f.properties, polys = f.geometry.coordinates.map(function (poly) { return poly.map(function (ring) { return ring.map(function (c) { return proyecta(c[0], c[1]); }); }); });
+      var mayor = 0, cen = [0, 0], areaTot = 0;
+      polys.forEach(function (poly) {
+        var a = Math.abs(areaRing(poly[0])); areaTot += a;
+        var bx0 = 1e9, by0 = 1e9, bx1 = -1e9, by1 = -1e9; poly[0].forEach(function (c) { bx0 = Math.min(bx0, c[0]); bx1 = Math.max(bx1, c[0]); by0 = Math.min(by0, c[1]); by1 = Math.max(by1, c[1]); }); poly.caja = [bx0, by0, bx1, by1]; poly.area = a;
+        poly[0].forEach(function (c) { minx = Math.min(minx, c[0]); maxx = Math.max(maxx, c[0]); miny = Math.min(miny, c[1]); maxy = Math.max(maxy, c[1]); });
+        if (a > mayor) { mayor = a; var sx = 0, sy = 0, n = poly[0].length; poly[0].forEach(function (c) { sx += c[0]; sy += c[1]; }); cen = [sx / n, sy / n]; }
+      });
+      var pais = { id: p.id, es: p.es, en: p.en, cont: p.cont, tipo: p.tipo, sob: p.sob, polys: polys, area: areaTot, anclas: [], el: null };
+      if (p.lx != null && p.ly != null) { pais.anclas.push(proyecta(p.lx, p.ly)); }
+      pais.anclas.push(cen);
+      paises.push(pais); porId[p.id] = pais;
+    });
+    var pad = 14; base = { x: minx - pad, y: miny - pad, w: maxx - minx + 2 * pad, h: maxy - miny + 2 * pad };
+    fijaAspecto(); vista = { x: base.x, y: base.y, w: base.w, h: base.h };
+    paises.sort(function (a, b) { return b.area - a.area; });   // los grandes primero: tienen prioridad para el nombre
+    var g = $('paises');
+    paises.slice().reverse().forEach(function (p) {      // los pequeños se dibujan encima de los grandes
+      var path = document.createElementNS(SVGNS, 'path'); path.setAttribute('class', 'pais'); path.setAttribute('data-id', p.id);
+      var dd = ''; p.polys.forEach(function (poly) { poly.forEach(function (ring) { dd += ringPath(ring); }); }); path.setAttribute('d', dd);
+      var t = document.createElementNS(SVGNS, 'title'); t.textContent = p.es; path.appendChild(t);
+      p.el = path; g.appendChild(path);
+    });
+    iniciar();
+  }).catch(function () { $('ficha').textContent = TXT.carga; });
+
+  /* ---------- vista: zoom y desplazamiento (se cambia el viewBox) ---------- */
+  function pxAncho() { return mapa.getBoundingClientRect().width || 1; }
+  function aplicarVista() {
+    mapa.setAttribute('viewBox', vista.x.toFixed(1) + ' ' + vista.y.toFixed(1) + ' ' + vista.w.toFixed(1) + ' ' + vista.h.toFixed(1));
+    pedirEtiquetas();
+  }
+  function limitar() {
+    var maxW = base.w, minW = base.w / 14; vista.w = Math.max(minW, Math.min(maxW, vista.w)); vista.h = vista.w / aspecto;
+    /* en cada eje: si la vista es mayor que el mapa se centra; si no, no se sale de él */
+    vista.x = vista.w >= base.w ? base.x + (base.w - vista.w) / 2 : Math.max(base.x, Math.min(base.x + base.w - vista.w, vista.x));
+    vista.y = vista.h >= base.h ? base.y + (base.h - vista.h) / 2 : Math.max(base.y, Math.min(base.y + base.h - vista.h, vista.y));
+  }
+  function zoom(factor, cx, cy) {   // cx, cy: punto fijo en coordenadas del mapa (por defecto el centro de la vista)
+    if (cx === undefined) { cx = vista.x + vista.w / 2; cy = vista.y + vista.h / 2; }
+    var nw = vista.w / factor, k = nw / vista.w; vista.x = cx - (cx - vista.x) * k; vista.y = cy - (cy - vista.y) * k; vista.w = nw; vista.h = nw / aspecto; limitar(); aplicarVista();
+  }
+  function aMapa(clientX, clientY) { var r = mapa.getBoundingClientRect(); return [vista.x + (clientX - r.left) / r.width * vista.w, vista.y + (clientY - r.top) / r.height * vista.h]; }
+
+  var punteros = {}, arr = null;
+  var caja = $('mapaCaja');
+  caja.addEventListener('pointerdown', function (e) {
+    punteros[e.pointerId] = { x: e.clientX, y: e.clientY }; try { caja.setPointerCapture(e.pointerId); } catch (x) { /* ya capturado */ }
+    var ids = Object.keys(punteros);
+    arr = { n: ids.length, x0: e.clientX, y0: e.clientY, movido: false, vx: vista.x, vy: vista.y, d0: ids.length === 2 ? dist() : 0, w0: vista.w, objetivo: e.target };
+  });
+  caja.addEventListener('pointermove', function (e) {
+    if (!punteros[e.pointerId]) { return; }
+    punteros[e.pointerId] = { x: e.clientX, y: e.clientY };
+    var ids = Object.keys(punteros);
+    if (ids.length === 2) {   // pellizco: cambia el zoom según cuánto se separan los dedos
+      if (!arr || arr.d0 === 0) { arr = { n: 2, d0: dist(), w0: vista.w, movido: true, vx: vista.x, vy: vista.y }; }
+      var a = punteros[ids[0]], b = punteros[ids[1]], c = aMapa((a.x + b.x) / 2, (a.y + b.y) / 2), nw = arr.w0 * arr.d0 / dist();
+      zoom(vista.w / nw, c[0], c[1]); arr.movido = true; caja.classList.add('arrastrando'); return;
+    }
+    if (!arr) { return; }
+    var dx = e.clientX - arr.x0, dy = e.clientY - arr.y0;
+    if (!arr.movido && Math.hypot(dx, dy) > 5) { arr.movido = true; caja.classList.add('arrastrando'); }
+    if (arr.movido) { var k = vista.w / pxAncho(); vista.x = arr.vx - dx * k; vista.y = arr.vy - dy * k; limitar(); aplicarVista(); }
+  });
+  function dist() { var ids = Object.keys(punteros), a = punteros[ids[0]], b = punteros[ids[1]]; return Math.hypot(a.x - b.x, a.y - b.y) || 1; }
+  function suelta(e) {
+    var fueTap = arr && !arr.movido && arr.n === 1; delete punteros[e.pointerId]; caja.classList.remove('arrastrando');
+    if (fueTap && e.type === 'pointerup') { var t = document.elementFromPoint(e.clientX, e.clientY); var path = t && t.closest ? t.closest('.pais') : null; elegir(path ? path.getAttribute('data-id') : null, false); }
+    if (!Object.keys(punteros).length) { arr = null; } else { arr = { n: Object.keys(punteros).length, d0: 0, movido: true, w0: vista.w, vx: vista.x, vy: vista.y, x0: e.clientX, y0: e.clientY }; }
+  }
+  caja.addEventListener('pointerup', suelta); caja.addEventListener('pointercancel', suelta);
+  caja.addEventListener('wheel', function (e) { e.preventDefault(); var c = aMapa(e.clientX, e.clientY); zoom(e.deltaY < 0 ? 1.25 : 0.8, c[0], c[1]); }, { passive: false });
+
+  /* ---------- nombres: solo los que caben dentro del país, con el tamaño actual en pantalla ---------- */
+  var ctx = document.createElement('canvas').getContext('2d'), tmrE = 0;
+  function fontPx() { return window.innerWidth >= 1000 ? 10 : 11; }   // letra algo menor donde hay sitio y se lee bien; en móvil se queda en 11
+  /* se recalculan cuando la vista se queda quieta un momento: mientras se arrastra, los nombres se mueven con el mapa */
+  function pedirEtiquetas() { clearTimeout(tmrE); tmrE = setTimeout(pintarEtiquetas, 120); }
+  function cabe(p, ancla, w, h) {   // el rectángulo del texto, centrado en el ancla, tiene que quedar entero dentro de un polígono del país
+    var pts = [[0, 0], [-w / 2, -h / 2], [w / 2, -h / 2], [-w / 2, h / 2], [w / 2, h / 2], [-w / 4, 0], [w / 4, 0], [0, -h / 2], [0, h / 2]];
+    for (var i = 0; i < p.polys.length; i++) {
+      var poly = p.polys[i], ok = true, cj = poly.caja;
+      if (a0(ancla, cj, w, h)) { continue; }
+      for (var k = 0; k < pts.length && ok; k++) {
+        var q = [ancla[0] + pts[k][0], ancla[1] + pts[k][1]], en = dentro(q, poly[0]);
+        for (var h2 = 1; h2 < poly.length && en; h2++) { if (dentro(q, poly[h2])) { en = false; } }
+        if (!en) { ok = false; }
+      }
+      if (ok) { return true; }
+    }
+    return false;
+  }
+  function a0(a, cj, w, h) { return a[0] - w / 2 < cj[0] || a[0] + w / 2 > cj[2] || a[1] - h / 2 < cj[1] || a[1] + h / 2 > cj[3]; }   // el rectángulo se sale de la caja del polígono: no cabe
+  /* puntos de prueba de un país: los de Natural Earth, el centro del polígono mayor y una cuadrícula dentro de su caja (ordenados desde el centro) */
+  function candidatos(p, w, h) {
+    var l = p.anclas.slice(), mayor = null; p.polys.forEach(function (q) { if (!mayor || q.area > mayor.area) { mayor = q; } });
+    var cj = mayor.caja, N = 9, cx = (cj[0] + cj[2]) / 2, cy = (cj[1] + cj[3]) / 2, g = [];
+    if (cj[2] - cj[0] >= w && cj[3] - cj[1] >= h) { for (var i = 0; i < N; i++) { for (var j = 0; j < N; j++) { g.push([cj[0] + w / 2 + (cj[2] - cj[0] - w) * (i / (N - 1)), cj[1] + h / 2 + (cj[3] - cj[1] - h) * (j / (N - 1))]); } } }
+    g.sort(function (u, v) { return Math.hypot(u[0] - cx, u[1] - cy) - Math.hypot(v[0] - cx, v[1] - cy); });
+    return l.concat(g);
+  }
+  /* parte un nombre en dos líneas por el espacio que deje las líneas más parecidas (null si es una sola palabra) */
+  function dividir(nombre) {
+    var pal = nombre.split(' '); if (pal.length < 2) { return null; }
+    var mejor = null, mw = 1e9;
+    for (var i = 1; i < pal.length; i++) { var a = pal.slice(0, i).join(' '), b = pal.slice(i).join(' '), w = Math.max(ctx.measureText(a).width, ctx.measureText(b).width); if (w < mw) { mw = w; mejor = [a, b]; } }
+    return mejor;
+  }
+  function pintarEtiquetas() {
+    if (!base) { return; }
+    var g = $('etiquetas'); g.textContent = '';
+    var px = fontPx(), u = vista.w / pxAncho(), tam = px * u, hTxt = tam * 1.15, cajas = [];
+    ctx.font = '700 ' + px + 'px "Atkinson Hyperlegible Next", system-ui, sans-serif';
+    paises.forEach(function (p) {
+      var dos = dividir(p.es), variantes = [[p.es]]; if (dos) { variantes.push(dos); }   // primero una línea; si no cabe, dos
+      for (var v = 0; v < variantes.length; v++) {
+        var lineas = variantes[v], wTxt = Math.max.apply(null, lineas.map(function (l) { return ctx.measureText(l).width; })) * u + tam * 0.3, hh = hTxt * lineas.length;
+        var cands = candidatos(p, wTxt, hh), puesto = false;
+        for (var i = 0; i < cands.length && !puesto; i++) {
+          var a = cands[i];
+          if (a[0] - wTxt / 2 < vista.x || a[0] + wTxt / 2 > vista.x + vista.w || a[1] - hh / 2 < vista.y || a[1] + hh / 2 > vista.y + vista.h) { continue; }   // el nombre tiene que verse entero
+          if (!cabe(p, a, wTxt, hh)) { continue; }
+          var caja = [a[0] - wTxt / 2, a[1] - hh / 2, a[0] + wTxt / 2, a[1] + hh / 2], choca = false;
+          for (var c = 0; c < cajas.length && !choca; c++) { var o = cajas[c]; if (caja[0] < o[2] && caja[2] > o[0] && caja[1] < o[3] && caja[3] > o[1]) { choca = true; } }
+          if (choca) { continue; }
+          cajas.push(caja); puesto = true;
+          lineas.forEach(function (l, k) {
+            var t = document.createElementNS(SVGNS, 'text'); t.setAttribute('class', 'etiqueta'); t.setAttribute('x', a[0].toFixed(1)); t.setAttribute('y', (a[1] + (k - (lineas.length - 1) / 2) * hTxt).toFixed(1));
+            t.setAttribute('font-size', tam.toFixed(2)); t.setAttribute('stroke-width', (tam * 0.22).toFixed(2)); t.textContent = l; g.appendChild(t);
+          });
+        }
+        if (puesto) { break; }
+      }
+    });
+  }
+
+  /* ---------- seleccionar un país y pintar un continente (demostración) ---------- */
+  function elegir(id, ir) {
+    if (selId && porId[selId]) { porId[selId].el.classList.remove('sel'); }
+    selId = id && porId[id] ? id : null; var f = $('ficha'); f.textContent = ''; $('selPais').value = selId || '';
+    if (!selId) { f.textContent = TXT.fichaVacia; return; }
+    var p = porId[selId]; p.el.classList.add('sel'); p.el.parentNode.appendChild(p.el);   // encima de sus vecinos para que se vea el borde dorado
+    f.appendChild(el('h3', '', p.es)); f.appendChild(el('p', 'en', p.en));
+    f.appendChild(el('p', '', TXT.continente + ': ' + (CONT[p.cont] || p.cont) + ' · ' + (TIPO[p.tipo] || p.tipo) + (p.tipo === 'Dependency' ? ' de ' + (porSob(p.sob) || p.sob) : '')));
+    f.appendChild(el('p', 'en', TXT.clasif + ': ' + p.tipo));
+    if (ir) { irA(p); }
+  }
+  function porSob(nombre) { for (var i = 0; i < paises.length; i++) { if (paises[i].en === nombre || paises[i].es === nombre) { return paises[i].es; } } return ''; }
+  function irA(p) {   // acerca la vista al país más grande de sus polígonos
+    var mx = 1e9, my = 1e9, Mx = -1e9, My = -1e9, mayor = null, a0 = 0;
+    p.polys.forEach(function (poly) { var a = Math.abs(areaRing(poly[0])); if (a > a0) { a0 = a; mayor = poly[0]; } });
+    mayor.forEach(function (c) { mx = Math.min(mx, c[0]); Mx = Math.max(Mx, c[0]); my = Math.min(my, c[1]); My = Math.max(My, c[1]); });
+    var w = Math.max((Mx - mx) * 2.2, base.w / 14), cx = (mx + Mx) / 2, cy = (my + My) / 2;
+    vista.w = Math.min(w, base.w); vista.h = vista.w / aspecto; vista.x = cx - vista.w / 2; vista.y = cy - vista.h / 2; limitar(); aplicarVista();
+  }
+  function pintarContinente(c) {
+    pintado = pintado === c ? null : c;
+    paises.forEach(function (p) { p.el.classList.toggle('pintado', !!pintado && p.cont === pintado); });
+    Array.prototype.forEach.call($('chips').children, function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-c') === (pintado || ''))); });
+    var l = $('leyenda'); l.textContent = '';
+    var a = el('span'); a.appendChild(el('i', pintado ? 'oro' : 'tierra')); a.appendChild(document.createTextNode(pintado ? TXT.leyendaPintado(CONT[pintado]) : TXT.leyendaTierra)); l.appendChild(a);
+    if (pintado) { var b = el('span'); b.appendChild(el('i', 'tierra')); b.appendChild(document.createTextNode(TXT.leyendaTierra)); l.appendChild(b); }
+  }
+
+  function iniciar() {
+    $('titulo').textContent = TXT.titulo; $('subtitulo').textContent = TXT.subtitulo; $('avisoBoceto').textContent = TXT.aviso;
+    (function () { var r = $('refEnlace'), a = el('a', '', TXT.refEnlaceEnlace); a.href = 'fuentes-boceto.html?tipo=actividad&actividad=mapa'; a.target = '_blank'; a.rel = 'noopener'; a.setAttribute('aria-label', TXT.refEnlaceEnlace + TXT.nuevaPestana); r.appendChild(document.createTextNode(TXT.refEnlaceAntes)); r.appendChild(a); r.appendChild(document.createTextNode(TXT.refEnlaceDespues)); })();
+    $('mapaTit').textContent = TXT.mapaTit;
+    $('rotDemo').textContent = TXT.rotDemo; $('rotBuscar').textContent = TXT.rotBuscar; $('ayudaMapa').textContent = TXT.ayuda; $('fuentePie').textContent = TXT.fuentePie;
+    $('zMas').setAttribute('aria-label', TXT.zoomMas); $('zMenos').setAttribute('aria-label', TXT.zoomMenos); $('zReset').textContent = TXT.reset;
+    DEMO.forEach(function (c) { var b = el('button', 'chip', CONT[c]); b.type = 'button'; b.setAttribute('data-c', c); b.setAttribute('aria-pressed', 'false'); b.addEventListener('click', function () { pintarContinente(c); }); $('chips').appendChild(b); });
+    var s = $('selPais'); s.appendChild(new Option(TXT.elegir, ''));
+    paises.slice().sort(function (a, b) { return a.es.localeCompare(b.es, 'es'); }).forEach(function (p) { s.appendChild(new Option(p.es, p.id)); });
+    s.addEventListener('change', function () { elegir(s.value, true); });
+    $('zMas').addEventListener('click', function () { zoom(1.5); }); $('zMenos').addEventListener('click', function () { zoom(1 / 1.5); });
+    $('zReset').addEventListener('click', function () { vista = { x: base.x, y: base.y, w: base.w, h: base.h }; limitar(); aplicarVista(); });
+    pintarContinente(null);   // leyenda inicial (sin continente pintado)
+    elegir(null);
+    if (estrecha.matches) { vista.w = base.w / 2.6; vista.x = base.x + base.w * 0.32; vista.y = base.y + base.h * 0.18; }   // móvil: empieza acercado hacia África y Europa
+    limitar(); aplicarVista();
+    function alCambiarAncho() { var w0 = vista.w, cx = vista.x + vista.w / 2, cy = vista.y + vista.h / 2; fijaAspecto(); vista.w = w0; vista.x = cx - vista.w / 2; vista.y = cy - w0 / aspecto / 2; limitar(); aplicarVista(); }
+    if (estrecha.addEventListener) { estrecha.addEventListener('change', alCambiarAncho); }
+    window.addEventListener('resize', pedirEtiquetas);
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(pedirEtiquetas); }
+  }
+})();
+</script>
+</body>
+</html>

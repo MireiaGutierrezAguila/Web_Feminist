@@ -158,10 +158,25 @@
   .dif { position: absolute; z-index: 9; transform: translate(-50%, -190%); padding: 6px 18px; border-radius: 99px; background: var(--oro); color: #2b1805; font-family: var(--fuente-nombres); font-weight: 700; font-size: 1rem; box-shadow: 0 0 16px rgba(232, 206, 134, .8); pointer-events: none; transition: opacity .7s; white-space: nowrap; animation: crece .9s cubic-bezier(.3, 1.5, .5, 1) both; }
   @keyframes crece { 0% { transform: translate(-50%, -190%) scale(.2); opacity: 0; } 55% { transform: translate(-50%, -190%) scale(1.45); opacity: 1; } 100% { transform: translate(-50%, -190%) scale(1.15); opacity: 1; } }
   .dif.apaga { opacity: 0; }
-  .corrige { position: absolute; z-index: 10; transform: translate(-50%, -100%); max-width: 240px; padding: 6px 12px; text-align: center; border-radius: 12px; background: var(--panel); border: 1px solid var(--oro); color: var(--blanco); font-size: .82rem; font-weight: 700; line-height: 1.3; box-shadow: 0 6px 18px rgba(0, 0, 0, .7); pointer-events: none; transition: opacity .6s; animation: aparece .35s ease-out both; }
-  .corrige.apaga { opacity: 0; }
+  /* KAN-1 1.1: «Tu año / Año real / diferencia» ya no sale junto al puntero (tapaba la línea): va en la bandeja, una entrada por puntero colocado.
+     En pantallas anchas ocupa el hueco libre a la derecha de las tarjetas; en las demás, la columna de la derecha, bajo «Pareja N de M». */
+  .res-pin { display: grid; gap: 8px; margin: 0 0 8px; }
+  .res-pin:empty { display: none; }
+  .res-item { padding: 6px 10px; border-left: 3px solid var(--oro); border-radius: 0 10px 10px 0; background: rgba(232, 206, 134, .08); font-size: .85rem; line-height: 1.3; color: var(--blanco); animation: aparece .35s ease-out both; }
+  .res-item strong { display: block; font-family: var(--fuente-nombres); font-size: .78rem; letter-spacing: .03em; color: var(--oro-claro); }
+  .res-item span { display: block; }
+  .res-item .dif-txt { font-weight: 700; color: var(--oro-claro); }
+  /* escritorio intermedio (900–1819 px): no hay hueco ni la columna aguanta más altura; el resultado va dentro de la tarjeta de su puntero, bajo la pregunta */
+  .res-card { display: none; margin-top: 6px; padding: 5px 10px; border-left: 3px solid var(--oro); border-radius: 0 10px 10px 0; background: rgba(232, 206, 134, .08); font-size: .82rem; line-height: 1.3; color: var(--blanco); animation: aparece .35s ease-out both; }
+  .res-card span { display: block; }
+  .res-card .dif-txt { font-weight: 700; color: var(--oro-claro); }
+  @media (min-width: 900px) and (max-width: 1819px) { .res-card { display: block; } .res-pin { display: none; } }
+  @media (min-width: 1820px) {
+    .bandeja .envoltorio { position: relative; }
+    .res-pin { position: absolute; top: 50%; transform: translateY(-50%); margin: 0; left: calc((100% - 274px) / 2 + 505px); width: calc((100% - 274px) / 2 - 515px); }
+  }
   @keyframes aparece { from { opacity: 0; margin-top: 8px; } to { opacity: 1; margin-top: 0; } }
-  body.sin-efectos .pin.auto, body.sin-efectos .pin.vuela, body.sin-efectos .pin-giro, body.sin-efectos .pin-b, body.sin-efectos .btn.brilla, body.sin-efectos .dif, body.sin-efectos .corrige { transition: none !important; animation: none !important; }
+  body.sin-efectos .pin.auto, body.sin-efectos .pin.vuela, body.sin-efectos .pin-giro, body.sin-efectos .pin-b, body.sin-efectos .btn.brilla, body.sin-efectos .dif, body.sin-efectos .res-item { transition: none !important; animation: none !important; }
   .ref-enlace { margin: 8px 0 0; font-size: .88rem; color: var(--suave); }
   @media (min-width: 900px) { .ref-enlace { flex-basis: 100%; margin: 4px 0 0; font-size: .82rem; } }
 
@@ -237,7 +252,7 @@
   </div>
   <div class="bandeja" id="bandeja"><div class="envoltorio">
     <div class="zona-cartas"><div class="cartas" id="cartas"></div><div class="texto-sel" id="textoSel"></div></div>
-    <div class="zona-acc"><p class="ronda" id="ronda"></p><p class="ayuda" id="ayuda"></p><p class="comp" id="comp"></p><div id="acc"></div></div>
+    <div class="zona-acc"><p class="ronda" id="ronda"></p><div class="res-pin" id="resPin" aria-live="polite"></div><p class="ayuda" id="ayuda"></p><p class="comp" id="comp"></p><div id="acc"></div></div>
   </div></div>
   <p class="oculto" id="anuncio" aria-live="polite"></p>
   <figure class="contexto" id="contexto" hidden><img id="ctxImg" alt=""><span class="rotulo" id="ctxRotulo" hidden></span></figure>
@@ -260,10 +275,10 @@
     ronda: function (i, n) { return 'Pareja ' + i + ' de ' + n; },
     ayudaArrastra: 'Arrastra el puntero o toca la línea del tiempo.',
     antes: function (a) { return 'Antes de ' + a; }, verExplicacion: 'Ver explicación', girar: 'Púlsalo para ver el año.', difAnios: function (n) { return n + (n === 1 ? ' año' : ' años') + ' de diferencia'; },
-    refEnlaceAntes: 'Puedes ver todas las referencias de la web en ', refEnlaceEnlace: 'esta página', refEnlaceDespues: ', filtrando por la actividad.', verReferencias: 'Fuentes: consúltalas en la página de referencias.',
+    refEnlaceAntes: 'Puedes ver todas las referencias de la web en ', refEnlaceEnlace: 'esta página', refEnlaceDespues: ', filtrando por la actividad.', nuevaPestana: ' (se abre en una pestaña nueva)', verReferencias: 'Fuentes: consúltalas en la página de referencias.',
     sueltaEnCamino: 'Suelta el puntero sobre el camino de la línea del tiempo.',
     colocarEn: function (a) { return 'Colocar en ≈ ' + a; }, siguiente: 'Seguir jugando', verResumen: 'Ver el resumen', jugarOtra: 'Jugar otra vez',
-    resultado: function (g, r, d) { return 'Tu año: ' + g + ' · Año real: ' + r + ' · ' + (d === 0 ? '¡Exacto!' : d + (d === 1 ? ' año' : ' años') + ' de diferencia'); },
+    tuAnioReal: function (g, r) { return 'Tu año: ' + g + ' · Año real: ' + r; }, exacto: '¡Exacto!',
     tuAnio: function (g, d) { return d === 0 ? 'Tu año: ' + g + ' · ¡Exacto!' : 'Tu año: ' + g + ' · ' + d + (d === 1 ? ' año' : ' años') + ' de diferencia'; },
     punteroDe: function (t) { return 'Puntero: ' + t + '. Pulsa Intro para elegir un año y usa las flechas para moverlo.'; },
     resumen: 'Resumen', finalTexto: function (n, m) { return 'Has colocado ' + n + ' punteros y te has equivocado, de media, en ' + m + (m === 1 ? ' año.' : ' años.'); },
@@ -305,7 +320,7 @@
   $('infoCerrar').textContent = TXT.cerrar;
   /* una sola página de referencias para toda la web (por crear): aquí solo se enlaza */
   var URL_REFERENCIAS = 'fuentes-boceto.html?tipo=actividad&actividad=timeline';   /* llega ya filtrado por actividades */
-  (function () { var r = $('refEnlace'), a = el('a', '', TXT.refEnlaceEnlace); a.href = URL_REFERENCIAS; r.appendChild(document.createTextNode(TXT.refEnlaceAntes)); r.appendChild(a); r.appendChild(document.createTextNode(TXT.refEnlaceDespues)); })();
+  (function () { var r = $('refEnlace'), a = el('a', '', TXT.refEnlaceEnlace); a.href = URL_REFERENCIAS; a.target = '_blank'; a.rel = 'noopener'; a.setAttribute('aria-label', TXT.refEnlaceEnlace + TXT.nuevaPestana); r.appendChild(document.createTextNode(TXT.refEnlaceAntes)); r.appendChild(a); r.appendChild(document.createTextNode(TXT.refEnlaceDespues)); })();
 
   var datos = null, geo = null, anioGuia = null;
   var COLORES = ['#8b4cc0', '#C9A24B', '#b9b1c9'];  /* violeta, oro y plata: la paleta de efectos de las actividades */
@@ -365,7 +380,7 @@
   function dibujar() {
     var linea = $('linea'), cam = $('camino'), con = $('conectores');
     geo = medir();
-    Array.prototype.slice.call(linea.querySelectorAll('.isla, .marca, .pin, .dif, .corrige')).forEach(function (n) { n.remove(); });
+    Array.prototype.slice.call(linea.querySelectorAll('.isla, .marca, .pin, .dif')).forEach(function (n) { n.remove(); });
     cam.textContent = ''; con.textContent = '';
     var e = datos.escala, serp = geo.serp;
     var alto = geo.alto;
@@ -507,11 +522,14 @@
     var r = $('linea').getBoundingClientRect(), y = r.top + geo.punto(a).y, tope = $('bandeja').getBoundingClientRect().top;
     if (y < 110 || y > tope - 60) { window.scrollTo({ top: window.pageYOffset + y - Math.max(130, tope * 0.35), behavior: sinEfectos ? 'auto' : 'smooth' }); }
   }
-  /* al corregirse el puntero se dice, junto a él, el año que se puso, el real y la diferencia */
+  /* al corregirse el puntero se dice, en la bandeja, el año que se puso, el real y la diferencia (una entrada por puntero) */
   function mostrarCorrige(p) {
-    var q = geo.punto(p.real), t = el('div', 'corrige', TXT.resultado(p.guess, p.realTxt, p.diff));
-    t.style.left = Math.max(125, Math.min(geo.W - 125, q.x)) + 'px'; t.style.top = (q.y - tamPin() * RATIO_PIN - 6) + 'px'; $('linea').appendChild(t);
-    setTimeout(function () { t.classList.add('apaga'); }, 4200); setTimeout(function () { t.remove(); }, 4900);
+    var m = (cartasRonda.some(function (c) { return c.rango; }) ? 'Unos ' : ''), dif = p.diff === 0 ? TXT.exacto : m + TXT.difAnios(p.diff);
+    var it = el('div', 'res-item');   /* cuadro de la bandeja: hueco a la derecha de las tarjetas (≥1820 px) o columna de la derecha (móvil) */
+    it.appendChild(el('strong', '', p.c.titulo.es)); it.appendChild(el('span', '', TXT.tuAnioReal(p.guess, p.realTxt))); it.appendChild(el('span', 'dif-txt', dif));
+    $('resPin').appendChild(it);
+    var ct = $('carta-' + p.c.id).querySelector('.txt');   /* la misma información dentro de la tarjeta (escritorio intermedio) */
+    if (ct) { var rc = el('div', 'res-card'); rc.appendChild(el('span', '', TXT.tuAnioReal(p.guess, p.realTxt))); rc.appendChild(el('span', 'dif-txt', dif)); ct.appendChild(rc); }
   }
   /* puntero recién colocado: llega a su sitio, se agranda solo, gira para enseñar el año, vuelve a girar para la frase,
      se hace pequeño y entonces sale el aviso con lo que se ha fallado. Devuelve cuánto dura (0 sin efectos). */
@@ -720,12 +738,12 @@
   function iniciarRonda() {
     var pa = datos.parejas[ronda]; cartasRonda = pa.cartas; hechas = {}; fase = 'juego'; document.body.dataset.fase = fase;
     Array.prototype.forEach.call(document.querySelectorAll('.pin'), function (n) { n.classList.add('antiguo'); });   /* los de la ronda anterior pasan a «ya jugados» */
-    $('ronda').textContent = TXT.ronda(ronda + 1, datos.parejas.length); $('comp').textContent = ''; $('ayuda').textContent = TXT.ayudaArrastra;
+    $('ronda').textContent = TXT.ronda(ronda + 1, datos.parejas.length); $('resPin').textContent = ''; $('comp').textContent = ''; $('ayuda').textContent = TXT.ayudaArrastra;
     var cont = $('cartas'); cont.textContent = ''; cont.className = 'cartas'; pa.cartas.forEach(function (c) { cont.appendChild(crearCarta(c)); pintarTxt(c); });
     seleccionar(pa.cartas[0]); mostrarContexto(pa);
   }
   function mostrarFinal() {
-    $('contexto').hidden = true; clearTimeout(ctxT); cartasRonda = []; var cont = $('cartas'); cont.textContent = ''; cont.className = 'cartas'; $('ronda').textContent = TXT.resumen; $('ayuda').textContent = ''; $('textoSel').textContent = '';
+    $('contexto').hidden = true; clearTimeout(ctxT); cartasRonda = []; var cont = $('cartas'); cont.textContent = ''; cont.className = 'cartas'; $('ronda').textContent = TXT.resumen; $('resPin').textContent = ''; $('ayuda').textContent = ''; $('textoSel').textContent = '';
     var media = Math.round(puestos.reduce(function (t, p) { return t + p.diff; }, 0) / Math.max(1, puestos.length));
     cont.appendChild(el('p', 'final', TXT.finalTexto(puestos.length, media))); $('comp').textContent = TXT.finalMensaje;
     var acc = $('acc'); acc.textContent = ''; var o = el('button', 'btn primario', TXT.jugarOtra); o.type = 'button';
