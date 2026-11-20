@@ -38,12 +38,12 @@
   /* ---------- controles: pastillas redondeadas de oro y plata, como el botón «Parar efectos» ---------- */
   .controles { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 22px 0 14px; }
   .controles .rotulo { font-family: var(--fuente-nombres); font-weight: 700; font-size: .95rem; color: var(--oro-claro); margin-right: 4px; }
-  .chip, .zoom button, .btn-efectos { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 6px 14px; font: inherit; font-size: .9rem; font-weight: 700; color: var(--blanco);
+  .chip, .zoom-flot button, .btn-efectos { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 6px 14px; font: inherit; font-size: .9rem; font-weight: 700; color: var(--blanco);
     background: rgba(23, 18, 31, .85); border: 1px solid rgba(185, 177, 201, .5); border-radius: 99px; cursor: pointer; touch-action: manipulation; }
-  .chip:hover, .zoom button:hover, .btn-efectos:hover { border-color: var(--oro-claro); color: var(--oro-claro); }
+  .chip:hover, .zoom-flot button:hover, .btn-efectos:hover { border-color: var(--oro-claro); color: var(--oro-claro); }
   .chip[aria-pressed="true"] { background: var(--oro); border-color: var(--oro-claro); color: #2b1805; }
-  .zoom { display: flex; gap: 8px; margin-left: auto; }
-  .zoom button { min-width: 40px; padding: 6px 10px; font-size: 1.15rem; line-height: 1; }
+  .zoom-flot { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); z-index: 3; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+  .zoom-flot button { min-width: 40px; padding: 6px 12px; font-size: 1.15rem; line-height: 1; background: rgba(23, 18, 31, .9); box-shadow: 0 2px 8px rgba(0, 0, 0, .5); }
   .buscador { display: inline-flex; align-items: center; gap: 8px; }
   .buscador select { min-height: 40px; max-width: 220px; padding: 6px 12px; font: inherit; font-size: .9rem; color: var(--blanco); background: rgba(23, 18, 31, .85); border: 1px solid rgba(185, 177, 201, .5); border-radius: 99px; }
 
@@ -58,19 +58,86 @@
   #mapa { display: block; width: 100%; height: auto; user-select: none; -webkit-user-select: none; }
   .pais { fill: var(--tierra); stroke: var(--tierra-borde); stroke-width: .7; vector-effect: non-scaling-stroke; fill-rule: evenodd; transition: fill .2s; cursor: pointer; }
   .pais:hover { fill: #4d4268; }
-  .pais.pintado { fill: var(--oro); fill-opacity: .88; }
-  .pais.pintado:hover { fill: var(--oro-claro); }
   .pais.sel { stroke: var(--oro-claro); stroke-width: 2.2; }
   .etiqueta { fill: var(--blanco); font-family: var(--fuente-texto); font-weight: 700; text-anchor: middle; dominant-baseline: central; paint-order: stroke; stroke: rgba(16, 16, 16, .78); stroke-linejoin: round; pointer-events: none; }
-  .leyenda { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin: 12px 4px 0; font-size: .88rem; color: var(--suave); }
-  .leyenda i { display: inline-block; width: 16px; height: 16px; border-radius: 4px; margin-right: 6px; vertical-align: -3px; border: 1px solid var(--tierra-borde); }
-  .leyenda .oro { background: var(--oro); border-color: var(--oro-claro); } .leyenda .tierra { background: var(--tierra); }
+  /* panel del tema: el juego a la izquierda y la leyenda (con interruptores) a la derecha */
+  .panel-tema { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 430px); gap: 18px; align-items: start; margin: 0 0 16px; }
+  .panel-tema .juego { margin: 0; max-width: none; }
+  .leyenda-caja { padding: 14px 16px; border: 1px solid rgba(185, 177, 201, .5); border-radius: 14px; background: var(--panel); }
+  .leyenda-cab { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0 0 10px; }
+  .leyenda-caja h3 { margin: 0; font-family: var(--fuente-nombres); font-size: 1rem; letter-spacing: .04em; color: var(--oro-claro); }
+  .leyenda { display: grid; gap: 8px; font-size: .98rem; color: var(--blanco); }
+  .leyenda .vacia { margin: 0; color: var(--suave); font-size: .92rem; }
+  /* cada categoría es un interruptor: se enciende (color) o se apaga (sin color) */
+  .ley-item { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 46px; padding: 6px 14px 6px 10px; font: inherit; font-size: .98rem; text-align: left; color: var(--blanco); background: rgba(245, 245, 240, .05); border: 1px solid rgba(185, 177, 201, .45); border-radius: 12px; cursor: pointer; touch-action: manipulation; }
+  .ley-item:hover { border-color: var(--oro-claro); }
+  .ley-item .sw { position: relative; flex: none; width: 44px; height: 24px; border-radius: 99px; background: var(--c, #555); border: 1px solid rgba(245, 245, 240, .55); transition: background .2s; }
+  .ley-item .sw::after { content: ""; position: absolute; top: 3px; left: 23px; width: 16px; height: 16px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .5); transition: left .2s; }
+  .ley-item[aria-checked="false"] { color: var(--suave); }
+  .ley-item[aria-checked="false"] .sw { background: transparent; }
+  .ley-item[aria-checked="false"] .sw::after { left: 3px; background: rgba(245, 245, 240, .6); }
+  body.sin-efectos .ley-item .sw, body.sin-efectos .ley-item .sw::after { transition: none; }
+  /* interruptor general (lila), arriba a la derecha: enciende o apaga todos los colores; a medias si solo algunos están encendidos */
+  .ley-general { display: inline-flex; align-items: center; flex: none; padding: 6px 2px; background: none; border: 0; border-radius: 99px; cursor: pointer; touch-action: manipulation; }
+  .ley-general .sw { position: relative; flex: none; width: 52px; height: 28px; border-radius: 99px; background: #a678e0; border: 1px solid #d8c3f5; transition: background .2s; }
+  .ley-general .sw::after { content: ""; position: absolute; top: 3px; left: 27px; width: 20px; height: 20px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .5); transition: left .2s; }
+  .ley-general[aria-checked="false"] .sw { background: transparent; }
+  .ley-general[aria-checked="false"] .sw::after { left: 3px; background: rgba(245, 245, 240, .6); }
+  .ley-general[aria-checked="mixed"] .sw { background: rgba(166, 120, 224, .45); }
+  .ley-general[aria-checked="mixed"] .sw::after { left: 15px; }
+  body.sin-efectos .ley-general .sw, body.sin-efectos .ley-general .sw::after { transition: none; }
+  /* países pintados según el tema (el color va en línea, desde los datos) */
+  .pais.tema { fill-opacity: .94; }
+  /* juego: los países por adivinar se iluminan en azul (el azul no se parece a ninguno de los tres colores finales) */
+  .pais.pista { stroke: #cfe0ff; stroke-width: 1.6; animation: pulsa 1.8s ease-in-out infinite; }
+  @keyframes pulsa { 50% { fill-opacity: .68; } }
+  body.sin-efectos .pais.pista { animation: none; }
+  @media (prefers-reduced-motion: reduce) { .pais.pista { animation: none; } }
+  .pais.tema:hover { filter: brightness(1.22); }
+  /* título y subtítulo del tema */
+  .tema-cab { margin: 0 0 14px; max-width: 80ch; }
+  .tema-cab h2 { margin: 0 0 6px; font-size: clamp(1.3rem, 3.6vw, 1.8rem); line-height: 1.25; }
+  .tema-cab p { margin: 0; font-size: 1.08rem; color: #e6e0f0; }
+  /* panel del juego (preguntas, respuestas y botones) */
+  .juego { margin: 0 0 16px; padding: 16px 18px; border-left: 6px solid var(--rosa); background: var(--panel); border-radius: 0 12px 12px 0; max-width: 90ch; }
+  .juego p { margin: 0 0 8px; }
+  .juego .j-num { font-family: var(--fuente-nombres); font-size: .9rem; letter-spacing: .06em; text-transform: uppercase; color: var(--oro-claro); }
+  .juego .j-pregunta { font-family: var(--fuente-nombres); font-weight: 700; font-size: clamp(1.15rem, 3vw, 1.45rem); line-height: 1.3; color: var(--blanco); }
+  .j-opciones { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); margin: 12px 0 6px; }
+  .opcion { min-height: 56px; padding: 10px 16px; font: inherit; font-size: 1.05rem; font-weight: 700; color: var(--blanco); text-align: left; background: rgba(245, 245, 240, .06); border: 2px solid rgba(185, 177, 201, .55); border-radius: 14px; cursor: pointer; touch-action: manipulation; }
+  .opcion:hover:not(:disabled) { border-color: var(--oro-claro); background: rgba(232, 206, 134, .1); }
+  .opcion:disabled { cursor: default; }
+  .opcion.elegida { border-color: var(--blanco); }
+  .opcion.correcta { border-color: var(--oro-claro); background: rgba(232, 206, 134, .14); }
+  .opcion i { display: inline-block; width: 16px; height: 16px; margin-right: 10px; border-radius: 4px; vertical-align: -2px; border: 1px solid rgba(245, 245, 240, .5); }
+  .j-fb { font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.25rem; color: var(--oro-claro); }
+  .j-acciones { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 10px; }
+  .j-saltar { padding: 6px 4px; font: inherit; font-size: .92rem; color: var(--suave); background: none; border: 0; text-decoration: underline; cursor: pointer; }
+  .j-saltar:hover { color: var(--oro-claro); }
+  /* botones de pastilla de la UI del videojuego (naranja = principal) */
+  .btn { font: inherit; font-family: var(--fuente-nombres); font-weight: 700; letter-spacing: .04em; cursor: pointer; min-height: 64px; min-width: 130px; padding: 0 6px; color: #2b1805; text-shadow: 0 1px 0 rgba(255, 255, 255, .35); touch-action: manipulation;
+    border: 20px solid transparent; border-width: 20px 24px; background: none; border-image: url("img/opt/boton-naranja.webp") 30% 26% fill / 20px 24px stretch; transition: filter .15s, transform .1s; }
+  .btn:hover { filter: brightness(1.15); } .btn:active { transform: translateY(2px) scale(.97); filter: brightness(.85); }
+  .aviso-tema { margin: 12px 4px 0; padding: 8px 12px; border-left: 4px solid var(--oro); border-radius: 0 10px 10px 0; background: rgba(201, 162, 75, .08); font-size: .9rem; color: var(--oro-claro); }
+  .aviso-tema p { margin: 0 0 4px; } .aviso-tema p:last-child { margin: 0; }
+  .fuente-tema { margin: 10px 4px 0; font-size: .88rem; color: var(--suave); }
+  /* el pie y la frase del ratón se apartan de las esquinas de rosas del marco para que no las tapen */
+  .bajo-mapa { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px 28px; align-items: start; margin-top: 22px; }
+  .bajo-mapa .ficha { margin: 0; max-width: none; }
+  .notas-mapa .aviso-tema { margin: 0 0 12px; }
+  .notas-mapa .fuente-tema, .notas-mapa .ayuda-mapa { margin: 0 0 8px; }
   .ayuda-mapa { margin: 8px 4px 0; font-size: .85rem; color: var(--suave); }
 
   /* ---------- ficha del país tocado ---------- */
   .ficha { margin: 22px 0 0; padding: 16px 18px; border-left: 6px solid var(--rosa); background: var(--panel); border-radius: 0 12px 12px 0; max-width: 70ch; min-height: 5.2em; }
   .ficha h3 { margin: 0 0 4px; font-family: var(--fuente-nombres); font-size: 1.3rem; color: var(--oro-claro); }
   .ficha p { margin: 0; color: #e6e0f0; } .ficha .en { color: var(--suave); font-size: .9rem; }
+  .ficha .res-tema { display: flex; align-items: center; gap: 10px; margin: 10px 0 4px; padding: 8px 12px; border-left: 8px solid var(--oro); border-radius: 0 10px 10px 0; background: rgba(245, 245, 240, .06); font-size: 1.12rem; font-weight: 700; color: var(--blanco); }
+  .ficha details { margin: 8px 0 0; color: #e6e0f0; }
+  .ficha summary { cursor: pointer; color: var(--oro-claro); font-weight: 700; }
+  .ficha .detalle { margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+  .ficha .detalle li { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: baseline; padding: 6px 10px; border-radius: 8px; background: rgba(245, 245, 240, .05); }
+  .ficha .detalle b { font-family: var(--fuente-nombres); color: var(--oro-claro); }
 
   footer { margin-top: auto; background: #000; border-top: 2px solid rgba(185, 177, 201, .35); }
   footer .envoltorio { padding: 20px 0 26px; }
@@ -91,7 +158,20 @@
   body.sin-efectos .esp { animation: none !important; }
   body.sin-efectos .pais { transition: none; }
   @media (prefers-reduced-motion: reduce) { .esp { animation: none; } .pais { transition: none; } }
-  @media (max-width: 640px) { .zoom { margin-left: 0; } .buscador select { max-width: 160px; } }
+  @media (max-width: 900px) { .panel-tema, .bajo-mapa { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) { .buscador select { max-width: 160px; } }
+  /* móvil: el panel del juego va fijo abajo (como la bandeja de la línea del tiempo) y el mapa queda arriba, a la vista */
+  @media (max-width: 700px) {
+    main.envoltorio { display: flex; flex-direction: column; }
+    .panel-tema { display: contents; }
+    .tablero { order: 1; }
+    .leyenda-caja { order: 2; margin-top: 14px; }
+    .juego { order: 3; position: sticky; bottom: 0; z-index: 30; margin: 12px -16px 0; padding: 12px 16px 14px; max-height: 56vh; overflow-y: auto; border-left: 0; border-top: 3px solid var(--rosa); border-radius: 16px 16px 0 0; box-shadow: 0 -8px 20px rgba(0, 0, 0, .6); }
+    .bajo-mapa { order: 4; margin-top: 14px; }
+    #zReset { font-size: 0; width: 40px; padding: 0; }   /* en móvil «Ver todo» es solo el icono, para no tapar el mapa */
+    #zReset::before { content: "⤢"; font-size: 1.25rem; }
+    .j-opciones { grid-template-columns: 1fr; gap: 8px; margin: 8px 0 4px; } .opcion { min-height: 48px; padding: 8px 14px; font-size: 1rem; }
+  }
 </style>
 </head>
 <body>
@@ -111,18 +191,32 @@
     <span class="rotulo" id="rotDemo"></span>
     <span id="chips" style="display: contents"></span>
     <label class="buscador"><span class="rotulo" id="rotBuscar"></span><select id="selPais"></select></label>
-    <div class="zoom" role="group" id="zoomGrupo"><button type="button" id="zMas">+</button><button type="button" id="zMenos">−</button><button type="button" id="zReset"></button></div>
+  </div>
+
+  <div class="tema-cab" id="temaCab" hidden><h2 id="temaTit"></h2><p id="temaSub"></p></div>
+
+  <div class="panel-tema" id="panelTema">
+    <div class="juego" id="juego" hidden aria-live="polite"></div>
+    <div class="leyenda-caja" id="leyendaCaja" hidden><div class="leyenda-cab"><h3 id="leyendaTit"></h3><span id="leyendaGen"></span></div><div class="leyenda" id="leyenda"></div></div>
   </div>
 
   <div class="tablero">
     <div class="mapa-caja" id="mapaCaja">
       <svg id="mapa" role="img" aria-labelledby="mapaTit"><title id="mapaTit"></title><g id="paises"></g><g id="etiquetas" aria-hidden="true"></g></svg>
+      <!-- botones de zoom flotantes, en la esquina de abajo a la izquierda (el Pacífico: casi nunca hay países) -->
+      <div class="zoom-flot" role="group" id="zoomGrupo"><button type="button" id="zMas">+</button><button type="button" id="zMenos">−</button><button type="button" id="zReset"></button></div>
     </div>
-    <div class="leyenda" id="leyenda"></div>
-    <p class="ayuda-mapa" id="ayudaMapa"></p>
   </div>
 
-  <div class="ficha" id="ficha" aria-live="polite"></div>
+  <!-- debajo del mapa, fuera del marco: a la izquierda la ficha del país tocado y a la derecha los avisos, la fuente y la ayuda -->
+  <div class="bajo-mapa">
+    <div class="ficha" id="ficha" aria-live="polite"></div>
+    <div class="notas-mapa">
+      <div class="aviso-tema" id="avisoTema" hidden></div>
+      <p class="fuente-tema" id="fuenteTema" hidden></p>
+      <p class="ayuda-mapa" id="ayudaMapa"></p>
+    </div>
+  </div>
 </main>
 
 <footer><div class="envoltorio">
@@ -136,18 +230,19 @@
   var $ = function (id) { return document.getElementById(id); };
   function el(tag, cls, t) { var e = document.createElement(tag); if (cls) { e.className = cls; } if (t) { e.textContent = t; } return e; }
   var SVGNS = 'http://www.w3.org/2000/svg';
+  function L(o) { return (o && o.es) || o || ''; }   // por ahora solo es; ca/en están pendientes de traducir
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* Textos (después irán a los archivos de idioma; ca/en pendientes de traducir y de revisión de Mireia) */
   var TXT = {
     titulo: 'La mujer en el mundo',
     subtitulo: 'Un mapamundi con los países a su tamaño real. Toca un país para conocerlo.',
-    aviso: 'Boceto (paso 1): todavía sin datos feministas. Solo se prueba el mapa: países, nombres, zoom y selección. El color dorado de abajo es una demostración con datos geográficos (continentes), no son datos sobre mujeres.',
-    rotDemo: 'Demostración:', todos: 'Ninguno', rotBuscar: 'Ir a un país:', elegir: 'Elige un país…', zoomMas: 'Acercar', zoomMenos: 'Alejar', reset: 'Ver todo',
+    aviso: 'Boceto (paso 2): primer tema con datos reales del Banco Mundial. Los textos son un borrador pendiente de revisión de Mireia.',
+    rotDemo: 'Tema:', sinTema: 'Solo el mapa', saberMas: 'Saber más', si: 'Sí', no: 'No', sinDatosFicha: 'No tenemos datos de este país.', fuenteTemaAntes: 'Fuente: ', fuenteTemaEnlace: 'Banco Mundial, 2026', fuenteTemaDespues: '.', rotBuscar: 'Ir a un país:', elegir: 'Elige un país…', zoomMas: 'Acercar', zoomMenos: 'Alejar', reset: 'Ver todo',
     mapaTit: 'Mapamundi en proyección Equal Earth, con los países a su tamaño real',
-    leyendaPintado: function (c) { return 'Continente pintado: ' + c + ' (demostración)'; }, leyendaTierra: 'Resto de países y territorios',
+    leyendaTit: 'Colores del mapa', leyendaVacia: 'Aquí irán apareciendo los colores que vayas descubriendo.', leyendaTierra: 'Países y territorios del mapa', preguntaNum: function (a, b) { return 'Pregunta ' + a + ' de ' + b; }, siguientePregunta: 'Siguiente pregunta', jugarOtra: 'Jugar otra vez', jugar: 'Jugar a adivinar', saltar: 'Saltar y ver el mapa', todosColores: 'Todos los colores', porEjemplo: 'Por ejemplo: ', paisesTerritorios: function (n) { return n + (n === 1 ? ' país o territorio. ' : ' países y territorios. '); }, resumenJuego: function (a, b) { return 'Has acertado ' + a + ' de ' + b + '.'; }, fichaOculta: 'Todavía no sabes lo que dice su ley: ¡sigue el juego!', y: ' y ',
     ayuda: 'Arrastra para mover el mapa. Rueda del ratón, pellizco con dos dedos o los botones + y − para acercar. Los nombres aparecen cuando caben dentro del país.',
-    fichaVacia: 'Toca un país del mapa para ver aquí su nombre.', continente: 'Continente', clasif: 'Clasificación en Natural Earth',
+    fichaVacia: 'Toca un país del mapa para ver aquí lo que dice su ley.', continente: 'Continente', clasif: 'Clasificación en Natural Earth',
     efectosOn: '⏸ Parar efectos', efectosOff: '▶ Activar efectos',
     fuentePie: 'Mapa hecho con Natural Earth y proyección Equal Earth.',
     refEnlaceAntes: 'Puedes ver todas las referencias de la web en ', refEnlaceEnlace: 'esta página', refEnlaceDespues: ', filtrando por la actividad.', nuevaPestana: ' (se abre en una pestaña nueva)',
@@ -155,7 +250,8 @@
   };
   var CONT = { 'Africa': 'África', 'Asia': 'Asia', 'Europe': 'Europa', 'North America': 'América del Norte', 'South America': 'América del Sur', 'Oceania': 'Oceanía', 'Seven seas (open ocean)': 'Islas de alta mar' };
   var TIPO = { 'Sovereign country': 'País soberano', 'Country': 'País', 'Sovereignty': 'País', 'Dependency': 'Territorio dependiente', 'Disputed': 'Territorio en disputa', 'Indeterminate': 'Estatus no determinado' };
-  var DEMO = ['Africa', 'Asia', 'Europe', 'North America', 'South America', 'Oceania'];
+  var TEMAS_ARCHIVOS = ['data/mapa-matrimonio-ley.json'];   // un archivo por tema; cada uno trae título, categorías con color, países y fuente
+  var temas = [], tema = null;
 
   /* ---------- fondo de espirales y botón «Parar efectos» (los mismos que en las otras actividades) ---------- */
   var sinEfectos = reduce;
@@ -188,7 +284,7 @@
   }
 
   /* ---------- datos ---------- */
-  var paises = [], porId = {}, base = null, vista = null, selId = null, pintado = null, mapa = $('mapa'), aspecto = 2, estrecha = window.matchMedia('(max-width: 700px)');
+  var paises = [], porId = {}, base = null, vista = null, selId = null, mapa = $('mapa'), aspecto = 2, estrecha = window.matchMedia('(max-width: 700px)');
   function fijaAspecto() { aspecto = estrecha.matches ? 0.95 : base.w / base.h; mapa.style.aspectRatio = String(aspecto); }   // ancho / alto de la caja
   function ringPath(r) { var d = ''; for (var i = 0; i < r.length; i++) { d += (i ? 'L' : 'M') + r[i][0].toFixed(1) + ' ' + r[i][1].toFixed(1); } return d + 'Z'; }
   function areaRing(r) { var a = 0; for (var i = 0, n = r.length; i < n; i++) { var p = r[i], q = r[(i + 1) % n]; a += p[0] * q[1] - q[0] * p[1]; } return a / 2; }
@@ -332,6 +428,7 @@
         if (puesto) { break; }
       }
     });
+    if (cajas.length < 5 && vista.w > base.w / 2.2) { g.textContent = ''; }   // en la vista general, si solo cabe un nombre o dos (móvil), mejor ninguno hasta acercar
   }
 
   /* ---------- seleccionar un país y pintar un continente (demostración) ---------- */
@@ -341,8 +438,17 @@
     if (!selId) { f.textContent = TXT.fichaVacia; return; }
     var p = porId[selId]; p.el.classList.add('sel'); p.el.parentNode.appendChild(p.el);   // encima de sus vecinos para que se vea el borde dorado
     f.appendChild(el('h3', '', p.es)); f.appendChild(el('p', 'en', p.en));
-    f.appendChild(el('p', '', TXT.continente + ': ' + (CONT[p.cont] || p.cont) + ' · ' + (TIPO[p.tipo] || p.tipo) + (p.tipo === 'Dependency' ? ' de ' + (porSob(p.sob) || p.sob) : '')));
-    f.appendChild(el('p', 'en', TXT.clasif + ': ' + p.tipo));
+    if (tema && est.modo === 'juego' && !(tema.paises[selId] && est.reveladas[tema.paises[selId].cat])) { f.appendChild(el('p', 'res-tema', TXT.fichaOculta)); }   // sin desvelar la respuesta durante el juego
+    else if (tema) {   // lo que dice el tema activo sobre este país: su categoría y, si la hay, el detalle
+      var d = tema.paises[selId], cat = d ? categoriaDe(d.cat) : null, r = el('p', 'res-tema', cat ? L(cat.texto) : TXT.sinDatosFicha);
+      r.style.borderLeftColor = cat ? cat.color : tema.sinDatos.color; f.appendChild(r);
+      if (d) {
+        var det = el('details'), sm = el('summary', '', TXT.saberMas), ul = el('ul', 'detalle'); det.appendChild(sm);
+        ['edad18', 'sinExcepcionPadres', 'anula', 'castiga'].forEach(function (k) { var li = el('li'); li.appendChild(el('span', '', L(tema.detalle[k]))); li.appendChild(el('b', '', d[k] ? TXT.si : TXT.no)); ul.appendChild(li); });
+        det.appendChild(ul); f.appendChild(det);
+      }
+    }
+    f.appendChild(el('p', 'en', TXT.continente + ': ' + (CONT[p.cont] || p.cont) + ' · ' + (TIPO[p.tipo] || p.tipo) + (p.tipo === 'Dependency' ? ' de ' + (porSob(p.sob) || p.sob) : '')));
     if (ir) { irA(p); }
   }
   function porSob(nombre) { for (var i = 0; i < paises.length; i++) { if (paises[i].en === nombre || paises[i].es === nombre) { return paises[i].es; } } return ''; }
@@ -353,13 +459,128 @@
     var w = Math.max((Mx - mx) * 2.2, base.w / 14), cx = (mx + Mx) / 2, cy = (my + My) / 2;
     vista.w = Math.min(w, base.w); vista.h = vista.w / aspecto; vista.x = cx - vista.w / 2; vista.y = cy - vista.h / 2; limitar(); aplicarVista();
   }
-  function pintarContinente(c) {
-    pintado = pintado === c ? null : c;
-    paises.forEach(function (p) { p.el.classList.toggle('pintado', !!pintado && p.cont === pintado); });
-    Array.prototype.forEach.call($('chips').children, function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-c') === (pintado || ''))); });
-    var l = $('leyenda'); l.textContent = '';
-    var a = el('span'); a.appendChild(el('i', pintado ? 'oro' : 'tierra')); a.appendChild(document.createTextNode(pintado ? TXT.leyendaPintado(CONT[pintado]) : TXT.leyendaTierra)); l.appendChild(a);
-    if (pintado) { var b = el('span'); b.appendChild(el('i', 'tierra')); b.appendChild(document.createTextNode(TXT.leyendaTierra)); l.appendChild(b); }
+  function categoriaDe(id) { for (var i = 0; i < tema.categorias.length; i++) { if (tema.categorias[i].id === id) { return tema.categorias[i]; } } return null; }
+  var AZUL = '#3f7bff';
+  /* estado del tema: modo «juego» (se va descubriendo) o «explorar» (todo descubierto, con interruptores por color) */
+  var est = { modo: 'explorar', reveladas: {}, enc: {}, actual: null, orden: [], paso: 0, aciertos: 0, respondida: false, ultimo: null, fin: false, tmr: 0 };
+  function nPreguntas() { return tema.categorias.length - 1; }   // la última categoría se deduce, no se pregunta
+  function mezclar(a) { var x = a.slice(); for (var i = x.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = x[i]; x[i] = x[j]; x[j] = t; } return x; }
+  function sinEf() { return sinEfectos || reduce; }
+
+  /* pinta cada país según el estado: color de su categoría (si está descubierta y encendida), azul (si es la pregunta actual) o neutro */
+  function repintar() {
+    paises.forEach(function (p) {
+      var d = tema && tema.paises[p.id], cat = d ? d.cat : '_sd', c = d ? categoriaDe(cat) : null, color = null, pista = false, titulo = p.es;
+      if (tema) {
+        var visible = est.modo === 'explorar' ? !!est.enc[cat] : (!!est.reveladas[cat] && !!est.enc[cat]);
+        if (visible) { color = c ? c.color : tema.sinDatos.color; }
+        else if (est.modo === 'juego' && cat === est.actual) { color = AZUL; pista = true; }
+        if (est.modo === 'explorar' || est.reveladas[cat]) { titulo += ': ' + L(c ? c.texto : tema.sinDatos.texto); }   // en el juego no se desvela antes de tiempo
+      }
+      p.el.style.fill = color || ''; p.el.classList.toggle('tema', !!color && !pista); p.el.classList.toggle('pista', pista);
+      p.el.firstChild.textContent = titulo;
+    });
+  }
+  /* leyenda: en el juego solo salen las categorías ya descubiertas; todas son interruptores */
+  function pintarLeyenda() {
+    var l = $('leyenda'), gc = $('leyendaGen'); l.textContent = ''; gc.textContent = ''; $('leyendaCaja').hidden = !tema;
+    if (!tema) { return; }
+    $('leyendaTit').textContent = TXT.leyendaTit;
+    var items = tema.categorias.slice().sort(function (a, b) { return a.orden - b.orden; }).map(function (c) { return { id: c.id, color: c.color, texto: c.texto }; });
+    if (est.modo === 'explorar') { items.push({ id: '_sd', color: tema.sinDatos.color, texto: tema.sinDatos.texto }); }
+    var gen = null;
+    function estadoGeneral() { var n = items.filter(function (c) { return est.enc[c.id]; }).length; return n === items.length ? 'true' : (n === 0 ? 'false' : 'mixed'); }
+    function actualizarGeneral() { if (gen) { gen.setAttribute('aria-checked', estadoGeneral()); } }
+    if (est.modo === 'explorar' && items.length > 1) {   // interruptor general (lila): enciende o apaga todos los colores de una vez
+      gen = el('button', 'ley-general'); gen.type = 'button'; gen.setAttribute('role', 'switch'); gen.setAttribute('aria-checked', estadoGeneral()); gen.setAttribute('aria-label', TXT.todosColores); gen.title = TXT.todosColores;
+      var sg = el('span', 'sw'); sg.setAttribute('aria-hidden', 'true'); gen.appendChild(sg);
+      gen.addEventListener('click', function () { var nuevo = estadoGeneral() !== 'true'; items.forEach(function (c) { est.enc[c.id] = nuevo; }); Array.prototype.forEach.call(l.querySelectorAll('.ley-item'), function (b) { b.setAttribute('aria-checked', nuevo ? 'true' : 'false'); }); actualizarGeneral(); repintar(); });
+      gc.appendChild(gen);
+    }
+    var n = 0;
+    items.forEach(function (c) {
+      if (est.modo === 'juego' && !est.reveladas[c.id]) { return; }
+      n++;
+      var b = el('button', 'ley-item'); b.type = 'button'; b.setAttribute('role', 'switch'); b.setAttribute('aria-checked', est.enc[c.id] ? 'true' : 'false');
+      var sw = el('span', 'sw'); sw.style.setProperty('--c', c.color); sw.setAttribute('aria-hidden', 'true'); b.appendChild(sw); b.appendChild(el('span', '', L(c.texto)));
+      b.addEventListener('click', function () { est.enc[c.id] = !est.enc[c.id]; b.setAttribute('aria-checked', est.enc[c.id] ? 'true' : 'false'); actualizarGeneral(); repintar(); });
+      l.appendChild(b);
+    });
+    if (!n) { l.appendChild(el('p', 'vacia', TXT.leyendaVacia)); }
+  }
+  /* panel del juego */
+  function ejemplos(cat) {
+    var l = paises.filter(function (p) { var d = tema.paises[p.id]; return d && d.cat === cat && p.tipo !== 'Dependency'; }).slice(0, 4).map(function (p) { return p.es; });   // los grandes primero (la lista está ordenada por superficie)
+    return l.length > 1 ? l.slice(0, -1).join(', ') + TXT.y + l[l.length - 1] : l.join('');
+  }
+  function totalCat(cat) { var n = 0; for (var k in tema.paises) { if (tema.paises[k].cat === cat) { n++; } } return n; }
+  function pintarJuego() {
+    var j = $('juego'); j.textContent = '';
+    if (!tema || !tema.juego) { j.hidden = true; return; }
+    j.hidden = false; var J = tema.juego;
+    function explicacion(cat) {
+      var c = categoriaDe(cat); j.appendChild(el('p', '', L(J.explicaciones[cat])));
+      j.appendChild(el('p', '', TXT.paisesTerritorios(totalCat(cat)) + TXT.porEjemplo + ejemplos(cat) + '.'));
+    }
+    var ac = el('div', 'j-acciones');
+    if (est.modo === 'juego' && !est.respondida) {   // pregunta con las categorías que aún no se han descubierto
+      j.appendChild(el('p', 'j-num', TXT.preguntaNum(est.paso + 1, nPreguntas()))); j.appendChild(el('p', 'j-pregunta', L(J.pregunta)));
+      var op = el('div', 'j-opciones'); op.setAttribute('role', 'group'); op.setAttribute('aria-label', L(J.pregunta));
+      tema.categorias.slice().sort(function (a, b) { return a.orden - b.orden; }).forEach(function (c) {
+        if (est.reveladas[c.id]) { return; }
+        var b = el('button', 'opcion', L(c.texto)); b.type = 'button'; b.addEventListener('click', function () { responder(c.id); }); op.appendChild(b);
+      });
+      j.appendChild(op);
+      var sk = el('button', 'j-saltar', TXT.saltar); sk.type = 'button'; sk.addEventListener('click', function () { terminarExplorar(false); }); ac.appendChild(sk);
+    } else if (est.modo === 'juego') {   // respuesta de la pregunta (no es la última)
+      j.appendChild(el('p', 'j-fb', est.ultimo.ok ? L(J.acierto) : L(J.fallo))); explicacion(est.ultimo.cat);
+      var sg = el('button', 'btn', TXT.siguientePregunta); sg.type = 'button'; sg.addEventListener('click', siguiente); ac.appendChild(sg);
+    } else if (est.fin) {   // acabó el juego: última respuesta, la categoría que quedaba y el resumen
+      if (est.ultimo) { j.appendChild(el('p', 'j-fb', est.ultimo.ok ? L(J.acierto) : L(J.fallo))); explicacion(est.ultimo.cat); }
+      var resto = est.orden[est.orden.length - 1]; j.appendChild(el('p', '', L(J.finalFrase).replace('{texto}', L(categoriaDe(resto).texto))));
+      if (est.ultimo) { j.appendChild(el('p', 'j-fb', TXT.resumenJuego(est.aciertos, nPreguntas()))); }
+      var otra = el('button', 'btn', TXT.jugarOtra); otra.type = 'button'; otra.addEventListener('click', empezarJuego); ac.appendChild(otra);
+    } else {   // se saltó el juego: el mapa completo y la opción de jugar
+      var ju = el('button', 'btn', TXT.jugar); ju.type = 'button'; ju.addEventListener('click', empezarJuego); ac.appendChild(ju);
+    }
+    j.appendChild(ac);
+  }
+  function responder(id) {
+    var cat = est.actual, ok = id === cat; if (ok) { est.aciertos++; }
+    est.reveladas[cat] = true; est.enc[cat] = true; est.respondida = true; est.ultimo = { ok: ok, id: id, cat: cat };
+    if (est.paso === nPreguntas() - 1) {   // era la última pregunta: la categoría que queda se deduce y se pinta todo el mapa
+      pintarJuego(); repintar(); pintarLeyenda();
+      est.tmr = setTimeout(function () { terminarExplorar(true); }, sinEf() ? 0 : 900);
+    } else { repintar(); pintarLeyenda(); pintarJuego(); }
+  }
+  function siguiente() { est.paso++; est.actual = est.orden[est.paso]; est.respondida = false; est.ultimo = null; repintar(); pintarLeyenda(); pintarJuego(); }
+  function terminarExplorar(desdeJuego) {   // todo descubierto: se pinta el mapa entero, con interruptores
+    clearTimeout(est.tmr); est.modo = 'explorar'; est.fin = !!desdeJuego; if (!desdeJuego) { est.ultimo = null; }
+    tema.categorias.forEach(function (c) { est.reveladas[c.id] = true; est.enc[c.id] = true; }); est.reveladas._sd = true; est.enc._sd = true;
+    repintar(); pintarLeyenda(); pintarJuego();
+  }
+  function empezarJuego() {
+    clearTimeout(est.tmr); est.modo = 'juego'; est.reveladas = {}; est.enc = {}; est.paso = 0; est.aciertos = 0; est.respondida = false; est.ultimo = null; est.fin = false;
+    est.orden = mezclar(tema.categorias.map(function (c) { return c.id; })); est.actual = est.orden[0];
+    vista = { x: base.x, y: base.y, w: base.w, h: base.h }; limitar(); aplicarVista();   // mundo entero, para que se vean todos los países iluminados
+    repintar(); pintarLeyenda(); pintarJuego(); pedirEtiquetas();
+  }
+
+  /* aplica un tema al mapa (o lo quita con null) */
+  function aplicarTema(t) {
+    tema = t; clearTimeout(est.tmr);
+    Array.prototype.forEach.call($('chips').children, function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-t') === (t ? t.id : ''))); });
+    var cab = $('temaCab'), av = $('avisoTema'), fu = $('fuenteTema'); av.textContent = ''; fu.textContent = '';
+    cab.hidden = av.hidden = fu.hidden = !t;
+    if (t) {
+      $('temaTit').textContent = L(t.titulo); $('temaSub').textContent = L(t.subtitulo);
+      av.appendChild(el('p', '', L(t.avisoLeyes))); av.appendChild(el('p', '', L(t.avisoRegiones)));
+      var a = el('a', '', TXT.fuenteTemaEnlace); a.href = 'fuentes-boceto.html?tipo=actividad&actividad=mapa'; a.target = '_blank'; a.rel = 'noopener'; a.setAttribute('aria-label', TXT.fuenteTemaEnlace + TXT.nuevaPestana);
+      fu.appendChild(document.createTextNode(TXT.fuenteTemaAntes)); fu.appendChild(a); fu.appendChild(document.createTextNode(TXT.fuenteTemaDespues));
+      if (t.juego) { empezarJuego(); }
+      else { est.modo = 'explorar'; est.fin = false; est.reveladas = {}; est.enc = {}; terminarExplorar(false); }
+    } else { est.modo = 'explorar'; est.enc = {}; repintar(); pintarLeyenda(); pintarJuego(); }
+    pedirEtiquetas(); elegir(selId, false);
   }
 
   function iniciar() {
@@ -368,19 +589,25 @@
     $('mapaTit').textContent = TXT.mapaTit;
     $('rotDemo').textContent = TXT.rotDemo; $('rotBuscar').textContent = TXT.rotBuscar; $('ayudaMapa').textContent = TXT.ayuda; $('fuentePie').textContent = TXT.fuentePie;
     $('zMas').setAttribute('aria-label', TXT.zoomMas); $('zMenos').setAttribute('aria-label', TXT.zoomMenos); $('zReset').textContent = TXT.reset;
-    DEMO.forEach(function (c) { var b = el('button', 'chip', CONT[c]); b.type = 'button'; b.setAttribute('data-c', c); b.setAttribute('aria-pressed', 'false'); b.addEventListener('click', function () { pintarContinente(c); }); $('chips').appendChild(b); });
+    var chipSin = el('button', 'chip', TXT.sinTema); chipSin.type = 'button'; chipSin.setAttribute('data-t', ''); chipSin.setAttribute('aria-pressed', 'true'); chipSin.addEventListener('click', function () { aplicarTema(null); }); $('chips').appendChild(chipSin);
     var s = $('selPais'); s.appendChild(new Option(TXT.elegir, ''));
     paises.slice().sort(function (a, b) { return a.es.localeCompare(b.es, 'es'); }).forEach(function (p) { s.appendChild(new Option(p.es, p.id)); });
     s.addEventListener('change', function () { elegir(s.value, true); });
+    ['pointerdown', 'pointerup', 'wheel'].forEach(function (ev) { $('zoomGrupo').addEventListener(ev, function (e) { e.stopPropagation(); }); });   // los botones no arrastran ni hacen zoom con la rueda del mapa
     $('zMas').addEventListener('click', function () { zoom(1.5); }); $('zMenos').addEventListener('click', function () { zoom(1 / 1.5); });
     $('zReset').addEventListener('click', function () { vista = { x: base.x, y: base.y, w: base.w, h: base.h }; limitar(); aplicarVista(); });
-    pintarContinente(null);   // leyenda inicial (sin continente pintado)
     elegir(null);
     if (estrecha.matches) { vista.w = base.w / 2.6; vista.x = base.x + base.w * 0.32; vista.y = base.y + base.h * 0.18; }   // móvil: empieza acercado hacia África y Europa
     limitar(); aplicarVista();
     function alCambiarAncho() { var w0 = vista.w, cx = vista.x + vista.w / 2, cy = vista.y + vista.h / 2; fijaAspecto(); vista.w = w0; vista.x = cx - vista.w / 2; vista.y = cy - w0 / aspecto / 2; limitar(); aplicarVista(); }
     if (estrecha.addEventListener) { estrecha.addEventListener('change', alCambiarAncho); }
     window.addEventListener('resize', pedirEtiquetas);
+    aplicarTema(null);
+    Promise.all(TEMAS_ARCHIVOS.map(function (u) { return fetch(u, { cache: 'no-store' }).then(function (r) { return r.json(); }); })).then(function (lista) {
+      temas = lista;
+      temas.forEach(function (t) { var b = el('button', 'chip', L(t.chip || t.titulo)); b.type = 'button'; b.setAttribute('data-t', t.id); b.setAttribute('aria-pressed', 'false'); b.addEventListener('click', function () { aplicarTema(t); }); $('chips').appendChild(b); });
+      if (temas.length) { aplicarTema(temas[0]); }   // el primer tema sale por defecto
+    }).catch(function () { $('ficha').textContent = TXT.carga; });
     if (document.fonts && document.fonts.ready) { document.fonts.ready.then(pedirEtiquetas); }
   }
 })();
