@@ -6,7 +6,7 @@
 <title>Adivina el porcentaje · Feminist</title>
 <!-- BOCETO de la actividad de porcentajes. Mecánicas y diseño provisionales; sin sonido. Ilustraciones de Mireia en img/opt/ (copias optimizadas de img/web_feminist/).
      Datos reales de las infografías «Mujeres en cifras» (Instituto de las Mujeres) en data/porcentajes.json.
-     Cuatro mecánicas (contador, aguja, pintar, cara a cara) que reparte un dado trucado: no repite una mecánica hasta que han salido todas.
+     Cuatro mecánicas (contador, aguja, pintar, cara a cara) que reparte una ruleta trucada: no repite una mecánica hasta que han salido todas.
      Decisión de Mireia (16-11-2026): sin frase de la infografía en cada dato; la fuente va una sola vez, pequeña, en el pie. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,59 +54,54 @@
   #btnEmpezar { display: block; margin: 28px auto 0; }
   .guia small { font-size: 1rem; color: var(--suave); line-height: 1.35; }
 
-  /* ---------- marcador y dado ---------- */
+  /* ---------- marcador y ruleta ---------- */
   .marcador { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 14px; color: var(--suave); }
   .etq { display: inline-block; padding: 2px 10px; border: 1px solid currentColor; border-radius: 99px; font-size: .85rem; }
   .barra { height: 8px; border-radius: 99px; background: #2a2236; overflow: hidden; margin-bottom: 16px; }
   .barra i { display: block; height: 100%; width: 0; background: var(--cinta-colores); transition: width .4s; }
-  .dado-caja { display: grid; justify-items: center; gap: 22px; padding: 60px 30px 64px; border: 2px solid var(--linea); border-radius: 20px; background: var(--panel); text-align: center; }
-  /* el dado (un d20 ilustrado) es el propio botón: grande, con un play que dice «tócame».
-     El d20 original es azul neón: se tiñe a violeta (el de la web) con un filtro. */
-  .dado-wrap { position: relative; width: clamp(250px, 74vw, 340px); }
-  .dado { position: relative; display: block; width: 100%; aspect-ratio: 452 / 520; padding: 0; border: 0; background: none; cursor: pointer; touch-action: manipulation; }
-  .dado::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 38%, #7a3fb0 0%, #4a1f78 55%, #1f0c38 100%); clip-path: polygon(49.8% 1.6%, 98% 24%, 97.3% 75%, 49.8% 98%, 2.2% 75%, 1.8% 24.6%); opacity: .9; }
-  .dado:hover { transform: translateY(-3px); }
-  .dado:disabled { cursor: default; transform: none; }
-  .dado .d20 { position: relative; display: block; width: 100%; height: 100%; pointer-events: none; filter: hue-rotate(92deg) saturate(1.25) brightness(1.15) drop-shadow(0 0 16px rgba(138, 76, 194, .7)); }
-  .dado #dadoCara { position: absolute; left: 50%; top: 54%; transform: translate(-50%, -50%); width: 50%; aspect-ratio: 1; display: grid; place-items: center; border-radius: 50%; background: radial-gradient(#17121f 62%, #0b0810); border: 3px solid var(--oro); font-size: clamp(3.6rem, 17vw, 5rem); line-height: 1; overflow: hidden; }
-  .dado #dadoCara:empty { display: none; }
-  .dado #dadoCara .ico-img { width: 80%; height: 80%; padding: 0; border: 0; background: none; border-radius: 0; vertical-align: 0; }
-  .dado-wrap .play { position: absolute; cursor: pointer; right: -14px; bottom: -4%; width: clamp(112px, 32vw, 150px); aspect-ratio: 1; font-size: 0; background: url("img/opt/play-normal.webp") center / contain no-repeat; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, .6)); animation: latido 1s ease-in-out infinite; }
-  .dado-wrap:hover .play { background-image: url("img/opt/play-hover.webp"); }
-  .dado-wrap:has(.dado:active:not(:disabled)) .play, .dado-wrap .play:active { background-image: url("img/opt/play-pulsado.webp"); }
-  .dado-wrap:has(.dado:disabled) .play { background-image: url("img/opt/play-apagado.webp"); animation: none; pointer-events: none; }
+  .ruleta-caja { display: grid; justify-items: center; gap: 22px; padding: 60px 30px 64px; border: 2px solid var(--linea); border-radius: 20px; background: var(--panel); text-align: center; }
+  /* la ruleta (ilustración de Mireia): gira solo el disco; la aguja y el Play del centro (que es el botón) se quedan quietos */
+  .ruleta { position: relative; width: clamp(250px, min(78vw, 56vh), 460px); aspect-ratio: 1; }
+  .ruleta::before { content: ""; position: absolute; inset: 2%; border-radius: 50%; box-shadow: 0 0 40px rgba(138, 76, 194, .5), 0 14px 28px rgba(0, 0, 0, .7); }   /* sombra fija: el disco gira */
+  .ruleta .disco { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; will-change: transform; user-select: none; -webkit-user-drag: none; }
+  .ruleta .aguja { position: absolute; z-index: 3; top: -1.2%; left: 50%; width: 7.6%; height: auto; transform: translateX(-50%); transform-origin: 50% 12%; pointer-events: none; filter: drop-shadow(0 3px 4px rgba(0, 0, 0, .6)); }
+  .ruleta .aguja.tic { animation: tic .2s ease-out; }   /* golpecito al pasar de un sector a otro */
+  @keyframes tic { 0% { transform: translateX(-50%) rotate(0); } 35% { transform: translateX(-50%) rotate(-17deg); } 100% { transform: translateX(-50%) rotate(0); } }
+  .ruleta .play { position: absolute; z-index: 2; left: 50%; top: 50%; width: 35%; aspect-ratio: 1; transform: translate(-50%, -50%); padding: 0; border: 0; border-radius: 50%; cursor: pointer; font-size: 0; touch-action: manipulation;
+                  background: url("img/opt/play-normal.webp") center / contain no-repeat; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, .6)); animation: latido 1.2s ease-in-out infinite; }
+  .ruleta .play:hover { background-image: url("img/opt/play-hover.webp"); }
+  .ruleta .play:active:not(:disabled) { background-image: url("img/opt/play-pulsado.webp"); }
+  .ruleta .play:disabled { background-image: url("img/opt/play-apagado.webp"); animation: none; cursor: default; }
+  @keyframes latido { 50% { transform: translate(-50%, -50%) scale(1.07); } }
   /* todos los logos de mecánica van en un círculo del mismo tamaño, aunque el dibujo sea ancho, alto o redondo */
   .ico-img { width: 1.75em; height: 1.75em; padding: .14em; box-sizing: border-box; object-fit: contain; border-radius: 50%; background: radial-gradient(#17121f 62%, #0b0810); border: 1.5px solid var(--oro); vertical-align: -.45em; }
   .guia .ico .ico-img { width: 5.2rem; height: 5.2rem; }
-  @keyframes latido { 50% { transform: scale(1.18); } }  @keyframes latido { 50% { transform: scale(1.18); } }
-  .dado.rueda { animation: bota .28s ease-in-out infinite; }
-  .dado.cae { animation: cae .5s ease-out; }
-  @keyframes bota { 0% { transform: rotate(-12deg) translateY(0); } 50% { transform: rotate(12deg) translateY(-14px); } 100% { transform: rotate(-12deg) translateY(0); } }
-  @keyframes cae { 0% { transform: scale(1.35) rotate(18deg); } 60% { transform: scale(.95) rotate(-4deg); } 100% { transform: scale(1) rotate(0); } }
-  .dado-texto { margin: 0; min-height: 3em; font-family: var(--fuente-nombres); font-size: 1.25rem; color: var(--oro-claro); }
-  .dado-texto small { display: block; font-family: var(--fuente-texto); font-size: .9rem; color: var(--suave); margin-top: 2px; }
+  .ruleta-texto { margin: 0; min-height: 3em; font-family: var(--fuente-nombres); font-size: 1.25rem; color: var(--oro-claro); }
+  .ruleta-texto small { display: block; font-family: var(--fuente-texto); font-size: .9rem; color: var(--suave); margin-top: 2px; }
 
   /* ---------- tablero ---------- */
   .tablero { padding: 14px 30px 64px; border: 2px solid var(--linea); border-radius: 20px; background: var(--panel); }
   /* cajas con el mismo marco: borde fino plateado + cuatro esquineras de rosas de Mireia (una por esquina) */
-  .dado-caja, .tablero { position: relative; border-color: rgba(185, 177, 201, .5); }
-  .dado-caja::before, .tablero::before { content: ""; position: absolute; inset: -14px; pointer-events: none; z-index: 2; --esq: clamp(96px, 26vw, 136px);
+  .ruleta-caja, .tablero { position: relative; border-color: rgba(185, 177, 201, .5); }
+  .ruleta-caja::before, .tablero::before { content: ""; position: absolute; inset: -14px; pointer-events: none; z-index: 2; --esq: clamp(96px, 26vw, 136px);
     background: url("img/opt/esquina-rosas-tl.webp") left top / var(--esq) auto no-repeat, url("img/opt/esquina-rosas-tr.webp") right top / var(--esq) auto no-repeat,
                 url("img/opt/esquina-rosas-bl.webp") left bottom / var(--esq) auto no-repeat, url("img/opt/esquina-rosas-br.webp") right bottom / var(--esq) auto no-repeat;
     filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .6)); }
-  /* separador dorado de hojas bajo la cabecera y bajo el texto del dado */
+  /* separador dorado de hojas bajo la cabecera y bajo el texto de la ruleta */
   .tablero .cabeza::after { content: ""; flex: 0 0 100%; height: 30px; background: url("img/opt/adorno-dorado-2.webp") center / min(240px, 62%) auto no-repeat; }
-  .dado-texto::before { content: ""; display: block; height: 36px; margin-bottom: 4px; background: url("img/opt/adorno-dorado-2.webp") center / 220px auto no-repeat; }
+  .ruleta-texto::before { content: ""; display: block; height: 36px; margin-bottom: 4px; background: url("img/opt/adorno-dorado-2.webp") center / 220px auto no-repeat; }
   .tablero.sacude { animation: sacude .45s; }
   @keyframes sacude { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-9px); } 40% { transform: translateX(8px); } 60% { transform: translateX(-6px); } 80% { transform: translateX(4px); } }
   .cabeza { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; margin-bottom: 8px; }
-  .tema { font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.35rem; color: var(--oro-claro); }
+  .tema { display: inline-flex; align-items: center; font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.35rem; color: var(--oro-claro); }
   .tablero .cabeza { padding-inline: clamp(58px, 15vw, 112px); }
   .mec { font-size: 1.35rem; font-family: var(--fuente-nombres); font-weight: 700; color: #e6e0f0; }
   .mec .ico-img { width: 2.8rem; height: 2.8rem; }
   .tema .emo { font-size: 1.4rem; margin-right: 6px; }
-  .tema-img { width: 3.4rem; height: 3.4rem; object-fit: contain; vertical-align: middle; margin-right: 8px; }
-  .mec { color: var(--suave); font-size: .9rem; }
+  .tema-img { width: 4.6rem; height: 4.6rem; object-fit: contain; vertical-align: middle; margin-right: 8px; }   /* KAN-1 1.3: más grande */
+  .mec { display: inline-flex; align-items: center; gap: 8px; color: var(--suave); font-size: .9rem; }   /* KAN-1 1.3: texto centrado con su icono (antes quedaba más bajo) */
+  .mec .ico-img { vertical-align: middle; flex: none; }   /* flex: none = el círculo no se estrecha cuando el texto es largo */
+  .tema-img { flex: none; }
   .pregunta { font-family: var(--fuente-nombres); font-weight: 700; font-size: clamp(1.15rem, 3.8vw, 1.5rem); line-height: 1.3; margin: 6px 0 16px; }
   .pregunta small { display: block; margin-top: 6px; font-family: var(--fuente-texto); font-weight: 400; font-size: .9rem; color: var(--suave); }
   .escena { display: grid; justify-items: center; gap: 14px; min-height: 220px; }
@@ -150,7 +145,7 @@
   .desliza output { font-family: var(--fuente-titulos); font-size: 2.6rem; color: var(--oro-claro); }
 
   /* pintar */
-  .cuadro { display: grid; gap: 3px; width: min(100%, calc((100svh - 330px) / 1.45), 440px); min-width: 200px; touch-action: none; user-select: none; -webkit-user-select: none; cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg transform='translate%288 8%29 rotate%28-45%29' stroke-linejoin='round'%3E%3Cpath d='M0 -2 C-3 6 -10 11 -9 21 L9 21 C10 11 3 6 0 -2Z' fill='%232fb8c0' stroke='%23fff' stroke-width='3.4'/%3E%3Cpath d='M0 -2 C-3 6 -10 11 -9 21 L9 21 C10 11 3 6 0 -2Z' fill='%232fb8c0' stroke='%23101010' stroke-width='1'/%3E%3Crect x='-9' y='21' width='18' height='14' rx='2' fill='%23b89a4a' stroke='%23fff' stroke-width='3.4'/%3E%3Crect x='-9' y='21' width='18' height='14' rx='2' fill='%23b89a4a' stroke='%23101010' stroke-width='1'/%3E%3Cpath d='M-9 26 H9 M-9 30 H9' stroke='%235a4310' stroke-width='1.4'/%3E%3Cpath d='M-6 35 L6 35 L4 66 L-4 66Z' fill='%23e0508d' stroke='%23fff' stroke-width='3.4'/%3E%3Cpath d='M-6 35 L6 35 L4 66 L-4 66Z' fill='%23e0508d' stroke='%23101010' stroke-width='1'/%3E%3Cpath d='M-6 40 L6 46 M-6 50 L5 56 M-5 59 L5 63' stroke='%23101010' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E") 8 8, crosshair; }
+  .cuadro { display: grid; gap: 3px; width: min(100%, calc((100svh - 330px) / 1.45), 440px); min-width: 200px; touch-action: none; user-select: none; -webkit-user-select: none; cursor: url("img/opt/cursor-pincel.png") 75 5, crosshair;   /* el pincel de Mireia; el punto de pintar es la punta (arriba a la derecha) */ }
   .per { aspect-ratio: 3 / 4.2; border: 0; padding: 1px; background: transparent; color: #4a4258; cursor: inherit; border-radius: 6px; touch-action: none; }
   .per svg { width: 100%; height: 100%; fill: currentColor; display: block; }
   .per.on { color: var(--rosa); }
@@ -221,7 +216,7 @@
   .fuente-pie { margin: 10px 0 0; font-size: .8rem; color: var(--suave); }
 
   @media (prefers-reduced-motion: reduce) {
-    .dado.rueda, .dado.cae, .dado-wrap .play, .pulsador.listo .luz, .tablero.sacude, .confeti, .esp { animation: none; }
+    .ruleta .aguja.tic, .ruleta .play, .pulsador.listo .luz, .tablero.sacude, .confeti, .esp { animation: none; }
     .carta .cara, .carta, .barra i { transition: none; }
   }
   /* fondo de espirales irregulares como las de la portada, muy suaves y girando despacio */
@@ -233,11 +228,11 @@
   @keyframes gira1 { to { transform: rotate(360deg); } }
   @keyframes gira2 { to { transform: rotate(-360deg); } }
   header.cab, main, footer { position: relative; z-index: 1; }
-  /* botón «Parar efectos»: detiene el giro de las espirales y los movimientos decorativos (dado, Play, confeti, sacudida) */
+  /* botón «Parar efectos»: detiene el giro de las espirales y los movimientos decorativos (ruleta, Play, confeti, sacudida) */
   header.cab .envoltorio { position: relative; }
   .btn-efectos { position: absolute; right: 0; top: 18px; display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; min-height: 40px; font: inherit; font-size: .9rem; font-weight: 700; color: var(--blanco); background: rgba(23, 18, 31, .85); border: 1px solid rgba(185, 177, 201, .5); border-radius: 99px; cursor: pointer; }
   .btn-efectos:hover { border-color: var(--oro-claro); color: var(--oro-claro); }
-  body.sin-efectos .esp, body.sin-efectos .dado, body.sin-efectos .dado-wrap .play, body.sin-efectos .pulsador .luz, body.sin-efectos .tablero, body.sin-efectos .confeti { animation: none !important; }
+  body.sin-efectos .esp, body.sin-efectos .ruleta .aguja, body.sin-efectos .ruleta .play, body.sin-efectos .pulsador .luz, body.sin-efectos .tablero, body.sin-efectos .confeti { animation: none !important; }
 </style>
 </head>
 <body>
@@ -262,9 +257,13 @@
   <section class="pantalla" id="pJuego" hidden aria-label="Partida">
     <div class="marcador"><span class="etq" id="mRonda"></span><span class="etq" id="mPuntos"></span></div>
     <div class="barra" aria-hidden="true"><i id="barraProg"></i></div>
-    <div class="dado-caja" id="dadoCaja">
-      <div class="dado-wrap"><button class="dado" id="btnDado" type="button" aria-label="Tirar el dado"><img class="d20" src="img/opt/dado-d20.webp" alt="" width="452" height="520"><span id="dadoCara" aria-hidden="true"></span></button><span class="play" id="dadoPlay" aria-hidden="true"></span></div>
-      <p class="dado-texto" id="dadoTxt" aria-live="polite"></p>
+    <div class="ruleta-caja" id="ruletaCaja">
+      <div class="ruleta" id="ruleta">
+        <img class="disco" id="disco" src="img/opt/ruleta-disco.webp" alt="" width="1100" height="1100" draggable="false">
+        <img class="aguja" id="aguja" src="img/opt/ruleta-aguja.webp" alt="" width="300" height="409">
+        <button class="play" id="btnGirar" type="button" aria-label="Girar la ruleta"></button>
+      </div>
+      <p class="ruleta-texto" id="ruletaTxt" aria-live="polite"></p>
     </div>
     <div class="tablero" id="tablero" hidden>
       <div class="cabeza"><span class="tema" id="tTema"></span><span class="mec" id="tMec"></span></div>
@@ -295,14 +294,14 @@
   /* ---------- Textos de interfaz (irán a los archivos de idioma es / ca / en) ---------- */
   var TXT = {
     titulo: 'Adivina el porcentaje',
-    subtitulo: 'Datos reales sobre las mujeres y los hombres. ¿Cuánto crees que es? Tira el dado y descubre cómo te toca responder.',
+    subtitulo: 'Datos reales sobre las mujeres y los hombres. ¿Cuánto crees que es? Gira la ruleta y descubre cómo te toca responder.',
     aviso: 'Boceto: mecánicas y diseño provisionales y sin sonido. Los datos son reales (infografías «Mujeres en cifras»); algunos años están por confirmar. Cada partida elige 7 datos y 3 parejas al azar.',
     hIntro: 'Cómo se juega',
-    intro: ['Cada ronda sale una pregunta con un dato real.', 'Antes de responder tiras el dado, y el dado decide <b>cómo</b> tienes que contestar. Al final de cada ronda ves la cifra de verdad.', 'A ver si estás en lo cierto: cuanto más cerca, más puntos.'],
+    intro: ['Cada ronda sale una pregunta con un dato real.', 'Antes de responder giras la ruleta, y la ruleta decide <b>cómo</b> tienes que contestar. Al final de cada ronda ves la cifra de verdad.', 'A ver si estás en lo cierto: cuanto más cerca, más puntos.'],
     empezar: 'Empezar',
     ronda: function (a, b) { return 'Ronda ' + a + ' de ' + b; },
     puntos: function (p) { return p + ' puntos'; },
-    tocaDado: 'Toca el dado para tirarlo',
+    tocaRuleta: 'Toca el Play para girar la ruleta', girando: 'Girando…',
     teToca: 'Te toca:', sigue: 'Sigue la pareja de datos',
     siguiente: 'Siguiente', verFinal: 'Ver el resultado',
     real: 'Dato real', tuRespuesta: function (t) { return 'Tu respuesta: ' + t; },
@@ -341,7 +340,7 @@
   function el(tag, cls, txt) { var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
   function L(o) { return (o && o.es) || o || ''; } // por ahora solo es; ca/en están pendientes de traducir
   function fmtN(v) { return new Intl.NumberFormat('es-ES', { maximumFractionDigits: 2, useGrouping: 'always' }).format(v); }
-  function fmt(v, uni) { if (v == null) return '—'; return uni === '%' ? fmtN(v) + ' %' : fmtN(v) + ' ' + uni; }
+  function fmt(v, uni) { if (v == null) return '—'; return fmtN(v) + '\u00A0' + uni; }   // espacio duro: el «%» (o la unidad) nunca queda solo en la línea de abajo (KAN-1 1.7)
   function mezclar(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
 
   /* ---------- Textos fijos ---------- */
@@ -368,7 +367,7 @@
     }
     return s;
   }
-  function elegirMecanica(it) { // dado trucado: la que menos ha salido hasta ahora; si empatan, al azar
+  function elegirMecanica(it) { // ruleta trucada: la que menos ha salido hasta ahora; si empatan, al azar
     var c = it.mecanicas.slice(), min = Math.min.apply(null, c.map(function (m) { return usos[m] || 0; }));
     c = c.filter(function (m) { return (usos[m] || 0) === min; });
     return c[Math.floor(Math.random() * c.length)];
@@ -391,23 +390,48 @@
     infoUsadas[t.it.infografia] = true;
     var mec = t.tipo === 'dato' ? elegirMecanica(t.it) : 'caraacara';
     t.mec = mec;
-    if (t.tipo === 'pareja' && t.idx > 0) { $('dadoCaja').hidden = true; mostrarTablero(t); return; } // 2.ª ronda de una pareja: sin dado
-    $('dadoCaja').hidden = false; $('dadoCara').textContent = ''; $('btnDado').className = 'dado'; $('dadoTxt').textContent = TXT.tocaDado; $('btnDado').disabled = false;
-    $('btnDado').focus({ preventScroll: true });
+    if (t.tipo === 'pareja' && t.idx > 0) { $('ruletaCaja').hidden = true; mostrarTablero(t); return; } // 2.ª ronda de una pareja: sin ruleta
+    $('ruletaCaja').hidden = false; $('ruletaTxt').textContent = TXT.tocaRuleta; $('btnGirar').disabled = false; girando = false;
+    $('btnGirar').focus({ preventScroll: true });
+    $('ruletaCaja').scrollIntoView({ block: 'center', behavior: reduce || document.body.classList.contains('sin-efectos') ? 'auto' : 'smooth' });   // que se vea entera la ruleta y su texto
   }
-  $('dadoPlay').addEventListener('click', function () { $('btnDado').click(); }); // el Play (fuera del botón, para que no se mueva con el dado) también tira
-  $('btnDado').addEventListener('click', function () {
-    var t = seq[pos], mec = t.mec, dado = $('btnDado'), cara = $('dadoCara');
-    dado.disabled = true; usos[mec] = (usos[mec] || 0) + 1;
-    var m = TXT.mecanicas[mec];
-    function cae() {
-      dado.className = 'dado cae'; cara.innerHTML = icoHtml(mec);
-      var tx = $('dadoTxt'); tx.textContent = TXT.teToca + ' ' + m.nombre; tx.appendChild(el('small', '', m.desc));
-      setTimeout(function () { $('dadoCaja').hidden = true; mostrarTablero(t); }, reduce ? 500 : 1300);
+  /* ---------- la ruleta ----------
+     El disco tiene 8 sectores de 45°; cada mecánica aparece dos veces, en sectores opuestos. Ángulo del CENTRO de cada sector
+     contando desde la aguja (arriba) en el sentido del reloj. La mecánica ya viene decidida por la ruleta trucada (elegirMecanica):
+     aquí solo se hace girar el disco hasta que pare en uno de sus dos sectores. */
+  var SECTORES = { pintar: [0, 180], contador: [45, 225], caraacara: [90, 270], aguja: [135, 315] };
+  var disco = $('disco'), aguja = $('aguja'), rot = 0, girando = false, sectorAnterior = null, rafId = 0;
+  function sectorBajoAguja() {
+    var m = getComputedStyle(disco).transform, ang = 0;
+    if (m && m !== 'none') { var v = m.match(/matrix\(([^)]+)\)/); if (v) { var q = v[1].split(','); ang = Math.atan2(parseFloat(q[1]), parseFloat(q[0])) * 180 / Math.PI; } }
+    return Math.floor((((360 - ang) % 360 + 360) % 360 + 22.5) % 360 / 45);   // 0..7
+  }
+  function vigilarAguja() {   // golpecito de la aguja al cambiar de sector
+    var n = sectorBajoAguja();
+    if (sectorAnterior !== null && n !== sectorAnterior) { aguja.classList.remove('tic'); void aguja.offsetWidth; aguja.classList.add('tic'); }
+    sectorAnterior = n;
+    if (girando) { rafId = requestAnimationFrame(vigilarAguja); }
+  }
+  $('btnGirar').addEventListener('click', function () {
+    if (girando) { return; }
+    var t = seq[pos], mec = t.mec, btn = $('btnGirar'), m = TXT.mecanicas[mec], sinMov = reduce || document.body.classList.contains('sin-efectos');
+    girando = true; btn.disabled = true; usos[mec] = (usos[mec] || 0) + 1; $('ruletaTxt').textContent = TXT.girando;
+    /* se para en el centro de uno de los dos sectores de la mecánica (±3°): la aguja cae en el hueco entre las dos palabras del nombre */
+    var destino = SECTORES[mec][Math.floor(Math.random() * 2)] + (Math.random() * 6 - 3);
+    var falta = (((-destino - rot) % 360) + 360) % 360;
+    rot += (sinMov ? 0 : 360 * (4 + Math.floor(Math.random() * 3))) + falta;
+    var hecho = false;
+    function fin() {
+      if (hecho) { return; } hecho = true; cancelAnimationFrame(rafId); disco.removeEventListener('transitionend', alFinal); girando = false;
+      var tx = $('ruletaTxt'); tx.textContent = TXT.teToca + ' ' + m.nombre; tx.appendChild(el('small', '', m.desc));
+      setTimeout(function () { $('ruletaCaja').hidden = true; mostrarTablero(t); }, sinMov ? 500 : 1300);
     }
-    if (reduce) { cae(); return; }
-    dado.className = 'dado rueda'; var i = 0, iv = setInterval(function () { cara.innerHTML = icoHtml(CLAVES[i++ % 4]); }, 85);
-    setTimeout(function () { clearInterval(iv); cae(); }, 1200);
+    function alFinal(e) { if (e.target === disco && e.propertyName === 'transform') { fin(); } }
+    if (sinMov) { disco.style.transition = 'none'; disco.style.transform = 'rotate(' + rot + 'deg)'; fin(); return; }
+    disco.style.transition = 'transform 5s cubic-bezier(.12, .62, .12, 1)'; disco.style.transform = 'rotate(' + rot + 'deg)';
+    sectorAnterior = sectorBajoAguja(); rafId = requestAnimationFrame(vigilarAguja);
+    disco.addEventListener('transitionend', alFinal);
+    setTimeout(fin, 5300);   // por si el navegador no avisa del final (pestaña oculta…)
   });
 
   function mostrarTablero(t) {
@@ -415,7 +439,7 @@
     $('tTema').innerHTML = ''; if (tema.imagen) { var im = el('img', 'tema-img'); im.src = tema.imagen; im.alt = ''; $('tTema').appendChild(im); } else $('tTema').appendChild(el('span', 'emo', tema.emoji)); $('tTema').appendChild(document.createTextNode(L(tema))); // logo ilustrado del tema; si falta, su emoticono
     $('tMec').innerHTML = icoHtml(t.mec) + ' ' + m.nombre;
     // si el dato es «X de cada 10» y la mecánica mide en %, se usa la pregunta reformulada en porcentaje (preguntaPct)
-    $('tPregunta').textContent = L(t.tipo === 'dato' ? (t.mec !== 'pintar' && t.it.preguntaPct ? t.it.preguntaPct : t.it.pregunta) : t.ronda.pregunta);
+    $('tPregunta').textContent = L(t.tipo === 'dato' ? ((t.mec !== 'pintar' || pintaEnCien(t.it)) && t.it.preguntaPct ? t.it.preguntaPct : t.it.pregunta) : t.ronda.pregunta);
     $('escena').textContent = ''; $('resultado').hidden = true; $('tablero').className = 'tablero'; $('tablero').hidden = false;
     var esc = $('escena');
     if (t.mec === 'contador') (reduce ? escenaDeslizador : escenaContador)(t, esc);
@@ -437,6 +461,9 @@
     if (ptos >= 90) confeti(); else if (dif > 25 && !sinEfectos) { $('tablero').classList.add('sacude'); }
     $('tablero').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); b.focus({ preventScroll: true });
   }
+  /* KAN-1 (1.5): los datos «X de cada 10» que ya traen su pregunta en porcentaje (preguntaPct) se pintan sobre 100 personas:
+     3 de 10 = 30 de 100. Sigue siendo exactamente el mismo dato, pero se entiende mejor y encaja con el resto de mecánicas. */
+  function pintaEnCien(it) { return !!(it.preguntaPct && it.fraccion && it.fraccion.de === 10); }
   function resolverNumerico(t, guess, de, tuTxt) { // guess y de: en la escala de la mecánica; se pasa todo a puntos porcentuales
     var it = t.it, realPct = de === 100 || !it.fraccion ? it.valor : it.fraccion.n / de * 100;
     var dif = Math.abs((de === 100 ? guess : guess / de * 100) - realPct);
@@ -523,7 +550,7 @@
 
   /* ---------- Mecánica 3: pintar a la gente ---------- */
   function escenaPintar(t, esc) {
-    var it = t.it, de = it.fraccion && it.fraccion.de <= 100 ? it.fraccion.de : 100, real = it.fraccion && it.fraccion.de <= 100 ? it.fraccion.n : Math.round(it.valor);
+    var it = t.it, de = it.fraccion && it.fraccion.de <= 100 && !pintaEnCien(it) ? it.fraccion.de : 100, real = it.fraccion && it.fraccion.de <= 100 && !pintaEnCien(it) ? it.fraccion.n : Math.round(it.valor);
     var cols = de === 35 ? 7 : de <= 10 ? 5 : 10, cuadro = el('div', 'cuadro'), celdas = [], modo = null, n = 0, cuenta = el('p', 'cuenta'), hecho = false;
     cuadro.style.gridTemplateColumns = 'repeat(' + cols + ', 1fr)';
     for (var i = 0; i < de; i++) {
@@ -551,7 +578,7 @@
     var r = t.ronda, cont = el('div', 'cartas'), hecho = false, cartas = [];
     r.opciones.forEach(function (o, i) {
       var c = el('button', 'carta'); c.type = 'button'; c.setAttribute('aria-label', TXT.carta + ': ' + L(o.etiqueta));
-      var dato = o.valor != null ? fmt(o.valor, o.unidad) : (o.texto || '—');
+      var dato = o.texto ? L(o.texto) : (o.valor != null ? fmt(o.valor, o.unidad) : '—');   // «texto» (si existe) manda sobre el número: p. ej. «14 % más»
       if (CARTA_PERSONA[o.id]) { // ellas / ellos: el dibujo de la chica o del chico, con el dato debajo
         c.className = 'carta persona';
         c.innerHTML = '<span class="foto"><img src="' + CARTA_PERSONA[o.id] + '" alt="" width="460" height="752"></span>';
@@ -567,7 +594,7 @@
         cartas.forEach(function (x, k) { x.disabled = true; x.classList.add('vuelta'); var ok = r.opciones[k].id === r.correcta; x.classList.add(ok ? 'correcta' : 'fallo'); if (k === i) x.classList.add('elegida'); });
         var acierto = o.id === r.correcta, cor = r.opciones.filter(function (q) { return q.id === r.correcta; })[0], p = el('div');
         p.appendChild(el('p', 'real', L(cor.etiqueta)));
-        p.appendChild(el('p', 'que', TXT.eraAsi(cor.valor != null ? fmt(cor.valor, cor.unidad) : (cor.texto || L(cor.etiqueta)))));
+        p.appendChild(el('p', 'que', TXT.eraAsi(cor.texto ? L(cor.texto) : (cor.valor != null ? fmt(cor.valor, cor.unidad) : L(cor.etiqueta)))));
         p.appendChild(el('p', 'veredicto ' + (acierto ? 'bien' : 'mal'), (acierto ? TXT.acierto : TXT.fallo) + ' · +' + (acierto ? 100 : 0)));
         p.appendChild(el('p', 'pregunta-sorpresa', TXT.sorpresa));
         if (r.nota) p.appendChild(el('p', 'anio', r.nota));

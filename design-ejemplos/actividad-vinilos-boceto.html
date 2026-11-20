@@ -215,7 +215,9 @@
   /* auriculares de Mireia: la imagen tiene fondo negro, con «screen» se funde con la página */
   header.cab .envoltorio { position: relative; }
   .auris { position: absolute; right: 0; top: 60px; width: clamp(130px, 20vw, 210px); mix-blend-mode: screen; pointer-events: none; opacity: .95; }
-  @media (min-width: 900px) { .aviso-boceto { max-width: calc(100% - 230px); } }
+  .ref-enlace { margin: 8px 0 0; font-size: .88rem; color: var(--suave); }
+  .ref-enlace a { color: var(--oro-claro); }
+  @media (min-width: 900px) { .aviso-boceto, .ref-enlace { max-width: calc(100% - 230px); } }
   @media (max-width: 640px) { .auris { top: 96px; width: 110px; opacity: .3; } }
   /* fondo de espirales irregulares como las de la portada, muy suaves y girando despacio */
   .fondo-esp { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
@@ -246,6 +248,7 @@
   <h1 id="titulo"></h1>
   <p class="sub" id="subtitulo"></p>
   <p class="aviso-boceto" id="avisoBoceto"></p>
+  <p class="ref-enlace" id="refEnlace"></p>   <!-- justo debajo del aviso; cuando el aviso de boceto se quite, ocupa su sitio -->
 </div></header>
 
 <main class="envoltorio">
@@ -333,7 +336,7 @@
     mensaje: { apoya: 'Apoya el feminismo', perpetua: 'Perpetúa estereotipos' },
     lenguaje: { limpio: 'Sin palabrotas', explicito: '🤬 La canción tiene palabrotas' },
     recuerda: 'Recuerda: una palabrota no cambia el mensaje. Lo que importa es qué defiende la letra.',
-    portada: 'Portada del disco', suena: 'Suena un fragmento de la canción (en el boceto no suena)', cancion: 'Canción', fuente: 'Fuente de la explicación: ',
+    portada: 'Portada del disco', suena: 'Suena un fragmento de la canción (en el boceto no suena)', cancion: 'Canción', refEnlaceAntes: 'Puedes ver todas las referencias de la web en ', refEnlaceEnlace: 'esta página', refEnlaceDespues: ', filtrando por la actividad.', nuevaPestana: ' (se abre en una pestaña nueva)',
     seguir: 'Seguir eligiendo', verResumen: 'Ver el resumen',
     final: 'Resumen', aciertos: function (a, n) { return a + ' de ' + n + ' aciertos'; },
     finalMensaje: 'Lo importante no son los aciertos, sino fijarse en el mensaje de las canciones que escuchamos cada día: ¿quién decide?, ¿quién cuida de quién?, ¿qué se presenta como amor?',
@@ -371,7 +374,9 @@
   function pantalla(id) { ['pNivel', 'pAviso', 'pJuego', 'pFinal'].forEach(function (p) { $(p).hidden = p !== id; }); window.scrollTo(0, 0); }
 
   /* ---------- Cabecera y elección de nivel ---------- */
-  $('titulo').textContent = TXT.titulo; $('subtitulo').textContent = TXT.subtitulo; $('avisoBoceto').textContent = TXT.aviso; $('hNivel').textContent = TXT.elegirNivel;
+  $('titulo').textContent = TXT.titulo; $('subtitulo').textContent = TXT.subtitulo; $('avisoBoceto').textContent = TXT.aviso;
+  /* una sola página de referencias para toda la web: llega ya filtrada por esta actividad */
+  (function () { var r = $('refEnlace'), a = el('a', '', TXT.refEnlaceEnlace); a.href = 'fuentes-boceto.html?tipo=actividad&actividad=vinilos'; a.target = '_blank'; a.rel = 'noopener'; a.setAttribute('aria-label', TXT.refEnlaceEnlace + TXT.nuevaPestana); r.appendChild(document.createTextNode(TXT.refEnlaceAntes)); r.appendChild(a); r.appendChild(document.createTextNode(TXT.refEnlaceDespues)); })(); $('hNivel').textContent = TXT.elegirNivel;
   function mostrarAviso() {
     $('hAviso').textContent = TXT.avisoTitulo;
     var c = $('cajaAviso'); c.textContent = '';
@@ -650,7 +655,6 @@
     if (e.zona === 'neutral') { c.appendChild(el('p', 'recuerda', TXT.noNeutralExplica[d.respuesta])); }
     if (d.cancionConPalabrotas === true) { c.appendChild(el('p', 'recuerda', TXT.recuerda)); }
     c.appendChild(el('p', 'explica', d.explicacion.es));
-    c.appendChild(el('p', 'fuente', TXT.fuente + d.fuente));
     var acc = el('div', 'acciones');
     var seg = el('button', 'btn primario', TXT.seguir); seg.type = 'button'; seg.addEventListener('click', function () { r.close(); });
     acc.appendChild(seg);
