@@ -73,8 +73,8 @@
   .ruleta .play:active:not(:disabled) { background-image: url("img/opt/play-pulsado.webp"); }
   .ruleta .play:disabled { background-image: url("img/opt/play-apagado.webp"); animation: none; cursor: default; }
   @keyframes latido { 50% { transform: translate(-50%, -50%) scale(1.07); } }
-  /* todos los logos de mecánica van en un círculo del mismo tamaño, aunque el dibujo sea ancho, alto o redondo */
-  .ico-img { width: 1.75em; height: 1.75em; padding: .14em; box-sizing: border-box; object-fit: contain; border-radius: 50%; background: radial-gradient(#17121f 62%, #0b0810); border: 1.5px solid var(--oro); vertical-align: -.45em; }
+  /* KAN-2 2.1: los logos de mecánica van solos, sin círculo; todos caben en una caja del mismo tamaño (object-fit: contain) */
+  .ico-img { width: 1.75em; height: 1.75em; box-sizing: border-box; object-fit: contain; vertical-align: -.45em; }
   .guia .ico .ico-img { width: 5.2rem; height: 5.2rem; }
   .ruleta-texto { margin: 0; min-height: 3em; font-family: var(--fuente-nombres); font-size: 1.25rem; color: var(--oro-claro); }
   .ruleta-texto small { display: block; font-family: var(--fuente-texto); font-size: .9rem; color: var(--suave); margin-top: 2px; }
@@ -120,7 +120,11 @@
   .atril-pantalla { position: absolute; inset: 33% 15% 20% 15%; display: grid; grid-template-rows: auto 1fr auto; justify-items: center; align-items: center; text-align: center; }
   .atril-rotulo { margin: 0; font-family: var(--fuente-nombres); font-weight: 700; font-size: clamp(.95rem, 3.6cqw, 1.35rem); letter-spacing: .14em; color: var(--oro-claro); }
   .cifra { font-family: var(--fuente-titulos); font-weight: 900; font-size: clamp(3rem, 15cqw, 6.4rem); line-height: 1; color: var(--oro-claro); font-variant-numeric: tabular-nums; text-shadow: 0 0 18px rgba(232, 206, 134, .45); }
-  .cifra.parada { color: var(--bien); text-shadow: 0 0 18px rgba(63, 191, 122, .5); }
+  .cifra.parada { color: var(--oro-claro); }
+  /* KAN-2 2.8: el número parado se pinta según el resultado (verde = acierto, dorado = cerca, rojo = lejos) */
+  .cifra.parada.bien { color: var(--bien); text-shadow: 0 0 18px rgba(63, 191, 122, .5); }
+  .cifra.parada.cerca { color: var(--oro-claro); }
+  .cifra.parada.mal { color: var(--mal); text-shadow: 0 0 18px rgba(224, 82, 75, .45); text-decoration: line-through; text-decoration-thickness: .08em; }
   .atril-pantalla .btn { min-height: 40px; padding: 4px 18px; }
 
   /* aguja: reloj ilustrado con la aguja encima; el botón STOP del dibujo hace de «Fijar» */
@@ -149,8 +153,10 @@
   .per { aspect-ratio: 3 / 4.2; border: 0; padding: 1px; background: transparent; color: #4a4258; cursor: inherit; border-radius: 6px; touch-action: none; }
   .per svg { width: 100%; height: 100%; fill: currentColor; display: block; }
   .per.on { color: var(--rosa); }
-  .per.real { outline: 2px solid var(--oro-claro); outline-offset: -2px; }
-  .per.real.on { color: var(--bien); }
+  /* KAN-2 2.7: al comprobar, los muñecos que SÍ cumplen el dato se pintan de verde (con borde dorado), estén o no pintados por ti;
+     los que pintaste de más se ven en rojo */
+  .per.real { outline: 2px solid var(--oro-claro); outline-offset: -2px; color: var(--bien); }
+  .per.real:not(.on) { opacity: .7; }
   .per.sobra { color: var(--mal); }
   .cuenta { margin: 0; color: var(--suave); }
 
@@ -285,7 +291,7 @@
 </main>
 
 <footer><div class="envoltorio">
-  <p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p>
+  <p class="firma">Web diseñada y creada por Mireia Gutiérrez Águila<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:.75rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.85">Conoce su historia</a></p>
   <p class="fuente-pie" id="fuentePie"></p>
 </div></footer>
 
@@ -294,10 +300,10 @@
   /* ---------- Textos de interfaz (irán a los archivos de idioma es / ca / en) ---------- */
   var TXT = {
     titulo: 'Adivina el porcentaje',
-    subtitulo: 'Datos reales sobre las mujeres y los hombres. ¿Cuánto crees que es? Gira la ruleta y descubre cómo te toca responder.',
+    subtitulo: '¿Acertarás o te llevarás una sorpresa? Datos reales sobre mujeres y hombres en distintos sectores. Gira la ruleta y descubre cómo te toca responder.',
     aviso: 'Boceto: mecánicas y diseño provisionales y sin sonido. Los datos son reales (infografías «Mujeres en cifras»); algunos años están por confirmar. Cada partida elige 7 datos y 3 parejas al azar.',
     hIntro: 'Cómo se juega',
-    intro: ['Cada ronda sale una pregunta con un dato real.', 'Antes de responder giras la ruleta, y la ruleta decide <b>cómo</b> tienes que contestar. Al final de cada ronda ves la cifra de verdad.', 'A ver si estás en lo cierto: cuanto más cerca, más puntos.'],
+    intro: ['Cada ronda sale una pregunta con un dato real.', 'Antes de responder giras la ruleta, y la ruleta decide <b>cómo</b> tienes que contestar. Al final de cada ronda ves la cifra real.', 'A ver si estás en lo cierto: cuanto más cerca, más puntos.'],
     empezar: 'Empezar',
     ronda: function (a, b) { return 'Ronda ' + a + ' de ' + b; },
     puntos: function (p) { return p + ' puntos'; },
@@ -360,10 +366,15 @@
 
   /* ---------- Partida ---------- */
   function armarPartida() {
-    var ds = mezclar(D.datos).slice(0, TAM.datos), ps = mezclar(D.parejas).slice(0, TAM.parejas), s = [], di = 0, pi = 0;
+    var ds = mezclar(D.datos.filter(function (x) { return !x.soloTrasPareja; })).slice(0, TAM.datos), ps = mezclar(D.parejas).slice(0, TAM.parejas), s = [], di = 0, pi = 0;
     while (di < ds.length || pi < ps.length) { // dos datos, una pareja, dos datos…: así el cara a cara no se amontona
       for (var k = 0; k < 2 && di < ds.length; k++) s.push({ tipo: 'dato', it: ds[di++] });
-      if (pi < ps.length) { var p = ps[pi++]; p.rondas.forEach(function (r, idx) { s.push({ tipo: 'pareja', it: p, ronda: r, idx: idx }); }); }
+      if (pi < ps.length) {
+        var p = ps[pi++]; p.rondas.forEach(function (r, idx) { s.push({ tipo: 'pareja', it: p, ronda: r, idx: idx }); });
+        if (p.despues) { // KAN-2 2.12: algunas parejas llevan un dato que debe salir justo después (p. ej. ciberdelincuencia: quién la sufre y quién la comete)
+          var sig = D.datos.filter(function (x) { return x.id === p.despues; })[0]; if (sig) s.push({ tipo: 'dato', it: sig });
+        }
+      }
     }
     return s;
   }
@@ -464,10 +475,11 @@
   /* KAN-1 (1.5): los datos «X de cada 10» que ya traen su pregunta en porcentaje (preguntaPct) se pintan sobre 100 personas:
      3 de 10 = 30 de 100. Sigue siendo exactamente el mismo dato, pero se entiende mejor y encaja con el resto de mecánicas. */
   function pintaEnCien(it) { return !!(it.preguntaPct && it.fraccion && it.fraccion.de === 10); }
-  function resolverNumerico(t, guess, de, tuTxt) { // guess y de: en la escala de la mecánica; se pasa todo a puntos porcentuales
+  function resolverNumerico(t, guess, de, tuTxt, cifra) { // guess y de: en la escala de la mecánica; se pasa todo a puntos porcentuales
     var it = t.it, realPct = de === 100 || !it.fraccion ? it.valor : it.fraccion.n / de * 100;
     var dif = Math.abs((de === 100 ? guess : guess / de * 100) - realPct);
     var v = veredicto(dif), ptos = Math.max(0, Math.round(100 - dif * 2.5)), p = el('div');
+    if (cifra) { cifra.classList.add(v[1]); }   // el número del contador cambia de color según el resultado
     p.appendChild(el('p', 'real', fmt(it.valor, '%')));
     p.appendChild(el('p', 'que', L(it.etiqueta)));
     p.appendChild(el('p', 'tu', TXT.tuRespuesta(tuTxt) + ' (' + TXT.cercaDe(Math.round(dif * 10) / 10) + ')'));
@@ -489,7 +501,7 @@
     parar = function () { clearInterval(iv); };
     function stop() { // el pulsador para la cifra
       if (hecho || !iv) return; hecho = true; clearInterval(iv); pul.disabled = true; pul.classList.remove('listo'); cif.classList.add('parada');
-      resolverNumerico(t, v, 100, v + ' %');
+      resolverNumerico(t, v, 100, v + ' %', cif);
     }
     play.addEventListener('click', function () { // «Play»: la cifra sube muy rápido y vuelve a 0 al llegar a 100
       if (iv) return; play.hidden = true; pul.disabled = false; pul.classList.add('listo');
@@ -597,6 +609,11 @@
         p.appendChild(el('p', 'que', TXT.eraAsi(cor.texto ? L(cor.texto) : (cor.valor != null ? fmt(cor.valor, cor.unidad) : L(cor.etiqueta)))));
         p.appendChild(el('p', 'veredicto ' + (acierto ? 'bien' : 'mal'), (acierto ? TXT.acierto : TXT.fallo) + ' · +' + (acierto ? 100 : 0)));
         p.appendChild(el('p', 'pregunta-sorpresa', TXT.sorpresa));
+        var va = r.opciones[0].valor, vb = r.opciones[1].valor, uni = r.opciones[0].unidad;   // KAN-2 2.9: diferencia entre las dos cartas, también en porcentaje
+        if (va != null && vb != null && uni === r.opciones[1].unidad && !r.opciones[0].texto) {
+          var dif = Math.abs(va - vb), men = Math.min(va, vb), mas = uni === '%' ? ' puntos porcentuales' : ' ' + uni;
+          p.appendChild(el('p', 'que', 'Diferencia: ' + fmtN(Math.round(dif * 10) / 10) + mas + ((uni === 'años' || uni === '€') && men > 0 ? ' (un ' + fmtN(Math.round(dif / men * 1000) / 10) + ' % más)' : '')));
+        }
         if (r.nota) p.appendChild(el('p', 'anio', r.nota));
         setTimeout(function () { cerrarRonda(acierto ? 100 : 0, p, acierto ? 0 : 50); }, reduce ? 0 : 650);
       });

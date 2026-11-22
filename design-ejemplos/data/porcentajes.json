@@ -64,6 +64,12 @@
       "es": "Salud",
       "ca": "[TRADUCCIÓN PENDIENTE]",
       "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "violencia": {
+      "emoji": "🛡️",
+      "es": "Violencia digital",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
     }
   },
   "infografias": {
@@ -116,6 +122,16 @@
       "titulo": "Beijing +30",
       "fecha": "sep. 2025",
       "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/09_septiembre.pdf"
+    },
+    "violenciadigital": {
+      "titulo": "Violencia digital",
+      "fecha": "jun. 2026",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2026/202606_ViolenciaDigital.pdf"
+    },
+    "vivienda": {
+      "titulo": "Vivienda",
+      "fecha": "may. 2026",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2026/202605_Vivienda.pdf"
     }
   },
   "datos": [
@@ -125,7 +141,7 @@
       "tema": "trabajo",
       "infografia": "brecha",
       "pregunta": {
-        "es": "¿Cuánto menos ganan al año, de media, las mujeres que los hombres?",
+        "es": "En España, de media al año, ¿qué porcentaje menos cobran las mujeres en comparación con los hombres?",
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
@@ -173,27 +189,26 @@
       "id": "p-03",
       "tipo": "dato",
       "tema": "trabajo",
-      "infografia": "poder",
+      "infografia": "beijing",
       "pregunta": {
-        "es": "De las 35 empresas del IBEX 35, ¿cuántas tienen una presidenta?",
+        "es": "¿Qué porcentaje de las empresas del IBEX 35 tiene una mujer como CEO, es decir, la persona de mayor rango ejecutivo?",
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "valor": 11.4,
+      "valor": 3,
       "unidad": "%",
       "etiqueta": {
-        "es": "4 de 35 presidencias",
+        "es": "de las empresas del IBEX 35 tienen una mujer CEO",
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
       "mecanicas": [
-        "pintar"
+        "pintar",
+        "contador",
+        "aguja"
       ],
       "anioDatos": null,
-      "fraccion": {
-        "n": 4,
-        "de": 35
-      }
+      "nota": "KAN-2 2.13: antes preguntaba por presidentas (4 de 35 = 11,4 %). Cifra «3 % CEO» de la infografía Beijing +30 (sep. 2025, apartado 7). El año de los datos está por confirmar."
     },
     {
       "id": "p-04",
@@ -248,7 +263,7 @@
         "de": 10
       },
       "preguntaPct": {
-        "es": "¿Qué porcentaje de los 10 artistas más escuchados en Spotify en todo el mundo son mujeres?",
+        "es": "De los 10 artistas más escuchados en Spotify en todo el mundo, ¿qué porcentaje son mujeres?",
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       }
@@ -282,79 +297,19 @@
       "nota": "25/649 = 3,85 %. En el juego se enseña como «25 de 649 premios» o ≈4 %; decidir cómo mostrarlo. Los 624 son hombres, los 25 mujeres."
     },
     {
-      "id": "p-07",
-      "tipo": "dato",
-      "tema": "cine",
-      "infografia": "creadoras",
-      "pregunta": {
-        "es": "De cada 10 puestos directivos en el cine, ¿cuántos ocupan mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
-      },
-      "valor": 30,
-      "unidad": "%",
-      "etiqueta": {
-        "es": "3 de cada 10",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
-      },
-      "mecanicas": [
-        "pintar",
-        "contador"
-      ],
-      "anioDatos": 2023,
-      "fraccion": {
-        "n": 3,
-        "de": 10
-      },
-      "preguntaPct": {
-        "es": "¿Qué porcentaje de los puestos directivos del cine ocupan mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
-      }
-    },
-    {
-      "id": "p-08",
-      "tipo": "dato",
-      "tema": "clima",
-      "infografia": "clima",
-      "pregunta": {
-        "es": "De cada 100 personas que van a buscar agua para el hogar donde no hay agua corriente, ¿cuántas son mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
-      },
-      "valor": 70,
-      "unidad": "%",
-      "etiqueta": {
-        "es": "de quienes van a buscar el agua",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
-      },
-      "mecanicas": [
-        "contador",
-        "aguja",
-        "pintar"
-      ],
-      "anioDatos": null,
-      "fraccion": {
-        "n": 70,
-        "de": 100
-      }
-    },
-    {
       "id": "p-09",
       "tipo": "dato",
       "tema": "trabajo",
       "infografia": "empleo",
       "pregunta": {
-        "es": "De cada 100 personas que piden excedencia para cuidar a menores, ¿cuántas son mujeres?",
+        "es": "De las personas que tienen una jornada reducida para cuidar de menores o familiares, ¿qué porcentaje son mujeres?",
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
-      "valor": 87,
+      "valor": 93.3,
       "unidad": "%",
       "etiqueta": {
-        "es": "de las excedencias por cuidado de menores",
+        "es": "de la jornada a tiempo parcial por cuidados de familiares la hacen mujeres",
         "ca": "[TRADUCCIÓN PENDIENTE]",
         "en": "[TRADUCCIÓN PENDIENTE]"
       },
@@ -363,11 +318,12 @@
         "contador",
         "pintar"
       ],
-      "anioDatos": null,
+      "anioDatos": 2023,
       "fraccion": {
-        "n": 87,
+        "n": 93,
         "de": 100
-      }
+      },
+      "nota": "KAN-2 2.10: antes era excedencia por cuidado de menores (87 %). Cifra del apartado «Jornada a tiempo parcial 2023» de la infografía Empleo (jul. 2025): «8 de cada 10 son mujeres» y «93,3 % por cuidados de familiares». La redacción de la pregunta es de Mireia («jornada reducida para cuidar de menores o familiares»); la infografía dice «jornada a tiempo parcial por cuidados de familiares» y no aclara con más detalle qué mide el 93,3 %."
     },
     {
       "id": "p-10",
@@ -417,6 +373,88 @@
       ],
       "anioDatos": null,
       "nota": "KAN-1 1.7. El 16 % de la infografía es «menos del 16 % del total» de cobertura mediática. Mireia lo redactó como «televisión», pero la infografía habla de cobertura mediática en general: por confirmar con la infografía antes de publicar. La cifra es un tope («menos del 16 %»)."
+    },
+    {
+      "id": "p-12",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "empleo",
+      "pregunta": {
+        "es": "¿Qué porcentaje de los puestos de dirección y gerencia ocupan mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 34.4,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de los puestos de dirección y gerencia (en ocupaciones elementales, el 58,5 %)",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador",
+        "aguja"
+      ],
+      "anioDatos": null,
+      "nota": "KAN-2 2.11: techo de cristal. Infografía Empleo (jul. 2025): «Solo 34,4 % mujeres en dirección y gerencia» y «58,5 % en ocupaciones elementales». Año por confirmar."
+    },
+    {
+      "id": "p-14",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "vivienda",
+      "pregunta": {
+        "es": "De cada 100 hogares con una sola persona adulta y menores, ¿cuántos están a cargo de una mujer?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 78.8,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de los hogares con una persona adulta y menores son monomarentales (4 de cada 5)",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador",
+        "aguja"
+      ],
+      "anioDatos": 2025,
+      "fraccion": {
+        "n": 79,
+        "de": 100
+      },
+      "nota": "KAN-2 2.14: «4 de cada 5 (78,8 %) hogares con una persona adulta y menores son monomarentales», infografía Vivienda (may. 2026), gráfico de «Familias con solo una persona adulta» (2025; en 2019 la cifra era distinta). La infografía cita como fuentes el INE, pero no dice qué tabla da esta cifra."
+    },
+    {
+      "id": "p-15",
+      "tipo": "dato",
+      "tema": "violencia",
+      "infografia": "violenciadigital",
+      "pregunta": {
+        "es": "De las personas detenidas o investigadas por ciberdelincuencia sexual, ¿cuántas dirías que son hombres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 97,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de las personas detenidas o investigadas son hombres",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "pintar"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 97,
+        "de": 100
+      },
+      "nota": "KAN-2 2.12: «97 % de las personas detenidas o investigadas son hombres» (ciberdelincuencia sexual), infografía Violencia digital (jun. 2026). Entre sus fuentes está el informe ONVIOS (Ministerio del Interior) sobre delitos contra la libertad sexual de 2024, pero la infografía no dice cuál da cada cifra: año por confirmar. Va justo después de la pareja c-07.",
+      "soloTrasPareja": true
     }
   ],
   "parejas": [
@@ -657,6 +695,57 @@
         }
       ],
       "nota": "Revisar: la infografía da 21,5 y 13,8 «pp/año» (puntos porcentuales por año) sin explicar más; confirmar qué mide exactamente con su fuente antes de publicar."
+    },
+    {
+      "id": "c-07",
+      "tipo": "caraacara",
+      "tema": "violencia",
+      "infografia": "violenciadigital",
+      "anioDatos": null,
+      "despues": "p-15",
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "¿Quién crees que recibe más ciberdelincuencia sexual?",
+            "ca": "[TRADUCCIÓN PENDIENTE]",
+            "en": "[TRADUCCIÓN PENDIENTE]"
+          },
+          "opciones": [
+            {
+              "id": "ellas",
+              "etiqueta": {
+                "es": "Ellas",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": 70,
+              "unidad": "%",
+              "texto": {
+                "es": "70 % de las víctimas",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              }
+            },
+            {
+              "id": "ellos",
+              "etiqueta": {
+                "es": "Ellos",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              },
+              "valor": null,
+              "unidad": "%",
+              "texto": {
+                "es": "Menos",
+                "ca": "[TRADUCCIÓN PENDIENTE]",
+                "en": "[TRADUCCIÓN PENDIENTE]"
+              }
+            }
+          ],
+          "correcta": "ellas"
+        }
+      ],
+      "nota": "KAN-2 2.12: «70 % de las víctimas de ciberdelincuencia sexual son mujeres», infografía Violencia digital (jun. 2026). No confundir con el 67 % de «víctimas de delitos sexuales digitales» (2023) de la infografía Beijing +30: es otra cifra y otro año. Año de los datos por confirmar."
     }
   ],
   "reserva": [
@@ -701,6 +790,102 @@
     }
   ],
   "reserva_aviso": {
-    "es": "Parejas retiradas del juego por decisión de Mireia (KAN-1, punto 1.4, 20-11-2026). No se muestran ni se cuentan en las fuentes; se guardan por si se quieren recuperar."
-  }
+    "es": "Parejas retiradas del juego por decisión de Mireia (KAN-1, punto 1.4, 20-11-2026). No se muestran ni se cuentan en las fuentes; se guardan por si se quieren recuperar.",
+    "datos": {
+      "es": "Datos retirados del juego por decisión de Mireia y guardados en «reservaDatos»: cine (puestos directivos) y agua para el hogar (KAN-2, 2.10, 22-11-2026, para dar sitio a datos nuevos) y dirección de explotaciones agrarias, 29 % (22-11-2026, no es propiedad de la tierra).",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    }
+  },
+  "reservaDatos": [
+    {
+      "id": "p-07",
+      "tipo": "dato",
+      "tema": "cine",
+      "infografia": "creadoras",
+      "pregunta": {
+        "es": "De cada 10 puestos directivos en el cine, ¿cuántos ocupan mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 30,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "3 de cada 10",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador"
+      ],
+      "anioDatos": 2023,
+      "fraccion": {
+        "n": 3,
+        "de": 10
+      },
+      "preguntaPct": {
+        "es": "En el cine, dentro de los puestos de más poder, ¿qué porcentaje hay de mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "p-08",
+      "tipo": "dato",
+      "tema": "clima",
+      "infografia": "clima",
+      "pregunta": {
+        "es": "De cada 100 personas que van a buscar agua para el hogar donde no hay agua corriente, ¿cuántas son mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 70,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de quienes van a buscar el agua",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "contador",
+        "aguja",
+        "pintar"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 70,
+        "de": 100
+      }
+    },
+    {
+      "id": "p-13",
+      "tipo": "dato",
+      "tema": "clima",
+      "infografia": "clima",
+      "pregunta": {
+        "es": "En España, de cada 100 personas que dirigen una explotación agraria, ¿cuántas son mujeres?",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "valor": 29,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de las explotaciones agrarias están dirigidas por mujeres",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador",
+        "aguja"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 29,
+        "de": 100
+      },
+      "nota": "KAN-2 2.12: gestión de la tierra. La infografía Cambio climático (jun. 2025) da 15 % (mundo) y 29 % (España) sin explicar qué mide. El 29 % coincide con el Censo Agrario 2020 del INE (28,6 % de jefes de explotación son mujeres), así que NO es propiedad de la tierra sino dirección de explotaciones. POR CONFIRMAR la redacción con la fuente original (FAO / INE). El 15 % mundial no se usa hasta confirmarlo."
+    }
+  ]
 }

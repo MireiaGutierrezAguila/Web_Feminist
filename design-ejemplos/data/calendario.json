@@ -1180,18 +1180,6 @@
         "nota": "Relleno 2026-11-11. Una sola fuente (institucional). Buscar Library and Archives Canada. Fuentes básicas."
       }
     ],
-    "03-28": [
-      {
-        "principal": true, "tipo": "nacimiento", "anio": 1515, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa",
-        "texto": { "es": "Nace Teresa de Jesús, escritora y reformadora que fundó las carmelitas descalzas; en 1970 fue la primera mujer Doctora de la Iglesia.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
-        "fuentes": [
-          { "nombre": "Encyclopedia.com: Teresa de Ávila", "url": "https://www.encyclopedia.com/people/history/spanish-and-portuguese-history-biographies/teresa-avila" },
-          { "nombre": "Gran Enciclopèdia Catalana: Teresa de Jesús", "url": "https://www.enciclopedia.cat/gran-enciclopedia-catalana/teresa-de-jesus" }
-        ],
-        "estado": "verificada", "comprobado": "2026-11-11",
-        "nota": "Relleno 2026-11-11. Las fuentes discrepan en el lugar (Ávila o Gotarrendura), no en el día: el texto no lo nombra."
-      }
-    ],
     "03-29": [
       {
         "principal": true, "tipo": "premio", "anio": 1982, "pais": "EE. UU.", "mujer": null, "tema": "arte y literatura", "region": "América del Norte",
@@ -1257,6 +1245,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Relleno 2026-11-11. Alternativa del 1 abr."
+      }
+    ],
+    "04-02": [
+      {
+        "principal": true, "tipo": "muerte", "anio": 1930, "pais": "Etiopía", "mujer": null, "tema": "poder político", "region": "África",
+        "texto": { "es": "Muere Zewditu, emperatriz de Etiopía, que reinó de 1916 a 1930.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "HistoryAtlas: Zewditu", "url": "https://www.historyatlas.com/people/zewditu/" },
+          { "nombre": "Wikipedia: Zewditu", "url": "https://en.wikipedia.org/wiki/Zewditu" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). La segunda fuente es Wikipedia (reinado 27-9-1916 a 2-4-1930). No se usa «primera mujer al frente de un Estado africano»: Wikipedia lo atribuye a otros. Cuenta para la cuota de muertes."
       }
     ],
     "04-03": [
@@ -1353,6 +1353,17 @@
         "nota": "Relleno 2026-11-11. 11 abr gregoriano = 30 mar juliano. Olympedia no da el día. Hay relatos que mencionan a una «Melpomene»: no citar. Estado parcial: fuentes débiles (medios o derivadas de Wikipedia); buscar fuente institucional. 2026-11-13: [VERIFICAR] ninguna fuente olímpica oficial abierta da el 11 abr; Olympedia dice solo «el día después de la competición oficial» y la lista como DNS en el maratón masculino. Hay debate sobre si «Melpomene» y Revithi son la misma persona."
       }
     ],
+    "04-12": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1898, "pais": "Francia", "mujer": null, "tema": "ciencia y tecnología", "region": "Europa",
+        "texto": { "es": "Se presenta en la Academia de Ciencias de París la primera nota de Marie Curie sobre la radiactividad del uranio y el torio.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Le Moyne College (Giunta): Elements and Atoms, cap. 18 (Curie)", "url": "https://web.lemoyne.edu/GIUNTA/ea/CURIEann.HTML" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Elegida por Mireia para dar a Marie Curie un día propio (su nacimiento está el 7 de noviembre como alternativa). Solo una fuente abierta da el día (la nota «was presented on April 12, 1898», Comptes Rendus 126, 1101-1103). Falta una segunda: la nota original en Gallica (Comptes rendus, t. 126) o el artículo de IUPAC (dio 403). Gerhard Schmidt comunicó el torio el 24 de marzo, por eso el texto no dice «descubre»."
+      }
+    ],
     "04-13": [
       {
         "principal": true, "tipo": "nacimiento", "anio": 1909, "pais": "EE. UU.", "mujer": null, "tema": "arte y literatura", "region": "América del Norte",
@@ -1363,6 +1374,30 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Relleno 2026-11-11. Principal por solidez (Goldstein, Australia, quedó pendiente de una segunda fuente)."
+      }
+    ],
+    "04-14": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1869, "pais": "Cuba", "mujer": null, "tema": "movimientos sociales y derechos", "region": "América Latina",
+        "texto": { "es": "Ana Betancourt reclama derechos para las mujeres ante la Asamblea Constituyente de Guáimaro, en Cuba.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Workers World: Ana Betancourt", "url": "https://www.workers.org/?p=24162" },
+          { "nombre": "Diario Las Américas: Ana Betancourt", "url": "https://www.diariolasamericas.com/cultura/ana-betancourt-la-feminista-cubana-que-se-adelanto-un-siglo-su-epoca-n4175514" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). El 14 de abril lo dan solo estas dos fuentes, ninguna académica. Otra fuente sin abrir sitúa la Asamblea del 10 al 12. Discrepan en si habló o entregó un escrito: por eso el texto dice «reclama», no «discurso»."
+      }
+    ],
+    "04-15": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1895, "pais": "República Dominicana", "mujer": null, "tema": "movimientos sociales y derechos", "region": "América Latina",
+        "texto": { "es": "Nace Abigaíl Mejía, educadora y escritora dominicana. Presidió Acción Feminista Dominicana, la primera organización feminista formal del país.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Acento: Abigaíl Mejía, 131 años", "url": "https://acento.com.do/especiales/abigail-mejia-131-anos-de-la-mujer-que-le-puso-nombre-al-feminismo-dominicano-9660450.html" },
+          { "nombre": "CDN: natalicio de Abigaíl Mejía", "url": "https://cdn.com.do/nacionales/conmemoran-natalicio-de-abigail-mejia/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Las dos fuentes son prensa y dan el 15 de abril de 1895. Mejor sumar una fuente académica. Las fechas de su «Ideario Feminista» varían (1932 o 1939): no se usan."
       }
     ],
     "04-16": [
@@ -1413,6 +1448,18 @@
         "nota": "Relleno 2026-11-13. Dos fuentes dan el 19 abr 1966 (Patriots' Day). MUJER VIVA: hecho histórico con tono informativo, no cumpleaños. No confundir con Kathrine Switzer (1967)."
       }
     ],
+    "04-20": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1938, "pais": "Australia", "mujer": null, "tema": "deporte", "region": "Oceanía",
+        "texto": { "es": "Nace Betty Cuthbert, velocista australiana. Ganó cuatro oros olímpicos: tres en Melbourne 1956 y uno en Tokio 1964.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Olympedia: Betty Cuthbert", "url": "https://www.olympedia.org/athletes/64506" },
+          { "nombre": "Wikipedia: Betty Cuthbert", "url": "https://en.wikipedia.org/wiki/Betty_Cuthbert" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Fallecida en 2017. El lugar de nacimiento varía (Merrylands o Sídney): no se cita."
+      }
+    ],
     "04-21": [
       {
         "principal": true, "tipo": "nacimiento", "anio": 1879, "pais": "Indonesia", "mujer": null, "tema": "educación", "region": "Asia", "ancla": true, "precision": "dia",
@@ -1436,6 +1483,18 @@
         "nota": "Relleno 2026-11-11. La segunda fuente era Wikipedia: se deja una sola. Fuentes básicas."
       }
     ],
+    "04-23": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1933, "pais": "España", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa",
+        "texto": { "es": "Las españolas votan en las elecciones municipales parciales, meses antes de las generales de noviembre de 1933.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "El Salto: Los nombres de la memoria", "url": "https://www.elsaltodiario.com/los-nombres-de-la-memoria/f" },
+          { "nombre": "Eumed (Contribuciones a las Ciencias Sociales): voto de la mujer en España", "url": "https://www.eumed.net/rev/cccss/17/pvg.html" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Fuentes básicas (un periódico digital y una revista menor). Los PDF académicos no se pudieron leer. Si solo cuentan las Cortes, el primer voto fue el 19-11-1933: por eso el texto dice «municipales». Cuenta para la cuota de voto."
+      }
+    ],
     "04-24": [
       {
         "principal": true, "tipo": "hito", "anio": 2013, "pais": "Bangladés", "mujer": null, "tema": "trabajo y economía", "region": "Asia", "sensible": true,
@@ -1457,6 +1516,19 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Relleno 2026-11-11. El día 25 solo lo da KCL; el Embryo Project dice solo «abril de 1953». Nature 171, 740–741 sin abrir. Fuentes básicas."
+      }
+    ],
+    "04-27": [
+      {
+        "principal": true, "tipo": "premio", "anio": 2011, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Ana María Matute recibe en Alcalá de Henares el Premio Cervantes (edición 2010), el máximo galardón de las letras en español.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "El Universo: Matute recibe el Premio Cervantes", "url": "https://www.eluniverso.com/2011/04/27/1/1380/ana-maria-matute-recibe-premio-cervantes.html" },
+          { "nombre": "Wikipedia en español: Ana María Matute", "url": "https://es.wikipedia.org/wiki/Ana_Mar%C3%ADa_Matute" },
+          { "nombre": "El Universal (Colombia): la ganadora del Premio Cervantes", "url": "https://www.eluniversal.com.co/suplementos/dominical/2011/05/01/la-ganadora-del-premio-cervantes-ana-maria-matute/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). La entrega fue el 27 de abril de 2011; Poets & Writers anunciaba el 23. Se eligió a Matute y se descartó a Dulce María Loynaz (Cervantes entregado el 23-4-1993) para no repetir el mismo premio en el mes."
       }
     ],
     "04-28": [
@@ -1495,6 +1567,54 @@
         "nota": "Ancla. Fecha confirmada. El «catorce» solo viene de páginas oficiales. No concretar el lugar (Catedral o Casa Rosada según fuentes). Tema sensible; tono informativo. No se ha comprobado el motivo en página abierta: no incluido."
       }
     ],
+    "05-01": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1950, "pais": "China", "mujer": null, "tema": "derechos e igualdad", "region": "Asia",
+        "texto": { "es": "Se promulga en China la Ley de Matrimonio, que exige el consentimiento de ambos y reconoce la igualdad legal de mujeres y hombres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Chinese Posters: Marriage Law", "url": "https://chineseposters.net/themes/marriage-law" },
+          { "nombre": "That's Mags: China enacts new Marriage Law", "url": "https://www.thatsmags.com/gba/post/13405/this-day-in-history-china-enacts-new-marriage-law" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Dos páginas abiertas con el 1 de mayo; una dice «promulgada» y otra «en vigor». Ninguna institucional."
+      }
+    ],
+    "05-02": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1872, "pais": "Japón", "mujer": null, "tema": "arte y literatura", "region": "Asia",
+        "texto": { "es": "Nace Higuchi Ichiyō, escritora. Se la considera la primera escritora profesional de la literatura japonesa moderna.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Biblioteca Nacional de la Dieta (Japón): Higuchi Ichiyō", "url": "https://www.ndl.go.jp/portrait/e/datas/315.html" },
+          { "nombre": "Nippon.com: Higuchi Ichiyō", "url": "https://www.nippon.com/en/japan-topics/b07226/higuchi-ichiyo-a-pioneer-of-modern-japanese-literature.html" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Las dos fuentes dan el 2 de mayo de 1872. El dato del billete de 5.000 yenes no se ha usado (no abierto)."
+      }
+    ],
+    "05-03": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1942, "pais": "Checoslovaquia", "mujer": null, "tema": "deporte", "region": "Europa",
+        "texto": { "es": "Nace Věra Čáslavská, gimnasta checoslovaca. Ganó siete oros olímpicos en Tokio 1964 y México 1968.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Olympedia: Věra Čáslavská", "url": "https://www.olympedia.org/athletes/29115" },
+          { "nombre": "Encyclopedia.com: Čáslavská, Vera", "url": "https://encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/caslavska-vera-1942" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Tercera fuente abierta con la misma fecha: pametnaroda.cz."
+      }
+    ],
+    "05-04": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1744, "pais": "Austria", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Nace Marianna Martines, compositora austriaca. En 1773 fue la primera mujer admitida en la Academia Filarmónica de Bolonia.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: Martines, Marianne", "url": "https://encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/martinez-marianne-1744-1812" },
+          { "nombre": "Berliner Philharmoniker: Marianna Martines", "url": "https://www.berliner-philharmoniker.de/en/stories/marianna-martines/" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). El día 4 solo lo da una fuente abierta. Alternativa: primera carrera de la W Series (2019, Hockenheim), también con una sola fuente abierta."
+      }
+    ],
     "05-05": [
       {
         "principal": true, "tipo": "hito", "anio": 1930, "pais": "Reino Unido", "mujer": null, "tema": "exploración y aventura", "region": "Europa",
@@ -1505,6 +1625,30 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14",
         "nota": "Relleno 2026-11-13. Dos fuentes abiertas dan el 5 mayo 1930. Llegó a Darwin el 24 mayo (se descarta repetirla ese día). Cuenta como Europa occidental."
+      }
+    ],
+    "05-06": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1952, "pais": "Japón", "mujer": null, "tema": "ciencia y exploración", "region": "Asia", "viva": true,
+        "texto": { "es": "Nace Chiaki Mukai, médica y astronauta japonesa. En 1994 fue la primera japonesa en volar al espacio.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "NASA: Chiaki Mukai (PDF biográfico)", "url": "https://www.nasa.gov/wp-content/uploads/2016/01/mukai.pdf" },
+          { "nombre": "Encyclopedia.com: Mukai, Chiaki", "url": "https://www.encyclopedia.com/women/dictionaries-thesauruses-pictures-and-press-releases/mukai-chiaki-1952" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Mujer viva: comprobar en fuente actual que sigue viva. JAXA solo da el año."
+      }
+    ],
+    "05-07": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1849, "pais": "India", "mujer": null, "tema": "educación", "region": "Asia",
+        "texto": { "es": "Abre en Calcuta la escuela Bethune, una de las primeras de educación formal para niñas en la India.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Banglapedia: Bethune College", "url": "https://en.banglapedia.org/index.php/Bethune_College" },
+          { "nombre": "Banglapedia: John Elliot Drinkwater Bethune", "url": "https://en.banglapedia.org/index.php/Bethune,_John_Elliot_Drinkwater" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Las dos fuentes son la misma enciclopedia. Falta una fuente independiente (web del colegio). Se dice «una de las primeras», no «la primera»."
       }
     ],
     "05-08": [
@@ -1555,6 +1699,53 @@
         "nota": "Ancla. 11 may 2011 = fecha del convenio (hecho en Estambul); en vigor el 1 ago 2014. Las páginas del Consejo de Europa dieron 403: [VERIFICAR] si se quiere citar «se abre a la firma». Evitar comparaciones entre países (p. ej., Turquía)."
       }
     ],
+    "05-12": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1977, "pais": "Irán", "mujer": null, "tema": "ciencia y tecnología", "region": "Asia",
+        "texto": { "es": "Nace Maryam Mirzakhani, matemática iraní. En 2014 fue la primera mujer en recibir la Medalla Fields.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "MacTutor (Univ. de St Andrews): Mirzakhani", "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Mirzakhani/" },
+          { "nombre": "Agnes Scott College: Maryam Mirzakhani", "url": "https://mathwomen.agnesscott.org/women/mirzakhani.htm" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Algunas referencias dan 3 de mayo por error; las dos fuentes abiertas dan el 12."
+      }
+    ],
+    "05-13": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1995, "pais": "Reino Unido", "mujer": null, "tema": "exploración y aventura", "region": "Europa",
+        "texto": { "es": "Alison Hargreaves es la primera mujer en subir al Everest sin oxígeno embotellado ni ayuda de sherpas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Guinness World Records: primera mujer en el Everest sin oxígeno", "url": "https://www.guinnessworldrecords.com/world-records/453616-first-ascent-of-everest-without-supplementary-oxygen-female-undisputed" },
+          { "nombre": "ExplorersWeb: Alison Hargreaves", "url": "https://explorersweb.com/remembering-alison-hargreaves/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Fuentes divulgativas. Temas de exploración ya presentes el 5, 15 y 20."
+      }
+    ],
+    "05-14": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1900, "pais": "China", "mujer": null, "tema": "movimientos sociales y derechos", "region": "Asia",
+        "texto": { "es": "Nace Cai Chang, activista china. Fue la primera presidenta de la Federación de Mujeres de toda China.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: Cai Chang", "url": "https://en.wikipedia.org/wiki/Cai_Chang" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Solo Wikipedia. Falta una segunda fuente. No se menciona el año en que dejó el cargo (las fuentes discrepan)."
+      }
+    ],
+    "05-15": [
+      {
+        "principal": true, "tipo": "hito", "anio": 2010, "pais": "Australia", "mujer": null, "tema": "exploración y aventura", "region": "Oceanía",
+        "texto": { "es": "Jessica Watson, de 16 años, termina en Sídney su vuelta al mundo en solitario y sin escalas tras 210 días.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Yachting World: Jessica Watson completa la vuelta al mundo", "url": "https://www.yachtingworld.com/news/jessica-watson-completes-circumnavigation-8550" },
+          { "nombre": "RNZ: Jessica Watson llega a puerto", "url": "https://www.rnz.co.nz/news/world/50116/teenage-round-the-world-sailor-back-on-dry-land" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). No se dice «la más joven»: hay discusión sobre el récord. Hoy es adulta; solo se informa del hecho."
+      }
+    ],
     "05-16": [
       {
         "principal": true, "tipo": "derecho", "anio": 2005, "pais": "Kuwait", "mujer": null, "tema": "voto y derechos políticos", "region": "Asia",
@@ -1565,6 +1756,42 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14",
         "nota": "Relleno 2026-11-13. Votación definitiva tras una primera votación (15 feb) y una derrota (2 may). Las mujeres votaron por primera vez en 2007 y entraron en el Parlamento en 2009."
+      }
+    ],
+    "05-17": [
+      {
+        "principal": true, "tipo": "hito", "anio": 2025, "pais": "Palaos", "mujer": null, "tema": "deporte", "region": "Oceanía", "viva": true,
+        "texto": { "es": "Baklai Temengil es elegida presidenta de los Comités Olímpicos Nacionales de Oceanía, la primera mujer en el cargo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "ONOC: Temengil, primera presidenta en 45 años", "url": "https://www.oceanianoc.org/press/temegil-becomes-first-female-president-in-onocs-45-year-history" },
+          { "nombre": "Islands Business: Temengil", "url": "https://islandsbusiness.com/?p=39995" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Mujer viva: es un cargo, no un cumpleaños. Apellido escrito «Temegil» en una lista del comunicado."
+      }
+    ],
+    "05-18": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1999, "pais": "España", "mujer": null, "tema": "derechos e igualdad", "region": "Europa",
+        "texto": { "es": "España aprueba la ley del personal militar, que iguala el acceso de mujeres y hombres a las Fuerzas Armadas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "BOE: Ley 17/1999, de 18 de mayo", "url": "https://www.boe.es/eli/es/l/1999/05/18/17" },
+          { "nombre": "Congreso de los Diputados: Ley 17/1999", "url": "https://www.congreso.es/constitucion/ficheros/leyes_espa/l_017_1999.pdf" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Solo hay una fuente de contenido (el BOE, art. 63.4). La ley es del 18 de mayo y se publicó el 19. Conviene una segunda fuente (Ministerio de Defensa)."
+      }
+    ],
+    "05-19": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1932, "pais": "México", "mujer": null, "tema": "arte y literatura", "region": "América Latina", "viva": true,
+        "texto": { "es": "Nace Elena Poniatowska, escritora y periodista. En 2013 recibió el Premio Cervantes.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Planeta de Libros: Elena Poniatowska", "url": "https://www.planetadelibros.com/autor/elena-poniatowska/000025969" },
+          { "nombre": "Infobae: cumpleaños 94 de Elena Poniatowska (19-05-2026)", "url": "https://www.infobae.com/mexico/2026/05/19/sheinbaum-felicita-a-elena-poniatowska-por-su-cumpleanos-94-y-reconoce-su-trayectoria/" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Mujer viva: seguía viva el 19-05-2026 según Infobae; no hay noticia posterior. Nació en París. Ninguna página abierta da la fecha completa en una sola frase."
       }
     ],
     "05-20": [
@@ -1579,6 +1806,54 @@
         "nota": "Relleno 2026-11-13. Despega el 20 y aterriza el 21 mayo 1932 (mismo hecho). Earhart ya aparece el 11 enero (vuelo Hawái–Norteamérica)."
       }
     ],
+    "05-21": [
+      {
+        "principal": true, "tipo": "premio", "anio": 2019, "pais": "Omán", "mujer": null, "tema": "arte y literatura", "region": "Asia", "viva": true,
+        "texto": { "es": "Jokha Alharthi gana el Man Booker International por «Celestial Bodies». Es la primera autora traducida del árabe en lograrlo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "ArabLit: Jokha Alharthi y Marilyn Booth ganan el Man Booker International", "url": "https://arablit.org/2019/05/21/jokha-al-harthi-and-marilyn-booth-win-2019-man-booker-international-for-celestial-bodies/" },
+          { "nombre": "Al Jazeera: Jokha Alharthi gana el Man Booker International", "url": "https://www.aljazeera.com/features/2019/5/22/omani-author-jokha-alharthi-wins-man-booker-international-prize" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Discrepancia de fecha: una página de la Universidad de Oxford dice 29-05-2019. La web de los Booker Prizes dio 403. Premio compartido con la traductora Marilyn Booth."
+      }
+    ],
+    "05-22": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1846, "pais": "México", "mujer": null, "tema": "educación", "region": "América Latina",
+        "texto": { "es": "Nace Rita Cetina Gutiérrez, maestra y poeta mexicana. En 1870 funda la revista «La Siempreviva», hecha por y para mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "México Desconocido: Rita Cetina", "url": "https://www.mexicodesconocido.com.mx/rita-cetina.html" },
+          { "nombre": "Infinite Women: Rita Cetina Gutiérrez", "url": "https://www.infinite-women.com/women/rita-cetina-y-gutierrez/" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Fuentes básicas (divulgación y agregador). La CNDH también trae la fecha, pero su PDF no se pudo leer. Confirmar en INEHRM o Gobierno de Yucatán."
+      }
+    ],
+    "05-23": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1984, "pais": "India", "mujer": null, "tema": "exploración y aventura", "region": "Asia", "viva": true,
+        "texto": { "es": "Bachendri Pal alcanza la cima del Everest y es la primera mujer india en lograrlo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Tata Steel: Bachendri Pal", "url": "https://www.tatasteel.com/corporate/our-organisation/campaigns/bachendri-pal/" },
+          { "nombre": "The Better India: Bachendri Pal", "url": "https://thebetterindia.com/113258/bachendri-pal-first-indian-woman-mount-everest" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Una web de su empleador y un medio. Un medio indio da el 22; la mayoría el 23."
+      }
+    ],
+    "05-24": [
+      {
+        "principal": true, "tipo": "premio", "anio": 1993, "pais": "Nueva Zelanda", "mujer": null, "tema": "arte y literatura", "region": "Oceanía", "viva": true,
+        "texto": { "es": "Jane Campion gana la Palma de Oro de Cannes por «El piano»: es la primera directora que la recibe.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "INA: palmarés del Festival de Cannes 1993", "url": "https://fresques.ina.fr/festival-de-cannes-en/fiche-media/Cannes00271/list-of-winners-of-the-1993-festival.html" },
+          { "nombre": "Festival de Cannes: Jane Campion", "url": "https://www.festival-cannes.com/en/p/jane-campion/" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). El día solo lo da INA. Premio compartido (ex aequo) con Chen Kaige. Mujer viva: tono informativo."
+      }
+    ],
     "05-25": [
       {
         "principal": true, "tipo": "derecho", "anio": 2018, "pais": "Irlanda", "mujer": null, "tema": "salud y derechos reproductivos", "region": "Europa", "ancla": true, "precision": "dia",
@@ -1589,6 +1864,30 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Ancla. Fecha confirmada por RTÉ (rte.ie/archives): 25 may 2018. Datos oficiales: 1.429.981 sí, 723.632 no (RTÉ da 733.632: no poner cifras absolutas), participación 64,13 %. Tono sobrio."
+      }
+    ],
+    "05-26": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1978, "pais": "España", "mujer": null, "tema": "justicia y derechos", "region": "Europa",
+        "texto": { "es": "España elimina del Código Penal los delitos de adulterio y amancebamiento.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "BOE: Ley 22/1978, de 26 de mayo", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1978-13822" },
+          { "nombre": "BOE: sumario del 30 de mayo de 1978", "url": "https://www.boe.es/boe/dias/1978/05/30/" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Las dos páginas son del BOE (cuentan como una fuente). Disposición del 26-05, publicada el 30-05 y en vigor desde el 19-06. Falta fuente independiente que diga que afectaba más a las mujeres (no se menciona)."
+      }
+    ],
+    "05-27": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1878, "pais": "Perú", "mujer": null, "tema": "movimientos sociales y derechos", "region": "América Latina",
+        "texto": { "es": "Nace María Jesús Alvarado, feminista y educadora peruana. En 1914 funda la asociación Evolución Femenina.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: Alvarado, María Jesús", "url": "https://encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/alvarado-maria-jesus-1878-1971" },
+          { "nombre": "Blog de la APA: María Jesús Alvarado Rivera", "url": "https://blog.apaonline.org/2024/03/08/international-womens-day-profile-maria-jesus-alvarado-rivera/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Ninguna fuente oficial."
       }
     ],
     "05-28": [
@@ -1612,6 +1911,54 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
         "nota": "Relleno 2026-11-13. Una sola fuente (la oficial) da el día. Entró en vigor en 1975, no el día de la aprobación. Fuentes básicas."
+      }
+    ],
+    "05-30": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1864, "pais": "India", "mujer": null, "tema": "salud y medicina", "region": "Asia",
+        "texto": { "es": "Nace Annie Jagannadham, médica india. En 1890 fue la primera mujer india inscrita en el registro médico británico.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Royal College of Physicians: Annie Jagannadham", "url": "https://history.rcp.ac.uk/blog/annie-wardlaw-jagannadham" },
+          { "nombre": "Royal College of Physicians de Edimburgo: Annie Jagannadham", "url": "https://www.rcpe.ac.uk/heritage/annie-wardlaw-jagannadham" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Dos fuentes institucionales. La fecha de su muerte varía y no se usa."
+      }
+    ],
+    "05-31": [
+      {
+        "principal": true, "tipo": "hito", "anio": 2013, "pais": "Burundi", "mujer": null, "tema": "deporte", "region": "África", "viva": true,
+        "texto": { "es": "Lydia Nsekera, de Burundi, es la primera mujer elegida para el Comité Ejecutivo de la FIFA.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Al Jazeera: primera mujer elegida en la FIFA", "url": "https://www.aljazeera.com/sports/2013/5/31/first-woman-elected-to-fifas-executive-body" },
+          { "nombre": "Inside World Football: Nsekera", "url": "https://www.insideworldfootball.com/2013/05/31/nsekera-wins-post-dodd-fans-cry-foul-but-women-get-a-stronger-voice/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Mujer viva: es un cargo. En 2012 había entrado por cooptación; en 2013 es la primera elegida por votación. Hubo polémica en la votación, no mencionada."
+      }
+    ],
+    "06-01": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1937, "pais": "Australia", "mujer": null, "tema": "arte y literatura", "region": "Oceanía",
+        "texto": { "es": "Nace Colleen McCullough, neurofisióloga y novelista australiana. Con «El pájaro espino» (1977) pudo dedicarse a escribir.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: McCullough, Colleen", "url": "https://encyclopedia.com/women/dictionaries-thesauruses-pictures-and-press-releases/mccullough-colleen-1937" },
+          { "nombre": "The Irish Times: Colleen McCullough", "url": "https://www.irishtimes.com/life-and-style/people/australian-novelist-whose-huge-success-saw-her-give-up-a-career-in-science-1.2085878" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Fallecida en 2015. National Portrait Gallery de Australia confirma el año y la carrera."
+      }
+    ],
+    "06-02": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1868, "pais": "Sierra Leona", "mujer": null, "tema": "educación", "region": "África",
+        "texto": { "es": "Nace Adelaide Casely-Hayford, educadora. En 1923 fundó en Freetown una escuela de formación profesional para niñas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "African American Registry: Adelaide Casely-Hayford", "url": "https://aaregistry.org/story/adelaide-casely-hayford-writer-born/" },
+          { "nombre": "Universidad de Glasgow: Casely-Hayford", "url": "https://www.gla.ac.uk/research/az/slavery/news/internationalwomensday2021/headline_779319_en.html" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). El 2 de junio solo lo da una fuente abierta; otras dan el 27 de junio. La Universidad de Glasgow confirma año y escuela."
       }
     ],
     "06-03": [
@@ -1638,6 +1985,41 @@
         "nota": "Ancla. Derby el 4 jun 1913; murió el 8 jun; funeral el 14 jun. Texto sin detalles gráficos; «we'll never truly know what her intention was» (Museo de Londres). Co-Curate puede reciclar texto de Wikipedia: independencia débil. Cuenta para la cuota de voto y política. Alternativa el 8 jun."
       }
     ],
+    "06-05": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1977, "pais": "Kenia", "mujer": null, "tema": "medio ambiente y derechos", "region": "África",
+        "texto": { "es": "Wangari Maathai y el Consejo Nacional de Mujeres de Kenia plantan siete árboles en Nairobi: nace el Movimiento Cinturón Verde.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "African Feminist Forum: Wangari Muta Maathai", "url": "http://www.africanfeministforum.com/wangari-muta-maathai-kenya/" },
+          { "nombre": "Goldman Prize: Green Belt Movement", "url": "https://www.goldmanprize.org/blog/green-belt-movement-wangari-maathai/" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). El 5 de junio lo da solo la primera fuente; Goldman confirma año y Día del Medio Ambiente. No se cita el lugar exacto (las fuentes discrepan)."
+      }
+    ],
+    "06-06": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1841, "pais": "Polonia", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Nace Eliza Orzeszkowa, escritora polaca que defendió la educación de las mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: Orzeszkowa, Eliza", "url": "https://encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/orzeszkowa-eliza-1841-1910" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Ninguna página abierta da el día (solo el año 1841). Britannica daría el 6-6-1841 pero da 403. Falta fuente con el día."
+      }
+    ],
+    "06-07": [
+      {
+        "principal": true, "tipo": "hito", "anio": 421, "pais": "Imperio bizantino", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Eudocia, poeta, se casa con el emperador Teodosio II en Constantinopla. Se conservan fragmentos de su poesía.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "New Advent (Catholic Encyclopedia): Eudocia", "url": "https://www.newadvent.org/cathen/05597a.htm" },
+          { "nombre": "Encyclopedia.com: Eudocia", "url": "https://encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/eudocia-c-400-460" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Una fuente es confesional y antigua. Fechas de nacimiento y muerte inciertas; no se usan."
+      }
+    ],
     "06-08": [
       {
         "principal": false, "tipo": "muerte", "anio": 1913, "pais": "Reino Unido", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa", "ancla": true, "precision": "dia",
@@ -1648,6 +2030,30 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Ancla (alternativa, misma ancla del 4 jun). [VERIFICAR] el 8 jun: lo da el Museo de Londres y Co-Curate (débil); las dos fuentes de este registro son del mismo museo. Funeral del 14 jun (fotografía del cortejo); entierro el 15 jun en Morpeth (Co-Curate)."
+      }
+    ],
+    "06-10": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1692, "pais": "EE. UU. (colonia de Massachusetts)", "mujer": null, "tema": "justicia y violencia", "region": "América del Norte",
+        "texto": { "es": "Es ahorcada en Salem Bridget Bishop, la primera condenada en los juicios por brujería de 1692.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Salem Witch Trials Documentary Archive (Univ. de Virginia): Bridget Bishop", "url": "https://salem.lib.virginia.edu/people/bishop.html" },
+          { "nombre": "Oxford University Press (blog): Bridget Bishop, primera víctima de Salem", "url": "https://blog.oup.com/2015/06/bridget-bishop-first-victim-salem-witch-trials/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Añadida por decisión de Mireia (2026-11-22) aunque las fuentes sean básicas. Dos fuentes abiertas con el 10 de junio. Un sitio dudoso da el 8, pero su ficha también cita el 10. El tribunal era civil, no eclesiástico."
+      }
+    ],
+    "06-11": [
+      {
+        "principal": true, "tipo": "hito", "anio": 2013, "pais": "China", "mujer": null, "tema": "ciencia y exploración", "region": "Asia", "viva": true,
+        "texto": { "es": "Wang Yaping despega en la Shenzhou-10 y es la segunda mujer china en viajar al espacio.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Space.com: Shenzhou-10", "url": "https://www.space.com/21644-china-astronauts-science-lesson-shenzhou10.html" },
+          { "nombre": "NBC News: Shenzhou-10", "url": "https://www.nbcnews.com/news/amp/wbna52264928" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). El año sale de la fecha de publicación de las noticias. Evitar repetir «mujer en el espacio» cerca del 16 (Tereshkova)."
       }
     ],
     "06-12": [
@@ -1674,6 +2080,18 @@
         "nota": "Ancla propuesta por Mireia. Investida el 13 jun 2015 con 21 de 41 votos. «Primera alcaldesa» solo lo respalda Betevé (la biografía del Ayuntamiento dio 404): revisar. Colau es política en activo: Mireia decide si encaja."
       }
     ],
+    "06-15": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 2000, "pais": "Internacional (OIT)", "mujer": null, "tema": "trabajo y economía", "region": "Mundial",
+        "texto": { "es": "La OIT adopta en Ginebra el Convenio 183 sobre la protección de la maternidad.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Tratados de los Países Bajos: Convenio 183", "url": "https://wetten.overheid.nl/BWBV0003153/2010-01-15/0/Verdrag_1" },
+          { "nombre": "OIT: 88.ª Conferencia Internacional del Trabajo", "url": "https://webapps.ilo.org/public/english/standards/relm/ilc/ilc88/rep-iv2b.htm" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). El día lo da la fuente neerlandesa; la OIT solo muestra el cierre de la sesión (15-06-2000). Alternativa: Bessie Coleman (1921), pero la fuente no se pudo abrir."
+      }
+    ],
     "06-16": [
       {
         "principal": true, "tipo": "hito", "anio": 1963, "pais": "Unión Soviética", "mujer": null, "tema": "ciencia y exploración", "region": "Europa", "ancla": true, "precision": "dia",
@@ -1684,6 +2102,17 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Ancla. 16 jun 1963 (NASA, ESA y Smithsonian). Región «Europa» por decisión de Mireia (la URSS abarcaba Europa y Asia). Regreso el 19 jun (solo en búsqueda). Biography.com daba el 13 jun: error aislado."
+      }
+    ],
+    "06-17": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1733, "pais": "Colombia", "mujer": null, "tema": "movimientos sociales y derechos", "region": "América Latina",
+        "texto": { "es": "Se funda la parroquia que dio origen a Cúcuta, sobre tierras donadas por Juana Rangel de Cuéllar.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: Juana Rangel de Cuéllar", "url": "https://en.wikipedia.org/wiki/Juana_Rangel_de_Cu%C3%A9llar" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Solo una fuente legible, apoyada en un único sitio no abierto. Un artículo académico habla de donación notarial más que de «fundación»."
       }
     ],
     "06-18": [
@@ -1708,6 +2137,54 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Ancla. 19 jun–2 jul 1975, «World Conference of the International Women's Year», la primera conferencia mundial sobre la condición de la mujer. ONU Mujeres da 133 gobiernos y unos 6.000 representantes de ONG (no incluido). Las fechas vienen de la ONU y de su archivo fotográfico (misma organización). Apoyo: media.un.org (apertura el 19 jun 1975)."
+      }
+    ],
+    "06-20": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1914, "pais": "Turquía", "mujer": null, "tema": "ciencia", "region": "Asia",
+        "texto": { "es": "Nace Muazzez İlmiye Çığ, sumeróloga turca. Estudió tablillas cuneiformes del museo de Estambul.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Biyografya: Muazzez İlmiye Çığ", "url": "https://www.biyografya.com/biyografi/16493" },
+          { "nombre": "Wikipedia: Muazzez İlmiye Çığ", "url": "https://en.wikipedia.org/wiki/Muazzez_%C4%B0lmiye_%C3%87%C4%B1%C4%9F" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Fuentes básicas. Fallecida en 2024 según búsquedas no abiertas. No se afirma «primera sumeróloga» (solo un titular)."
+      }
+    ],
+    "06-21": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1947, "pais": "Irán", "mujer": null, "tema": "justicia y derechos humanos", "region": "Asia", "viva": true,
+        "texto": { "es": "Nace Shirin Ebadi, abogada iraní. En 2003 recibió el Premio Nobel de la Paz.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: Shirin Ebadi", "url": "https://en.wikipedia.org/wiki/Shirin_Ebadi" },
+          { "nombre": "Encyclopaedia Universalis: Shirin Ebadi", "url": "https://www.universalis.fr/encyclopedie/shirin-ebadi/" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Mujer viva (comprobado 22-11-2026 sobre captura de Wikipedia). Ningún sitio institucional abierto da el día. Figura crítica con su gobierno: decide Mireia si encaja."
+      }
+    ],
+    "06-22": [
+      {
+        "principal": true, "tipo": "hito", "anio": 2022, "pais": "Chile", "mujer": null, "tema": "educación", "region": "América Latina", "viva": true,
+        "texto": { "es": "Rosa Devés asume como rectora de la Universidad de Chile, la primera mujer en el cargo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "CNN Chile: Rosa Devés, primera rectora", "url": "https://www.cnnchile.com/pais/rosa-deves-primera-rectora-universidad-de-chile_20220622/" },
+          { "nombre": "Universidad de Chile: Rosa Devés Alessandri", "url": "https://uchile.cl/presentacion/historia/rectores-de-la-u-de-chile/rosa-deves-alessandri" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). La asunción el 22 de junio solo la da CNN Chile; la universidad da el 12 de mayo (elección)."
+      }
+    ],
+    "06-23": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1986, "pais": "Polonia / Pakistán", "mujer": null, "tema": "exploración y aventura", "region": "Asia",
+        "texto": { "es": "Wanda Rutkiewicz, alpinista polaca, es la primera mujer que alcanza la cima del K2.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Guinness World Records: primera ascensión femenina al K2", "url": "https://www.guinnessworldrecords.com/world-records/first-ascent-of-k2-by-a-woman" },
+          { "nombre": "American Alpine Club: K2 1986", "url": "https://publications.americanalpineclub.org/articles/12198727302" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Región mixta: protagonista polaca, cima en el Karakórum. Se eligió frente a Huda Sha'arawi (nace el 23 de junio) por tener dos fuentes más sólidas; Sha'arawi queda como candidata."
       }
     ],
     "06-24": [
@@ -1744,6 +2221,42 @@
         "nota": "Ancla. «Primera mujer con título» es discutido (Padua la llama «prima donna laureata al mondo»; Il Post cita casos anteriores como Bitisia Gozzadini, Bolonia 1236), por eso se dice «una de las primeras»."
       }
     ],
+    "06-26": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1945, "pais": "Internacional (San Francisco)", "mujer": null, "tema": "movimientos sociales y derechos", "region": "Mundial",
+        "texto": { "es": "Se firma la Carta de la ONU; Minerva Bernardino y Bertha Lutz impulsaron que mencionara la igualdad de mujeres y hombres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "ONU: «We the Peoples»", "url": "https://media.un.org/photo/en/photo-essays/we-peoples-united-nations" },
+          { "nombre": "Noticias ONU: Bertha Lutz", "url": "https://news.un.org/es/story/2018/05/1434531" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). El texto de Noticias ONU se contradice (1945 y 1948). Media.un.org solo nombra a Bernardino como firmante. Revisar antes de publicar."
+      }
+    ],
+    "06-27": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1880, "pais": "EE. UU.", "mujer": null, "tema": "educación", "region": "América del Norte",
+        "texto": { "es": "Nace Helen Keller, escritora y activista. Fue la primera persona sordociega de EE. UU. con título universitario.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "American Foundation for the Blind: Helen Keller", "url": "https://www.afb.org/about-afb/history/helen-keller/biography-and-chronology/biography" },
+          { "nombre": "Wikipedia: Helen Keller", "url": "https://en.wikipedia.org/wiki/Helen_Keller" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Sólida pero con segunda fuente débil (Wikipedia) y de EE. UU., región ya muy presente."
+      }
+    ],
+    "06-28": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1919, "pais": "Francia", "mujer": null, "tema": "trabajo y economía", "region": "Europa",
+        "texto": { "es": "Se firma el Tratado de Versalles, que incluye el principio de igual salario por trabajo de igual valor para mujeres y hombres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Oficina del Historiador (EE. UU.): Tratado de Versalles", "url": "https://history.state.gov/historicaldocuments/frus1919Parisv13/ch22subch2" },
+          { "nombre": "OIT: Tratado de Versalles", "url": "https://libguides.ilo.org/c.php?g=657806&p=4636553" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Es una declaración de principios, no una ley aplicable. La fecha la da la OIT; el principio, la primera fuente."
+      }
+    ],
     "06-29": [
       {
         "principal": true, "tipo": "hito", "anio": 1980, "pais": "Islandia", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa", "ancla": true, "precision": "dia",
@@ -1754,6 +2267,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Ancla. Elegida el 29 jun 1980; toma posesión el 1 ago 1980; 16 años y cuatro mandatos (hasta el 1 ago 1996). «Primera mujer elegida democráticamente jefa de Estado» es lo que dicen la Presidencia de Islandia y la BC EE. UU.: si se amplía, atribuirlo. Tercera fuente: nordics.info (Univ. de Aalborg). Cuenta para la cuota de voto y política."
+      }
+    ],
+    "06-30": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1936, "pais": "Argelia", "mujer": null, "tema": "arte y literatura", "region": "África",
+        "texto": { "es": "Nace Assia Djebar, escritora y cineasta argelina. En 2005 entró en la Academia Francesa.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopaedia Universalis: Assia Djebar", "url": "https://www.universalis.fr/encyclopedie/assia-djebar/" },
+          { "nombre": "Encyclopedia.com: Djebar, Assia", "url": "https://encyclopedia.com/international/encyclopedias-almanacs-transcripts-and-maps/djebar-assia-1936" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Discrepancia: algunas fuentes dan el 4 de agosto. Universalis y Wikipedia dan el 30 de junio."
       }
     ],
     "07-01": [
@@ -1826,6 +2351,18 @@
         "nota": "Ancla. Ley de 5 jul 1985; BOE núm. 166 del 12 jul 1985. [VERIFICAR] Solo el BOE se pudo abrir (la fuente 2 dio 403). Tono sobrio, sin detalles. No afirmar si sigue vigente: el BOE la muestra como derogada por la LO 10/1995, pero una búsqueda no abierta dice que el art. 417 bis siguió vigente hasta la LO 2/2010. Fuentes básicas."
       }
     ],
+    "07-06": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1907, "pais": "México", "mujer": null, "tema": "arte y literatura", "region": "América Latina",
+        "texto": { "es": "Nace Frida Kahlo, pintora mexicana. Su obra autobiográfica la convirtió en una de las artistas más reconocidas de México.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "La Nación: la historia de Frida Kahlo", "url": "https://www.lanacion.com.ar/lifestyle/la-historia-de-frida-kahlo-en-un-nuevo-aniversario-de-su-nacimiento-nid06072021/" },
+          { "nombre": "Banco de México: Frida Kahlo", "url": "https://www.banxico.org.mx/billetes-y-monedas/frida-kahlo-biografia-banco-m.html" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). El día 6 de julio lo da una sola fuente abierta (Banxico solo da el año). Mujer del juego; México ya sale el 3 de julio. No se menciona que ella decía haber nacido en 1910 (sin fuente abierta)."
+      }
+    ],
     "07-07": [
       {
         "principal": true, "tipo": "derecho", "anio": 1981, "pais": "España", "mujer": null, "tema": "derechos civiles", "region": "Europa", "ancla": true, "precision": "dia",
@@ -1838,6 +2375,17 @@
         "nota": "Ancla. 7 jul 1981 = fecha de la ley; publicada en el BOE núm. 172 del 20 jul 1981; en vigor el 9 ago 1981. Aprobación en el Congreso el 22 jun 1981 (Abogacía). La fuente 2 es un portal jurídico, no institucional: repasar si se quiere reforzar. Una fuente dice «entró en vigor el 7 jul», lo que contradice al BOE."
       }
     ],
+    "07-08": [
+      {
+        "principal": true, "tipo": "muerte", "anio": 1998, "pais": "España", "mujer": null, "tema": "deporte", "region": "Europa",
+        "texto": { "es": "Muere Lilí Álvarez, tenista española. Fue finalista de Wimbledon en 1926 y 1928.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Olympedia: Lilí Álvarez", "url": "https://www.olympedia.org/athletes/2410" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Solo una fuente abierta. No se menciona su feminismo (sin página abierta que lo confirme). Cuenta como día de España."
+      }
+    ],
     "07-09": [
       {
         "principal": true, "tipo": "nacimiento", "anio": 1935, "pais": "Argentina", "mujer": null, "tema": "arte y literatura", "region": "América Latina",
@@ -1848,6 +2396,65 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14",
         "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el día. Murió el 4 oct 2009. No se cita el año de su cargo en la UNESCO porque las fuentes difieren (1999 u 2008)."
+      }
+    ],
+    "07-10": [
+      {
+        "principal": true, "tipo": "muerte", "anio": 1994, "pais": "Brasil", "mujer": null, "tema": "movimientos sociales y derechos", "region": "América Latina",
+        "texto": { "es": "Muere Lélia Gonzalez, antropóloga y activista brasileña. Creó el concepto de «amefricanidad» y fue referente del feminismo negro.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Brasil de Fato: Lélia Gonzalez", "url": "https://www.brasildefato.com.br/2018/02/01/intelectual-e-feminista-lelia-gonzalez-a-mulher-que-revolucionou-o-movimento-negro/" },
+          { "nombre": "USP (PET): Mulheridades, Lélia Gonzalez", "url": "https://sites.usp.br/pet/ocupa/mulheridades-2/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Dos fuentes abiertas con el 10 de julio de 1994. Se eligió frente a Eva Ekeblad (nace el 10 de julio de 1724, una sola fuente abierta)."
+      }
+    ],
+    "07-11": [
+      {
+        "principal": true, "tipo": "muerte", "anio": 969, "pais": "Rus de Kiev (actual Ucrania)", "mujer": null, "tema": "poder político", "region": "Europa",
+        "texto": { "es": "Muere Olga de Kiev, gobernante de la Rus de Kiev. Fue regente tras 945 y se la considera la primera gobernante conocida de la Rus.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: Olga (c. 890-969)", "url": "https://encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/olga-c-890-969" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Una sola fuente abierta («earliest female ruler»; por eso «conocida»). Otra fuente da 960 como fin de la regencia. Después fue venerada como santa: el texto no lo menciona. Alternativa: Charlotte Cooper, primera campeona olímpica individual (11 jul 1900), con una sola fuente para el día."
+      }
+    ],
+    "07-12": [
+      {
+        "principal": true, "tipo": "hito", "anio": 2013, "pais": "Pakistán (acto en la ONU, Nueva York)", "mujer": null, "tema": "educación", "region": "Asia", "viva": true,
+        "texto": { "es": "Malala Yousafzai habla ante la Asamblea de Jóvenes de la ONU y pide escuela gratuita y obligatoria para todos los niños.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "ONU (UN Web TV): discurso de Malala", "url": "https://media.un.org/unifeed/en/asset/u130/u130712b" },
+          { "nombre": "MPR News: discurso de Malala en la ONU", "url": "https://www.mprnews.org/story/2013/07/12/news/malala-yousafzai-un-address" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Dos fuentes abiertas con el 12 de julio de 2013 (su 16.º cumpleaños). Mujer viva: es un hecho, no un cumpleaños. No se incluye el «Día de Malala» (no confirmado)."
+      }
+    ],
+    "07-13": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1976, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Se presenta en Madrid «Vindicación Feminista», revista feminista que se publicó en Barcelona hasta 1979.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia en español: Vindicación Feminista", "url": "https://es.wikipedia.org/wiki/Vindicaci%C3%B3n_Feminista" },
+          { "nombre": "People's Archive: Vindicación Feminista, n.º 1", "url": "https://peoplesgdarchive.org/item/18436/vindicacion-feminista-number-1" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Las fuentes discrepan: Wikipedia da el 13 de julio (cita El País con 14 y 15), la ficha de archivo da el 1 de julio. Abrir El País o el Archivo Nacional de Cataluña. No se nombra a las fundadoras (una está viva)."
+      }
+    ],
+    "07-14": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1960, "pais": "Tanzania (entonces Tanganica)", "mujer": null, "tema": "ciencia y tecnología", "region": "África",
+        "texto": { "es": "Jane Goodall llega a Gombe, en la actual Tanzania, para empezar el estudio de chimpancés salvajes más largo del mundo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "National Geographic (1963): la historia original de Goodall", "url": "https://www.nationalgeographic.com/magazine/1963/08/jane-goodall-original-story-chimpanzees-still-astonishes" },
+          { "nombre": "Guinness World Records: Jane Goodall", "url": "https://www.guinnessworldrecords.com/records/hall-of-fame/jane-goodall-longest-running-wild-primate-study" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Dos fuentes abiertas con el 14 de julio de 1960. Tanzania también sale el 17 de julio (Mary Leakey). No se ha comprobado su estado actual; el texto es solo un hecho."
       }
     ],
     "07-15": [
@@ -1872,6 +2479,28 @@
         "nota": "Ancla (alternativa del 15 jul; la principal es la muerte de Qiu Jin, 1907). Nacimiento el 15 jul 1858 en Moss Side, Manchester (Oxford DNB y SNL). Se dice que ella celebraba el 14 jul (resultado de búsqueda, no abierto). La frase del agente sobre la WSPU no se verificó y se quitó del texto: la fundación está en la ancla del 10 oct 1903. Cuenta para la cuota de voto."
       }
     ],
+    "07-16": [
+      {
+        "principal": true, "tipo": "muerte", "anio": 1546, "pais": "Inglaterra", "mujer": null, "tema": "justicia y violencia", "region": "Europa",
+        "texto": { "es": "Muere en la hoguera en Londres Anne Askew, escritora protestante condenada por herejía; no se retractó.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Dictionary of National Biography (1885-1900), en Wikisource: Anne Askew", "url": "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Askew,_Anne" },
+          { "nombre": "Spartacus Educational: Anne Askew", "url": "https://spartacus-educational.com/TUDaskew.htm" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Añadida por decisión de Mireia (2026-11-22) aunque las fuentes sean básicas. La primera fuente es del siglo XIX. Peter Ackroyd da el 15 de julio, no el 16. Condenada en el Guildhall de Londres. No se menciona la tortura previa (público infantil)."
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1939, "pais": "Liberia", "mujer": null, "tema": "poder político", "region": "África",
+        "texto": { "es": "Nace Ruth Perry, política liberiana. En 1996 fue la primera mujer jefa de Estado en la África contemporánea.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: Ruth Perry", "url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/perry-ruth-1939" },
+          { "nombre": "SAHO: Ruth Perry elegida jefa de Estado de Liberia", "url": "https://sahistory.org.za/dated-event/ruth-perry-elected-lead-liberia-thus-becoming-africas-first-female-head-state" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). El día de nacimiento lo da una sola fuente. El «primera» siempre con matiz («contemporánea»). Estado actual (viva o no) sin comprobar."
+      }
+    ],
     "07-17": [
       {
         "principal": true, "tipo": "curiosidad", "anio": 1959, "pais": "Tanzania", "mujer": null, "tema": "ciencia y tecnología", "region": "África",
@@ -1882,6 +2511,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14",
         "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el 17 jul 1959. Es el hallazgo del cráneo, no de la especie completa."
+      }
+    ],
+    "07-18": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1976, "pais": "Rumanía", "mujer": null, "tema": "deporte", "region": "Europa", "viva": true,
+        "texto": { "es": "Nadia Comăneci logra en los Juegos de Montreal el primer 10 perfecto de la historia de la gimnasia olímpica.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Guinness World Records: primer 10 en unos Juegos", "url": "https://www.guinnessworldrecords.com/news/2015/8/60/1976-first-gymnast-to-score-a-perfect-10-at-an-olympics-games-392959" },
+          { "nombre": "EBSCO Research Starters: Comăneci", "url": "https://ebsco.com/research-starters/sports-and-leisure/comaneci-receives-first-perfect-score-olympic-gymnastics" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Dos fuentes abiertas. El día 18 sale de la primera; la segunda se leyó sin cita literal. Mujer viva: es un hecho, no un cumpleaños."
       }
     ],
     "07-19": [
@@ -1920,6 +2561,52 @@
         "nota": "Relleno 2026-11-14. Las dos fuentes son del BOE: la ley lleva fecha del 22 jul y se publicó el 24 jul 1961 (BOE núm. 175). Un comentario doctrinal indica que la capacidad civil de la mujer casada quedó fuera: no exagerar su alcance. Cuenta como día de España."
       }
     ],
+    "07-23": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1931, "pais": "Nueva Zelanda", "mujer": null, "tema": "movimientos sociales y derechos", "region": "Oceanía",
+        "texto": { "es": "Nace Te Atairangikaahu, reina māori. Lideró el movimiento Kīngitanga durante 40 años, desde 1966.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "New Zealand Herald: Te Atairangikaahu", "url": "https://nzherald.co.nz/kahu/modest-start-in-life-for-an-inspirational-leader/5VRBZYFTHF7JB76E5Z6MQBZKUE" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Una sola fuente abierta; Te Ara dio 403. Se ha evitado «primera mujer al frente» (no respaldado por la fuente abierta)."
+      }
+    ],
+    "07-25": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1978, "pais": "Reino Unido", "mujer": null, "tema": "salud y derechos reproductivos", "region": "Europa",
+        "texto": { "es": "Nace en Oldham, en el Reino Unido, el primer bebé concebido por fecundación in vitro.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "NHS Torbay y South Devon: 25 de julio de 1978", "url": "https://www.torbayandsouthdevon.nhs.uk/about-us/news-and-publications/timeline-post/25-july-1978/" },
+          { "nombre": "EBSCO Research Starters: primer «bebé probeta»", "url": "https://www.ebsco.com/research-starters/history/brown-gives-birth-first-test-tube-baby" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Redactada como hito y sin nombre porque la persona está viva. Se eligió frente a la caminata espacial de Svetlana Savitskaya (25 jul 1984) para no repetirla: Savitskaya ya sale el 19 de agosto."
+      }
+    ],
+    "07-26": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1985, "pais": "Kenia", "mujer": null, "tema": "movimientos sociales y derechos", "region": "África",
+        "texto": { "es": "Termina en Nairobi la III Conferencia Mundial sobre la Mujer, que adopta por consenso estrategias de igualdad hasta el año 2000.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: III Conferencia Mundial sobre la Mujer (Nairobi, 1985)", "url": "https://en.wikipedia.org/wiki/World_Conference_on_Women,_1985" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Solo Wikipedia (15-26 de julio de 1985); las páginas de la ONU dieron 403. Un resultado de búsqueda cita el informe A/CONF.116/28/Rev.1 fechado el 26-07-1985. Alternativa: nace Ana María Matute (España; año dudoso 1925 o 1926)."
+      }
+    ],
+    "07-27": [
+      {
+        "principal": true, "tipo": "hito", "anio": 2012, "pais": "Reino Unido", "mujer": null, "tema": "deporte", "region": "Europa",
+        "texto": { "es": "Se inauguran los Juegos de Londres 2012, los primeros en que todos los países participantes inscriben atletas mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Guinness World Records: primeros Juegos con atletas mujeres de todos los países", "url": "https://www.guinnessworldrecords.com/world-records/103769-first-olympic-games-to-feature-female-athletes-from-every-participating-nation" },
+          { "nombre": "Human Rights Watch: Arabia Saudí y los Juegos de 2012", "url": "https://www.hrw.org/news/2012/05/23/ioc-olympic-hurdles-saudi-women-persist" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Solo Guinness da el día; HRW no. Los países nuevos fueron Arabia Saudí, Catar y Brunéi."
+      }
+    ],
     "07-28": [
       {
         "principal": true, "tipo": "nacimiento", "anio": 1866, "pais": "Reino Unido", "mujer": null, "tema": "arte y literatura", "region": "Europa",
@@ -1932,6 +2619,18 @@
         "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el 28 jul 1866 (Kensington, Londres). Peter Rabbit lo publicó Frederick Warne en 1902. Se descartó la petición neozelandesa de sufragio de 1893 (las fuentes dan 28 jul u 11 ago)."
       }
     ],
+    "07-29": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1566, "pais": "Inglaterra", "mujer": null, "tema": "justicia y violencia", "region": "Europa",
+        "texto": { "es": "Es ahorcada en Chelmsford (Inglaterra) Agnes Waterhouse, condenada por brujería en 1566.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Essex Record Office (blog): Agnes Waterhouse", "url": "https://www.essexrecordofficeblog.co.uk/2021/07" },
+          { "nombre": "History.co.uk: los juicios de brujas de Chelmsford", "url": "https://www.history.co.uk/articles/chelmsford-witch-trials-hatfield-perevel-agnes-waterhouse" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Añadida por decisión de Mireia (2026-11-22) aunque las fuentes sean básicas. El año del archivo de Essex sale del juicio. No decir «primera ejecutada»: está discutido (el caso de Elizabeth Lowys es de 1565). Tribunal civil."
+      }
+    ],
     "07-30": [
       {
         "principal": true, "tipo": "derecho", "anio": 1950, "pais": "Costa Rica", "mujer": null, "tema": "voto y derechos políticos", "region": "América Latina",
@@ -1942,6 +2641,17 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14",
         "nota": "Relleno 2026-11-14. Dos periódicos dan el domingo 30 jul 1950 (Bernarda Vásquez, primera mujer en votar). No citar su edad (27 o 32 según la fuente). El derecho se aprobó en la Constituyente en junio de 1949 (las fuentes discrepan entre el 19 y el 20)."
+      }
+    ],
+    "07-31": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1962, "pais": "Tanzania", "mujer": null, "tema": "movimientos sociales y derechos", "region": "África",
+        "texto": { "es": "Se crea en Dar es Salaam la Unión de Mujeres Africanas, hoy Organización Panafricana de Mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Gobierno de Sudáfrica: 50.º aniversario de la Organización Panafricana de Mujeres", "url": "https://www.gov.za/news/media-statements/declaration-occassion-celebration-50th-anniversary-pan-african-womens" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Una sola fuente abierta (la segunda, Wikipedia, solo se vio en búsqueda). Rebautizada PAWO en 1974."
       }
     ],
     "08-01": [
@@ -1967,6 +2677,42 @@
         "nota": "Relleno 2026-11-14. Dos fuentes oficiales; el día sale del título del PDF («DOF 02-08-2006»). La ley se reformó después y hoy se titula «Igualdad Sustantiva»: el texto habla de la publicación de 2006."
       }
     ],
+    "08-03": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1918, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Nace Maria Aurèlia Capmany, escritora. Su ensayo «La dona a Catalunya» (1966) es una obra pionera del feminismo catalán.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Associació d'Escriptors en Llengua Catalana: Maria Aurèlia Capmany", "url": "https://www.escriptors.cat/autors/capmanyma/english" },
+          { "nombre": "Wikipedia: Maria Aurèlia Capmany", "url": "https://en.wikipedia.org/wiki/Maria_Aur%C3%A8lia_Capmany" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). La Gran Enciclopèdia Catalana dio error 500. Conviene sumar una fuente institucional."
+      }
+    ],
+    "08-04": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1897, "pais": "Líbano", "mujer": null, "tema": "movimientos sociales y derechos", "region": "Asia",
+        "texto": { "es": "Nace Anbara Salam Khalidi, feminista y traductora libanesa. Tradujo al árabe la Odisea y la Eneida.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: Anbara Salam Khalidi", "url": "https://en.wikipedia.org/wiki/Anbara_Salam_Khalidi" },
+          { "nombre": "Google Doodles: 121.º cumpleaños de Anbara Salam Khalidi", "url": "https://doodles.google/doodle/anbara-salam-khalidis-121st-birthday/" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). El día se deduce del Doodle (4-8-2018, su 121.º cumpleaños). La Ilíada aparece en Google y Palquest, pero no en Wikipedia: no se cita."
+      }
+    ],
+    "08-05": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1939, "pais": "España", "mujer": null, "tema": "justicia y violencia", "region": "Europa", "sensible": true,
+        "texto": { "es": "Son fusiladas en Madrid las Trece Rosas, trece jóvenes condenadas tras la Guerra Civil.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Amnistía Internacional España: las 13 Rosas", "url": "https://www.es.amnesty.org/en-que-estamos/blog/historia/articulo/las-13-rosas-quienes-fueron-que-significan-hoy-y-por-que-su-memoria-esta-amenazada/" },
+          { "nombre": "La Moncloa: homenaje a los fusilados (Ministerio de Justicia)", "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/justicia/Paginas/2019/291019_homenajefusilados.aspx" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Dos fuentes sólidas con el 5 de agosto de 1939, pero es un fusilamiento: Mireia decide si entra con público infantil. Tono sobrio. Marcada sensible."
+      }
+    ],
     "08-06": [
       {
         "principal": true, "tipo": "hito", "anio": 1926, "pais": "EE. UU. (Canal de la Mancha)", "mujer": null, "tema": "deporte", "region": "América del Norte",
@@ -1988,6 +2734,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14",
         "nota": "Relleno 2026-11-14. Dos fuentes dan el 7 ago 2006 (la página de Planalto redirigió y no se pudo leer). Tema delicado: tono informativo, sin detalles del caso. Una alternativa del día es Derartu Tulu (primera campeona olímpica negra africana, 10.000 m de Barcelona 1992, confirmado el 7 ago por World Athletics)."
+      }
+    ],
+    "08-08": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1915, "pais": "Perú", "mujer": null, "tema": "educación", "region": "América Latina",
+        "texto": { "es": "Nace María Rostworowski, historiadora peruana. Estudió las sociedades prehispánicas y el papel de las mujeres en el Perú antiguo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: María Rostworowski", "url": "https://en.wikipedia.org/wiki/Mar%C3%ADa_Rostworowski" },
+          { "nombre": "Exitosa Noticias: Rostworowski y las culturas prehispánicas", "url": "https://www.exitosanoticias.pe/cultural/rostworowski-sus-estudios-culturas-prehispanicas-n81595" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Fuentes básicas. Se eligió frente a la Asociación de Mujeres de Nepal (8 o 9 de agosto, fuentes discrepantes). La BNP y la PUCP no se pudieron abrir."
       }
     ],
     "08-09": [
@@ -2025,6 +2783,18 @@
         "nota": "Relleno 2026-11-14. SENSIBLE: una trabajadora murió durante el desalojo y las fuentes discrepan en cómo; el texto lo omite. Una sola fuente abierta (la de la Universidad de Monash dio 403). Fuentes básicas."
       }
     ],
+    "08-12": [
+      {
+        "principal": true, "tipo": "muerte", "anio": 2017, "pais": "Sudán", "mujer": null, "tema": "movimientos sociales y derechos", "region": "África",
+        "texto": { "es": "Muere Fátima Ahmed Ibrahim, activista sudanesa. Fue la primera mujer elegida diputada en Sudán, en 1965.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Anadolu: fallece la destacada feminista sudanesa", "url": "https://aa.com.tr/en/africa/prominent-sudanese-feminist-passes-away/883084" },
+          { "nombre": "Dabanga: Fátima Ahmed Ibrahim", "url": "https://www.dabangasudan.org/en?p=177788" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Ninguna página escribe «12 de agosto»: se deduce de la fecha del artículo y del «sábado». Las fuentes discrepan en su año de nacimiento (no se usa). Alternativa descartada: muerte de Cleopatra VII (fecha discutida: 10 o 12 de agosto del 30 a. C.)."
+      }
+    ],
     "08-13": [
       {
         "principal": true, "tipo": "derecho", "anio": 1956, "pais": "Túnez", "mujer": null, "tema": "derechos e igualdad", "region": "África",
@@ -2037,6 +2807,42 @@
         "nota": "Relleno 2026-11-14. COMPROBAR: las citas leídas confirman la prohibición de la poligamia, pero no se ha anotado que las páginas den el día 13 ago 1956 (es el día que se conmemora en Túnez). Entró en vigor el 1 ene 1957 y se matizó en reformas posteriores. Fuentes básicas."
       }
     ],
+    "08-14": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1980, "pais": "Polonia", "mujer": null, "tema": "trabajo y economía", "region": "Europa",
+        "texto": { "es": "Comienza la huelga del astillero Lenin de Gdansk, que reclama readmitir a la operaria Anna Walentynowicz.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Europeana: Solidarność, una revolución pacífica", "url": "https://europeana.eu/exhibitions/solidarity-a-peaceful-revolution" },
+          { "nombre": "Wikipedia: Anna Walentynowicz", "url": "https://en.wikipedia.org/wiki/Anna_Walentynowicz" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). La segunda fuente es Wikipedia. El Centro Europeo de la Solidaridad falló por certificado. El año 1980 sale de la ficha de Wikipedia."
+      }
+    ],
+    "08-15": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1947, "pais": "India", "mujer": null, "tema": "poder político", "region": "Asia",
+        "texto": { "es": "Sarojini Naidu asume la gobernación de las Provincias Unidas, hoy Uttar Pradesh, en la India.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Vidhan Parishad de Uttar Pradesh: gobernadores", "url": "https://www.vidhanparishadproceedings.up.gov.in/government/page/governor_tenure" },
+          { "nombre": "Wikipedia: Sarojini Naidu", "url": "https://en.wikipedia.org/wiki/Sarojini_Naidu" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). «Primera mujer gobernadora» solo en Wikipedia: el texto evita «primera». Coincide con el día de la independencia de la India."
+      }
+    ],
+    "08-16": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1865, "pais": "Australia", "mujer": null, "tema": "arte y literatura", "region": "Oceanía",
+        "texto": { "es": "Nace Mary Gilmore, poeta y periodista australiana. Dirigió la página femenina de «The Worker» y defendió los derechos de las mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Banco de la Reserva de Australia: Mary Gilmore", "url": "http://banknotes.rba.gov.au/australias-banknotes/people-on-the-banknotes/dame-mary-gilmore/" },
+          { "nombre": "Australian Women's Register: Mary Gilmore", "url": "https://www.womenaustralia.info/biogs/IMP0032b.htm" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Tercera fuente abierta con el mismo día: Encyclopedia.com. El lugar exacto varía, por eso no se cita. Fallecida en 1962."
+      }
+    ],
     "08-18": [
       {
         "principal": true, "tipo": "derecho", "anio": 1920, "pais": "EE. UU.", "mujer": null, "tema": "voto y derechos políticos", "region": "América del Norte", "ancla": true, "precision": "dia",
@@ -2047,6 +2853,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Ancla. Tennessee fue el 36.º estado, el 18 ago 1920 (Archivos Nacionales). [VERIFICAR] La certificación del 26 ago (secretario de Estado Colby) solo está en una fuente abierta. Los Archivos dicen que «muchas mujeres siguieron sin poder votar» durante décadas; las barreras concretas (leyes Jim Crow, tasas de voto) salen solo de búsquedas no abiertas. Cuenta para la cuota de voto. Fuentes básicas."
+      }
+    ],
+    "08-19": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1982, "pais": "URSS (hoy Rusia)", "mujer": null, "tema": "exploración y aventura", "region": "Europa", "viva": true,
+        "texto": { "es": "Svetlana Savitskaya despega en la Soyuz T-7 y se convierte en la segunda mujer en viajar al espacio.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "UPI: los soviéticos envían a la segunda mujer al espacio", "url": "https://www.upi.com/Archives/1982/08/19/Soviets-send-second-woman-into-space/4675037139908/" },
+          { "nombre": "Space.com: Svetlana Savitskaya", "url": "https://www.space.com/svetlana-savitskaya-biography" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Dos fuentes abiertas con el 19 de agosto. Mujer viva: es un hecho, no un cumpleaños. Alternativa descartada: Carolina Marín, oro de bádminton en Río 2016 (España; mismo tema deportivo que el día 20)."
       }
     ],
     "08-20": [
@@ -2085,6 +2903,18 @@
         "nota": "Relleno 2026-11-14. Solo livehistoryindia da el 22 ago; otras páginas dan el 21 o el congreso del 18 al 24: el día está en duda. Evitar «primera bandera» y la descripción del diseño, que varía. Cuidado con el tono político. Estado parcial: buscar fuente institucional."
       }
     ],
+    "08-23": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1920, "pais": "Nueva Zelanda", "mujer": null, "tema": "deporte", "region": "Oceanía",
+        "texto": { "es": "Violet Walrond nada en los Juegos de Amberes y se convierte en la primera mujer olímpica de Nueva Zelanda.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: 100 m libres femeninos, Juegos de 1920", "url": "https://en.wikipedia.org/wiki/Swimming_at_the_1920_Summer_Olympics_%E2%80%93_Women%27s_100_metre_freestyle" },
+          { "nombre": "Comité Olímpico de Nueva Zelanda: Violet Walrond", "url": "https://olympic.org.nz/news/violet-walrond-nzs-first-female-olympian" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Solo una página (la de la prueba) da el día: las series fueron el 23 de agosto. NZ History dio 403. Las fuentes discrepan en su puesto en la serie: no se cita."
+      }
+    ],
     "08-25": [
       {
         "principal": true, "tipo": "derecho", "anio": 1954, "pais": "Colombia", "mujer": null, "tema": "voto y derechos políticos", "region": "América Latina",
@@ -2119,6 +2949,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
         "nota": "Relleno 2026-11-14. La conferencia fue el 26 y 27; el 27 sale en una página de Alexander Street (403, no abierta). La autoría de la propuesta se discute (Zietz, Zetkin y otras): no atribuirla a una sola persona. El Día de la Mujer no tuvo fecha fija hasta 1921. Fuentes básicas."
+      }
+    ],
+    "08-28": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1924, "pais": "Nueva Zelanda", "mujer": null, "tema": "arte y literatura", "region": "Oceanía",
+        "texto": { "es": "Nace Janet Frame, novelista neozelandesa, autora de «Owls Do Cry» (1957) y de una trilogía autobiográfica.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Encyclopedia.com: Janet Frame", "url": "https://www.encyclopedia.com/people/literature-and-arts/australian-and-new-zealand-literature-biographies/janet-frame" },
+          { "nombre": "Janet Frame Literary Trust: biografía", "url": "https://janetframe.co.nz/index.php/biography" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Dos fuentes abiertas con el día. Fallecida en 2004."
       }
     ],
     "08-29": [
@@ -2157,6 +2999,18 @@
         "nota": "Relleno 2026-11-14. Estado parcial: el día 1 solo consta en una página abierta (la de Wikipedia solo se vio en resultados, que dan «septiembre de 1911»). Las fuentes dan fechas distintas para la fundación del grupo Seitōsha (junio o primavera de 1911)."
       }
     ],
+    "09-02": [
+      {
+        "principal": true, "tipo": "derecho", "anio": 1910, "pais": "España", "mujer": null, "tema": "educación", "region": "Europa",
+        "texto": { "es": "Se aprueba por Real Orden que las mujeres con título puedan ejercer profesiones y cátedras.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "La Escuela de la República: leyes", "url": "https://laescueladelarepublica.es/leyes" },
+          { "nombre": "BOE: Gaceta de Madrid n.º 247, 4-9-1910 (escaneo)", "url": "https://boe.es/gazeta/dias/1910/09/04/pdfs/GMD-1910-247.pdf" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). La orden lleva fecha de 2 de septiembre y se publicó en la Gaceta del 4. Solo una fuente legible (el PDF del BOE es un escaneo sin texto). Completa la Real Orden de 8-3-1910. Alternativa sin añadir: sentencia Akayesu del tribunal de Ruanda (2-9-1998), tema delicado."
+      }
+    ],
     "09-03": [
       {
         "principal": true, "tipo": "derecho", "anio": 1981, "pais": "ONU (internacional)", "mujer": null, "tema": "derechos e igualdad", "region": "Mundial",
@@ -2167,6 +3021,42 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
         "nota": "Relleno 2026-11-14. La ONU da el 3 sep 1981 (30 días después de la vigésima ratificación). Segunda fuente débil (Wikipedia): falta una segunda institucional (legal.un.org redirige a mantenimiento). No se escribe «primer tratado» porque no se leyó en página abierta. Fuentes básicas."
+      }
+    ],
+    "09-04": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1936, "pais": "Reino Unido / Canadá", "mujer": null, "tema": "exploración y aventura", "region": "Europa",
+        "texto": { "es": "Beryl Markham despega de Inglaterra para cruzar sola el Atlántico de este a oeste; aterriza al día siguiente en Nueva Escocia.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "HistoryNet: la notable Mrs. Markham", "url": "https://historynet.com/remarkable-mrs-markham/" },
+          { "nombre": "JSTOR Daily: Beryl Markham", "url": "https://daily.jstor.org/beryl-markham-warrior-of-the-skies" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Despega el 4 (Abingdon) y llega el 5 (Baleine Cove). No decir «primera persona»: la fuente dice «primera mujer» en esa dirección. Vivía en Kenia, pero nació en Inglaterra."
+      }
+    ],
+    "09-05": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1983, "pais": "Internacional (América Latina)", "mujer": null, "tema": "movimientos sociales y derechos", "region": "América Latina",
+        "texto": { "es": "Se proclama el 5 de septiembre como Día Internacional de la Mujer Indígena (1983).", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Radio Nacional de Colombia: Día Internacional de la Mujer Indígena", "url": "https://www.radionacional.co/cultura/tradiciones/dia-internacional-de-la-mujer-indigena-por-que-se-celebra-hoy" },
+          { "nombre": "Gobierno de Argentina: Día Internacional de la Mujer Indígena", "url": "https://www.argentina.gob.ar/node/275841" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). El 5 de septiembre es la fecha elegida, no necesariamente el día del encuentro. El agente lo situó en Tiahuanaco (Bolivia), pero las citas abiertas solo confirman el año 1983: por eso no se menciona el lugar. Vinculada a Bartolina Sisa (año de su ejecución discutido: 1781 o 1782)."
+      }
+    ],
+    "09-06": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1921, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Nace Carmen Laforet, escritora. Su novela «Nada» ganó el primer Premio Nadal, en 1944.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Escritores.org: Carmen Laforet", "url": "https://www.escritores.org/biografias/66-carmen-laforet-diaz" },
+          { "nombre": "Lecturalia: Carmen Laforet", "url": "https://www.lecturalia.com/autor/1009/carmen-laforet" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Las dos fuentes son divulgativas. Falta una de la BNE o la RAE. Otras fuentes dan 1945 como año de publicación."
       }
     ],
     "09-07": [
@@ -2190,6 +3080,17 @@
         "nota": "Relleno 2026-11-14. Alternativa del 07. Más de 100 mujeres según la fuente. No usar el mito de «quemar sujetadores»: las fuentes dicen que no se quemó nada. Fuentes básicas."
       }
     ],
+    "09-08": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1993, "pais": "China", "mujer": null, "tema": "deporte", "region": "Asia",
+        "texto": { "es": "Wang Junxia corre los 10.000 m en 29:31,78 y bate el récord mundial en los Juegos Nacionales de China.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Deseret News: Wang Junxia pulveriza el récord de 10.000 m", "url": "https://www.deseret.com/1993/9/8/19064991/runner-shatters-10-000m-record/" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Una sola fuente abierta. El récord cayó en 2016. El agente avisa de sospechas de dopaje sin resolver sobre esa generación de atletas: Mireia decide si se queda."
+      }
+    ],
     "09-09": [
       {
         "principal": true, "tipo": "curiosidad", "anio": 1947, "pais": "EE. UU.", "mujer": null, "tema": "ciencia y tecnología", "region": "América del Norte",
@@ -2211,6 +3112,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14",
         "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el 10 sep 1797. Tono informativo: falleció tras dar a luz, sin más detalle. El título de la obra y el año (1792) no se leyeron en una página abierta (ya figura en la entrada sin día del calendario)."
+      }
+    ],
+    "09-11": [
+      {
+        "principal": true, "tipo": "muerte", "anio": 1990, "pais": "Guatemala", "mujer": null, "tema": "justicia y violencia", "region": "América Latina", "sensible": true,
+        "texto": { "es": "Asesinan en Guatemala a Myrna Mack, antropóloga que estudiaba a la población desplazada por el conflicto armado.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Universidad de Minnesota (Biblioteca de Derechos Humanos): Caso Myrna Mack Chang", "url": "https://hrlibrary.umn.edu/iachr/C/101-ing.html" },
+          { "nombre": "Derechos.org (Nizkor): caso Myrna Mack", "url": "https://derechos.org/nizkor/guatemala/doc/cidhmack1.html" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Dos fuentes abiertas con el 11 de septiembre de 1990 (sentencia de la Corte IDH: 25-11-2003). Tema de violencia con público infantil: Mireia decide. Marcada sensible. Es el tercer día de justicia y violencia de septiembre."
       }
     ],
     "09-12": [
@@ -2255,6 +3168,18 @@
         "nota": "Relleno 2026-11-14. Alternativa del 13. El día 13 sep 1933 sale de DigitalNZ, que cita a Manatū Taonga (nzhistory.govt.nz dio 403, no abierta). Fuentes básicas."
       }
     ],
+    "09-14": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1910, "pais": "Indonesia", "mujer": null, "tema": "educación", "region": "Asia",
+        "texto": { "es": "Nace Rasuna Said, maestra y periodista. Defendió la educación de las mujeres y la independencia de Indonesia.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "RRI (radio pública de Indonesia): Rasuna Said", "url": "https://rri.co.id/en/national/2727016/rasuna-said-a-woman-who-fought-colonialism-through-words" },
+          { "nombre": "CNN Indonesia: Rasuna Said", "url": "https://www.cnnindonesia.com/nasional/20210813154751-20-680056/rasuna-said-singa-betina-juru-propaganda-perlawanan/2" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Relleno 2026-11-22 (agente). Las dos fuentes son medios. La página de la ANU solo da el año."
+      }
+    ],
     "09-15": [
       {
         "principal": true, "tipo": "hito", "anio": 1995, "pais": "China", "mujer": null, "tema": "movimientos sociales y derechos", "region": "Asia", "ancla": true, "precision": "dia",
@@ -2281,14 +3206,14 @@
     ],
     "09-17": [
       {
-        "principal": true, "tipo": "muerte", "anio": 1179, "pais": "Alemania", "mujer": null, "tema": "arte y literatura", "region": "Europa",
-        "texto": { "es": "Muere Hildegarda de Bingen, abadesa y compositora; dejó obras visionarias, música sacra y tratados de medicina.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "principal": true, "tipo": "hito", "anio": 2000, "pais": "Australia", "mujer": null, "tema": "deporte", "region": "Oceanía",
+        "texto": { "es": "Se disputa en Sídney la primera prueba olímpica de halterofilia femenina, la de 48 kg.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
-          { "nombre": "Encyclopedia.com: Hildegarda de Bingen", "url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/hildegard-bingen-1098-1179" },
-          { "nombre": "New Advent (Enciclopedia Católica): Santa Hildegarda", "url": "https://www.newadvent.org/cathen/07351a.htm" }
+          { "nombre": "Olympedia: halterofilia femenina, Sídney 2000", "url": "https://www.olympedia.org/editions/25/sports/WLF" },
+          { "nombre": "ESPN: halterofilia en Sídney 2000", "url": "https://africa.espn.com/oly/summer00/news/2000/0923/770603.html" }
         ],
-        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
-        "nota": "Relleno 2026-11-14. Edad Media. Solo la primera fuente da el día de la muerte; la segunda da 1179 y el 17 sep como fiesta litúrgica. Fuentes básicas."
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Dos fuentes abiertas con el 17 de septiembre. La primera campeona fue Tara Nott (EE. UU.), tras descalificar a la búlgara Dragneva: no se cita."
       }
     ],
     "09-18": [
@@ -2441,6 +3366,18 @@
         "nota": "Relleno 2026-11-14. Dos fuentes abiertas dan el 29 sep 1988 y 21,34 s. La atleta murió en 1998."
       }
     ],
+    "09-30": [
+      {
+        "principal": true, "tipo": "premio", "anio": 2000, "pais": "Etiopía", "mujer": null, "tema": "deporte", "region": "África", "viva": true,
+        "texto": { "es": "Derartu Tulu gana el oro olímpico en los 10.000 m de Sídney 2000.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Olympedia: 10.000 m femeninos, Sídney 2000", "url": "https://www.olympedia.org/results/65767" },
+          { "nombre": "World Athletics: final de 10.000 m femeninos, Sídney 2000", "url": "https://worldathletics.org/results/olympic-games/2000/27th-olympic-games-2363/women/10000-metres/final/result" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22",
+        "nota": "Relleno 2026-11-22 (agente). Mujer viva: es un hecho, no un cumpleaños. «Segundo oro olímpico» viene de resúmenes de búsqueda y no se incluye. Choca en tema con el 29 (Griffith-Joyner, deporte)."
+      }
+    ],
     "10-01": [
       {
         "principal": true, "tipo": "derecho", "anio": 1931, "pais": "España", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa", "ancla": true, "precision": "dia",
@@ -2473,18 +3410,6 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
         "nota": "Relleno 2026-11-14. Comunicado fechado el 3 oct 1991. SAHO solo da el año. Es el segundo día seguido de literatura con el 4 (Teresa de Jesús). Fuentes básicas."
-      }
-    ],
-    "10-04": [
-      {
-        "principal": true, "tipo": "muerte", "anio": 1582, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa",
-        "texto": { "es": "Muere Teresa de Jesús, escritora y reformadora carmelita, en Alba de Tormes; al día siguiente, 15 de octubre, entra en vigor el calendario gregoriano.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
-        "fuentes": [
-          { "nombre": "Catholic.net: el sepulcro de Santa Teresa", "url": "https://www.es.catholic.net/op/articulos/1099/cat/113/el-sepulcro-de-santa-teresa.html" },
-          { "nombre": "ACI Prensa: los últimos años de Santa Teresa", "url": "https://www.aciprensa.com/recurso/3753/ultimos-anos" }
-        ],
-        "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
-        "nota": "Relleno 2026-11-14. Cambio de calendario: el 4 oct es fecha juliana; su fiesta es el 15 oct. Las dos fuentes son católicas; falta una institucional (BNE o RAE). Teresa de Jesús ya aparece el 28 mar (nacimiento). Cubre España. Fuentes básicas."
       }
     ],
     "10-05": [
@@ -2921,7 +3846,7 @@
     ],
     "11-07": [
       {
-        "principal": true, "tipo": "hito", "anio": 1916, "pais": "EE. UU.", "mujer": null, "tema": "política", "region": "América del Norte",
+        "principal": false, "tipo": "hito", "anio": 1916, "pais": "EE. UU.", "mujer": null, "tema": "política", "region": "América del Norte",
         "texto": { "es": "Jeannette Rankin, de Montana, es elegida y se convierte en la primera mujer en el Congreso de Estados Unidos.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "National Archives (EE. UU.): First Congresswoman Jeannette Rankin", "url": "https://visit.archives.gov/whats-on/explore-exhibits/first-congresswoman-jeannette-rankin" },
@@ -2939,6 +3864,16 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-10",
         "nota": "La web oficial del Nobel dio error 403 en todos los intentos."
+      },
+      {
+        "principal": true, "tipo": "hito", "anio": 1610, "pais": "España", "mujer": null, "tema": "justicia y violencia", "region": "Europa",
+        "texto": { "es": "Se celebra en Logroño un auto de fe de la Inquisición contra 53 personas, muchas acusadas de brujería en Zugarramurdi y Urdax; hay 11 condenas a muerte.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Asturias Laica: Zugarramurdi y el auto de fe de Logroño", "url": "https://asturiaslaica.com/2021/11/09/zugarramurdi-y-el-auto-de-fe-de-logrono/" },
+          { "nombre": "Gil del Río (Biblioteca Gonzalo de Berceo): Zugarramurdi", "url": "https://www.vallenajerilla.com/berceo/gildelrio/zugarramurdi.htm" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Añadida por decisión de Mireia (2026-11-22) aunque las fuentes sean básicas. El auto duró dos días: el 7 y el 8 de noviembre de 1610 (el 7 se leyeron las sentencias de los 11 condenados a muerte). 53 juzgados. De las 11 condenas, 6 fueron quemados en persona y 5 en efigie (personas muertas en prisión). Sin fuente institucional abierta: los PDF de Unavarra, La Rioja y Dialnet no se pudieron leer. Sin detalles gráficos. Mireia la eligió como principal del 7 de noviembre (2026-11-22); Jeannette Rankin y Marie Curie pasan a alternativas. Curie se recolocará en otro día."
       }
     ],
     "11-08": [
@@ -3368,6 +4303,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Diciembre, relleno. Muerte el 4 dic 1975 en Nueva York (dos fuentes abiertas, ninguna institucional fuerte; contemporarythinkers.org solo da el año). Sin la expresión «banalidad del mal» en el texto (no verificada aquí). Fuentes básicas."
+      }
+    ],
+    "12-05": [
+      {
+        "principal": true, "tipo": "hito", "anio": 1484, "pais": "Santa Sede (Roma)", "mujer": null, "tema": "justicia y violencia", "region": "Europa",
+        "texto": { "es": "El papa Inocencio VIII publica la bula «Summis desiderantes», que respalda a los inquisidores contra la brujería en Alemania.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Fordham University: Summis desiderantes affectibus (Medieval Sourcebook)", "url": "https://sourcebooks.web.fordham.edu/source/witches1.asp" },
+          { "nombre": "Wikipedia: Summis desiderantes affectibus", "url": "https://en.wikipedia.org/wiki/Summis_desiderantes_affectibus" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
+        "nota": "Añadida por decisión de Mireia (2026-11-22) aunque las fuentes sean básicas. Una fuente es Wikipedia. La bula no habla de mujeres, aunque se usó en la caza de brujas. No decir que «fundó» la caza de brujas: los historiadores discuten cuánto influyó."
       }
     ],
     "12-06": [

@@ -193,6 +193,10 @@
   .fila-tag .que { min-width: 82px; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--oro-claro); font-family: var(--fuente-nombres); }
   .tag { padding: 3px 12px; border-radius: 99px; border: 2px solid; font-weight: 700; font-size: .9rem; }
   .tag.t-apoya { color: var(--bien); } .tag.t-perpetua { color: var(--alerta); } .tag.t-neutro { color: var(--suave); }
+  /* ficha: «Escuchar fragmento» más pequeño y la letra del fragmento justo encima de su explicación */
+  .btn.peq { min-height: 44px; min-width: 0; border-width: 12px 16px; border-image-width: 12px 16px; font-size: .85rem; }
+  .fragmento-card { margin: 0; padding: 10px 14px; border-left: 4px solid var(--oro); border-radius: 0 10px 10px 0; background: #231a33; color: #e6e0f0; font-style: italic; white-space: pre-line; }
+  .que-frag { margin: 0 0 -6px; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--oro-claro); }
   .recuerda { margin: 0; padding: 10px 12px; border-radius: 10px; background: #231a33; color: #e6e0f0; font-size: .95rem; }
   .explica { margin: 0; font-size: 1.02rem; }
   .fuente { margin: 0; color: var(--suave); font-size: .85rem; overflow-wrap: anywhere; } /* las URL largas se parten en vez de salirse */
@@ -293,13 +297,13 @@
   </section>
 </main>
 
-<footer><div class="envoltorio"><p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p></div></footer>
+<footer><div class="envoltorio"><p class="firma">Web diseñada y creada por Mireia Gutiérrez Águila<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:.75rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.85">Conoce su historia</a></p></div></footer>
 
 <script>
 (function () {
   /* ---------- Textos de interfaz (irán a los archivos de idioma es / ca / en) ---------- */
   var TXT = {
-    titulo: 'El Vinilo Crítico', subtitulo: '¿Suma o resta? Elige el disco que quieras, clasifícalo y descubre qué dice de verdad la letra.',
+    titulo: 'El Vinilo Crítico', subtitulo: 'A veces escuchamos una canción mil veces y ni nos fijamos en lo que dice. La música siempre ha sido una forma de contar lo que pasa, de protestar o de hacernos reflexionar. ¿Qué te transmiten estas letras?',
     aviso: 'Boceto: los 21 fragmentos son los que Mireia lleva elegidos, con sus explicaciones y su audio de Spotify (en la ficha). Faltan las traducciones y alguna comprobación de autoría y de palabrotas.',
     efectosOn: '⏸ Parar efectos', efectosOff: '▶ Activar efectos',
     elegirNivel: 'Elige tu nivel',
@@ -322,7 +326,7 @@
       neutral: { icono: '😐', nombre: 'Neutral', desc: 'Ni apoya ni perpetúa' },
       perpetua: { icono: '⚠️', nombre: 'Perpetúa estereotipos', desc: 'Machismo' }
     },
-    noNeutral: 'Esta canción no es neutral.',
+    noNeutral: 'Esta canción no es neutral.', entendido: 'Entendido', fragmentoTit: 'Fragmento',
     noNeutralExplica: { apoya: 'Una letra siempre dice algo. Que no te parezca que perpetúa no la hace neutral: esta apoya el feminismo.', perpetua: 'Una letra siempre dice algo. Que no te parezca que apoya no la hace neutral: esta perpetúa estereotipos, y a veces cuesta verlo porque nos suena normal.' },
     temaPregunta: { apoya: '¿Qué defiende esta letra?', perpetua: '¿Qué estereotipo perpetúa?' },
     temaAyuda: 'Elige una opción. Puede haber más de una respuesta correcta.',
@@ -602,7 +606,7 @@
         if (fin <= ini) { return; }
         // el fragmento se intenta reproducir solo al abrir la ficha (la apertura sigue a un toque de quien juega, así que muchos navegadores lo permiten);
         // si el navegador lo bloquea, el botón sirve de respaldo. Las barras de «suena» salen solo cuando el reproductor dice que de verdad suena.
-        var b = el('button', 'btn', TXT.fragmento(mmss(ini), mmss(fin))); b.type = 'button';
+        var b = el('button', 'btn peq', TXT.fragmento(mmss(ini), mmss(fin))); b.type = 'button';
         var st = el('div', 'suena'); st.hidden = true; var bar = el('span', 'barras' + (reduce ? ' parado' : '')); for (var q = 0; q < 4; q++) { bar.appendChild(el('i')); } st.appendChild(bar); st.appendChild(el('span', '', TXT.sonando));
         var fila = el('div', 'acciones'); fila.appendChild(b); fila.appendChild(st); caja.appendChild(fila);
         var sonando = false, arrancado = false;
@@ -645,15 +649,15 @@
     var r = $('dlg'); r.textContent = '';
     var c = el('div', 'rev-contenido');
     c.appendChild(cabeceraCancion(d));
-    c.appendChild(el('p', 'resultado ' + (e.ok ? 'ok' : 'mal'), e.ok ? TXT.correcto : (e.zona === 'neutral' ? TXT.noNeutral : TXT.matiz)));
+    c.appendChild(el('p', 'resultado ' + (e.ok ? 'ok' : 'mal'), e.ok ? TXT.correcto : TXT.matiz));   // dentro de la ficha, como en los demás casos (Mireia, 22-11-2026)
     var etiquetas = el('div', 'etiquetas');
     etiquetas.appendChild(fila(TXT.queMensaje, tag('t-' + d.respuesta, TXT.mensaje[d.respuesta])));
     if (d.cancionConPalabrotas === true || d.cancionConPalabrotas === false) { etiquetas.appendChild(fila(TXT.queLenguaje, tag('t-neutro', TXT.lenguaje[d.cancionConPalabrotas ? 'explicito' : 'limpio']))); } // se refiere a la canción completa; si no se sabe, no se muestra
     if (e.tema) { etiquetas.appendChild(fila(TXT.queTema, tag(e.tema.ok ? 't-apoya' : 't-neutro', (e.tema.ok ? '✓ ' : '') + nombreTema(d.respuesta, e.tema.elegido)))); }
     c.appendChild(etiquetas);
     if (e.tema && !e.tema.ok) { c.appendChild(el('p', 'fuente', TXT.temasValidos + d.temas.map(function (t) { return nombreTema(d.respuesta, t); }).join(' · '))); }
-    if (e.zona === 'neutral') { c.appendChild(el('p', 'recuerda', TXT.noNeutralExplica[d.respuesta])); }
     if (d.cancionConPalabrotas === true) { c.appendChild(el('p', 'recuerda', TXT.recuerda)); }
+    c.appendChild(el('p', 'que-frag', TXT.fragmentoTit)); c.appendChild(el('blockquote', 'fragmento-card', ver(d)));   // la letra, justo delante de su explicación
     c.appendChild(el('p', 'explica', d.explicacion.es));
     var acc = el('div', 'acciones');
     var seg = el('button', 'btn primario', TXT.seguir); seg.type = 'button'; seg.addEventListener('click', function () { r.close(); });

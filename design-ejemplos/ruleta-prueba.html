@@ -95,7 +95,7 @@
       sub: 'Gira la ruleta y descubre cómo te toca responder.',
       girar: 'Girar la ruleta', toca: 'Toca el Play para girar la ruleta', girando: 'Girando…', teToca: 'Te toca:',
       pruebasT: 'Solo para pruebas (esto no irá en la web)', pruebasInfo: 'Forzar el resultado para comprobar que la ruleta para donde debe:',
-      firma: 'Diseñada, programada y probada por Mireia Gutiérrez',
+      firma: 'Web diseñada y creada por Mireia Gutiérrez Águila<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:.75rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.85">Conoce su historia</a>',
       /* nombres y descripciones: los de la actividad «Adivina el porcentaje» */
       mecanicas: {
         contador: { nombre: 'El contador loco', desc: 'La cifra sube sin parar: pulsa PARAR en el número que creas.' },
@@ -174,7 +174,7 @@
   /* ---------- arranque ---------- */
   document.documentElement.lang = 'es';
   $('titulo').textContent = T.titulo; $('aviso').textContent = T.aviso; $('sub').textContent = T.sub;
-  btn.setAttribute('aria-label', T.girar); txt.textContent = T.toca; $('firma').textContent = T.firma;
+  btn.setAttribute('aria-label', T.girar); txt.textContent = T.toca; $('firma').innerHTML = T.firma;
   $('pruebasT').textContent = T.pruebasT;
   $('pruebasFila').appendChild(el('span', '', T.pruebasInfo)).style.flexBasis = '100%';
   CLAVES.forEach(function (k) { var b = el('button', '', T.mecanicas[k].nombre); b.type = 'button'; b.addEventListener('click', function () { girar(k); }); $('pruebasFila').appendChild(b); });

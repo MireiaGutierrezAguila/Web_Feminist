@@ -1,0 +1,1107 @@
+{
+  "id": "mujeres-gobierno",
+  "aviso": "Tema del mapa «La mujer en el mundo»: mujeres que mandan de verdad en su país. Datos comprobados el 22-11-2026 con agentes de investigación (cinco regiones) a partir de fuentes abiertas; criterio y opción A decididos por Mireia (2026-11-22). Los textos son un borrador redactado por Claude, pendiente de revisión de Mireia.",
+  "tipo": "categorias",
+  "titulo": {
+    "es": "¿Dónde ha mandado una mujer?",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+  },
+  "subtitulo": {
+    "es": "En cada país hay un cargo que manda de verdad: la presidenta o presidente, o la primera ministra o primer ministro. Mira dónde ocupa ese cargo una mujer hoy, dónde lo ocupó antes y dónde no ha pasado nunca.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+  },
+  "criterio": {
+    "es": "Cuenta la persona que dirige el gobierno de verdad: el presidente o presidenta si es quien gobierna, o el primer ministro o primera ministra si el presidente es una figura simbólica. Las reinas y los cargos simbólicos no cuentan. Se cuenta desde 1960. Las mujeres interinas solo cuentan si dirigieron el gobierno al menos un mes.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+  },
+  "categorias": [
+    {
+      "id": "A",
+      "icono": "👩🏽‍💼",
+      "color": "#9B6BD6",
+      "texto": {
+        "es": "Hoy manda una mujer",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "orden": 1
+    },
+    {
+      "id": "B",
+      "icono": "👩🏽‍💼",
+      "color": "#E0529C",
+      "texto": {
+        "es": "Hoy manda un hombre, pero ya ha mandado una mujer",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "orden": 2
+    },
+    {
+      "id": "C",
+      "icono": "👩🏽‍💼👨🏽‍💼",
+      "color": "#E8C23A",
+      "texto": {
+        "es": "El poder está repartido o es difícil de decir",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "orden": 3
+    },
+    {
+      "id": "D",
+      "icono": "👨🏽‍💼",
+      "color": "#2B5FA0",
+      "texto": {
+        "es": "Nunca ha mandado una mujer desde 1960",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "orden": 4
+    }
+  ],
+  "sinDatos": {
+    "color": "#9a93a8",
+    "texto": {
+      "es": "No tenemos datos de este país",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    }
+  },
+  "avisoLeyes": {
+    "es": "Este mapa muestra quién manda de verdad en cada país: la presidenta o presidente si gobierna, o la primera ministra o primer ministro si dirige el gobierno. Las reinas y los cargos simbólicos no cuentan.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+  },
+  "avisoRegiones": {
+    "es": "Se cuenta desde 1960 y los datos son de noviembre de 2026: cambian con las elecciones. En los países donde el poder se reparte entre varios cargos, el mapa lo dice aparte.",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+  },
+  "detalleModo": "mujeres",
+  "detalleTitulo": {
+    "es": "Mujeres que han mandado",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+  },
+  "fuente": {
+    "cita": "Comprobado el 22-11-2026 con fuentes abiertas: webs oficiales de gobiernos y parlamentos, World Statesmen, CIDOB, Council of Women World Leaders, medios de comunicación y listas de Wikipedia. Cada país con mujeres lleva sus enlaces en la página de fuentes.",
+    "comprobado": "2026-11-22",
+    "anio": 2026,
+    "nota": "Los países de la categoría «nunca» se han comprobado sobre todo con listas de líderes (Wikipedia, World Statesmen, CIA World Leaders): significa «no consta». Revisar antes de publicar."
+  },
+  "fuenteCorta": {
+    "es": "las fuentes de cada país, en la página de referencias",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+  },
+  "chip": {
+    "es": "Mujeres al frente del país",
+    "ca": "[TRADUCCIÓN PENDIENTE]",
+    "en": "[TRADUCCIÓN PENDIENTE]"
+  },
+  "juego": {
+    "tipo": "adivinar-categorias",
+    "aviso": "Juego con el mismo formato que el del matrimonio infantil (Mireia, 2026-11-20). Textos redactados por Claude, pendientes de revisión de Mireia.",
+    "pregunta": {
+      "es": "¿Qué crees que pasa en los países marcados en azul?",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "acierto": {
+      "es": "¡Acertaste!",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "fallo": {
+      "es": "No era esa. ¡Ahora lo sabes!",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    },
+    "explicaciones": {
+      "A": {
+        "es": "En estos países manda hoy una mujer: es presidenta o primera ministra.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "B": {
+        "es": "En estos países hoy manda un hombre, pero desde 1960 ya ha mandado alguna mujer.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "C": {
+        "es": "En estos países el poder está repartido entre varios cargos (por ejemplo, un presidente y un primer ministro) o es difícil decir quién manda de verdad.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "D": {
+        "es": "En estos países nunca ha mandado una mujer desde 1960.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    "finalFrase": {
+      "es": "Y los países que quedan son los de «{texto}».",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    }
+  },
+  "paises": {
+    "ARG": {
+      "cat": "B",
+      "mujeres": [
+        "Isabel Perón, presidenta (1974-1976)",
+        "Cristina Fernández de Kirchner, presidenta (2007-2015)"
+      ]
+    },
+    "BRB": {
+      "cat": "A",
+      "mujeres": [
+        "Mia Mottley, primera ministra (desde 2018)"
+      ]
+    },
+    "BOL": {
+      "cat": "B",
+      "mujeres": [
+        "Lidia Gueiler Tejada, presidenta (interina, 1979-1980)",
+        "Jeanine Áñez, presidenta (interina, 2019-2020)"
+      ],
+      "nota": "Las dos presidieron el país de forma interina durante varios meses."
+    },
+    "BRA": {
+      "cat": "B",
+      "mujeres": [
+        "Dilma Rousseff, presidenta (2011-2016)"
+      ]
+    },
+    "CAN": {
+      "cat": "B",
+      "mujeres": [
+        "Kim Campbell, primera ministra (1993)"
+      ]
+    },
+    "CHL": {
+      "cat": "B",
+      "mujeres": [
+        "Michelle Bachelet, presidenta (2006-2010 y 2014-2018)"
+      ]
+    },
+    "CRI": {
+      "cat": "A",
+      "mujeres": [
+        "Laura Fernández Delgado, presidenta (desde mayo de 2026)",
+        "Laura Chinchilla, presidenta (2010-2014)"
+      ]
+    },
+    "DMA": {
+      "cat": "B",
+      "mujeres": [
+        "Eugenia Charles, primera ministra (1980-1995)"
+      ]
+    },
+    "GUY": {
+      "cat": "B",
+      "mujeres": [
+        "Janet Jagan, primera ministra y luego presidenta (1997-1999)"
+      ]
+    },
+    "HTI": {
+      "cat": "C",
+      "mujeres": [
+        "Ertha Pascal-Trouillot, presidenta provisional (1990-1991)",
+        "Claudette Werleigh, primera ministra (1995-1996)",
+        "Michèle Pierre-Louis, primera ministra (2008-2009)"
+      ],
+      "nota": "Haití ha tenido presidentes provisionales, primeros ministros y consejos de transición, y el poder real ha cambiado de manos. Las fechas exactas de Werleigh y Pierre-Louis no están confirmadas."
+    },
+    "HND": {
+      "cat": "B",
+      "mujeres": [
+        "Xiomara Castro, presidenta (2022-2026)"
+      ]
+    },
+    "JAM": {
+      "cat": "B",
+      "mujeres": [
+        "Portia Simpson-Miller, primera ministra (2006-2007 y 2012-2016)"
+      ]
+    },
+    "MEX": {
+      "cat": "A",
+      "mujeres": [
+        "Claudia Sheinbaum, presidenta (desde octubre de 2024)"
+      ]
+    },
+    "NIC": {
+      "cat": "C",
+      "mujeres": [
+        "Violeta Chamorro, presidenta (1990-1997)",
+        "Rosario Murillo, copresidenta junto a Daniel Ortega (desde 2025)"
+      ],
+      "nota": "Desde 2025 el cargo más alto lo comparten dos personas (copresidencia)."
+    },
+    "PAN": {
+      "cat": "B",
+      "mujeres": [
+        "Mireya Moscoso, presidenta (1999-2004)"
+      ]
+    },
+    "PER": {
+      "cat": "A",
+      "mujeres": [
+        "Keiko Fujimori, presidenta (desde julio de 2026)",
+        "Dina Boluarte, presidenta (2022-2025)"
+      ],
+      "nota": "En Perú manda el presidente; también ha habido varias mujeres primeras ministras, que no se cuentan aquí."
+    },
+    "SUR": {
+      "cat": "A",
+      "mujeres": [
+        "Jennifer Geerlings-Simons, presidenta (desde julio de 2025)"
+      ]
+    },
+    "TTO": {
+      "cat": "A",
+      "mujeres": [
+        "Kamla Persad-Bissessar, primera ministra (2010-2015 y desde 2025)"
+      ],
+      "nota": "La presidenta del país (Christine Kangaloo) tiene un cargo ceremonial."
+    },
+    "VEN": {
+      "cat": "A",
+      "mujeres": [
+        "Delcy Rodríguez, presidenta encargada (desde enero de 2026)"
+      ],
+      "nota": "Es presidenta encargada (interina) y su situación legal es discutida."
+    },
+    "ATG": {
+      "cat": "D"
+    },
+    "BLZ": {
+      "cat": "D"
+    },
+    "COL": {
+      "cat": "D"
+    },
+    "CUB": {
+      "cat": "D"
+    },
+    "GRD": {
+      "cat": "D"
+    },
+    "GTM": {
+      "cat": "D"
+    },
+    "PRY": {
+      "cat": "D"
+    },
+    "DOM": {
+      "cat": "D"
+    },
+    "KNA": {
+      "cat": "D"
+    },
+    "VCT": {
+      "cat": "D"
+    },
+    "LCA": {
+      "cat": "D"
+    },
+    "URY": {
+      "cat": "D"
+    },
+    "USA": {
+      "cat": "D",
+      "nota": "Kamala Harris estuvo unos 85 minutos como presidenta en funciones en 2021: no cuenta."
+    },
+    "BHS": {
+      "cat": "D",
+      "nota": "Cynthia Pratt fue primera ministra en funciones unas siete semanas en 2005, mientras el titular estaba enfermo: no cuenta."
+    },
+    "ECU": {
+      "cat": "D",
+      "nota": "Rosalía Arteaga fue presidenta solo dos días en 1997: no cuenta."
+    },
+    "SLV": {
+      "cat": "D",
+      "nota": "Claudia Rodríguez de Guevara fue presidenta en funciones unos meses en 2023-2024 mientras el titular pedía licencia: no se cuenta."
+    },
+    "DEU": {
+      "cat": "B",
+      "mujeres": [
+        "Angela Merkel, canciller (2005-2021)"
+      ]
+    },
+    "AUT": {
+      "cat": "B",
+      "mujeres": [
+        "Brigitte Bierlein, canciller (2019-2020)"
+      ],
+      "nota": "Dirigió un gobierno de expertos de transición."
+    },
+    "BGR": {
+      "cat": "B",
+      "mujeres": [
+        "Reneta Indzhova, primera ministra de un gobierno de transición (1994-1995)"
+      ],
+      "nota": "Dirigió el gobierno unos tres meses."
+    },
+    "BEL": {
+      "cat": "B",
+      "mujeres": [
+        "Sophie Wilmès, primera ministra (2019-2020)"
+      ],
+      "nota": "Solo una fuente abierta."
+    },
+    "HRV": {
+      "cat": "B",
+      "mujeres": [
+        "Jadranka Kosor, primera ministra (2009-2011)"
+      ]
+    },
+    "DNK": {
+      "cat": "A",
+      "mujeres": [
+        "Mette Frederiksen, primera ministra (desde 2019)",
+        "Helle Thorning-Schmidt, primera ministra (2011-2015)"
+      ]
+    },
+    "SVK": {
+      "cat": "B",
+      "mujeres": [
+        "Iveta Radičová, primera ministra (2010-2012)"
+      ],
+      "nota": "Solo una fuente abierta."
+    },
+    "SVN": {
+      "cat": "B",
+      "mujeres": [
+        "Alenka Bratušek, primera ministra (2013-2014)"
+      ],
+      "nota": "Anunció su dimisión el 5-5-2014 y siguió en funciones hasta que se formó el nuevo gobierno."
+    },
+    "EST": {
+      "cat": "B",
+      "mujeres": [
+        "Kaja Kallas, primera ministra (2021-2024)"
+      ]
+    },
+    "FIN": {
+      "cat": "B",
+      "mujeres": [
+        "Anneli Jäätteenmäki, primera ministra (2003)",
+        "Mari Kiviniemi, primera ministra (2010-2011)",
+        "Sanna Marin, primera ministra (2019-2023)"
+      ]
+    },
+    "ISL": {
+      "cat": "A",
+      "mujeres": [
+        "Kristrún Frostadóttir, primera ministra (desde diciembre de 2024)",
+        "Jóhanna Sigurðardóttir, primera ministra (2009-2013)",
+        "Katrín Jakobsdóttir, primera ministra (2017-2024)"
+      ],
+      "nota": "La presidenta de Islandia tiene un cargo ceremonial; manda la primera ministra."
+    },
+    "ITA": {
+      "cat": "A",
+      "mujeres": [
+        "Giorgia Meloni, presidenta del Consejo de Ministros (desde 2022)"
+      ]
+    },
+    "LVA": {
+      "cat": "B",
+      "mujeres": [
+        "Laimdota Straujuma, primera ministra (2014-2016)",
+        "Evika Siliņa, primera ministra (2023-2026)"
+      ]
+    },
+    "MKD": {
+      "cat": "D",
+      "nota": "Radmila Šekerinska fue primera ministra en funciones menos de un mes en dos ocasiones en 2004 (mayo-junio y noviembre-diciembre): no cuenta."
+    },
+    "NOR": {
+      "cat": "B",
+      "mujeres": [
+        "Gro Harlem Brundtland, primera ministra (1981, 1986-1989 y 1990-1996)",
+        "Erna Solberg, primera ministra (2013-2021)"
+      ]
+    },
+    "GBR": {
+      "cat": "B",
+      "mujeres": [
+        "Margaret Thatcher, primera ministra (1979-1990)",
+        "Theresa May, primera ministra (2016-2019)",
+        "Liz Truss, primera ministra (2022)"
+      ]
+    },
+    "SWE": {
+      "cat": "B",
+      "mujeres": [
+        "Magdalena Andersson, primera ministra (2021-2022)"
+      ],
+      "nota": "En noviembre de 2026 el gobierno sueco está en funciones y puede cambiar en pocas semanas."
+    },
+    "FRA": {
+      "cat": "C",
+      "mujeres": [
+        "Édith Cresson, primera ministra (1991-1992)",
+        "Élisabeth Borne, primera ministra (2022-2024)"
+      ],
+      "nota": "En Francia el poder lo comparten el presidente y el primer ministro. Nunca ha habido una presidenta."
+    },
+    "LTU": {
+      "cat": "C",
+      "mujeres": [
+        "Kazimira Prunskienė, primera ministra (1990-1991)",
+        "Ingrida Šimonytė, primera ministra (2020-2024)",
+        "Inga Ruginienė, primera ministra (2025-2026)",
+        "Dalia Grybauskaitė, presidenta (2009-2019)"
+      ],
+      "nota": "Lituania reparte el poder entre la presidencia y la primera ministra."
+    },
+    "MDA": {
+      "cat": "C",
+      "mujeres": [
+        "Maia Sandu, presidenta (desde 2020) y antes primera ministra (2019)",
+        "Zinaida Greceanîi, primera ministra (2008-2009)",
+        "Natalia Gavrilița, primera ministra (2021-2023)"
+      ],
+      "nota": "En Moldavia el poder se reparte entre la presidenta y el primer ministro."
+    },
+    "LIE": {
+      "cat": "C",
+      "mujeres": [
+        "Brigitte Haas, jefa del gobierno (desde abril de 2025)"
+      ],
+      "nota": "El príncipe conserva gran parte del poder real."
+    },
+    "BIH": {
+      "cat": "C",
+      "mujeres": [
+        "Borjana Krišto, presidenta del Consejo de Ministros (desde 2023)"
+      ],
+      "nota": "El país lo dirige una presidencia de tres personas, con un alto representante internacional."
+    },
+    "SRB": {
+      "cat": "C",
+      "mujeres": [
+        "Ana Brnabić, primera ministra (2017-2024) y presidenta interina (2026)"
+      ],
+      "nota": "En Serbia el poder se reparte entre el presidente y la primera ministra."
+    },
+    "UKR": {
+      "cat": "C",
+      "mujeres": [
+        "Yulia Tymoshenko, primera ministra (2005 y 2007-2010)",
+        "Yulia Svyrydenko, primera ministra (2025-2026)"
+      ],
+      "nota": "En Ucrania el poder se reparte entre el presidente y el primer ministro."
+    },
+    "PRT": {
+      "cat": "C",
+      "mujeres": [
+        "Maria de Lourdes Pintasilgo, primera ministra (1979-1980)"
+      ],
+      "nota": "En Portugal el poder se reparte entre el presidente y el primer ministro."
+    },
+    "POL": {
+      "cat": "C",
+      "mujeres": [
+        "Hanna Suchocka, primera ministra (1992-1993)",
+        "Ewa Kopacz, primera ministra (2014-2015)",
+        "Beata Szydło, primera ministra (2015-2017)"
+      ],
+      "nota": "En Polonia el poder se reparte entre el presidente y el primer ministro."
+    },
+    "ROU": {
+      "cat": "C",
+      "mujeres": [
+        "Viorica Dăncilă, primera ministra (2018-2019)"
+      ],
+      "nota": "En Rumanía el poder se reparte entre el presidente y el primer ministro."
+    },
+    "CHE": {
+      "cat": "C",
+      "mujeres": [
+        "Varias mujeres han presidido la Confederación Suiza (por turnos de un año), entre ellas Ruth Dreifuss (1999), Doris Leuthard (2010 y 2017), Simonetta Sommaruga (2015 y 2020) y Karin Keller-Sutter (2025)"
+      ],
+      "nota": "Suiza la gobierna un consejo de siete personas; la presidencia rota cada año."
+    },
+    "SMR": {
+      "cat": "C",
+      "mujeres": [
+        "Desde 1981 ha habido capitanas regentes (el cargo lo ocupan dos personas durante seis meses)"
+      ],
+      "nota": "San Marino tiene dos jefes de Estado a la vez, que cambian cada seis meses."
+    },
+    "VAT": {
+      "cat": "C",
+      "mujeres": [
+        "Raffaella Petrini, presidenta de la Gobernación (desde 2025)"
+      ],
+      "nota": "En el Vaticano el poder lo tiene el papa."
+    },
+    "MCO": {
+      "cat": "C",
+      "mujeres": [
+        "Isabelle Berro-Amadeï, ministra de Estado en funciones (2025)"
+      ],
+      "nota": "En Mónaco el príncipe conserva el poder real. Ocupó el cargo en funciones desde el 10-1-2025, cuando el ministro de Estado fue hospitalizado, hasta el 21-7-2025."
+    },
+    "ALB": {
+      "cat": "D"
+    },
+    "AND": {
+      "cat": "D"
+    },
+    "BLR": {
+      "cat": "D"
+    },
+    "ESP": {
+      "cat": "D"
+    },
+    "HUN": {
+      "cat": "D",
+      "nota": "Katalin Novák (presidenta, 2022-2024) tuvo un cargo ceremonial."
+    },
+    "IRL": {
+      "cat": "D",
+      "nota": "Las presidentas de Irlanda tienen un cargo ceremonial."
+    },
+    "LUX": {
+      "cat": "D"
+    },
+    "MLT": {
+      "cat": "D",
+      "nota": "Las presidentas de Malta tienen un cargo ceremonial."
+    },
+    "MNE": {
+      "cat": "D"
+    },
+    "NLD": {
+      "cat": "D"
+    },
+    "CZE": {
+      "cat": "D"
+    },
+    "RUS": {
+      "cat": "D"
+    },
+    "GRC": {
+      "cat": "D",
+      "nota": "Vasiliki Thanou-Christophilou dirigió un gobierno de transición menos de un mes en 2015 y la presidenta Sakellaropoulou tiene un cargo ceremonial: no cuentan."
+    },
+    "BGD": {
+      "cat": "B",
+      "mujeres": [
+        "Khaleda Zia, primera ministra (1991-1996 y 2001-2006)",
+        "Sheikh Hasina, primera ministra (1996-2001 y 2009-2024)"
+      ]
+    },
+    "IDN": {
+      "cat": "B",
+      "mujeres": [
+        "Megawati Sukarnoputri, presidenta (2001-2004)"
+      ]
+    },
+    "IND": {
+      "cat": "B",
+      "mujeres": [
+        "Indira Gandhi, primera ministra (1966-1977 y 1980-1984)"
+      ],
+      "nota": "La presidenta de la India (Droupadi Murmu) tiene un cargo ceremonial; manda el primer ministro."
+    },
+    "ISR": {
+      "cat": "B",
+      "mujeres": [
+        "Golda Meir, primera ministra (1969-1974)"
+      ]
+    },
+    "JPN": {
+      "cat": "A",
+      "mujeres": [
+        "Sanae Takaichi, primera ministra (desde octubre de 2025)"
+      ]
+    },
+    "KOR": {
+      "cat": "B",
+      "mujeres": [
+        "Park Geun-hye, presidenta (2013-2017)"
+      ]
+    },
+    "LKA": {
+      "cat": "B",
+      "mujeres": [
+        "Sirimavo Bandaranaike, primera ministra (1960-1965 y 1970-1977)",
+        "Chandrika Kumaratunga, presidenta (1994-2005)"
+      ],
+      "nota": "Sirimavo Bandaranaike fue la primera mujer del mundo primera ministra (1960)."
+    },
+    "MMR": {
+      "cat": "B",
+      "mujeres": [
+        "Aung San Suu Kyi, consejera de Estado y jefa de facto del gobierno (2016-2021)"
+      ],
+      "nota": "Se creó para ella el cargo de consejera de Estado."
+    },
+    "NPL": {
+      "cat": "B",
+      "mujeres": [
+        "Sushila Karki, primera ministra de un gobierno interino (2025-2026)"
+      ],
+      "nota": "Dirigió unos seis meses el gobierno interino que convocó elecciones."
+    },
+    "PAK": {
+      "cat": "B",
+      "mujeres": [
+        "Benazir Bhutto, primera ministra (1988-1990 y 1993-1996)"
+      ]
+    },
+    "PHL": {
+      "cat": "B",
+      "mujeres": [
+        "Corazon Aquino, presidenta (1986-1992)",
+        "Gloria Macapagal Arroyo, presidenta (2001-2010)"
+      ]
+    },
+    "THA": {
+      "cat": "B",
+      "mujeres": [
+        "Yingluck Shinawatra, primera ministra (2011-2014)",
+        "Paetongtarn Shinawatra, primera ministra (2024-2025)"
+      ]
+    },
+    "TUR": {
+      "cat": "B",
+      "mujeres": [
+        "Tansu Çiller, primera ministra (1993-1996)"
+      ]
+    },
+    "GEO": {
+      "cat": "C",
+      "mujeres": [
+        "Nino Burjanadze, presidenta interina (2003-2004 y 2007-2008)"
+      ],
+      "nota": "Georgia cambió de sistema de gobierno y sus presidentas interinas lo fueron solo unos meses."
+    },
+    "KGZ": {
+      "cat": "C",
+      "mujeres": [
+        "Roza Otunbayeva, presidenta (interina, 2010-2011)"
+      ],
+      "nota": "Durante su mandato el poder pasó de la presidencia al gobierno."
+    },
+    "TWN": {
+      "cat": "C",
+      "mujeres": [
+        "Tsai Ing-wen, presidenta (2016-2024)"
+      ],
+      "nota": "En Taiwán el poder se reparte entre la presidencia y el primer ministro (nunca una mujer en este cargo)."
+    },
+    "AFG": {
+      "cat": "D"
+    },
+    "ARE": {
+      "cat": "D"
+    },
+    "ARM": {
+      "cat": "D"
+    },
+    "AZE": {
+      "cat": "D"
+    },
+    "BHR": {
+      "cat": "D"
+    },
+    "BRN": {
+      "cat": "D"
+    },
+    "BTN": {
+      "cat": "D"
+    },
+    "CHN": {
+      "cat": "D",
+      "nota": "Soong Ching-ling fue presidenta honoraria, un cargo ceremonial."
+    },
+    "CYP": {
+      "cat": "D"
+    },
+    "IRN": {
+      "cat": "D"
+    },
+    "IRQ": {
+      "cat": "D"
+    },
+    "JOR": {
+      "cat": "D"
+    },
+    "KHM": {
+      "cat": "D"
+    },
+    "KWT": {
+      "cat": "D"
+    },
+    "LAO": {
+      "cat": "D"
+    },
+    "LBN": {
+      "cat": "D"
+    },
+    "MYS": {
+      "cat": "D"
+    },
+    "OMN": {
+      "cat": "D"
+    },
+    "PRK": {
+      "cat": "D"
+    },
+    "PSX": {
+      "cat": "D"
+    },
+    "QAT": {
+      "cat": "D"
+    },
+    "SAU": {
+      "cat": "D"
+    },
+    "SGP": {
+      "cat": "D",
+      "nota": "Halimah Yacob (presidenta 2017-2023) tuvo un cargo ceremonial."
+    },
+    "SYR": {
+      "cat": "D"
+    },
+    "TJK": {
+      "cat": "D"
+    },
+    "TKM": {
+      "cat": "D"
+    },
+    "TLS": {
+      "cat": "D"
+    },
+    "UZB": {
+      "cat": "D"
+    },
+    "VNM": {
+      "cat": "D"
+    },
+    "YEM": {
+      "cat": "D"
+    },
+    "MDV": {
+      "cat": "D"
+    },
+    "MNG": {
+      "cat": "D",
+      "nota": "Nyam-Osoryn Tuyaa fue primera ministra en funciones solo ocho días en 1999: no cuenta."
+    },
+    "BDI": {
+      "cat": "B",
+      "mujeres": [
+        "Sylvie Kinigi, primera ministra (1993-1994), asumió el control del gobierno tras el asesinato del presidente"
+      ],
+      "nota": "Dirigió el país unos meses tras el asesinato del presidente Ndadaye (octubre de 1993)."
+    },
+    "GAB": {
+      "cat": "B",
+      "mujeres": [
+        "Rose Francine Rogombé, presidenta interina (2009)"
+      ],
+      "nota": "Presidió la transición unos cuatro meses."
+    },
+    "LBR": {
+      "cat": "B",
+      "mujeres": [
+        "Ellen Johnson Sirleaf, presidenta (2006-2018)",
+        "Ruth Perry, presidenta del Consejo de Estado (1996-1997)"
+      ],
+      "nota": "Ellen Johnson Sirleaf fue la primera mujer elegida presidenta en África."
+    },
+    "MWI": {
+      "cat": "B",
+      "mujeres": [
+        "Joyce Banda, presidenta (2012-2014)"
+      ]
+    },
+    "CAF": {
+      "cat": "B",
+      "mujeres": [
+        "Catherine Samba-Panza, presidenta de la transición (2014-2016)"
+      ]
+    },
+    "NAM": {
+      "cat": "A",
+      "mujeres": [
+        "Netumbo Nandi-Ndaitwah, presidenta (desde marzo de 2025)"
+      ]
+    },
+    "TZA": {
+      "cat": "A",
+      "mujeres": [
+        "Samia Suluhu Hassan, presidenta (desde marzo de 2021)"
+      ],
+      "nota": "Su reelección de 2025 fue discutida."
+    },
+    "MAR": {
+      "cat": "C",
+      "mujeres": [
+        "Fatima Ezzahra El Mansouri, primera ministra (desde septiembre de 2026)"
+      ],
+      "nota": "En Marruecos el rey es la máxima autoridad y nombra a la primera ministra."
+    },
+    "CPV": {
+      "cat": "C",
+      "mujeres": [
+        "Janira Hopffer Almada, presidenta interina (septiembre-noviembre de 2026)"
+      ],
+      "nota": "En Cabo Verde el poder se reparte entre la presidencia y el primer ministro."
+    },
+    "MLI": {
+      "cat": "C",
+      "mujeres": [
+        "Cissé Mariam Kaïdama Sidibé, primera ministra (2011-2012)"
+      ],
+      "nota": "En Malí el poder se ha repartido entre el presidente y el primer ministro."
+    },
+    "COD": {
+      "cat": "C",
+      "mujeres": [
+        "Judith Suminwa Tuluka, primera ministra (desde 2024)"
+      ],
+      "nota": "En la República Democrática del Congo el poder se reparte entre el presidente y el primer ministro."
+    },
+    "RWA": {
+      "cat": "C",
+      "mujeres": [
+        "Agathe Uwilingiyimana, primera ministra (1993-1994)"
+      ],
+      "nota": "En Ruanda el poder se repartía entre el presidente y el primer ministro."
+    },
+    "STP": {
+      "cat": "C",
+      "mujeres": [
+        "Maria das Neves, primera ministra (2002-2004)",
+        "Maria do Carmo Silveira, primera ministra (2005-2006)"
+      ],
+      "nota": "En Santo Tomé y Príncipe el poder se reparte entre el presidente y el primer ministro."
+    },
+    "SEN": {
+      "cat": "C",
+      "mujeres": [
+        "Mame Madior Boye, primera ministra (2001-2002)",
+        "Aminata Touré, primera ministra (2013-2014)"
+      ],
+      "nota": "En Senegal el poder se reparte entre el presidente y el primer ministro."
+    },
+    "TGO": {
+      "cat": "C",
+      "mujeres": [
+        "Victoire Tomegah Dogbé, primera ministra (2020-2025)"
+      ],
+      "nota": "Togo cambió su sistema de gobierno en 2025: hoy manda el presidente del Consejo de Ministros. La primera ministra dimitió el 2-5-2025."
+    },
+    "GNB": {
+      "cat": "C",
+      "mujeres": [
+        "Adiato Djaló Nandigna, primera ministra en funciones (2012)",
+        "Carmen Pereira, presidenta en funciones dos días (1984)"
+      ],
+      "nota": "En Guinea-Bisáu el poder se reparte entre el presidente y el primer ministro."
+    },
+    "GNQ": {
+      "cat": "D",
+      "nota": "Manuela Roka Botey fue primera ministra (2023-2024), pero en Guinea Ecuatorial manda el presidente."
+    },
+    "MOZ": {
+      "cat": "D",
+      "nota": "Luísa Dias Diogo y Maria Benvinda Levi fueron primeras ministras, pero en Mozambique manda el presidente."
+    },
+    "TUN": {
+      "cat": "D",
+      "nota": "Najla Bouden y Sara Zaafarani han sido primeras ministras, pero en Túnez manda el presidente."
+    },
+    "UGA": {
+      "cat": "D",
+      "nota": "Robinah Nabbanja es primera ministra, pero en Uganda manda el presidente."
+    },
+    "ZAF": {
+      "cat": "D",
+      "nota": "Ivy Matsepe-Casaburri fue presidenta en funciones unas horas en 2005: no cuenta."
+    },
+    "MDG": {
+      "cat": "D",
+      "nota": "Cécile Manorohanta fue primera ministra en funciones dos días en 2009: no cuenta."
+    },
+    "SDN": {
+      "cat": "D",
+      "nota": "Hay mujeres en el Consejo Soberano (jefatura de varias personas), pero no dirigen el gobierno."
+    },
+    "ETH": {
+      "cat": "D",
+      "nota": "Sahle-Work Zewde (presidenta 2018-2024) tuvo un cargo ceremonial."
+    },
+    "AGO": {
+      "cat": "D"
+    },
+    "DZA": {
+      "cat": "D"
+    },
+    "BEN": {
+      "cat": "D"
+    },
+    "BWA": {
+      "cat": "D"
+    },
+    "BFA": {
+      "cat": "D"
+    },
+    "CMR": {
+      "cat": "D"
+    },
+    "TCD": {
+      "cat": "D"
+    },
+    "COM": {
+      "cat": "D"
+    },
+    "CIV": {
+      "cat": "D"
+    },
+    "EGY": {
+      "cat": "D"
+    },
+    "ERI": {
+      "cat": "D"
+    },
+    "GMB": {
+      "cat": "D"
+    },
+    "GHA": {
+      "cat": "D"
+    },
+    "GIN": {
+      "cat": "D"
+    },
+    "KEN": {
+      "cat": "D"
+    },
+    "LSO": {
+      "cat": "D"
+    },
+    "LBY": {
+      "cat": "D"
+    },
+    "MRT": {
+      "cat": "D"
+    },
+    "NER": {
+      "cat": "D"
+    },
+    "NGA": {
+      "cat": "D"
+    },
+    "COG": {
+      "cat": "D"
+    },
+    "SLE": {
+      "cat": "D"
+    },
+    "SOM": {
+      "cat": "D"
+    },
+    "SOL": {
+      "cat": "D"
+    },
+    "SDS": {
+      "cat": "D"
+    },
+    "SWZ": {
+      "cat": "D"
+    },
+    "DJI": {
+      "cat": "D"
+    },
+    "ZMB": {
+      "cat": "D"
+    },
+    "ZWE": {
+      "cat": "D"
+    },
+    "AUS": {
+      "cat": "B",
+      "mujeres": [
+        "Julia Gillard, primera ministra (2010-2013)"
+      ]
+    },
+    "NZL": {
+      "cat": "B",
+      "mujeres": [
+        "Jenny Shipley, primera ministra (1997-1999)",
+        "Helen Clark, primera ministra (1999-2008)",
+        "Jacinda Ardern, primera ministra (2017-2023)"
+      ]
+    },
+    "MHL": {
+      "cat": "A",
+      "mujeres": [
+        "Hilda Heine, presidenta (2016-2020 y desde 2024)"
+      ]
+    },
+    "WSM": {
+      "cat": "B",
+      "mujeres": [
+        "Fiamē Naomi Mataʻafa, primera ministra (2021-2025)"
+      ]
+    },
+    "FJI": {
+      "cat": "D"
+    },
+    "FSM": {
+      "cat": "D"
+    },
+    "KIR": {
+      "cat": "D"
+    },
+    "NRU": {
+      "cat": "D"
+    },
+    "PLW": {
+      "cat": "D"
+    },
+    "PNG": {
+      "cat": "D"
+    },
+    "SLB": {
+      "cat": "D"
+    },
+    "TON": {
+      "cat": "D"
+    },
+    "TUV": {
+      "cat": "D"
+    },
+    "VUT": {
+      "cat": "D"
+    },
+    "MUS": {
+      "cat": "D",
+      "nota": "Las presidentas de Mauricio (Ameenah Gurib-Fakim, 2015-2018) tuvieron un cargo ceremonial."
+    },
+    "SYC": {
+      "cat": "D"
+    },
+    "KAZ": {
+      "cat": "D"
+    },
+    "KOS": {
+      "cat": "D",
+      "nota": "Atifete Jahjaga (2011-2016), Vjosa Osmani (2020-2026) y Justina Shiroka Pula (desde octubre de 2026) han sido presidentas con poderes limitados. Manda el primer ministro, y nunca lo ha sido una mujer."
+    }
+  }
+}
