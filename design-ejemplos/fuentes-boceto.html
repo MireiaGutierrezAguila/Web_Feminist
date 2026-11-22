@@ -128,7 +128,7 @@
   </div>
 </main>
 
-<footer><div class="envoltorio"><p class="firma">Diseñada, programada y probada por Mireia Gutiérrez</p></div></footer>
+<footer><div class="envoltorio"><p class="firma">Web diseñada y creada por Mireia Gutiérrez Águila<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:.75rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.85">Conoce su historia</a></p></div></footer>
 
 <script>
 (function () {
@@ -241,7 +241,7 @@
      de «Mujeres en cifras» (Instituto de las Mujeres) de la que sale; las fuentes que esa infografía cita (INE, Ministerio de Trabajo) se añaden como texto. */
   function dePorcentajes(pc) {
     if (!pc || !pc.infografias) { return []; }
-    var SECUNDARIAS = { 'p-01': 'INE: Encuesta de Estructura Salarial (cifra citada por la infografía)', 'p-02': 'Ministerio de Trabajo (MITES): Pensiones Contributivas 2021 (citado por la infografía)' };
+    var SECUNDARIAS = { 'p-01': 'INE: Encuesta de Estructura Salarial (cifra citada por la infografía)', 'p-02': 'Ministerio de Trabajo (MITES): Pensiones Contributivas 2021 (citado por la infografía)', 'p-15': 'Ministerio del Interior, ONVIOS: Informe sobre delitos contra la libertad sexual, enero–diciembre 2024 (una de las fuentes que cita la infografía; no indica cuál da cada cifra)', 'c-07': 'Ministerio del Interior, ONVIOS: Informe sobre delitos contra la libertad sexual, enero–diciembre 2024 (una de las fuentes que cita la infografía; no indica cuál da cada cifra)', 'p-14': 'INE (cita genérica de la infografía de Vivienda; no indica la tabla de esta cifra)' };
     function num(v, u) { return String(v).replace('.', ',') + (u === '%' ? ' %' : ' ' + u); }
     function fuentesDe(id, key) {
       var inf = pc.infografias[key], fs = [];

@@ -74,6 +74,2843 @@
         "estado": "revisar",
         "nota": "Los términos de Natural Earth no dicen qué criterio siguen con las fronteras en disputa. Decisión de Mireia, con neutralidad."
       }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7100
+      },
+      "dato": "Barbados: Hoy manda una mujer. Mia Mottley, primera ministra (desde 2018)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Barbados",
+          "url": "https://www.worldstatesmen.org/Barbados.html"
+        },
+        {
+          "nombre": "Jamaica Observer, 12-2-2026",
+          "url": "https://jamaicaobserver.com/2026/02/12/mottley-leads-blp-yet-another-clean-sweep-barbados-election/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7101
+      },
+      "dato": "Costa Rica: Hoy manda una mujer. Laura Fernández Delgado, presidenta (desde mayo de 2026) · Laura Chinchilla, presidenta (2010-2014)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Costa Rica",
+          "url": "https://www.worldstatesmen.org/Costa_Rica.html"
+        },
+        {
+          "nombre": "Al Jazeera, 8-5-2026",
+          "url": "https://www.aljazeera.com/news/2026/5/8/laura-fernandez-sworn-in-as-costa-ricas-new-president"
+        },
+        {
+          "nombre": "CIDOB: Laura Chinchilla",
+          "url": "https://www.cidob.org/lider-politico/laura-chinchilla-miranda"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7102
+      },
+      "dato": "Dinamarca: Hoy manda una mujer. Mette Frederiksen, primera ministra (desde 2019) · Helle Thorning-Schmidt, primera ministra (2011-2015)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "RTÉ, 2-6-2026",
+          "url": "https://www.rte.ie/news/world/2026/0602/1576271-denmark-government/"
+        },
+        {
+          "nombre": "Gobierno de Dinamarca: primeros ministros desde 1848",
+          "url": "https://stm.dk/en/the-prime-minister/prime-ministers-since-1848/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7103
+      },
+      "dato": "Islandia: Hoy manda una mujer. Kristrún Frostadóttir, primera ministra (desde diciembre de 2024) · Jóhanna Sigurðardóttir, primera ministra (2009-2013) · Katrín Jakobsdóttir, primera ministra (2017-2024). La presidenta de Islandia tiene un cargo ceremonial; manda la primera ministra.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Iceland Review, 16-8-2026",
+          "url": "https://www.icelandreview.com/news/iceland-wont-be-divided-over-eu-referendum-pm-says/"
+        },
+        {
+          "nombre": "Gobierno de Islandia, 21-12-2024",
+          "url": "https://www.stjornarradid.is/frettir/grein/2024-12-21-New-Icelandic-Government-takes-office"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7104
+      },
+      "dato": "Islas Marshall: Hoy manda una mujer. Hilda Heine, presidenta (2016-2020 y desde 2024)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Oceanía",
+      "fuentes": [
+        {
+          "nombre": "Marshall Islands Journal, 19-11-2026",
+          "url": "https://marshallislandsjournal.com/tag/hilda-heine/page/1/"
+        },
+        {
+          "nombre": "PINA, 7-8-2026",
+          "url": "https://pina.com.fj/2026/08/07/nuclear-justice-climate-resilience-top-marshall-islands-presidents-parliamentary-agenda/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7105
+      },
+      "dato": "Italia: Hoy manda una mujer. Giorgia Meloni, presidenta del Consejo de Ministros (desde 2022)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Gobierno de Italia: el presidente",
+          "url": "https://www.governo.it/it/il-presidente"
+        },
+        {
+          "nombre": "Wikipedia: líderes actuales",
+          "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7106
+      },
+      "dato": "Japón: Hoy manda una mujer. Sanae Takaichi, primera ministra (desde octubre de 2025)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Korea Times, 17-9-2026",
+          "url": "https://www.koreatimes.co.kr/world/20260917/japans-takaichi-keeps-key-ministers-in-cabinet-reshuffle"
+        },
+        {
+          "nombre": "Council on Foreign Relations, 21-10-2025",
+          "url": "https://www.cfr.org/blog/prime-minister-takaichi-sanae-takes-charge"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7107
+      },
+      "dato": "México: Hoy manda una mujer. Claudia Sheinbaum, presidenta (desde octubre de 2024)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: México",
+          "url": "https://www.worldstatesmen.org/Mexico.htm"
+        },
+        {
+          "nombre": "Wikipedia: Claudia Sheinbaum",
+          "url": "https://en.wikipedia.org/wiki/Claudia_Sheinbaum"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7108
+      },
+      "dato": "Namibia: Hoy manda una mujer. Netumbo Nandi-Ndaitwah, presidenta (desde marzo de 2025)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "allAfrica, 7-4-2026",
+          "url": "https://allafrica.com/stories/202604070162.html"
+        },
+        {
+          "nombre": "The Namibian, 15-7-2026",
+          "url": "https://www.namibian.com.na/president-netumbo-nandi-ndaitwah-sends-off-team-namibia-to-2026-commonwealth-games/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7109
+      },
+      "dato": "Perú: Hoy manda una mujer. Keiko Fujimori, presidenta (desde julio de 2026) · Dina Boluarte, presidenta (2022-2025). En Perú manda el presidente; también ha habido varias mujeres primeras ministras, que no se cuentan aquí.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Perú",
+          "url": "https://www.worldstatesmen.org/Peru.htm"
+        },
+        {
+          "nombre": "Al Jazeera, 28-7-2026",
+          "url": "https://www.aljazeera.com/news/2026/7/28/keiko-fujimori-sworn-in-as-peru-president-after-narrow-election-win"
+        },
+        {
+          "nombre": "CIDOB: Keiko Fujimori",
+          "url": "https://www.cidob.org/lider-politico/keiko-fujimori-higuchi"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7110
+      },
+      "dato": "Surinam: Hoy manda una mujer. Jennifer Geerlings-Simons, presidenta (desde julio de 2025)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Surinam",
+          "url": "https://www.worldstatesmen.org/Suriname.html"
+        },
+        {
+          "nombre": "Kaieteur News, 17-7-2025",
+          "url": "https://www.kaieteurnewsonline.com/2025/07/17/jennifer-geerlings-simons-sworn-in-as-first-female-president-of-republic-of-suriname/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7111
+      },
+      "dato": "Tanzania: Hoy manda una mujer. Samia Suluhu Hassan, presidenta (desde marzo de 2021). Su reelección de 2025 fue discutida.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Rio Times, 30-10-2026",
+          "url": "https://www.riotimesonline.com/tanzania-politics-key-players-2026/"
+        },
+        {
+          "nombre": "Al Jazeera, 3-11-2025",
+          "url": "https://www.aljazeera.com/video/newsfeed/2025/11/3/tanzania-swears-in-president-samia-suluhu-hassan-after-deadly-protests"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7112
+      },
+      "dato": "Trinidad y Tobago: Hoy manda una mujer. Kamla Persad-Bissessar, primera ministra (2010-2015 y desde 2025). La presidenta del país (Christine Kangaloo) tiene un cargo ceremonial.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Trinidad y Tobago",
+          "url": "https://www.worldstatesmen.org/Trinidad.html"
+        },
+        {
+          "nombre": "Jamaica Observer, 1-5-2025",
+          "url": "https://jamaicaobserver.com/2025/05/01/persad-bissessar-makes-history-swearing/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7113
+      },
+      "dato": "Venezuela: Hoy manda una mujer. Delcy Rodríguez, presidenta encargada (desde enero de 2026). Es presidenta encargada (interina) y su situación legal es discutida.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Venezuela",
+          "url": "https://www.worldstatesmen.org/Venezuela.html"
+        },
+        {
+          "nombre": "PBS NewsHour",
+          "url": "https://www.pbs.org/newshour/world/who-is-delcy-rodriguez-venezuelas-interim-president-after-maduros-ouster"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7114
+      },
+      "dato": "Alemania: Hoy manda un hombre, pero ya ha mandado una mujer. Angela Merkel, canciller (2005-2021)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Cancillería Federal: cancilleres desde 1949",
+          "url": "https://www.bundeskanzler.de/bk-en/federal-chancellery/federal-chancellors-since-1949"
+        },
+        {
+          "nombre": "Cancillería Federal: Angela Merkel",
+          "url": "https://www.bundeskanzler.de/bk-de/content/angela-merkel-1839844"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7115
+      },
+      "dato": "Argentina: Hoy manda un hombre, pero ya ha mandado una mujer. Isabel Perón, presidenta (1974-1976) · Cristina Fernández de Kirchner, presidenta (2007-2015)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Argentina",
+          "url": "https://www.worldstatesmen.org/Argentina.html"
+        },
+        {
+          "nombre": "CIDOB: Cristina Fernández de Kirchner",
+          "url": "https://www.cidob.org/lider-politico/cristina-fernandez-de-kirchner"
+        },
+        {
+          "nombre": "Biografías y Vidas: Isabel Perón",
+          "url": "https://www.biografiasyvidas.com/biografia/p/peron_isabel.htm"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7116
+      },
+      "dato": "Australia: Hoy manda un hombre, pero ya ha mandado una mujer. Julia Gillard, primera ministra (2010-2013)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Oceanía",
+      "fuentes": [
+        {
+          "nombre": "Museo de la Democracia Australiana",
+          "url": "https://explore.moadoph.gov.au/people/julia-eileen-gillard.html"
+        },
+        {
+          "nombre": "Wikipedia: Julia Gillard",
+          "url": "https://en.wikipedia.org/wiki/Julia_Gillard"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7117
+      },
+      "dato": "Austria: Hoy manda un hombre, pero ya ha mandado una mujer. Brigitte Bierlein, canciller (2019-2020). Dirigió un gobierno de expertos de transición.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Cancillería de Austria: cancilleres desde 1945",
+          "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/geschichte/kanzler-seit-1945.html"
+        },
+        {
+          "nombre": "Parlamento de Austria: Brigitte Bierlein",
+          "url": "https://www.parlament.gv.at/verstehen/demokratie-wahlen/frauen-im-parlament/pionierinnen/brigitte-bierlein/index.html"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7118
+      },
+      "dato": "Bangladés: Hoy manda un hombre, pero ya ha mandado una mujer. Khaleda Zia, primera ministra (1991-1996 y 2001-2006) · Sheikh Hasina, primera ministra (1996-2001 y 2009-2024)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Al Jazeera, 5-8-2024",
+          "url": "https://www.aljazeera.com/news/2024/8/5/bangladeshs-sheikh-hasina-forced-to-resign-what-happened-and-whats-next"
+        },
+        {
+          "nombre": "RFA, 5-8-2024",
+          "url": "https://www.rfa.org/english/news/bangladesh-sheikh-hasina-resign-08052024215225.html"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7119
+      },
+      "dato": "Birmania: Hoy manda un hombre, pero ya ha mandado una mujer. Aung San Suu Kyi, consejera de Estado y jefa de facto del gobierno (2016-2021). Se creó para ella el cargo de consejera de Estado.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: Aung San Suu Kyi",
+          "url": "https://en.wikipedia.org/wiki/Aung_San_Suu_Kyi"
+        },
+        {
+          "nombre": "Lowy Institute",
+          "url": "https://www.lowyinstitute.org/people/aung-san-suu-kyi"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7120
+      },
+      "dato": "Bolivia: Hoy manda un hombre, pero ya ha mandado una mujer. Lidia Gueiler Tejada, presidenta (interina, 1979-1980) · Jeanine Áñez, presidenta (interina, 2019-2020). Las dos presidieron el país de forma interina durante varios meses.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Bolivia",
+          "url": "https://www.worldstatesmen.org/Bolivia.html"
+        },
+        {
+          "nombre": "CIDOB: Jeanine Áñez",
+          "url": "https://www.cidob.org/lider-politico/jeanine-anez-chavez"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7121
+      },
+      "dato": "Brasil: Hoy manda un hombre, pero ya ha mandado una mujer. Dilma Rousseff, presidenta (2011-2016)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Brasil",
+          "url": "https://www.worldstatesmen.org/Brazil.html"
+        },
+        {
+          "nombre": "CIDOB: Dilma Rousseff",
+          "url": "https://www.cidob.org/lider-politico/dilma-rousseff"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7122
+      },
+      "dato": "Bulgaria: Hoy manda un hombre, pero ya ha mandado una mujer. Reneta Indzhova, primera ministra de un gobierno de transición (1994-1995). Dirigió el gobierno unos tres meses.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "BTA, 1994",
+          "url": "https://www.bta.bg/en/news/archives/762986?download=1"
+        },
+        {
+          "nombre": "BTA, 2025",
+          "url": "https://www.bta.bg/en/news/bulgaria/851485-bulgaria-s-first-and-only-female-prime-minister-reneta-indzhova-receives-highest"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7123
+      },
+      "dato": "Burundi: Hoy manda un hombre, pero ya ha mandado una mujer. Sylvie Kinigi, primera ministra (1993-1994), asumió el control del gobierno tras el asesinato del presidente. Dirigió el país unos meses tras el asesinato del presidente Ndadaye (octubre de 1993).",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "EBSCO Research Starters: asesinato del presidente de Burundi",
+          "url": "https://www.ebsco.com/research-starters/history/burundian-president-assassinated"
+        },
+        {
+          "nombre": "Africa Briefing",
+          "url": "https://africabriefing.com/african-women-leaders-redefine-power-across-the-continent/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7124
+      },
+      "dato": "Bélgica: Hoy manda un hombre, pero ya ha mandado una mujer. Sophie Wilmès, primera ministra (2019-2020). Solo una fuente abierta.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Brussels Times",
+          "url": "https://www.brusselstimes.com/belgium-news/255438/sophie-wilmes-officially-resigns-from-belgiums-federal-government/"
+        },
+        {
+          "nombre": "VRT NWS, 27-10-2019",
+          "url": "https://www.vrt.be/vrtnws/en/2019/10/27/belgian-gets-first-female-prime-minister/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7125
+      },
+      "dato": "Canadá: Hoy manda un hombre, pero ya ha mandado una mujer. Kim Campbell, primera ministra (1993)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América del Norte",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Canadá",
+          "url": "https://www.worldstatesmen.org/Canada.html"
+        },
+        {
+          "nombre": "Wikipedia: Kim Campbell",
+          "url": "https://en.wikipedia.org/wiki/Kim_Campbell"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7126
+      },
+      "dato": "Chile: Hoy manda un hombre, pero ya ha mandado una mujer. Michelle Bachelet, presidenta (2006-2010 y 2014-2018)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Chile",
+          "url": "https://www.worldstatesmen.org/Chile.html"
+        },
+        {
+          "nombre": "CIDOB: Michelle Bachelet",
+          "url": "https://www.cidob.org/lider-politico/michelle-bachelet-jeria"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7127
+      },
+      "dato": "Corea del Sur: Hoy manda un hombre, pero ya ha mandado una mujer. Park Geun-hye, presidenta (2013-2017)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Al Jazeera, 10-3-2017",
+          "url": "https://www.aljazeera.com/video/2017/3/10/south-korean-president-park-permanently-dismissed-from-office"
+        },
+        {
+          "nombre": "Wikipedia: Park Geun-hye",
+          "url": "https://en.wikipedia.org/wiki/Park_Geun-hye"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7128
+      },
+      "dato": "Croacia: Hoy manda un hombre, pero ya ha mandado una mujer. Jadranka Kosor, primera ministra (2009-2011)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Gobierno de Croacia: gobierno 11",
+          "url": "https://vlada.gov.hr/11-vlada-rh/125"
+        },
+        {
+          "nombre": "Gobierno de Croacia: Jadranka Kosor",
+          "url": "https://vlada.gov.hr/jadranka-kosor-nova-predsjednica-vlade/8825"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7129
+      },
+      "dato": "Dominica: Hoy manda un hombre, pero ya ha mandado una mujer. Eugenia Charles, primera ministra (1980-1995)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Dominica",
+          "url": "https://www.worldstatesmen.org/Dominica.html"
+        },
+        {
+          "nombre": "Encyclopedia.com: Eugenia Charles",
+          "url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/charles-eugenia-1919"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7130
+      },
+      "dato": "Eslovaquia: Hoy manda un hombre, pero ya ha mandado una mujer. Iveta Radičová, primera ministra (2010-2012). Solo una fuente abierta.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Gobierno de Eslovaquia: historia",
+          "url": "https://www.vlada.gov.sk/vlada-sr/historia-vlad-sr/"
+        },
+        {
+          "nombre": "Council of Women World Leaders: Iveta Radičová",
+          "url": "https://www.councilwomenworldleaders.org/iveta-radicov"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7131
+      },
+      "dato": "Eslovenia: Hoy manda un hombre, pero ya ha mandado una mujer. Alenka Bratušek, primera ministra (2013-2014). Anunció su dimisión el 5-5-2014 y siguió en funciones hasta que se formó el nuevo gobierno.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: primer ministro de Eslovenia",
+          "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Slovenia"
+        },
+        {
+          "nombre": "Washington Examiner, mayo de 2014",
+          "url": "https://www.washingtonexaminer.com/?p=503112"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7132
+      },
+      "dato": "Estonia: Hoy manda un hombre, pero ya ha mandado una mujer. Kaja Kallas, primera ministra (2021-2024)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Gobierno de Estonia: Kaja Kallas",
+          "url": "https://www.valitsus.ee/en/prime-minister-ministers/prime-minister-kaja-kallas"
+        },
+        {
+          "nombre": "ERR News",
+          "url": "https://news.err.ee/1609384541/kaja-kallas-to-resign-as-prime-minister-in-mid-july"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7133
+      },
+      "dato": "Filipinas: Hoy manda un hombre, pero ya ha mandado una mujer. Corazon Aquino, presidenta (1986-1992) · Gloria Macapagal Arroyo, presidenta (2001-2010)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "The Irish Times: Corazon Aquino",
+          "url": "https://www.irishtimes.com/news/former-philippine-leader-aquino-dies-1.844244"
+        },
+        {
+          "nombre": "The Irish Times: Gloria Macapagal Arroyo",
+          "url": "https://www.irishtimes.com/news/arroyo-new-philippine-president-as-estrada-ousted-1.372212"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7134
+      },
+      "dato": "Finlandia: Hoy manda un hombre, pero ya ha mandado una mujer. Anneli Jäätteenmäki, primera ministra (2003) · Mari Kiviniemi, primera ministra (2010-2011) · Sanna Marin, primera ministra (2019-2023)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Gobierno de Finlandia: Sanna Marin",
+          "url": "https://valtioneuvosto.fi/en/governments-and-ministers/ministers/-/min/sanna-marin"
+        },
+        {
+          "nombre": "Gobierno de Finlandia: Mari Kiviniemi",
+          "url": "https://valtioneuvosto.fi/en/governments-and-ministers/ministers/-/min/mari-kiviniemi"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7135
+      },
+      "dato": "Gabón: Hoy manda un hombre, pero ya ha mandado una mujer. Rose Francine Rogombé, presidenta interina (2009). Presidió la transición unos cuatro meses.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Africa Briefing",
+          "url": "https://africabriefing.com/african-women-leaders-redefine-power-across-the-continent/"
+        },
+        {
+          "nombre": "Daba Finance",
+          "url": "https://dabafinance.com/en/insights/african-women-who-have-served-as-heads-of-state"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7136
+      },
+      "dato": "Guyana: Hoy manda un hombre, pero ya ha mandado una mujer. Janet Jagan, primera ministra y luego presidenta (1997-1999)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Guyana",
+          "url": "https://www.worldstatesmen.org/Guyana.htm"
+        },
+        {
+          "nombre": "Wikipedia: Janet Jagan",
+          "url": "https://en.wikipedia.org/wiki/Janet_Jagan"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7137
+      },
+      "dato": "Honduras: Hoy manda un hombre, pero ya ha mandado una mujer. Xiomara Castro, presidenta (2022-2026)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Honduras",
+          "url": "https://www.worldstatesmen.org/Honduras.htm"
+        },
+        {
+          "nombre": "La Prensa (Honduras), toma de posesión de Asfura",
+          "url": "https://www.laprensa.hn/honduras/toma-posesion-nasry-asfura-nuevo-presidente-honduras-FD29083262"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7138
+      },
+      "dato": "India: Hoy manda un hombre, pero ya ha mandado una mujer. Indira Gandhi, primera ministra (1966-1977 y 1980-1984). La presidenta de la India (Droupadi Murmu) tiene un cargo ceremonial; manda el primer ministro.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: Indira Gandhi",
+          "url": "https://en.wikipedia.org/wiki/Indira_Gandhi"
+        },
+        {
+          "nombre": "UCLA South Asia",
+          "url": "https://southasia.ucla.edu/history-politics/independent-india/indira-gandhi"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7139
+      },
+      "dato": "Indonesia: Hoy manda un hombre, pero ya ha mandado una mujer. Megawati Sukarnoputri, presidenta (2001-2004)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: Megawati Sukarnoputri",
+          "url": "https://en.wikipedia.org/wiki/Megawati_Sukarnoputri"
+        },
+        {
+          "nombre": "RRI",
+          "url": "https://rri.co.id/voice-of-indonesia/national/2704723/from-a-founding-presidents-daughter-to-indonesias-first-female-head-of-state"
+        },
+        {
+          "nombre": "Council of Women World Leaders",
+          "url": "https://www.councilwomenworldleaders.org/megawati-sukarnoputri"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7140
+      },
+      "dato": "Israel: Hoy manda un hombre, pero ya ha mandado una mujer. Golda Meir, primera ministra (1969-1974)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: Golda Meir",
+          "url": "https://en.wikipedia.org/wiki/Golda_Meir"
+        },
+        {
+          "nombre": "EBSCO Research Starters",
+          "url": "https://www.ebsco.com/research-starters/history/golda-meir"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7141
+      },
+      "dato": "Jamaica: Hoy manda un hombre, pero ya ha mandado una mujer. Portia Simpson-Miller, primera ministra (2006-2007 y 2012-2016)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Jamaica",
+          "url": "https://www.worldstatesmen.org/Jamaica.htm"
+        },
+        {
+          "nombre": "CIDOB: Portia Simpson-Miller",
+          "url": "https://www.cidob.org/lider-politico/portia-simpson-miller"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7142
+      },
+      "dato": "Letonia: Hoy manda un hombre, pero ya ha mandado una mujer. Laimdota Straujuma, primera ministra (2014-2016) · Evika Siliņa, primera ministra (2023-2026)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Gobierno de Letonia: anteriores primeros ministros",
+          "url": "https://www.mk.gov.lv/en/ex-prime-ministers-republic-latvia"
+        },
+        {
+          "nombre": "LSM, 14-5-2026",
+          "url": "https://eng.lsm.lv/article/politics/politics/14.05.2026-latvian-prime-minister-evika-silina-steps-down.a647082/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7143
+      },
+      "dato": "Liberia: Hoy manda un hombre, pero ya ha mandado una mujer. Ellen Johnson Sirleaf, presidenta (2006-2018) · Ruth Perry, presidenta del Consejo de Estado (1996-1997). Ellen Johnson Sirleaf fue la primera mujer elegida presidenta en África.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Africa Briefing",
+          "url": "https://africabriefing.com/african-women-leaders-redefine-power-across-the-continent/"
+        },
+        {
+          "nombre": "CSIS",
+          "url": "https://www.csis.org/blogs/baraza/power-and-parity-women-african-political-positions"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7144
+      },
+      "dato": "Malaui: Hoy manda un hombre, pero ya ha mandado una mujer. Joyce Banda, presidenta (2012-2014)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Africa Briefing",
+          "url": "https://africabriefing.com/african-women-leaders-redefine-power-across-the-continent/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7145
+      },
+      "dato": "Nepal: Hoy manda un hombre, pero ya ha mandado una mujer. Sushila Karki, primera ministra de un gobierno interino (2025-2026). Dirigió unos seis meses el gobierno interino que convocó elecciones.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "The Himalayan Times, 27-3-2026",
+          "url": "https://thehimalayantimes.com/kathmandu/outgoing-pm-karki-returns-home"
+        },
+        {
+          "nombre": "Wikipedia: Sushila Karki",
+          "url": "https://en.wikipedia.org/wiki/Sushila_Karki"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7146
+      },
+      "dato": "Noruega: Hoy manda un hombre, pero ya ha mandado una mujer. Gro Harlem Brundtland, primera ministra (1981, 1986-1989 y 1990-1996) · Erna Solberg, primera ministra (2013-2021)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Store norske leksikon: Gro Harlem Brundtland",
+          "url": "https://snl.no/Gro_Harlem_Brundtland"
+        },
+        {
+          "nombre": "Store norske leksikon: Erna Solberg",
+          "url": "https://snl.no/Erna_Solberg"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7147
+      },
+      "dato": "Nueva Zelanda: Hoy manda un hombre, pero ya ha mandado una mujer. Jenny Shipley, primera ministra (1997-1999) · Helen Clark, primera ministra (1999-2008) · Jacinda Ardern, primera ministra (2017-2023)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Oceanía",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: primeros ministros de Nueva Zelanda",
+          "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_New_Zealand"
+        },
+        {
+          "nombre": "Otago Daily Times",
+          "url": "https://www.odt.co.nz/news/national/trio-trailblazers-nzs-female-prime-ministers"
+        },
+        {
+          "nombre": "RNZ, 25-1-2023",
+          "url": "https://www.rnz.co.nz/news/political/483045/chris-hipkins-sworn-in-as-prime-minister"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7148
+      },
+      "dato": "Pakistán: Hoy manda un hombre, pero ya ha mandado una mujer. Benazir Bhutto, primera ministra (1988-1990 y 1993-1996)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "EBSCO Research Starters",
+          "url": "https://www.ebsco.com/research-starters/womens-studies-and-feminism/bhutto-becomes-first-woman-elected-lead-muslim"
+        },
+        {
+          "nombre": "Wikipedia: Benazir Bhutto",
+          "url": "https://en.wikipedia.org/wiki/Benazir_Bhutto"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7149
+      },
+      "dato": "Panamá: Hoy manda un hombre, pero ya ha mandado una mujer. Mireya Moscoso, presidenta (1999-2004)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Panamá",
+          "url": "https://www.worldstatesmen.org/Panama.htm"
+        },
+        {
+          "nombre": "Wikipedia: Mireya Moscoso",
+          "url": "https://en.wikipedia.org/wiki/Mireya_Moscoso"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7150
+      },
+      "dato": "Reino Unido: Hoy manda un hombre, pero ya ha mandado una mujer. Margaret Thatcher, primera ministra (1979-1990) · Theresa May, primera ministra (2016-2019) · Liz Truss, primera ministra (2022)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Gobierno del Reino Unido: Margaret Thatcher",
+          "url": "https://www.gov.uk/government/history/past-prime-ministers/margaret-thatcher"
+        },
+        {
+          "nombre": "Gobierno del Reino Unido: Theresa May",
+          "url": "https://www.gov.uk/government/history/past-prime-ministers/theresa-may"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7151
+      },
+      "dato": "República Centroafricana: Hoy manda un hombre, pero ya ha mandado una mujer. Catherine Samba-Panza, presidenta de la transición (2014-2016)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Africa Briefing",
+          "url": "https://africabriefing.com/african-women-leaders-redefine-power-across-the-continent/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7152
+      },
+      "dato": "Samoa: Hoy manda un hombre, pero ya ha mandado una mujer. Fiamē Naomi Mataʻafa, primera ministra (2021-2025)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Oceanía",
+      "fuentes": [
+        {
+          "nombre": "RNZ, 16-9-2025",
+          "url": "https://www.rnz.co.nz/news/pacific/573201/laaulialemalietoa-schmidt-sworn-in-as-samoa-s-8th-prime-minister-third-leader-from-savai-i"
+        },
+        {
+          "nombre": "ONU Mujeres Asia-Pacífico, 2021",
+          "url": "https://asiapacific.unwomen.org/en/news-and-events/stories/2021/07/first-woman-prime-minister-for-samoa-marks-progress"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7153
+      },
+      "dato": "Sri Lanka: Hoy manda un hombre, pero ya ha mandado una mujer. Sirimavo Bandaranaike, primera ministra (1960-1965 y 1970-1977) · Chandrika Kumaratunga, presidenta (1994-2005). Sirimavo Bandaranaike fue la primera mujer del mundo primera ministra (1960).",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "EBSCO Research Starters: Sirimavo Bandaranaike",
+          "url": "https://www.ebsco.com/research-starters/history/sirimavo-bandaranaike-sri-lanka-becomes-worlds-first-female-prime"
+        },
+        {
+          "nombre": "Daily FT: Chandrika Kumaratunga",
+          "url": "https://www.ft.lk/columns/Chandrika-Bandaranaike-Kumaratunga-Sri-Lanka-s-daughter-of-destiny/4-778228"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7154
+      },
+      "dato": "Suecia: Hoy manda un hombre, pero ya ha mandado una mujer. Magdalena Andersson, primera ministra (2021-2022). En noviembre de 2026 el gobierno sueco está en funciones y puede cambiar en pocas semanas.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Riksdag: gobiernos anteriores",
+          "url": "https://www.riksdagen.se/en/how-the-riksdag-works/democracy/forming-a-government/previous-formations-of-government-and-prime-ministers/"
+        },
+        {
+          "nombre": "Wikipedia: formación de gobierno de Suecia 2026",
+          "url": "https://en.wikipedia.org/wiki/2026_Swedish_government_formation"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7155
+      },
+      "dato": "Tailandia: Hoy manda un hombre, pero ya ha mandado una mujer. Yingluck Shinawatra, primera ministra (2011-2014) · Paetongtarn Shinawatra, primera ministra (2024-2025)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Al Jazeera, 7-5-2014",
+          "url": "https://www.aljazeera.com/news/2014/5/7/thai-pm-found-guilty-of-abuse-of-power"
+        },
+        {
+          "nombre": "Al Jazeera, 29-8-2025",
+          "url": "https://www.aljazeera.com/news/2025/8/29/thai-court-removes-prime-minister-paetongtarn-shinawatra-from-office"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7156
+      },
+      "dato": "Turquía: Hoy manda un hombre, pero ya ha mandado una mujer. Tansu Çiller, primera ministra (1993-1996)",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Encyclopedia.com: Tansu Çiller",
+          "url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/ciller-tansu-1946"
+        },
+        {
+          "nombre": "Wikipedia: Tansu Çiller",
+          "url": "https://en.wikipedia.org/wiki/Tansu_%C3%87iller"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7157
+      },
+      "dato": "Bosnia y Herzegovina: El poder está repartido o es difícil de decir. Borjana Krišto, presidenta del Consejo de Ministros (desde 2023). El país lo dirige una presidencia de tres personas, con un alto representante internacional.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: Borjana Krišto",
+          "url": "https://en.wikipedia.org/wiki/Borjana_Kri%C5%A1to"
+        },
+        {
+          "nombre": "Wikipedia: líderes actuales",
+          "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7158
+      },
+      "dato": "Cabo Verde: El poder está repartido o es difícil de decir. Janira Hopffer Almada, presidenta interina (septiembre-noviembre de 2026). En Cabo Verde el poder se reparte entre la presidencia y el primer ministro.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Forbes África Lusófona, 18-11-2026",
+          "url": "https://forbesafricalusofona.com/?p=179249"
+        },
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7159
+      },
+      "dato": "Ciudad del Vaticano: El poder está repartido o es difícil de decir. Raffaella Petrini, presidenta de la Gobernación (desde 2025). En el Vaticano el poder lo tiene el papa.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: Gobernación de la Ciudad del Vaticano",
+          "url": "https://en.wikipedia.org/wiki/Governorate_of_Vatican_City_State"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": true,
+      "interno": {
+        "estado": "parcial",
+        "nota": "Una sola fuente abierta o fuentes que no se pudieron abrir: completar. Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7160
+      },
+      "dato": "Francia: El poder está repartido o es difícil de decir. Édith Cresson, primera ministra (1991-1992) · Élisabeth Borne, primera ministra (2022-2024). En Francia el poder lo comparten el presidente y el primer ministro. Nunca ha habido una presidenta.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": true,
+      "interno": {
+        "estado": "parcial",
+        "nota": "Una sola fuente abierta o fuentes que no se pudieron abrir: completar. Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7161
+      },
+      "dato": "Georgia: El poder está repartido o es difícil de decir. Nino Burjanadze, presidenta interina (2003-2004 y 2007-2008). Georgia cambió de sistema de gobierno y sus presidentas interinas lo fueron solo unos meses.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: Nino Burjanadze",
+          "url": "https://en.wikipedia.org/wiki/Nino_Burjanadze"
+        },
+        {
+          "nombre": "RFE/RL, 27-11-2007",
+          "url": "https://www.rferl.org/amp/1079202.html"
+        },
+        {
+          "nombre": "Enciclopedia Georgiana",
+          "url": "https://www.georgianencyclopedia.ge/en/form_eng/512"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7162
+      },
+      "dato": "Guinea-Bisáu: El poder está repartido o es difícil de decir. Adiato Djaló Nandigna, primera ministra en funciones (2012) · Carmen Pereira, presidenta en funciones dos días (1984). En Guinea-Bisáu el poder se reparte entre el presidente y el primer ministro.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Guide to Women Leaders: Guinea-Bisáu",
+          "url": "https://guide2womenleaders.com/Guinea_Bissau.htm"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7163
+      },
+      "dato": "Haití: El poder está repartido o es difícil de decir. Ertha Pascal-Trouillot, presidenta provisional (1990-1991) · Claudette Werleigh, primera ministra (1995-1996) · Michèle Pierre-Louis, primera ministra (2008-2009). Haití ha tenido presidentes provisionales, primeros ministros y consejos de transición, y el poder real ha cambiado de manos. Las fechas exactas de Werleigh y Pierre-Louis no están confirmadas.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Haití",
+          "url": "https://www.worldstatesmen.org/Haiti.htm"
+        },
+        {
+          "nombre": "Encyclopedia.com: Ertha Pascal-Trouillot",
+          "url": "https://encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/pascal-trouillot-ertha-1943"
+        },
+        {
+          "nombre": "UPI, 5-4-1991",
+          "url": "https://www.upi.com/Archives/1991/04/05/Former-Hatian-president-arrested/5188670827600/"
+        },
+        {
+          "nombre": "Americas Quarterly, 2009",
+          "url": "https://americasquarterly.org/blog/haitian-senate-sacks-its-prime-minister/"
+        },
+        {
+          "nombre": "Al Jazeera, 30-10-2009",
+          "url": "https://www.aljazeera.com/news/2009/10/30/haiti-pm-voted-out-by-senators"
+        },
+        {
+          "nombre": "Human Rights Watch, 1996",
+          "url": "https://www.hrw.org/reports/1996/WR96/Americas-07.htm"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7164
+      },
+      "dato": "Kirguistán: El poder está repartido o es difícil de decir. Roza Otunbayeva, presidenta (interina, 2010-2011). Durante su mandato el poder pasó de la presidencia al gobierno.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: Roza Otunbayeva",
+          "url": "https://en.wikipedia.org/wiki/Roza_Otunbayeva"
+        },
+        {
+          "nombre": "Al Jazeera, 8-4-2010",
+          "url": "https://www.aljazeera.com/news/2010/4/8/profile-roza-otunbayeva"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7165
+      },
+      "dato": "Liechtenstein: El poder está repartido o es difícil de decir. Brigitte Haas, jefa del gobierno (desde abril de 2025). El príncipe conserva gran parte del poder real.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "ORF, 9-2-2025",
+          "url": "https://orf.at/stories/3384338/"
+        },
+        {
+          "nombre": "SRF, 10-2-2025",
+          "url": "https://www.srf.ch/news/international/nach-den-landtagswahlen-wie-viel-macht-hat-die-regierungschefin-in-liechtenstein"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7166
+      },
+      "dato": "Lituania: El poder está repartido o es difícil de decir. Kazimira Prunskienė, primera ministra (1990-1991) · Ingrida Šimonytė, primera ministra (2020-2024) · Inga Ruginienė, primera ministra (2025-2026) · Dalia Grybauskaitė, presidenta (2009-2019). Lituania reparte el poder entre la presidencia y la primera ministra.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "LRT, 23-6-2026",
+          "url": "https://www.lrt.lt/en/news-in-english/19/2969119/ruginiene-resigns-as-lithuanian-prime-minister"
+        },
+        {
+          "nombre": "Wikipedia: primer ministro de Lituania",
+          "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Lithuania"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7167
+      },
+      "dato": "Malí: El poder está repartido o es difícil de decir. Cissé Mariam Kaïdama Sidibé, primera ministra (2011-2012). En Malí el poder se ha repartido entre el presidente y el primer ministro.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Afrik.com, 4-4-2011",
+          "url": "https://www.afrik.com/cisse-mariam-kaidama-sidibe-une-femme-premier-ministre-au-mali"
+        },
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7168
+      },
+      "dato": "Marruecos: El poder está repartido o es difícil de decir. Fatima Ezzahra El Mansouri, primera ministra (desde septiembre de 2026). En Marruecos el rey es la máxima autoridad y nombra a la primera ministra.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "PBS NewsHour, 29-9-2026",
+          "url": "https://www.pbs.org/newshour/world/moroccos-king-appoints-fatima-zahra-mansouri-as-countrys-1st-woman-prime-minister"
+        },
+        {
+          "nombre": "The National, 16-10-2026",
+          "url": "https://www.thenationalnews.com/news/mena/2026/10/16/morocco-government-sworn-in-under-first-female-prime-minister-fatima-el-mansouri/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7169
+      },
+      "dato": "Moldavia: El poder está repartido o es difícil de decir. Maia Sandu, presidenta (desde 2020) y antes primera ministra (2019) · Zinaida Greceanîi, primera ministra (2008-2009) · Natalia Gavrilița, primera ministra (2021-2023). En Moldavia el poder se reparte entre la presidenta y el primer ministro.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Presidencia de Moldavia: biografía de Maia Sandu",
+          "url": "https://presedinte.md/eng/biography"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7170
+      },
+      "dato": "Mónaco: El poder está repartido o es difícil de decir. Isabelle Berro-Amadeï, ministra de Estado en funciones (2025). En Mónaco el príncipe conserva el poder real. Ocupó el cargo en funciones desde el 10-1-2025, cuando el ministro de Estado fue hospitalizado, hasta el 21-7-2025.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Gobierno de Mónaco",
+          "url": "https://en.gouv.mc/Princely-Governement/News/Christophe-Mirmand-Appointed-Minister-of-State-of-the-Principality-of-Monaco-as-of-21-July-2025"
+        },
+        {
+          "nombre": "Monaco Hebdo, enero de 2025",
+          "url": "https://www.monaco-hebdo.com/politique/didier-guillaume-hospitalise-isabelle-berro-amadei-assure-linterim/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": true,
+      "interno": {
+        "estado": "parcial",
+        "nota": "Una sola fuente abierta o fuentes que no se pudieron abrir: completar. Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7171
+      },
+      "dato": "Nicaragua: El poder está repartido o es difícil de decir. Violeta Chamorro, presidenta (1990-1997) · Rosario Murillo, copresidenta junto a Daniel Ortega (desde 2025). Desde 2025 el cargo más alto lo comparten dos personas (copresidencia).",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "World Statesmen: Nicaragua",
+          "url": "https://www.worldstatesmen.org/Nicaragua.htm"
+        },
+        {
+          "nombre": "CIDOB: Violeta Barrios de Chamorro",
+          "url": "https://www.cidob.org/lider-politico/violeta-barrios-de-chamorro"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7172
+      },
+      "dato": "Polonia: El poder está repartido o es difícil de decir. Hanna Suchocka, primera ministra (1992-1993) · Ewa Kopacz, primera ministra (2014-2015) · Beata Szydło, primera ministra (2015-2017). En Polonia el poder se reparte entre el presidente y el primer ministro.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Ministerio de Educación de Polonia (ZPE): línea cronológica",
+          "url": "https://zpe.gov.pl/a/linia-chronologiczna/DANWYk7bc"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7173
+      },
+      "dato": "Portugal: El poder está repartido o es difícil de decir. Maria de Lourdes Pintasilgo, primera ministra (1979-1980). En Portugal el poder se reparte entre el presidente y el primer ministro.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Archivo de la Presidencia de Portugal",
+          "url": "https://www.arquivo.presidencia.pt/details?id=13617"
+        },
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7174
+      },
+      "dato": "República Democrática del Congo: El poder está repartido o es difícil de decir. Judith Suminwa Tuluka, primera ministra (desde 2024). En la República Democrática del Congo el poder se reparte entre el presidente y el primer ministro.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "CSIS",
+          "url": "https://www.csis.org/blogs/baraza/power-and-parity-women-african-political-positions"
+        },
+        {
+          "nombre": "Primatura de la RD del Congo",
+          "url": "https://www.primature.gouv.cd/"
+        },
+        {
+          "nombre": "Brussels Times, 2-4-2024",
+          "url": "http://www.brusselstimes.com/989911/dr-congo-appoints-judith-suminwa-tuluka-as-first-female-prime-minister"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7175
+      },
+      "dato": "República de China: El poder está repartido o es difícil de decir. Tsai Ing-wen, presidenta (2016-2024). En Taiwán el poder se reparte entre la presidencia y el primer ministro (nunca una mujer en este cargo).",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Presidencia de Taiwán",
+          "url": "https://english.president.gov.tw/Page/646"
+        },
+        {
+          "nombre": "Wikipedia: Tsai Ing-wen",
+          "url": "https://en.wikipedia.org/wiki/Tsai_Ing-wen"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7176
+      },
+      "dato": "Ruanda: El poder está repartido o es difícil de decir. Agathe Uwilingiyimana, primera ministra (1993-1994). En Ruanda el poder se repartía entre el presidente y el primer ministro.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Africa Briefing",
+          "url": "https://africabriefing.com/african-women-leaders-redefine-power-across-the-continent/"
+        },
+        {
+          "nombre": "Encyclopedia.com: Agathe Uwilingiyimana",
+          "url": "https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/uwilingiyimana-agathe-1953-1994"
+        },
+        {
+          "nombre": "The New Times (Ruanda)",
+          "url": "https://www.newtimes.co.rw/article/4677/news/rwanda/agathe-uwilingiyimana-a-hero-whose-entire-political-career-had-seen-constant-threats"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7177
+      },
+      "dato": "Rumania: El poder está repartido o es difícil de decir. Viorica Dăncilă, primera ministra (2018-2019). En Rumanía el poder se reparte entre el presidente y el primer ministro.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": true,
+      "interno": {
+        "estado": "parcial",
+        "nota": "Una sola fuente abierta o fuentes que no se pudieron abrir: completar. Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7178
+      },
+      "dato": "San Marino: El poder está repartido o es difícil de decir. Desde 1981 ha habido capitanas regentes (el cargo lo ocupan dos personas durante seis meses). San Marino tiene dos jefes de Estado a la vez, que cambian cada seis meses.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: capitanes regentes de San Marino",
+          "url": "https://en.wikipedia.org/wiki/Captains_Regent_of_San_Marino"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": true,
+      "interno": {
+        "estado": "parcial",
+        "nota": "Una sola fuente abierta o fuentes que no se pudieron abrir: completar. Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7179
+      },
+      "dato": "Santo Tomé y Príncipe: El poder está repartido o es difícil de decir. Maria das Neves, primera ministra (2002-2004) · Maria do Carmo Silveira, primera ministra (2005-2006). En Santo Tomé y Príncipe el poder se reparte entre el presidente y el primer ministro.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Council of Women World Leaders: Maria do Carmo Silveira",
+          "url": "https://www.councilwomenworldleaders.org/maria-do-carmo-silveira"
+        },
+        {
+          "nombre": "Council of Women World Leaders: Maria das Neves",
+          "url": "https://www.councilwomenworldleaders.org/maria-das-neves"
+        },
+        {
+          "nombre": "Central Banking, 10-6-2005",
+          "url": "https://www.centralbanking.com/central-banking/news/1409643/sao-tome-names-central-banker-prime-minister"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7180
+      },
+      "dato": "Senegal: El poder está repartido o es difícil de decir. Mame Madior Boye, primera ministra (2001-2002) · Aminata Touré, primera ministra (2013-2014). En Senegal el poder se reparte entre el presidente y el primer ministro.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Le Soleil, 31-5-2026",
+          "url": "https://lesoleil.sn/actualites/arts-et-culture/les-dimanches-de-lhistoire-mame-madior-boye-la-premiere-femme-a-la-tete-du-gouvernement-senegalais/"
+        },
+        {
+          "nombre": "Le Soleil: Mame Madior Boye y Aminata Touré",
+          "url": "https://lesoleil.sn/actualites/politique/mame-madior-boye-et-aminata-toure-brisent-le-plafond-de-verre/"
+        },
+        {
+          "nombre": "Vie publique Senegal: primeros ministros",
+          "url": "https://www.vie-publique.sn/etat-senegal/premiers-ministres"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7181
+      },
+      "dato": "Serbia: El poder está repartido o es difícil de decir. Ana Brnabić, primera ministra (2017-2024) y presidenta interina (2026). En Serbia el poder se reparte entre el presidente y la primera ministra.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Gobierno de Serbia, 26-10-2022",
+          "url": "https://www.srbija.gov.rs/vest/en/196033/new-government-of-serbia-elected.php"
+        },
+        {
+          "nombre": "Wikipedia: jefes de Estado de Serbia",
+          "url": "https://en.wikipedia.org/wiki/List_of_heads_of_state_of_Serbia"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7182
+      },
+      "dato": "Suiza: El poder está repartido o es difícil de decir. Varias mujeres han presidido la Confederación Suiza (por turnos de un año), entre ellas Ruth Dreifuss (1999), Doris Leuthard (2010 y 2017), Simonetta Sommaruga (2015 y 2020) y Karin Keller-Sutter (2025). Suiza la gobierna un consejo de siete personas; la presidencia rota cada año.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: presidentes de la Confederación Suiza",
+          "url": "https://en.wikipedia.org/wiki/List_of_presidents_of_the_Swiss_Confederation"
+        },
+        {
+          "nombre": "Gobierno de Suiza: mujeres en el Consejo Federal",
+          "url": "https://www.admin.ch/gov/en/start/federal-council/history-of-the-federal-council/women-in-the-federal-council.html"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7183
+      },
+      "dato": "Togo: El poder está repartido o es difícil de decir. Victoire Tomegah Dogbé, primera ministra (2020-2025). Togo cambió su sistema de gobierno en 2025: hoy manda el presidente del Consejo de Ministros. La primera ministra dimitió el 2-5-2025.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres líderes",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Africa Briefing",
+          "url": "https://africabriefing.com/african-women-leaders-redefine-power-across-the-continent/"
+        },
+        {
+          "nombre": "Koaci, 3-5-2025",
+          "url": "https://www.koaci.com/article/2025/05/03/togo/politique/togo-designe-president-du-conseil-faure-gnassingbe-prete-serment-a-lome_186555.html"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7184
+      },
+      "dato": "Ucrania: El poder está repartido o es difícil de decir. Yulia Tymoshenko, primera ministra (2005 y 2007-2010) · Yulia Svyrydenko, primera ministra (2025-2026). En Ucrania el poder se reparte entre el presidente y el primer ministro.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Gobierno de Ucrania, 17-7-2025",
+          "url": "https://www.kmu.gov.ua/en/news/verkhovna-rada-pryznachyla-premier-ministrom-ukrainy-iuliiu-svyrydenko"
+        },
+        {
+          "nombre": "Gobierno de Ucrania, 16-7-2026",
+          "url": "https://www.kmu.gov.ua/en/news/verkhovna-rada-pryznachyla-serhiia-koretskoho-premier-ministrom-ukrainy"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7185
+      },
+      "dato": "Kazajistán: Nunca ha mandado una mujer desde 1960.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Primer ministro de Kazajistán (web oficial)",
+          "url": "https://primeminister.kz/en"
+        },
+        {
+          "nombre": "Akorda: Presidencia de Kazajistán",
+          "url": "https://www.akorda.kz/en"
+        },
+        {
+          "nombre": "PakExam: presidentes y primeros ministros",
+          "url": "https://pakexam.com/wiki/countries/kazakhstan/presidents-prime-ministers"
+        },
+        {
+          "nombre": "WorldAtlas: primeros ministros de Kazajistán",
+          "url": "https://www.worldatlas.com/articles/prime-ministers-of-kazakhstan-since-1991.html"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7186
+      },
+      "dato": "Kosovo: Nunca ha mandado una mujer desde 1960. Atifete Jahjaga (2011-2016), Vjosa Osmani (2020-2026) y Justina Shiroka Pula (desde octubre de 2026) han sido presidentas con poderes limitados. Manda el primer ministro, y nunca lo ha sido una mujer.",
+      "sub": "Quién manda de verdad (criterio de Mireia, opción A); comprobado el 22-11-2026",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Presidencia de Kosovo",
+          "url": "https://president-ksgov.net/en"
+        },
+        {
+          "nombre": "Al Jazeera, 7-10-2026",
+          "url": "https://www.aljazeera.com/news/2026/10/7/justina-shiroka-pula-kosovos-new-president-elected-during-a-crisis"
+        },
+        {
+          "nombre": "CIDOB: Justina Shiroka Pula",
+          "url": "https://www.cidob.org/lider-politico/justina-shiroka-pula"
+        },
+        {
+          "nombre": "World Statesmen: Kosovo",
+          "url": "https://www.worldstatesmen.org/Kosovo.html"
+        },
+        {
+          "nombre": "lex.dk: presidentes y primeros ministros de Kosovo",
+          "url": "https://lex.dk/Kosovos_pr%C3%A6sidenter_og_premierministre"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": false,
+      "interno": {
+        "estado": "verificada",
+        "nota": "Texto de Claude, pendiente de revisión de Mireia."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7187
+      },
+      "dato": "Nunca ha mandado una mujer desde 1960 (América Latina): Antigua y Barbuda, Bahamas, Belice, Colombia, Cuba, Ecuador, El Salvador, Granada, Guatemala, Maldivas, Mauricio, Paraguay, República Dominicana, San Cristóbal y Nieves, San Vicente y las Granadinas, Santa Lucía, Seychelles, Uruguay.",
+      "sub": "Comprobado por ausencia en las listas de líderes; es la parte menos sólida del tema",
+      "region": "América Latina",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres jefas de Estado o de Gobierno (confirmación por ausencia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Wikipedia: líderes actuales de cada país",
+          "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
+        },
+        {
+          "nombre": "CIA: World Leaders (líder actual de cada país)",
+          "url": "https://www.cia.gov/resources/world-leaders/"
+        },
+        {
+          "nombre": "World Statesmen: listas de líderes por país",
+          "url": "https://www.worldstatesmen.org/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": true,
+      "interno": {
+        "estado": "parcial",
+        "nota": "Significa «no consta»: se ha mirado que ninguna mujer aparezca en el cargo que manda, sin abrir la lista histórica completa de cada país. Revisar antes de publicar. Países que no se investigaron y salen en gris: República Turca del Norte de Chipre, Sáhara Occidental y los territorios no independientes."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7188
+      },
+      "dato": "Nunca ha mandado una mujer desde 1960 (América del Norte): Estados Unidos.",
+      "sub": "Comprobado por ausencia en las listas de líderes; es la parte menos sólida del tema",
+      "region": "América del Norte",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres jefas de Estado o de Gobierno (confirmación por ausencia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Wikipedia: líderes actuales de cada país",
+          "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
+        },
+        {
+          "nombre": "CIA: World Leaders (líder actual de cada país)",
+          "url": "https://www.cia.gov/resources/world-leaders/"
+        },
+        {
+          "nombre": "World Statesmen: listas de líderes por país",
+          "url": "https://www.worldstatesmen.org/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": true,
+      "interno": {
+        "estado": "parcial",
+        "nota": "Significa «no consta»: se ha mirado que ninguna mujer aparezca en el cargo que manda, sin abrir la lista histórica completa de cada país. Revisar antes de publicar. Países que no se investigaron y salen en gris: República Turca del Norte de Chipre, Sáhara Occidental y los territorios no independientes."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7189
+      },
+      "dato": "Nunca ha mandado una mujer desde 1960 (Asia): Afganistán, Arabia Saudita, Armenia, Azerbaiyán, Baréin, Brunéi, Bután, Camboya, Catar, China, Chipre, Corea del Norte, Emiratos Árabes Unidos, Irak, Irán, Jordania, Kuwait, Laos, Líbano, Malasia, Mongolia, Omán, Palestina, Singapur, Siria, Tayikistán, Timor Oriental, Turkmenistán, Uzbekistán, Vietnam, Yemen.",
+      "sub": "Comprobado por ausencia en las listas de líderes; es la parte menos sólida del tema",
+      "region": "Asia",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres jefas de Estado o de Gobierno (confirmación por ausencia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Wikipedia: líderes actuales de cada país",
+          "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
+        },
+        {
+          "nombre": "CIA: World Leaders (líder actual de cada país)",
+          "url": "https://www.cia.gov/resources/world-leaders/"
+        },
+        {
+          "nombre": "World Statesmen: listas de líderes por país",
+          "url": "https://www.worldstatesmen.org/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": true,
+      "interno": {
+        "estado": "parcial",
+        "nota": "Significa «no consta»: se ha mirado que ninguna mujer aparezca en el cargo que manda, sin abrir la lista histórica completa de cada país. Revisar antes de publicar. Países que no se investigaron y salen en gris: República Turca del Norte de Chipre, Sáhara Occidental y los territorios no independientes."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7190
+      },
+      "dato": "Nunca ha mandado una mujer desde 1960 (Europa): Albania, Andorra, Bielorrusia, España, Grecia, Hungría, Irlanda, Luxemburgo, Macedonia del Norte, Malta, Montenegro, Países Bajos, República Checa, Rusia.",
+      "sub": "Comprobado por ausencia en las listas de líderes; es la parte menos sólida del tema",
+      "region": "Europa",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres jefas de Estado o de Gobierno (confirmación por ausencia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Wikipedia: líderes actuales de cada país",
+          "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
+        },
+        {
+          "nombre": "CIA: World Leaders (líder actual de cada país)",
+          "url": "https://www.cia.gov/resources/world-leaders/"
+        },
+        {
+          "nombre": "World Statesmen: listas de líderes por país",
+          "url": "https://www.worldstatesmen.org/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": true,
+      "interno": {
+        "estado": "parcial",
+        "nota": "Significa «no consta»: se ha mirado que ninguna mujer aparezca en el cargo que manda, sin abrir la lista histórica completa de cada país. Revisar antes de publicar. Países que no se investigaron y salen en gris: República Turca del Norte de Chipre, Sáhara Occidental y los territorios no independientes."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7191
+      },
+      "dato": "Nunca ha mandado una mujer desde 1960 (Oceanía): Estados Federados de Micronesia, Fiyi, Islas Salomón, Kiribati, Nauru, Palaos, Papúa Nueva Guinea, Tonga, Tuvalu, Vanuatu.",
+      "sub": "Comprobado por ausencia en las listas de líderes; es la parte menos sólida del tema",
+      "region": "Oceanía",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres jefas de Estado o de Gobierno (confirmación por ausencia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Wikipedia: líderes actuales de cada país",
+          "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
+        },
+        {
+          "nombre": "CIA: World Leaders (líder actual de cada país)",
+          "url": "https://www.cia.gov/resources/world-leaders/"
+        },
+        {
+          "nombre": "World Statesmen: listas de líderes por país",
+          "url": "https://www.worldstatesmen.org/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": true,
+      "interno": {
+        "estado": "parcial",
+        "nota": "Significa «no consta»: se ha mirado que ninguna mujer aparezca en el cargo que manda, sin abrir la lista histórica completa de cada país. Revisar antes de publicar. Países que no se investigaron y salen en gris: República Turca del Norte de Chipre, Sáhara Occidental y los territorios no independientes."
+      }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Mujeres al frente del país",
+        "detalle": "",
+        "mes": null,
+        "orden": 7192
+      },
+      "dato": "Nunca ha mandado una mujer desde 1960 (África): Angola, Argelia, Benín, Botsuana, Burkina Faso, Camerún, Chad, Comoras, Costa de Marfil, Egipto, Eritrea, Etiopía, Gambia, Ghana, Guinea, Guinea Ecuatorial, Kenia, Lesoto, Libia, Madagascar, Mauritania, Mozambique, Nigeria, Níger, República del Congo, Sierra Leona, Somalia, Somalilandia, Suazilandia, Sudáfrica, Sudán, Sudán del Sur, Túnez, Uganda, Yibuti, Zambia, Zimbabue.",
+      "sub": "Comprobado por ausencia en las listas de líderes; es la parte menos sólida del tema",
+      "region": "África",
+      "fuentes": [
+        {
+          "nombre": "Wikipedia: lista de mujeres jefas de Estado o de Gobierno (confirmación por ausencia)",
+          "url": "https://en.wikipedia.org/wiki/List_of_elected_or_appointed_female_heads_of_state_or_government"
+        },
+        {
+          "nombre": "Wikipedia: líderes actuales de cada país",
+          "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
+        },
+        {
+          "nombre": "CIA: World Leaders (líder actual de cada país)",
+          "url": "https://www.cia.gov/resources/world-leaders/"
+        },
+        {
+          "nombre": "World Statesmen: listas de líderes por país",
+          "url": "https://www.worldstatesmen.org/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": true,
+      "interno": {
+        "estado": "parcial",
+        "nota": "Significa «no consta»: se ha mirado que ninguna mujer aparezca en el cargo que manda, sin abrir la lista histórica completa de cada país. Revisar antes de publicar. Países que no se investigaron y salen en gris: República Turca del Norte de Chipre, Sáhara Occidental y los territorios no independientes."
+      }
     }
   ]
 }
