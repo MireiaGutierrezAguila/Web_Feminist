@@ -2911,6 +2911,39 @@
         "estado": "parcial",
         "nota": "Significa «no consta»: se ha mirado que ninguna mujer aparezca en el cargo que manda, sin abrir la lista histórica completa de cada país. Revisar antes de publicar. Países que no se investigaron y salen en gris: República Turca del Norte de Chipre, Sáhara Occidental y los territorios no independientes."
       }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "mapa",
+        "etiqueta": "Actividad · La mujer en el mundo · Aborto: ¿qué dice la ley? (2017)",
+        "detalle": "",
+        "mes": null,
+        "orden": 7300
+      },
+      "dato": "Leyes sobre el aborto por país (197 países y territorios): en qué casos lo permite la ley",
+      "sub": "Datos de 2017 de la ONU, agrupados en cuatro categorías para el mapa; la ficha de cada país muestra los motivos permitidos",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "ONU (UN DESA, División de Población): World Population Policies 2017, leyes y políticas sobre el aborto, datos por país (Excel)",
+          "url": "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2017_abortion_laws_policies_country_dataset.xlsx"
+        },
+        {
+          "nombre": "ONU (UN DESA, División de Población): World Population Policies (página de datos)",
+          "url": "https://www.un.org/development/desa/pd/data/world-population-policies"
+        },
+        {
+          "nombre": "Licencia Creative Commons CC BY 3.0 IGO (Copyright © 2019 United Nations)",
+          "url": "http://creativecommons.org/licenses/by/3.0/igo/"
+        }
+      ],
+      "comprobado": "2026-11-22",
+      "provisional": true,
+      "interno": {
+        "estado": "parcial",
+        "nota": "Datos de 2017 por decisión de Mireia (22-11-2026). Cita que pide la ONU: «United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Policies 2017: Abortion laws and policies.» Los datos se han agrupado en cuatro categorías y traducido (hay que indicarlo, es CC BY). Aviso: la ONU los etiqueta como 2017 pero alguna fila parece reflejar cambios posteriores (Irlanda, 2019); han cambiado leyes importantes desde entonces. Mireia decidió (22-11-2026) mostrar el tema a todas las edades y sin aviso aparte."
+      }
     }
   ]
 }

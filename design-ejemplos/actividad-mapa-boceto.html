@@ -46,6 +46,10 @@
   .zoom-flot button { min-width: 40px; padding: 6px 12px; font-size: 1.15rem; line-height: 1; background: rgba(23, 18, 31, .9); box-shadow: 0 2px 8px rgba(0, 0, 0, .5); }
   .buscador { display: inline-flex; align-items: center; gap: 8px; }
   .buscador select { min-height: 40px; max-width: 220px; padding: 6px 12px; font: inherit; font-size: .9rem; color: var(--blanco); background: rgba(23, 18, 31, .85); border: 1px solid rgba(185, 177, 201, .5); border-radius: 99px; }
+  /* flecha del selector propia y separada del borde redondeado (la del navegador queda pegada al filo) */
+  .buscador select { appearance: none; -webkit-appearance: none; padding-right: 42px; cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23F5F5F0' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 18px center; background-size: 12px 8px; }
 
   /* ---------- el mapa, en el marco de rosas de las otras actividades ---------- */
   .tablero { position: relative; padding: 14px; border: 2px solid rgba(185, 177, 201, .5); border-radius: 20px; background: var(--panel); }
@@ -68,6 +72,7 @@
   .leyenda-cab { display: none; }
   .leyenda-caja h3 { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .leyenda { display: grid; gap: 6px; font-size: .9rem; color: var(--blanco); }
+  .ico-cat { display: inline-block; margin-right: .4em; font-size: 1.75em; line-height: 1; vertical-align: -.14em; }   /* emoticono de la categoría, en grande para que se distinga */
   .ley-fila { display: flex; align-items: center; gap: 8px; }   /* «No hay datos» y el interruptor general, en la misma fila */
   .ley-fila .ley-item { flex: 1; min-height: 32px; padding: 3px 10px 3px 8px; font-size: .85rem; }
   .leyenda .vacia { margin: 0; color: var(--suave); font-size: .92rem; }
@@ -101,7 +106,8 @@
   .tema-cab { margin: 0 0 8px; max-width: 80ch; }
   .tema-cab h2 { margin: 0 0 6px; font-size: clamp(1.3rem, 3.6vw, 1.8rem); line-height: 1.25; }
   .tema-cab p { margin: 0; font-size: 1rem; color: #e6e0f0; }
-  #selTema { max-width: 330px; }
+  #selTema { max-width: min(100%, 400px); }
+  .buscador + .buscador { margin-left: 30px; }   /* separa el selector de país del de tema, para que el de tema tenga más sitio */
   .panel-tema { margin: 0 0 12px; }
   .juego { padding: 12px 16px; }
   /* panel del juego (preguntas, respuestas y botones) */
@@ -193,7 +199,6 @@
   <button class="btn-efectos" id="btnEfectos" type="button" aria-pressed="false"></button>
   <a class="logo" href="propuesta-d-mezcla.html">♀ Feminist</a>
   <h1 id="titulo"></h1>
-  <p class="sub" id="subtitulo"></p>
   <p class="aviso-boceto" id="avisoBoceto"></p>
   <p class="ref-enlace" id="refEnlace"></p>   <!-- justo debajo del aviso; cuando el aviso de boceto se quite, ocupa su sitio -->
 </div></header>
@@ -225,6 +230,7 @@
     <div class="notas-mapa">
       <div class="aviso-tema" id="avisoTema" hidden></div>
       <p class="fuente-tema" id="fuenteTema" hidden></p>
+      <p class="ayuda-mapa" id="infoMapa"></p>
       <p class="ayuda-mapa" id="ayudaMapa"></p>
     </div>
   </div>
@@ -241,13 +247,19 @@
   var $ = function (id) { return document.getElementById(id); };
   function el(tag, cls, t) { var e = document.createElement(tag); if (cls) { e.className = cls; } if (t) { e.textContent = t; } return e; }
   var SVGNS = 'http://www.w3.org/2000/svg';
-  function L(o) { return (o && o.es) || o || ''; }   // por ahora solo es; ca/en están pendientes de traducir
+  function L(o) { return (o && o.es) || o || ''; }
+  /* elemento con el texto de una categoría y, delante, su emoticono en grande (si lo tiene) */
+  function etiquetaCat(tag, clase, c) {
+    var e = el(tag, clase);
+    if (c.icono) { e.appendChild(el('span', 'ico-cat', c.icono)); }
+    e.appendChild(document.createTextNode(L(c.texto))); return e;
+  }   // por ahora solo es; ca/en están pendientes de traducir
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* Textos (después irán a los archivos de idioma; ca/en pendientes de traducir y de revisión de Mireia) */
   var TXT = {
     titulo: 'La mujer en el mundo',
-    subtitulo: 'Un mapamundi con los países a su tamaño real. Toca un país para conocerlo.',
+    subtitulo: 'Un mapamundi con los países a su tamaño real.',   /* va abajo, con las fuentes y la ayuda */
     aviso: 'Boceto (paso 2): temas con datos reales (Banco Mundial y fuentes abiertas de cada país). Los textos son un borrador pendiente de revisión de Mireia.',
     rotDemo: 'Elegir tema:', sinTema: 'Solo el mapa', saberMas: 'Saber más', si: 'Sí', no: 'No', sinDatosFicha: 'No tenemos datos de este país.', fuenteTemaAntes: 'Fuente: ', fuenteTemaEnlace: 'Banco Mundial, 2026', fuenteTemaDespues: '.', rotBuscar: 'Detalle sobre un país:', sinDatosLey: 'No hay datos', volverMapa: '↑ Volver al mapa', verFuentesPais: 'Ver las fuentes de este tema (se abre en una pestaña nueva)', elegir: 'Elige un país…', zoomMas: 'Acercar', zoomMenos: 'Alejar', reset: 'Ver todo',
     mapaTit: 'Mapamundi en proyección Equal Earth, con los países a su tamaño real',
@@ -261,7 +273,7 @@
   };
   var CONT = { 'Africa': 'África', 'Asia': 'Asia', 'Europe': 'Europa', 'North America': 'América del Norte', 'South America': 'América del Sur', 'Oceania': 'Oceanía', 'Seven seas (open ocean)': 'Islas de alta mar' };
   var TIPO = { 'Sovereign country': 'País soberano', 'Country': 'País', 'Sovereignty': 'País', 'Dependency': 'Territorio dependiente', 'Disputed': 'Territorio en disputa', 'Indeterminate': 'Estatus no determinado' };
-  var TEMAS_ARCHIVOS = ['data/mapa-matrimonio-ley.json', 'data/mapa-mujeres-gobierno.json'];   // un archivo por tema; cada uno trae título, categorías con color, países y fuente
+  var TEMAS_ARCHIVOS = ['data/mapa-matrimonio-ley.json', 'data/mapa-mujeres-gobierno.json', 'data/mapa-aborto-ley.json'];   // un archivo por tema; cada uno trae título, categorías con color, países y fuente
   var temas = [], tema = null;
 
   /* ---------- fondo de espirales y botón «Parar efectos» (los mismos que en las otras actividades) ---------- */
@@ -451,7 +463,7 @@
     f.appendChild(el('h3', '', p.es)); f.appendChild(el('p', 'en', p.en));
     if (tema && est.modo === 'juego' && !(tema.paises[selId] && est.reveladas[tema.paises[selId].cat])) { f.appendChild(el('p', 'res-tema', TXT.fichaOculta)); }   // sin desvelar la respuesta durante el juego
     else if (tema) {   // lo que dice el tema activo sobre este país: su categoría y, si la hay, el detalle
-      var d = tema.paises[selId], cat = d ? categoriaDe(d.cat) : null, r = el('p', 'res-tema', cat ? L(cat.texto) : TXT.sinDatosFicha);
+      var d = tema.paises[selId], cat = d ? categoriaDe(d.cat) : null, r = cat ? etiquetaCat('p', 'res-tema', cat) : el('p', 'res-tema', TXT.sinDatosFicha);
       r.style.borderLeftColor = cat ? cat.color : tema.sinDatos.color; f.appendChild(r);
       var hayDetalle = d && (tema.detalleModo !== 'mujeres' || (d.mujeres && d.mujeres.length) || d.nota);
       if (hayDetalle) {
@@ -461,7 +473,8 @@
           if (d.nota) { var ln = el('li'); ln.style.gridTemplateColumns = '1fr'; ln.appendChild(el('span', 'en', d.nota)); ul.appendChild(ln); }
           var lf = el('li'); lf.style.gridTemplateColumns = '1fr'; var af = el('a', '', TXT.verFuentesPais); af.href = 'fuentes-boceto.html?tipo=actividad&actividad=mapa'; af.target = '_blank'; af.rel = 'noopener'; lf.appendChild(af); ul.appendChild(lf);
         } else {
-          ['edad18', 'sinExcepcionPadres', 'anula', 'castiga'].forEach(function (k) { var li = el('li'); li.appendChild(el('span', '', L(tema.detalle[k]))); li.appendChild(el('b', '', d[k] ? TXT.si : TXT.no)); ul.appendChild(li); });
+          (tema.detalleClaves || ['edad18', 'sinExcepcionPadres', 'anula', 'castiga']).forEach(function (k) { var li = el('li'); li.appendChild(el('span', '', L(tema.detalle[k]))); li.appendChild(el('b', '', d[k] === true ? TXT.si : d[k] === false ? TXT.no : L(tema.detalleSinDato) || '—')); ul.appendChild(li); });   // «sí», «no» o «no especificado»
+          if (d.nota) { var lnn = el('li'); lnn.style.gridTemplateColumns = '1fr'; lnn.appendChild(el('span', 'en', d.nota)); ul.appendChild(lnn); }
         }
         det.appendChild(ul); f.appendChild(det);
       }
@@ -509,7 +522,7 @@
     var l = $('leyenda'), gc = $('leyendaGen'); l.textContent = ''; gc.textContent = ''; $('leyendaCaja').hidden = !tema;
     if (!tema) { return; }
     $('leyendaTit').textContent = TXT.leyendaTit;
-    var items = tema.categorias.slice().sort(function (a, b) { return a.orden - b.orden; }).map(function (c) { return { id: c.id, color: c.color, texto: c.texto }; });
+    var items = tema.categorias.slice().sort(function (a, b) { return a.orden - b.orden; }).map(function (c) { return { id: c.id, color: c.color, texto: c.texto, icono: c.icono }; });
     if (est.modo === 'explorar') { items.push({ id: '_sd', color: tema.sinDatos.color, texto: tema.sinDatos.texto }); }
     var gen = null;
     function estadoGeneral() { var n = items.filter(function (c) { return est.enc[c.id]; }).length; return n === items.length ? 'true' : (n === 0 ? 'false' : 'mixed'); }
@@ -524,7 +537,7 @@
       if (est.modo === 'juego' && !est.reveladas[c.id]) { return; }
       n++;
       var b = el('button', 'ley-item'); b.type = 'button'; b.setAttribute('role', 'switch'); b.setAttribute('aria-checked', est.enc[c.id] ? 'true' : 'false');
-      var sw = el('span', 'sw'); sw.style.setProperty('--c', c.color); sw.setAttribute('aria-hidden', 'true'); b.appendChild(sw); b.appendChild(el('span', '', c.id === '_sd' ? TXT.sinDatosLey : L(c.texto)));
+      var sw = el('span', 'sw'); sw.style.setProperty('--c', c.color); sw.setAttribute('aria-hidden', 'true'); b.appendChild(sw); b.appendChild(c.id === '_sd' ? el('span', '', TXT.sinDatosLey) : etiquetaCat('span', '', c));
       b.addEventListener('click', function () { est.enc[c.id] = !est.enc[c.id]; b.setAttribute('aria-checked', est.enc[c.id] ? 'true' : 'false'); actualizarGeneral(); repintar(); });
       if (c.id === '_sd') { fila = el('div', 'ley-fila'); fila.appendChild(b); } else { l.appendChild(b); }
     });
@@ -552,7 +565,7 @@
       var op = el('div', 'j-opciones'); op.setAttribute('role', 'group'); op.setAttribute('aria-label', L(J.pregunta));
       tema.categorias.slice().sort(function (a, b) { return a.orden - b.orden; }).forEach(function (c) {
         if (est.reveladas[c.id]) { return; }
-        var b = el('button', 'opcion', L(c.texto)); b.type = 'button'; b.addEventListener('click', function () { responder(c.id); }); op.appendChild(b);
+        var b = etiquetaCat('button', 'opcion', c); b.type = 'button'; b.addEventListener('click', function () { responder(c.id); }); op.appendChild(b);
       });
       j.appendChild(op);
       var sk = el('button', 'j-saltar', TXT.saltar); sk.type = 'button'; sk.addEventListener('click', function () { terminarExplorar(false); }); ac.appendChild(sk);
@@ -608,7 +621,7 @@
   }
 
   function iniciar() {
-    $('titulo').textContent = TXT.titulo; $('subtitulo').textContent = TXT.subtitulo; $('avisoBoceto').textContent = TXT.aviso;
+    $('titulo').textContent = TXT.titulo; $('infoMapa').textContent = TXT.subtitulo; $('avisoBoceto').textContent = TXT.aviso;
     (function () { var r = $('refEnlace'), a = el('a', '', TXT.refEnlaceEnlace); a.href = 'fuentes-boceto.html?tipo=actividad&actividad=mapa'; a.target = '_blank'; a.rel = 'noopener'; a.setAttribute('aria-label', TXT.refEnlaceEnlace + TXT.nuevaPestana); r.appendChild(document.createTextNode(TXT.refEnlaceAntes)); r.appendChild(a); r.appendChild(document.createTextNode(TXT.refEnlaceDespues)); })();
     $('mapaTit').textContent = TXT.mapaTit;
     $('rotDemo').textContent = TXT.rotDemo; $('rotBuscar').textContent = TXT.rotBuscar; $('ayudaMapa').textContent = TXT.ayuda; $('fuentePie').textContent = TXT.fuentePie;

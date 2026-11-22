@@ -20,7 +20,8 @@
   "categorias": [
     {
       "id": "A",
-      "color": "#E0529C",
+      "icono": "👩🏽‍💼",
+      "color": "#9B6BD6",
       "texto": {
         "es": "Hoy manda una mujer",
         "ca": "[TRADUCCIÓN PENDIENTE]",
@@ -30,7 +31,8 @@
     },
     {
       "id": "B",
-      "color": "#E8B93A",
+      "icono": "👩🏽‍💼",
+      "color": "#E0529C",
       "texto": {
         "es": "Hoy manda un hombre, pero ya ha mandado una mujer",
         "ca": "[TRADUCCIÓN PENDIENTE]",
@@ -40,7 +42,8 @@
     },
     {
       "id": "C",
-      "color": "#7F5BC2",
+      "icono": "👩🏽‍💼👨🏽‍💼",
+      "color": "#E8C23A",
       "texto": {
         "es": "El poder está repartido o es difícil de decir",
         "ca": "[TRADUCCIÓN PENDIENTE]",
@@ -50,7 +53,8 @@
     },
     {
       "id": "D",
-      "color": "#1F8A7A",
+      "icono": "👨🏽‍💼",
+      "color": "#2B5FA0",
       "texto": {
         "es": "Nunca ha mandado una mujer desde 1960",
         "ca": "[TRADUCCIÓN PENDIENTE]",
