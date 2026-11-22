@@ -4,18 +4,18 @@
   "tipo": "categorias",
   "titulo": {
     "es": "¿Dónde ha mandado una mujer?",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "On ha manat una dona?",
+    "en": "Where has a woman been in charge?"
   },
   "subtitulo": {
     "es": "En cada país hay un cargo que manda de verdad: la presidenta o presidente, o la primera ministra o primer ministro. Mira dónde ocupa ese cargo una mujer hoy, dónde lo ocupó antes y dónde no ha pasado nunca.",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "A cada país hi ha un càrrec que mana de veritat: la presidenta o president, o la primera ministra o primer ministre. Mira on ocupa aquest càrrec una dona avui, on el va ocupar abans i on no ha passat mai.",
+    "en": "In every country there is one position that really runs things: the president, or the prime minister. See where a woman holds that position today, where she held it before and where it has never happened."
   },
   "criterio": {
     "es": "Cuenta la persona que dirige el gobierno de verdad: el presidente o presidenta si es quien gobierna, o el primer ministro o primera ministra si el presidente es una figura simbólica. Las reinas y los cargos simbólicos no cuentan. Se cuenta desde 1960. Las mujeres interinas solo cuentan si dirigieron el gobierno al menos un mes.",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Compta la persona que dirigeix el govern de veritat: el president o presidenta si és qui governa, o el primer ministre o primera ministra si el president és una figura simbòlica. Les reines i els càrrecs simbòlics no compten. Es compta des del 1960. Les dones interines només compten si van dirigir el govern almenys un mes.",
+    "en": "What counts is the person who really leads the government: the president if they are the one governing, or the prime minister if the president is a symbolic figure. Queens and symbolic roles do not count. We count from 1960. Women who served as interim leaders only count if they led the government for at least a month."
   },
   "categorias": [
     {
@@ -24,8 +24,8 @@
       "color": "#9B6BD6",
       "texto": {
         "es": "Hoy manda una mujer",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Avui mana una dona",
+        "en": "A woman is in charge today"
       },
       "orden": 1
     },
@@ -35,8 +35,8 @@
       "color": "#E0529C",
       "texto": {
         "es": "Hoy manda un hombre, pero ya ha mandado una mujer",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Avui mana un home, però ja ha manat una dona",
+        "en": "A man is in charge today, but a woman has been in charge before"
       },
       "orden": 2
     },
@@ -46,8 +46,8 @@
       "color": "#E8C23A",
       "texto": {
         "es": "El poder está repartido o es difícil de decir",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "El poder està repartit o és difícil de dir",
+        "en": "Power is shared or hard to pin down"
       },
       "orden": 3
     },
@@ -57,8 +57,8 @@
       "color": "#2B5FA0",
       "texto": {
         "es": "Nunca ha mandado una mujer desde 1960",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Mai no ha manat una dona des del 1960",
+        "en": "No woman has been in charge since 1960"
       },
       "orden": 4
     }
@@ -67,25 +67,25 @@
     "color": "#9a93a8",
     "texto": {
       "es": "No tenemos datos de este país",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "No tenim dades d'aquest país",
+      "en": "We have no data for this country"
     }
   },
   "avisoLeyes": {
     "es": "Este mapa muestra quién manda de verdad en cada país: la presidenta o presidente si gobierna, o la primera ministra o primer ministro si dirige el gobierno. Las reinas y los cargos simbólicos no cuentan.",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Aquest mapa mostra qui mana de veritat a cada país: la presidenta o president si governa, o la primera ministra o primer ministre si dirigeix el govern. Les reines i els càrrecs simbòlics no compten.",
+    "en": "This map shows who really runs each country: the president if they govern, or the prime minister if they lead the government. Queens and symbolic roles do not count."
   },
   "avisoRegiones": {
     "es": "Se cuenta desde 1960 y los datos son de noviembre de 2026: cambian con las elecciones. En los países donde el poder se reparte entre varios cargos, el mapa lo dice aparte.",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Es compta des del 1960 i les dades són de novembre de 2026: canvien amb les eleccions. Als països on el poder es reparteix entre diversos càrrecs, el mapa ho diu a part.",
+    "en": "We count from 1960 and the data is from November 2026: it changes with elections. In countries where power is shared between several positions, the map says so separately."
   },
   "detalleModo": "mujeres",
   "detalleTitulo": {
     "es": "Mujeres que han mandado",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Dones que han manat",
+    "en": "Women who have been in charge"
   },
   "fuente": {
     "cita": "Comprobado el 22-11-2026 con fuentes abiertas: webs oficiales de gobiernos y parlamentos, World Statesmen, CIDOB, Council of Women World Leaders, medios de comunicación y listas de Wikipedia. Cada país con mujeres lleva sus enlaces en la página de fuentes.",
@@ -95,58 +95,58 @@
   },
   "fuenteCorta": {
     "es": "las fuentes de cada país, en la página de referencias",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "les fonts de cada país, a la pàgina de referències",
+    "en": "the sources for each country, on the references page"
   },
   "chip": {
     "es": "Mujeres al frente del país",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Dones al capdavant del país",
+    "en": "Women at the head of the country"
   },
   "juego": {
     "tipo": "adivinar-categorias",
     "aviso": "Juego con el mismo formato que el del matrimonio infantil (Mireia, 2026-11-20). Textos redactados por Claude, pendientes de revisión de Mireia.",
     "pregunta": {
       "es": "¿Qué crees que pasa en los países marcados en azul?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Què creus que passa als països marcats en blau?",
+      "en": "What do you think happens in the countries marked in blue?"
     },
     "acierto": {
       "es": "¡Acertaste!",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Ho has encertat!",
+      "en": "You got it!"
     },
     "fallo": {
       "es": "No era esa. ¡Ahora lo sabes!",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "No era aquesta. Ara ja ho saps!",
+      "en": "That wasn't it. Now you know!"
     },
     "explicaciones": {
       "A": {
         "es": "En estos países manda hoy una mujer: es presidenta o primera ministra.",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "En aquests països mana avui una dona: és presidenta o primera ministra.",
+        "en": "In these countries a woman is in charge today: she is president or prime minister."
       },
       "B": {
         "es": "En estos países hoy manda un hombre, pero desde 1960 ya ha mandado alguna mujer.",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "En aquests països avui mana un home, però des del 1960 ja ha manat alguna dona.",
+        "en": "In these countries a man is in charge today, but since 1960 a woman has already been in charge."
       },
       "C": {
         "es": "En estos países el poder está repartido entre varios cargos (por ejemplo, un presidente y un primer ministro) o es difícil decir quién manda de verdad.",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "En aquests països el poder està repartit entre diversos càrrecs (per exemple, un president i un primer ministre) o és difícil dir qui mana de veritat.",
+        "en": "In these countries power is shared between several positions (for example, a president and a prime minister) or it is hard to say who really is in charge."
       },
       "D": {
         "es": "En estos países nunca ha mandado una mujer desde 1960.",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "En aquests països mai no ha manat una dona des del 1960.",
+        "en": "In these countries no woman has been in charge since 1960."
       }
     },
     "finalFrase": {
       "es": "Y los países que quedan son los de «{texto}».",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "I els països que queden són els de «{texto}».",
+      "en": "And the remaining countries are the ones in “{texto}”."
     }
   },
   "paises": {

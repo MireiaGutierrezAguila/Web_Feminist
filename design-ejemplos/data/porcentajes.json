@@ -13,63 +13,63 @@
       "emoji": "💼",
       "imagen": "img/opt/tema-trabajo.webp",
       "es": "Trabajo y dinero",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Feina i diners",
+      "en": "Work and money"
     },
     "deporte": {
       "emoji": "⚽",
       "imagen": "img/opt/tema-deporte.webp",
       "es": "Deporte",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Esport",
+      "en": "Sport"
     },
     "musica": {
       "emoji": "🎵",
       "imagen": "img/opt/tema-musica.webp",
       "es": "Música",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Música",
+      "en": "Music"
     },
     "ciencia": {
       "emoji": "🔬",
       "imagen": "img/opt/tema-ciencia.webp",
       "es": "Ciencia",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Ciència",
+      "en": "Science"
     },
     "educacion": {
       "emoji": "🎓",
       "imagen": "img/opt/tema-educacion.webp",
       "es": "Educación",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Educació",
+      "en": "Education"
     },
     "cine": {
       "emoji": "🎬",
       "imagen": "img/opt/tema-cine.webp",
       "es": "Cine",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Cinema",
+      "en": "Film"
     },
     "clima": {
       "emoji": "🌍",
       "imagen": "img/opt/tema-clima.webp",
       "es": "Clima",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Clima",
+      "en": "Climate"
     },
     "salud": {
       "emoji": "🩺",
       "imagen": "img/opt/tema-salud.webp",
       "es": "Salud",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Salut",
+      "en": "Health"
     },
     "violencia": {
       "emoji": "🛡️",
       "es": "Violencia digital",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Violència digital",
+      "en": "Digital violence"
     }
   },
   "infografias": {
@@ -142,15 +142,15 @@
       "infografia": "brecha",
       "pregunta": {
         "es": "En España, de media al año, ¿qué porcentaje menos cobran las mujeres en comparación con los hombres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "A Espanya, de mitjana a l'any, quin percentatge menys cobren les dones en comparació amb els homes?",
+        "en": "In Spain, on average per year, what percentage less do women earn compared with men?"
       },
       "valor": 18.7,
       "unidad": "%",
       "etiqueta": {
         "es": "de brecha salarial (ganancia media anual)",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "de bretxa salarial (guany mitjà anual)",
+        "en": "pay gap (average annual earnings)"
       },
       "mecanicas": [
         "contador",
@@ -167,15 +167,15 @@
       "infografia": "brecha",
       "pregunta": {
         "es": "¿Cuánto menos cobran de pensión de jubilación las mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Quant menys cobren de pensió de jubilació les dones?",
+        "en": "How much less retirement pension do women receive?"
       },
       "valor": 33.1,
       "unidad": "%",
       "etiqueta": {
         "es": "de brecha en las pensiones de jubilación",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "de bretxa en les pensions de jubilació",
+        "en": "gap in retirement pensions"
       },
       "mecanicas": [
         "aguja",
@@ -192,15 +192,15 @@
       "infografia": "beijing",
       "pregunta": {
         "es": "¿Qué porcentaje de las empresas del IBEX 35 tiene una mujer como CEO, es decir, la persona de mayor rango ejecutivo?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Quin percentatge de les empreses de l'IBEX 35 té una dona com a CEO, és a dir, la persona de més rang executiu?",
+        "en": "What percentage of IBEX 35 companies have a woman as CEO, that is, the highest-ranking executive?"
       },
       "valor": 3,
       "unidad": "%",
       "etiqueta": {
         "es": "de las empresas del IBEX 35 tienen una mujer CEO",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "de les empreses de l'IBEX 35 tenen una dona CEO",
+        "en": "of IBEX 35 companies have a woman CEO"
       },
       "mecanicas": [
         "pintar",
@@ -217,15 +217,15 @@
       "infografia": "deporte",
       "pregunta": {
         "es": "De las 100 personas deportistas mejor pagadas del mundo, ¿cuántas son mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "De les 100 persones esportistes ben pagades del món, quantes són dones?",
+        "en": "Of the 100 highest-paid athletes in the world, how many are women?"
       },
       "valor": 0,
       "unidad": "%",
       "etiqueta": {
         "es": "0 de 100",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "0 de 100",
+        "en": "0 out of 100"
       },
       "mecanicas": [
         "pintar"
@@ -243,15 +243,15 @@
       "infografia": "musica",
       "pregunta": {
         "es": "De los 10 artistas más escuchados en Spotify en todo el mundo, ¿cuántos son mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Dels 10 artistes més escoltats a Spotify a tot el món, quantes són dones?",
+        "en": "Of the 10 most-streamed artists on Spotify worldwide, how many are women?"
       },
       "valor": 30,
       "unidad": "%",
       "etiqueta": {
         "es": "3 de 10 (en España, 1 de 10)",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "3 de 10 (a Espanya, 1 de 10)",
+        "en": "3 out of 10 (in Spain, 1 out of 10)"
       },
       "mecanicas": [
         "pintar",
@@ -264,8 +264,8 @@
       },
       "preguntaPct": {
         "es": "De los 10 artistas más escuchados en Spotify en todo el mundo, ¿qué porcentaje son mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Dels 10 artistes més escoltats a Spotify a tot el món, quin percentatge són dones?",
+        "en": "Of the 10 most-streamed artists on Spotify worldwide, what percentage are women?"
       }
     },
     {
@@ -275,15 +275,15 @@
       "infografia": "stem",
       "pregunta": {
         "es": "En 123 años de premios Nobel de Física, Química y Medicina, ¿qué porcentaje de premiadas son mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "En 123 anys de premis Nobel de Física, Química i Medicina, quin percentatge de premiades són dones?",
+        "en": "In 123 years of Nobel Prizes in Physics, Chemistry and Medicine, what percentage of winners are women?"
       },
       "valor": 4.0,
       "unidad": "%",
       "etiqueta": {
         "es": "25 mujeres frente a 624 hombres",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "25 dones davant de 624 homes",
+        "en": "25 women versus 624 men"
       },
       "mecanicas": [
         "pintar",
@@ -303,15 +303,15 @@
       "infografia": "empleo",
       "pregunta": {
         "es": "De las personas que tienen una jornada reducida para cuidar de menores o familiares, ¿qué porcentaje son mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "De les persones que tenen una jornada reduïda per cuidar menors o familiars, quin percentatge són dones?",
+        "en": "Of the people who work reduced hours to care for children or relatives, what percentage are women?"
       },
       "valor": 93.3,
       "unidad": "%",
       "etiqueta": {
         "es": "de la jornada a tiempo parcial por cuidados de familiares la hacen mujeres",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "de la jornada a temps parcial per cures de familiars la fan dones",
+        "en": "of part-time work for caring for relatives is done by women"
       },
       "mecanicas": [
         "aguja",
@@ -332,15 +332,15 @@
       "infografia": "beijing",
       "pregunta": {
         "es": "¿Cuál era la brecha salarial en 2023? En 1995 era del 31 %.",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Quina era la bretxa salarial el 2023? El 1995 era del 31 %.",
+        "en": "What was the pay gap in 2023? In 1995 it was 31 %."
       },
       "valor": 16,
       "unidad": "%",
       "etiqueta": {
         "es": "de brecha salarial en 2023 (31 % en 1995)",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "de bretxa salarial el 2023 (31 % el 1995)",
+        "en": "pay gap in 2023 (31 % in 1995)"
       },
       "mecanicas": [
         "contador",
@@ -356,15 +356,15 @@
       "infografia": "deporte",
       "pregunta": {
         "es": "¿De todo el deporte que sale en los medios de comunicación, qué porcentaje crees que es de deportes femeninos?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "De tot l'esport que surt als mitjans de comunicació, quin percentatge creus que és d'esports femenins?",
+        "en": "Of all the sport shown in the media, what percentage do you think is women's sport?"
       },
       "valor": 16,
       "unidad": "%",
       "etiqueta": {
         "es": "del deporte en los medios es femenino (menos del 16 %)",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "de l'esport als mitjans és femení (menys del 16 %)",
+        "en": "of the sport in the media is women's sport (less than 16 %)"
       },
       "mecanicas": [
         "contador",
@@ -381,15 +381,15 @@
       "infografia": "empleo",
       "pregunta": {
         "es": "¿Qué porcentaje de los puestos de dirección y gerencia ocupan mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Quin percentatge dels llocs de direcció i gerència ocupen dones?",
+        "en": "What percentage of management and director positions are held by women?"
       },
       "valor": 34.4,
       "unidad": "%",
       "etiqueta": {
         "es": "de los puestos de dirección y gerencia (en ocupaciones elementales, el 58,5 %)",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "dels llocs de direcció i gerència (en ocupacions elementals, el 58,5 %)",
+        "en": "of management and director positions (in elementary occupations, 58.5 %)"
       },
       "mecanicas": [
         "pintar",
@@ -406,15 +406,15 @@
       "infografia": "vivienda",
       "pregunta": {
         "es": "De cada 100 hogares con una sola persona adulta y menores, ¿cuántos están a cargo de una mujer?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "De cada 100 llars amb una sola persona adulta i menors, quantes estan a càrrec d'una dona?",
+        "en": "Out of every 100 households with a single adult and children, how many are run by a woman?"
       },
       "valor": 78.8,
       "unidad": "%",
       "etiqueta": {
         "es": "de los hogares con una persona adulta y menores son monomarentales (4 de cada 5)",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "de les llars amb una persona adulta i menors són monomarentals (4 de cada 5)",
+        "en": "of households with one adult and children are headed by a single mother (4 out of 5)"
       },
       "mecanicas": [
         "pintar",
@@ -435,15 +435,15 @@
       "infografia": "violenciadigital",
       "pregunta": {
         "es": "De las personas detenidas o investigadas por ciberdelincuencia sexual, ¿cuántas dirías que son hombres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "De les persones detingudes o investigades per ciberdelinqüència sexual, quantes diries que són homes?",
+        "en": "Of the people arrested or investigated for sexual cybercrime, how many would you say are men?"
       },
       "valor": 97,
       "unidad": "%",
       "etiqueta": {
         "es": "de las personas detenidas o investigadas son hombres",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "de les persones detingudes o investigades són homes",
+        "en": "of the people arrested or investigated are men"
       },
       "mecanicas": [
         "pintar"
@@ -468,16 +468,16 @@
         {
           "pregunta": {
             "es": "¿Quién vive más años, ellas o ellos?",
-            "ca": "[TRADUCCIÓN PENDIENTE]",
-            "en": "[TRADUCCIÓN PENDIENTE]"
+            "ca": "Qui viu més anys, elles o ells?",
+            "en": "Who lives longer, women or men?"
           },
           "opciones": [
             {
               "id": "ellas",
               "etiqueta": {
                 "es": "Ellas",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Elles",
+                "en": "Women"
               },
               "valor": 86.3,
               "unidad": "años"
@@ -486,8 +486,8 @@
               "id": "ellos",
               "etiqueta": {
                 "es": "Ellos",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Ells",
+                "en": "Men"
               },
               "valor": 81.1,
               "unidad": "años"
@@ -498,16 +498,16 @@
         {
           "pregunta": {
             "es": "¿Y quién vive más años con buena salud?",
-            "ca": "[TRADUCCIÓN PENDIENTE]",
-            "en": "[TRADUCCIÓN PENDIENTE]"
+            "ca": "I qui viu més anys amb bona salut?",
+            "en": "And who lives more years in good health?"
           },
           "opciones": [
             {
               "id": "ellas",
               "etiqueta": {
                 "es": "Ellas",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Elles",
+                "en": "Women"
               },
               "valor": 60.6,
               "unidad": "años"
@@ -516,8 +516,8 @@
               "id": "ellos",
               "etiqueta": {
                 "es": "Ellos",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Ells",
+                "en": "Men"
               },
               "valor": 61.7,
               "unidad": "años"
@@ -538,38 +538,38 @@
         {
           "pregunta": {
             "es": "Entre las personas deportistas, ¿quién tiene más seguimiento en redes sociales, ellas o ellos?",
-            "ca": "[TRADUCCIÓN PENDIENTE]",
-            "en": "[TRADUCCIÓN PENDIENTE]"
+            "ca": "Entre les persones esportistes, qui té més seguiment a les xarxes socials, elles o ells?",
+            "en": "Among athletes, who has more followers on social media, women or men?"
           },
           "opciones": [
             {
               "id": "ellas",
               "etiqueta": {
                 "es": "Ellas",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Elles",
+                "en": "Women"
               },
               "valor": 14,
               "unidad": "%",
               "texto": {
                 "es": "14 % más",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "14 % més",
+                "en": "14 % more"
               }
             },
             {
               "id": "ellos",
               "etiqueta": {
                 "es": "Ellos",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Ells",
+                "en": "Men"
               },
               "valor": null,
               "unidad": "%",
               "texto": {
                 "es": "Menos",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Menys",
+                "en": "Less"
               }
             }
           ],
@@ -587,16 +587,16 @@
         {
           "pregunta": {
             "es": "En servicios de salud y cuidados (un sector con mayoría de mujeres), ¿quién cobra más al año?",
-            "ca": "[TRADUCCIÓN PENDIENTE]",
-            "en": "[TRADUCCIÓN PENDIENTE]"
+            "ca": "En serveis de salut i cures (un sector amb majoria de dones), qui cobra més a l'any?",
+            "en": "In health and care services (a sector with a majority of women), who earns more per year?"
           },
           "opciones": [
             {
               "id": "ellas",
               "etiqueta": {
                 "es": "Ellas",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Elles",
+                "en": "Women"
               },
               "valor": 29198.31,
               "unidad": "€"
@@ -605,8 +605,8 @@
               "id": "ellos",
               "etiqueta": {
                 "es": "Ellos",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Ells",
+                "en": "Men"
               },
               "valor": 38317.12,
               "unidad": "€"
@@ -627,16 +627,16 @@
         {
           "pregunta": {
             "es": "¿Quién se preocupa más por el cambio climático?",
-            "ca": "[TRADUCCIÓN PENDIENTE]",
-            "en": "[TRADUCCIÓN PENDIENTE]"
+            "ca": "Qui es preocupa més pel canvi climàtic?",
+            "en": "Who worries more about climate change?"
           },
           "opciones": [
             {
               "id": "ellas",
               "etiqueta": {
                 "es": "Ellas",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Elles",
+                "en": "Women"
               },
               "valor": 79,
               "unidad": "%"
@@ -645,8 +645,8 @@
               "id": "ellos",
               "etiqueta": {
                 "es": "Ellos",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Ells",
+                "en": "Men"
               },
               "valor": 62,
               "unidad": "%"
@@ -666,16 +666,16 @@
         {
           "pregunta": {
             "es": "En Europa, con la subida de las temperaturas, ¿en quién aumentan más las muertes?",
-            "ca": "[TRADUCCIÓN PENDIENTE]",
-            "en": "[TRADUCCIÓN PENDIENTE]"
+            "ca": "A Europa, amb la pujada de les temperatures, en qui augmenten més les morts?",
+            "en": "In Europe, as temperatures rise, in whom do deaths increase more?"
           },
           "opciones": [
             {
               "id": "ellas",
               "etiqueta": {
                 "es": "Ellas",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Elles",
+                "en": "Women"
               },
               "valor": 21.5,
               "unidad": "puntos porcentuales al año"
@@ -684,8 +684,8 @@
               "id": "ellos",
               "etiqueta": {
                 "es": "Ellos",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Ells",
+                "en": "Men"
               },
               "valor": 13.8,
               "unidad": "puntos porcentuales al año"
@@ -707,38 +707,38 @@
         {
           "pregunta": {
             "es": "¿Quién crees que recibe más ciberdelincuencia sexual?",
-            "ca": "[TRADUCCIÓN PENDIENTE]",
-            "en": "[TRADUCCIÓN PENDIENTE]"
+            "ca": "Qui creus que rep més ciberdelinqüència sexual?",
+            "en": "Who do you think receives more sexual cybercrime?"
           },
           "opciones": [
             {
               "id": "ellas",
               "etiqueta": {
                 "es": "Ellas",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Elles",
+                "en": "Women"
               },
               "valor": 70,
               "unidad": "%",
               "texto": {
                 "es": "70 % de las víctimas",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "70 % de les víctimes",
+                "en": "70 % of the victims"
               }
             },
             {
               "id": "ellos",
               "etiqueta": {
                 "es": "Ellos",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Ells",
+                "en": "Men"
               },
               "valor": null,
               "unidad": "%",
               "texto": {
                 "es": "Menos",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Menys",
+                "en": "Less"
               }
             }
           ],
@@ -759,16 +759,16 @@
         {
           "pregunta": {
             "es": "¿Dónde hay más mujeres: entre quienes terminan la universidad o entre los rectorados?",
-            "ca": "[TRADUCCIÓN PENDIENTE]",
-            "en": "[TRADUCCIÓN PENDIENTE]"
+            "ca": "On hi ha més dones: entre qui acaba la universitat o entre els rectorats?",
+            "en": "Where are there more women: among those who finish university or among university rectors?"
           },
           "opciones": [
             {
               "id": "univ",
               "etiqueta": {
                 "es": "Terminan la universidad (curso 2022-23)",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Acaben la universitat (curs 2022-23)",
+                "en": "Finish university (2022-23 academic year)"
               },
               "valor": 60.9,
               "unidad": "%"
@@ -777,8 +777,8 @@
               "id": "rect",
               "etiqueta": {
                 "es": "Rectorados (2024)",
-                "ca": "[TRADUCCIÓN PENDIENTE]",
-                "en": "[TRADUCCIÓN PENDIENTE]"
+                "ca": "Rectorats (2024)",
+                "en": "University rectors (2024)"
               },
               "valor": 23,
               "unidad": "%"
@@ -805,15 +805,15 @@
       "infografia": "creadoras",
       "pregunta": {
         "es": "De cada 10 puestos directivos en el cine, ¿cuántos ocupan mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "De cada 10 llocs directius al cinema, quants ocupen dones?",
+        "en": "Out of every 10 management positions in film, how many are held by women?"
       },
       "valor": 30,
       "unidad": "%",
       "etiqueta": {
         "es": "3 de cada 10",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "3 de cada 10",
+        "en": "3 out of 10"
       },
       "mecanicas": [
         "pintar",
@@ -826,8 +826,8 @@
       },
       "preguntaPct": {
         "es": "En el cine, dentro de los puestos de más poder, ¿qué porcentaje hay de mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Al cinema, dins dels llocs de més poder, quin percentatge hi ha de dones?",
+        "en": "In film, among the most powerful positions, what percentage are women?"
       }
     },
     {
@@ -837,15 +837,15 @@
       "infografia": "clima",
       "pregunta": {
         "es": "De cada 100 personas que van a buscar agua para el hogar donde no hay agua corriente, ¿cuántas son mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "De cada 100 persones que van a buscar aigua per a la llar on no hi ha aigua corrent, quantes són dones?",
+        "en": "Out of every 100 people who fetch water for the home where there is no running water, how many are women?"
       },
       "valor": 70,
       "unidad": "%",
       "etiqueta": {
         "es": "de quienes van a buscar el agua",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "de qui va a buscar l'aigua",
+        "en": "of those who fetch the water"
       },
       "mecanicas": [
         "contador",
@@ -865,15 +865,15 @@
       "infografia": "clima",
       "pregunta": {
         "es": "En España, de cada 100 personas que dirigen una explotación agraria, ¿cuántas son mujeres?",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "A Espanya, de cada 100 persones que dirigeixen una explotació agrària, quantes són dones?",
+        "en": "In Spain, out of every 100 people who run a farm, how many are women?"
       },
       "valor": 29,
       "unidad": "%",
       "etiqueta": {
         "es": "de las explotaciones agrarias están dirigidas por mujeres",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "de les explotacions agràries estan dirigides per dones",
+        "en": "of farms are run by women"
       },
       "mecanicas": [
         "pintar",
