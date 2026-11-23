@@ -1,0 +1,311 @@
+{
+  "aviso": "Datos de la actividad «¿Quién dijo qué?». Frases elegidas por Mireia (CSV «Frases_mujeres», 23-11-2026); verificación de fuentes hecha por agentes de IA el 23-11-2026 y pendiente de revisión de Mireia. «verificada» = fuente primaria localizada; «atribuida» = circula con su nombre pero no hemos localizado la fuente primaria (la actividad lo dice con «Se le atribuye»). Descartadas: Marilyn Monroe, Frida Kahlo, Simone de Beauvoir (sin fuente), Maya Angelou (es de Carl W. Buehner), Angela Davis «el feminismo es la idea radical…» (es de Marie Shear, 1986) y Clara Zetkin (sin fuente). Los textos «quién fue» (2 frases, aprobados por Mireia el 23-11-2026) los redactó Claude con datos conocidos y quedan pendientes de comprobar con fuente (Goodall 1960, Curie, Parks «más de un año», Pankhurst 1903, Malala «más joven»); ca/en pendientes. Las fuentes se muestran solo en la página de referencias (data/fuentes-actividades.json).",
+  "mujeres": [
+    {
+      "id": "gandhi",
+      "nombre": "Indira Gandhi",
+      "anios": "1917-1984",
+      "foto": "img/opt/frases-gandhi.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Indira_Gandhi_1966(cropped).jpg",
+      "fotoAutor": "Desconocido (archivo Bettmann)",
+      "fotoLicencia": "Dominio público (EE. UU.)",
+      "quien": {
+        "es": "Fue primera ministra de India entre 1966 y 1977 y entre 1980 y 1984. Fue la primera mujer en ocupar ese cargo en su país.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "goodall",
+      "nombre": "Jane Goodall",
+      "anios": "1934-2025",
+      "foto": "img/opt/frases-goodall.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Jane_Goodall_2015.jpg",
+      "fotoAutor": "Departamento de Estado de EE. UU.",
+      "fotoLicencia": "Dominio público",
+      "quien": {
+        "es": "Fue una científica británica que estudió a los chimpancés en la naturaleza y descubrió que usan herramientas. Empezó su trabajo en 1960, en Tanzania, y después dedicó su vida a proteger la naturaleza.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "malala",
+      "nombre": "Malala Yousafzai",
+      "anios": "1997",
+      "foto": "img/opt/frases-malala.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Malala_Yousafzai-cropped.jpg",
+      "fotoAutor": "Southbank Centre",
+      "fotoLicencia": "CC BY 2.0",
+      "quien": {
+        "es": "Es una activista pakistaní por la educación de las niñas y ganó el Premio Nobel de la Paz en 2014. Tenía 17 años: es la persona más joven que lo ha recibido.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "steinem",
+      "nombre": "Gloria Steinem",
+      "anios": "1934-2026",
+      "foto": "img/opt/frases-steinem.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Gloria_Steinem_1975.jpg",
+      "fotoAutor": "Jay Godwin (LBJ Library)",
+      "fotoLicencia": "Dominio público",
+      "quien": {
+        "es": "Fue una periodista y activista estadounidense, cofundadora de la revista Ms. Durante décadas fue una de las voces más conocidas del movimiento feminista en su país.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "curie",
+      "nombre": "Marie Curie",
+      "anios": "1867-1934",
+      "foto": "img/opt/frases-curie.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Marie_Curie_c._1898.jpg",
+      "fotoAutor": "Autor desconocido",
+      "fotoLicencia": "Dominio público (EE. UU.)",
+      "quien": {
+        "es": "Fue una científica nacida en Polonia que investigó la radiactividad y ganó dos premios Nobel. Fue la primera persona en conseguirlo: Física en 1903 y Química en 1911.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "satir",
+      "nombre": "Virginia Satir",
+      "anios": "1916-1988",
+      "foto": "img/opt/frases-satir.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:VirginiaSatir.jpg",
+      "fotoAutor": "William Meyer",
+      "fotoLicencia": "Dominio público",
+      "quien": {
+        "es": "Fue una terapeuta familiar estadounidense. Es conocida por ayudar a las familias a comunicarse mejor.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "parks",
+      "nombre": "Rosa Parks",
+      "anios": "1913-2005",
+      "foto": "img/opt/frases-parks.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Rosa_Parks,_November_1956_(cropped).jpg",
+      "fotoAutor": "Autor desconocido (Rosa Parks papers, Library of Congress)",
+      "fotoLicencia": "Dominio público",
+      "quien": {
+        "es": "Fue una activista afroamericana. En 1955 la detuvieron en Montgomery por no ceder su asiento en un autobús. Su detención provocó un boicot a los autobuses de la ciudad que duró más de un año.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "davis",
+      "nombre": "Angela Davis",
+      "anios": "1944",
+      "foto": "img/opt/frases-davis.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Angela_Davis_in_2019.jpg",
+      "fotoAutor": "Oregon State University",
+      "fotoLicencia": "CC BY-SA 2.0",
+      "quien": {
+        "es": "Es una activista y profesora estadounidense, conocida por su lucha contra el racismo. También ha defendido los derechos de las mujeres y la reforma de las cárceles.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "woolf",
+      "nombre": "Virginia Woolf",
+      "anios": "1882-1941",
+      "foto": "img/opt/frases-woolf.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Virginia_Woolf_1927.jpg",
+      "fotoAutor": "Autor desconocido",
+      "fotoLicencia": "Dominio público",
+      "quien": {
+        "es": "Fue una escritora inglesa, autora de «Una habitación propia». En ese libro defendió que una mujer necesita dinero y un espacio propio para poder escribir.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "goldman",
+      "nombre": "Emma Goldman",
+      "anios": "1869-1940",
+      "foto": "img/opt/frases-goldman.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Emma_Goldman_seated.jpg",
+      "fotoAutor": "Takuma Kajiwara",
+      "fotoLicencia": "Dominio público",
+      "quien": {
+        "es": "Fue una anarquista y escritora nacida en Lituania que vivió en Estados Unidos. Defendió la libertad de expresión y los derechos de las mujeres.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "pankhurst",
+      "nombre": "Emmeline Pankhurst",
+      "anios": "1858-1928",
+      "foto": "img/opt/frases-pankhurst.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Emmeline_Pankhurst_portrait,_New_York_1913.jpg",
+      "fotoAutor": "LSE Library",
+      "fotoLicencia": "Sin restricciones de copyright conocidas",
+      "quien": {
+        "es": "Fue una sufragista británica que luchó por el voto de las mujeres. En 1903 fundó la WSPU, un grupo de mujeres conocido por sus protestas para conseguir ese derecho.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    }
+  ],
+  "frases": [
+    {
+      "id": "f-01",
+      "mujer": "gandhi",
+      "texto": {
+        "es": "Para liberarse, la mujer debe sentirse libre, no para rivalizar con los hombres, sino libres en sus capacidades y personalidad.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "verificada"
+    },
+    {
+      "id": "f-02",
+      "mujer": "goodall",
+      "texto": {
+        "es": "El mayor peligro que nos depara el futuro es la apatía.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "verificada"
+    },
+    {
+      "id": "f-03",
+      "mujer": "malala",
+      "texto": {
+        "es": "Debemos decirles a nuestras jóvenes que sus voces son importantes.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-04",
+      "mujer": "steinem",
+      "texto": {
+        "es": "Un feminista es cualquiera que reconozca la igualdad y plena humanidad en mujeres y hombres.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-05",
+      "mujer": "curie",
+      "texto": {
+        "es": "Sería bueno sentir menos curiosidad por las personas y más por las ideas.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-06",
+      "mujer": "steinem",
+      "texto": {
+        "es": "Una vez que nos cansamos de buscar aprobación, nos damos cuenta de que es más fácil ganarse el respeto.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-07",
+      "mujer": "satir",
+      "texto": {
+        "es": "No podemos dejar que las percepciones de los demás terminen definiéndonos.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-08",
+      "mujer": "parks",
+      "texto": {
+        "es": "Nunca debes tener miedo de lo que estás haciendo cuando es correcto.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-09",
+      "mujer": "davis",
+      "texto": {
+        "es": "No estoy aceptando las cosas que no puedo cambiar, estoy cambiando las cosas que no puedo aceptar.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-10",
+      "mujer": "davis",
+      "texto": {
+        "es": "En una sociedad racista no ser racista no es suficiente. Tenemos que ser antirracistas.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-11",
+      "mujer": "malala",
+      "texto": {
+        "es": "Para hacerme poderosa solo necesito una cosa: educación.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-12",
+      "mujer": "woolf",
+      "texto": {
+        "es": "No hay barrera, cerradura, ni cerrojo que puedas imponer a la libertad de mi mente.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "verificada",
+      "nota": {
+        "es": "Lo escribió en «Una habitación propia» (1929).",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "f-13",
+      "mujer": "goldman",
+      "texto": {
+        "es": "Requiere menos esfuerzo intelectual el condenar que el pensar.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "verificada",
+      "nota": {
+        "es": "La escribió en 1910 y la presentó como un dicho que alguien había dicho antes.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      }
+    },
+    {
+      "id": "f-14",
+      "mujer": "pankhurst",
+      "texto": {
+        "es": "Prefiero ser rebelde que una esclava.",
+        "ca": "[TRADUCCIÓN PENDIENTE]",
+        "en": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "estado": "atribuida"
+    }
+  ]
+}
