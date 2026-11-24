@@ -43,9 +43,20 @@
   .btn:disabled { filter: grayscale(.85) brightness(.65); cursor: default; }
   .btn.primario { color: #2b1805; text-shadow: 0 1px 0 rgba(255, 255, 255, .35); border-image-source: url("img/opt/boton-naranja.webp"); }
   .btn.grande { font-size: 1.25rem; border-width: 26px 30px; border-image-width: 26px 30px; min-width: 190px; }
-  .caja-mensaje { margin: 0 0 18px; padding: 16px 18px; border-left: 6px solid var(--rosa); background: var(--panel); border-radius: 0 12px 12px 0; max-width: 70ch; }
-  .caja-mensaje p { margin: 0 0 8px; } .caja-mensaje p:last-child { margin: 0; }
-  .caja-mensaje .grande { font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.15rem; color: var(--oro-claro); }
+  /* caja de introducción común a todas las actividades: panel con borde plateado fino y la corona de rosas con espiral de Mireia (img/opt/espiral.webp).
+     Escritorio: corona a la izquierda; título y texto a la derecha. Móvil: título, corona y texto, uno debajo de otro y centrados. */
+  .caja-mensaje { margin: 14px 0 20px; max-width: none; padding: 22px 30px; border: 2px solid rgba(185, 177, 201, .55); border-radius: 18px; background: linear-gradient(180deg, #1b1426, #120d1a);
+    box-shadow: inset 0 0 0 5px #120d1a, inset 0 0 0 6px rgba(185, 177, 201, .25); display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto 1fr; grid-template-areas: "corona titulo" "corona texto"; gap: 2px 32px; align-items: center; }
+  .caja-mensaje .corona { grid-area: corona; width: clamp(110px, 24vw, 190px); height: auto; display: block; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, .6)); }
+  .caja-mensaje h2 { grid-area: titulo; align-self: end; margin: 0; font-size: clamp(1.35rem, 4vw, 1.6rem); }
+  .caja-mensaje h2::after { content: ""; display: block; height: 26px; width: min(220px, 70%); background: url("img/opt/adorno-dorado-2.webp") left center / contain no-repeat; }
+  .caja-mensaje #introTxt { grid-area: texto; align-self: start; }
+  .caja-mensaje p { margin: 0 0 10px; font-size: clamp(1rem, 3.3vw, 1.15rem); line-height: 1.45; } .caja-mensaje p:last-child { margin: 0; }
+  .caja-mensaje .grande { font-family: var(--fuente-nombres); font-weight: 700; font-size: clamp(1.1rem, 3.6vw, 1.25rem); color: var(--oro-claro); }
+  @media (max-width: 560px) {
+    .caja-mensaje { grid-template-columns: 1fr; grid-template-rows: auto; grid-template-areas: "titulo" "corona" "texto"; justify-items: center; text-align: center; }
+    .caja-mensaje .corona { width: 130px; } .caja-mensaje h2 { align-self: auto; } .caja-mensaje h2::after { margin-inline: auto; background-position: center; width: min(220px, 100%); }
+  }
   .guia { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0 0 20px; padding: 0; list-style: none; }
   .guia li { display: grid; grid-template-columns: auto 1fr; column-gap: 18px; align-items: center; padding: 20px 22px; border: 1px solid var(--linea); border-radius: 14px; background: var(--panel); }
   .guia .ico { font-size: 3.6rem; grid-row: span 2; }
@@ -219,7 +230,8 @@
   footer { margin-top: auto; background: #000; border-top: 2px solid rgba(185, 177, 201, .35); }
   footer .envoltorio { padding: 20px 0 26px; }
   .firma { margin: 0; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.05rem; color: var(--oro-claro); }
-  .fuente-pie { margin: 10px 0 0; font-size: .8rem; color: var(--suave); }
+  .fuente-pie { margin: 10px 0 0; font-size: .85rem; color: var(--suave); }
+  .ref-enlace a { color: var(--oro-claro); }
 
   @media (prefers-reduced-motion: reduce) {
     .ruleta .aguja.tic, .ruleta .play, .pulsador.listo .luz, .tablero.sacude, .confeti, .esp { animation: none; }
@@ -254,8 +266,11 @@
 
 <main class="envoltorio">
   <section class="pantalla" id="pIntro" aria-labelledby="hIntro">
-    <h2 id="hIntro"></h2>
-    <div class="caja-mensaje" id="introTxt"></div>
+    <div class="caja-mensaje">
+      <h2 id="hIntro"></h2>
+      <img class="corona" src="img/opt/espiral.webp" alt="" width="700" height="621">
+      <div id="introTxt"></div>
+    </div>
     <ul class="guia" id="guia"></ul>
     <button class="btn primario grande" id="btnEmpezar" type="button"></button>
   </section>
@@ -293,6 +308,7 @@
 <footer><div class="envoltorio">
   <p class="firma">Web diseñada y creada por Mireia Gutiérrez Águila<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:.75rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.85">Conoce su historia</a></p>
   <p class="fuente-pie" id="fuentePie"></p>
+  <p class="fuente-pie ref-enlace" id="refEnlace"></p>
 </div></footer>
 
 <script>
@@ -300,9 +316,11 @@
   /* ---------- Textos de interfaz (irán a los archivos de idioma es / ca / en) ---------- */
   var TXT = {
     titulo: 'Adivina el porcentaje',
-    subtitulo: '¿Acertarás o te llevarás una sorpresa? Datos reales sobre mujeres y hombres en distintos sectores. Gira la ruleta y descubre cómo te toca responder.',
+    subtitulo: '¿Acertarás o te llevarás una sorpresa?',   /* subtítulo corto bajo el título (todas las actividades llevan uno) */
+    gancho: 'Datos reales sobre mujeres y hombres en distintos sectores. Gira la ruleta y descubre cómo te toca responder.',   /* primera línea de la caja «Cómo se juega» */
     aviso: 'Boceto: mecánicas y diseño provisionales y sin sonido. Los datos son reales (infografías «Mujeres en cifras»); algunos años están por confirmar. Cada partida elige 7 datos y 3 parejas al azar.',
     hIntro: 'Cómo se juega',
+    refAntes: 'Puedes ver todas las referencias de la web en ', refEnlace: 'esta página', refDespues: ', filtrando por la actividad.', nuevaPestana: ' (se abre en una pestaña nueva)',
     intro: ['Cada ronda sale una pregunta con un dato real.', 'Antes de responder giras la ruleta, y la ruleta decide <b>cómo</b> tienes que contestar. Al final de cada ronda ves la cifra real.', 'A ver si estás en lo cierto: cuanto más cerca, más puntos.'],
     empezar: 'Empezar',
     ronda: function (a, b) { return 'Ronda ' + a + ' de ' + b; },
@@ -354,7 +372,10 @@
   $('btnEfectos').addEventListener('click', function () { sinEfectos = !sinEfectos; try { localStorage.setItem('feminist-sin-efectos', sinEfectos ? '1' : '0'); } catch (e) { /* sin almacenamiento */ } pintarEfectos(); });
   $('titulo').textContent = TXT.titulo; $('subtitulo').textContent = TXT.subtitulo; $('avisoBoceto').textContent = TXT.aviso;
   $('hIntro').textContent = TXT.hIntro; $('btnEmpezar').textContent = TXT.empezar; $('btnOtra').textContent = TXT.otra;
-  $('fuentePie').textContent = TXT.fuentePie; $('hFinal').textContent = TXT.fin; $('fFuentes').querySelector('summary').textContent = TXT.fuentesResumen;
+  $('fuentePie').textContent = TXT.fuentePie;
+  (function () { var r = $('refEnlace'), a = el('a', '', TXT.refEnlace); a.href = 'fuentes-boceto.html?tipo=actividad&actividad=porcentajes'; a.target = '_blank'; a.rel = 'noopener'; a.setAttribute('aria-label', TXT.refEnlace + TXT.nuevaPestana);
+    r.appendChild(document.createTextNode(TXT.refAntes)); r.appendChild(a); r.appendChild(document.createTextNode(TXT.refDespues)); })(); $('hFinal').textContent = TXT.fin; $('fFuentes').querySelector('summary').textContent = TXT.fuentesResumen;
+  $('introTxt').appendChild(el('p', '', TXT.gancho));
   TXT.intro.forEach(function (t, i) { var p = el('p', i === 0 ? 'grande' : ''); p.innerHTML = t; $('introTxt').appendChild(p); });
   ['contador', 'aguja', 'pintar', 'caraacara'].forEach(function (k) {
     var m = TXT.mecanicas[k], li = el('li'), ic = el('span', 'ico'); ic.innerHTML = icoHtml(k); li.appendChild(ic); li.appendChild(el('strong', '', m.nombre)); li.appendChild(el('small', '', m.desc)); $('guia').appendChild(li);

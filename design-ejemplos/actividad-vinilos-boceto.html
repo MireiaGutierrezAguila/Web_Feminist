@@ -51,7 +51,7 @@
   .nivel span { color: #e6e0f0; }
   .aviso-grid { display: grid; gap: 18px; margin-top: 26px; } /* baja la caja para que sus rosas no toquen el adorno del título */
   @media (min-width: 900px) { .aviso-grid { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: start; } }
-  .aviso-grid .caja-mensaje { margin: 0; max-width: none; }
+  .aviso-grid .caja-aviso { margin: 0; max-width: none; }
   .opciones-pal { display: grid; gap: 12px; }
   .opciones-pal h3 { margin: 0; font-family: var(--fuente-nombres); font-size: 1.05rem; color: var(--oro-claro); }
   .opcion-pal { font: inherit; color: var(--blanco); cursor: pointer; text-align: left; display: grid; grid-template-columns: auto 1fr; column-gap: 14px; align-items: center; padding: 16px 18px; border: 2px solid var(--linea); border-radius: 16px; background: var(--panel); }
@@ -60,20 +60,34 @@
   .opcion-pal .ico { grid-row: span 2; font-size: 2.4rem; line-height: 1; }
   .opcion-pal strong { font-family: var(--fuente-nombres); font-size: 1.05rem; }
   .opcion-pal small { color: var(--suave); font-size: .85rem; line-height: 1.3; }
-  .caja-mensaje { position: relative; margin: 0 0 18px; padding: 26px 30px; border: 2px solid rgba(185, 177, 201, .5); background: var(--panel); border-radius: 16px; max-width: 70ch; }
+  .caja-aviso { position: relative; margin: 0 0 18px; padding: 26px 30px; border: 2px solid rgba(185, 177, 201, .5); background: var(--panel); border-radius: 16px; max-width: 70ch; }
   /* esquineras de rosas de Mireia, igual que en la actividad de porcentajes */
-  .caja-mensaje::before { content: ""; position: absolute; pointer-events: none; z-index: 2; --esq: clamp(78px, 20vw, 104px);
+  .caja-aviso::before { content: ""; position: absolute; pointer-events: none; z-index: 2; --esq: clamp(78px, 20vw, 104px);
     background: url("img/opt/esquina-rosas-tl.webp") left top / var(--esq) auto no-repeat, url("img/opt/esquina-rosas-tr.webp") right top / var(--esq) auto no-repeat,
                 url("img/opt/esquina-rosas-bl.webp") left bottom / var(--esq) auto no-repeat, url("img/opt/esquina-rosas-br.webp") right bottom / var(--esq) auto no-repeat;
     filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .6)); }
-  .caja-mensaje::before { inset: -14px; }
+  .caja-aviso::before { inset: -14px; }
   /* ventana de resultado y ficha de la canción: marco dorado (esquineras de filigrana + ramas de hojas), a juego con los separadores */
   .rev-contenido::before { content: ""; position: absolute; inset: 8px; pointer-events: none; z-index: 2; --esq: clamp(78px, 19vw, 118px);
     background: url("img/opt/esquina-dorada-tl.webp") left top / var(--esq) auto no-repeat, url("img/opt/esquina-dorada-tr.webp") right top / var(--esq) auto no-repeat,
                 url("img/opt/esquina-dorada-bl.webp") left bottom / var(--esq) auto no-repeat, url("img/opt/esquina-dorada-br.webp") right bottom / var(--esq) auto no-repeat; }
+  /* caja de introducción común a todas las actividades: panel con borde plateado fino y la corona de rosas con espiral de Mireia (img/opt/espiral.webp).
+     Escritorio: corona a la izquierda; título y texto a la derecha. Móvil: título, corona y texto, uno debajo de otro y centrados. */
+  .caja-mensaje { margin: 14px 0 26px; max-width: none; padding: 22px 30px; border: 2px solid rgba(185, 177, 201, .55); border-radius: 18px; background: linear-gradient(180deg, #1b1426, #120d1a);
+    box-shadow: inset 0 0 0 5px #120d1a, inset 0 0 0 6px rgba(185, 177, 201, .25); display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto 1fr; grid-template-areas: "corona titulo" "corona texto"; gap: 2px 32px; align-items: center; }
+  .caja-mensaje .corona { grid-area: corona; width: clamp(110px, 24vw, 190px); height: auto; display: block; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, .6)); }
+  .caja-mensaje h2 { grid-area: titulo; align-self: end; margin: 0; font-size: clamp(1.35rem, 4vw, 1.6rem); }
+  .caja-mensaje h2::after { height: 26px; width: min(220px, 70%); }
+  .caja-mensaje .texto-intro { grid-area: texto; align-self: start; }
+  .caja-mensaje p { margin: 0 0 10px; font-size: clamp(1rem, 3.3vw, 1.15rem); line-height: 1.45; } .caja-mensaje p:last-child { margin: 0; }
+  .caja-mensaje .grande { font-family: var(--fuente-nombres); font-weight: 700; font-size: clamp(1.1rem, 3.6vw, 1.25rem); color: var(--oro-claro); }
+  @media (max-width: 560px) {
+    .caja-mensaje { grid-template-columns: 1fr; grid-template-rows: auto; grid-template-areas: "titulo" "corona" "texto"; justify-items: center; text-align: center; }
+    .caja-mensaje .corona { width: 130px; } .caja-mensaje h2 { align-self: auto; } .caja-mensaje h2::after { margin-inline: auto; background-position: center; width: min(220px, 100%); }
+  }
   h2::after { content: ""; display: block; height: 30px; width: min(240px, 62%); background: url("img/opt/adorno-dorado-2.webp") left center / contain no-repeat; }
-  .caja-mensaje p { margin: 0 0 8px; } .caja-mensaje p:last-child { margin: 0; }
-  .caja-mensaje .grande { font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.15rem; color: var(--oro-claro); }
+  .caja-aviso p { margin: 0 0 8px; } .caja-aviso p:last-child { margin: 0; }
+  .caja-aviso .grande { font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.15rem; color: var(--oro-claro); }
 
   /* ---------- Juego: zonas arriba, carrusel abajo ---------- */
   .marcador { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 12px; color: var(--suave); }
@@ -219,9 +233,9 @@
   /* auriculares de Mireia: la imagen tiene fondo negro, con «screen» se funde con la página */
   header.cab .envoltorio { position: relative; }
   .auris { position: absolute; right: 0; top: 60px; width: clamp(130px, 20vw, 210px); mix-blend-mode: screen; pointer-events: none; opacity: .95; }
-  .ref-enlace { margin: 8px 0 0; font-size: .88rem; color: var(--suave); }
+  .fuente-pie { margin: 10px 0 0; font-size: .85rem; color: var(--suave); }
   .ref-enlace a { color: var(--oro-claro); }
-  @media (min-width: 900px) { .aviso-boceto, .ref-enlace { max-width: calc(100% - 230px); } }
+  @media (min-width: 900px) { .aviso-boceto { max-width: calc(100% - 230px); } }
   @media (max-width: 640px) { .auris { top: 96px; width: 110px; opacity: .3; } }
   /* fondo de espirales irregulares como las de la portada, muy suaves y girando despacio */
   .fondo-esp { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
@@ -252,7 +266,6 @@
   <h1 id="titulo"></h1>
   <p class="sub" id="subtitulo"></p>
   <p class="aviso-boceto" id="avisoBoceto"></p>
-  <p class="ref-enlace" id="refEnlace"></p>   <!-- justo debajo del aviso; cuando el aviso de boceto se quite, ocupa su sitio -->
 </div></header>
 
 <main class="envoltorio">
@@ -262,9 +275,14 @@
   </section>
 
   <section class="pantalla" id="pAviso" hidden aria-labelledby="hAviso">
+    <div class="caja-mensaje">
+      <h2 id="hIntro"></h2>
+      <img class="corona" src="img/opt/espiral.webp" alt="" width="700" height="621">
+      <div class="texto-intro" id="introTxt"></div>
+    </div>
     <h2 id="hAviso"></h2>
     <div class="aviso-grid">
-      <div class="caja-mensaje" id="cajaAviso"></div>
+      <div class="caja-aviso" id="cajaAviso"></div>
       <div class="opciones-pal" role="group" aria-labelledby="hPalabras">
         <h3 id="hPalabras"></h3>
         <button type="button" class="opcion-pal recomendada" id="btnEmpezar16"></button>
@@ -291,19 +309,22 @@
     <div class="final">
       <h2 id="hFinal"></h2>
       <p class="puntos" id="puntos"></p>
-      <div class="caja-mensaje" id="cajaFinal"></div>
+      <div class="caja-aviso" id="cajaFinal"></div>
       <button type="button" class="btn primario" id="btnOtra"></button>
     </div>
   </section>
 </main>
 
-<footer><div class="envoltorio"><p class="firma">Web diseñada y creada por Mireia Gutiérrez Águila<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:.75rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.85">Conoce su historia</a></p></div></footer>
+<footer><div class="envoltorio"><p class="firma">Web diseñada y creada por Mireia Gutiérrez Águila<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:.75rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.85">Conoce su historia</a></p>
+  <p class="fuente-pie ref-enlace" id="refEnlace"></p></div></footer>
 
 <script>
 (function () {
   /* ---------- Textos de interfaz (irán a los archivos de idioma es / ca / en) ---------- */
   var TXT = {
-    titulo: 'El Vinilo Crítico', subtitulo: 'A veces escuchamos una canción mil veces y ni nos fijamos en lo que dice. La música siempre ha sido una forma de contar lo que pasa, de protestar o de hacernos reflexionar. ¿Qué te transmiten estas letras?',
+    titulo: 'El Vinilo Crítico', subtitulo: '¿Qué te transmiten estas letras?',
+    hIntro: 'Cómo se juega',
+    intro: ['A veces escuchamos una canción mil veces y ni nos fijamos en lo que dice. La música siempre ha sido una forma de contar lo que pasa, de protestar o de hacernos reflexionar.', 'Lee las letras de las canciones y piensa qué mensaje transmiten.'],
     aviso: 'Boceto: los 21 fragmentos son los que Mireia lleva elegidos, con sus explicaciones y su audio de Spotify (en la ficha). Faltan las traducciones y alguna comprobación de autoría y de palabrotas.',
     efectosOn: '⏸ Parar efectos', efectosOff: '▶ Activar efectos',
     elegirNivel: 'Elige tu nivel',
@@ -382,7 +403,8 @@
   /* una sola página de referencias para toda la web: llega ya filtrada por esta actividad */
   (function () { var r = $('refEnlace'), a = el('a', '', TXT.refEnlaceEnlace); a.href = 'fuentes-boceto.html?tipo=actividad&actividad=vinilos'; a.target = '_blank'; a.rel = 'noopener'; a.setAttribute('aria-label', TXT.refEnlaceEnlace + TXT.nuevaPestana); r.appendChild(document.createTextNode(TXT.refEnlaceAntes)); r.appendChild(a); r.appendChild(document.createTextNode(TXT.refEnlaceDespues)); })(); $('hNivel').textContent = TXT.elegirNivel;
   function mostrarAviso() {
-    $('hAviso').textContent = TXT.avisoTitulo;
+    $('hAviso').textContent = TXT.avisoTitulo; $('hIntro').textContent = TXT.hIntro;
+    var ci = $('introTxt'); ci.textContent = ''; TXT.intro.forEach(function (t, i) { ci.appendChild(el('p', i === TXT.intro.length - 1 ? 'grande' : '', t)); });
     var c = $('cajaAviso'); c.textContent = '';
     c.appendChild(el('p', 'grande', TXT.avisoGrande)); c.appendChild(el('p', '', TXT.avisoP1)); c.appendChild(el('p', '', TXT.avisoP2));
     $('hPalabras').textContent = TXT.elegirPalabras;

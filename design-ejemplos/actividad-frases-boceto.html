@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Quién dijo qué? · Feminist</title>
+<!-- BOCETO de la actividad «¿Quién dijo qué?» (23-11-2026).
+     Mecánica: una frase y tres mujeres (foto, nombre y años); se toca la que la dijo. Partida de 8 frases al azar, sin repetir mujer.
+     Datos en data/frases.json (frases elegidas por Mireia; fuentes verificadas por agentes de IA, pendientes de su revisión).
+     Las fuentes y créditos de fotos NO van aquí: están en la página de referencias (data/fuentes-actividades.json). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --negro: #101010; --blanco: #F5F5F0; --morado: #6B2D8C; --oro: #C9A24B; --oro-claro: #E8CE86; --rosa: #C2386E; --verdeazul: #127C86; --naranja: #E8762B;
+    --fondo: #101010; --panel: #17121f; --linea: rgba(201, 162, 75, .35); --suave: #b9b1c9;
+    --bien: #3fbf7a; --mal: #e0524b;
+    --fuente-titulos: "Cinzel Decorative", Georgia, serif; --fuente-nombres: "Cinzel", Georgia, serif;
+    --fuente-texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--fondo); color: var(--blanco); font-family: var(--fuente-texto); font-size: 1rem; line-height: 1.5; }
+  :focus-visible { outline: 3px solid var(--oro-claro); outline-offset: 3px; }
+  a { color: var(--oro-claro); }
+  .envoltorio { width: min(1040px, 100% - 32px); margin-inline: auto; }
+  header.cab { padding: 18px 0 4px; }
+  .logo { display: block; width: fit-content; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.4rem; color: var(--blanco); text-decoration: none; }
+  h1 { display: inline-block; margin: 22px 0 8px; padding: .25em .7em; background: var(--morado); color: var(--blanco); transform: rotate(-1.2deg); box-shadow: 5px 5px 0 var(--blanco);
+    font-family: var(--fuente-titulos); font-weight: 700; font-size: clamp(1.4rem, 5vw, 2.2rem); line-height: 1.25; }
+  .sub { max-width: 62ch; color: #e6e0f0; margin: 6px 0 0; }
+  .aviso-boceto { margin: 14px 0 0; padding: 8px 12px; border: 0; border-left: 4px solid var(--oro); background: rgba(201, 162, 75, .08); border-radius: 0 10px 10px 0; color: var(--oro-claro); font-size: .9rem; }
+  .ref-enlace a { color: var(--oro-claro); }
+  @media (min-width: 900px) { .aviso-boceto { max-width: calc(100% - 230px); } }
+
+  .pantalla { padding: 22px 0 8px; }
+  .pantalla[hidden] { display: none; }
+  #pIntro .btn.primario { display: block; margin: 0 auto; }   /* «Empezar» centrado bajo la caja */
+  #pIntro .error { text-align: center; }
+  h2 { font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.25rem; margin: 0 0 12px; color: var(--oro-claro); }
+  h2::after { content: ""; display: block; height: 30px; width: min(240px, 62%); background: url("img/opt/adorno-dorado-2.webp") left center / contain no-repeat; }
+  /* botones: las pastillas rayadas de la UI del videojuego */
+  .btn { font: inherit; font-family: var(--fuente-nombres); font-weight: 700; letter-spacing: .04em; cursor: pointer; min-height: 64px; min-width: 130px; padding: 0 6px; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, .7);
+    border: 20px solid transparent; border-width: 20px 24px; background: none; border-image: url("img/opt/boton-verde.webp") 30% 26% fill / 20px 24px stretch; transition: filter .15s, transform .1s; }
+  .btn:hover { filter: brightness(1.15); }
+  .btn:active:not(:disabled) { transform: translateY(2px) scale(.97); filter: brightness(.85); }
+  .btn.primario { color: #2b1805; text-shadow: 0 1px 0 rgba(255, 255, 255, .35); border-image-source: url("img/opt/boton-naranja.webp"); }
+  /* caja de introducción: panel con borde plateado fino y la corona de rosas con espiral de Mireia (img/opt/espiral.webp, a su proporción real).
+     Escritorio: corona a la izquierda; título y texto a la derecha. Móvil: título, corona y texto, uno debajo de otro y centrados. */
+  .caja-mensaje { margin: 14px 0 18px; max-width: none; padding: 22px 30px; border: 2px solid rgba(185, 177, 201, .55); border-radius: 18px; background: linear-gradient(180deg, #1b1426, #120d1a);
+    box-shadow: inset 0 0 0 5px #120d1a, inset 0 0 0 6px rgba(185, 177, 201, .25); display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto 1fr; grid-template-areas: "corona titulo" "corona texto"; gap: 2px 32px; align-items: center; }
+  .caja-mensaje .corona { grid-area: corona; width: clamp(110px, 24vw, 190px); height: auto; display: block; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, .6)); }
+  .caja-mensaje h2 { grid-area: titulo; align-self: end; margin: 0; font-size: clamp(1.35rem, 4vw, 1.6rem); } .caja-mensaje h2::after { height: 26px; width: min(220px, 70%); }
+  .caja-mensaje #introTxt { grid-area: texto; align-self: start; }
+  @media (max-width: 560px) {
+    .caja-mensaje { grid-template-columns: 1fr; grid-template-rows: auto; grid-template-areas: "titulo" "corona" "texto"; justify-items: center; text-align: center; }
+    .caja-mensaje .corona { width: 130px; } .caja-mensaje h2 { align-self: auto; } .caja-mensaje h2::after { margin-inline: auto; background-position: center; width: min(220px, 100%); }
+  }
+  .caja-mensaje p { margin: 0 0 10px; font-size: clamp(1rem, 3.3vw, 1.15rem); line-height: 1.45; } .caja-mensaje p:last-child { margin: 0; }
+
+  /* ---------- Partida ---------- */
+  .marcador { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 8px; color: var(--suave); }
+  .etq { display: inline-block; padding: 2px 10px; border: 1px solid currentColor; border-radius: 99px; font-size: .8rem; }
+  .barra { height: 6px; border-radius: 99px; background: rgba(185, 177, 201, .25); overflow: hidden; margin-bottom: 18px; }
+  .barra i { display: block; height: 100%; width: 0; background: var(--oro); transition: width .3s; }
+  .frase { position: relative; margin: 0 0 18px; padding: 26px 22px 22px 54px; border-left: 6px solid var(--oro); border-radius: 0 16px 16px 0; background: var(--panel); }
+  .frase::before { content: "“"; position: absolute; left: 12px; top: -2px; font-family: var(--fuente-titulos); font-size: 4.2rem; line-height: 1; color: var(--oro); }
+  .frase p { margin: 0; font-size: clamp(1.15rem, 4.4vw, 1.7rem); font-style: italic; line-height: 1.35; }
+  .quien-dijo { margin: 0 0 10px; color: var(--oro-claro); font-family: var(--fuente-nombres); font-weight: 700; }
+  .opciones { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 0; padding: 0; list-style: none; }
+  @media (min-width: 640px) { .opciones { gap: 16px; } }
+  .op { position: relative; width: 100%; height: 100%; display: grid; grid-template-rows: auto 1fr; padding: 0; overflow: hidden; font: inherit; color: var(--blanco); text-align: center; cursor: pointer;
+    border: 3px solid var(--linea); border-radius: 14px; background: var(--panel); transition: transform .15s, border-color .15s, opacity .2s; }
+  .op:hover:not(:disabled) { transform: translateY(-3px); border-color: var(--oro); }
+  .op:disabled { cursor: default; }
+  .op img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: center 18%; background: #0b0910; }
+  .op .texto { display: grid; gap: 2px; align-content: start; padding: 8px 4px 10px; }
+  .op strong { font-family: var(--fuente-nombres); font-size: clamp(.74rem, 2.9vw, 1rem); line-height: 1.2; }
+  .op small { color: var(--suave); font-size: clamp(.68rem, 2.6vw, .85rem); }
+  .op.correcta { border-color: var(--bien); box-shadow: 0 0 0 3px rgba(63, 191, 122, .35); }
+  .op.fallo { border-color: var(--mal); box-shadow: 0 0 0 3px rgba(224, 82, 75, .35); }
+  .op.atenuada { opacity: .5; }
+  .op .marca { position: absolute; top: 6px; right: 6px; width: 30px; height: 30px; border-radius: 50%; display: none; place-items: center; font-weight: 700; font-size: 1.1rem; color: #fff; }
+  .op.correcta .marca { display: grid; background: var(--bien); } .op.fallo .marca { display: grid; background: var(--mal); }
+  .resultado { margin-top: 18px; padding: 16px; border-left: 6px solid var(--oro); border-radius: 0 14px 14px 0; background: #120d1a; }
+  .resultado.bien { border-color: var(--bien); } .resultado.mal { border-color: var(--mal); }
+  .resultado .veredicto { margin: 0 0 4px; font-family: var(--fuente-nombres); font-weight: 700; font-size: 1.2rem; }
+  .resultado.bien .veredicto { color: var(--bien); } .resultado.mal .veredicto { color: var(--mal); }
+  .resultado p { margin: 0 0 8px; }
+  .resultado .nombre { font-family: var(--fuente-nombres); font-weight: 700; color: var(--oro-claro); }
+  .resultado .atribuida { color: var(--oro-claro); font-style: italic; }
+  .resultado .btn { margin-top: 6px; }
+
+  /* banda de encaje y rosas (img/opt/banda-encaje.webp); los extremos se difuminan porque la imagen está cortada */
+  .banda { display: block; width: min(100%, 420px); height: auto; margin: 4px 0 14px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent); mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent); }
+  #pRonda h2::after, #pFinal h2::after { display: none; }   /* aquí el adorno del título es la banda de encaje */
+  .final { max-width: 70ch; }
+  .puntos { font-family: var(--fuente-titulos); font-weight: 900; font-size: clamp(2rem, 9vw, 3rem); color: var(--oro-claro); line-height: 1.1; margin: 0 0 8px; }
+  .repaso { margin: 14px 0 18px; padding: 0; list-style: none; display: grid; gap: 6px; }
+  .repaso li { display: grid; grid-template-columns: auto 1fr; gap: 8px; align-items: start; padding: 8px 10px; border-radius: 10px; background: var(--panel); font-size: .92rem; }
+  .repaso .ico { font-weight: 700; } .repaso .si { color: var(--bien); } .repaso .no { color: var(--mal); }
+
+  footer { margin-top: auto; background: #000; border-top: 2px solid rgba(185, 177, 201, .35); }
+  footer .envoltorio { padding: 20px 0 26px; }
+  .firma { margin: 0; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.05rem; color: var(--oro-claro); }
+  .fuente-pie { margin: 10px 0 0; font-size: .85rem; color: var(--suave); }
+  .error { color: var(--mal); }
+  @media (prefers-reduced-motion: reduce) { .op, .barra i { transition: none; } .op:hover:not(:disabled) { transform: none; } }
+</style>
+</head>
+<body>
+<header class="cab"><div class="envoltorio">
+  <a class="logo" href="propuesta-d-mezcla.html">♀ Feminist</a>
+  <h1 id="titulo"></h1>
+  <p class="sub" id="subtitulo"></p>
+  <p class="aviso-boceto" id="avisoBoceto"></p>
+</div></header>
+
+<main class="envoltorio">
+  <section class="pantalla" id="pIntro" aria-labelledby="hIntro">
+    <div class="caja-mensaje">
+      <h2 id="hIntro"></h2>
+      <img class="corona" src="img/opt/espiral.webp" alt="" width="700" height="621">
+      <div id="introTxt"></div>
+    </div>
+    <button class="btn primario" id="btnEmpezar" type="button" disabled></button>
+    <p class="error" id="msgError" role="alert" hidden></p>
+  </section>
+
+  <section class="pantalla" id="pJuego" hidden aria-label="Partida">
+    <div class="marcador"><span class="etq" id="mRonda"></span><span class="etq" id="mPuntos"></span></div>
+    <div class="barra" aria-hidden="true"><i id="barraProg"></i></div>
+    <figure class="frase" style="margin-left:0;margin-right:0"><p id="fTexto"></p></figure>
+    <p class="quien-dijo" id="qPregunta"></p>
+    <ul class="opciones" id="opciones"></ul>
+    <div class="resultado" id="resultado" hidden aria-live="polite"></div>
+  </section>
+
+  <section class="pantalla" id="pRonda" hidden aria-labelledby="hRonda">
+    <div class="final">
+      <h2 id="hRonda"></h2>
+      <img class="banda" src="img/opt/banda-encaje.webp" alt="" width="1000" height="360">
+      <p class="puntos" id="rPuntos"></p>
+      <p id="rTotal"></p>
+      <button class="btn primario" id="btnSeguir" type="button"></button>
+    </div>
+  </section>
+
+  <section class="pantalla" id="pFinal" hidden aria-labelledby="hFinal">
+    <div class="final">
+      <h2 id="hFinal"></h2>
+      <img class="banda" src="img/opt/banda-encaje.webp" alt="" width="1000" height="360">
+      <p class="puntos" id="fPuntos"></p>
+      <p id="fMensaje"></p>
+      <ul class="repaso" id="repaso"></ul>
+      <button class="btn primario" id="btnOtra" type="button"></button>
+    </div>
+  </section>
+</main>
+
+<footer><div class="envoltorio">
+  <p class="firma">Web diseñada y creada por Mireia Gutiérrez Águila<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:.75rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.85">Conoce su historia</a></p>
+  <p class="fuente-pie ref-enlace" id="refEnlace"></p>
+</div></footer>
+
+<script>
+(function () {
+  'use strict';
+  /* Textos (después irán a los archivos de idioma; ca/en pendientes de traducir y de revisión de Mireia) */
+  var TXT = {
+    titulo: '¿Quién dijo qué?',
+    subtitulo: 'Lee la frase y adivina qué mujer de la historia la dijo.',
+    aviso: 'Boceto: mecánica y diseño provisionales. Las frases son de Mireia y sus fuentes están comprobadas por IA, pendientes de su revisión. La partida usa todas las frases, en rondas de 7.',
+    refAntes: 'Puedes ver todas las referencias de la web en ', refEnlace: 'esta página', refDespues: ', filtrando por la actividad.', nuevaPestana: ' (se abre en una pestaña nueva)',
+    introTit: 'Cómo se juega',
+    intro: ['Te enseñamos una frase y tres mujeres.', 'Toca la que crees que la dijo. Después te contamos quién fue.'],
+    /* el número de rondas se calcula con las frases que haya en los datos (14 frases = 2 rondas de 7) */
+    rondasInfo: function (n, por) { return 'Se juega en ' + n + (n === 1 ? ' ronda' : ' rondas') + ' de ' + por + ' frases.'; },
+    empezar: 'Empezar', cargando: 'Cargando…', errorCarga: 'No se han podido cargar las frases. Prueba a recargar la página.',
+    ronda: function (r, tr, n, t) { return tr > 1 ? 'Ronda ' + r + ' de ' + tr + ' · Frase ' + n + ' de ' + t : 'Frase ' + n + ' de ' + t; }, aciertos: function (n) { return 'Aciertos: ' + n; },
+    pregunta: '¿Quién lo dijo?',
+    acierto: '¡Acertaste!', fallo: 'No era esa.', fue: function (n, a) { return n + ' (' + a + ')'; },
+    atribuida: function (n) { return 'Se le atribuye a ' + n + ': no hemos podido confirmar dónde la dijo o la escribió.'; },
+    siguiente: 'Siguiente', verFinal: 'Ver el resultado', verRonda: 'Ver cómo vas',
+    finRonda: function (r) { return 'Fin de la ronda ' + r; }, seguir: function (r) { return 'Seguir con la ronda ' + r; }, totalLlevas: function (n, t) { return 'Llevas ' + n + ' aciertos de ' + t + ' frases.'; },
+    fin: 'Resultado', puntos: function (n, t) { return n + ' de ' + t; },
+    mensajes: ['Ahora ya conoces a estas mujeres un poco mejor.', 'Muy bien. Hay muchas más voces por descubrir.', '¡Increíble! Conoces muy bien las voces de estas mujeres.'],
+    otra: 'Jugar otra vez', alt: function (n) { return 'Retrato de ' + n; }
+  };
+  var POR_RONDA = 7, LANG = 'es';
+  function $(id) { return document.getElementById(id); }
+  function el(t, c, x) { var e = document.createElement(t); if (c) { e.className = c; } if (x !== undefined) { e.textContent = x; } return e; }
+  /* Si falta la traducción (marcador pendiente) se usa el castellano */
+  function L(o) { var v = o && o[LANG]; return v && v.indexOf('[TRADUCCIÓN') !== 0 ? v : o.es; }
+  function barajar(a) { var r = a.slice(), i, j, t; for (i = r.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = r[i]; r[i] = r[j]; r[j] = t; } return r; }
+  function pintarAnios(a) { return '(' + a + ')'; }
+
+  var datos = null, mujeres = {}, partida = [], ri = 0, pos = 0, puntos = 0, puntosRonda = 0, historial = [], total = 0;
+
+  $('titulo').textContent = TXT.titulo; $('subtitulo').textContent = TXT.subtitulo; $('avisoBoceto').textContent = TXT.aviso;
+  $('hIntro').textContent = TXT.introTit; $('btnEmpezar').textContent = TXT.cargando; $('btnOtra').textContent = TXT.otra; $('hFinal').textContent = TXT.fin;
+  $('qPregunta').textContent = TXT.pregunta;
+  TXT.intro.forEach(function (t) { $('introTxt').appendChild(el('p', '', t)); });
+  (function () { var r = $('refEnlace'), a = el('a', '', TXT.refEnlace); a.href = 'fuentes-boceto.html?tipo=actividad&actividad=frases'; a.target = '_blank'; a.rel = 'noopener'; a.setAttribute('aria-label', TXT.refEnlace + TXT.nuevaPestana);
+    r.appendChild(document.createTextNode(TXT.refAntes)); r.appendChild(a); r.appendChild(document.createTextNode(TXT.refDespues)); })();
+
+  /* Reparte TODAS las frases en rondas de 7. Las mujeres con varias frases se separan en rondas distintas (si se puede),
+     para que no se repita la misma mujer dentro de una ronda. Dentro de cada ronda el orden es al azar. */
+  function armarPartida() {
+    var porMujer = {}, grupos, lista = [], nr = Math.ceil(datos.frases.length / POR_RONDA), rondas = [], i;
+    datos.frases.forEach(function (f) { (porMujer[f.mujer] = porMujer[f.mujer] || []).push(f); });
+    grupos = barajar(Object.keys(porMujer).map(function (k) { return barajar(porMujer[k]); })).sort(function (a, b) { return b.length - a.length; });   // primero las que tienen más frases
+    grupos.forEach(function (g) { lista = lista.concat(g); });
+    for (i = 0; i < nr; i++) { rondas.push([]); }
+    lista.forEach(function (f) {
+      var libres = rondas.filter(function (r) { return r.length < POR_RONDA; });
+      var sin = libres.filter(function (r) { return !r.some(function (x) { return x.mujer === f.mujer; }); });
+      var cand = (sin.length ? sin : libres).slice().sort(function (a, b) { return a.length - b.length; });
+      cand[0].push(f);
+    });
+    return rondas.map(function (r) {
+      return barajar(r).map(function (f) {
+        var otras = barajar(datos.mujeres.filter(function (m) { return m.id !== f.mujer; })).slice(0, 2);
+        return { frase: f, opciones: barajar([mujeres[f.mujer]].concat(otras)) };
+      });
+    });
+  }
+  function mostrar(id) { ['pIntro', 'pJuego', 'pRonda', 'pFinal'].forEach(function (p) { $(p).hidden = p !== id; }); window.scrollTo(0, 0); }
+  function empezar() { partida = armarPartida(); total = partida.reduce(function (n, r) { return n + r.length; }, 0); ri = 0; pos = 0; puntos = 0; puntosRonda = 0; historial = []; mostrar('pJuego'); ronda(); }
+
+  function ronda() {
+    var r = partida[ri][pos], ul = $('opciones');
+    $('mRonda').textContent = TXT.ronda(ri + 1, partida.length, pos + 1, partida[ri].length); $('mPuntos').textContent = TXT.aciertos(puntos);
+    $('barraProg').style.width = (pos / partida[ri].length * 100) + '%';
+    $('fTexto').textContent = L(r.frase.texto);
+    $('resultado').hidden = true; $('resultado').textContent = ''; ul.textContent = '';
+    r.opciones.forEach(function (m) {
+      var li = el('li'), b = el('button', 'op'); b.type = 'button'; b.dataset.id = m.id;
+      var img = el('img'); img.src = m.foto; img.alt = TXT.alt(m.nombre); img.loading = 'lazy'; img.draggable = false;
+      var tx = el('span', 'texto'); tx.appendChild(el('strong', '', m.nombre)); tx.appendChild(el('small', '', pintarAnios(m.anios)));
+      b.appendChild(img); b.appendChild(tx); b.appendChild(el('span', 'marca')); b.addEventListener('click', function () { responder(m.id); });
+      li.appendChild(b); ul.appendChild(li);
+    });
+  }
+
+  function responder(id) {
+    var r = partida[ri][pos], ok = id === r.frase.mujer, m = mujeres[r.frase.mujer], caja = $('resultado');
+    if (ok) { puntos++; puntosRonda++; $('mPuntos').textContent = TXT.aciertos(puntos); }
+    historial.push({ frase: r.frase, ok: ok });
+    Array.prototype.forEach.call($('opciones').querySelectorAll('.op'), function (b) {
+      b.disabled = true;
+      if (b.dataset.id === r.frase.mujer) { b.classList.add('correcta'); b.querySelector('.marca').textContent = '✓'; }
+      else if (b.dataset.id === id) { b.classList.add('fallo'); b.querySelector('.marca').textContent = '✗'; }
+      else { b.classList.add('atenuada'); }
+    });
+    caja.textContent = ''; caja.className = 'resultado ' + (ok ? 'bien' : 'mal');
+    caja.appendChild(el('p', 'veredicto', ok ? TXT.acierto : TXT.fallo));
+    caja.appendChild(el('p', 'nombre', TXT.fue(m.nombre, m.anios)));
+    caja.appendChild(el('p', '', L(m.quien)));
+    if (r.frase.nota) { caja.appendChild(el('p', '', L(r.frase.nota))); }
+    if (r.frase.estado === 'atribuida') { caja.appendChild(el('p', 'atribuida', TXT.atribuida(m.nombre))); }
+    var finRonda = pos === partida[ri].length - 1, ultimaRonda = ri === partida.length - 1;
+    var sig = el('button', 'btn primario', !finRonda ? TXT.siguiente : ultimaRonda ? TXT.verFinal : TXT.verRonda); sig.type = 'button';
+    sig.addEventListener('click', function () { if (!finRonda) { pos++; ronda(); window.scrollTo(0, 0); } else if (ultimaRonda) { final(); } else { finDeRonda(); } });
+    caja.appendChild(sig); caja.hidden = false;
+    $('barraProg').style.width = ((pos + 1) / partida[ri].length * 100) + '%';
+    caja.scrollIntoView({ block: 'nearest', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    sig.focus({ preventScroll: true });
+  }
+
+  /* Pantalla entre rondas: cuántas has acertado en esta y cómo vas en total */
+  function finDeRonda() {
+    $('hRonda').textContent = TXT.finRonda(ri + 1); $('rPuntos').textContent = TXT.puntos(puntosRonda, partida[ri].length);
+    var hechas = 0, k; for (k = 0; k <= ri; k++) { hechas += partida[k].length; }
+    $('rTotal').textContent = TXT.totalLlevas(puntos, hechas);
+    $('btnSeguir').textContent = TXT.seguir(ri + 2); mostrar('pRonda');
+  }
+  function siguienteRonda() { ri++; pos = 0; puntosRonda = 0; mostrar('pJuego'); ronda(); }
+  function final() {
+    var t = total, i = puntos / t < .5 ? 0 : puntos / t < .85 ? 1 : 2, ul = $('repaso');
+    $('fPuntos').textContent = TXT.puntos(puntos, t); $('fMensaje').textContent = TXT.mensajes[i]; ul.textContent = '';
+    historial.forEach(function (h) {
+      var li = el('li'); li.appendChild(el('span', 'ico ' + (h.ok ? 'si' : 'no'), h.ok ? '✓' : '✗'));
+      li.appendChild(el('span', '', '«' + L(h.frase.texto) + '» — ' + mujeres[h.frase.mujer].nombre)); ul.appendChild(li);
+    });
+    mostrar('pFinal');
+  }
+
+  $('btnSeguir').addEventListener('click', siguienteRonda); $('btnEmpezar').addEventListener('click', empezar); $('btnOtra').addEventListener('click', empezar);
+  fetch('data/frases.json').then(function (r) { if (!r.ok) { throw new Error(r.status); } return r.json(); }).then(function (d) {
+    datos = d; d.mujeres.forEach(function (m) { mujeres[m.id] = m; });
+    $('introTxt').appendChild(el('p', '', TXT.rondasInfo(Math.ceil(d.frases.length / POR_RONDA), POR_RONDA)));
+    $('btnEmpezar').textContent = TXT.empezar; $('btnEmpezar').disabled = false;
+  }).catch(function () { $('btnEmpezar').hidden = true; var e = $('msgError'); e.textContent = TXT.errorCarga; e.hidden = false; });
+})();
+</script>
+</body>
+</html>

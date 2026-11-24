@@ -2944,6 +2944,356 @@
         "estado": "parcial",
         "nota": "Datos de 2017 por decisión de Mireia (22-11-2026). Cita que pide la ONU: «United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Policies 2017: Abortion laws and policies.» Los datos se han agrupado en cuatro categorías y traducido (hay que indicarlo, es CC BY). Aviso: la ONU los etiqueta como 2017 pero alguna fila parece reflejar cambios posteriores (Irlanda, 2019); han cambiado leyes importantes desde entonces. Mireia decidió (22-11-2026) mostrar el tema a todas las edades y sin aviso aparte."
       }
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Indira Gandhi",
+        "detalle": "",
+        "mes": null,
+        "orden": 8000
+      },
+      "dato": "«Para liberarse, la mujer debe sentirse libre, no para rivalizar con los hombres, sino libres en sus capacidades y personalidad.» — Indira Gandhi (1917-1984)",
+      "sub": "Discurso «True Liberation of Women» (26-3-1980), en Selected Speeches and Writings of Indira Gandhi, Publications Division, 1984, pp. 417-418. El original dice «to be herself».",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Wikiquote: Indira Gandhi (cita y referencia)",
+          "url": "https://en.wikiquote.org/wiki/Indira_Gandhi"
+        },
+        {
+          "nombre": "Foto: Desconocido (archivo Bettmann), Wikimedia Commons (Dominio público (EE. UU.))",
+          "url": "https://commons.wikimedia.org/wiki/File:Indira_Gandhi_1966(cropped).jpg"
+        }
+      ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Jane Goodall",
+        "detalle": "",
+        "mes": null,
+        "orden": 8001
+      },
+      "dato": "«El mayor peligro que nos depara el futuro es la apatía.» — Jane Goodall (1934-2025)",
+      "sub": "Jane Goodall, «The Power of One», TIME, 26-8-2002. Original: «The greatest danger to our future is apathy.»",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "TIME: The Power of One (2002)",
+          "url": "https://time.com/archive/6667096/the-power-of-one/"
+        },
+        {
+          "nombre": "Jane Goodall Institute: fechas",
+          "url": "https://janegoodall.org/?p=20399"
+        },
+        {
+          "nombre": "Foto: Departamento de Estado de EE. UU., Wikimedia Commons (Dominio público)",
+          "url": "https://commons.wikimedia.org/wiki/File:Jane_Goodall_2015.jpg"
+        }
+      ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Malala Yousafzai",
+        "detalle": "",
+        "mes": null,
+        "orden": 8002
+      },
+      "dato": "«Debemos decirles a nuestras jóvenes que sus voces son importantes.» — Malala Yousafzai (1997)",
+      "sub": "Se le atribuye: no hemos encontrado esas palabras. Lo más parecido es «tu voz es importante; tu voz puede cambiar el mundo» (ONU, 2017).",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "ONU Noticias: entrevista a Malala (11-4-2017)",
+          "url": "https://news.un.org/en/story/2017/04/555182-interview-new-un-role-malala-yousafzai-seeks-inspire-girls-stand-speak-out"
+        },
+        {
+          "nombre": "Wikiquote: Malala Yousafzai",
+          "url": "https://en.wikiquote.org/wiki/Malala_Yousafzai"
+        },
+        {
+          "nombre": "Foto: Southbank Centre, Wikimedia Commons (CC BY 2.0)",
+          "url": "https://commons.wikimedia.org/wiki/File:Malala_Yousafzai-cropped.jpg"
+        }
+      ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Gloria Steinem",
+        "detalle": "",
+        "mes": null,
+        "orden": 8003
+      },
+      "dato": "«Un feminista es cualquiera que reconozca la igualdad y plena humanidad en mujeres y hombres.» — Gloria Steinem (1934-2026)",
+      "sub": "Se le atribuye: Ms. Magazine la sitúa en «Outrageous Acts and Everyday Rebellions» (1983), sin página; no hemos encontrado la fuente primaria.",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Ms. Magazine (4-9-2026): frases de Gloria Steinem",
+          "url": "https://msmagazine.com/2026/09/04/gloria-steinem-quotes-feminism-roe-trump/"
+        },
+        {
+          "nombre": "Wikiquote: Gloria Steinem",
+          "url": "https://en.wikiquote.org/wiki/Gloria_Steinem"
+        },
+        {
+          "nombre": "Foto: Jay Godwin (LBJ Library), Wikimedia Commons (Dominio público)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gloria_Steinem_1975.jpg"
+        }
+      ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Marie Curie",
+        "detalle": "",
+        "mes": null,
+        "orden": 8004
+      },
+      "dato": "«Sería bueno sentir menos curiosidad por las personas y más por las ideas.» — Marie Curie (1867-1934)",
+      "sub": "Se le atribuye: la primera fuente es de 1972 (posterior a su muerte); no hemos encontrado fuente primaria.",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Wikiquote: Marie Curie",
+          "url": "https://en.wikiquote.org/wiki/Marie_Curie"
+        },
+        {
+          "nombre": "Quote Investigator: «In science we should be interested in things, not persons»",
+          "url": "https://quoteinvestigator.com/2021/03/26/science-things/"
+        },
+        {
+          "nombre": "Foto: Autor desconocido, Wikimedia Commons (Dominio público (EE. UU.))",
+          "url": "https://commons.wikimedia.org/wiki/File:Marie_Curie_c._1898.jpg"
+        }
+      ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Gloria Steinem",
+        "detalle": "",
+        "mes": null,
+        "orden": 8005
+      },
+      "dato": "«Una vez que nos cansamos de buscar aprobación, nos damos cuenta de que es más fácil ganarse el respeto.» — Gloria Steinem (1934-2026)",
+      "sub": "Se le atribuye: solo la recogen webs de citas, que la sitúan en «Outrageous Acts and Everyday Rebellions» (1983) sin página. El original en inglés es «Once we give up searching for approval we often find it easier to earn respect».",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "LibQuotes: Outrageous Acts and Everyday Rebellions (web de citas)",
+          "url": "https://libquotes.com/gloria-steinem/works/outrageous-acts-and-everyday-rebellions"
+        },
+        {
+          "nombre": "Foto: Jay Godwin (LBJ Library), Wikimedia Commons (Dominio público)",
+          "url": "https://commons.wikimedia.org/wiki/File:Gloria_Steinem_1975.jpg"
+        }
+      ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Virginia Satir",
+        "detalle": "",
+        "mes": null,
+        "orden": 8006
+      },
+      "dato": "«No podemos dejar que las percepciones de los demás terminen definiéndonos.» — Virginia Satir (1916-1988)",
+      "sub": "Se le atribuye: no hemos encontrado libro ni página; la versión habitual en inglés es «We must not allow other people's limited perceptions to define us».",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Wikiquote: Virginia Satir",
+          "url": "https://en.wikiquote.org/wiki/Virginia_Satir"
+        },
+        {
+          "nombre": "Foto: William Meyer, Wikimedia Commons (Dominio público)",
+          "url": "https://commons.wikimedia.org/wiki/File:VirginiaSatir.jpg"
+        }
+      ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Rosa Parks",
+        "detalle": "",
+        "mes": null,
+        "orden": 8007
+      },
+      "dato": "«Nunca debes tener miedo de lo que estás haciendo cuando es correcto.» — Rosa Parks (1913-2005)",
+      "sub": "Se le atribuye: no hemos encontrado fuente primaria. Una idea parecida aparece en «Quiet Strength» (2000): «knowing what must be done does away with fear».",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Wikiquote: Rosa Parks",
+          "url": "https://en.wikiquote.org/wiki/Rosa_Parks"
+        },
+        {
+          "nombre": "Foto: Autor desconocido (Rosa Parks papers, Library of Congress), Wikimedia Commons (Dominio público)",
+          "url": "https://commons.wikimedia.org/wiki/File:Rosa_Parks,_November_1956_(cropped).jpg"
+        }
+      ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Angela Davis",
+        "detalle": "",
+        "mes": null,
+        "orden": 8008
+      },
+      "dato": "«No estoy aceptando las cosas que no puedo cambiar, estoy cambiando las cosas que no puedo aceptar.» — Angela Davis (1944)",
+      "sub": "Se le atribuye: no hemos encontrado fuente primaria. La versión habitual en inglés es «I am no longer accepting the things I cannot change. I am changing the things I cannot accept».",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Wikiquote: Angela Y. Davis",
+          "url": "https://en.wikiquote.org/wiki/Angela_Y._Davis"
+        },
+        {
+          "nombre": "Foto: Oregon State University, Wikimedia Commons (CC BY-SA 2.0)",
+          "url": "https://commons.wikimedia.org/wiki/File:Angela_Davis_in_2019.jpg"
+        }
+      ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Angela Davis",
+        "detalle": "",
+        "mes": null,
+        "orden": 8009
+      },
+      "dato": "«En una sociedad racista no ser racista no es suficiente. Tenemos que ser antirracistas.» — Angela Davis (1944)",
+      "sub": "Se le atribuye: no hemos encontrado fuente primaria. La versión habitual en inglés es «In a racist society, it is not enough to be non-racist, we must be anti-racist».",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Wikiquote: Angela Y. Davis",
+          "url": "https://en.wikiquote.org/wiki/Angela_Y._Davis"
+        },
+        {
+          "nombre": "Foto: Oregon State University, Wikimedia Commons (CC BY-SA 2.0)",
+          "url": "https://commons.wikimedia.org/wiki/File:Angela_Davis_in_2019.jpg"
+        }
+      ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Malala Yousafzai",
+        "detalle": "",
+        "mes": null,
+        "orden": 8010
+      },
+      "dato": "«Para hacerme poderosa solo necesito una cosa: educación.» — Malala Yousafzai (1997)",
+      "sub": "Se le atribuye: no aparece en su discurso en la ONU de 2013 ni en Wikiquote; puede ser una paráfrasis de otra intervención.",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Malala Fund: discurso en la ONU (2013)",
+          "url": "https://malala.org/newsroom/malala-un-speech"
+        },
+        {
+          "nombre": "Wikiquote: Malala Yousafzai",
+          "url": "https://en.wikiquote.org/wiki/Malala_Yousafzai"
+        },
+        {
+          "nombre": "Foto: Southbank Centre, Wikimedia Commons (CC BY 2.0)",
+          "url": "https://commons.wikimedia.org/wiki/File:Malala_Yousafzai-cropped.jpg"
+        }
+      ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Virginia Woolf",
+        "detalle": "",
+        "mes": null,
+        "orden": 8011
+      },
+      "dato": "«No hay barrera, cerradura, ni cerrojo que puedas imponer a la libertad de mi mente.» — Virginia Woolf (1882-1941)",
+      "sub": "Virginia Woolf, «A Room of One's Own» (1929), capítulo 4. Original: «there is no gate, no lock, no bolt that you can set upon the freedom of my mind». La traducción «barrera» es libre.",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Wikisource: A Room of One's Own, capítulo 4",
+          "url": "https://en.wikisource.org/wiki/A_Room_of_One%27s_Own_(Harcourt_1929)/Chapter_4"
+        },
+        {
+          "nombre": "Wikiquote: Virginia Woolf",
+          "url": "https://en.wikiquote.org/wiki/Virginia_Woolf"
+        },
+        {
+          "nombre": "Foto: Autor desconocido, Wikimedia Commons (Dominio público)",
+          "url": "https://commons.wikimedia.org/wiki/File:Virginia_Woolf_1927.jpg"
+        }
+      ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Emma Goldman",
+        "detalle": "",
+        "mes": null,
+        "orden": 8012
+      },
+      "dato": "«Requiere menos esfuerzo intelectual el condenar que el pensar.» — Emma Goldman (1869-1940)",
+      "sub": "Emma Goldman, «Anarchism: What It Really Stands For», en «Anarchism and Other Essays» (1910). Original: «Someone has said that it requires less mental effort to condemn than to think».",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Wikiquote: Emma Goldman",
+          "url": "https://en.wikiquote.org/wiki/Emma_Goldman"
+        },
+        {
+          "nombre": "Foto: Takuma Kajiwara, Wikimedia Commons (Dominio público)",
+          "url": "https://commons.wikimedia.org/wiki/File:Emma_Goldman_seated.jpg"
+        }
+      ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "frases",
+        "etiqueta": "Actividad · ¿Quién dijo qué? · Frase de Emmeline Pankhurst",
+        "detalle": "",
+        "mes": null,
+        "orden": 8013
+      },
+      "dato": "«Prefiero ser rebelde que una esclava.» — Emmeline Pankhurst (1858-1928)",
+      "sub": "Se le atribuye: se cita como dicha en un acto de 1913, pero no aparece en las transcripciones de su discurso «Freedom or Death» (Hartford, 13-11-1913).",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Scroll.in: The suffragettes were rebels",
+          "url": "https://scroll.in/article/761296/the-suffragettes-were-rebels-certainly-but-not-slaves"
+        },
+        {
+          "nombre": "Wikiquote: Emmeline Pankhurst",
+          "url": "https://en.wikiquote.org/wiki/Emmeline_Pankhurst"
+        },
+        {
+          "nombre": "Foto: LSE Library, Wikimedia Commons (Sin restricciones de copyright conocidas)",
+          "url": "https://commons.wikimedia.org/wiki/File:Emmeline_Pankhurst_portrait,_New_York_1913.jpg"
+        }
+      ]
     }
   ]
 }
