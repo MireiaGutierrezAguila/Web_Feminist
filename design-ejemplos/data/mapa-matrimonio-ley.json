@@ -4,13 +4,13 @@
   "tipo": "categorias",
   "titulo": {
     "es": "¿En qué países es legal el matrimonio infantil?",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "En quins països és legal el matrimoni infantil?",
+    "en": "In which countries is child marriage legal?"
   },
   "subtitulo": {
     "es": "Estos datos muestran si la ley permite casarse antes de los 18 años. Pero muchas veces las niñas se casan incluso antes, a los 15 años o más pequeñas. Mira qué dice la ley en cada país.",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Aquestes dades mostren si la llei permet casar-se abans dels 18 anys. Però moltes vegades les nenes es casen fins i tot abans, als 15 anys o més petites. Mira què diu la llei a cada país.",
+    "en": "This data shows whether the law allows people to marry before the age of 18. But girls are often married even younger, at 15 or smaller. See what the law says in each country."
   },
   "afirmaciones": [
     {
@@ -25,8 +25,8 @@
       "color": "#8A0030",
       "texto": {
         "es": "Es legal casarse antes de los 18",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "És legal casar-se abans dels 18",
+        "en": "It is legal to marry before 18"
       },
       "orden": 1
     },
@@ -35,8 +35,8 @@
       "color": "#BF5F0A",
       "texto": {
         "es": "Los padres pueden autorizar el matrimonio antes de los 18",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Els pares poden autoritzar el matrimoni abans dels 18",
+        "en": "Parents can approve a marriage before 18"
       },
       "orden": 2
     },
@@ -45,8 +45,8 @@
       "color": "#7B9E09",
       "texto": {
         "es": "La ley no permite el matrimonio antes de los 18",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "La llei no permet el matrimoni abans dels 18",
+        "en": "The law does not allow marriage before 18"
       },
       "orden": 3
     }
@@ -55,40 +55,40 @@
     "color": "#9a93a8",
     "texto": {
       "es": "No tenemos datos de este país",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "No tenim dades d'aquest país",
+      "en": "We have no data for this country"
     }
   },
   "avisoLeyes": {
     "es": "Este mapa muestra lo que dicen las leyes escritas. Lo que pasa en la vida real puede ser distinto.",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Aquest mapa mostra el que diuen les lleis escrites. El que passa a la vida real pot ser diferent.",
+    "en": "This map shows what the written laws say. What happens in real life can be different."
   },
   "avisoRegiones": {
     "es": "En los países con leyes distintas en cada región o estado, el mapa muestra la ley de su ciudad principal.",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Als països amb lleis diferents a cada regió o estat, el mapa mostra la llei de la seva ciutat principal.",
+    "en": "In countries with different laws in each region or state, the map shows the law of the main city."
   },
   "detalle": {
     "edad18": {
       "es": "¿Hay que tener al menos 18 años para casarse sin permiso?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Cal tenir almenys 18 anys per casar-se sense permís?",
+      "en": "Do you have to be at least 18 to marry without permission?"
     },
     "sinExcepcionPadres": {
       "es": "¿Impide la ley que los padres autoricen un matrimonio antes de los 18?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Impedeix la llei que els pares autoritzin un matrimoni abans dels 18?",
+      "en": "Does the law stop parents from approving a marriage before 18?"
     },
     "anula": {
       "es": "¿Se puede anular un matrimonio hecho antes de los 18?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Es pot anul·lar un matrimoni fet abans dels 18?",
+      "en": "Can a marriage made before 18 be annulled?"
     },
     "castiga": {
       "es": "¿Castiga la ley a los adultos que permiten un matrimonio antes de los 18?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Castiga la llei els adults que permeten un matrimoni abans dels 18?",
+      "en": "Does the law punish adults who allow a marriage before 18?"
     }
   },
   "fuente": {
@@ -108,48 +108,48 @@
   ],
   "chip": {
     "es": "Matrimonio infantil: ¿Dónde es legal?",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Matrimoni infantil: On és legal?",
+    "en": "Child marriage: Where is it legal?"
   },
   "juego": {
     "tipo": "adivinar-categorias",
     "aviso": "Juego de Mireia (2026-11-20): se iluminan en azul los países de una categoría; el niño elige qué dice la ley en ellos; se pintan de su color; la última categoría se deduce. Textos redactados por Claude, pendientes de revisión de Mireia.",
     "pregunta": {
       "es": "¿Qué crees que dice la ley en los países marcados en azul?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Què creus que diu la llei als països marcats en blau?",
+      "en": "What do you think the law says in the countries marked in blue?"
     },
     "acierto": {
       "es": "¡Acertaste!",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Ho has encertat!",
+      "en": "You got it!"
     },
     "fallo": {
       "es": "No era esa. ¡Ahora lo sabes!",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "No era aquesta. Ara ja ho saps!",
+      "en": "That wasn't it. Now you know!"
     },
     "explicaciones": {
       "A": {
         "es": "En estos países la ley deja que las chicas o los chicos se casen antes de los 18 años.",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "En aquests països la llei deixa que les noies o els nois es casin abans dels 18 anys.",
+        "en": "In these countries the law lets girls or boys marry before the age of 18."
       },
       "B": {
         "es": "En estos países la ley dice 18 años, pero los padres pueden autorizar el matrimonio antes.",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "En aquests països la llei diu 18 anys, però els pares poden autoritzar el matrimoni abans.",
+        "en": "In these countries the law says 18, but parents can approve the marriage earlier."
       },
       "V": {
         "es": "En estos países la ley no permite el matrimonio antes de los 18 años.",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "En aquests països la llei no permet el matrimoni abans dels 18 anys.",
+        "en": "In these countries the law does not allow marriage before the age of 18."
       }
     },
     "finalFrase": {
       "es": "Y los países que quedan son los de «{texto}».",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "I els països que queden són els de «{texto}».",
+      "en": "And the remaining countries are the ones in “{texto}”."
     }
   },
   "paises": {
