@@ -1,14 +1,14 @@
 {
   "aviso": "Fotos e imágenes históricas de las mujeres, con autor y licencia para mostrar junto a cada una. Verificadas el 2026-11-12 con las fichas y la API de Wikimedia Commons; NO se pudieron abrir las fuentes originales (UCLA, Louvre, Government Art Collection, Bukowskis). Los textos alternativos (alt) y los créditos son de redacción propia, pendientes de revisión de Mireia. ca/en: traducciones pendientes.",
   "sinImagen": {
-    "zheng-shi": { "es": "No se conserva ningún retrato fiable de ella.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
-    "julia-hermosilla": { "es": "No hay una imagen suya con licencia libre.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" }
+    "zheng-shi": { "es": "No se conserva ningún retrato fiable de ella.", "ca": "No es conserva cap retrat fiable d'ella.", "en": "No reliable portrait of her has survived." },
+    "julia-hermosilla": { "es": "No hay una imagen suya con licencia libre.", "ca": "No hi ha cap imatge seva amb llicència lliure.", "en": "There is no image of her with a free licence." }
   },
   "fotos": {
     "hedy-lamarr": {
       "archivo": "foto-real.jpg",
       "tipo": "fotografia",
-      "alt": { "es": "Fotografía de estudio en blanco y negro de Hedy Lamarr, de 1939", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "alt": { "es": "Fotografía de estudio en blanco y negro de Hedy Lamarr, de 1939", "ca": "Fotografia d'estudi en blanc i negre d'Hedy Lamarr, del 1939", "en": "A black-and-white studio photograph of Hedy Lamarr, from 1939" },
       "autor": "Los Angeles Times (Colección fotográfica del Los Angeles Times, UCLA)",
       "fecha": "1939",
       "creditoCorto": "Foto: Los Angeles Times (UCLA) · CC BY 4.0",
@@ -23,7 +23,7 @@
     "lynn-margulis": {
       "archivo": "foto-real.jpg",
       "tipo": "fotografia",
-      "alt": { "es": "Fotografía de Lynn Margulis durante una conferencia, de 2005", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "alt": { "es": "Fotografía de Lynn Margulis durante una conferencia, de 2005", "ca": "Fotografia de Lynn Margulis durant una conferència, del 2005", "en": "A photograph of Lynn Margulis during a lecture, from 2005" },
       "autor": "Javier Pedreira (wicho)",
       "fecha": "2005-11-09",
       "creditoCorto": "Foto: Javier Pedreira · CC BY 2.0",
@@ -38,7 +38,7 @@
     "ada-lovelace": {
       "archivo": "foto-real.jpg",
       "tipo": "pintura",
-      "alt": { "es": "Retrato al óleo de Ada Lovelace, pintado en 1836", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "alt": { "es": "Retrato al óleo de Ada Lovelace, pintado en 1836", "ca": "Retrat a l'oli d'Ada Lovelace, pintat el 1836", "en": "An oil portrait of Ada Lovelace, painted in 1836" },
       "autor": "Margaret Sarah Carpenter (1793-1872)",
       "fecha": "1836",
       "creditoCorto": "Óleo de Margaret S. Carpenter, 1836 · Dominio público",
@@ -53,7 +53,7 @@
     "hipatia-de-alejandria": {
       "archivo": "foto-real.jpg",
       "tipo": "pintura-imaginada",
-      "alt": { "es": "Pintura de 1889 que imagina a Hipatia de Alejandría", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "alt": { "es": "Pintura de 1889 que imagina a Hipatia de Alejandría", "ca": "Pintura del 1889 que imagina Hipàtia d'Alexandria", "en": "An 1889 painting that imagines Hypatia of Alexandria" },
       "autor": "Julius Kronberg (1850-1921)",
       "fecha": "1889",
       "creditoCorto": "Pintura imaginada de Julius Kronberg, 1889 · Dominio público",
@@ -68,7 +68,7 @@
     "olimpia-de-gouges": {
       "archivo": "foto-real.jpg",
       "tipo": "acuarela",
-      "alt": { "es": "Acuarela de 1793 que representa a Olimpia de Gouges sentada con un libro", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "alt": { "es": "Acuarela de 1793 que representa a Olimpia de Gouges sentada con un libro", "ca": "Aquarel·la del 1793 que representa Olympe de Gouges asseguda amb un llibre", "en": "A 1793 watercolour depicting Olympe de Gouges seated with a book" },
       "autor": "Anónimo",
       "fecha": "1793",
       "creditoCorto": "Acuarela anónima, 1793 · Museo del Louvre · Dominio público",
@@ -83,7 +83,7 @@
     "rosa-parks": {
       "archivo": "foto-real.jpg",
       "tipo": "fotografia",
-      "alt": { "es": "Fotografía de Rosa Parks sonriendo, con la Medalla Presidencial de la Libertad y su certificado, en 1996", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "alt": { "es": "Fotografía de Rosa Parks sonriendo, con la Medalla Presidencial de la Libertad y su certificado, en 1996", "ca": "Fotografia de Rosa Parks somrient, amb la Medalla Presidencial de la Llibertat i el seu certificat, el 1996", "en": "A photograph of Rosa Parks smiling, with the Presidential Medal of Freedom and her certificate, in 1996" },
       "autor": "White House Photograph Office",
       "fecha": "1996-09-14",
       "creditoCorto": "Foto: Casa Blanca (EE. UU.), 1996 · Dominio público",
@@ -98,7 +98,7 @@
     "frida-kahlo": {
       "archivo": "foto-real.jpg",
       "tipo": "fotografia",
-      "alt": { "es": "Fotografía en blanco y negro de Frida Kahlo sentada junto a un agave, con dos trenzas, en 1937", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "alt": { "es": "Fotografía en blanco y negro de Frida Kahlo sentada junto a un agave, con dos trenzas, en 1937", "ca": "Fotografia en blanc i negre de Frida Kahlo asseguda al costat d'un agave, amb dues trenes, el 1937", "en": "A black-and-white photograph of Frida Kahlo seated next to an agave, with two braids, in 1937" },
       "autor": "Toni Frissell (restauración digital: Adam Cuerden)",
       "fecha": "1937",
       "creditoCorto": "Foto: Toni Frissell, 1937 · Dominio público",
@@ -113,7 +113,7 @@
     "emma-goldman": {
       "archivo": "foto-real.jpg",
       "tipo": "fotografia",
-      "alt": { "es": "Fotografía en blanco y negro de Emma Goldman, con gafas y gesto serio, de 1919", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "alt": { "es": "Fotografía en blanco y negro de Emma Goldman, con gafas y gesto serio, de 1919", "ca": "Fotografia en blanc i negre d'Emma Goldman, amb ulleres i gest seriós, del 1919", "en": "A black-and-white photograph of Emma Goldman, wearing glasses and a serious expression, from 1919" },
       "autor": "Bain News Service (fotógrafo no identificado)",
       "fecha": "1919",
       "creditoCorto": "Foto: Bain News Service, 1919 · Dominio público",
@@ -128,7 +128,7 @@
     "aglaonice-de-tesalia": {
       "archivo": "foto-real.jpg",
       "tipo": "ilustracion-moderna",
-      "alt": { "es": "Ilustración moderna de una mujer con túnica griega, sentada, que alarga la mano hacia una luna creciente rodeada de estrellas", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+      "alt": { "es": "Ilustración moderna de una mujer con túnica griega, sentada, que alarga la mano hacia una luna creciente rodeada de estrellas", "ca": "Il·lustració moderna d'una dona amb túnica grega, asseguda, que allarga la mà cap a una lluna creixent envoltada d'estrelles", "en": "A modern illustration of a seated woman in a Greek tunic reaching out a hand toward a crescent moon surrounded by stars" },
       "autor": "Alzinous",
       "fecha": "2015-12-22",
       "creditoCorto": "Ilustración moderna de Alzinous, 2015 · CC BY-SA 4.0",
