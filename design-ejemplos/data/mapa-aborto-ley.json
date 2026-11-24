@@ -4,13 +4,13 @@
   "aviso": "Tema del mapa «La mujer en el mundo»: leyes sobre el aborto según la ONU (World Population Policies 2017, UN DESA, CC BY 3.0 IGO). Datos de 2017 por decisión de Mireia (2026-11-22). Categorías simplificadas por Claude a partir de la tabla de la ONU; textos redactados por Claude, pendientes de revisión de Mireia. Decisión de Mireia (2026-11-22): el tema se muestra a todas las edades y sin aviso aparte.",
   "titulo": {
     "es": "¿Qué dice la ley sobre el aborto?",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Què diu la llei sobre l'avortament?",
+    "en": "What does the law say about abortion?"
   },
   "subtitulo": {
     "es": "Estos datos muestran en qué casos permite la ley interrumpir un embarazo en cada país. Son datos de 2017 y las leyes pueden haber cambiado desde entonces.",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Aquestes dades mostren en quins casos permet la llei interrompre un embaràs a cada país. Són dades del 2017 i les lleis poden haver canviat des d'aleshores.",
+    "en": "This data shows in which cases the law allows ending a pregnancy in each country. It is data from 2017 and laws may have changed since then."
   },
   "categorias": [
     {
@@ -18,8 +18,8 @@
       "color": "#8A0030",
       "texto": {
         "es": "Prohibido, o solo si su vida corre peligro",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Prohibit, o només si la seva vida corre perill",
+        "en": "Banned, or only if her life is in danger"
       },
       "orden": 1
     },
@@ -28,8 +28,8 @@
       "color": "#BF5F0A",
       "texto": {
         "es": "Permitido si su salud corre peligro",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Permès si la seva salut corre perill",
+        "en": "Allowed if her health is in danger"
       },
       "orden": 2
     },
@@ -38,8 +38,8 @@
       "color": "#F1DA0E",
       "texto": {
         "es": "Permitido si hay problemas económicos o sociales",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Permès si hi ha problemes econòmics o socials",
+        "en": "Allowed if there are economic or social problems"
       },
       "orden": 3
     },
@@ -48,8 +48,8 @@
       "color": "#7B9E09",
       "texto": {
         "es": "Permitido",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "Permès",
+        "en": "Allowed"
       },
       "orden": 4
     }
@@ -58,19 +58,19 @@
     "color": "#9a93a8",
     "texto": {
       "es": "No tenemos datos de este país",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "No tenim dades d'aquest país",
+      "en": "We have no data for this country"
     }
   },
   "avisoLeyes": {
     "es": "Este mapa muestra lo que dice la ley escrita, según datos de la ONU de 2017. Las leyes pueden haber cambiado desde entonces.",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Aquest mapa mostra el que diu la llei escrita, segons dades de l'ONU del 2017. Les lleis poden haver canviat des d'aleshores.",
+    "en": "This map shows what the written law says, according to UN data from 2017. Laws may have changed since then."
   },
   "avisoRegiones": {
     "es": "Cada categoría muestra lo máximo que permite la ley. La ficha de cada país cuenta en qué casos se permite, y si la ley cambia según la región.",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Cada categoria mostra el màxim que permet la llei. La fitxa de cada país explica en quins casos es permet, i si la llei canvia segons la regió.",
+    "en": "Each category shows the most the law allows. Each country's card explains in which cases it is allowed, and whether the law changes by region."
   },
   "detalleModo": "claves",
   "detalleClaves": [
@@ -87,54 +87,54 @@
   "detalle": {
     "vida": {
       "es": "¿Se permite si la vida de la mujer está en peligro?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Es permet si la vida de la dona està en perill?",
+      "en": "Is it allowed if the woman's life is in danger?"
     },
     "salud": {
       "es": "¿Se permite para proteger su salud?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Es permet per protegir la seva salut?",
+      "en": "Is it allowed to protect her health?"
     },
     "violacion": {
       "es": "¿Se permite en caso de violación?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Es permet en cas de violació?",
+      "en": "Is it allowed in cases of rape?"
     },
     "incesto": {
       "es": "¿Se permite en caso de incesto?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Es permet en cas d'incest?",
+      "en": "Is it allowed in cases of incest?"
     },
     "malformacion": {
       "es": "¿Se permite si el feto tiene una malformación grave?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Es permet si el fetus té una malformació greu?",
+      "en": "Is it allowed if the fetus has a serious malformation?"
     },
     "economicas": {
       "es": "¿Se permite por razones económicas o sociales?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Es permet per raons econòmiques o socials?",
+      "en": "Is it allowed for economic or social reasons?"
     },
     "peticion": {
       "es": "¿Se permite a petición de la mujer?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Es permet a petició de la dona?",
+      "en": "Is it allowed at the woman's request?"
     },
     "padres": {
       "es": "¿Las menores necesitan permiso de sus padres?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Les menors necessiten permís dels seus pares?",
+      "en": "Do minors need their parents' permission?"
     },
     "marido": {
       "es": "¿Las mujeres casadas necesitan permiso del marido?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Les dones casades necessiten permís del marit?",
+      "en": "Do married women need their husband's permission?"
     }
   },
   "detalleSinDato": {
     "es": "No especificado",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "No especificat",
+    "en": "Not specified"
   },
   "fuente": {
     "cita": "United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Policies 2017: Abortion laws and policies. Copyright © 2019 by United Nations, made available under a Creative Commons license (CC BY 3.0 IGO): http://creativecommons.org/licenses/by/3.0/igo/",
@@ -147,58 +147,58 @@
   },
   "fuenteCorta": {
     "es": "ONU, datos de 2017 (ver fuentes)",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "ONU, dades del 2017 (vegeu fonts)",
+    "en": "UN, 2017 data (see sources)"
   },
   "chip": {
     "es": "Aborto: ¿Qué dice la ley?",
-    "ca": "[TRADUCCIÓN PENDIENTE]",
-    "en": "[TRADUCCIÓN PENDIENTE]"
+    "ca": "Avortament: Què diu la llei?",
+    "en": "Abortion: What does the law say?"
   },
   "juego": {
     "tipo": "adivinar-categorias",
     "aviso": "Mismo formato que los otros temas. Textos de Claude pendientes de revisión de Mireia.",
     "pregunta": {
       "es": "¿Qué crees que dice la ley en los países marcados en azul?",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Què creus que diu la llei als països marcats en blau?",
+      "en": "What do you think the law says in the countries marked in blue?"
     },
     "acierto": {
       "es": "¡Acertaste!",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "Ho has encertat!",
+      "en": "You got it!"
     },
     "fallo": {
       "es": "No era esa. ¡Ahora lo sabes!",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "No era aquesta. Ara ja ho saps!",
+      "en": "That wasn't it. Now you know!"
     },
     "explicaciones": {
       "R": {
         "es": "En estos países la ley prohíbe el aborto, o solo lo permite si la vida de la mujer corre peligro. Algunos añaden otras excepciones, como la violación: la ficha de cada país lo cuenta.",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "En aquests països la llei prohibeix l'avortament, o només el permet si la vida de la dona corre perill. Alguns afegeixen altres excepcions, com la violació: la fitxa de cada país ho explica.",
+        "en": "In these countries the law bans abortion, or only allows it if the woman's life is in danger. Some add other exceptions, such as rape: each country's card explains this."
       },
       "S": {
         "es": "En estos países la ley lo permite si la salud de la mujer corre peligro, pero no por otras razones.",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "En aquests països la llei ho permet si la salut de la dona corre perill, però no per altres raons.",
+        "en": "In these countries the law allows it if the woman's health is in danger, but not for other reasons."
       },
       "E": {
         "es": "En estos países la ley lo permite si hay problemas económicos o sociales.",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "En aquests països la llei ho permet si hi ha problemes econòmics o socials.",
+        "en": "In these countries the law allows it if there are economic or social problems."
       },
       "P": {
         "es": "En estos países la ley permite abortar a petición de la mujer, sin tener que dar un motivo. Suele haber un límite de semanas.",
-        "ca": "[TRADUCCIÓN PENDIENTE]",
-        "en": "[TRADUCCIÓN PENDIENTE]"
+        "ca": "En aquests països la llei permet avortar a petició de la dona, sense haver de donar cap motiu. Sol haver-hi un límit de setmanes.",
+        "en": "In these countries the law allows abortion at the woman's request, without having to give a reason. There is usually a limit on the number of weeks."
       }
     },
     "finalFrase": {
       "es": "Y los países que quedan son los de «{texto}».",
-      "ca": "[TRADUCCIÓN PENDIENTE]",
-      "en": "[TRADUCCIÓN PENDIENTE]"
+      "ca": "I els països que queden són els de «{texto}».",
+      "en": "And the remaining countries are the ones in “{texto}”."
     }
   },
   "paises": {
