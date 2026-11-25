@@ -23,6 +23,7 @@
 ## 3. Especificaciones generales
 - **Responsive**, pensada primero para móvil y uso táctil.
 - **Idiomas:** castellano, catalán e inglés.
+  - *Idea futura (Mireia, 2026-11-25):* añadir otras lenguas de España (gallego, valenciano, euskera). Ver decisiones pendientes.
 - **Sin cuentas ni servidor.** El progreso se guarda en el navegador.
 - **Fuentes visibles en todo el contenido.** Forma de mostrarlas: [POR DECIDIR — p. ej. botón "Fuentes" en cada ficha y actividad, y una página general de fuentes].
 - **Firma** en el pie de todas las páginas: "Diseñada, programada y probada por Mireia Gutiérrez".
@@ -139,5 +140,6 @@
 - [ ] Formato de la animación de la cabeza de cada mujer.
 - [ ] Cómo se muestran las fuentes (diseño).
 - [ ] Quién hace las traducciones al catalán y al inglés y cómo se revisan.
+- [ ] ¿Añadir más lenguas (valenciano, gallego, euskera)? Propuesta por fases: 1) cerrar es/ca/en y un selector de idioma preparado para N idiomas; 2) valenciano (variante del catalán, etiqueta `ca-valencia`) y gallego; 3) euskera solo con una persona que lo revise. Cada texto nuevo pasaría a 5–6 versiones pendientes de revisión, y el glosario del Ayuntamiento solo existe en castellano y catalán (en otros idiomas serían traducciones propias, indicándolo).
 - [ ] Fuentes de datos para el globo terráqueo y la brecha en cifras.
 - [ ] Orden de desarrollo de las actividades.
