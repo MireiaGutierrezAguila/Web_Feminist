@@ -1,0 +1,1176 @@
+{
+  "aviso": "Frases de la actividad «Crea tu pancarta o camiseta». Recopilación de Mireia (CSV «frases_pancartas», 25-11-2026): lemas populares de manifestaciones feministas, sin autoría concreta salvo que se indique. Quitada la nº 10 (palabras malsonantes) y modificada la nº 19 por decisión de Mireia; corregida la errata «habrian» de la nº 40. Cada frase está en su idioma original; el resto de idiomas, pendiente de traducir y de revisión de Mireia. Estas frases no llevan referencias: son lemas reivindicativos, muchos inventados por Mireia (decisión de Mireia, 25-11-2026). Grupos y pared (25-11-2026): las 17 temáticas del CSV se juntan en 6 pestañas del popup «Elegir frase»; el popup es una «pared» negra de grafiti (como la puerta de un baño de sala de conciertos) con todas las frases mezcladas; cada frase lleva un «pared» (letra de rotulador o spray, curvatura —pocas curvadas—, color, giro, ancho, desplazamiento, alineación y orden) elegido al azar por Claude, pendiente de revisión de Mireia. Frases añadidas por Mireia el 25-11-2026 (nº 41 a 49): 6 de brujas («Brujas y aquelarre»), «¡Ha llegado el fin del patriarcado!», «La lucha será feminista o no será.» y «Si callamos, nos matan.»; se les ha puesto punto final a las que no lo llevaban, como al resto. La nº 40 pasa a la pestaña «Memoria y brujas» (su temática original no cambia). Quitada la nº 6 («No vull ser valenta, vull ser lliure.») por decisión de Mireia el 25-11-2026: es el mismo lema que la nº 16, que se queda en castellano; su texto en catalán pasa a ser la traducción de la nº 16 (pendiente de revisión de Mireia). Traducciones al catalán y al inglés hechas por Claude (25-11-2026), pendientes de revisión de Mireia; «Mujer a(r)mate.» (antes con una «c» de más) juega con «ámate» y «ármate»: se mantiene en castellano, en catalán «Dona, a(r)ma't.» y en inglés solo «Woman, love yourself.» (decisión de Mireia, 25-11-2026).",
+  "frases": [
+    {
+      "id": "p-01",
+      "num": 1,
+      "idioma": "es",
+      "tema": "Empoderamiento y Feminismo",
+      "texto": {
+        "es": "Mi madre me dio la vida, el feminismo mi libertad.",
+        "ca": "Ma mare em va donar la vida, el feminisme la meva llibertat.",
+        "en": "My mother gave me life, feminism gave me my freedom."
+      },
+      "grupo": "voz",
+      "pared": {
+        "fuente": "caveat",
+        "curva": -25,
+        "color": "#ffffff",
+        "giro": -18.4,
+        "ancho": 332,
+        "dy": -9,
+        "dx": -7,
+        "alinear": "flex-start",
+        "orden": 14
+      }
+    },
+    {
+      "id": "p-02",
+      "num": 2,
+      "idioma": "es",
+      "tema": "Memoria Histórica y Crítica Social",
+      "texto": {
+        "es": "Nos enseñaron a tenerle miedo a las brujas y no a la Iglesia, que las quemaba vivas.",
+        "ca": "Ens van ensenyar a tenir por de les bruixes i no de l'Església, que les cremava vives.",
+        "en": "We were taught to fear witches, not the Church, which burned them alive."
+      },
+      "grupo": "memoria",
+      "pared": {
+        "fuente": "permanent-marker",
+        "curva": 0,
+        "color": "#7fd1ff",
+        "giro": 0,
+        "ancho": 494,
+        "dy": -12,
+        "dx": -1,
+        "alinear": "flex-start",
+        "orden": 1
+      }
+    },
+    {
+      "id": "p-03",
+      "num": 3,
+      "idioma": "es",
+      "tema": "Memoria Histórica y Genealogía",
+      "texto": {
+        "es": "Somos las nietas de las brujas que no pudisteis quemar.",
+        "ca": "Som les netes de les bruixes que no vau poder cremar.",
+        "en": "We are the granddaughters of the witches you couldn't burn."
+      },
+      "grupo": "memoria",
+      "pared": {
+        "fuente": "shadows",
+        "curva": 0,
+        "color": "#f58fd0",
+        "giro": 0,
+        "ancho": 406,
+        "dy": 0,
+        "dx": -14,
+        "alinear": "center",
+        "orden": 12
+      }
+    },
+    {
+      "id": "p-04",
+      "num": 4,
+      "idioma": "es",
+      "tema": "Voz, Protesta y Sororidad",
+      "texto": {
+        "es": "Gritamos ahora para no callar para siempre.",
+        "ca": "Cridem ara per no callar per sempre.",
+        "en": "We shout now so we won't be silenced forever."
+      },
+      "grupo": "voz",
+      "pared": {
+        "fuente": "caveat",
+        "curva": 0,
+        "color": "#e8ce86",
+        "giro": -5.1,
+        "ancho": 361,
+        "dy": -13,
+        "dx": -8,
+        "alinear": "flex-start",
+        "orden": 11
+      }
+    },
+    {
+      "id": "p-05",
+      "num": 5,
+      "idioma": "es",
+      "tema": "Memoria y Violencia Machista",
+      "texto": {
+        "es": "Somos el grito de las que no están. Y no nos vamos a callar.",
+        "ca": "Som el crit de les que no hi són. I no ens callarem.",
+        "en": "We are the cry of those who are no longer here. And we will not be silenced."
+      },
+      "grupo": "violencia",
+      "pared": {
+        "fuente": "sedgwick",
+        "curva": -27,
+        "color": "#f58fd0",
+        "giro": -8.4,
+        "ancho": 382,
+        "dy": -1,
+        "dx": 0,
+        "alinear": "flex-start",
+        "orden": 38
+      }
+    },
+    {
+      "id": "p-07",
+      "num": 7,
+      "idioma": "es",
+      "tema": "Voz y Ruptura de Estereotipos",
+      "texto": {
+        "es": "Calladita no estoy más guapa.",
+        "ca": "Calladeta no estic més guapa.",
+        "en": "I don't look prettier when I'm quiet."
+      },
+      "grupo": "voz",
+      "pared": {
+        "fuente": "caveat",
+        "curva": 0,
+        "color": "#d4ff3a",
+        "giro": -4.2,
+        "ancho": 266,
+        "dy": -4,
+        "dx": 14,
+        "alinear": "center",
+        "orden": 33
+      }
+    },
+    {
+      "id": "p-08",
+      "num": 8,
+      "idioma": "es",
+      "tema": "Aceptación Corporal (Body Positive)",
+      "texto": {
+        "es": "Si los kilos son míos, ¿por qué te pesan tanto a ti?",
+        "ca": "Si els quilos són meus, per què et pesen tant a tu?",
+        "en": "If the kilos are mine, why do they weigh so much on you?"
+      },
+      "grupo": "cuerpo",
+      "pared": {
+        "fuente": "rubikspray",
+        "curva": -25,
+        "color": "#ff4fa3",
+        "giro": 6.3,
+        "ancho": 448,
+        "dy": 9,
+        "dx": -8,
+        "alinear": "flex-start",
+        "orden": 16
+      }
+    },
+    {
+      "id": "p-09",
+      "num": 9,
+      "idioma": "es",
+      "tema": "Empoderamiento y Autodefensa",
+      "texto": {
+        "es": "Mujer a(r)mate.",
+        "ca": "Dona, a(r)ma't.",
+        "en": "Woman, love yourself."
+      },
+      "grupo": "voz",
+      "pared": {
+        "fuente": "rubikspray",
+        "curva": -26,
+        "color": "#ff4fa3",
+        "giro": 11.6,
+        "ancho": 260,
+        "dy": -1,
+        "dx": 1,
+        "alinear": "flex-end",
+        "orden": 24
+      },
+      "nota": {
+        "es": "Doble sentido a propósito (corregida la errata «ac(r)mate» el 25-11-2026): «ámate» y «ármate». En catalán se mantiene (ama't / arma't); en inglés solo queda «love yourself» (Mireia, 25-11-2026).",
+        "ca": "Doble sentit a propòsit: «ama't» i «arma't». Es manté en català; en anglès només queda «love yourself» (Mireia, 25-11-2026).",
+        "en": "Double meaning on purpose: «love yourself» and «arm yourself». It is kept in Catalan (ama't / arma't); in English only «love yourself» remains (Mireia, 25-11-2026)."
+      }
+    },
+    {
+      "id": "p-11",
+      "num": 11,
+      "idioma": "es",
+      "tema": "Libertad y Ruptura de Tabúes",
+      "texto": {
+        "es": "Orgullosa pecadora.",
+        "ca": "Pecadora orgullosa.",
+        "en": "Proud sinner."
+      },
+      "grupo": "libertad",
+      "pared": {
+        "fuente": "sedgwick",
+        "curva": 0,
+        "color": "#d4ff3a",
+        "giro": 0,
+        "ancho": 337,
+        "dy": 13,
+        "dx": 9,
+        "alinear": "flex-end",
+        "orden": 9
+      }
+    },
+    {
+      "id": "p-12",
+      "num": 12,
+      "idioma": "es",
+      "tema": "Justicia y Violencia Machista",
+      "texto": {
+        "es": "¿Por qué te espantas por las que luchan y no por las que mueren?",
+        "ca": "Per què t'espantes per les que lluiten i no per les que moren?",
+        "en": "Why are you shocked by those who fight and not by those who die?"
+      },
+      "grupo": "violencia",
+      "pared": {
+        "fuente": "rocksalt",
+        "curva": -33,
+        "color": "#d9d9e3",
+        "giro": 5.2,
+        "ancho": 466,
+        "dy": 5,
+        "dx": -2,
+        "alinear": "flex-start",
+        "orden": 28
+      }
+    },
+    {
+      "id": "p-13",
+      "num": 13,
+      "idioma": "es",
+      "tema": "Denuncia de Violencia Machista",
+      "texto": {
+        "es": "Yo no muero, a mí me matan.",
+        "ca": "Jo no moro, a mi m'assassinen.",
+        "en": "I don't die, they kill me."
+      },
+      "grupo": "violencia",
+      "pared": {
+        "fuente": "rocksalt",
+        "curva": -35,
+        "color": "#d4ff3a",
+        "giro": 29.0,
+        "ancho": 246,
+        "dy": 12,
+        "dx": 1,
+        "alinear": "flex-end",
+        "orden": 8
+      }
+    },
+    {
+      "id": "p-14",
+      "num": 14,
+      "idioma": "es",
+      "tema": "Igualdad Efectiva",
+      "texto": {
+        "es": "Que la igualdad sea un hecho, no un derecho.",
+        "ca": "Que la igualtat sigui un fet, no un dret.",
+        "en": "May equality be a fact, not a right."
+      },
+      "grupo": "igualdad",
+      "pared": {
+        "fuente": "shadows",
+        "curva": 0,
+        "color": "#d4ff3a",
+        "giro": 8.0,
+        "ancho": 396,
+        "dy": -12,
+        "dx": -7,
+        "alinear": "center",
+        "orden": 20
+      }
+    },
+    {
+      "id": "p-15",
+      "num": 15,
+      "idioma": "es",
+      "tema": "Educación y Pensamiento Crítico",
+      "texto": {
+        "es": "Por una educación que nos enseñe a pensar, no a obedecer.",
+        "ca": "Per una educació que ens ensenyi a pensar, no a obeir.",
+        "en": "For an education that teaches us to think, not to obey."
+      },
+      "grupo": "igualdad",
+      "pared": {
+        "fuente": "shadows",
+        "curva": 0,
+        "color": "#f58fd0",
+        "giro": 0,
+        "ancho": 345,
+        "dy": 15,
+        "dx": 6,
+        "alinear": "center",
+        "orden": 17
+      }
+    },
+    {
+      "id": "p-16",
+      "num": 16,
+      "idioma": "es",
+      "tema": "Libertad y Seguridad",
+      "texto": {
+        "es": "Camino a casa quiero ser libre, no valiente.",
+        "ca": "No vull ser valenta, vull ser lliure.",
+        "en": "On my way home I want to be free, not brave."
+      },
+      "grupo": "libertad",
+      "pared": {
+        "fuente": "rocksalt",
+        "curva": 0,
+        "color": "#b58cf0",
+        "giro": -8.0,
+        "ancho": 419,
+        "dy": 2,
+        "dx": -5,
+        "alinear": "flex-end",
+        "orden": 4
+      }
+    },
+    {
+      "id": "p-17",
+      "num": 17,
+      "idioma": "es",
+      "tema": "Derechos Laborales y Brecha",
+      "texto": {
+        "es": "No es vocación, es explotación.",
+        "ca": "No és vocació, és explotació.",
+        "en": "It's not a vocation, it's exploitation."
+      },
+      "grupo": "igualdad",
+      "pared": {
+        "fuente": "rubikspray",
+        "curva": 0,
+        "color": "#f58fd0",
+        "giro": 0,
+        "ancho": 238,
+        "dy": -12,
+        "dx": -4,
+        "alinear": "flex-end",
+        "orden": 37
+      }
+    },
+    {
+      "id": "p-18",
+      "num": 18,
+      "idioma": "es",
+      "tema": "Empoderamiento y Feminismo",
+      "texto": {
+        "es": "Opinas que el feminismo no te representa. Y olvidas que gracias al feminismo puedes opinar.",
+        "ca": "Opines que el feminisme no et representa. I oblides que gràcies al feminisme pots opinar.",
+        "en": "You say feminism doesn't represent you. And you forget that thanks to feminism you can have an opinion."
+      },
+      "grupo": "voz",
+      "pared": {
+        "fuente": "rocksalt",
+        "curva": 0,
+        "color": "#d9d9e3",
+        "giro": 16.9,
+        "ancho": 474,
+        "dy": -8,
+        "dx": -15,
+        "alinear": "flex-start",
+        "orden": 34
+      }
+    },
+    {
+      "id": "p-19",
+      "num": 19,
+      "idioma": "es",
+      "tema": "Consentimiento y Autonomía Corporal",
+      "texto": {
+        "es": "No es que yo vista provocativa, es que tú me ves como un violador.",
+        "ca": "No és que jo vagi provocativa, és que tu em veus com un violador.",
+        "en": "It's not that I dress provocatively, it's that you see me like a rapist."
+      },
+      "grupo": "cuerpo",
+      "pared": {
+        "fuente": "sedgwick",
+        "curva": 0,
+        "color": "#b58cf0",
+        "giro": 10.0,
+        "ancho": 497,
+        "dy": -11,
+        "dx": -12,
+        "alinear": "center",
+        "orden": 25
+      }
+    },
+    {
+      "id": "p-20",
+      "num": 20,
+      "idioma": "es",
+      "tema": "Libertad y Ruptura de Tabúes",
+      "texto": {
+        "es": "Mejor rebelde que esclava y silenciada.",
+        "ca": "Millor rebel que esclava i silenciada.",
+        "en": "Better a rebel than a slave and silenced."
+      },
+      "grupo": "libertad",
+      "pared": {
+        "fuente": "shadows",
+        "curva": 0,
+        "color": "#ff4fa3",
+        "giro": -19.5,
+        "ancho": 293,
+        "dy": 3,
+        "dx": 12,
+        "alinear": "flex-start",
+        "orden": 27
+      }
+    },
+    {
+      "id": "p-21",
+      "num": 21,
+      "idioma": "es",
+      "tema": "Igualdad Efectiva",
+      "texto": {
+        "es": "Más mujeres en la ciencia y menos en las estadísticas de violencia.",
+        "ca": "Més dones a la ciència i menys a les estadístiques de violència.",
+        "en": "More women in science and fewer in the statistics of violence."
+      },
+      "grupo": "igualdad",
+      "pared": {
+        "fuente": "permanent-marker",
+        "curva": 31,
+        "color": "#e8ce86",
+        "giro": 16.0,
+        "ancho": 360,
+        "dy": -5,
+        "dx": 2,
+        "alinear": "flex-end",
+        "orden": 21
+      }
+    },
+    {
+      "id": "p-22",
+      "num": 22,
+      "idioma": "es",
+      "tema": "Denuncia de Violencia Machista",
+      "texto": {
+        "es": "Si mañana soy yo, quiero ser la última.",
+        "ca": "Si demà sóc jo, vull ser l'última.",
+        "en": "If tomorrow it's me, I want to be the last."
+      },
+      "grupo": "violencia",
+      "pared": {
+        "fuente": "permanent-marker",
+        "curva": 0,
+        "color": "#b58cf0",
+        "giro": 11.9,
+        "ancho": 359,
+        "dy": 9,
+        "dx": -5,
+        "alinear": "flex-end",
+        "orden": 3
+      }
+    },
+    {
+      "id": "p-23",
+      "num": 23,
+      "idioma": "es",
+      "tema": "Empoderamiento y Autodefensa",
+      "texto": {
+        "es": "Nos quitaron tanto, que terminaron quitándonos el miedo.",
+        "ca": "Ens van treure tant, que van acabar traient-nos la por.",
+        "en": "They took so much from us that they ended up taking our fear away."
+      },
+      "grupo": "voz",
+      "pared": {
+        "fuente": "caveat",
+        "curva": 0,
+        "color": "#ff9a3c",
+        "giro": 0,
+        "ancho": 423,
+        "dy": 14,
+        "dx": 10,
+        "alinear": "center",
+        "orden": 31
+      }
+    },
+    {
+      "id": "p-24",
+      "num": 24,
+      "idioma": "es",
+      "tema": "Justicia y Conciencia Social",
+      "texto": {
+        "es": "Que lo injusto no te sea indiferente.",
+        "ca": "Que la injustícia no et sigui indiferent.",
+        "en": "Don't let injustice leave you indifferent."
+      },
+      "grupo": "igualdad",
+      "pared": {
+        "fuente": "rubikspray",
+        "curva": 0,
+        "color": "#ff9a3c",
+        "giro": 11.5,
+        "ancho": 327,
+        "dy": 13,
+        "dx": 19,
+        "alinear": "flex-start",
+        "orden": 22
+      }
+    },
+    {
+      "id": "p-25",
+      "num": 25,
+      "idioma": "es",
+      "tema": "Justicia y Conciencia Social",
+      "texto": {
+        "es": "¿Te cansas de oírlo? Nosotras de vivirlo.",
+        "ca": "Et cansa sentir-ho? Nosaltres de viure-ho.",
+        "en": "Tired of hearing it? We are tired of living it."
+      },
+      "grupo": "igualdad",
+      "pared": {
+        "fuente": "sedgwick",
+        "curva": 0,
+        "color": "#f58fd0",
+        "giro": 5.3,
+        "ancho": 364,
+        "dy": 6,
+        "dx": 14,
+        "alinear": "flex-end",
+        "orden": 7
+      }
+    },
+    {
+      "id": "p-26",
+      "num": 26,
+      "idioma": "es",
+      "tema": "Justicia y Conciencia Social",
+      "texto": {
+        "es": "Que el privilegio no te nuble la empatía.",
+        "ca": "Que el privilegi no t'enterboleixi l'empatia.",
+        "en": "Don't let privilege cloud your empathy."
+      },
+      "grupo": "igualdad",
+      "pared": {
+        "fuente": "rubikspray",
+        "curva": 0,
+        "color": "#ff4fa3",
+        "giro": 25.0,
+        "ancho": 268,
+        "dy": 11,
+        "dx": -3,
+        "alinear": "flex-end",
+        "orden": 10
+      }
+    },
+    {
+      "id": "p-27",
+      "num": 27,
+      "idioma": "es",
+      "tema": "Consentimiento y Autonomía Corporal",
+      "texto": {
+        "es": "Menos ropa no significa más consentimiento.",
+        "ca": "Menys roba no vol dir més consentiment.",
+        "en": "Less clothing does not mean more consent."
+      },
+      "grupo": "cuerpo",
+      "pared": {
+        "fuente": "rocksalt",
+        "curva": 0,
+        "color": "#b58cf0",
+        "giro": 0,
+        "ancho": 333,
+        "dy": 12,
+        "dx": -4,
+        "alinear": "flex-start",
+        "orden": 30
+      }
+    },
+    {
+      "id": "p-28",
+      "num": 28,
+      "idioma": "es",
+      "tema": "Denuncia de Violencia Machista",
+      "texto": {
+        "es": "Nadie me preguntó cómo vestía mi agresor.",
+        "ca": "Ningú no em va preguntar com anava vestit el meu agressor.",
+        "en": "Nobody asked me what my attacker was wearing."
+      },
+      "grupo": "violencia",
+      "pared": {
+        "fuente": "rocksalt",
+        "curva": 0,
+        "color": "#f58fd0",
+        "giro": 0,
+        "ancho": 350,
+        "dy": 8,
+        "dx": 10,
+        "alinear": "flex-start",
+        "orden": 2
+      }
+    },
+    {
+      "id": "p-29",
+      "num": 29,
+      "idioma": "es",
+      "tema": "Libertad y Ruptura de Tabúes",
+      "texto": {
+        "es": "Ni sumisa ni devota, te quiero libre, lista y loca.",
+        "ca": "Ni submisa ni devota, et vull lliure, llesta i boja.",
+        "en": "Neither submissive nor devout, I want you free, clever and crazy."
+      },
+      "grupo": "libertad",
+      "pared": {
+        "fuente": "caveat",
+        "curva": 0,
+        "color": "#b58cf0",
+        "giro": -29.2,
+        "ancho": 444,
+        "dy": 11,
+        "dx": 20,
+        "alinear": "flex-start",
+        "orden": 15
+      }
+    },
+    {
+      "id": "p-30",
+      "num": 30,
+      "idioma": "es",
+      "tema": "Consentimiento y Autonomía Corporal",
+      "texto": {
+        "es": "De mi cuerpo y vestuario, resérvate el comentario.",
+        "ca": "Del meu cos i vestuari, reserva't el comentari.",
+        "en": "About my body and my clothes, keep your comments to yourself."
+      },
+      "grupo": "cuerpo",
+      "pared": {
+        "fuente": "sedgwick",
+        "curva": -15,
+        "color": "#ffffff",
+        "giro": 0,
+        "ancho": 437,
+        "dy": -7,
+        "dx": -12,
+        "alinear": "flex-end",
+        "orden": 5
+      }
+    },
+    {
+      "id": "p-31",
+      "num": 31,
+      "idioma": "es",
+      "tema": "Voz y Ruptura de Estereotipos",
+      "texto": {
+        "es": "Entre broma y broma, tu machismo asoma.",
+        "ca": "Entre broma i broma, el teu masclisme assoma.",
+        "en": "Joke after joke, your sexism shows through."
+      },
+      "grupo": "voz",
+      "pared": {
+        "fuente": "rubikspray",
+        "curva": 0,
+        "color": "#b58cf0",
+        "giro": 10.2,
+        "ancho": 407,
+        "dy": -9,
+        "dx": 15,
+        "alinear": "flex-start",
+        "orden": 29
+      }
+    },
+    {
+      "id": "p-32",
+      "num": 32,
+      "idioma": "es",
+      "tema": "Memoria Histórica y Genealogía",
+      "texto": {
+        "es": "Nos quisieron quemar y nos volvimos fuego.",
+        "ca": "Ens van voler cremar i ens vam tornar foc.",
+        "en": "They wanted to burn us and we became fire."
+      },
+      "grupo": "memoria",
+      "pared": {
+        "fuente": "permanent-marker",
+        "curva": 0,
+        "color": "#7fd1ff",
+        "giro": -8.9,
+        "ancho": 329,
+        "dy": -10,
+        "dx": -5,
+        "alinear": "flex-start",
+        "orden": 13
+      }
+    },
+    {
+      "id": "p-33",
+      "num": 33,
+      "idioma": "es",
+      "tema": "Denuncia de Violencia Machista",
+      "texto": {
+        "es": "Que ser mujer no nos cueste la vida.",
+        "ca": "Que ser dona no ens costi la vida.",
+        "en": "May being a woman not cost us our lives."
+      },
+      "grupo": "violencia",
+      "pared": {
+        "fuente": "rubikspray",
+        "curva": 21,
+        "color": "#ff9a3c",
+        "giro": -21.8,
+        "ancho": 393,
+        "dy": 6,
+        "dx": -5,
+        "alinear": "flex-end",
+        "orden": 19
+      }
+    },
+    {
+      "id": "p-34",
+      "num": 34,
+      "idioma": "es",
+      "tema": "Empoderamiento y Feminismo",
+      "texto": {
+        "es": "Que seas la mujer que te da la gana ser.",
+        "ca": "Que siguis la dona que et doni la gana ser.",
+        "en": "Be whatever woman you feel like being."
+      },
+      "grupo": "voz",
+      "pared": {
+        "fuente": "rocksalt",
+        "curva": 0,
+        "color": "#f58fd0",
+        "giro": -20.8,
+        "ancho": 351,
+        "dy": -11,
+        "dx": -4,
+        "alinear": "flex-start",
+        "orden": 6
+      }
+    },
+    {
+      "id": "p-35",
+      "num": 35,
+      "idioma": "es",
+      "tema": "Consentimiento y Autonomía Corporal",
+      "texto": {
+        "es": "Con o sin ropa, este cuerpo no se toca.",
+        "ca": "Amb roba o sense, aquest cos no es toca.",
+        "en": "Clothed or not, this body is not to be touched."
+      },
+      "grupo": "cuerpo",
+      "pared": {
+        "fuente": "permanent-marker",
+        "curva": 0,
+        "color": "#b58cf0",
+        "giro": 0,
+        "ancho": 303,
+        "dy": 9,
+        "dx": -8,
+        "alinear": "flex-end",
+        "orden": 32
+      }
+    },
+    {
+      "id": "p-36",
+      "num": 36,
+      "idioma": "es",
+      "tema": "Aceptación Corporal (Body Positive)",
+      "texto": {
+        "es": "Muestra tus curvas con orgullo; para mostrar tus huesos tienes toda la eternidad.",
+        "ca": "Mostra les teves corbes amb orgull; per mostrar els teus ossos tens tota l'eternitat.",
+        "en": "Show your curves with pride; you have all eternity to show your bones."
+      },
+      "grupo": "cuerpo",
+      "pared": {
+        "fuente": "permanent-marker",
+        "curva": 0,
+        "color": "#ff9a3c",
+        "giro": 0,
+        "ancho": 404,
+        "dy": 3,
+        "dx": -12,
+        "alinear": "flex-end",
+        "orden": 36
+      }
+    },
+    {
+      "id": "p-37",
+      "num": 37,
+      "idioma": "es",
+      "tema": "Consentimiento y Autonomía Corporal",
+      "texto": {
+        "es": "Yo elijo cómo me visto y con quién me desvisto.",
+        "ca": "Jo trio com em vesteixo i amb qui em desvesteixo.",
+        "en": "I choose how I dress and who I undress with."
+      },
+      "grupo": "cuerpo",
+      "pared": {
+        "fuente": "sedgwick",
+        "curva": 0,
+        "color": "#ff4fa3",
+        "giro": -25.5,
+        "ancho": 315,
+        "dy": 7,
+        "dx": 10,
+        "alinear": "center",
+        "orden": 23
+      }
+    },
+    {
+      "id": "p-38",
+      "num": 38,
+      "idioma": "es",
+      "tema": "Derechos Laborales y Brecha",
+      "texto": {
+        "es": "No es menor ambición, es mayor exclusión.",
+        "ca": "No és menys ambició, és més exclusió.",
+        "en": "It's not less ambition, it's more exclusion."
+      },
+      "grupo": "igualdad",
+      "pared": {
+        "fuente": "sedgwick",
+        "curva": 0,
+        "color": "#d4ff3a",
+        "giro": 0,
+        "ancho": 345,
+        "dy": -12,
+        "dx": 9,
+        "alinear": "flex-end",
+        "orden": 0
+      }
+    },
+    {
+      "id": "p-39",
+      "num": 39,
+      "idioma": "es",
+      "tema": "Derechos Laborales y Brecha",
+      "texto": {
+        "es": "El talento no tiene género, pero la nómina sí.",
+        "ca": "El talent no té gènere, però la nòmina sí.",
+        "en": "Talent has no gender, but the paycheck does."
+      },
+      "grupo": "igualdad",
+      "pared": {
+        "fuente": "shadows",
+        "curva": -25,
+        "color": "#7fd1ff",
+        "giro": 7.8,
+        "ancho": 327,
+        "dy": 10,
+        "dx": -15,
+        "alinear": "flex-end",
+        "orden": 18
+      }
+    },
+    {
+      "id": "p-40",
+      "num": 40,
+      "idioma": "es",
+      "tema": "Libertad y Ruptura de Tabúes",
+      "texto": {
+        "es": "Me gusta juntarme con mujeres con las que sé que en otra época nos habrían quemado por brujas",
+        "ca": "M'agrada ajuntar-me amb dones amb les quals sé que en una altra època ens haurien cremat per bruixes",
+        "en": "I like to hang out with women with whom, I know, we would have been burned as witches in another age"
+      },
+      "grupo": "memoria",
+      "pared": {
+        "fuente": "caveat",
+        "curva": 0,
+        "color": "#ffffff",
+        "giro": -8.5,
+        "ancho": 500,
+        "dy": -7,
+        "dx": 12,
+        "alinear": "center",
+        "orden": 26
+      }
+    },
+    {
+      "id": "p-41",
+      "num": 41,
+      "idioma": "es",
+      "tema": "Brujas y aquelarre",
+      "texto": {
+        "es": "Las brujas no eran mujeres con poderes, sino mujeres de poder.",
+        "ca": "Les bruixes no eren dones amb poders, sinó dones de poder.",
+        "en": "Witches were not women with powers, but women of power."
+      },
+      "grupo": "memoria",
+      "pared": {
+        "fuente": "rocksalt",
+        "curva": 0,
+        "color": "#7fd1ff",
+        "giro": 0,
+        "ancho": 477,
+        "dy": 13,
+        "dx": 3,
+        "alinear": "flex-end",
+        "orden": 10.52
+      }
+    },
+    {
+      "id": "p-42",
+      "num": 42,
+      "idioma": "es",
+      "tema": "Brujas y aquelarre",
+      "texto": {
+        "es": "Habelas, hainas. Yo soy una de ellas.",
+        "ca": "Habelas, hainas. Jo sóc una d'elles.",
+        "en": "Habelas, hainas. I am one of them."
+      },
+      "grupo": "memoria",
+      "pared": {
+        "fuente": "rocksalt",
+        "curva": 22,
+        "color": "#ffffff",
+        "giro": 21.6,
+        "ancho": 326,
+        "dy": -10,
+        "dx": 1,
+        "alinear": "flex-end",
+        "orden": 26.27
+      },
+      "nota": {
+        "es": "Las palabras «Habelas, hainas» están en gallego a propósito (Mireia, 25-11-2026).",
+        "ca": "Les paraules «Habelas, hainas» són en gallec a propòsit (Mireia, 25-11-2026).",
+        "en": "The words «Habelas, hainas» are in Galician on purpose (Mireia, 25-11-2026)."
+      }
+    },
+    {
+      "id": "p-43",
+      "num": 43,
+      "idioma": "es",
+      "tema": "Brujas y aquelarre",
+      "texto": {
+        "es": "Detrás de cada bruja presa, hay una mujer que se negó a ser sumisa.",
+        "ca": "Darrere de cada bruixa presa, hi ha una dona que es va negar a ser submisa.",
+        "en": "Behind every imprisoned witch, there is a woman who refused to be submissive."
+      },
+      "grupo": "memoria",
+      "pared": {
+        "fuente": "shadows",
+        "curva": 0,
+        "color": "#f58fd0",
+        "giro": 0,
+        "ancho": 457,
+        "dy": 12,
+        "dx": 3,
+        "alinear": "flex-end",
+        "orden": 8.2
+      }
+    },
+    {
+      "id": "p-44",
+      "num": 44,
+      "idioma": "es",
+      "tema": "Brujas y aquelarre",
+      "texto": {
+        "es": "A las mujeres que no pudieron controlar, las llamaron brujas.",
+        "ca": "A les dones que no van poder controlar, les van anomenar bruixes.",
+        "en": "The women they could not control were called witches."
+      },
+      "grupo": "memoria",
+      "pared": {
+        "fuente": "rocksalt",
+        "curva": -19,
+        "color": "#e8ce86",
+        "giro": 5.0,
+        "ancho": 372,
+        "dy": -14,
+        "dx": 2,
+        "alinear": "center",
+        "orden": 8.56
+      }
+    },
+    {
+      "id": "p-45",
+      "num": 45,
+      "idioma": "es",
+      "tema": "Brujas y aquelarre",
+      "texto": {
+        "es": "El aquelarre siempre vuelve.",
+        "ca": "L'aquelarre sempre torna.",
+        "en": "The coven always comes back."
+      },
+      "grupo": "memoria",
+      "pared": {
+        "fuente": "sedgwick",
+        "curva": 0,
+        "color": "#d4ff3a",
+        "giro": -11.1,
+        "ancho": 317,
+        "dy": -11,
+        "dx": -9,
+        "alinear": "flex-end",
+        "orden": 3.55
+      }
+    },
+    {
+      "id": "p-46",
+      "num": 46,
+      "idioma": "es",
+      "tema": "Brujas y aquelarre",
+      "texto": {
+        "es": "Que arda el patriarcado, no las brujas.",
+        "ca": "Que cremi el patriarcat, no les bruixes.",
+        "en": "Let the patriarchy burn, not the witches."
+      },
+      "grupo": "memoria",
+      "pared": {
+        "fuente": "sedgwick",
+        "curva": 0,
+        "color": "#ffffff",
+        "giro": -18.5,
+        "ancho": 271,
+        "dy": -1,
+        "dx": 10,
+        "alinear": "center",
+        "orden": 20.23
+      }
+    },
+    {
+      "id": "p-47",
+      "num": 47,
+      "idioma": "es",
+      "tema": "Empoderamiento y Feminismo",
+      "texto": {
+        "es": "¡Ha llegado el fin del patriarcado!",
+        "ca": "Ha arribat la fi del patriarcat!",
+        "en": "The end of the patriarchy has arrived!"
+      },
+      "grupo": "voz",
+      "pared": {
+        "fuente": "sedgwick",
+        "curva": 0,
+        "color": "#b58cf0",
+        "giro": 0,
+        "ancho": 357,
+        "dy": -5,
+        "dx": -4,
+        "alinear": "flex-start",
+        "orden": 30.67
+      }
+    },
+    {
+      "id": "p-48",
+      "num": 48,
+      "idioma": "es",
+      "tema": "Voz, Protesta y Sororidad",
+      "texto": {
+        "es": "La lucha será feminista o no será.",
+        "ca": "La lluita serà feminista o no serà.",
+        "en": "The struggle will be feminist or it will not be."
+      },
+      "grupo": "voz",
+      "pared": {
+        "fuente": "permanent-marker",
+        "curva": 19,
+        "color": "#b58cf0",
+        "giro": -24.8,
+        "ancho": 390,
+        "dy": 1,
+        "dx": 11,
+        "alinear": "flex-end",
+        "orden": 32.24
+      }
+    },
+    {
+      "id": "p-49",
+      "num": 49,
+      "idioma": "es",
+      "tema": "Denuncia de Violencia Machista",
+      "texto": {
+        "es": "Si callamos, nos matan.",
+        "ca": "Si callem, ens maten.",
+        "en": "If we stay silent, they kill us."
+      },
+      "grupo": "violencia",
+      "pared": {
+        "fuente": "caveat",
+        "curva": 47,
+        "color": "#ff9a3c",
+        "giro": -9.4,
+        "ancho": 219,
+        "dy": 15,
+        "dx": 2,
+        "alinear": "flex-end",
+        "orden": 8.04
+      }
+    }
+  ],
+  "grupos": [
+    {
+      "id": "libertad",
+      "nombre": {
+        "es": "Libertad y seguridad",
+        "ca": "Llibertat i seguretat",
+        "en": "Freedom and safety"
+      },
+      "temas": [
+        "Libertad y Seguridad",
+        "Libertad y Ruptura de Tabúes"
+      ]
+    },
+    {
+      "id": "cuerpo",
+      "nombre": {
+        "es": "Cuerpo y consentimiento",
+        "ca": "Cos i consentiment",
+        "en": "Body and consent"
+      },
+      "temas": [
+        "Consentimiento y Autonomía Corporal",
+        "Aceptación Corporal (Body Positive)"
+      ]
+    },
+    {
+      "id": "violencia",
+      "nombre": {
+        "es": "Contra la violencia machista",
+        "ca": "Contra la violència masclista",
+        "en": "Against gender-based violence"
+      },
+      "temas": [
+        "Denuncia de Violencia Machista",
+        "Justicia y Violencia Machista",
+        "Memoria y Violencia Machista"
+      ]
+    },
+    {
+      "id": "memoria",
+      "nombre": {
+        "es": "Memoria y brujas",
+        "ca": "Memòria i bruixes",
+        "en": "Memory and witches"
+      },
+      "temas": [
+        "Memoria Histórica y Crítica Social",
+        "Memoria Histórica y Genealogía",
+        "Brujas y aquelarre"
+      ]
+    },
+    {
+      "id": "voz",
+      "nombre": {
+        "es": "Voz y empoderamiento",
+        "ca": "Veu i apoderament",
+        "en": "Voice and empowerment"
+      },
+      "temas": [
+        "Empoderamiento y Feminismo",
+        "Empoderamiento y Autodefensa",
+        "Voz, Protesta y Sororidad",
+        "Voz y Ruptura de Estereotipos"
+      ]
+    },
+    {
+      "id": "igualdad",
+      "nombre": {
+        "es": "Igualdad, trabajo y justicia",
+        "ca": "Igualtat, feina i justícia",
+        "en": "Equality, work and justice"
+      },
+      "temas": [
+        "Igualdad Efectiva",
+        "Derechos Laborales y Brecha",
+        "Educación y Pensamiento Crítico",
+        "Justicia y Conciencia Social"
+      ]
+    }
+  ]
+}

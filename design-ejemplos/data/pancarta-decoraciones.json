@@ -1,0 +1,726 @@
+{
+  "aviso": "Decoraciones de la actividad «Crea tu pancarta o camiseta»: 71 imágenes de Mireia (PNG 1500×1500 con transparencia desde Canva, convertidas a WebP). Las categorías y las descripciones (alt) son propuesta de Claude (25-11-2026), pendientes de confirmar por Mireia. Archivos: img/opt/pancarta/decoraciones/dec-NN.webp y miniaturas/dec-NN.webp. Avisos: dec-48 tiene fondo negro opaco y dec-47 interior oscuro opaco; las muy oscuras no se verán sobre la camiseta negra. Traducciones al catalán y al inglés de las categorías y descripciones hechas por Claude (25-11-2026), pendientes de revisión de Mireia.",
+  "categorias": [
+    {
+      "id": "simbolos",
+      "nombre": {
+        "es": "Símbolos feministas",
+        "ca": "Símbols feministes",
+        "en": "Feminist symbols"
+      },
+      "decoraciones": [
+        "dec-08",
+        "dec-09",
+        "dec-11",
+        "dec-12",
+        "dec-17",
+        "dec-21",
+        "dec-24",
+        "dec-27",
+        "dec-29",
+        "dec-31",
+        "dec-40",
+        "dec-57",
+        "dec-58",
+        "dec-61",
+        "dec-74",
+        "dec-75"
+      ]
+    },
+    {
+      "id": "manos",
+      "nombre": {
+        "es": "Manos y puños",
+        "ca": "Mans i punys",
+        "en": "Hands and fists"
+      },
+      "decoraciones": [
+        "dec-13",
+        "dec-25",
+        "dec-37",
+        "dec-38",
+        "dec-39",
+        "dec-59",
+        "dec-73"
+      ]
+    },
+    {
+      "id": "voz",
+      "nombre": {
+        "es": "Voz y megáfonos",
+        "ca": "Veu i megàfons",
+        "en": "Voice and megaphones"
+      },
+      "decoraciones": [
+        "dec-14",
+        "dec-19",
+        "dec-26",
+        "dec-48",
+        "dec-60"
+      ]
+    },
+    {
+      "id": "corazones",
+      "nombre": {
+        "es": "Corazones y flores",
+        "ca": "Cors i flors",
+        "en": "Hearts and flowers"
+      },
+      "decoraciones": [
+        "dec-10",
+        "dec-15",
+        "dec-16",
+        "dec-28",
+        "dec-62"
+      ]
+    },
+    {
+      "id": "brujas",
+      "nombre": {
+        "es": "Brujas y fuego",
+        "ca": "Bruixes i foc",
+        "en": "Witches and fire"
+      },
+      "decoraciones": [
+        "dec-32",
+        "dec-33",
+        "dec-46",
+        "dec-64",
+        "dec-65",
+        "dec-66",
+        "dec-67",
+        "dec-68",
+        "dec-69",
+        "dec-70",
+        "dec-71",
+        "dec-72"
+      ]
+    },
+    {
+      "id": "mujeres",
+      "nombre": {
+        "es": "Mujeres y comunidad",
+        "ca": "Dones i comunitat",
+        "en": "Women and community"
+      },
+      "decoraciones": [
+        "dec-30",
+        "dec-41",
+        "dec-42",
+        "dec-43",
+        "dec-44",
+        "dec-45",
+        "dec-63",
+        "dec-78"
+      ]
+    },
+    {
+      "id": "marcos",
+      "nombre": {
+        "es": "Marcos y adornos",
+        "ca": "Marcs i adorns",
+        "en": "Frames and ornaments"
+      },
+      "decoraciones": [
+        "dec-23",
+        "dec-36",
+        "dec-47",
+        "dec-76",
+        "dec-77"
+      ]
+    },
+    {
+      "id": "ciencia",
+      "nombre": {
+        "es": "Libros, ciencia y justicia",
+        "ca": "Llibres, ciència i justícia",
+        "en": "Books, science and justice"
+      },
+      "decoraciones": [
+        "dec-18",
+        "dec-20",
+        "dec-22",
+        "dec-34",
+        "dec-35",
+        "dec-49",
+        "dec-50",
+        "dec-51",
+        "dec-52",
+        "dec-53",
+        "dec-54",
+        "dec-55",
+        "dec-56"
+      ]
+    }
+  ],
+  "decoraciones": [
+    {
+      "id": "dec-08",
+      "alt": {
+        "es": "Placa redonda de metal oscuro con el símbolo de Venus",
+        "ca": "Placa rodona de metall fosc amb el símbol de Venus",
+        "en": "Round dark metal plaque with the Venus symbol"
+      }
+    },
+    {
+      "id": "dec-09",
+      "alt": {
+        "es": "Colgante con el símbolo de Venus y una gota",
+        "ca": "Penjoll amb el símbol de Venus i una gota",
+        "en": "Pendant with the Venus symbol and a drop"
+      }
+    },
+    {
+      "id": "dec-10",
+      "alt": {
+        "es": "Escudo oscuro con rosas grabadas",
+        "ca": "Escut fosc amb roses gravades",
+        "en": "Dark shield with engraved roses"
+      }
+    },
+    {
+      "id": "dec-11",
+      "alt": {
+        "es": "Puño con cadenas dentro de un marco gótico",
+        "ca": "Puny amb cadenes dins d'un marc gòtic",
+        "en": "Fist with chains inside a gothic frame"
+      }
+    },
+    {
+      "id": "dec-12",
+      "alt": {
+        "es": "Símbolo de Venus hecho de rosas oscuras y metal",
+        "ca": "Símbol de Venus fet de roses fosques i metall",
+        "en": "Venus symbol made of dark roses and metal"
+      }
+    },
+    {
+      "id": "dec-13",
+      "alt": {
+        "es": "Dos manos con encaje, una con una cadena de rosas",
+        "ca": "Dues mans amb puntes, una amb una cadena de roses",
+        "en": "Two lace-gloved hands, one with a chain of roses"
+      }
+    },
+    {
+      "id": "dec-14",
+      "alt": {
+        "es": "Megáfono oscuro con una rosa",
+        "ca": "Megàfon fosc amb una rosa",
+        "en": "Dark megaphone with a rose"
+      }
+    },
+    {
+      "id": "dec-15",
+      "alt": {
+        "es": "Corona de rosas oscuras con el centro vacío",
+        "ca": "Corona de roses fosques amb el centre buit",
+        "en": "Wreath of dark roses with an empty centre"
+      }
+    },
+    {
+      "id": "dec-16",
+      "alt": {
+        "es": "Corazón negro con espinas y una rosa",
+        "ca": "Cor negre amb espines i una rosa",
+        "en": "Black heart with thorns and a rose"
+      }
+    },
+    {
+      "id": "dec-17",
+      "alt": {
+        "es": "Rayo y símbolo de Venus con pétalos",
+        "ca": "Llamp i símbol de Venus amb pètals",
+        "en": "Lightning bolt and Venus symbol with petals"
+      }
+    },
+    {
+      "id": "dec-18",
+      "alt": {
+        "es": "Llave antigua con rosas y símbolos de Venus",
+        "ca": "Clau antiga amb roses i símbols de Venus",
+        "en": "Antique key with roses and Venus symbols"
+      }
+    },
+    {
+      "id": "dec-19",
+      "alt": {
+        "es": "Tambor con el símbolo de Venus y baquetas",
+        "ca": "Tambor amb el símbol de Venus i baquetes",
+        "en": "Drum with the Venus symbol and drumsticks"
+      }
+    },
+    {
+      "id": "dec-20",
+      "alt": {
+        "es": "Libro abierto con una pluma y un átomo",
+        "ca": "Llibre obert amb una ploma i un àtom",
+        "en": "Open book with a feather and an atom"
+      }
+    },
+    {
+      "id": "dec-21",
+      "alt": {
+        "es": "Rayo azul que rompe una cadena",
+        "ca": "Llamp blau que trenca una cadena",
+        "en": "Blue lightning bolt breaking a chain"
+      }
+    },
+    {
+      "id": "dec-22",
+      "alt": {
+        "es": "Árbol con raíces y una figura de mujer con el símbolo de Venus",
+        "ca": "Arbre amb arrels i una figura de dona amb el símbol de Venus",
+        "en": "Tree with roots and a woman's figure with the Venus symbol"
+      }
+    },
+    {
+      "id": "dec-23",
+      "alt": {
+        "es": "Corona de laurel",
+        "ca": "Corona de llorer",
+        "en": "Laurel wreath"
+      }
+    },
+    {
+      "id": "dec-24",
+      "alt": {
+        "es": "Símbolo de Venus morado en forma de serpiente",
+        "ca": "Símbol de Venus morat en forma de serp",
+        "en": "Purple Venus symbol shaped like a snake"
+      }
+    },
+    {
+      "id": "dec-25",
+      "alt": {
+        "es": "Dos manos entrelazadas con corazones",
+        "ca": "Dues mans entrellaçades amb cors",
+        "en": "Two clasped hands with hearts"
+      }
+    },
+    {
+      "id": "dec-26",
+      "alt": {
+        "es": "Megáfono de cobre con el símbolo de Venus",
+        "ca": "Megàfon de coure amb el símbol de Venus",
+        "en": "Copper megaphone with the Venus symbol"
+      }
+    },
+    {
+      "id": "dec-27",
+      "alt": {
+        "es": "Rayo azul sobre el símbolo de Venus",
+        "ca": "Llamp blau sobre el símbol de Venus",
+        "en": "Blue lightning bolt over the Venus symbol"
+      }
+    },
+    {
+      "id": "dec-28",
+      "alt": {
+        "es": "Corazón anatómico con una rosa",
+        "ca": "Cor anatòmic amb una rosa",
+        "en": "Anatomical heart with a rose"
+      }
+    },
+    {
+      "id": "dec-29",
+      "alt": {
+        "es": "Símbolo de Venus verde con laurel y una estrella",
+        "ca": "Símbol de Venus verd amb llorer i una estrella",
+        "en": "Green Venus symbol with laurel and a star"
+      }
+    },
+    {
+      "id": "dec-30",
+      "alt": {
+        "es": "Tres mujeres de perfil, de distintas épocas",
+        "ca": "Tres dones de perfil, de diferents èpoques",
+        "en": "Three women in profile, from different eras"
+      }
+    },
+    {
+      "id": "dec-31",
+      "alt": {
+        "es": "Puño de armadura dentro de un círculo de estrellas",
+        "ca": "Puny d'armadura dins d'un cercle d'estrelles",
+        "en": "Armoured fist inside a circle of stars"
+      }
+    },
+    {
+      "id": "dec-32",
+      "alt": {
+        "es": "Sombrero de bruja de cuero con una espiral",
+        "ca": "Barret de bruixa de cuir amb una espiral",
+        "en": "Leather witch's hat with a spiral"
+      }
+    },
+    {
+      "id": "dec-33",
+      "alt": {
+        "es": "Sombrero de bruja negro con una espiral",
+        "ca": "Barret de bruixa negre amb una espiral",
+        "en": "Black witch's hat with a spiral"
+      }
+    },
+    {
+      "id": "dec-34",
+      "alt": {
+        "es": "Corsé con cordones y espinas",
+        "ca": "Cotilla amb cordons i espines",
+        "en": "Corset with laces and thorns"
+      }
+    },
+    {
+      "id": "dec-35",
+      "alt": {
+        "es": "Jaula abierta de la que salen mariposas",
+        "ca": "Gàbia oberta de la qual surten papallones",
+        "en": "Open cage with butterflies flying out"
+      }
+    },
+    {
+      "id": "dec-36",
+      "alt": {
+        "es": "Adorno de filigrana plateada",
+        "ca": "Adorn de filigrana platejada",
+        "en": "Silver filigree ornament"
+      }
+    },
+    {
+      "id": "dec-37",
+      "alt": {
+        "es": "Mano con guante y una cadena con una rosa",
+        "ca": "Mà amb guant i una cadena amb una rosa",
+        "en": "Gloved hand with a chain and a rose"
+      }
+    },
+    {
+      "id": "dec-38",
+      "alt": {
+        "es": "Cuatro manos de distintos tonos de piel unidas",
+        "ca": "Quatre mans de diferents tons de pell unides",
+        "en": "Four hands of different skin tones joined together"
+      }
+    },
+    {
+      "id": "dec-39",
+      "alt": {
+        "es": "Puño atado con una cinta morada",
+        "ca": "Puny lligat amb una cinta morada",
+        "en": "Fist tied with a purple ribbon"
+      }
+    },
+    {
+      "id": "dec-40",
+      "alt": {
+        "es": "Tres símbolos de Venus de colores",
+        "ca": "Tres símbols de Venus de colors",
+        "en": "Three coloured Venus symbols"
+      }
+    },
+    {
+      "id": "dec-41",
+      "alt": {
+        "es": "Tres mujeres de distintas edades y orígenes",
+        "ca": "Tres dones de diferents edats i orígens",
+        "en": "Three women of different ages and backgrounds"
+      }
+    },
+    {
+      "id": "dec-42",
+      "alt": {
+        "es": "Cinco rostros de mujeres de distintos tonos de piel",
+        "ca": "Cinc rostres de dones de diferents tons de pell",
+        "en": "Five women's faces of different skin tones"
+      }
+    },
+    {
+      "id": "dec-43",
+      "alt": {
+        "es": "Tres mujeres de negro con el puño en alto",
+        "ca": "Tres dones de negre amb el puny alçat",
+        "en": "Three women in black with raised fists"
+      }
+    },
+    {
+      "id": "dec-44",
+      "alt": {
+        "es": "Grupo de mujeres con laurel y una cinta",
+        "ca": "Grup de dones amb llorer i una cinta",
+        "en": "Group of women with laurel and a ribbon"
+      }
+    },
+    {
+      "id": "dec-45",
+      "alt": {
+        "es": "Mujer caminando con una llama en la mano frente a una ciudad",
+        "ca": "Dona caminant amb una flama a la mà davant d'una ciutat",
+        "en": "Woman walking with a flame in her hand in front of a city"
+      }
+    },
+    {
+      "id": "dec-46",
+      "alt": {
+        "es": "Mujer envuelta en llamas moradas",
+        "ca": "Dona embolcallada en flames morades",
+        "en": "Woman wrapped in purple flames"
+      }
+    },
+    {
+      "id": "dec-47",
+      "alt": {
+        "es": "Marco negro vertical con rosas",
+        "ca": "Marc negre vertical amb roses",
+        "en": "Vertical black frame with roses"
+      }
+    },
+    {
+      "id": "dec-48",
+      "alt": {
+        "es": "Micrófono con rosas sobre fondo negro",
+        "ca": "Micròfon amb roses sobre fons negre",
+        "en": "Microphone with roses on a black background"
+      }
+    },
+    {
+      "id": "dec-49",
+      "alt": {
+        "es": "Libro abierto con una pluma y rosas negras",
+        "ca": "Llibre obert amb una ploma i roses negres",
+        "en": "Open book with a feather and black roses"
+      }
+    },
+    {
+      "id": "dec-50",
+      "alt": {
+        "es": "Balanza de la justicia con una rosa",
+        "ca": "Balança de la justícia amb una rosa",
+        "en": "Scales of justice with a rose"
+      }
+    },
+    {
+      "id": "dec-51",
+      "alt": {
+        "es": "Frasco morado con flores",
+        "ca": "Flascó morat amb flors",
+        "en": "Purple flask with flowers"
+      }
+    },
+    {
+      "id": "dec-52",
+      "alt": {
+        "es": "Matraz con un átomo y rosas",
+        "ca": "Matràs amb un àtom i roses",
+        "en": "Flask with an atom and roses"
+      }
+    },
+    {
+      "id": "dec-53",
+      "alt": {
+        "es": "Mano con encaje dentro de un escudo de rosas",
+        "ca": "Mà amb puntes dins d'un escut de roses",
+        "en": "Lace hand inside a shield of roses"
+      }
+    },
+    {
+      "id": "dec-54",
+      "alt": {
+        "es": "Espejo de mano con rosas",
+        "ca": "Mirall de mà amb roses",
+        "en": "Hand mirror with roses"
+      }
+    },
+    {
+      "id": "dec-55",
+      "alt": {
+        "es": "Documentos legales con una balanza y una rosa",
+        "ca": "Documents legals amb una balança i una rosa",
+        "en": "Legal documents with scales and a rose"
+      }
+    },
+    {
+      "id": "dec-56",
+      "alt": {
+        "es": "Estallido morado con cadenas rotas",
+        "ca": "Esclat morat amb cadenes trencades",
+        "en": "Purple burst with broken chains"
+      }
+    },
+    {
+      "id": "dec-57",
+      "alt": {
+        "es": "Símbolo de Venus morado con un puño",
+        "ca": "Símbol de Venus morat amb un puny",
+        "en": "Purple Venus symbol with a fist"
+      }
+    },
+    {
+      "id": "dec-58",
+      "alt": {
+        "es": "Símbolo de Venus morado brillante",
+        "ca": "Símbol de Venus morat brillant",
+        "en": "Shiny purple Venus symbol"
+      }
+    },
+    {
+      "id": "dec-59",
+      "alt": {
+        "es": "Dos manos unidas dentro de un círculo",
+        "ca": "Dues mans unides dins d'un cercle",
+        "en": "Two joined hands inside a circle"
+      }
+    },
+    {
+      "id": "dec-60",
+      "alt": {
+        "es": "Megáfono morado con el símbolo de Venus",
+        "ca": "Megàfon morat amb el símbol de Venus",
+        "en": "Purple megaphone with the Venus symbol"
+      }
+    },
+    {
+      "id": "dec-61",
+      "alt": {
+        "es": "Rayo morado con el símbolo de Venus",
+        "ca": "Llamp morat amb el símbol de Venus",
+        "en": "Purple lightning bolt with the Venus symbol"
+      }
+    },
+    {
+      "id": "dec-62",
+      "alt": {
+        "es": "Corazón morado con estrellas y hojas",
+        "ca": "Cor morat amb estrelles i fulles",
+        "en": "Purple heart with stars and leaves"
+      }
+    },
+    {
+      "id": "dec-63",
+      "alt": {
+        "es": "Tres mujeres con distintos pañuelos dentro de un círculo",
+        "ca": "Tres dones amb diferents mocadors dins d'un cercle",
+        "en": "Three women with different headscarves inside a circle"
+      }
+    },
+    {
+      "id": "dec-64",
+      "alt": {
+        "es": "Luna blanca con la silueta de una bruja",
+        "ca": "Lluna blanca amb la silueta d'una bruixa",
+        "en": "White moon with a witch's silhouette"
+      }
+    },
+    {
+      "id": "dec-65",
+      "alt": {
+        "es": "Mujer dibujada a línea con sombrero de bruja y llamas",
+        "ca": "Dona dibuixada a línia amb barret de bruixa i flames",
+        "en": "Line drawing of a woman with a witch's hat and flames"
+      }
+    },
+    {
+      "id": "dec-66",
+      "alt": {
+        "es": "Retrato de mujer en tinta roja con llamas",
+        "ca": "Retrat de dona en tinta vermella amb flames",
+        "en": "Portrait of a woman in red ink with flames"
+      }
+    },
+    {
+      "id": "dec-67",
+      "alt": {
+        "es": "Retrato de mujer en tinta morada con llamas",
+        "ca": "Retrat de dona en tinta morada amb flames",
+        "en": "Portrait of a woman in purple ink with flames"
+      }
+    },
+    {
+      "id": "dec-68",
+      "alt": {
+        "es": "Mujer con los ojos en llamas",
+        "ca": "Dona amb els ulls en flames",
+        "en": "Woman with flaming eyes"
+      }
+    },
+    {
+      "id": "dec-69",
+      "alt": {
+        "es": "Silueta de mujer con el pelo al viento y llamas",
+        "ca": "Silueta de dona amb els cabells al vent i flames",
+        "en": "Silhouette of a woman with windswept hair and flames"
+      }
+    },
+    {
+      "id": "dec-70",
+      "alt": {
+        "es": "Silueta de mujer con el pelo al viento y llamas moradas",
+        "ca": "Silueta de dona amb els cabells al vent i flames morades",
+        "en": "Silhouette of a woman with windswept hair and purple flames"
+      }
+    },
+    {
+      "id": "dec-71",
+      "alt": {
+        "es": "Silueta de mujer con un moño y llamas",
+        "ca": "Silueta de dona amb un monyo i flames",
+        "en": "Silhouette of a woman with a bun and flames"
+      }
+    },
+    {
+      "id": "dec-72",
+      "alt": {
+        "es": "Silueta de mujer con un moño y llamas moradas",
+        "ca": "Silueta de dona amb un monyo i flames morades",
+        "en": "Silhouette of a woman with a bun and purple flames"
+      }
+    },
+    {
+      "id": "dec-73",
+      "alt": {
+        "es": "Mano levantando un manojo de llaves",
+        "ca": "Mà aixecant un manoll de claus",
+        "en": "Hand holding up a bunch of keys"
+      }
+    },
+    {
+      "id": "dec-74",
+      "alt": {
+        "es": "Ojo con el símbolo de Venus en rojo",
+        "ca": "Ull amb el símbol de Venus en vermell",
+        "en": "Eye with the Venus symbol in red"
+      }
+    },
+    {
+      "id": "dec-75",
+      "alt": {
+        "es": "Ojo con el símbolo de Venus en plateado",
+        "ca": "Ull amb el símbol de Venus en platejat",
+        "en": "Eye with the Venus symbol in silver"
+      }
+    },
+    {
+      "id": "dec-76",
+      "alt": {
+        "es": "Cenefa de encaje morado con rosas",
+        "ca": "Sanefa de puntes morades amb roses",
+        "en": "Purple lace border with roses"
+      }
+    },
+    {
+      "id": "dec-77",
+      "alt": {
+        "es": "Cartel blanco con marco de rosas oscuras",
+        "ca": "Cartell blanc amb marc de roses fosques",
+        "en": "White sign with a frame of dark roses"
+      }
+    },
+    {
+      "id": "dec-78",
+      "alt": {
+        "es": "Camafeo con la silueta de una mujer y rosas",
+        "ca": "Camafeu amb la silueta d'una dona i roses",
+        "en": "Cameo with a woman's silhouette and roses"
+      }
+    }
+  ]
+}
