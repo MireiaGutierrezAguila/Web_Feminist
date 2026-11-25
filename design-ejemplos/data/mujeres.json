@@ -8,7 +8,36 @@
     "quienTitulo": "¿Quién fue ?",
     "quien": "Magdalena Frida Carmen Kahlo y Calderón, conocida como Frida Kahlo, fue una pintora mexicana cuya obra gira temáticamente en torno a su vida personal. Realizó un total de 150 obras, principalmente autorretratos. A través de su arte y su forma de vida, rompió estereotipos de género, rechazó los cánones de belleza impuestos y vivió su sexualidad en absoluta libertad.",
     "fuentes": "[FUENTE PENDIENTE]",
-    "capas": { "cabeza": { "s": 0.69, "dx": 88, "dy": -48 }, "cuerpo": { "s": 1, "dx": 0, "dy": 54 } }
+    "capas": {
+      "cabeza": {
+        "s": 0.69,
+        "dx": 88,
+        "dy": -48
+      },
+      "cuerpo": {
+        "s": 1,
+        "dx": 0,
+        "dy": 54
+      }
+    },
+    "ca": {
+      "nombre": "Frida Kahlo",
+      "cabecera": "Frida Kahlo (1907-1954)",
+      "profesionLugar": "Pintora - Coyoacán (Mèxic)",
+      "logro": "Va desafiar els cànons de bellesa i els rols de gènere a través de l'art.",
+      "quienTitulo": "Qui va ser?",
+      "quien": "Magdalena Frida Carmen Kahlo y Calderón, coneguda com a Frida Kahlo, va ser una pintora mexicana l'obra de la qual gira temàticament al voltant de la seva vida personal. Va realitzar un total de 150 obres, principalment autoretrats. A través de la seva art i la seva forma de vida, va trencar estereotips de gènere, va rebutjar els cànons de bellesa imposats i va viure la seva sexualitat en absoluta llibertat.",
+      "revisada": false
+    },
+    "en": {
+      "nombre": "Frida Kahlo",
+      "cabecera": "Frida Kahlo (1907-1954)",
+      "profesionLugar": "Painter - Coyoacán (Mexico)",
+      "logro": "She challenged beauty standards and gender roles through her art.",
+      "quienTitulo": "Who was she?",
+      "quien": "Magdalena Frida Carmen Kahlo y Calderón, known as Frida Kahlo, was a Mexican painter whose work revolves thematically around her personal life. She produced a total of 150 works, mainly self-portraits. Through her art and her way of life, she broke gender stereotypes, rejected the imposed standards of beauty and lived her sexuality in absolute freedom.",
+      "revisada": false
+    }
   },
   {
     "slug": "zheng-shi",
@@ -19,7 +48,36 @@
     "quienTitulo": "¿Quién fue ?",
     "quien": "Zheng Shi (también conocida como Ching Shih) fue la pirata más poderosa de la historia. Tras enviudar de su esposo, el pirata Zheng Yi, asumió el liderazgo absoluto de Confederación Pirata de Guangdong y se casó con el hijo adoptivo de su difunto marido, convirtiéndolo en su mano derecha.  Más allá de sus victorias, destacó por imponer un código de leyes que protegía drásticamente a las mujeres. Por ejemplo: estaba terminantemente prohibido dañar o violar a las cautivas; si un pirata agredía sexualmente a una mujer prisionera, la pena era la ejecución inmediata por decapitación. Se retiró con su inmensa fortuna y vivió el resto de sus días en absoluta libertad.",
     "fuentes": "[FUENTE PENDIENTE]",
-    "capas": { "cabeza": { "s": 0.71, "dx": 60, "dy": -86 }, "cuerpo": { "s": 0.99, "dx": 0, "dy": 86 } }
+    "capas": {
+      "cabeza": {
+        "s": 0.71,
+        "dx": 60,
+        "dy": -86
+      },
+      "cuerpo": {
+        "s": 0.99,
+        "dx": 0,
+        "dy": 86
+      }
+    },
+    "ca": {
+      "nombre": "Zheng Shi",
+      "cabecera": "Zheng Shi (1775-1844)",
+      "profesionLugar": "Líder pirata - Canton (Xina)",
+      "logro": "Va liderar la flota pirata més gran de la història i mai no va ser derrotada.",
+      "quienTitulo": "Qui va ser?",
+      "quien": "Zheng Shi (també coneguda com a Ching Shih) va ser la pirata més poderosa de la història. Després de quedar vídua del seu espòs, el pirata Zheng Yi, va assumir el lideratge absolut de la Confederació Pirata de Guangdong i es va casar amb el fill adoptiu del seu difunt marit, convertint-lo en la seva mà dreta. Més enllà de les seves victòries, va destacar per imposar un codi de lleis que protegia dràsticament les dones. Per exemple: estava terminantment prohibit fer mal o violar les captives; si un pirata agredia sexualment una dona presonera, la pena era l'execució immediata per decapitació. Es va retirar amb la seva immensa fortuna i va viure la resta dels seus dies en absoluta llibertat.",
+      "revisada": false
+    },
+    "en": {
+      "nombre": "Zheng Shi",
+      "cabecera": "Zheng Shi (1775-1844)",
+      "profesionLugar": "Pirate leader - Canton (China)",
+      "logro": "She led the largest pirate fleet in history and was never defeated.",
+      "quienTitulo": "Who was she?",
+      "quien": "Zheng Shi (also known as Ching Shih) was the most powerful pirate in history. After being widowed by her husband, the pirate Zheng Yi, she took absolute command of the Guangdong Pirate Confederation and married her late husband's adopted son, making him her right-hand man. Beyond her victories, she stood out for imposing a code of laws that drastically protected women. For example: it was strictly forbidden to harm or rape female captives; if a pirate sexually assaulted a woman prisoner, the punishment was immediate execution by beheading. She retired with her immense fortune and lived the rest of her days in absolute freedom.",
+      "revisada": false
+    }
   },
   {
     "slug": "hipatia-de-alejandria",
@@ -30,7 +88,36 @@
     "quienTitulo": "¿Quién fue ?",
     "quien": "Hipatia de Alejandría fue una brillante filósofa, matemática y astrónoma griega que vivió en Egipto a finales del siglo IV y principios del V. Es la primera mujer matemática de la que se conserva un registro biográfico e histórico detallado, además destacó por sus profundos conocimientos en geometría, álgebra y astronomía.Su figura se convirtió en un símbolo universal de la razón, el libre pensamiento y la erudición. Su trágica muerte, a manos de una multitud de cristianos extremistas que atacaban la ciencia y el paganismo clásico, la consagró definitivamente como un icono histórico de la defensa del conocimiento y la libertad intelectual. Para algunos historiadores su muerte supuso el principio del fin del paganismo en la Antigüedad.",
     "fuentes": "[FUENTE PENDIENTE]",
-    "capas": { "cabeza": { "s": 0.65, "dx": 68, "dy": -34 }, "cuerpo": { "s": 0.91, "dx": 18, "dy": 124 } }
+    "capas": {
+      "cabeza": {
+        "s": 0.65,
+        "dx": 68,
+        "dy": -34
+      },
+      "cuerpo": {
+        "s": 0.91,
+        "dx": 18,
+        "dy": 124
+      }
+    },
+    "ca": {
+      "nombre": "Hipàtia d'Alexandria",
+      "cabecera": "Hipàtia (355/370 - 415)",
+      "profesionLugar": "Astrònoma, matemàtica i filòsofa - Alexandria (Egipte)",
+      "logro": "Va millorar i construir instruments astronòmics com l'astrolabi o el planisferi.",
+      "quienTitulo": "Qui va ser?",
+      "quien": "Hipàtia d'Alexandria va ser una brillant filòsofa, matemàtica i astrònoma grega que va viure a Egipte a finals del segle IV i principis del V. És la primera dona matemàtica de la qual es conserva un registre biogràfic i històric detallat, i a més va destacar pels seus profunds coneixements de geometria, àlgebra i astronomia. La seva figura es va convertir en un símbol universal de la raó, el lliure pensament i l'erudició. La seva tràgica mort, a mans d'una multitud de cristians extremistes que atacaven la ciència i el paganisme clàssic, la va consagrar definitivament com a icona històrica de la defensa del coneixement i la llibertat intel·lectual. Per a alguns historiadors la seva mort va suposar el principi de la fi del paganisme a l'Antiguitat.",
+      "revisada": false
+    },
+    "en": {
+      "nombre": "Hypatia of Alexandria",
+      "cabecera": "Hypatia (355/370 - 415)",
+      "profesionLugar": "Astronomer, mathematician and philosopher - Alexandria (Egypt)",
+      "logro": "She improved and built astronomical instruments such as the astrolabe and the planisphere.",
+      "quienTitulo": "Who was she?",
+      "quien": "Hypatia of Alexandria was a brilliant Greek philosopher, mathematician and astronomer who lived in Egypt in the late 4th and early 5th centuries. She is the first woman mathematician for whom a detailed biographical and historical record survives, and she also stood out for her deep knowledge of geometry, algebra and astronomy. Her figure became a universal symbol of reason, free thought and scholarship. Her tragic death, at the hands of a mob of extremist Christians who attacked science and classical paganism, definitively established her as a historical icon of the defence of knowledge and intellectual freedom. For some historians, her death marked the beginning of the end of paganism in Antiquity.",
+      "revisada": false
+    }
   },
   {
     "slug": "olimpia-de-gouges",
@@ -41,7 +128,36 @@
     "quienTitulo": "¿Quién fue ?",
     "quien": "Olympe de Gouges (Olimpia de Gouges) fue una escritora, dramaturga y activista política francesa del siglo XVIII. Considerada una de las primeras defensoras de los derechos de la mujer, redactó la Declaración de los Derechos de la Mujer y de la Ciudadana, en plena Revolución Francesa, reclamando la igualdad de derechos políticos y el sufragio femenino. Su trágica muerte en la guillotina por desafiar los límites impuestos a las mujeres la consagró definitivamente como un icono histórico de la emancipación y la libertad.",
     "fuentes": "[FUENTE PENDIENTE]",
-    "capas": { "cabeza": { "s": 0.64, "dx": 98, "dy": -38 }, "cuerpo": { "s": 1, "dx": 4, "dy": 50 } }
+    "capas": {
+      "cabeza": {
+        "s": 0.64,
+        "dx": 98,
+        "dy": -38
+      },
+      "cuerpo": {
+        "s": 1,
+        "dx": 4,
+        "dy": 50
+      }
+    },
+    "ca": {
+      "nombre": "Olympe de Gouges",
+      "cabecera": "Olympe de Gouges (1748-1793)",
+      "profesionLugar": "Política, escriptora i filòsofa - Londres (Anglaterra)",
+      "logro": "Precursora històrica del feminisme i autora de la Declaració dels Drets de la Dona i de la Ciutadana.",
+      "quienTitulo": "Qui va ser?",
+      "quien": "Olympe de Gouges (Olimpia de Gouges) va ser una escriptora, dramaturga i activista política francesa del segle XVIII. Considerada una de les primeres defensores dels drets de la dona, va redactar la Declaració dels Drets de la Dona i de la Ciutadana, en plena Revolució Francesa, reclamant la igualtat de drets polítics i el sufragi femení. La seva tràgica mort a la guillotina per desafiar els límits imposats a les dones la va consagrar definitivament com a icona històrica de l'emancipació i la llibertat.",
+      "revisada": false
+    },
+    "en": {
+      "nombre": "Olympe de Gouges",
+      "cabecera": "Olympe de Gouges (1748-1793)",
+      "profesionLugar": "Politician, writer and philosopher - London (England)",
+      "logro": "Historic precursor of feminism and author of the Declaration of the Rights of Woman and of the Female Citizen.",
+      "quienTitulo": "Who was she?",
+      "quien": "Olympe de Gouges (Olimpia de Gouges) was a French writer, playwright and political activist of the 18th century. Considered one of the first defenders of women's rights, she wrote the Declaration of the Rights of Woman and of the Female Citizen in the midst of the French Revolution, demanding equal political rights and women's suffrage. Her tragic death on the guillotine for challenging the limits imposed on women definitively established her as a historical icon of emancipation and freedom.",
+      "revisada": false
+    }
   },
   {
     "slug": "rosa-parks",
@@ -52,7 +168,36 @@
     "quienTitulo": "¿Quién fue ?",
     "quien": "Rosa Parks es conocida como \"la Primera Dama del Movimiento por los derechos civiles\" en Estados Unidos. Aunque ya en 1950 se había unido a dicho movimiento, ese calificativo se debe a su negativa a cederle el asiento a un blanco y moverse a la parte trasera de un autobús en Montgomery (Alabama), población del sur del país. Sucedió el 1 de diciembre de 1955 y prendió la mecha del boicot a los autobuses de Montgomery, primera gran victoria de los negros americanos contra las leyes racistas.",
     "fuentes": "[FUENTE PENDIENTE]",
-    "capas": { "cabeza": { "s": 0.72, "dx": 68, "dy": -66 }, "cuerpo": { "s": 0.99, "dx": 4, "dy": 56 } }
+    "capas": {
+      "cabeza": {
+        "s": 0.72,
+        "dx": 68,
+        "dy": -66
+      },
+      "cuerpo": {
+        "s": 0.99,
+        "dx": 4,
+        "dy": 56
+      }
+    },
+    "ca": {
+      "nombre": "Rosa Parks",
+      "cabecera": "Rosa Parks (1913-2005)",
+      "profesionLugar": "Cosidora i activista - Alabama (Estats Units)",
+      "logro": "Es va negar a cedir el seu seient a una persona blanca; el seu gest va posar en marxa un moviment imparable contra la segregació racial.",
+      "quienTitulo": "Qui va ser?",
+      "quien": "Rosa Parks és coneguda com «la Primera Dama del Moviment pels drets civils» als Estats Units. Encara que ja el 1950 s'havia unit a aquest moviment, aquest qualificatiu es deu a la seva negativa a cedir el seient a un blanc i a moure's a la part del darrere d'un autobús a Montgomery (Alabama), població del sud del país. Va passar l'1 de desembre de 1955 i va calar foc a la metxa del boicot als autobusos de Montgomery, primera gran victòria dels negres americans contra les lleis racistes.",
+      "revisada": false
+    },
+    "en": {
+      "nombre": "Rosa Parks",
+      "cabecera": "Rosa Parks (1913-2005)",
+      "profesionLugar": "Seamstress and activist - Alabama (United States)",
+      "logro": "She refused to give up her seat to a white person; her gesture set in motion an unstoppable movement against racial segregation.",
+      "quienTitulo": "Who was she?",
+      "quien": "Rosa Parks is known as \"the First Lady of the Civil Rights Movement\" in the United States. Although she had already joined the movement in 1950, this title is due to her refusal to give up her seat to a white man and move to the back of a bus in Montgomery (Alabama), a town in the south of the country. It happened on 1 December 1955 and lit the fuse of the Montgomery bus boycott, the first great victory of Black Americans against racist laws.",
+      "revisada": false
+    }
   },
   {
     "slug": "aglaonice-de-tesalia",
@@ -63,7 +208,36 @@
     "quienTitulo": "¿Quién fue ?",
     "quien": "Más conocida como Aglaonice de Tesalia ,fue la primera mujer astrónoma conocida de la antigua Grecia. Destacó por su profundo dominio para predecir con exactitud los eclipses lunares. Aglaonice fue relacionada con un grupo de mujeres astrólogas, muy activas entre el siglo III y el siglo I a. C., aparentemente consideradas como hechiceras o magas. Se conocieron como las BRUJAS DE TESALIA y existió la creencia, muy extendida en la antigüedad, que tenían el poder de \"bajar la luna\" del cielo.",
     "fuentes": "[FUENTE PENDIENTE]",
-    "capas": { "cabeza": { "s": 0.67, "dx": 90, "dy": -52 }, "cuerpo": { "s": 0.99, "dx": 18, "dy": 44 } }
+    "capas": {
+      "cabeza": {
+        "s": 0.67,
+        "dx": 90,
+        "dy": -52
+      },
+      "cuerpo": {
+        "s": 0.99,
+        "dx": 18,
+        "dy": 44
+      }
+    },
+    "ca": {
+      "nombre": "Aglaonice de Tessàlia",
+      "cabecera": "Aglaonice (segle II - I aC)",
+      "profesionLugar": "Astrònoma - Tessàlia (Grècia)",
+      "logro": "Ser una de les primeres astrònomes reconegudes, per predir eclipsis amb exactitud.",
+      "quienTitulo": "Qui va ser?",
+      "quien": "Més coneguda com a Aglaonice de Tessàlia, va ser la primera dona astrònoma coneguda de l'antiga Grècia. Va destacar pel seu profund domini a l'hora de predir amb exactitud els eclipsis lunars. Aglaonice va ser relacionada amb un grup de dones astròlogues, molt actives entre el segle III i el segle I aC, aparentment considerades bruixes o maues. Es van conèixer com les BRUIXES DE TESSÀLIA i existia la creença, molt estesa a l'antiguitat, que tenien el poder de «baixar la lluna» del cel.",
+      "revisada": false
+    },
+    "en": {
+      "nombre": "Aglaonice of Thessaly",
+      "cabecera": "Aglaonice (2nd - 1st century BC)",
+      "profesionLugar": "Astronomer - Thessaly (Greece)",
+      "logro": "Being one of the first recognised astronomers, known for accurately predicting eclipses.",
+      "quienTitulo": "Who was she?",
+      "quien": "Better known as Aglaonice of Thessaly, she was the first known woman astronomer of ancient Greece. She stood out for her deep mastery in accurately predicting lunar eclipses. Aglaonice was linked to a group of women astrologers, very active between the 3rd and 1st centuries BC, apparently regarded as sorceresses or witches. They became known as the WITCHES OF THESSALY, and there was a belief, widespread in antiquity, that they had the power to \"draw down the moon\" from the sky.",
+      "revisada": false
+    }
   },
   {
     "slug": "ada-lovelace",
@@ -74,7 +248,36 @@
     "quienTitulo": "¿Quién fue Ada_Lovelace?",
     "quien": "Ada Lovelace fue una matemática y escritora británica, célebre sobre todo por su trabajo acerca de la computadora mecánica de uso general de Charles Babbage, la denominada máquina analítica. Todos sus hallazgos fueron fundamentales para la eventual creación de la computadora.\n\nFalleció a los 36 años a causa de un cáncer de útero.",
     "fuentes": "[FUENTE PENDIENTE]",
-    "capas": { "cabeza": { "s": 0.75, "dx": 60, "dy": -82 }, "cuerpo": { "s": 0.99, "dx": 0, "dy": 26 } }
+    "capas": {
+      "cabeza": {
+        "s": 0.75,
+        "dx": 60,
+        "dy": -82
+      },
+      "cuerpo": {
+        "s": 0.99,
+        "dx": 0,
+        "dy": 26
+      }
+    },
+    "ca": {
+      "nombre": "Ada Lovelace",
+      "cabecera": "Ada Lovelace (1815-1852)",
+      "profesionLugar": "Matemàtica i escriptora - Londres (Anglaterra)",
+      "logro": "Primera persona programadora de la història. Va crear el primer algorisme informàtic.",
+      "quienTitulo": "Qui va ser Ada Lovelace?",
+      "quien": "Ada Lovelace va ser una matemàtica i escriptora britànica, cèlebre sobretot pel seu treball sobre l'ordinador mecànic d'ús general de Charles Babbage, l'anomenada màquina analítica. Totes les seves troballes van ser fonamentals per a l'eventual creació de l'ordinador.\n\nVa morir als 36 anys a causa d'un càncer d'úter.",
+      "revisada": false
+    },
+    "en": {
+      "nombre": "Ada Lovelace",
+      "cabecera": "Ada Lovelace (1815-1852)",
+      "profesionLugar": "Mathematician and writer - London (England)",
+      "logro": "The first programmer in history. She created the first computer algorithm.",
+      "quienTitulo": "Who was Ada Lovelace?",
+      "quien": "Ada Lovelace was a British mathematician and writer, famous above all for her work on Charles Babbage's general-purpose mechanical computer, the so-called Analytical Engine. All her findings were fundamental to the eventual creation of the computer.\n\nShe died at the age of 36 of uterine cancer.",
+      "revisada": false
+    }
   },
   {
     "slug": "lynn-margulis",
@@ -85,7 +288,36 @@
     "quienTitulo": "¿Quién fue ?",
     "quien": "Lynn Margulis dedicó su vida profesional a investigar el microcosmos de los organismos más pequeños de la Tierra. Demostró que las células nucleadas o eucariotas –de las que están hechos todos los organismos vivos: los hongos, las plantas, los animales, y numerosos seres unicelulares– no sólo descienden de bacterias, sino que son literalmente amalgamas de células bacterianas diversas. La División de Ciencias de la Vida de la NASA, financió durante décadas su investigación.",
     "fuentes": "[FUENTE PENDIENTE]",
-    "capas": { "cabeza": { "s": 0.67, "dx": 68, "dy": -44 }, "cuerpo": { "s": 1.01, "dx": -4, "dy": 72 } }
+    "capas": {
+      "cabeza": {
+        "s": 0.67,
+        "dx": 68,
+        "dy": -44
+      },
+      "cuerpo": {
+        "s": 1.01,
+        "dx": -4,
+        "dy": 72
+      }
+    },
+    "ca": {
+      "nombre": "Lynn Margulis",
+      "cabecera": "Lynn Margulis (1938-2011)",
+      "profesionLugar": "Biòloga i catedràtica - Chicago (Estats Units)",
+      "logro": "Va revolucionar la teoria de l'evolució amb la seva teoria de l'origen de les cèl·lules eucariotes.",
+      "quienTitulo": "Qui va ser?",
+      "quien": "Lynn Margulis va dedicar la seva vida professional a investigar el microcosmos dels organismes més petits de la Terra. Va demostrar que les cèl·lules nucleades o eucariotes –de les quals estan fets tots els organismes vius: els fongs, les plantes, els animals i nombrosos éssers unicel·lulars– no només descendeixen de bacteris, sinó que són literalment amalgames de cèl·lules bacterianes diverses. La Divisió de Ciències de la Vida de la NASA va finançar durant dècades la seva investigació.",
+      "revisada": false
+    },
+    "en": {
+      "nombre": "Lynn Margulis",
+      "cabecera": "Lynn Margulis (1938-2011)",
+      "profesionLugar": "Biologist and professor - Chicago (United States)",
+      "logro": "She revolutionised evolutionary theory with her theory of the origin of eukaryotic cells.",
+      "quienTitulo": "Who was she?",
+      "quien": "Lynn Margulis devoted her professional life to researching the microcosm of the smallest organisms on Earth. She showed that nucleated, or eukaryotic, cells –of which all living organisms are made: fungi, plants, animals and numerous single-celled beings– not only descend from bacteria but are literally amalgams of diverse bacterial cells. NASA's Life Sciences Division funded her research for decades.",
+      "revisada": false
+    }
   },
   {
     "slug": "julia-hermosilla",
@@ -96,7 +328,36 @@
     "quienTitulo": "¿Quién fue ?",
     "quien": "Julia Hermosilla, conocida como \"Paquita\", fue una valiente anarcosindicalista y  miliciana, miembro clave de la resistencia antifranquista. A los catorce años se afilió al CNT, se convirtió en miliciana armada, combatiendo activamente en el Frente del Norte con los batallones. Estuvo vinculada al desarrollo cultural y social del movimiento libertario, apoyando a agrupaciones como Mujeres Libres, un colectivo feminista y anarquista del que su propia madre fue organizadora en Barakaldo.Desde el exilio en Francia, Julia fue una pieza clave en la logística y organización de dos intentos de atentado directo para asesinar al dictador Francisco Franco.",
     "fuentes": "[FUENTE PENDIENTE]",
-    "capas": { "cabeza": { "s": 0.79, "dx": 62, "dy": -76 }, "cuerpo": { "s": 1.04, "dx": 0, "dy": 56 } }
+    "capas": {
+      "cabeza": {
+        "s": 0.79,
+        "dx": 62,
+        "dy": -76
+      },
+      "cuerpo": {
+        "s": 1.04,
+        "dx": 0,
+        "dy": 56
+      }
+    },
+    "ca": {
+      "nombre": "Julia Hermosilla",
+      "cabecera": "Julia Hermosilla (1916-2009)",
+      "profesionLugar": "Miliciana i anarcosindicalista - Biscaia (Euskal Herria)",
+      "logro": "Miliciana anarquista que ens va estar a punt d'alliberar de Franco en dues ocasions.",
+      "quienTitulo": "Qui va ser?",
+      "quien": "Julia Hermosilla, coneguda com a «Paquita», va ser una valenta anarcosindicalista i miliciana, membre clau de la resistència antifranquista. Als catorze anys es va afiliar a la CNT, es va convertir en miliciana armada i va combatre activament al Front del Nord amb els batallons. Va estar vinculada al desenvolupament cultural i social del moviment llibertari, donant suport a agrupacions com Mujeres Libres, un col·lectiu feminista i anarquista del qual la seva pròpia mare va ser organitzadora a Barakaldo. Des de l'exili a França, Julia va ser una peça clau en la logística i l'organització de dos intents d'atemptat directe per assassinar el dictador Francisco Franco.",
+      "revisada": false
+    },
+    "en": {
+      "nombre": "Julia Hermosilla",
+      "cabecera": "Julia Hermosilla (1916-2009)",
+      "profesionLugar": "Militiawoman and anarcho-syndicalist - Biscay (Euskal Herria)",
+      "logro": "An anarchist militiawoman who very nearly rid us of Franco on two occasions.",
+      "quienTitulo": "Who was she?",
+      "quien": "Julia Hermosilla, known as \"Paquita\", was a brave anarcho-syndicalist and militiawoman, a key member of the anti-Franco resistance. At the age of fourteen she joined the CNT, became an armed militiawoman and fought actively on the Northern Front with the battalions. She was linked to the cultural and social development of the libertarian movement, supporting groups such as Mujeres Libres, a feminist and anarchist collective of which her own mother was an organiser in Barakaldo. From exile in France, Julia was a key figure in the logistics and organisation of two attempts at a direct attack to assassinate the dictator Francisco Franco.",
+      "revisada": false
+    }
   },
   {
     "slug": "emma-goldman",
@@ -107,7 +368,36 @@
     "quienTitulo": "¿Quién fue ?",
     "quien": "Emma Goldman, conocida como \"Emma, la roja\", fue una de las voces más radicales y apasionadas del anarquismo y el feminismo del siglo XX.  Creció en una familia judía humilde y los 16 años, emigró a Estados Unidos, escapando de la represión y las limitadas oportunidades de vida en su tierra natal. Dedicó su vida a la lucha por la libertad, defendiendo los derechos de las mujeres y los trabajadores, y criticando la guerra y el ejército. Luchó por los derechos sexuales y reproductivos, lo que le llevó a ser arrestada varias veces por organizar huelgas y por enseñar a la gente a usar métodos anticonceptivos. Fue expulsada de Estados Unidos en 1919 y murió en Canadá en el año 1940.",
     "fuentes": "[FUENTE PENDIENTE]",
-    "capas": { "cabeza": { "s": 0.78, "dx": 50, "dy": -56 }, "cuerpo": { "s": 0.99, "dx": 2, "dy": 74 } }
+    "capas": {
+      "cabeza": {
+        "s": 0.78,
+        "dx": 50,
+        "dy": -56
+      },
+      "cuerpo": {
+        "s": 0.99,
+        "dx": 2,
+        "dy": 74
+      }
+    },
+    "ca": {
+      "nombre": "Emma Goldman",
+      "cabecera": "Emma Goldman (1869 – 1940)",
+      "profesionLugar": "Anarquista, escriptora i activista - Kaunas (Lituània)",
+      "logro": "Va ser coneguda com «La dona més perillosa d'Amèrica» per la seva intensa lluita anarcofeminista i les seves idees revolucionàries.",
+      "quienTitulo": "Qui va ser?",
+      "quien": "Emma Goldman, coneguda com «Emma, la roja», va ser una de les veus més radicals i apassionades de l'anarquisme i el feminisme del segle XX. Va créixer en una família jueva humil i als 16 anys va emigrar als Estats Units, escapant de la repressió i de les limitades oportunitats de vida a la seva terra natal. Va dedicar la seva vida a la lluita per la llibertat, defensant els drets de les dones i dels treballadors, i criticant la guerra i l'exèrcit. Va lluitar pels drets sexuals i reproductius, cosa que la va portar a ser arrestada diverses vegades per organitzar vagues i per ensenyar la gent a fer servir mètodes anticonceptius. Va ser expulsada dels Estats Units el 1919 i va morir al Canadà l'any 1940.",
+      "revisada": false
+    },
+    "en": {
+      "nombre": "Emma Goldman",
+      "cabecera": "Emma Goldman (1869 – 1940)",
+      "profesionLugar": "Anarchist, writer and activist - Kaunas (Lithuania)",
+      "logro": "She was known as \"the most dangerous woman in America\" for her intense anarcha-feminist struggle and her revolutionary ideas.",
+      "quienTitulo": "Who was she?",
+      "quien": "Emma Goldman, known as \"Red Emma\", was one of the most radical and passionate voices of anarchism and feminism in the 20th century. She grew up in a humble Jewish family and at 16 emigrated to the United States, escaping repression and the limited life opportunities in her homeland. She devoted her life to the fight for freedom, defending the rights of women and workers, and criticising war and the army. She fought for sexual and reproductive rights, which led to her being arrested several times for organising strikes and for teaching people to use contraceptive methods. She was deported from the United States in 1919 and died in Canada in 1940.",
+      "revisada": false
+    }
   },
   {
     "slug": "hedy-lamarr",
@@ -118,6 +408,35 @@
     "quienTitulo": "¿Quién fue ?",
     "quien": "Conocida en su faceta artística como una de las grandes estrellas de la época dorada de Hollywood, demostró una mente científica prodigiosa que iba mucho más allá de las pantallas. Durante la Segunda Guerra Mundial, diseñó un sistema secreto de comunicación por radio con tecnología de salto de frecuencia para evitar que los torpedos aliados fueran interceptados por los nazis.",
     "fuentes": "[FUENTE PENDIENTE]",
-    "capas": { "cabeza": { "s": 0.68, "dx": 82, "dy": -54 }, "cuerpo": { "s": 1, "dx": -2, "dy": 114 } }
+    "capas": {
+      "cabeza": {
+        "s": 0.68,
+        "dx": 82,
+        "dy": -54
+      },
+      "cuerpo": {
+        "s": 1,
+        "dx": -2,
+        "dy": 114
+      }
+    },
+    "ca": {
+      "nombre": "Hedy Lamarr",
+      "cabecera": "Hedy Lamarr (1914–2000)",
+      "profesionLugar": "Enginyera i actriu de cinema - Viena (Àustria)",
+      "logro": "Va crear la tecnologia de salt de freqüència que avui fa possibles el Wi-Fi, el Bluetooth i el GPS.",
+      "quienTitulo": "Qui va ser?",
+      "quien": "Coneguda en la seva faceta artística com una de les grans estrelles de l'època daurada de Hollywood, va demostrar una ment científica prodigiosa que anava molt més enllà de les pantalles. Durant la Segona Guerra Mundial, va dissenyar un sistema secret de comunicació per ràdio amb tecnologia de salt de freqüència per evitar que els torpedes aliats fossin interceptats pels nazis.",
+      "revisada": false
+    },
+    "en": {
+      "nombre": "Hedy Lamarr",
+      "cabecera": "Hedy Lamarr (1914–2000)",
+      "profesionLugar": "Engineer and film actress - Vienna (Austria)",
+      "logro": "She created the frequency-hopping technology that today makes Wi-Fi, Bluetooth and GPS possible.",
+      "quienTitulo": "Who was she?",
+      "quien": "Known in her artistic career as one of the great stars of Hollywood's golden age, she showed a prodigious scientific mind that went far beyond the screen. During the Second World War, she designed a secret radio communication system using frequency-hopping technology to prevent Allied torpedoes from being intercepted by the Nazis.",
+      "revisada": false
+    }
   }
 ]

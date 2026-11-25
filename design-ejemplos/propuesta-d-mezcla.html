@@ -86,10 +86,15 @@
     .poste ul { list-style: none; margin: 0; padding: 0; }
     .poste li { position: absolute; left: var(--x); top: var(--y); width: var(--w); height: var(--h); }
     .poste a { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; text-align: center; text-decoration: none; border-radius: 12px;
-      font-family: var(--fuente-titulos); font-weight: 900; font-size: 5.6cqw; line-height: 1.05; letter-spacing: .02em; color: #FFF3CF;
-      text-shadow: 0 0 2px #14061c, 0 0 2px #14061c, 1px 1px 0 #14061c, -1px -1px 0 #14061c, 1px -1px 0 #14061c, -1px 1px 0 #14061c, 0 2px 6px rgba(0,0,0,.9); }
+      font-family: var(--fuente-titulos); font-weight: 700; font-size: 6.7cqw; line-height: 1.05; letter-spacing: .03em; color: var(--tinta, #DDBEE6);
+      text-shadow: 0 1px 0 #2a1033, 0 2px 4px rgba(10,2,16,.85); }
     /* al pasar o enfocar: el texto se ilumina (el brillo del foco ya lo pone css/comun.css) */
-    .poste a:hover, .poste a:focus-visible { color: #fff; text-shadow: 0 0 2px #14061c, 1px 1px 0 #14061c, -1px -1px 0 #14061c, 0 0 10px #E8CE86, 0 0 20px #C9A24B; }
+    .poste a:hover, .poste a:focus-visible { color: #fff; text-shadow: 0 1px 0 #2a1033, 0 0 10px #E8CE86, 0 0 20px #C9A24B; }
+    /* cada cartel con un tono claro de su estampado: verde menta, rosa, lila, coral, verde menta */
+    .poste li:nth-child(1) a, .poste li:nth-child(5) a { --tinta: #C4F0E2; }
+    .poste li:nth-child(2) a { --tinta: #FFC4DF; }
+    .poste li:nth-child(3) a { --tinta: #DCC8FF; }
+    .poste li:nth-child(4) a { --tinta: #FFBFB5; }
     .poste li:nth-child(1) { --x: 24.5%; --w: 61.4%; --y: 9.0%;  --h: 8.2%; }
     .poste li:nth-child(2) { --x: 13.5%; --w: 75.7%; --y: 27.2%; --h: 8.2%; }
     .poste li:nth-child(3) { --x: 10.2%; --w: 74.6%; --y: 45.4%; --h: 8.2%; }
@@ -122,7 +127,7 @@
     @keyframes vuelta { to { transform: rotate(360deg); } }
 
     /* ---------- Títulos: cinta torcida en morado con la letra de A ---------- */
-    .bloque h2 { display: inline-block; background: var(--morado); color: var(--blanco); padding: .3em .7em; transform: rotate(-1.2deg); box-shadow: 5px 5px 0 var(--blanco); font-size: clamp(1.05rem, 3.9vw, 1.7rem); font-weight: 700; margin-bottom: 22px; line-height: 1.25; }
+    .bloque h2 { display: inline-block; background: var(--morado); color: var(--blanco); padding: .3em .7em; transform: rotate(-1.2deg); box-shadow: 5px 5px 0 var(--blanco); font-size: clamp(1.25rem, 4.6vw, 2.05rem); font-weight: 700; margin-bottom: 22px; line-height: 1.25; }
     .bloque .intro { margin-top: 4px; }
 
     .placa { border-radius: 10px; outline: 2px solid rgba(201,162,75,.45); outline-offset: 4px; }
@@ -140,10 +145,19 @@
     .arco.reverso .icono-espiral { position: static; transform: none; width: 54px; height: 54px; }
 
     /* ---------- Actividades (iconos en espiral) y glosario ---------- */
-    .actividades li { border-radius: 10px; outline: 2px solid rgba(201,162,75,.45); outline-offset: 2px; }
-    .actividades li::before { content: ""; width: 34px; height: 34px; flex: none; background: var(--ico) center/contain no-repeat; }
-    .actividades li:nth-child(5n+1) { --ico: var(--ico-1); } .actividades li:nth-child(5n+2) { --ico: var(--ico-2); }
-    .actividades li:nth-child(5n+3) { --ico: var(--ico-3); } .actividades li:nth-child(5n+4) { --ico: var(--ico-4); } .actividades li:nth-child(5n) { --ico: var(--ico-5); }
+    /* Tarjetas de actividades: imagen cuadrada de Mireia con el título en el hueco de arriba. 3 columnas en ordenador, 2 en tableta, 1 en móvil */
+    .act-tarjetas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 22px; }
+    @media (min-width: 560px) { .act-tarjetas { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 960px) { .act-tarjetas { grid-template-columns: repeat(3, 1fr); } }
+    .act-tarjeta { position: relative; display: block; container-type: inline-size; aspect-ratio: 1; overflow: hidden; border-radius: 18px; border: 3px solid var(--oro); background: #101010; text-decoration: none; box-shadow: 0 8px 18px rgba(0,0,0,.5); }
+    .act-tarjeta img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease, filter .3s; }
+    /* velo oscuro suave arriba para que el título se lea sobre cualquier fondo */
+    .act-tarjeta::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(to bottom, rgba(10,4,16,.62), rgba(10,4,16,0) 34%); }
+    .act-tarjeta span { position: absolute; z-index: 1; left: 5%; right: 5%; top: 4%; height: 17%; display: flex; align-items: center; justify-content: center; text-align: center;
+      font-family: var(--fuente-titulos); font-weight: 700; font-size: 7.4cqw; line-height: 1.08; letter-spacing: .03em; color: var(--tinta, #DDBEE6); text-shadow: 0 1px 0 #2a1033, 0 2px 6px rgba(10,2,16,.9); }
+    .act-tarjeta:hover img, .act-tarjeta:focus-visible img { transform: scale(1.05); filter: brightness(1.08); }
+    .act-tarjeta:hover span, .act-tarjeta:focus-visible span { color: #fff; text-shadow: 0 1px 0 #2a1033, 0 0 10px #E8CE86, 0 0 20px #C9A24B; }
+    @media (prefers-reduced-motion: reduce) { .act-tarjeta img { transition: none; } .act-tarjeta:hover img, .act-tarjeta:focus-visible img { transform: none; } }
     .glosario li { border-width: 4px; font-size: .95rem; padding: 0; }
     .glosario li a { display: block; padding: 10px 18px; color: inherit; text-decoration: none; border-radius: 999px; }
     .glosario li:hover { filter: brightness(1.08); }
@@ -156,6 +170,12 @@
     /* texto a la izquierda y vídeo grande a la derecha (en móvil, uno debajo de otro) */
     .juego-texto p { margin: 0 0 14px; }
     @media (min-width: 800px) { #juego .juego-grid { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 40px; align-items: center; } }
+    /* QR del juego: tarjeta blanca (el QR necesita fondo claro alrededor) con una frase; solo con ratón y pantalla ancha */
+    .qr-juego { display: none; align-items: center; gap: 16px; margin-top: 22px; max-width: 30rem; }
+    .qr-juego a { flex: none; display: block; padding: 10px; background: #fff; border-radius: 14px; box-shadow: 0 6px 16px rgba(0,0,0,.5); line-height: 0; }
+    .qr-juego img { display: block; width: 116px; height: auto; border-radius: 4px; }
+    .qr-juego p { margin: 0; font-size: .95rem; color: #e6e0f0; }
+    @media (min-width: 800px) and (hover: hover) { .qr-juego { display: flex; } }
     .btn-play { display: inline-flex; align-items: center; gap: 10px; padding-block: 8px; }
     .btn-play img { display: block; width: auto; height: 38px; margin-block: -4px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.5)); }
     .video-juego { position: relative; aspect-ratio: 1280 / 866; }
@@ -306,6 +326,11 @@
               <a class="btn" href="#">Ver el juego</a>
               <a class="btn alt btn-play" href="https://play.google.com/store/apps/details?id=com.mireiaguila9.feminist&amp;utm_source=emea_Med" target="_blank" rel="noopener" aria-label="Google Play (se abre en una pestaña nueva)"><img src="img/opt/android-robot.webp" alt="" width="125" height="218"><span>Google Play</span></a>
             </div>
+            <!-- Código QR (de Mireia, hecho con Canva): lleva a la ficha del juego en Google Play. Solo se ve con ratón y pantalla ancha: en el móvil ya está el botón -->
+            <div class="qr-juego">
+              <a href="https://play.google.com/store/apps/details?id=com.mireiaguila9.feminist&amp;utm_source=emea_Med" target="_blank" rel="noopener" aria-label="Código QR para descargar el juego en Google Play (se abre en una pestaña nueva)"><img src="img/opt/qr-google-play.webp" alt="Código QR del juego Feminist en Google Play" width="480" height="477" loading="lazy"></a>
+              <p>¿Estás en el ordenador? Escanea el código con la cámara de tu móvil y descarga el juego.</p>
+            </div>
           </div>
           <div class="video-juego">
             <video id="videoJuego" muted loop playsinline preload="none" poster="media/video-juego-poster.webp" disablepictureinpicture aria-label="Vídeo del juego Feminist: la protagonista recorre un laberinto mientras una sombra la observa">
@@ -319,8 +344,13 @@
       <section class="bloque" id="actividades">
         <h2>Actividades</h2>
         <p class="intro">Cada actividad completada te da un sello, que se guarda en tu navegador.</p>
-        <ul class="actividades">
-          <li>Memory</li><li>Línea del tiempo</li><li>La mujer en el mundo</li><li>¿De quién es la frase?</li><li>Pancarta 8M</li><li>Inventos de mujeres</li>
+        <ul class="act-tarjetas">
+          <li><a class="act-tarjeta" style="--tinta: #E6CDF5" href="actividad-pancarta-boceto.html" target="_blank" rel="noopener" aria-label="Crea tu pancarta (se abre en una pestaña nueva)"><img src="img/opt/actividades/pancarta.webp" alt="" width="800" height="800" loading="lazy"><span>Crea tu pancarta</span></a></li>
+          <li><a class="act-tarjeta" style="--tinta: #C9DAFF" href="actividad-frases-boceto.html" target="_blank" rel="noopener" aria-label="¿Quién dijo qué? (se abre en una pestaña nueva)"><img src="img/opt/actividades/frases.webp" alt="" width="800" height="800" loading="lazy"><span>¿Quién dijo qué?</span></a></li>
+          <li><a class="act-tarjeta" style="--tinta: #C4F0E2" href="actividad-timeline-boceto.html" target="_blank" rel="noopener" aria-label="La línea del tiempo (se abre en una pestaña nueva)"><img src="img/opt/actividades/timeline.webp" alt="" width="800" height="800" loading="lazy"><span>La línea del tiempo</span></a></li>
+          <li><a class="act-tarjeta" style="--tinta: #E2D2FF" href="actividad-mapa-boceto.html" target="_blank" rel="noopener" aria-label="La mujer en el mundo (se abre en una pestaña nueva)"><img src="img/opt/actividades/mapa.webp" alt="" width="800" height="800" loading="lazy"><span>La mujer en el mundo</span></a></li>
+          <li><a class="act-tarjeta" style="--tinta: #D3F5CC" href="actividad-porcentajes-boceto.html" target="_blank" rel="noopener" aria-label="Adivina el porcentaje (se abre en una pestaña nueva)"><img src="img/opt/actividades/porcentajes.webp" alt="" width="800" height="800" loading="lazy"><span>Adivina el porcentaje</span></a></li>
+          <li><a class="act-tarjeta" style="--tinta: #FFD0E6" href="actividad-vinilos-boceto.html" target="_blank" rel="noopener" aria-label="El Vinilo Crítico (se abre en una pestaña nueva)"><img src="img/opt/actividades/vinilos.webp" alt="" width="800" height="800" loading="lazy"><span>El Vinilo Crítico</span></a></li>
         </ul>
       </section>
 
