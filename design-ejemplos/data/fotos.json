@@ -1,9 +1,6 @@
 {
   "aviso": "Fotos e imágenes históricas de las mujeres, con autor y licencia para mostrar junto a cada una. Verificadas el 2026-11-12 con las fichas y la API de Wikimedia Commons; NO se pudieron abrir las fuentes originales (UCLA, Louvre, Government Art Collection, Bukowskis). Los textos alternativos (alt) y los créditos son de redacción propia, pendientes de revisión de Mireia. ca/en: traducciones pendientes.",
-  "sinImagen": {
-    "zheng-shi": { "es": "No se conserva ningún retrato fiable de ella.", "ca": "No es conserva cap retrat fiable d'ella.", "en": "No reliable portrait of her has survived." },
-    "julia-hermosilla": { "es": "No hay una imagen suya con licencia libre.", "ca": "No hi ha cap imatge seva amb llicència lliure.", "en": "There is no image of her with a free licence." }
-  },
+  "sinImagen": {},
   "fotos": {
     "hedy-lamarr": {
       "archivo": "foto-real.jpg",
@@ -140,6 +137,36 @@
       "compartirIgual": true,
       "comprobado": "2026-11-12",
       "nota": "No existe ningún retrato antiguo de Aglaonice. Commons titula la imagen «Aglaonice» (obra propia del autor, 22-12-2015). Se descartó el dibujo del vaso griego de Tischbein (1791, dominio público) porque muestra dos figuras desnudas con armas, poco adecuado para el público de la web, y porque su lectura como «bajar la luna» es una hipótesis académica de 1973 que no nombra a Aglaonice. CC BY-SA exige citar autor y licencia y compartir las derivadas con la misma licencia."
+    },
+    "julia-hermosilla": {
+      "archivo": "foto-real.jpg",
+      "tipo": "fotografia",
+      "alt": { "es": "Fotografía en blanco y negro de Julia Hermosilla de joven, con una diadema en el pelo y una carpeta o unos papeles en la mano, hacia 1930", "ca": "Fotografia en blanc i negre de Julia Hermosilla de jove, amb una diadema als cabells i una carpeta o uns papers a la mà, cap al 1930", "en": "A black-and-white photograph of Julia Hermosilla as a young woman, with a headband in her hair and a folder or some papers in her hand, around 1930" },
+      "autor": "Desconocido",
+      "fecha": "hacia 1930",
+      "creditoCorto": "Foto: autoría desconocida, hacia 1930 · Dominio público",
+      "licencia": "Dominio público (plantillas PD-Spain-photo y PD-1996 de Wikimedia Commons)",
+      "licenciaUrl": "https://commons.wikimedia.org/wiki/Template:PD-Spain-photo",
+      "credito": "Fotografía de autoría desconocida, hacia 1930, reproducida en la biografía «Julia Hermosilla Sagredo (1916-2009)» de Estel Negre. Dominio público según Wikimedia Commons. Imagen sin recortar, en su tamaño original (1000 × 1312 px).",
+      "fuenteUrl": "https://commons.wikimedia.org/wiki/File:Julia_Hermosilla.jpg",
+      "exigeCredito": false,
+      "comprobado": "2026-11-25",
+      "nota": "La licencia es la que declara quien subió la foto a Commons (autor desconocido; plantillas PD-Spain-photo y PD-1996; fuente: la biografía de Estel Negre, https://www.estelnegre.org/documents/juliahermosilla/juliahermosilla.html). La web de Estel Negre no indica autoría ni licencia de sus fotos y no se ha podido saber de qué libro o archivo sale. La identificación viene de la descripción de Commons («Basque anarchist Julia Hermosilla, circa 1930»); encaja con su biografía (se afilió a la CNT a los 14 años, en 1930). Calidad baja: es la reproducción escaneada de una página impresa."
+    },
+    "zheng-shi": {
+      "archivo": "foto-real.jpg",
+      "tipo": "pintura",
+      "alt": { "es": "Pintura china antigua, en colores suaves, con barcos de guerra de velas y banderas rojas y azules junto a una colina verde, a orillas de un agua tranquila. No es un retrato.", "ca": "Pintura xinesa antiga, en colors suaus, amb vaixells de guerra de veles i banderes vermelles i blaves vora un turó verd, a la vora d'una aigua tranquil·la. No és un retrat.", "en": "An old Chinese painting in soft colours showing sailing warships with red and blue flags beside a green hill, at the edge of calm water. It is not a portrait." },
+      "autor": "Desconocido",
+      "fecha": "hacia 1810",
+      "creditoCorto": "Pintura china anónima, h. 1810 · Dominio público (no es un retrato)",
+      "licencia": "Dominio público (obra antigua de autoría desconocida, según Wikimedia Commons)",
+      "licenciaUrl": "https://commons.wikimedia.org/wiki/Template:PD-old",
+      "credito": "Pintura china de autoría desconocida, hacia 1810, titulada «靖海全圖 大嶼困賊» (traducción nuestra: «Mapa completo de la pacificación del mar: los piratas acorralados en Dayu»). Muestra barcos de guerra en una bahía. No es un retrato de Zheng Shi, de quien no se conserva ninguno fiable. Dominio público según Wikimedia Commons. Imagen recortada por la derecha del original (380 × 450 px de los 800 × 450 px), donde están los barcos.",
+      "fuenteUrl": "https://commons.wikimedia.org/wiki/File:靖海全圖_大嶼困賊.jpg",
+      "exigeCredito": false,
+      "comprobado": "2026-11-25",
+      "nota": "Elegida por Mireia el 25-11-2026 entre varias candidatas de Commons. NO es un retrato: es una pintura de la época que Commons relaciona con Zheng Yi Sao (categorías «Zheng Yi Sao» y «Pacifying the South China Sea», fecha 1810). La fuente que cita Commons es un artículo de la BBC en chino (https://www.bbc.com/zhongwen/trad/chinese-news-59687006). No se ha podido comprobar el museo ni la obra original, ni la traducción del título (hecha por Claude: 靖海 = pacificar el mar, 全圖 = mapa completo, 大嶼 = Dayu/Lantau, 困賊 = piratas acorralados). Descartadas: el grabado fantasioso de 1836 de «History of the Pirates of all Nations» (un combate violento; el libro de donde lo recoge Commons lo llama «fanciful depiction») y ChingShihN01.png (procedencia dudosa)."
     }
   }
 }

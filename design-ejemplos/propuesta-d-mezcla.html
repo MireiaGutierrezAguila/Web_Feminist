@@ -11,10 +11,11 @@
        Hay que abrirla desde el servidor local. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@800&family=Cinzel+Decorative:wght@700;900&family=Quintessential&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@800&family=Cinzel+Decorative:wght@700;900&family=Pirata+One&family=Quintessential&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/comun.css">
   <link rel="stylesheet" href="css/ficha.css">
-  <style>
+  <link rel="stylesheet" href="css/encaje-pie.css">
+<style>
     :root {
       --negro: #101010;
       --blanco: #F5F5F0;
@@ -67,33 +68,33 @@
     @keyframes gira3 { to { transform: rotate(360deg); } }
 
     .hero-grid { position: relative; z-index: 3; order: 1; padding-top: 28px; }
+    /* La capa del hero cubre también la zona de los nombres escondidos: no debe quedarse con los clics, solo lo que es contenido de verdad */
+    .hero-grid, .hero-texto { pointer-events: none; }
+    .hero-texto > h1, .hero-texto > p, .poste-img { pointer-events: auto; }
     .hero h1 { font-size: clamp(1.45rem, 5.4vw, 2.6rem); font-weight: 900; transform: rotate(-1.5deg); transform-origin: left; line-height: 1.55; }
     .hero h1 span { background: var(--blanco); color: var(--negro); padding: .05em .35em; box-decoration-break: clone; -webkit-box-decoration-break: clone; box-shadow: 6px 6px 0 var(--magenta); }
+    /* Segunda frase del título: más pequeña y en cinta morada con sombra blanca, como los títulos de las actividades (así no parece el título repetido) */
+    .hero h1 span.futuro { display: block; width: fit-content; margin-top: 12px; background: var(--morado); color: var(--blanco); padding: .32em .7em; font-size: .52em; line-height: 1.25; letter-spacing: .02em;
+      box-shadow: 5px 5px 0 var(--blanco); transform: rotate(.8deg); }
     .hero-texto > p { font-size: 1.15rem; max-width: 32rem; margin: 22px 0 0; text-shadow: 0 1px 8px #000; }
 
-    /* Cartel de madera desgastada: poste central y flechas con veta y bordes irregulares */
-    .poste ul { position: relative; list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 12px; width: min(310px, 100%); }
-    .poste ul::before { content: ""; position: absolute; left: calc(50% - 8px); top: -14px; bottom: -18px; width: 16px; border-radius: 3px;
-      background: repeating-linear-gradient(0deg, rgba(0,0,0,.2) 0 3px, transparent 3px 10px), linear-gradient(90deg, #7b7364, #c9c2b3 45%, #6e6657); }
-    .poste li { position: relative; display: flex; justify-content: center; }
-    .madera, .poste a {
-      background:
-        repeating-linear-gradient(90deg, rgba(60,45,20,.11) 0 1px, transparent 1px 7px),
-        repeating-linear-gradient(0deg, rgba(60,45,20,.07) 0 2px, transparent 2px 11px),
-        linear-gradient(#efeadf, #cdc5b3); }
-    .poste a { display: block; text-decoration: none; font-family: var(--fuente-titulos); font-weight: 700; font-size: .92rem; color: #2b2418;
-      padding: 13px 50px 13px 22px; min-height: 50px; transform: rotate(var(--g, 0deg)); border-bottom: 3px solid rgba(90,70,40,.45);
-      clip-path: polygon(0 5%, 3% 0, 60% 4%, calc(100% - 28px) 0, 100% 52%, calc(100% - 30px) 100%, 52% 96%, 2% 100%, 1% 55%); }
-    .poste li:nth-child(even) a { padding: 13px 22px 13px 50px;
-      clip-path: polygon(28px 0, 42% 4%, 97% 0, 100% 46%, 98% 100%, 46% 96%, 30px 100%, 0 50%); }
-    .poste a:hover, .poste a:focus-visible { outline: none; text-decoration: underline;
-      background:
-        repeating-linear-gradient(90deg, rgba(60,45,20,.11) 0 1px, transparent 1px 7px),
-        linear-gradient(#f5e6b4, #d9b866); }
-    .poste li:nth-child(1) { --g: -3deg; } .poste li:nth-child(2) { --g: 2deg; } .poste li:nth-child(3) { --g: -1.5deg; }
-    .poste li:nth-child(4) { --g: 3deg; } .poste li:nth-child(5) { --g: -2deg; }
-    .poste li:nth-child(1) a, .poste li:nth-child(2) a { min-width: 232px; } .poste li:nth-child(3) a { min-width: 216px; }
-    .poste li:nth-child(4) a { min-width: 226px; } .poste li:nth-child(5) a { min-width: 216px; }
+    /* Carteles de indicaciones: dibujo de Mireia (img/opt/poste-carteles.webp, fondo transparente) con un enlace de texto sobre cada flecha.
+       Las posiciones son % de la imagen, así que escalan con ella; el texto usa unidades del contenedor (cqw). */
+    .poste { margin-top: 24px; }
+    .poste-img { position: relative; width: min(340px, 100%); container-type: inline-size; }
+    .poste-img img { display: block; width: 100%; height: auto; filter: drop-shadow(0 6px 10px rgba(0,0,0,.55)); }
+    .poste ul { list-style: none; margin: 0; padding: 0; }
+    .poste li { position: absolute; left: var(--x); top: var(--y); width: var(--w); height: var(--h); }
+    .poste a { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; text-align: center; text-decoration: none; border-radius: 12px;
+      font-family: var(--fuente-titulos); font-weight: 900; font-size: 5.6cqw; line-height: 1.05; letter-spacing: .02em; color: #FFF3CF;
+      text-shadow: 0 0 2px #14061c, 0 0 2px #14061c, 1px 1px 0 #14061c, -1px -1px 0 #14061c, 1px -1px 0 #14061c, -1px 1px 0 #14061c, 0 2px 6px rgba(0,0,0,.9); }
+    /* al pasar o enfocar: el texto se ilumina (el brillo del foco ya lo pone css/comun.css) */
+    .poste a:hover, .poste a:focus-visible { color: #fff; text-shadow: 0 0 2px #14061c, 1px 1px 0 #14061c, -1px -1px 0 #14061c, 0 0 10px #E8CE86, 0 0 20px #C9A24B; }
+    .poste li:nth-child(1) { --x: 24.5%; --w: 61.4%; --y: 9.0%;  --h: 8.2%; }
+    .poste li:nth-child(2) { --x: 13.5%; --w: 75.7%; --y: 27.2%; --h: 8.2%; }
+    .poste li:nth-child(3) { --x: 10.2%; --w: 74.6%; --y: 45.4%; --h: 8.2%; }
+    .poste li:nth-child(4) { --x: 14.6%; --w: 73.5%; --y: 63.6%; --h: 8.2%; }
+    .poste li:nth-child(5) { --x: 11.3%; --w: 75.7%; --y: 80.9%; --h: 8.2%; }
     .pista-luz { margin-top: 18px; font-size: .95rem; color: var(--oro-claro); }
     body:not(.fx) .pista-luz { display: none; }
 
@@ -143,19 +144,32 @@
     .actividades li::before { content: ""; width: 34px; height: 34px; flex: none; background: var(--ico) center/contain no-repeat; }
     .actividades li:nth-child(5n+1) { --ico: var(--ico-1); } .actividades li:nth-child(5n+2) { --ico: var(--ico-2); }
     .actividades li:nth-child(5n+3) { --ico: var(--ico-3); } .actividades li:nth-child(5n+4) { --ico: var(--ico-4); } .actividades li:nth-child(5n) { --ico: var(--ico-5); }
-    .glosario li { border-width: 4px; font-size: .95rem; }
+    .glosario li { border-width: 4px; font-size: .95rem; padding: 0; }
+    .glosario li a { display: block; padding: 10px 18px; color: inherit; text-decoration: none; border-radius: 999px; }
+    .glosario li:hover { filter: brightness(1.08); }
+    .glosario li a:focus-visible { outline: none; box-shadow: 0 0 12px 4px rgba(232,206,134,.75); }
     .glosario li:nth-child(4n+1) { border-color: var(--rosa); } .glosario li:nth-child(4n+2) { border-color: var(--verdeazul); }
     .glosario li:nth-child(4n+3) { border-color: var(--naranja); } .glosario li:nth-child(4n) { border-color: #8a4fc2; }
 
-    /* ---------- Marco del juego: dibujo de marco de Mireia (img/marco-juego.png) con la captura sobre el pergamino ---------- */
+    /* ---------- Vídeo del juego (en bucle): el propio vídeo lleva el marco de zarcillos de Mireia ---------- */
     #juego { overflow-x: clip; }
-    /* El dibujo mide 1500x1500 pero el marco ocupa solo la parte de arriba: se recorta a 1460x1130 (desde x=20, y=90) */
-    .marco-png { position: relative; overflow: hidden; aspect-ratio: 1420 / 925; filter: drop-shadow(0 14px 22px rgba(0,0,0,.6)); }
-    .marco-png .dibujo { position: absolute; left: -2.82%; top: -29.19%; width: 105.63%; height: auto; max-width: none; }
-    /* La captura va en el centro del pergamino, lejos de las volutas de las esquinas */
+    /* texto a la izquierda y vídeo grande a la derecha (en móvil, uno debajo de otro) */
+    .juego-texto p { margin: 0 0 14px; }
+    @media (min-width: 800px) { #juego .juego-grid { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 40px; align-items: center; } }
+    .btn-play { display: inline-flex; align-items: center; gap: 10px; padding-block: 8px; }
+    .btn-play img { display: block; width: auto; height: 38px; margin-block: -4px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.5)); }
+    .video-juego { position: relative; aspect-ratio: 1280 / 866; }
+    /* el vídeo tiene fondo negro: con «lighten» el negro se funde con el fondo de la portada */
+    .video-juego video { display: block; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: lighten; }
+    .btn-video { position: absolute; right: 8px; bottom: 8px; min-height: 40px; padding: 6px 14px; font: inherit; font-size: .85rem; font-weight: 700; color: var(--blanco); cursor: pointer;
+      background: rgba(16,16,16,.78); border: 1px solid rgba(201,162,75,.7); border-radius: 99px; }
+    .btn-video:hover { border-color: var(--oro-claro); }
 
     .codigo h2 { display: block; background: none; box-shadow: none; transform: none; padding: 0; margin: 0; font-size: clamp(1.1rem, 4vw, 1.6rem); }
-    footer { background: #000; border-top: 10px solid transparent; border-image: var(--cinta-colores) 10; }
+    /* Pie: el encaje morado va en css/encaje-pie.css (igual en todas las páginas) */
+    footer { background: #000; }
+    footer .fuente-pie { font-size: .85rem; color: #b9b1c9; }
+    footer .fuente-pie a { color: var(--oro-claro); font-weight: 400; }
     .firma { font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.05rem; color: var(--oro-claro); }
 
     @media (max-width: 799px) {
@@ -163,52 +177,48 @@
     }
     /* ---------- Calendario de la portada: fecha de hoy y dos frases ---------- */
     /* Hoja inclinada con anillas y páginas apiladas detrás (inspirado en el dibujo de Mireia, dibujado desde cero) */
-    .calendario { position: relative; order: 1; z-index: 3; margin: 34px 60px 30px 30px; max-width: 290px; color: #101010; transform: rotate(5deg); transform-origin: 50% 0; }
-    .cal-pila i { position: absolute; inset: 0; border: 3px solid #101010; border-radius: 8px 12px 10px 14px / 12px 8px 14px 10px; box-shadow: 0 8px 18px rgba(0,0,0,.5); }
-    /* Las páginas de atrás cuelgan de las mismas anillas: giran desde el borde de arriba y se abren por abajo */
-    /* Se recorta lo que sobresale por arriba: las páginas cuelgan de las anillas, no pueden asomar por encima */
-    .cal-pila { position: absolute; inset: 0; clip-path: inset(0 -80px -80px -80px); }
-    .cal-pila i { transform-origin: 50% 0; }
-    .cal-pila i:nth-child(1) { background: #D8CBE6; transform: rotate(-9deg) translateY(4px); }
-    .cal-pila i:nth-child(2) { background: #E6DCEF; transform: rotate(-6deg) translateY(3px); }
-    .cal-pila i:nth-child(3) { background: #EFE8F4; transform: rotate(-3deg) translateY(2px); }
-    /* Casi cuadrada: la proporción es el mínimo y crece si el texto del día es largo */
-    .cal-hoja { position: relative; z-index: 1; display: flex; flex-direction: column; aspect-ratio: 1 / .95; background: #F3EEF7; border: 3px solid #101010; border-radius: 8px 12px 10px 14px / 12px 8px 14px 10px; outline: 2px solid rgba(201,162,75,.55); outline-offset: -9px; }
-    /* Hoja y anillas forman un solo bloque, así se levantan juntas y las anillas no se descuadran */
-    .cal-frente { position: relative; transform-origin: 50% 0; transition: transform .35s ease; }
-    body.fx .calendario:hover .cal-frente { transform: translateY(-7px) rotate(1.5deg); }
-    /* Las anillas van DETRÁS de la hoja: solo se ve la parte que asoma por arriba, como si la atravesaran por los agujeros */
-    .cal-anillas { position: absolute; z-index: 0; top: -24px; left: 0; right: 0; display: flex; justify-content: space-evenly; pointer-events: none; }
-    .cal-anillas span { position: relative; width: 20px; height: 44px; border: 5px solid #F0D58A; border-radius: 50%; transform: rotate(8deg); box-shadow: 0 0 0 2px #101010, inset 0 0 0 2px #101010; }
-    .cal-cabecera { background: var(--morado); color: #fff; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.5rem; padding: 22px 18px 8px; display: flex; justify-content: space-between; gap: 10px; border-bottom: 3px solid #101010; border-radius: 5px 9px 0 0; }
-    .cal-dia { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding: 8px 16px 0; }
-    .cal-num { font-family: "Cinzel", Georgia, serif; font-weight: 800; font-size: 4.2rem; line-height: 1; color: #101010; }
-    .cal-semana { font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.3rem; }
-    .cal-frases { list-style: none; margin: 0; padding: 10px 22px 22px; display: grid; gap: 12px; flex: 1; align-content: center; }
-    .cal-frases li { border-left: 5px solid var(--magenta); padding: 2px 0 2px 12px; font-size: .98rem; line-height: 1.45; }
-    .cal-frases cite { display: block; margin-top: 4px; font-style: normal; font-size: .82rem; color: #4b3a58; }
-    .cal-frases .cal-vacio { border-left-color: #8a7aa0; color: #4b3a58; font-style: italic; }
+    /* Calendario: dibujos de Mireia. «todo» (hoja + páginas de atrás) es la base fija; «hoja» es solo la hoja de delante, que se mueve al pasar el ratón.
+       La capa de texto va girada 5° como la hoja y usa unidades del contenedor (cqw), así escala con el dibujo. */
+    .calendario { position: relative; order: 1; z-index: 3; margin: 24px 30px 30px 10px; width: min(340px, 92%); container-type: inline-size; color: #2a1c14; }
+    .cal-base, .cal-hoja-img { display: block; width: 100%; height: auto; }
+    .cal-base { filter: drop-shadow(0 10px 14px rgba(0,0,0,.5)); }
+    .cal-frente { position: absolute; inset: 0; transform-origin: 40% 10%; transition: transform .35s ease; }
+    .cal-hoja-img { position: absolute; inset: 0; }
+    body.fx .calendario:hover .cal-frente { transform: translateY(-2.2%) rotate(1.5deg); }
+    /* capa de texto = la hoja de delante (esquina sup. izq. en 7.69 % / 5.9 %, tamaño 88 % × 86 % del dibujo) girada 5° */
+    .cal-hoja { position: absolute; left: 7.69%; top: 5.9%; width: 88.14%; height: 86.15%; transform: rotate(5deg); transform-origin: 0 0; }
+    .cal-cabecera { position: absolute; left: 11%; right: 10%; top: 6.5%; height: 14%; display: flex; justify-content: space-between; align-items: center; gap: 8px;
+      color: #f3ead2; font-family: "UnifrakturCook", "Cinzel Decorative", Georgia, serif; font-weight: 700; font-size: 9.4cqw; line-height: 1; text-shadow: 0 2px 3px rgba(0,0,0,.65); }
+    .cal-cabecera #calAnio { font-family: var(--fuente-titulos); font-size: 6.2cqw; }
+    .cal-dia { position: absolute; left: 11%; right: 10%; top: 25%; height: 16%; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .cal-num { font-family: var(--fuente-titulos); font-weight: 900; font-size: 18cqw; line-height: 1; color: #fffaf0; -webkit-text-stroke: 3px #1a1420; paint-order: stroke fill; text-shadow: 3px 3px 0 rgba(26,20,32,.5); }
+    .cal-semana { font-family: "Pirata One", var(--fuente-titulos); font-weight: 400; font-size: 8cqw; letter-spacing: .02em; color: #1a1420; text-transform: uppercase; line-height: 1; }
+    .cal-frases { position: absolute; left: 11%; right: 10%; top: 44%; bottom: 14%; margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; align-content: center; overflow: auto; scrollbar-width: none; }
+    .cal-frases li { border-left: 5px solid var(--magenta); padding: 2px 0 2px 10px; font-size: 4.6cqw; line-height: 1.38; color: #2a1c14; }
+    .cal-frases cite { display: block; margin-top: 3px; font-style: normal; font-size: 3.7cqw; color: #5a4636; }
+    .cal-frases .cal-vacio { border-left-color: #8a7aa0; color: #5a4636; font-style: italic; }
     .cal-frases .pendiente { background: #E8CE86; color: #3a2a00; padding: 0 6px; border-radius: 4px; }
     @media (min-width: 800px) {
       .hero { display: block; min-height: 640px; }
-      .hero-grid { padding-block: 56px 200px; }
-      .hero-texto { max-width: 34rem; }
-      .calendario { position: absolute; margin: 0; right: max(16px, calc((100% - 1100px) / 2)); top: 70px; width: min(290px, 36%); max-width: none; }
+      .hero-grid { padding-block: 24px 168px; }
+      /* texto más ancho (sin llegar al calendario) para que ocupe menos líneas y la franja de espirales se vea antes */
+      .hero-texto { max-width: min(46rem, calc(100% - 330px)); }
+      .hero-texto > p { max-width: 100%; margin-top: 12px; }
+      .hero h1 { font-size: clamp(1.6rem, 2.7vw, 2.15rem); }   /* cada frase del título en su caja y en una línea */
+      .poste { margin-top: 10px; }
+      .calendario { position: absolute; margin: 0; right: max(16px, calc((100% - 1100px) / 2)); top: 50px; width: min(340px, 38%); max-width: none; }
       .nombres { position: absolute; z-index: 1; right: max(16px, calc((100% - 1100px) / 2)); top: 440px; bottom: 190px; width: min(46%, 520px); padding: 0; align-content: center; justify-content: flex-end; gap: 22px 34px; }
       .nombres a { font-size: clamp(1rem, 1.5vw, 1.2rem); }
       .nombres a:nth-child(3n+1) { font-size: clamp(1.1rem, 1.9vw, 1.5rem); }
     }
     /* Pantalla ancha: los nombres se esparcen por cinco zonas libres alrededor del texto y el calendario (porcentajes de la portada) */
     @media (min-width: 1500px) {
-      .calendario { right: auto; left: 74%; top: 12%; width: 19%; }
+      .calendario { right: auto; left: 73%; top: 9%; width: 21%; }
       .nombres { inset: 0; width: auto; padding: 0; pointer-events: none; }
-      .nombres .zona { position: absolute; display: flex; flex-direction: column; justify-content: space-evenly; }
-      .nombres .zona a { pointer-events: auto; align-self: var(--al, center); }
-      .z1 { left: 1.3%; top: 6%; width: 20.6%; height: 78%; }
-      .z2 { left: 44.2%; top: 6%; width: 11%; height: 27%; }
-      .z3 { left: 37.6%; top: 46%; width: 15.2%; height: 31%; }
-      .z4 { left: 55.2%; top: 6.5%; width: 16.9%; height: 75%; }
-      .z5 { left: 74.2%; top: 52%; width: 24.4%; height: 32%; }
+      /* los nombres se reparten por JS (repartirNombres) esquivando el contenido; hasta entonces están ocultos */
+      .nombres .zona { display: contents; }
+      .nombres a { position: absolute; left: 0; top: 0; pointer-events: auto; visibility: hidden; }
+      .nombres.colocados a { visibility: visible; }
       .nombres a { font-size: clamp(.95rem, 1.05vw, 1.2rem); white-space: nowrap; }
       .nombres a:nth-child(3n+1) { font-size: clamp(1.05rem, 1.2vw, 1.4rem); }
     }
@@ -244,28 +254,31 @@
     <svg class="espiral e4" id="esp4" viewBox="-400 -400 800 800" aria-hidden="true"></svg>
     <div class="wrap hero-grid">
       <div class="hero-texto">
-        <h1><span>Mujeres que cambiaron la historia</span></h1>
+        <h1><span>Mujeres que hicieron historia</span><span class="futuro">Mujeres que haremos historia</span></h1>
         <p>Muchas de las grandes mujeres de la historia permanecieron ocultas por miedo a las represalias. En esta web pondremos luz a la oscuridad. Mueve el ratón o arrastra el dedo para descubrir los nombres escondidos.</p>
         <nav class="poste" aria-label="Secciones">
-          <ul>
-            <li><a href="#mujeres">Mujeres</a></li>
-            <li><a href="#juego">El juego</a></li>
-            <li><a href="#actividades">Actividades</a></li>
-            <li><a href="#glosario">Glosario</a></li>
-            <li><a href="#informatica">Quién lo hizo</a></li>
-          </ul>
+          <div class="poste-img">
+            <img src="img/opt/poste-carteles.webp" alt="" width="760" height="1167">
+            <ul>
+              <li><a href="#mujeres">Mujeres</a></li>
+              <li><a href="#juego">El juego</a></li>
+              <li><a href="#actividades">Actividades</a></li>
+              <li><a href="#glosario">Glosario</a></li>
+              <li><a href="#informatica">Quién lo hizo</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </div>
     <aside class="calendario" aria-label="Calendario de hoy">
-      <div class="cal-pila" aria-hidden="true"><i></i><i></i><i></i></div>
+      <img class="cal-base" src="img/opt/calendario-todo.webp" alt="" width="680" height="651">
       <div class="cal-frente">
+        <img class="cal-hoja-img" src="img/opt/calendario-hoja.webp" alt="" width="680" height="651">
         <div class="cal-hoja">
           <div class="cal-cabecera"><span id="calMes">Mes</span><span id="calAnio"></span></div>
           <time class="cal-dia" id="calFecha"><span class="cal-semana" id="calSemana">Día</span><span class="cal-num" id="calNum">0</span></time>
           <ul class="cal-frases" id="calFrases"></ul>
         </div>
-        <div class="cal-anillas" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
       </div>
     </aside>
     <nav class="nombres" id="nombres" aria-label="Mujeres de la historia"></nav>
@@ -284,16 +297,21 @@
 
       <section class="bloque" id="juego">
         <div class="juego-grid">
-          <div class="marco-png">
-            <img class="dibujo" src="img/marco-juego-montado.png" alt="Captura del juego dentro de un marco de zarcillos a rayas: la protagonista en una sala de papel pintado morado, con espejos y suelo de ajedrez" width="1500" height="1500" loading="lazy">
-          </div>
-          <div>
+          <div class="juego-texto">
             <h2>El juego Feminist</h2>
-            <p>Un videojuego reivindicativo y feminista, cargado de acción, humor y lucha, en el que las grandes mujeres de la historia te apoyan en tu camino.</p>
+            <p>Además de todas las actividades de esta web, también puedes descargarte en el móvil <strong>FEMINIST</strong>, el videojuego.</p>
+            <p>Es divertido, reivindicativo y feminista, por supuesto. En él te enfrentarás al patriarcado, superarás obstáculos cargados de desigualdad y reflexionarás sobre nuestra lucha.</p>
+            <p>Pero no te preocupes: cuando te quedes sin fuerzas, las grandes mujeres de la historia te entregarán su energía y sabiduría. Visítalas, descubre sus historias (científicas, artistas y líderes que cambiaron el mundo) y vuelve al camino más fuerte.</p>
             <div class="botones">
               <a class="btn" href="#">Ver el juego</a>
-              <a class="btn alt" href="#">Google Play (próximamente)</a>
+              <a class="btn alt btn-play" href="https://play.google.com/store/apps/details?id=com.mireiaguila9.feminist&amp;utm_source=emea_Med" target="_blank" rel="noopener" aria-label="Google Play (se abre en una pestaña nueva)"><img src="img/opt/android-robot.webp" alt="" width="125" height="218"><span>Google Play</span></a>
             </div>
+          </div>
+          <div class="video-juego">
+            <video id="videoJuego" muted loop playsinline preload="none" poster="media/video-juego-poster.webp" disablepictureinpicture aria-label="Vídeo del juego Feminist: la protagonista recorre un laberinto mientras una sombra la observa">
+              <source src="media/video-juego.mp4" type="video/mp4">
+            </video>
+            <button class="btn-video" id="btnVideo" type="button" aria-pressed="false">Reproducir vídeo</button>
           </div>
         </div>
       </section>
@@ -308,8 +326,17 @@
 
       <section class="bloque" id="glosario">
         <h2>Glosario feminista</h2>
-        <p class="intro">Palabras que conviene conocer.</p>
-        <ul class="glosario"><li>sororidad</li><li>techo de cristal</li><li>brecha salarial</li><li>micromachismo</li></ul>
+        <p class="intro">Palabras que conviene conocer, explicadas por profesionales. Toca una para ver su significado.</p>
+        <!-- Palabras de ejemplo: todas existen en el glosario del Ayuntamiento de Barcelona (data/glosario.json). Cada una lleva a su definición. -->
+        <ul class="glosario">
+          <li><a href="glosario-boceto.html#sororidad" target="_blank" rel="noopener" aria-label="sororidad (se abre en una pestaña nueva)">sororidad</a></li>
+          <li><a href="glosario-boceto.html#techo-de-cristal" target="_blank" rel="noopener" aria-label="techo de cristal (se abre en una pestaña nueva)">techo de cristal</a></li>
+          <li><a href="glosario-boceto.html#brecha-salarial-de-genero" target="_blank" rel="noopener" aria-label="brecha salarial (se abre en una pestaña nueva)">brecha salarial</a></li>
+          <li><a href="glosario-boceto.html#microviolencias-machistas" target="_blank" rel="noopener" aria-label="microviolencias machistas (se abre en una pestaña nueva)">microviolencias machistas</a></li>
+          <li><a href="glosario-boceto.html#empoderamiento" target="_blank" rel="noopener" aria-label="empoderamiento (se abre en una pestaña nueva)">empoderamiento</a></li>
+          <li><a href="glosario-boceto.html#interseccionalidad" target="_blank" rel="noopener" aria-label="interseccionalidad (se abre en una pestaña nueva)">interseccionalidad</a></li>
+        </ul>
+        <div class="botones" style="margin-top:22px"><a class="btn" href="glosario-boceto.html" target="_blank" rel="noopener" aria-label="Ver más palabras (se abre en una pestaña nueva)">Ver más palabras</a></div>
       </section>
 
       <section class="bloque" id="informatica">
@@ -326,13 +353,14 @@
 
   <footer id="fuentes">
     <div class="wrap">
-      <p class="firma">Web diseñada y creada por Mireia Gutiérrez Águila<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:.75rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.85">Conoce su historia</a></p>
-      <a href="#fuentes">Fuentes de información</a>
+      <p class="firma">Web diseñada y creada por Mireia Gutiérrez Águila<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:1rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.9">Conoce su historia</a></p>
+      <p class="fuente-pie ref-enlace">Puedes ver todas las referencias de la web en <a href="fuentes-boceto.html" target="_blank" rel="noopener" aria-label="esta página (se abre en una pestaña nueva)">esta página</a>, filtrando por la actividad.</p>
     </div>
   </footer>
 
   <script src="js/comun.js"></script>
   <script src="js/ficha.js"></script>
+  <script src="js/estela.js"></script>
   <script>
     F.iniciar();
     var hero = document.getElementById('hero');
@@ -534,6 +562,36 @@
         zonas[Math.min(z, zonas.length - 1)].appendChild(a);
         if (++dentro >= reparto[z]) { z++; dentro = 0; }
       });
+      // Pantalla ancha (1500 px o más): cada nombre se coloca al azar (siempre igual, semilla fija) en un hueco libre, sin tapar el título, el párrafo, el cartel,
+      // el calendario, la cabecera ni la franja de espirales, y sin pisarse entre sí. En pantallas más estrechas los nombres van en una columna (CSS).
+      function repartirNombres() {
+        var ancha = window.matchMedia('(min-width: 1500px)').matches, enlaces = Array.prototype.slice.call(nombres.querySelectorAll('a'));
+        if (!ancha) { nombres.classList.remove('colocados'); enlaces.forEach(function (a) { a.style.left = ''; a.style.top = ''; }); return; }
+        var H = hero.getBoundingClientRect(), W = H.width, alto = H.height, semilla = 20261125;
+        function azar() { semilla = (semilla + 0x6D2B79F5) | 0; var t = Math.imul(semilla ^ (semilla >>> 15), 1 | semilla); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }
+        var obstaculos = [{ x: 0, y: 0, w: W, h: 92 }, { x: 0, y: alto - 176, w: W, h: 176 }];   // cabecera arriba y franja de espirales abajo
+        ['.hero-texto > h1', '.hero-texto > p', '.poste-img', '.calendario'].forEach(function (q) {
+          var e = hero.querySelector(q); if (!e) { return; } var r = e.getBoundingClientRect();
+          obstaculos.push({ x: r.left - H.left - 16, y: r.top - H.top - 16, w: r.width + 32, h: r.height + 32 });
+        });
+        function choca(a, b) { return a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y; }
+        var puestos = [];
+        enlaces.slice().sort(function (p, q) { return q.offsetWidth - p.offsetWidth; }).forEach(function (a) {
+          var w = a.offsetWidth, h = a.offsetHeight, mejor = null, i, c, k, ok;
+          for (i = 0; i < 400 && !mejor; i++) {
+            c = { x: 16 + azar() * (W - w - 32), y: 92 + azar() * (alto - 176 - 92 - h), w: w, h: h }; ok = true;
+            for (k = 0; k < obstaculos.length && ok; k++) { if (choca(c, obstaculos[k])) { ok = false; } }
+            for (k = 0; k < puestos.length && ok; k++) { if (choca(c, { x: puestos[k].x - 14, y: puestos[k].y - 10, w: puestos[k].w + 28, h: puestos[k].h + 20 })) { ok = false; } }
+            if (ok) { mejor = c; }
+          }
+          if (!mejor) { mejor = { x: W - w - 24, y: 100 + puestos.length * 8, w: w, h: h }; }   // sin hueco (pantalla rarísima): a la derecha
+          puestos.push(mejor); a.style.left = Math.round(mejor.x) + 'px'; a.style.top = Math.round(mejor.y) + 'px';
+        });
+        nombres.classList.add('colocados');
+      }
+      repartirNombres();
+      if (document.fonts && document.fonts.ready) { document.fonts.ready.then(repartirNombres); }
+      var temporizador; window.addEventListener('resize', function () { clearTimeout(temporizador); temporizador = setTimeout(repartirNombres, 150); });
       // La luz empieza sobre los nombres, para que se vea qué hace antes de mover el ratón
       var r = nombres.getBoundingClientRect(), h = hero.getBoundingClientRect();
       hero.style.setProperty('--lx', (r.left - h.left + r.width / 2) + 'px');
@@ -548,7 +606,10 @@
             cara.style.setProperty('--v', COLORES_TARJETA[n % COLORES_TARJETA.length]);
             var arco = F.el('span', 'arco');
             arco.appendChild(F.el('span', 'icono-espiral'));
-            arco.appendChild(F.el('span', 'pista-giro', F.txt.girar)); // aparece al pasar el ratón o con el teclado
+            // (sin texto «Girar»: la mano que sale al pasar el ratón ya enseña el gesto)
+            var ondaP = F.el('span', 'onda-pista al-pasar'), manoP = F.el('span', 'mano-pista al-pasar');   // mano que sale siempre al pasar el ratón (css/ficha.css)
+            ondaP.setAttribute('aria-hidden', 'true'); manoP.setAttribute('aria-hidden', 'true'); manoP.innerHTML = F.manoSvg;   // dibujo propio del código, sin datos externos
+            arco.appendChild(ondaP); arco.appendChild(manoP);
             var colina = F.el('span', 'colina');
             colina.style.setProperty('--px', (25 + (n * 17) % 50) + '%'); // cada colina enseña otra parte del remolino
             arco.appendChild(colina);
@@ -588,6 +649,24 @@
       });
       F.pistaGiro(car); // la mano que enseña a girar las cartas, hasta que se gira la primera
     }).catch(F.errorDatos);
+
+    // Vídeo del juego: se reproduce solo cuando se ve y los efectos están activados; el botón lo pausa o lo lanza aunque estén desactivados.
+    (function () {
+      var v = document.getElementById('videoJuego'), b = document.getElementById('btnVideo');
+      if (!v || !b) { return; }
+      var visible = false, usuario = null; // usuario: null (automático), 'play' o 'pausa'
+      function pintar() { b.textContent = v.paused ? 'Reproducir vídeo' : 'Pausar vídeo'; b.setAttribute('aria-pressed', v.paused ? 'false' : 'true'); }
+      function ajustar() {
+        var quiere = usuario === 'play' ? visible : usuario === 'pausa' ? false : (document.body.classList.contains('fx') && visible);
+        if (quiere && v.paused) { var pr = v.play(); if (pr && pr.catch) { pr.catch(function () { /* el navegador no deja reproducir: queda el botón */ }); } }
+        else if (!quiere && !v.paused) { v.pause(); }
+      }
+      v.addEventListener('play', pintar); v.addEventListener('pause', pintar);
+      b.addEventListener('click', function () { usuario = v.paused ? 'play' : 'pausa'; ajustar(); });
+      if ('IntersectionObserver' in window) { new IntersectionObserver(function (e) { visible = e[0].isIntersecting; ajustar(); }, { threshold: 0.25 }).observe(v); } else { visible = true; ajustar(); }
+      new MutationObserver(ajustar).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+      pintar();
+    })();
   </script>
 </body>
 </html>

@@ -1,0 +1,2191 @@
+{
+  "aviso": "Definiciones copiadas TAL CUAL del Glosario de «Dones i feminismes» del Ayuntamiento de Barcelona (decisión de Mireia: definidas por profesionales). No se pueden modificar ni distorsionar (aviso legal del Ayuntamiento): solo se corrigen erratas de copia. La versión catalana es la que publica el propio Ayuntamiento. La versión inglesa NO existe en la fuente: la traduce Claude y queda pendiente de revisión de Mireia.",
+  "fuente": {
+    "titulo": "Glosario – Dones i feminismes",
+    "autoria": "Ajuntament de Barcelona",
+    "url": {
+      "es": "https://ajuntament.barcelona.cat/dones/es/glosario",
+      "ca": "https://ajuntament.barcelona.cat/dones/ca/glossari"
+    },
+    "consultado": "2026-11-25",
+    "licencia": "Reutilización permitida si no se altera el contenido, no se distorsiona su sentido y se cita la fuente (Aviso legal del Ayuntamiento de Barcelona)."
+  },
+  "terminos": [
+    {
+      "id": "accion-positiva",
+      "letra": "A",
+      "es": {
+        "termino": "Acción positiva",
+        "definicion": "Medidas específicas a favor de las mujeres para corregir situaciones patentes de desigualdad de hecho con respecto a los hombres. Estas medidas, que deben aplicarse mientras subsistan estas situaciones, tienen que ser razonables y proporcionadas en relación con el objetivo perseguido en cada caso."
+      },
+      "ca": {
+        "termino": "Acció positiva",
+        "definicion": "Mesures específiques a favor de les dones per corregir situacions patents de desigualtat de fet respecte als homes. Aquestes mesures, que s’han d’aplicar mentre subsisteixin aquestes situacions, han de ser raonables i proporcionades en relació amb l’objectiu perseguit en cada cas."
+      },
+      "en": {
+        "termino": "Positive action",
+        "definicion": "Specific measures in favour of women to correct clear situations of de facto inequality with respect to men. These measures, which must be applied for as long as these situations persist, must be reasonable and proportionate to the objective pursued in each case."
+      }
+    },
+    {
+      "id": "acoso",
+      "letra": "A",
+      "es": {
+        "termino": "Acoso",
+        "definicion": "Comportamiento no deseado relacionado con el sexo o género de una persona que tiene como propósito o produce el efecto de atentar contra la dignidad de la persona y de crearle un entorno intimidatorio, hostil, degradante, humillante u ofensivo."
+      },
+      "ca": {
+        "termino": "Assetjament",
+        "definicion": "Comportament no desitjat relacionat amb el sexe o el gènere d’una persona que té com a propòsit o produeix l’efecte d’atemptar contra la dignitat de la persona i de crear-li un entorn intimidatori, hostil, degradant, humiliant o ofensiu."
+      },
+      "en": {
+        "termino": "Harassment",
+        "definicion": "Unwanted behaviour related to a person's sex or gender that has the purpose or effect of violating the person's dignity and creating an intimidating, hostile, degrading, humiliating or offensive environment for them."
+      }
+    },
+    {
+      "id": "acoso-sexual",
+      "letra": "A",
+      "es": {
+        "termino": "Acoso sexual",
+        "definicion": "Lo constituye cualquier comportamiento verbal, no verbal o físico no deseado y de índole sexual que tenga como objetivo o produzca el efecto de atentar contra la dignidad de una mujer o de crearle un entorno intimidatorio, hostil, degradante, humillante, ofensivo o molesto."
+      },
+      "ca": {
+        "termino": "Assetjament sexual",
+        "definicion": "El constitueix qualsevol comportament verbal, no verbal o físic no desitjat d’índole sexual que tingui com a objectiu o produeixi l’efecte d’atemptar contra la dignitat d’una dona o crear-li un entorn intimidatori, hostil, degradant, humiliant, ofensiu o molest."
+      },
+      "en": {
+        "termino": "Sexual harassment",
+        "definicion": "Any unwanted verbal, non-verbal or physical behaviour of a sexual nature that has the aim or effect of violating a woman's dignity or creating an intimidating, hostile, degrading, humiliating, offensive or uncomfortable environment for her."
+      }
+    },
+    {
+      "id": "afeminado",
+      "letra": "A",
+      "es": {
+        "termino": "Afeminado",
+        "definicion": "Que muestra un carácter, un aspecto o un comportamiento generalmente atribuido a las mujeres."
+      },
+      "ca": {
+        "termino": "Efeminat",
+        "definicion": "Que mostra un caràcter, un aspecte o un comportament generalment atribuït a les dones."
+      },
+      "en": {
+        "termino": "Effeminate",
+        "definicion": "Showing a character, appearance or behaviour generally attributed to women."
+      }
+    },
+    {
+      "id": "aliados-as",
+      "letra": "A",
+      "es": {
+        "termino": "Aliados/as",
+        "definicion": "Personas que no se identifican como LGBTI pero que dan apoyo a la igualdad de las personas LGBTI."
+      },
+      "ca": {
+        "termino": "Aliats/ades",
+        "definicion": "Persones que no s'identifiquen com a LGTBI però que donen suport a la igualtat de les persones LGTBI."
+      },
+      "en": {
+        "termino": "Allies",
+        "definicion": "People who do not identify as LGBTI but who support equality for LGBTI people."
+      }
+    },
+    {
+      "id": "amor-liquido",
+      "letra": "A",
+      "es": {
+        "termino": "Amor líquido",
+        "definicion": "Fenómeno ligado a los valores culturales del capitalismo (individualismo y consumismo) que han convertido las relaciones en poco sólidas, fugaces y etéreas. El amor líquido se convierte en un bien de consumo."
+      },
+      "ca": {
+        "termino": "Amor líquid",
+        "definicion": "Fenomen lligat als valors culturals del capitalisme (individualisme i consumisme) que ha convertit les relacions en menys sòlides, fugaces i etèries. L'amor líquid es converteix en un bé de consum."
+      },
+      "en": {
+        "termino": "Liquid love",
+        "definicion": "A phenomenon linked to the cultural values of capitalism (individualism and consumerism) that have made relationships fragile, fleeting and ethereal. Liquid love becomes a consumer good."
+      }
+    },
+    {
+      "id": "amor-romantico",
+      "letra": "A",
+      "es": {
+        "termino": "Amor romántico",
+        "definicion": "Fenómeno social o construido culturalmente basado en creencias compartidas sobre la pretendida verdadera naturaleza del amor de pareja, a menudo irracionales e imposibles de cumplir y que pueden generar relaciones de dependencia, de desigualdad y de tolerancia hacia comportamientos abusivos que son la base de las violencias machistas."
+      },
+      "ca": {
+        "termino": "Amor romàntic",
+        "definicion": "Fenomen social o culturalment construït basat en creences compartides sobre la suposada veritable naturalesa de l'amor de parella, sovint irracionals i impossibles d’acomplir i que poden generar relacions de dependència, desigualtat i tolerància cap a comportaments abusius que són la base de les violències masclistes."
+      },
+      "en": {
+        "termino": "Romantic love",
+        "definicion": "A social or culturally constructed phenomenon based on shared beliefs about the supposed true nature of romantic love, which are often irrational and impossible to fulfil and which can generate relationships of dependence, inequality and tolerance of abusive behaviour that are the basis of sexist violence."
+      }
+    },
+    {
+      "id": "androcentrismo",
+      "letra": "A",
+      "es": {
+        "termino": "Androcentrismo",
+        "definicion": "Visión que sitúa al hombre en el centro de todas las cosas. El androcentrismo implica que lo que es bueno para los hombres es bueno para la humanidad. Es una visión discriminatoria hacia las mujeres y personas trans porque las relega a un segundo orden, siempre supeditadas."
+      },
+      "ca": {
+        "termino": "Androcentrisme",
+        "definicion": "Visió que situa l'home en el centre de totes les coses. L'androcentrisme implica que el que és bo per als homes és bo per a la humanitat. És una visió discriminatòria cap a les dones i persones trans, perquè les relega a un segon ordre i sempre supeditades."
+      },
+      "en": {
+        "termino": "Androcentrism",
+        "definicion": "A view that places men at the centre of everything. Androcentrism implies that what is good for men is good for humanity. It is a discriminatory view towards women and trans people because it relegates them to second place, always subordinate."
+      }
+    },
+    {
+      "id": "androginia",
+      "letra": "A",
+      "es": {
+        "termino": "Androginia",
+        "definicion": "Combinación de características masculinas y femeninas en una misma persona, más allá del modelo binario (ver binarismo). En la actualidad, es una forma de expresión de género que defiende el potencial de dinamismo o fluidez de los géneros."
+      },
+      "ca": {
+        "termino": "Androgínia",
+        "definicion": "Combinació de característiques masculines i femenines en una mateixa persona, anant més enllà del model binari (veure Binarisme). En l'actualitat és una forma d'expressió de gènere que defensa el potencial de dinamisme o 'fluïdesa dels gèneres'."
+      },
+      "en": {
+        "termino": "Androgyny",
+        "definicion": "A combination of masculine and feminine characteristics in the same person, beyond the binary model (see binarism). Nowadays, it is a form of gender expression that defends the potential for dynamism or fluidity of genders."
+      }
+    },
+    {
+      "id": "arcoiris",
+      "letra": "A",
+      "es": {
+        "termino": "Arcoíris",
+        "definicion": "En inglés rainbow. Emblema del orgullo LGBTI. Su forma de expresión más utilizada es una bandera, que a veces se denomina bandera de la libertad o bandera del orgullo."
+      },
+      "ca": {
+        "termino": "Arc de sant Martí",
+        "definicion": "En anglès Rainbow. Emblema de l'orgull LGTBI. La seva forma d'expressió més utilitzada és una bandera, que es diu de vegades \"la bandera de la llibertat\" o “de l’orgull”."
+      },
+      "en": {
+        "termino": "Rainbow",
+        "definicion": "In Spanish, arcoíris. An emblem of LGBTI pride. Its most common form of expression is a flag, which is sometimes called the freedom flag or the pride flag."
+      }
+    },
+    {
+      "id": "armario-estar-dentro-del-armario",
+      "letra": "A",
+      "es": {
+        "termino": "Armario (estar dentro del armario)",
+        "definicion": "Expresión que describe a lesbianas, gais y bisexuales que no declaran abiertamente su orientación sexual. Puede ser de manera total o parcial, dependiendo de los entornos en que se vive abiertamente o no la propia orientación sexual."
+      },
+      "ca": {
+        "termino": "Armari-estar dins l'armari",
+        "definicion": "Expressió que descriu a lesbianes, gais i bisexuals que no declaren obertament la seva orientació sexual. Pot ser de manera total o parcial, depenent dels entorns en què es visqui obertament o no la pròpia orientació sexual."
+      },
+      "en": {
+        "termino": "Closet (being in the closet)",
+        "definicion": "An expression that describes lesbians, gay men and bisexuals who do not openly declare their sexual orientation. It can be total or partial, depending on the environments in which one's sexual orientation is or is not openly lived."
+      }
+    },
+    {
+      "id": "asexual",
+      "letra": "A",
+      "es": {
+        "termino": "Asexual",
+        "definicion": "Persona que no siente atracción sexual por nadie."
+      },
+      "ca": {
+        "termino": "Asexual",
+        "definicion": "Persona que no sent atracció sexual per ningú."
+      },
+      "en": {
+        "termino": "Asexual",
+        "definicion": "A person who does not feel sexual attraction to anyone."
+      }
+    },
+    {
+      "id": "bandera-del-orgullo",
+      "letra": "B",
+      "es": {
+        "termino": "Bandera del orgullo",
+        "definicion": "Ver arcoíris."
+      },
+      "ca": {
+        "termino": "[TRADUCCIÓN PENDIENTE]",
+        "definicion": "[TRADUCCIÓN PENDIENTE]"
+      },
+      "en": {
+        "termino": "Pride flag",
+        "definicion": "See rainbow."
+      }
+    },
+    {
+      "id": "barreras-invisibles",
+      "letra": "B",
+      "es": {
+        "termino": "Barreras invisibles",
+        "definicion": "Barreras que sufren las personas con discapacidad, especialmente las mujeres y las niñas y niños con discapacidad."
+      },
+      "ca": {
+        "termino": "Barreres invisibles",
+        "definicion": "Barreres que pateixen les persones amb discapacitat, especialment les dones i les nenes i nens amb discapacitat."
+      },
+      "en": {
+        "termino": "Invisible barriers",
+        "definicion": "Barriers faced by people with disabilities, especially women and girls and boys with disabilities."
+      }
+    },
+    {
+      "id": "bifobia",
+      "letra": "B",
+      "es": {
+        "termino": "Bifobia",
+        "definicion": "Discriminación y censura hacia la bisexualidad y sus prácticas; se afirma la necesidad de pertenecer a la homosexualidad o a la heterosexualidad (monosexualidad) y se considera la bisexualidad como una postura indeterminada e intermedia."
+      },
+      "ca": {
+        "termino": "Bifòbia",
+        "definicion": "Discriminació i censura cap a la bisexualitat i les seves pràctiques, afirmant la necessitat de pertànyer a l'homosexualitat o l'heterosexualitat (monosexualitat), considerant la bisexualitat com una postura indeterminada i intermèdia."
+      },
+      "en": {
+        "termino": "Biphobia",
+        "definicion": "Discrimination and censure towards bisexuality and its practices; it asserts the need to belong to either homosexuality or heterosexuality (monosexuality) and regards bisexuality as an undefined, in-between position."
+      }
+    },
+    {
+      "id": "binarismo-modelo-binario",
+      "letra": "B",
+      "es": {
+        "termino": "Binarismo (modelo binario)",
+        "definicion": "Modelo que establece dos únicos géneros, el masculino y el femenino, y los atribuye a dos únicos sexos posibles: el sexo femenino va unido al género mujer, y el masculino, al género hombre. Este sistema excluye a las personas con identidades o expresiones de género diversas y a las personas con cuerpos no normativos según el modelo (como las personas intersexuales)."
+      },
+      "ca": {
+        "termino": "Binarisme (model binari)",
+        "definicion": "Model que estableix dos únics gèneres: el masculí i el femení, i els atribueix a dos únics possibles sexes: el sexe femení va unit al gènere dona, i el masculí, al gènere home. Aquest sistema exclou les persones amb identitats i/o expressions de gènere diverses, i les persones amb cossos no normatius segons el model (com les persones intersex)."
+      },
+      "en": {
+        "termino": "Binarism (binary model)",
+        "definicion": "A model that establishes only two genders, masculine and feminine, and attributes them to only two possible sexes: the female sex is linked to the gender woman, and the male sex to the gender man. This system excludes people with diverse gender identities or expressions and people with bodies that are non-normative according to the model (such as intersex people)."
+      }
+    },
+    {
+      "id": "bisexualidad",
+      "letra": "B",
+      "es": {
+        "termino": "Bisexualidad",
+        "definicion": "Orientación sexual en la que una persona se siente atraída por los dos sexos, mujeres y hombres."
+      },
+      "ca": {
+        "termino": "Bisexualitat",
+        "definicion": "Orientació sexual en la qual una persona se sent atreta per els dos sexes, dones i homes."
+      },
+      "en": {
+        "termino": "Bisexuality",
+        "definicion": "A sexual orientation in which a person is attracted to both sexes, women and men."
+      }
+    },
+    {
+      "id": "body-positivity",
+      "letra": "B",
+      "es": {
+        "termino": "Body Positivity",
+        "definicion": "Movimiento para que las personas se sientan orgullosas de su cuerpo, huyendo de los complejos promovidos por el patriarcado, el racismo o la industria de la moda y la estética."
+      },
+      "ca": {
+        "termino": "Body Positivity",
+        "definicion": "Moviment per a que les persones se sentin orgulloses del seu cos, fugint dels complexos promoguts pel patriarcat, el racisme o la indústria de la moda i l'estètica."
+      },
+      "en": {
+        "termino": "Body Positivity",
+        "definicion": "A movement for people to feel proud of their bodies, escaping the complexes promoted by patriarchy, racism or the fashion and beauty industry."
+      }
+    },
+    {
+      "id": "bollera",
+      "letra": "B",
+      "es": {
+        "termino": "Bollera",
+        "definicion": "Término despectivo para lesbiana. Ha sido recuperado por algunas lesbianas, que se lo han reapropiado para reafirmarse. Ver también marimacho."
+      },
+      "ca": {
+        "termino": "Bollera",
+        "definicion": "Terme despectiu per lesbiana. Ha estat recuperat per algunes lesbianes, que se l’han reapropiat per reafirmar-se. Veure també marimacho."
+      },
+      "en": {
+        "termino": "Bollera",
+        "definicion": "A derogatory term for lesbian (in Spanish). It has been recovered by some lesbians, who have reclaimed it to reaffirm themselves. See also marimacho."
+      }
+    },
+    {
+      "id": "brecha-de-genero",
+      "letra": "B",
+      "es": {
+        "termino": "Brecha de género",
+        "definicion": "Diferentes posiciones, recursos y poder entre hombres y mujeres. Se calcula restando la tasa femenina y la tasa masculina. Cuanto menor sea la brecha, más cerca estaremos de la igualdad."
+      },
+      "ca": {
+        "termino": "Escletxa de gènere",
+        "definicion": "Diferents posicions, recursos i poder entre homes i dones. Es calcula restant Taxa Femenina‐Taxa Masculina. Quant menor sigui l’escletxa, més a prop estarem de la igualtat."
+      },
+      "en": {
+        "termino": "Gender gap",
+        "definicion": "Different positions, resources and power between men and women. It is calculated by subtracting the female rate from the male rate. The smaller the gap, the closer we are to equality."
+      }
+    },
+    {
+      "id": "brecha-digital-de-genero",
+      "letra": "B",
+      "es": {
+        "termino": "Brecha digital de género",
+        "definicion": "Analiza las desigualdades entre mujeres y hombres en la formación y en el uso de las nuevas tecnologías."
+      },
+      "ca": {
+        "termino": "Escletxa digital de gènere",
+        "definicion": "Analitza les desigualtats entre dones i homes en la formació i en l'ús de les noves tecnologies."
+      },
+      "en": {
+        "termino": "Digital gender gap",
+        "definicion": "It analyses the inequalities between women and men in training and in the use of new technologies."
+      }
+    },
+    {
+      "id": "brecha-salarial-de-genero",
+      "letra": "B",
+      "es": {
+        "termino": "Brecha salarial de género",
+        "definicion": "Diferencias salariales entre mujeres y hombres. Técnicamente se define como la distancia en la retribución media (salario base más complementos) entre mujeres y hombres ocupados."
+      },
+      "ca": {
+        "termino": "Bretxa salarial de gènere",
+        "definicion": "Diferències salarials entre dones i homes. Tècnicament es defineix com la distància en la retribució mitjana (salari base més complements) entre dones i homes ocupats."
+      },
+      "en": {
+        "termino": "Gender pay gap",
+        "definicion": "Differences in pay between women and men. Technically, it is defined as the difference in average remuneration (base salary plus supplements) between employed women and men."
+      }
+    },
+    {
+      "id": "bullying",
+      "letra": "B",
+      "es": {
+        "termino": "Bullying",
+        "definicion": "Término inglés para designar acoso."
+      },
+      "ca": {
+        "termino": "Bullying",
+        "definicion": "Terme anglès per designar Assetjament."
+      },
+      "en": {
+        "termino": "Bullying",
+        "definicion": "An English term for harassment."
+      }
+    },
+    {
+      "id": "ciberacoso",
+      "letra": "C",
+      "es": {
+        "termino": "Ciberacoso",
+        "definicion": "Acoso que se ejerce a través de plataformas virtuales en el entorno del ciberespacio. Incluye agresiones digitales como la difamación, el control, la usurpación de perfiles, la sustracción de contraseñas o la pornografía de revancha, entre otros."
+      },
+      "ca": {
+        "termino": "Ciberassetjament",
+        "definicion": "Assetjament que s’exerceix a través de plataformes virtuals en l’entorn del ciberespai. Inclou agressions digitals com la difamació, el control, la usurpació de perfils, la sostracció de contrasenyes o la pornografia de revenja, entre d’altres."
+      },
+      "en": {
+        "termino": "Cyberharassment",
+        "definicion": "Harassment carried out through virtual platforms in the environment of cyberspace. It includes digital aggressions such as defamation, monitoring, identity theft, password theft or revenge porn, among others."
+      }
+    },
+    {
+      "id": "cisgenero",
+      "letra": "C",
+      "es": {
+        "termino": "Cisgénero",
+        "definicion": "Persona cuyo sexo de nacimiento encaja exactamente con su identidad sexual."
+      },
+      "ca": {
+        "termino": "Cisgenère",
+        "definicion": "Persona en la qual el sexe de naixement encaixa exactament amb la seva identitat sexual."
+      },
+      "en": {
+        "termino": "Cisgender",
+        "definicion": "A person whose sex at birth matches their sexual identity exactly."
+      }
+    },
+    {
+      "id": "coeducacion",
+      "letra": "C",
+      "es": {
+        "termino": "Coeducación",
+        "definicion": "Método educativo basado en educar en la igualdad desde la diferencia, haciendo posible la libertad de expresarse sin la mediación de estereotipos de género y dando apoyo al alumnado con comportamientos de género no normativos."
+      },
+      "ca": {
+        "termino": "Coeducació",
+        "definicion": "Mètode educatiu basat en educar en la igualtat des de la diferència, possibilitant la llibertat d’expressar-se sense la mediació d’estereotips de gènere i donant suport a l’alumnat amb comportaments de gènere no normatius."
+      },
+      "en": {
+        "termino": "Coeducation",
+        "definicion": "An educational method based on educating for equality from difference, making possible the freedom to express oneself without the mediation of gender stereotypes and supporting students with non-normative gender behaviours."
+      }
+    },
+    {
+      "id": "conciliacion",
+      "letra": "C",
+      "es": {
+        "termino": "Conciliación",
+        "definicion": "Equilibrio entre las responsabilidades personales, familiares y laborales. Hay que prestar especial atención a los derechos de los hombres en esta materia, y evitar que las mujeres sean las únicas beneficiarias de los derechos relativos al cuidado de los hijos y de otras personas dependientes, ya que eso entra en colisión con su crecimiento profesional."
+      },
+      "ca": {
+        "termino": "Conciliació",
+        "definicion": "Equilibri entre les responsabilitats personals, familiars i laborals. Cal parar especial atenció als drets dels homes en aquesta matèria, evitant que les dones siguin les úniques beneficiàries dels drets relatius a la cura de fills i d’altres persones dependents, ja que això entra en col·lisió amb el seu creixement professional."
+      },
+      "en": {
+        "termino": "Work-life balance",
+        "definicion": "A balance between personal, family and work responsibilities. Special attention must be paid to men's rights in this area, and women must not be the only beneficiaries of the rights relating to the care of children and other dependants, since that conflicts with their professional growth."
+      }
+    },
+    {
+      "id": "corresponsabilidad",
+      "letra": "C",
+      "es": {
+        "termino": "Corresponsabilidad",
+        "definicion": "Término que va más allá de la conciliación y que rompe el estereotipo según el cual las labores domésticas y de cuidado son labores “de mujeres”. Ser corresponsable implica compartir la responsabilidad de atención y cuidado familiar y tener los mismos derechos y deberes independientemente del género."
+      },
+      "ca": {
+        "termino": "Corresponsabilitat",
+        "definicion": "Terme que va més enllà de la conciliació i que trenca l’estereotip pel qual les tasques domèstiques i de cura són tasques “de dones”. Ser corresponsable implica compartir la responsabilitat d’atenció i cura familiar i tenir els mateixos drets i deures independentment del gènere."
+      },
+      "en": {
+        "termino": "Shared responsibility",
+        "definicion": "A term that goes beyond work-life balance and breaks the stereotype that domestic and care tasks are “women's work”. Being co-responsible means sharing the responsibility for family attention and care and having the same rights and duties regardless of gender."
+      }
+    },
+    {
+      "id": "cosificacion-del-cuerpo-femenino",
+      "letra": "C",
+      "es": {
+        "termino": "Cosificación del cuerpo femenino",
+        "definicion": "Representar o tratar a una mujer como un objeto sexual, ignorando sus cualidades y habilidades intelectuales y personales y reduciéndolas a un mero instrumento o bien de consumo. Es violencia simbólica."
+      },
+      "ca": {
+        "termino": "Cosificació del cos femení",
+        "definicion": "Representar o tractar a una dona com un objecte sexual, ignorant les seves qualitats i habilitats intel·lectuals i personals i reduint-les a un mer instrument o bé de consum. És violència simbòlica."
+      },
+      "en": {
+        "termino": "Objectification of the female body",
+        "definicion": "Representing or treating a woman as a sexual object, ignoring her intellectual and personal qualities and abilities and reducing them to a mere instrument or consumer good. It is symbolic violence."
+      }
+    },
+    {
+      "id": "cultura-de-la-violacion",
+      "letra": "C",
+      "es": {
+        "termino": "Cultura de la violación",
+        "definicion": "Construcción social que culpabiliza a las víctimas de una agresión sexual; representa el cuerpo femenino como un cuerpo disponible para ser agredido sexualmente y banaliza y presenta como romántica y estética la violencia sexual hacia las mujeres."
+      },
+      "ca": {
+        "termino": "Cultura de la violació",
+        "definicion": "Construcció social que culpabilitza les víctimes d’una agressió sexual; representa el cos femení com un cos disponible per a ser agredit sexualment i banalitza i presenta com a romàntica i estètica la violència sexual cap a les dones."
+      },
+      "en": {
+        "termino": "Rape culture",
+        "definicion": "A social construction that blames the victims of a sexual assault; it represents the female body as a body available to be sexually assaulted and trivialises sexual violence against women, presenting it as romantic and aesthetic."
+      }
+    },
+    {
+      "id": "cuotas",
+      "letra": "C",
+      "es": {
+        "termino": "Cuotas",
+        "definicion": "Acción positiva que busca la paridad de mujeres y hombres en las posiciones de poder político, económico, cultural y social."
+      },
+      "ca": {
+        "termino": "Quotes",
+        "definicion": "Acció positiva que busca la paritat entre dones i homes en les posicions de poder polític, econòmic, cultural i social."
+      },
+      "en": {
+        "termino": "Quotas",
+        "definicion": "A positive action that seeks parity between women and men in positions of political, economic, cultural and social power."
+      }
+    },
+    {
+      "id": "delito-de-discriminacion",
+      "letra": "D",
+      "es": {
+        "termino": "Delito de discriminación",
+        "definicion": "Delito motivado por prejuicios hacia las personas consideradas diferentes. En la mayoría de los Estados europeos, la homofobia y la transfobia, como conductas expresivas del odio hacia las personas LGBTI, pueden llegar a ser constitutivas de esta clase de delitos."
+      },
+      "ca": {
+        "termino": "Delicte de discriminació",
+        "definicion": "Delicte motivat per prejudicis cap a les persones considerades diferents. En la majoria dels Estats europeus l'homofòbia i la transfòbia, en tant que conductes expressives de l'odi cap a les persones LGTBI, poden arribar a ser constitutives d'aquesta classe de delictes."
+      },
+      "en": {
+        "termino": "Discrimination offence",
+        "definicion": "A crime motivated by prejudice towards people considered different. In most European states, homophobia and transphobia, as behaviours expressing hatred towards LGBTI people, can constitute this kind of crime."
+      }
+    },
+    {
+      "id": "democracia-paritaria",
+      "letra": "D",
+      "es": {
+        "termino": "Democracia paritaria",
+        "definicion": "Sistema de organización social y política por el que hombres y mujeres tienen que participar por igual en la toma de decisiones y en todas las esferas de la sociedad, de los órganos decisorios y de gobierno."
+      },
+      "ca": {
+        "termino": "Democracia paritaria",
+        "definicion": "Sistema d'organització social i política pel que homes i dones han de participar per igual en la presa de decisions i en totes les esferes de la societat, dels òrgans decisoris i de govern."
+      },
+      "en": {
+        "termino": "Parity democracy",
+        "definicion": "A system of social and political organisation in which men and women must participate equally in decision-making and in all spheres of society, in decision-making and governing bodies."
+      }
+    },
+    {
+      "id": "derechos-humanos",
+      "letra": "D",
+      "es": {
+        "termino": "Derechos humanos",
+        "definicion": "Criterios comúnmente acordados en la Declaración universal de derechos humanos. El respeto de estos debe ser reconocido por todos los ámbitos, por ejemplo, la justicia, la libertad de expresión y de movimiento, la igualdad de trato, la vida, la integridad física y moral, la dignidad, la intimidad, etcétera."
+      },
+      "ca": {
+        "termino": "Drets humans",
+        "definicion": "Criteris comunament acordats en la Declaració Universal de Drets Humans, el respecte ha de ser reconegut per a tothom, per exemple la justícia, la llibertat d'expressió i de moviment, la igualtat de tracte, la vida, la integritat física i moral, la dignitat, la intimitat, etc."
+      },
+      "en": {
+        "termino": "Human rights",
+        "definicion": "Criteria commonly agreed in the Universal Declaration of Human Rights. Respect for them must be recognised in all spheres, for example justice, freedom of expression and movement, equal treatment, life, physical and moral integrity, dignity, privacy, etcetera."
+      }
+    },
+    {
+      "id": "derechos-sexuales-y-reproductivos",
+      "letra": "D",
+      "es": {
+        "termino": "Derechos sexuales y reproductivos",
+        "definicion": "Son derechos humanos con el fin de que todas las personas puedan vivir libres de discriminación, riesgos, amenazas, coerciones y violencia en el campo de la sexualidad y la reproducción."
+      },
+      "ca": {
+        "termino": "Drets sexuals i reproductius",
+        "definicion": "Són Drets Humans amb la finalitat que totes les persones puguin viure lliures de discriminació, riscos, amenaces, coercions i violència en el camp de la sexualitat i la reproducció."
+      },
+      "en": {
+        "termino": "Sexual and reproductive rights",
+        "definicion": "They are human rights so that all people can live free from discrimination, risks, threats, coercion and violence in the field of sexuality and reproduction."
+      }
+    },
+    {
+      "id": "desigualdad-interseccional",
+      "letra": "D",
+      "es": {
+        "termino": "Desigualdad interseccional",
+        "definicion": "Desigualdad que se produce por la interacción de varios ejes de desigualdad y opresión como la edad, la clase, el sexo, la diversidad sexual, las creencias religiosas o el origen nacional o étnico, entre otros."
+      },
+      "ca": {
+        "termino": "Desigualtat interseccional",
+        "definicion": "Desigualtat que es produeix per la interacció de diversos eixos de desigualtat i opressió com ara l’edat, la classe, el sexe, la diversitat sexual, les creences religioses, o l’origen nacional i/o ètnic, entre d’altres."
+      },
+      "en": {
+        "termino": "Intersectional inequality",
+        "definicion": "Inequality that arises from the interaction of several axes of inequality and oppression such as age, class, sex, sexual diversity, religious beliefs or national or ethnic origin, among others."
+      }
+    },
+    {
+      "id": "despatarre-masculino-manspreading",
+      "letra": "D",
+      "es": {
+        "termino": "Despatarre masculino (manspreading)",
+        "definicion": "Acción ejercida por un hombre cuando se sienta en un asiento público con las piernas abiertas y ocupa el espacio de más de una persona. Muestra la tendencia a agrandar el espacio masculino y reducir el femenino."
+      },
+      "ca": {
+        "termino": "Eixancarrament masculí (Manspreading)",
+        "definicion": "Acció exercida per un home quan seu en un seient públic amb les cames obertes ocupant l’espai de més d’una persona. Mostra la tendència a engrandir l’espai masculí i minvar el femení."
+      },
+      "en": {
+        "termino": "Male sprawling (manspreading)",
+        "definicion": "An action carried out by a man when he sits on a public seat with his legs apart and takes up the space of more than one person. It shows the tendency to enlarge male space and reduce female space."
+      }
+    },
+    {
+      "id": "despatologizacion-de-la-transexualidad",
+      "letra": "D",
+      "es": {
+        "termino": "Despatologización de la transexualidad",
+        "definicion": "La transexualidad es una categoría médica que ha clasificado psiquiátricamente como trastorno la diversidad de identidades de género. Actualmente los colectivos en defensa de los derechos de las personas trans consideran que el hecho trans no es un trastorno mental y luchan por su despatologización."
+      },
+      "ca": {
+        "termino": "Despatologització de la transexualitat",
+        "definicion": "La transexualitat és una categoria mèdica que ha classificat psiquiàtricament com a trastorn la diversitat d’identitats de gènere. Actualment els col·lectius en defensa els drets de les persones trans consideren que el fet trans no és un trastorn mental i lluiten per la seva despatologització."
+      },
+      "en": {
+        "termino": "Depathologisation of transsexuality",
+        "definicion": "Transsexuality is a medical category that has psychiatrically classified the diversity of gender identities as a disorder. Currently, groups defending the rights of trans people consider that being trans is not a mental disorder and fight for its depathologisation."
+      }
+    },
+    {
+      "id": "discriminacion-directa-en-razon-de-sexo",
+      "letra": "D",
+      "es": {
+        "termino": "Discriminación directa en razón de sexo",
+        "definicion": "Situación desfavorable en que es tratada una persona en razón de su sexo."
+      },
+      "ca": {
+        "termino": "Discriminació directa per raó de sexe",
+        "definicion": "Situació desfavorable en què és tractada una persona per raó del seu sexe."
+      },
+      "en": {
+        "termino": "Direct discrimination on grounds of sex",
+        "definicion": "A situation in which a person is treated unfavourably on grounds of their sex."
+      }
+    },
+    {
+      "id": "discriminacion-indirecta",
+      "letra": "D",
+      "es": {
+        "termino": "Discriminación indirecta",
+        "definicion": "Situación en que una disposición, un criterio o una práctica aparentemente neutros ponen a personas de un sexo en desventaja con respecto a personas de otro sexo."
+      },
+      "ca": {
+        "termino": "Discriminació indirecta",
+        "definicion": "Situació en què una disposició, un criteri o una pràctica aparentment neutres posen persones d'un sexe en desavantatge respecte a persones d'un altre sexe. Per exemple, quan es permet aquesta situació."
+      },
+      "en": {
+        "termino": "Indirect discrimination",
+        "definicion": "A situation in which an apparently neutral provision, criterion or practice puts people of one sex at a disadvantage compared with people of another sex."
+      }
+    },
+    {
+      "id": "discriminacion-multiple",
+      "letra": "D",
+      "es": {
+        "termino": "Discriminación múltiple",
+        "definicion": "Discriminación que se produce por la interacción de varios ejes de desigualdad como la edad, la clase, el sexo, la diversidad sexual, las creencias religiosas, el origen nacional o étnico, entre otros."
+      },
+      "ca": {
+        "termino": "Discriminació múltiple",
+        "definicion": "Discriminació que es produeix per la interacció de diversos eixos de desigualtat com ara l’edat, la classe, el sexe, la diversitat sexual, les creences religioses, l’origen nacional i/o ètnic, entre d’altres."
+      },
+      "en": {
+        "termino": "Multiple discrimination",
+        "definicion": "Discrimination that arises from the interaction of several axes of inequality such as age, class, sex, sexual diversity, religious beliefs, national or ethnic origin, among others."
+      }
+    },
+    {
+      "id": "disforia-de-genero",
+      "letra": "D",
+      "es": {
+        "termino": "Disforia de género",
+        "definicion": "Sentimiento de pertenecer a un género diferente del sexo de nacimiento. Gracias a la lucha de asociaciones LGBTI, la disforia de género ha dejado de ser considerada una enfermedad por parte de la Organización Mundial de la Salud. Se considera \"incongruencia de género\" para que pueda constar en los manuales y así, quien quiera recibir tratamiento médico, lo pueda recibir."
+      },
+      "ca": {
+        "termino": "Disfòria de gènere",
+        "definicion": "Sentiment de pertànyer a un gènere diferent del sexe de naixement. Gràcies a la lluita d'associacions LGBTI, la disfòria de gènere ha deixat de ser considerada una malaltia per part de l'Organització Mundial de la Salut. Es considera \"incongruència de gènere\" per a que pugui constar en els manuals i així, qui vulgui rebre tractament mèdic, el pugui rebre."
+      },
+      "en": {
+        "termino": "Gender dysphoria",
+        "definicion": "The feeling of belonging to a gender different from the sex assigned at birth. Thanks to the struggle of LGBTI associations, gender dysphoria is no longer considered an illness by the World Health Organization. It is considered “gender incongruence” so that it can appear in the manuals and so that anyone who wants to receive medical treatment can receive it."
+      }
+    },
+    {
+      "id": "diversidad-funcional",
+      "letra": "D",
+      "es": {
+        "termino": "Diversidad funcional",
+        "definicion": "Término alternativo al de discapacidad y minusvalía, que pretende ser menos negativo."
+      },
+      "ca": {
+        "termino": "Diversitat funcional",
+        "definicion": "Terme alternatiu al de “discapacitat” i de “minusvalidesa”, que vol ser menys negatiu."
+      },
+      "en": {
+        "termino": "Functional diversity",
+        "definicion": "A term that is an alternative to disability and handicap, intended to be less negative."
+      }
+    },
+    {
+      "id": "doble-discriminacion",
+      "letra": "D",
+      "es": {
+        "termino": "Doble discriminación",
+        "definicion": "Discriminación que se produce por dos ejes de desigualdad a la vez, por ejemplo, en razón de género y por discapacidad."
+      },
+      "ca": {
+        "termino": "Doble discriminació",
+        "definicion": "Discriminació que es produeix per dos eixos de desigualtat a la vegada, per exemple, per raó de gènere i per discapacitat."
+      },
+      "en": {
+        "termino": "Double discrimination",
+        "definicion": "Discrimination that arises from two axes of inequality at the same time, for example on grounds of gender and disability."
+      }
+    },
+    {
+      "id": "doble-jornada",
+      "letra": "D",
+      "es": {
+        "termino": "Doble jornada",
+        "definicion": "Expresión que denuncia el tiempo que muchas mujeres se encuentran obligadas a dedicar tanto a las tareas domésticas y de cuidado de las personas y familiares como al trabajo remunerado en el mercado formal o informal."
+      },
+      "ca": {
+        "termino": "Doble jornada",
+        "definicion": "Expressió que denuncia el temps que moltes dones es troben obligades a dedicar tant a les tasques domèstiques i de cura de les persones i familiars com al treball remunerat en el mercat formal o informal."
+      },
+      "en": {
+        "termino": "Double shift",
+        "definicion": "An expression that denounces the time many women find themselves obliged to devote both to domestic tasks and the care of people and relatives and to paid work in the formal or informal market."
+      }
+    },
+    {
+      "id": "drag",
+      "letra": "D",
+      "es": {
+        "termino": "Drag",
+        "definicion": "Hombre vestido de mujer; mujer vestida de hombre; normalmente con fines de entretenimiento. La drag queen es la reina de la fiesta, y el drag king, el rey."
+      },
+      "ca": {
+        "termino": "Drag",
+        "definicion": "Home vestit de dona; dona vestida d'home; normalment amb fins d'entreteniment. La drag-queen és la reina de la festa i el drag-king el rei."
+      },
+      "en": {
+        "termino": "Drag",
+        "definicion": "A man dressed as a woman; a woman dressed as a man; normally for entertainment purposes. The drag queen is the queen of the party, and the drag king, the king."
+      }
+    },
+    {
+      "id": "dsm",
+      "letra": "D",
+      "es": {
+        "termino": "DSM",
+        "definicion": "Manual diagnóstico y estadístico de los trastornos mentales."
+      },
+      "ca": {
+        "termino": "DSM",
+        "definicion": "Manual Diagnòstic i Estadístic dels Trastorns Mentals."
+      },
+      "en": {
+        "termino": "DSM",
+        "definicion": "Diagnostic and Statistical Manual of Mental Disorders."
+      }
+    },
+    {
+      "id": "ecofeminismo",
+      "letra": "E",
+      "es": {
+        "termino": "Ecofeminismo",
+        "definicion": "El ecofeminismo es la corriente del feminismo que define una sociedad ecológica, descentralizada, no jerárquica y no militarizada, con democracia interna y en la que las mujeres vivan sin opresión."
+      },
+      "ca": {
+        "termino": "Ecofeminisme",
+        "definicion": "L'ecofeminisme és el corrent del feminisme que defineix una societat ecològica, descentralitzada, no jeràrquica i no militaritzada, amb democràcia interna i en què les dones viuen sense opressió."
+      },
+      "en": {
+        "termino": "Ecofeminism",
+        "definicion": "Ecofeminism is the current of feminism that defines an ecological, decentralised, non-hierarchical and non-militarised society, with internal democracy and in which women live without oppression."
+      }
+    },
+    {
+      "id": "educacion-afectivo-sexual",
+      "letra": "E",
+      "es": {
+        "termino": "Educación afectivo-sexual",
+        "definicion": "Proceso de adquisición constante de información y formación de actitudes, creencias y valores sobre la sexualidad, incluyendo las habilidades para comunicarse efectivamente y tomar decisiones responsables."
+      },
+      "ca": {
+        "termino": "Educació afectivo-sexual",
+        "definicion": "Procés d'adquisició constant d'informació i formació d'actituds, creences i valors sobre la sexualitat, incloent les habilitats per comunicar-se efectivament i prendre decisions responsables."
+      },
+      "en": {
+        "termino": "Affective-sexual education",
+        "definicion": "A process of constant acquisition of information and formation of attitudes, beliefs and values about sexuality, including the skills to communicate effectively and make responsible decisions."
+      }
+    },
+    {
+      "id": "empoderamiento",
+      "letra": "E",
+      "es": {
+        "termino": "Empoderamiento",
+        "definicion": "Aumento de la participación de las mujeres en los procesos de toma de decisiones y acceso al poder. También es la toma de conciencia del poder individual y colectivo de las mujeres."
+      },
+      "ca": {
+        "termino": "Apoderament",
+        "definicion": "Augment de la participació de les dones en els processos de presa de decisions i accés al poder. També és la presa de consciència del poder individual i col·lectiu de les dones."
+      },
+      "en": {
+        "termino": "Empowerment",
+        "definicion": "An increase in women's participation in decision-making processes and access to power. It is also becoming aware of women's individual and collective power."
+      }
+    },
+    {
+      "id": "estereotipo",
+      "letra": "E",
+      "es": {
+        "termino": "Estereotipo",
+        "definicion": "Noción o imagen fija que se tiene de una persona o grupo basada en una simplificación excesiva de algunos comportamientos o rasgos observados en estas personas. Generalmente los estereotipos son negativos. Normalmente se espera que los niños y niñas se comporten según los estereotipos de género."
+      },
+      "ca": {
+        "termino": "Estereotip",
+        "definicion": "Noció o imatge fixa que es té d'una persona o grup, basada en una simplificació excessiva d'alguns comportaments o trets observats en aquestes persones. Generalment els estereotips són negatius. Normalment s'espera que els nens i nenes es comportin segons els estereotips de gènere."
+      },
+      "en": {
+        "termino": "Stereotype",
+        "definicion": "A fixed notion or image held of a person or group based on an excessive simplification of some behaviours or traits observed in these people. Stereotypes are generally negative. Boys and girls are normally expected to behave according to gender stereotypes."
+      }
+    },
+    {
+      "id": "estereotipos-de-genero",
+      "letra": "E",
+      "es": {
+        "termino": "Estereotipos de género",
+        "definicion": "Los estereotipos de género nos condicionan desde la infancia para encajar con las pautas de comportamiento asociadas al género que se percibe en nosotros."
+      },
+      "ca": {
+        "termino": "Estereotips de gènere",
+        "definicion": "Els estereotips de gènere ens condicionen des de la infància per tal d’encaixar amb les pautes de comportament associades al gènere que es percep en nosaltres."
+      },
+      "en": {
+        "termino": "Gender stereotypes",
+        "definicion": "Gender stereotypes condition us from childhood to fit the patterns of behaviour associated with the gender we are perceived to have."
+      }
+    },
+    {
+      "id": "estudios-de-genero",
+      "letra": "E",
+      "es": {
+        "termino": "Estudios de género",
+        "definicion": "Formación en ciencias y humanidades que aborda sus contenidos temáticos desde la perspectiva de género, prestando atención al impacto de las jerarquías de género y las construcciones sociales y culturales en las que se basan."
+      },
+      "ca": {
+        "termino": "Estudis de gènere",
+        "definicion": "Formació en ciències i humanitats que aborden els seus continguts temàtics des de la perspectiva de gènere, parant atenció en l'impacte de les jerarquies de gènere i les construccions socials i culturals en les quals es basen."
+      },
+      "en": {
+        "termino": "Gender studies",
+        "definicion": "Training in the sciences and humanities that approaches its thematic content from a gender perspective, paying attention to the impact of gender hierarchies and the social and cultural constructions on which they are based."
+      }
+    },
+    {
+      "id": "expresion-de-genero",
+      "letra": "E",
+      "es": {
+        "termino": "Expresión de género",
+        "definicion": "Forma y manera de expresarse, gustos y comportamientos que se esperan de un determinado género, que vienen impuestos. Hay la expresión de género masculino, la expresión de género femenino y, en las personas andróginas, la expresión de género es una mezcla, que puede ser variable, de las dos."
+      },
+      "ca": {
+        "termino": "Expressió de gènere",
+        "definicion": "Forma i manera d'expressar-se, gustos i comportament que s'espera d’un determinat gènere, que ve imposat. Hi ha l'expressió de gènere masculí, l'expressió de gènere femení i per a les persones andrògines l'expressió de gènere és una barreja, que pot ser variable, de les dues."
+      },
+      "en": {
+        "termino": "Gender expression",
+        "definicion": "The form and manner of expressing oneself, the tastes and the behaviours expected of a given gender, which are imposed. There is masculine gender expression, feminine gender expression and, in androgynous people, gender expression is a mixture of the two, which may vary."
+      }
+    },
+    {
+      "id": "falocentrismo",
+      "letra": "F",
+      "es": {
+        "termino": "Falocentrismo",
+        "definicion": "Actitud basada en la consideración de que el pene masculino es el centro de las relaciones sexuales."
+      },
+      "ca": {
+        "termino": "Fal·locentrisme",
+        "definicion": "Actitud basada en que el penis masculí és el centre de les relacions sexuals."
+      },
+      "en": {
+        "termino": "Phallocentrism",
+        "definicion": "An attitude based on the belief that the male penis is the centre of sexual relations."
+      }
+    },
+    {
+      "id": "falso-aliado",
+      "letra": "F",
+      "es": {
+        "termino": "Falso aliado",
+        "definicion": "Hombre que se autodenomina feminista pero no se comporta como tal."
+      },
+      "ca": {
+        "termino": "Fals aliat",
+        "definicion": "Home que s’autoanomena feminista però no es comporta com a tal."
+      },
+      "en": {
+        "termino": "False ally",
+        "definicion": "A man who calls himself a feminist but does not behave like one."
+      }
+    },
+    {
+      "id": "familia",
+      "letra": "F",
+      "es": {
+        "termino": "Familia",
+        "definicion": "Núcleo de personas unidas por parentesco o por relaciones de afecto. Actualmente, y en la sociedad occidental, han aumentado las familias con figuras parentales del mismo sexo, y los niños y niñas se declaran LGTBI en edades más tempranas, y rompen el modelo de familia nuclear heteronormativa. Eso tendría que reflejarse en los contenidos y los recursos escolares."
+      },
+      "ca": {
+        "termino": "Família",
+        "definicion": "Nucli de persones unides per parentiu o per relacions d'afecte. Actualment, i en la societat occidental, han augmentat les famílies amb figures parentals del mateix sexe, i els nens i nenes es declaren LGTBI en edats més primerenques, trencant el model de família nuclear heteronormativa. Això s'hauria de reflectir en els continguts i els recursos escolars."
+      },
+      "en": {
+        "termino": "Family",
+        "definicion": "A nucleus of people united by kinship or by bonds of affection. At present, in Western society, families with parents of the same sex have increased, and boys and girls declare themselves LGTBI at younger ages, breaking the model of the heteronormative nuclear family. This should be reflected in school content and resources."
+      }
+    },
+    {
+      "id": "feminazi",
+      "letra": "F",
+      "es": {
+        "termino": "Feminazi",
+        "definicion": "Insulto utilizado para referirse a las personas que defienden el feminismo."
+      },
+      "ca": {
+        "termino": "Feminazi",
+        "definicion": "Insult emprat per a referir-se a les persones que defensen el feminisme."
+      },
+      "en": {
+        "termino": "Feminazi",
+        "definicion": "An insult used to refer to people who defend feminism."
+      }
+    },
+    {
+      "id": "feminicidio",
+      "letra": "F",
+      "es": {
+        "termino": "Feminicidio",
+        "definicion": "Asesinato de una mujer por el hecho de ser mujer."
+      },
+      "ca": {
+        "termino": "Feminicidi",
+        "definicion": "Assassinat d'una dona pel fet de ser dona."
+      },
+      "en": {
+        "termino": "Femicide",
+        "definicion": "The murder of a woman for being a woman."
+      }
+    },
+    {
+      "id": "feminismo",
+      "letra": "F",
+      "es": {
+        "termino": "Feminismo",
+        "definicion": "Posicionamiento político y social que defiende los derechos y libertades entre hombres y mujeres."
+      },
+      "ca": {
+        "termino": "Feminisme",
+        "definicion": "Posició política i social que defensa els drets i les llibertats entre homes i dones."
+      },
+      "en": {
+        "termino": "Feminism",
+        "definicion": "A political and social position that defends the rights and freedoms of men and women alike."
+      }
+    },
+    {
+      "id": "gay",
+      "letra": "G",
+      "es": {
+        "termino": "Gay",
+        "definicion": "Hombre que se siente atraído emocional o físicamente por otros hombres."
+      },
+      "ca": {
+        "termino": "Gai",
+        "definicion": "Home que se sent atret emocional o físicament per altres homes."
+      },
+      "en": {
+        "termino": "Gay",
+        "definicion": "A man who is emotionally or physically attracted to other men."
+      }
+    },
+    {
+      "id": "genderqueer",
+      "letra": "G",
+      "es": {
+        "termino": "Genderqueer",
+        "definicion": "En inglés, término alternativo para designar a una persona que rechaza el modelo binario de presunción de género vigente en la sociedad (ver androginia)."
+      },
+      "ca": {
+        "termino": "Genderqueer",
+        "definicion": "En anglès, un terme alternatiu per designar una persona que rebutja el model binari de presumpció de gènere vigent en la societat (veure androgínia)."
+      },
+      "en": {
+        "termino": "Genderqueer",
+        "definicion": "An alternative term for a person who rejects the binary model of presumed gender prevailing in society (see androgyny)."
+      }
+    },
+    {
+      "id": "genero",
+      "letra": "G",
+      "es": {
+        "termino": "Género",
+        "definicion": "Conjunto de características sociales, culturales, políticas, psicológicas, jurídicas y económicas construidas socioculturalmente y que la sociedad asigna a las personas de manera diferenciada, como propias de hombres y mujeres."
+      },
+      "ca": {
+        "termino": "Gènere",
+        "definicion": "Conjunt de característiques socials, culturals, polítiques, psicològiques, jurídiques i econòmiques construïdes socioculturalment que la societat assigna a les persones de manera diferenciada, com a pròpies d’homes i dones."
+      },
+      "en": {
+        "termino": "Gender",
+        "definicion": "The set of social, cultural, political, psychological, legal and economic characteristics, socioculturally constructed, that society assigns to people in a differentiated way as proper to men and women."
+      }
+    },
+    {
+      "id": "genero-fluido",
+      "letra": "G",
+      "es": {
+        "termino": "Género fluido",
+        "definicion": "Identidad transgénero, en que una persona puede no identificarse con una sola identidad sexual, sino que circula entre masculino, femenino o también otros géneros."
+      },
+      "ca": {
+        "termino": "Gènere fluid",
+        "definicion": "Identitat transgènere, en la que una persona pot no identificar-se amb una sola identitat sexual, sinó que circula entre masculí, femení i/o també altres gèneres."
+      },
+      "en": {
+        "termino": "Gender fluid",
+        "definicion": "A transgender identity in which a person may not identify with a single sexual identity but moves between masculine, feminine or other genders."
+      }
+    },
+    {
+      "id": "ginopia",
+      "letra": "G",
+      "es": {
+        "termino": "Ginopia",
+        "definicion": "Omisión del punto de vista de la mujer en casos de violencia machista."
+      },
+      "ca": {
+        "termino": "Ginòpia",
+        "definicion": "Omissió del punt de vista de la dona en casos de violència masclista."
+      },
+      "en": {
+        "termino": "Gynopia",
+        "definicion": "The omission of the woman's point of view in cases of sexist violence."
+      }
+    },
+    {
+      "id": "hembrismo",
+      "letra": "H",
+      "es": {
+        "termino": "Hembrismo",
+        "definicion": "Denominación peyorativa de la ideología que pretende, supuestamente, la superioridad de la mujer sobre el hombre."
+      },
+      "ca": {
+        "termino": "Femellisme",
+        "definicion": "Denominació pejorativa de la ideologia que pretén, suposadament, la superioritat de la dona sobre l’home."
+      },
+      "en": {
+        "termino": "Hembrismo",
+        "definicion": "A pejorative name for the ideology that supposedly seeks the superiority of women over men."
+      }
+    },
+    {
+      "id": "hetero",
+      "letra": "H",
+      "es": {
+        "termino": "Hetero",
+        "definicion": "Straight en inglés, término coloquial que designa a las personas heterosexuales (ver heterosexual)."
+      },
+      "ca": {
+        "termino": "Hetero",
+        "definicion": "Straight en anglès, terme col·loquial que designa les persones heterosexuals (veure heterosexual)."
+      },
+      "en": {
+        "termino": "Hetero",
+        "definicion": "A colloquial term, straight in English, that designates heterosexual people (see heterosexual)."
+      }
+    },
+    {
+      "id": "heteronorma",
+      "letra": "H",
+      "es": {
+        "termino": "Heteronorma",
+        "definicion": "Régimen social, político y económico que impone las prácticas sexuales heterosexuales mediante varios mecanismos médicos, artísticos, educativos, religiosos, jurídicos, etcétera, y a través de varias instituciones que presentan la heterosexualidad como necesaria para el buen funcionamiento de la sociedad y como el único modelo válido de relación sexoafectiva y de parentesco."
+      },
+      "ca": {
+        "termino": "Heteronorma",
+        "definicion": "Règim social, polític i econòmic que imposa les pràctiques sexuals heterosexuals mitjançant diversos mecanismes mèdics, artístics, educatius, religiosos, jurídics, etc., i a través de diverses institucions que presenten l'heterosexualitat com a necessària per al bon funcionament de la societat i com l’únic model vàlid de relació sexoafectiva i de parentiu."
+      },
+      "en": {
+        "termino": "Heteronorm",
+        "definicion": "A social, political and economic regime that imposes heterosexual sexual practices through various medical, artistic, educational, religious and legal mechanisms, etcetera, and through various institutions that present heterosexuality as necessary for the proper functioning of society and as the only valid model of sexual-affective relationship and kinship."
+      }
+    },
+    {
+      "id": "heterosexismo",
+      "letra": "H",
+      "es": {
+        "termino": "Heterosexismo",
+        "definicion": "Presunción de que todo el mundo es heterosexual y que la heterosexualidad es la norma y lo deseable. El heterosexismo institucionalizado provoca que las personas LGTBI se sientan invisibles o aisladas."
+      },
+      "ca": {
+        "termino": "Heterosexisme",
+        "definicion": "Presumpció que tothom és heterosexual i que l'heterosexualitat és la norma i allò que és desitjable. L’heterosexisme institucionalitzat provoca que les persones LGTBI se sentin invisibles o aïllades."
+      },
+      "en": {
+        "termino": "Heterosexism",
+        "definicion": "The assumption that everyone is heterosexual and that heterosexuality is the norm and what is desirable. Institutionalised heterosexism makes LGTBI people feel invisible or isolated."
+      }
+    },
+    {
+      "id": "heterosexual",
+      "letra": "H",
+      "es": {
+        "termino": "Heterosexual",
+        "definicion": "Persona que se siente emocional o físicamente atraída por personas del sexo opuesto."
+      },
+      "ca": {
+        "termino": "Heterosexual",
+        "definicion": "Persona que se sent emocional o físicament atret per membres del sexe oposat."
+      },
+      "en": {
+        "termino": "Heterosexual",
+        "definicion": "A person who is emotionally or physically attracted to people of the opposite sex."
+      }
+    },
+    {
+      "id": "homofobia",
+      "letra": "H",
+      "es": {
+        "termino": "Homofobia",
+        "definicion": "Miedo irracional, odio, intolerancia, prejuicio o discriminación contra las personas LGTBI."
+      },
+      "ca": {
+        "termino": "Homofòbia",
+        "definicion": "Por irracional, odi, intolerància, prejudici o discriminació contra les persones LGTBI."
+      },
+      "en": {
+        "termino": "Homophobia",
+        "definicion": "Irrational fear, hatred, intolerance, prejudice or discrimination against LGTBI people."
+      }
+    },
+    {
+      "id": "homosexual",
+      "letra": "H",
+      "es": {
+        "termino": "Homosexual",
+        "definicion": "Persona que se siente emocional o físicamente atraída por personas de su mismo sexo."
+      },
+      "ca": {
+        "termino": "Homosexual",
+        "definicion": "Persona que se sent emocional o físicament atret per membres del mateix sexe."
+      },
+      "en": {
+        "termino": "Homosexual",
+        "definicion": "A person who is emotionally or physically attracted to people of their own sex."
+      }
+    },
+    {
+      "id": "identidad-de-genero",
+      "letra": "I",
+      "es": {
+        "termino": "Identidad de género",
+        "definicion": "Qué nos sentimos, es decir: hombre, mujer u otra opción."
+      },
+      "ca": {
+        "termino": "Identitat de gènere",
+        "definicion": "Què ens sentim, és a dir: home, dona o una altra opció."
+      },
+      "en": {
+        "termino": "Gender identity",
+        "definicion": "What we feel we are, that is: man, woman or another option."
+      }
+    },
+    {
+      "id": "identidad-sexual",
+      "letra": "I",
+      "es": {
+        "termino": "Identidad sexual",
+        "definicion": "Sexo o género con el que una persona se identifica (hombre, mujer, masculino o femenino). No es lo mismo que orientación sexual: una persona a quien se asigna en el momento de nacer el sexo de hombre, puede sentirse mujer y tener relaciones con hombres o con mujeres."
+      },
+      "ca": {
+        "termino": "Identitat sexual",
+        "definicion": "Sexe o gènere amb el qual una persona s'identifica (home, dona, masculí o femení). No és el mateix que orientació sexual: una persona a qui s'assigna en el moment de néixer el sexe home, pot sentir-se dona i tenir relacions amb homes o amb dones."
+      },
+      "en": {
+        "termino": "Sexual identity",
+        "definicion": "The sex or gender with which a person identifies (man, woman, masculine or feminine). It is not the same as sexual orientation: a person who is assigned the sex of man at birth may feel like a woman and have relationships with men or with women."
+      }
+    },
+    {
+      "id": "igualdad",
+      "letra": "I",
+      "es": {
+        "termino": "Igualdad",
+        "definicion": "Concepto según el cual todas las personas deben ser tratadas igual y recibir los mismos derechos políticos, económicos, sociales y civiles, independientemente de su sexo, género, origen nacional o étnico, discapacidad, edad, orientación sexual, religión, ideología, etcétera."
+      },
+      "ca": {
+        "termino": "Igualtat",
+        "definicion": "Concepte segons el qual totes les persones han de ser tractades igual i tenir els mateixos drets polítics, econòmics, socials i civils, independentment del seu sexe, gènere, origen nacional i/o ètnic, discapacitat, edat, orientació sexual, religió, ideologia, etc."
+      },
+      "en": {
+        "termino": "Equality",
+        "definicion": "A concept according to which all people must be treated equally and receive the same political, economic, social and civil rights, regardless of their sex, gender, national or ethnic origin, disability, age, sexual orientation, religion, ideology, etcetera."
+      }
+    },
+    {
+      "id": "igualdad-de-oportunidades",
+      "letra": "I",
+      "es": {
+        "termino": "Igualdad de oportunidades",
+        "definicion": "Concepto según el cual todas las personas deben tener las mismas oportunidades en el acceso al empleo, a los servicios sociales, a la vivienda, a la sanidad, etcétera, independientemente de su sexo, género, origen nacional o étnico, discapacidad, edad, orientación sexual, religión, ideología, etcétera."
+      },
+      "ca": {
+        "termino": "Igualtat d'oportunitats",
+        "definicion": "Concepte segons el qual totes les persones han de tenir les mateixes oportunitat en l'accés a l'ocupació, als serveis socials, a l'habitatge, a la sanitat, etc., independentment del seu sexe, gènere, origen nacional i/o ètnic, discapacitat, edat, orientació sexual, religió, ideologia, etc."
+      },
+      "en": {
+        "termino": "Equal opportunities",
+        "definicion": "A concept according to which all people must have the same opportunities in access to employment, social services, housing, health care, etcetera, regardless of their sex, gender, national or ethnic origin, disability, age, sexual orientation, religion, ideology, etcetera."
+      }
+    },
+    {
+      "id": "interseccionalidad",
+      "letra": "I",
+      "es": {
+        "termino": "Interseccionalidad",
+        "definicion": "Perspectiva analítica y política que permite entender y responder a las maneras como el género se cruza con otros ejes de desigualdad, y cómo estos cruces contribuyen a experiencias únicas de opresión y privilegio."
+      },
+      "ca": {
+        "termino": "Interseccionalitat",
+        "definicion": "Perspectiva analítica i política que permet entendre i respondre a les maneres com el gènere es creua amb altres eixos de desigualtat i com aquests creuaments contribueixen a experiències úniques d’opressió i privilegi."
+      },
+      "en": {
+        "termino": "Intersectionality",
+        "definicion": "An analytical and political perspective that makes it possible to understand and respond to the ways in which gender intersects with other axes of inequality, and how these intersections contribute to unique experiences of oppression and privilege."
+      }
+    },
+    {
+      "id": "intersexual",
+      "letra": "I",
+      "es": {
+        "termino": "Intersexual",
+        "definicion": "Persona que nace con características genitales de hombre y de mujer. Sus cromosomas no se adecuan al modelo binario XY o XX. También conocidas vulgarmente como hermafroditas. Normalmente, el sexo de nacimiento de muchos niños que nacen intersexuales se define con cirugía. Eso suele provocar después disforia de género (ver disforia de género)."
+      },
+      "ca": {
+        "termino": "Intersexual",
+        "definicion": "Persona que neix amb característiques genitals d’home i de dona. Els seus cromosomes no s’adeqüen al model binari XY o XX. També conegudes vulgarment com “hermafrodites”. Normalment, el sexe de naixement de molts nens que neixen intersexuals es defineix amb cirurgia. Això sol provocar després disfòria de gènere (veure disfòria de gènere)."
+      },
+      "en": {
+        "termino": "Intersex",
+        "definicion": "A person who is born with both male and female genital characteristics. Their chromosomes do not fit the XY or XX binary model. Also commonly known as hermaphrodites. Normally, the sex at birth of many children who are born intersex is defined by surgery. This often leads to gender dysphoria later (see gender dysphoria)."
+      }
+    },
+    {
+      "id": "lavado-violeta-purplewashing",
+      "letra": "L",
+      "es": {
+        "termino": "Lavado violeta (purplewashing)",
+        "definicion": "Estrategias políticas y de márquetin que apuestan por un pretendido compromiso con la igualdad de género. A menudo se refiere al lavado de imagen de los países occidentales que, sin haber conseguido una igualdad real entre hombres y mujeres, critican este déficit en otros países o culturas, frecuentemente los de mayoría musulmana."
+      },
+      "ca": {
+        "termino": "Rentada violeta (Purplewashing)",
+        "definicion": "Estratègies polítiques i de màrqueting que aposten per un pretès compromís amb la igualtat de gènere. Sovint es refereix al rentat d'imatge dels països occidentals que, sense haver aconseguit una igualtat real entre homes i dones, critiquen aquest dèficit en d'altres països o cultures, freqüentment els de majoria musulmana."
+      },
+      "en": {
+        "termino": "Purplewashing",
+        "definicion": "Political and marketing strategies that bet on a supposed commitment to gender equality. It often refers to the image-laundering of Western countries that, without having achieved real equality between men and women, criticise this deficit in other countries or cultures, frequently those with a Muslim majority."
+      }
+    },
+    {
+      "id": "lenguaje-inclusivo",
+      "letra": "L",
+      "es": {
+        "termino": "Lenguaje inclusivo",
+        "definicion": "Es un lenguaje que evita el sesgo hacia un sexo o género social determinado. El lenguaje no sexista pretende evitar un uso del lenguaje que tiende a invisibilizar o esconder la presencia o actuación de las mujeres. Por ejemplo, incluyendo el femenino en el lenguaje (los y las estudiantes, por ejemplo), o bien buscando el uso de palabras neutras (el alumnado)."
+      },
+      "ca": {
+        "termino": "Llenguatge inclusiu",
+        "definicion": "És un llenguatge que evita el biaix cap a un sexe o gènere social determinat. El llenguatge no sexista pretén evitar un ús del llenguatge que tendeix a invisibilitzar o amagar la presència o actuació de les dones. Per exemple, incloent el femení en el llenguatge (els i les alumnes, per exemple), o bé cercant l’ús de paraules neutres (l’alumnat)."
+      },
+      "en": {
+        "termino": "Inclusive language",
+        "definicion": "A language that avoids bias towards a particular sex or social gender. Non-sexist language aims to avoid a use of language that tends to make the presence or actions of women invisible or hidden. For example, by including the feminine in language (“los y las estudiantes”, for example), or by seeking the use of neutral words (“el alumnado”)."
+      }
+    },
+    {
+      "id": "lesbiana",
+      "letra": "L",
+      "es": {
+        "termino": "Lesbiana",
+        "definicion": "Mujer que se siente emocional o físicamente atraída por otras mujeres."
+      },
+      "ca": {
+        "termino": "Lesbiana",
+        "definicion": "Dona que se sent emocional o físicament atreta per altres dones."
+      },
+      "en": {
+        "termino": "Lesbian",
+        "definicion": "A woman who is emotionally or physically attracted to other women."
+      }
+    },
+    {
+      "id": "lesbofobia",
+      "letra": "L",
+      "es": {
+        "termino": "Lesbofobia",
+        "definicion": "Miedo, odio, intolerancia, prejuicio o discriminación contra las lesbianas. Como con la homofobia, se puede hablar de lesbofobia interiorizada y de lesbofobia institucionalizada (ver homofobia)."
+      },
+      "ca": {
+        "termino": "Lesbofòbia",
+        "definicion": "Por, odi, intolerància, prejudici o discriminació contra les lesbianes. Com amb l’homofòbia, es pot parlar de lesbofòbia interioritzada i lesbofòbia institucionalitzada(veure homofòbia)."
+      },
+      "en": {
+        "termino": "Lesbophobia",
+        "definicion": "Fear, hatred, intolerance, prejudice or discrimination against lesbians. As with homophobia, one can speak of internalised lesbophobia and institutionalised lesbophobia (see homophobia)."
+      }
+    },
+    {
+      "id": "lgtbi",
+      "letra": "L",
+      "es": {
+        "termino": "LGTBI",
+        "definicion": "Abreviatura de lesbianas (L), gais (G), transexuales (T), bisexuales (B) e intersexuales (I)."
+      },
+      "ca": {
+        "termino": "LGTBI",
+        "definicion": "Abreviatura de Lesbianes (L), Gais (G), Transsexuals (T), Bisexuals (B) i Intersexuals (I)."
+      },
+      "en": {
+        "termino": "LGTBI",
+        "definicion": "Abbreviation of lesbians (L), gays (G), transsexuals (T), bisexuals (B) and intersex people (I)."
+      }
+    },
+    {
+      "id": "luz-de-gas",
+      "letra": "L",
+      "es": {
+        "termino": "Luz de gas",
+        "definicion": "Abuso sutil y manipulador para disminuir la autoestima y la confianza de la mujer. Se considera una de las conductas más habituales de los maltratadores."
+      },
+      "ca": {
+        "termino": "Llum de gas",
+        "definicion": "Abús subtil i manipulador per minvar l’autoestima i la confiança de la dona. Es considera una de les conductes més habituals dels maltractadors."
+      },
+      "en": {
+        "termino": "Gaslighting",
+        "definicion": "Subtle, manipulative abuse to reduce a woman's self-esteem and confidence. It is considered one of the most common behaviours of abusers."
+      }
+    },
+    {
+      "id": "machismo",
+      "letra": "M",
+      "es": {
+        "termino": "Machismo",
+        "definicion": "Ideas, actitudes y prácticas basadas en una atribución cultural aprendida de superioridad del hombre, como macho, sobre la mujer. Algunos ejemplos serían el desprecio más o menos evidente o socialmente aceptado hacia la mujer, la valoración de las mujeres a través de su aspecto físico o por la relación que tienen con algún hombre o por el uso del lenguaje, etcétera."
+      },
+      "ca": {
+        "termino": "Masclisme",
+        "definicion": "Idees, actituds i pràctiques basades en una atribució cultural apresa de superioritat de l'home, com a mascle, sobre la dona. Alguns exemples serien el menyspreu més o menys evident o socialment acceptat cap a la dona, la valoració de les dones a través dels seu aspecte físic o per la relació que tenen amb algun home o per l'ús del llenguatge, etc."
+      },
+      "en": {
+        "termino": "Machismo",
+        "definicion": "Ideas, attitudes and practices based on a learned cultural attribution of superiority of the man, as male, over the woman. Some examples would be more or less obvious or socially accepted contempt towards women, valuing women through their physical appearance or through their relationship with some man, or through the use of language, etcetera."
+      }
+    },
+    {
+      "id": "manterruption",
+      "letra": "M",
+      "es": {
+        "termino": "Manterruption",
+        "definicion": "Interrupciones innecesarias por parte de un hombre a una mujer en medio de una explicación o discurso."
+      },
+      "ca": {
+        "termino": "Manterruption",
+        "definicion": "Interrupcions innecessàries per part d’un home a una dona enmig d’una explicació o discurs."
+      },
+      "en": {
+        "termino": "Manterruption",
+        "definicion": "Unnecessary interruptions by a man of a woman in the middle of an explanation or speech."
+      }
+    },
+    {
+      "id": "marimacho",
+      "letra": "M",
+      "es": {
+        "termino": "Marimacho",
+        "definicion": "Término despectivo para lesbiana. Algunas lesbianas se han reapropiado del término en inglés, dyke, y lo utilizan para afirmarse (ver también bollera)."
+      },
+      "ca": {
+        "termino": "Marimacho",
+        "definicion": "Terme despectiu per lesbiana. Algunes lesbianes s'han reapropiat del terme en anglès dyke i el fan servir per afirmar-se. Veure també bollera."
+      },
+      "en": {
+        "termino": "Marimacho",
+        "definicion": "A derogatory term for lesbian. Some lesbians have reclaimed the English term, dyke, and use it to assert themselves (see also bollera)."
+      }
+    },
+    {
+      "id": "mariquita",
+      "letra": "M",
+      "es": {
+        "termino": "Mariquita",
+        "definicion": "Término despectivo que designa a un hombre gay o bisexual. El término en inglés significa ‘haz de leña’. Se piensa que está relacionado con una tradición medieval de lanzar a los sodomitas al fuego mientras los criminales convictos eran ejecutados en la hoguera."
+      },
+      "ca": {
+        "termino": "Marieta",
+        "definicion": "Terme despectiu que designa un home gai o bisexual. El terme en anglès significa \"feix de llenya\". Es pensa que està relacionat amb una tradició medieval de llançar als \"sodomites\" al foc mentre els criminals convictes eren executats a la foguera."
+      },
+      "en": {
+        "termino": "Mariquita",
+        "definicion": "A derogatory term for a gay or bisexual man. The English term means ‘bundle of sticks’. It is thought to be related to a medieval tradition of throwing sodomites onto the fire while convicted criminals were executed at the stake."
+      }
+    },
+    {
+      "id": "matrimonio-forzado",
+      "letra": "M",
+      "es": {
+        "termino": "Matrimonio forzado",
+        "definicion": "Es aquel que se produce sin el consentimiento válido de, como mínimo, una de las personas contrayentes, por la intervención de terceras personas del entorno familiar (a menudo de los progenitores), que se otorgan la facultad de decisión y presionan para que esta práctica se produzca, contraviniendo los requisitos de la institución matrimonial que, según nuestra legislación, no existe sin consentimiento, ni puede celebrarse bajo condición, plazo o modo. Se considera que el consentimiento se encuentra viciado cuando no se da de manera libre y voluntaria. A menudo este matrimonio tiene como objetivo llevar a cabo otros tipos de explotación."
+      },
+      "ca": {
+        "termino": "Matrimoni forçat",
+        "definicion": "És aquell que es produeix sense el consentiment vàlid de, com a mínim, una de les persones contraents, per la intervenció de terceres persones de l'entorn familiar (sovint dels progenitors), que s'atorguen la facultat de decisió i pressionen perquè aquesta pràctica es produeixi, contravenint els requisits de la institució matrimonial que, segons la nostra legislació, no existeix sense consentiment, ni pot celebrar-se sota condició, termini o mode. Es considera que el consentiment està viciat quan no es dona de manera lliure i voluntària. Sovint aquest matrimoni té com objectiu dur a terme altres menes d'explotació."
+      },
+      "en": {
+        "termino": "Forced marriage",
+        "definicion": "A marriage that takes place without the valid consent of at least one of the spouses, through the intervention of third parties from the family environment (often the parents), who grant themselves the power of decision and press for this practice to take place, contravening the requirements of the institution of marriage which, according to our legislation, does not exist without consent, nor can it be celebrated subject to a condition, term or mode. Consent is considered to be vitiated when it is not given freely and voluntarily. Often this marriage aims to carry out other types of exploitation."
+      }
+    },
+    {
+      "id": "microviolencias-machistas",
+      "letra": "M",
+      "es": {
+        "termino": "Microviolencias machistas",
+        "definicion": "Medidas de control, dominio y subyugación patriarcales que actúan en el terreno de lo simbólico y psicológico, y ejercen violencia hacia las personas dominadas."
+      },
+      "ca": {
+        "termino": "Microviolències masclistes",
+        "definicion": "Mesures de control, domini i subjugació patriarcals que actuen en el terreny d’allò simbòlic i psicològic, i exerceixen violència envers les persones dominades."
+      },
+      "en": {
+        "termino": "Sexist microviolence",
+        "definicion": "Patriarchal measures of control, domination and subjugation that act in the symbolic and psychological sphere, and exert violence towards the dominated people."
+      }
+    },
+    {
+      "id": "misandria",
+      "letra": "M",
+      "es": {
+        "termino": "Misandria",
+        "definicion": "Odio o aversión hacia los hombres."
+      },
+      "ca": {
+        "termino": "Misàndria",
+        "definicion": "Odi o aversió cap als homes."
+      },
+      "en": {
+        "termino": "Misandry",
+        "definicion": "Hatred or aversion towards men."
+      }
+    },
+    {
+      "id": "misoginia",
+      "letra": "M",
+      "es": {
+        "termino": "Misoginia",
+        "definicion": "Odio o aversión hacia las mujeres. Se manifiesta en las discriminaciones y violencias machistas, así como en la cosificación sexual de la mujer."
+      },
+      "ca": {
+        "termino": "Misogínia",
+        "definicion": "Odi o aversió cap a les dones. Es manifesta en les discriminacions i violències masclistes, així com l’objectificació sexual de la dona."
+      },
+      "en": {
+        "termino": "Misogyny",
+        "definicion": "Hatred or aversion towards women. It is manifested in sexist discrimination and violence, as well as in the sexual objectification of women."
+      }
+    },
+    {
+      "id": "modelo-o-concepcion-medica-o-de-patologizacion",
+      "letra": "M",
+      "es": {
+        "termino": "Modelo o concepción médica o de patologización",
+        "definicion": "Modelo que considera que la orientación sexual o la discordancia entre sexo y género es una cuestión médica, patológica."
+      },
+      "ca": {
+        "termino": "Model o concepció mèdica o de patologització",
+        "definicion": "Model que considera que l'orientació sexual o la discordança entre sexe i gènere és una qüestió mèdica, patològica."
+      },
+      "en": {
+        "termino": "Medical or pathologising model or conception",
+        "definicion": "A model that considers sexual orientation or the discordance between sex and gender to be a medical, pathological matter."
+      }
+    },
+    {
+      "id": "modelo-o-concepcion-social",
+      "letra": "M",
+      "es": {
+        "termino": "Modelo o concepción social",
+        "definicion": "Modelo que considera la orientación sexual o la discordancia de género como parte de la diversidad de la raza humana y no como una enfermedad."
+      },
+      "ca": {
+        "termino": "Model o concepció social",
+        "definicion": "Model que considera l'orientació sexual i/o la discordança de gènere com a part de la diversitat de la raça humana i no com una malaltia."
+      },
+      "en": {
+        "termino": "Social model or conception",
+        "definicion": "A model that considers sexual orientation or gender discordance to be part of the diversity of the human race and not an illness."
+      }
+    },
+    {
+      "id": "obesofobia",
+      "letra": "O",
+      "es": {
+        "termino": "Obesofobia",
+        "definicion": "Opresión sistemática y estructural hacia las personas gordas, fruto de la mitificación de los cuerpos delgados omnipresentes en la sociedad actual (anuncios de televisión, tallas de moda, tamaño de las butacas del cine o del metro...)."
+      },
+      "ca": {
+        "termino": "Grassofòbia",
+        "definicion": "Opressió sistemàtica i estructural cap a les persones grasses, fruit de la mitificació dels cossos prims omnipresents a la societat actual (anuncis de televisió, talles de moda, mida de les butaques del cinema o del metro...)."
+      },
+      "en": {
+        "termino": "Obesophobia",
+        "definicion": "Systematic and structural oppression of fat people, the result of the mythification of the thin bodies omnipresent in today's society (television adverts, fashion sizes, the size of cinema or metro seats...)."
+      }
+    },
+    {
+      "id": "orientacion-sexual-o-sexualidad",
+      "letra": "O",
+      "es": {
+        "termino": "Orientación sexual o sexualidad",
+        "definicion": "Atracción emocional, romántica o sexual hacia personas del mismo sexo o del sexo opuesto. En gran medida, nuestros gustos están dirigidos por la educación recibida, lo que nos encamina hacia la heterosexualidad."
+      },
+      "ca": {
+        "termino": "Orientació sexual o Sexualitat",
+        "definicion": "Atracció emocional, romàntica, i/o sexual cap a persones del mateix sexe o del sexe oposat. En gran mesura, els nostres gustos estan dirigits per l’educació rebuda, la qual cosa ens encamina cap a l’heterosexualitat."
+      },
+      "en": {
+        "termino": "Sexual orientation or sexuality",
+        "definicion": "Emotional, romantic or sexual attraction to people of the same sex or the opposite sex. To a large extent, our tastes are directed by the education we have received, which steers us towards heterosexuality."
+      }
+    },
+    {
+      "id": "outing-a-alguien",
+      "letra": "O",
+      "es": {
+        "termino": "Outing (a alguien)",
+        "definicion": "Verbo que en inglés se emplea con el significado de ‘sacar del armario’, es decir, revelar que una persona es LGTBI en contra de su voluntad (ver armario)."
+      },
+      "ca": {
+        "termino": "Outing (a algú)",
+        "definicion": "Verb que en anglès significa treure de l'armari o revelar que una persona és LGTBI en contra de la seva voluntat (veure armari)."
+      },
+      "en": {
+        "termino": "Outing (someone)",
+        "definicion": "A verb used in English meaning ‘taking someone out of the closet’, that is, revealing that a person is LGTBI against their will (see closet)."
+      }
+    },
+    {
+      "id": "paginas-pro-ana-y-pro-mia",
+      "letra": "P",
+      "es": {
+        "termino": "Páginas pro-Ana y pro-Mía",
+        "definicion": "Páginas web que hacen apología de conductas anoréxicas y bulímicas, respectivamente. A menudo están escritas por chicas y dirigidas a otras chicas."
+      },
+      "ca": {
+        "termino": "Pàgines pro-ana i pro-mia",
+        "definicion": "Pàgines web que fan apologia de conductes anorèxiques i bulímiques respectivament. Sovint estan escrites per noies i adreçades a altres noies."
+      },
+      "en": {
+        "termino": "Pro-Ana and pro-Mia websites",
+        "definicion": "Websites that glorify anorexic and bulimic behaviours, respectively. They are often written by girls and aimed at other girls."
+      }
+    },
+    {
+      "id": "pansexual-u-omnisexual",
+      "letra": "P",
+      "es": {
+        "termino": "Pansexual u omnisexual",
+        "definicion": "Persona que se siente atraída por otras personas independientemente de su género."
+      },
+      "ca": {
+        "termino": "Pansexual o omnisexual",
+        "definicion": "Persona que se sent atreta per altres persones independentment del seu gènere."
+      },
+      "en": {
+        "termino": "Pansexual or omnisexual",
+        "definicion": "A person who is attracted to other people regardless of their gender."
+      }
+    },
+    {
+      "id": "paridad",
+      "letra": "P",
+      "es": {
+        "termino": "Paridad",
+        "definicion": "Situación de equilibrio en la participación de mujeres y hombres en los espacios de decisión políticos, económicos y sociales."
+      },
+      "ca": {
+        "termino": "Paritat",
+        "definicion": "Situació d’equilibri en la participació de dones i homes en els espais de decisió polítics, econòmics i socials."
+      },
+      "en": {
+        "termino": "Parity",
+        "definicion": "A situation of balance in the participation of women and men in political, economic and social decision-making spaces."
+      }
+    },
+    {
+      "id": "patriarcado",
+      "letra": "P",
+      "es": {
+        "termino": "Patriarcado",
+        "definicion": "Forma de organización social, política y económica donde las mujeres son confinadas al espacio privado y a la función reproductora, mientras que los hombres se reservan el espacio público."
+      },
+      "ca": {
+        "termino": "Patriarcat",
+        "definicion": "Forma d'organització social, política i econòmica on les dones són confinades en l'espai privat i a la funció reproductora, mentre que els barons es reserven l'espai públic."
+      },
+      "en": {
+        "termino": "Patriarchy",
+        "definicion": "A form of social, political and economic organisation in which women are confined to the private space and the reproductive function, while men reserve the public space for themselves."
+      }
+    },
+    {
+      "id": "pedanteria-masculina-mansplaining",
+      "letra": "P",
+      "es": {
+        "termino": "Pedantería masculina (mansplaining)",
+        "definicion": "Actitud paternalista y prepotente por parte de un hombre cuando explica algo a una mujer."
+      },
+      "ca": {
+        "termino": "Pedanteria masculina (Mansplaining)",
+        "definicion": "Actitud paternalista i prepotent per part d’un home quan explica una cosa a una dona."
+      },
+      "en": {
+        "termino": "Male pedantry (mansplaining)",
+        "definicion": "A paternalistic and overbearing attitude on the part of a man when he explains something to a woman."
+      }
+    },
+    {
+      "id": "pornografia-de-revancha",
+      "letra": "P",
+      "es": {
+        "termino": "Pornografía de revancha",
+        "definicion": "Fenómeno que se produce cuando una persona (normalmente un chico) envía imágenes sexuales registradas de su pareja o expareja (normalmente una chica) a una página web pornográfica."
+      },
+      "ca": {
+        "termino": "Pornografia de revenja",
+        "definicion": "Fenomen que es produeix quan una persona (normalment un noi) envia imatges sexuals enregistrades de la seva parella o ex-parella (normalment una noia) a una pàgina web pornogràfica."
+      },
+      "en": {
+        "termino": "Revenge porn",
+        "definicion": "A phenomenon that occurs when a person (normally a boy) sends recorded sexual images of their partner or ex-partner (normally a girl) to a pornographic website."
+      }
+    },
+    {
+      "id": "prejuicio",
+      "letra": "P",
+      "es": {
+        "termino": "Prejuicio",
+        "definicion": "Creencia, opinión o juicio preconcebido sobre un grupo de personas."
+      },
+      "ca": {
+        "termino": "Prejudici",
+        "definicion": "Creença, opinió o judici preconcebut sobre un grup de persones."
+      },
+      "en": {
+        "termino": "Prejudice",
+        "definicion": "A preconceived belief, opinion or judgement about a group of people."
+      }
+    },
+    {
+      "id": "prevencion-del-sexismo",
+      "letra": "P",
+      "es": {
+        "termino": "Prevención del sexismo",
+        "definicion": "Acciones de sensibilización para reducir la incidencia del sexismo y para no normalizarlo, para evitar sus consecuencias más extremas (ver sexismo)."
+      },
+      "ca": {
+        "termino": "Prevenció del sexisme",
+        "definicion": "Accions de sensibilització per reduir la incidència del sexisme i per no normalitzar-lo, per tal d’evitar les seves conseqüències més extremes (veure sexisme)."
+      },
+      "en": {
+        "termino": "Prevention of sexism",
+        "definicion": "Awareness-raising actions to reduce the incidence of sexism and not to normalise it, to avoid its most extreme consequences (see sexism)."
+      }
+    },
+    {
+      "id": "prostitucion-forzada",
+      "letra": "P",
+      "es": {
+        "termino": "Prostitución forzada",
+        "definicion": "Término utilizado para referirse al término legalmente conocido como tráfico de seres humanos con fines de explotación sexual (ver \"tráfico de seres humanos con fines de explotación\")."
+      },
+      "ca": {
+        "termino": "Prostitució forçada",
+        "definicion": "Terme utilitzat per referir-se al terme legalment conegut com tràfic d’éssers humans amb fins d’explotació sexual (vegeu \"tràfic d'éssers humansamb fins d'explotació\")."
+      },
+      "en": {
+        "termino": "Forced prostitution",
+        "definicion": "A term used to refer to what is legally known as trafficking in human beings for the purpose of sexual exploitation (see “trafficking in human beings for the purpose of exploitation”)."
+      }
+    },
+    {
+      "id": "putofobia",
+      "letra": "P",
+      "es": {
+        "termino": "Putofobia",
+        "definicion": "Odio o aversión hacia las personas que ejercen la prostitución."
+      },
+      "ca": {
+        "termino": "Putofòbia",
+        "definicion": "Odi o aversió cap a les persones que exerceixen la prostitució."
+      },
+      "en": {
+        "termino": "Putophobia",
+        "definicion": "Hatred or aversion towards people who work in prostitution."
+      }
+    },
+    {
+      "id": "queer",
+      "letra": "Q",
+      "es": {
+        "termino": "Queer",
+        "definicion": "Corriente social que huye de las identidades estáticas binarias, pues entiende que las personas transitan entre los géneros. También considera que la raza, la clase social, el lugar de nacimiento y el género generan jerarquías sociales."
+      },
+      "ca": {
+        "termino": "Queer",
+        "definicion": "Corrent social que fuig de les identitats estàtiques binàries, entenent que les persones transiten entre els gèneres. També considera que la raça, la classe social, el lloc de naixement i el gènere generen jerarquies socials."
+      },
+      "en": {
+        "termino": "Queer",
+        "definicion": "A social current that rejects static binary identities, since it understands that people move between genders. It also considers that race, social class, place of birth and gender generate social hierarchies."
+      }
+    },
+    {
+      "id": "questioning",
+      "letra": "Q",
+      "es": {
+        "termino": "Questioning",
+        "definicion": "Persona que se cuestiona su orientación sexual."
+      },
+      "ca": {
+        "termino": "Questioning",
+        "definicion": "Persona que es qüestiona entorn a la seva orientació sexual."
+      },
+      "en": {
+        "termino": "Questioning",
+        "definicion": "A person who is questioning their sexual orientation."
+      }
+    },
+    {
+      "id": "reasignacion-de-sexo-cirugia",
+      "letra": "R",
+      "es": {
+        "termino": "Reasignación de sexo (cirugía)",
+        "definicion": "Intervención médica para el cambio del sexo físico, incluyendo los genitales. También es denominada reafirmación de sexo."
+      },
+      "ca": {
+        "termino": "Reassignació de sexe (cirurgia)",
+        "definicion": "Intervenció mèdica per al canvi del sexe físic, incloent els genitals. També anomenada reafirmació de sexe."
+      },
+      "en": {
+        "termino": "Sex reassignment (surgery)",
+        "definicion": "A medical intervention to change the physical sex, including the genitals. It is also called sex reaffirmation."
+      }
+    },
+    {
+      "id": "relaciones-abusivas",
+      "letra": "R",
+      "es": {
+        "termino": "Relaciones abusivas",
+        "definicion": "Relaciones de dominio de una persona sobre otra. El abuso suele ser progresivo y siempre va acompañado de la pérdida de autoestima y de autonomía por parte de la persona que sufre el abuso."
+      },
+      "ca": {
+        "termino": "Relacions abusives",
+        "definicion": "Relacions de domini d’una persona sobre una altra. L’abús sol ser progressiu i sempre va acompanyat de la pèrdua d’autoestima i d’autonomia per part de la persona abusada."
+      },
+      "en": {
+        "termino": "Abusive relationships",
+        "definicion": "Relationships of domination of one person over another. The abuse is usually progressive and is always accompanied by a loss of self-esteem and autonomy on the part of the person who suffers the abuse."
+      }
+    },
+    {
+      "id": "salir-del-armario",
+      "letra": "S",
+      "es": {
+        "termino": "Salir del armario",
+        "definicion": "Paso que dan las personas con una orientación sexual no normativa para declararla abiertamente (ver armario)."
+      },
+      "ca": {
+        "termino": "Sortir de l'armari",
+        "definicion": "Pas que donen les persones amb una orientació sexual no normativa per declarar-la obertament (veure armari)."
+      },
+      "en": {
+        "termino": "Coming out of the closet",
+        "definicion": "The step taken by people with a non-normative sexual orientation to declare it openly (see closet)."
+      }
+    },
+    {
+      "id": "segregacion-horizontal",
+      "letra": "S",
+      "es": {
+        "termino": "Segregación horizontal",
+        "definicion": "Concentración de mujeres u hombres en grados y niveles específicos de responsabilidad, de empleos o de opciones académicas o formativas. En la elección influye más el rol de género que la libre opción personal."
+      },
+      "ca": {
+        "termino": "Segregació horitzontal",
+        "definicion": "Concentració de dones i/o homes en graus i nivells específics de responsabilitat, d’ocupacions o opcions acadèmiques i/o formatives. En l’elecció influeix més el rol de gènere que la lliure opció personal."
+      },
+      "en": {
+        "termino": "Horizontal segregation",
+        "definicion": "The concentration of women or men in specific grades and levels of responsibility, jobs, or academic or training options. The choice is influenced more by gender role than by free personal choice."
+      }
+    },
+    {
+      "id": "segregacion-vertical",
+      "letra": "S",
+      "es": {
+        "termino": "Segregación vertical",
+        "definicion": "Exclusión de las mujeres de los puestos directivos y adhesión de estas a las actividades de inferior prestigio."
+      },
+      "ca": {
+        "termino": "Segregació vertical",
+        "definicion": "Exclusió de les dones dels llocs directius i adhesió de les mateixes a les activitats de menor prestigi."
+      },
+      "en": {
+        "termino": "Vertical segregation",
+        "definicion": "The exclusion of women from management positions and their concentration in lower-prestige activities."
+      }
+    },
+    {
+      "id": "serofobia",
+      "letra": "S",
+      "es": {
+        "termino": "Serofobia",
+        "definicion": "Estigma que rodea las cuestiones relativas al VIH/sida y, especialmente, a las personas seropositivas."
+      },
+      "ca": {
+        "termino": "Serofòbia",
+        "definicion": "Estigma que envolta les qüestions relatives al VIH-Sida i especialment a les persones seropositives."
+      },
+      "en": {
+        "termino": "Serophobia",
+        "definicion": "The stigma surrounding issues related to HIV/AIDS and, especially, people who are HIV-positive."
+      }
+    },
+    {
+      "id": "sexismo",
+      "letra": "S",
+      "es": {
+        "termino": "Sexismo",
+        "definicion": "Sistema que define a las personas según su sexo, las jerarquiza y mantiene unas normas de comportamiento que corresponden a estas dos únicas posibilidades identitarias. Esta estructura subordina a las mujeres y excluye a personas con cuerpos, identidades, expresiones y deseos que están fuera de la norma de género."
+      },
+      "ca": {
+        "termino": "Sexisme",
+        "definicion": "Sistema que defineix les persones segons el seu sexe, les jerarquitza i manté unes normes de comportament que corresponen aquestes dues úniques possibilitats identitàries. Aquesta estructura subordina les dones i exclou persones amb cossos, identitats, expressions i desitjos que estan fora de la norma de gènere."
+      },
+      "en": {
+        "termino": "Sexism",
+        "definicion": "A system that defines people according to their sex, ranks them hierarchically and maintains norms of behaviour that correspond to these two only possible identities. This structure subordinates women and excludes people with bodies, identities, expressions and desires that fall outside the gender norm."
+      }
+    },
+    {
+      "id": "sexo",
+      "letra": "S",
+      "es": {
+        "termino": "Sexo",
+        "definicion": "Conjunto de características físicas, biológicas y anatómicas de las personas que nacen como hombres o mujeres."
+      },
+      "ca": {
+        "termino": "Sexe",
+        "definicion": "Conjunt de característiques físiques, biològiques i anatòmiques de les persones que neixen com a homes i dones."
+      },
+      "en": {
+        "termino": "Sex",
+        "definicion": "The set of physical, biological and anatomical characteristics of people who are born as men or women."
+      }
+    },
+    {
+      "id": "sexo-biologico",
+      "letra": "S",
+      "es": {
+        "termino": "Sexo biológico",
+        "definicion": "Hasta la séptima semana de gestación no existe una diferenciación de sexo. En la mayoría de los casos se produce un desarrollo de vagina-útero o de pene-testículos. Pero algunas personas desarrollan características de los dos sexos biológicos."
+      },
+      "ca": {
+        "termino": "Sexe biològic",
+        "definicion": "Fins a la setena setmana de gestació no existeix una diferenciació de sexe. En la majoria dels casos es produeix un desenvolupament de vagina/úter o de penis/testicles. Però algunes persones desenvolupen característiques dels dos sexes biològics."
+      },
+      "en": {
+        "termino": "Biological sex",
+        "definicion": "Until the seventh week of gestation there is no differentiation of sex. In most cases, a vagina-uterus or penis-testicles develops. But some people develop characteristics of both biological sexes."
+      }
+    },
+    {
+      "id": "sexpreading",
+      "letra": "S",
+      "es": {
+        "termino": "Sexpreading",
+        "definicion": "Difundir fotos con contenido sexual de otras personas sin su consentimiento. Es un acto violento y denunciable."
+      },
+      "ca": {
+        "termino": "Sexpreading",
+        "definicion": "Difondre fotos amb contingut sexual d’una/es altra/es persona/es sense el seu consentiment. És un acte violent i denunciable."
+      },
+      "en": {
+        "termino": "Sexpreading",
+        "definicion": "Spreading photos with sexual content of other people without their consent. It is a violent act and can be reported."
+      }
+    },
+    {
+      "id": "sexting",
+      "letra": "S",
+      "es": {
+        "termino": "Sexting",
+        "definicion": "Práctica sexual que consiste en enviar, de manera consentida, fotos o vídeos con contenido sexual sobre uno mismo a otra persona."
+      },
+      "ca": {
+        "termino": "Sèxting",
+        "definicion": "Pràctica sexual que consisteix en enviar de manera consentida fotos o vídeos amb contingut sexual sobre si mateix/a a una altra persona."
+      },
+      "en": {
+        "termino": "Sexting",
+        "definicion": "A sexual practice that consists of sending, consensually, photos or videos with sexual content of oneself to another person."
+      }
+    },
+    {
+      "id": "sextorsion",
+      "letra": "S",
+      "es": {
+        "termino": "Sextorsión",
+        "definicion": "Forma de extorsión sexual en que una persona recibe chantaje o amenazas para que envíe una foto de sí misma con contenido sexual."
+      },
+      "ca": {
+        "termino": "Sextorsió",
+        "definicion": "Forma d’extorsió sexual en què una persona rep xantatge o amenaces perquè enviï una foto de sí mateixa amb contingut sexual."
+      },
+      "en": {
+        "termino": "Sextortion",
+        "definicion": "A form of sexual extortion in which a person is blackmailed or threatened into sending a photo of themselves with sexual content."
+      }
+    },
+    {
+      "id": "sororidad",
+      "letra": "S",
+      "es": {
+        "termino": "Sororidad",
+        "definicion": "El concepto deriva de sisterhood, hermandad entre mujeres. Se diferencia de la solidaridad en el hecho de que implica que se modifiquen las relaciones entre mujeres, con la idea de que se sientan como iguales."
+      },
+      "ca": {
+        "termino": "Sororitat",
+        "definicion": "El concepte deriva de sisterhood, germanor entre dones. Es diferencia de la solidaritat amb què implica la modificació de les relacions entre dones, amb la idea de sentir-se com a iguals."
+      },
+      "en": {
+        "termino": "Sorority",
+        "definicion": "The concept derives from sisterhood, solidarity among women. It differs from solidarity in that it implies that relationships between women are modified, with the idea that they feel as equals."
+      }
+    },
+    {
+      "id": "straight",
+      "letra": "S",
+      "es": {
+        "termino": "Straight",
+        "definicion": "Hetero. En inglés, término coloquial que designa a las personas heterosexuales."
+      },
+      "ca": {
+        "termino": "Straight",
+        "definicion": "Hetero. En anglès, terme col·loquial que designa les persones heterosexuals."
+      },
+      "en": {
+        "termino": "Straight",
+        "definicion": "Hetero. A colloquial term in English that designates heterosexual people."
+      }
+    },
+    {
+      "id": "straight-acting",
+      "letra": "S",
+      "es": {
+        "termino": "Straight acting",
+        "definicion": "Literalmente, personas que quieren parecer heterosexuales. Designa a las personas LGTBI que no muestran actitudes o comportamientos que les asigna la sociedad."
+      },
+      "ca": {
+        "termino": "Straight acting",
+        "definicion": "Literalment, persones que volen semblar heterosexuals. Designa a les persones LGBTI que no mostren actituds o comportaments assignats per la societat."
+      },
+      "en": {
+        "termino": "Straight acting",
+        "definicion": "Literally, people who want to appear heterosexual. It designates LGTBI people who do not show the attitudes or behaviours that society assigns to them."
+      }
+    },
+    {
+      "id": "techo-de-cristal",
+      "letra": "T",
+      "es": {
+        "termino": "Techo de cristal",
+        "definicion": "Metáfora sobre las barreras transparentes que impiden a muchas mujeres con elevada cualificación acceder y progresar en las esferas del poder económico, político y cultural."
+      },
+      "ca": {
+        "termino": "Sostre de vidre",
+        "definicion": "Metàfora sobre les barreres transparents que impedeixen a moltes dones amb elevada qualificació d’accedir i progressar en les esferes del poder econòmic, polític i cultural."
+      },
+      "en": {
+        "termino": "Glass ceiling",
+        "definicion": "A metaphor for the transparent barriers that prevent many highly qualified women from accessing and progressing in the spheres of economic, political and cultural power."
+      }
+    },
+    {
+      "id": "trabajadora-rosa-pink-collar-worker",
+      "letra": "T",
+      "es": {
+        "termino": "Trabajadora rosa (pink collar worker)",
+        "definicion": "Trabajadora de un ámbito tradicionalmente asociado a las mujeres, por ejemplo, enfermeras, secretarias o recepcionistas."
+      },
+      "ca": {
+        "termino": "Treballadora rosa (Pink collar worker)",
+        "definicion": "Treballadora d’un àmbit tradicionalment associat a les dones, com per exemple infermeres, secretàries o recepcionistes."
+      },
+      "en": {
+        "termino": "Pink-collar worker",
+        "definicion": "A worker in a field traditionally associated with women, for example nurses, secretaries or receptionists."
+      }
+    },
+    {
+      "id": "trabajo-sexual",
+      "letra": "T",
+      "es": {
+        "termino": "Trabajo sexual",
+        "definicion": "Actividad que incluye una transacción económica para mantener relaciones sexuales. El trabajo sexual es una actividad voluntaria que puede ser ejercida tanto por hombres como por mujeres y personas trans."
+      },
+      "ca": {
+        "termino": "Treball sexual",
+        "definicion": "Activitat que inclou una transacció econòmica per mantenir relacions sexuals. El treball sexual és una activitat voluntària que pot ser exercida tant per homes com per dones i persones trans."
+      },
+      "en": {
+        "termino": "Sex work",
+        "definicion": "An activity that includes an economic transaction in exchange for sexual relations. Sex work is a voluntary activity that can be carried out by men as well as by women and trans people."
+      }
+    },
+    {
+      "id": "trafico-de-seres-humanos-con-fines-de-explotacion",
+      "letra": "T",
+      "es": {
+        "termino": "Tráfico de seres humanos con fines de explotación",
+        "definicion": "Es un delito contra los derechos humanos y se define por la captación, el transporte, el traslado, la acogida o la recepción de personas (sin necesidad de traspasar fronteras) recurriendo a la amenaza, el uso de la fuerza u otras formas de coacción con el fin de explotación para trabajos o servicios forzados, servidumbre, extracción de órganos, realizar actos delictivos, esclavitud o prácticas análogas o prostitución forzada."
+      },
+      "ca": {
+        "termino": "Tràfic d’éssers humans amb fins d'explotació",
+        "definicion": "És un delicte contra els drets humans i es defineix per la captació, el transport, el trasllat, l’acolliment o la recepció de persones (sense necessitat de traspassar fronteres) recorrent a l’amenaça, l’ús de la força o altres formes de coacció amb la finalitat d’explotació per a treballs o serveis forçats, per a servitud, extracció d'òrgans, per fer actes delictius, per a esclavitud o pràctiques anàlogues, o per a prostitució forçada."
+      },
+      "en": {
+        "termino": "Trafficking in human beings for the purpose of exploitation",
+        "definicion": "A crime against human rights, defined by the recruitment, transport, transfer, harbouring or receipt of people (without the need to cross borders) by means of threat, the use of force or other forms of coercion for the purpose of exploitation for forced labour or services, servitude, organ removal, carrying out criminal acts, slavery or similar practices, or forced prostitution."
+      }
+    },
+    {
+      "id": "trans",
+      "letra": "T",
+      "es": {
+        "termino": "Trans",
+        "definicion": "Término menos restrictivo y más neutro que el de transexualidad y que aspira a ofrecer un campo más amplio y despatologizante que la palabra transexual, e incluye otras identidades no polarizadas entre hombre y mujer."
+      },
+      "ca": {
+        "termino": "Trans",
+        "definicion": "Terme menys restrictiu i més neutre que el de transsexualitat que aspira a oferir un camp més ampli i despatologitzant que el mot transsexual, acollint altres identitats no polaritzades entre home i dona."
+      },
+      "en": {
+        "termino": "Trans",
+        "definicion": "A term less restrictive and more neutral than transsexuality, which aims to offer a broader and depathologising field than the word transsexual, and includes other identities that are not polarised between man and woman."
+      }
+    },
+    {
+      "id": "transexualidad",
+      "letra": "T",
+      "es": {
+        "termino": "Transexualidad",
+        "definicion": "Categoría médica que ha servido para clasificar psiquiátricamente como trastorno la diversidad de identidades de género. Hay diversas identidades de género que no se corresponden con la necesidad de intervención hormonal y de cirugía y que se sienten excluidas de la denominación de transexual."
+      },
+      "ca": {
+        "termino": "Transsexualitat",
+        "definicion": "Categoria mèdica que ha servit per classificar psiquiàtricament com a trastorn la diversitat d’identitats de gènere. Hi ha diverses identitats de gènere que no es corresponen amb aquesta la necessitat d’intervenció hormonal i de cirurgia i que se senten excloses de la denominació de transsexual."
+      },
+      "en": {
+        "termino": "Transsexuality",
+        "definicion": "A medical category that has been used to classify the diversity of gender identities psychiatrically as a disorder. There are various gender identities that do not correspond to the need for hormonal intervention and surgery and that feel excluded from the term transsexual."
+      }
+    },
+    {
+      "id": "transfobia",
+      "letra": "T",
+      "es": {
+        "termino": "Transfobia",
+        "definicion": "Odio, miedo, intolerancia, discriminación o prejuicio irracional contra las personas trans. Puede manifestarse en forma de abuso verbal, emocional, físico y sexual contra las personas trans."
+      },
+      "ca": {
+        "termino": "Transfòbia",
+        "definicion": "Odi, por, intolerància, discriminació o prejudici irracional contra les persones trans. Pot manifestar-se en forma d'abús verbal, emocional, físic i sexual contra les persones trans."
+      },
+      "en": {
+        "termino": "Transphobia",
+        "definicion": "Hatred, fear, intolerance, discrimination or irrational prejudice against trans people. It can manifest as verbal, emotional, physical and sexual abuse against trans people."
+      }
+    },
+    {
+      "id": "transversalidad-de-genero",
+      "letra": "T",
+      "es": {
+        "termino": "Transversalidad de género",
+        "definicion": "Integración dela perspectiva de género en todos los ámbitos de la política y la sociedad, prestando atención a la realidad diferenciada de las mujeres y los hombres y diseñando actuaciones que se adapten a ello o le den respuesta."
+      },
+      "ca": {
+        "termino": "Transversalitat de gènere",
+        "definicion": "Integració de la perspectiva de gènere en tots els àmbits de la política i la societat, posant atenció a la realitat diferenciada i desigual de les dones i els homes i dissenyant actuacions que s'hi adaptin o hi donin resposta."
+      },
+      "en": {
+        "termino": "Gender mainstreaming",
+        "definicion": "The integration of the gender perspective in all areas of policy and society, paying attention to the differentiated reality of women and men and designing actions that adapt to or respond to it."
+      }
+    },
+    {
+      "id": "travestido-da",
+      "letra": "T",
+      "es": {
+        "termino": "Travestido/da",
+        "definicion": "Persona que se viste con ropa que se asocia al sexo opuesto al suyo de nacimiento. Puede darse en público o en privado, de manera ocasional o continua. No tiene que ver con la orientación sexual."
+      },
+      "ca": {
+        "termino": "Tranvestit/da",
+        "definicion": "Persona que es vesteix amb roba que s'associa al sexe oposat al seu de naixement. Pot donar-se en públic o en privat, ocasionalment o contínuament. No té a veure amb la seva orientació sexual."
+      },
+      "en": {
+        "termino": "Cross-dresser",
+        "definicion": "A person who dresses in clothes associated with the sex opposite to the one they were born with. It can happen in public or in private, occasionally or continuously. It has nothing to do with sexual orientation."
+      }
+    },
+    {
+      "id": "victimizacion-secundaria-o-revictimizacion",
+      "letra": "V",
+      "es": {
+        "termino": "Victimización secundaria o revictimización",
+        "definicion": "El maltrato adicional ejercido contra las mujeres que se encuentran en situaciones de violencia machista como consecuencia directa o indirecta de los déficits, cuantitativos y cualitativos, de las intervenciones llevadas a cabo por los organismos responsables, y también por las actuaciones desacertadas provenientes de otros agentes implicados."
+      },
+      "ca": {
+        "termino": "Victimització secundària o revictimització",
+        "definicion": "Maltractament addicional exercit contra les dones que es troben en situacions de violència masclista com a conseqüència directa o indirecta dels dèficits quantitatius i qualitatius de les intervencions dutes a terme pels organismes responsables, i també per les actuacions desencertades provinents d’altres agents implicats."
+      },
+      "en": {
+        "termino": "Secondary victimisation or revictimisation",
+        "definicion": "The additional mistreatment inflicted on women who find themselves in situations of sexist violence as a direct or indirect consequence of the quantitative and qualitative shortcomings of the interventions carried out by the responsible bodies, and also by the ill-advised actions of other agents involved."
+      }
+    },
+    {
+      "id": "violencia-machista",
+      "letra": "V",
+      "es": {
+        "termino": "Violencia machista",
+        "definicion": "Violencia que se ejerce contra las mujeres como manifestación de la discriminación y de la situación de desigualdad en el marco de un sistema de relaciones de poder de los hombres sobre las mujeres y que tiene como resultado un daño o un sufrimiento físico, sexual o psicológico, tanto si se produce en el ámbito público como en el privado."
+      },
+      "ca": {
+        "termino": "Violència masclista",
+        "definicion": "Violència que s’exerceix contra les dones com a manifestació de la discriminació i de la situació de desigualtat en el marc d’un sistema de relacions de poder dels homes sobre les dones i que té com a resultat un dany o un patiment físic, sexual o psicològic, tant si es produeix en l’àmbit públic com en el privat."
+      },
+      "en": {
+        "termino": "Sexist violence",
+        "definicion": "Violence exercised against women as a manifestation of discrimination and of the situation of inequality within a system of power relations of men over women, which results in physical, sexual or psychological harm or suffering, whether it occurs in the public or the private sphere."
+      }
+    },
+    {
+      "id": "violencia-simbolica",
+      "letra": "V",
+      "es": {
+        "termino": "Violencia simbólica",
+        "definicion": "Violencia que se ejerce a través del conjunto de estructuras de pensamiento, culturales y sociales de un determinado grupo en un determinado momento. La violencia simbólica contra las mujeres las oprime e invisibiliza."
+      },
+      "ca": {
+        "termino": "Violència simbòlica",
+        "definicion": "Violència que s’exerceix a través del conjunt d’estructures de pensament, culturals i socials d’un determinat grup en un determinat moment. La violència simbòlica contra les dones les oprimeix i invisibilitza."
+      },
+      "en": {
+        "termino": "Symbolic violence",
+        "definicion": "Violence exercised through the set of cultural and social structures of thought of a given group at a given time. Symbolic violence against women oppresses them and makes them invisible."
+      }
+    }
+  ]
+}

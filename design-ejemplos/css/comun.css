@@ -5,7 +5,11 @@ html { scroll-behavior: smooth; }
 body { margin: 0; font-family: var(--fuente-texto); font-size: 1.0625rem; line-height: 1.6; color: var(--color-texto); background: var(--fondo); }
 h1, h2, h3 { font-family: var(--fuente-titulos); line-height: 1.12; margin: 0; }
 a { color: inherit; }
-:focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; }
+/* Foco con teclado: brillo dorado detrás, no un cuadrado (drop-shadow sigue la forma real, también en botones con borde de imagen).
+   Campos de texto y contenedores con scroll: brillo normal (box-shadow) para no iluminar todo su contenido. */
+html :focus-visible { outline: none; }
+html :focus-visible:not([tabindex="-1"]) { filter: drop-shadow(0 0 5px rgba(232, 206, 134, .95)) drop-shadow(0 0 12px rgba(201, 162, 75, .75)); }
+html input:focus-visible, html select:focus-visible, html textarea:focus-visible, html [tabindex="0"]:not(a):not(button):not(summary):not(svg):not(g):not(path):focus-visible { filter: none; box-shadow: 0 0 12px 3px rgba(232, 206, 134, .7); }
 .wrap { width: min(1100px, 100% - 32px); margin-inline: auto; }
 
 /* ---------- Cabecera ---------- */
@@ -47,7 +51,7 @@ body.fx .figura.lista .capas .cabeza { transform-origin: 50% 50%; animation: bal
 .tilt { perspective: 800px; touch-action: pan-x pan-y; }
 .tilt-in { transition: transform .15s ease-out; transform-style: preserve-3d; }
 .giro { all: unset; display: block; width: 100%; aspect-ratio: 3/4.2; cursor: pointer; position: relative; perspective: 900px; }
-.giro:focus-visible { outline: 3px solid var(--foco); outline-offset: 6px; border-radius: 10px; }
+html .giro:focus-visible { filter: none; box-shadow: 0 0 14px 4px rgba(232, 206, 134, .8); border-radius: 10px; }   /* la carta gira en 3D: brillo normal, sin filtro */
 .giro-in { position: absolute; inset: 0; transition: transform .8s; transform-style: preserve-3d; }
 .giro[aria-pressed="true"] .giro-in { transform: rotateY(180deg); }
 .cara { position: absolute; inset: 0; backface-visibility: hidden; display: flex; flex-direction: column; }

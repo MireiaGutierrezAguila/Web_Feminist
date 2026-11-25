@@ -23,7 +23,7 @@
 .tarjeta.abierta .fa-ficha { display: block; animation: fa-aparece .5s .15s both; }
 @keyframes fa-aparece { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .tarjeta.abierta .fa-ficha { animation: none; } }
-.fa-ficha :focus-visible { outline: 3px solid var(--fa-oro-claro); outline-offset: 3px; }
+.fa-ficha :focus-visible { outline: none; }   /* el brillo dorado lo pone css/comun.css */
 
 .fa-cerrar { position: absolute; top: 8px; right: 8px; width: 46px; height: 46px; border: 0; padding: 0; cursor: pointer; border-radius: 50%; z-index: 3;
   background: url("../../public/images/juego/ui/boton-cerrar.png") center / contain no-repeat; }
@@ -83,6 +83,15 @@
 .fx .onda-pista { animation: fa-onda 3.6s ease-out infinite; }
 @media (prefers-reduced-motion: reduce) {
   .fx .tarjeta .cara.frente .icono-espiral, .fx .mano-pista, .fx .onda-pista { animation: none; }
+}
+
+/* Mano «al pasar el ratón» (decisión de Mireia): TODAS las cartas llevan una mano y una onda, ocultas; salen siempre que se pasa el ratón por la carta
+   o se enfoca con el teclado. La mano de la primera vez (más arriba) sigue saliendo sola en la primera carta hasta que se gira una. */
+.mano-pista.al-pasar, .onda-pista.al-pasar { opacity: 0; }
+.fx .mano-pista.al-pasar, .fx .onda-pista.al-pasar { animation: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .fx .giro:hover .mano-pista.al-pasar, .fx .giro:focus-visible .mano-pista.al-pasar { animation: fa-mano 3.6s ease-in-out infinite; }
+  .fx .giro:hover .onda-pista.al-pasar, .fx .giro:focus-visible .onda-pista.al-pasar { animation: fa-onda 3.6s ease-out infinite; }
 }
 
 /* Crédito de la imagen del dorso (autor y licencia, con enlaces) */

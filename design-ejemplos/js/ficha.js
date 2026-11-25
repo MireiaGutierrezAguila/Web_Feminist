@@ -44,6 +44,7 @@
   // Pista para girar las cartas: una mano «toca» la espiral de la primera carta visible hasta que alguien gira una carta
   // por primera vez (se recuerda en el navegador; si no hay almacenamiento, la pista vuelve a salir al recargar)
   var MANO = '<svg viewBox="0 0 40 52" aria-hidden="true" focusable="false"><path d="M16 3.5c-2.2 0-4 1.8-4 4V28l-3.2-3.4c-1.6-1.7-4.3-1.7-5.8 0-1.4 1.5-1.4 3.8 0 5.3l11.2 12.4c2.4 2.7 5.6 3.8 8.8 3.8h6.4c5.5 0 10-4.5 10-10V25.500c0-2.2-1.8-4-4-4-.9 0-1.700.3-2.400.8-.8-1.100-2.100-1.800-3.500-1.800-1 0-1.900.3-2.600.8-.8-1.100-2.100-1.800-3.500-1.800H20V7.500c0-2.200-1.800-4-4-4z" fill="#F0D58A" stroke="#3a2a00" stroke-width="2" stroke-linejoin="round"/></svg>';
+  F.manoSvg = MANO; // la portada también la usa en la mano que sale al pasar el ratón por cualquier carta
 
   F.pistaGiro = function (car) {
     var visto = false;
