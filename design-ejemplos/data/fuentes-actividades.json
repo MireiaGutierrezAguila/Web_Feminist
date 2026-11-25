@@ -3294,6 +3294,33 @@
           "url": "https://commons.wikimedia.org/wiki/File:Emmeline_Pankhurst_portrait,_New_York_1913.jpg"
         }
       ]
+    },
+    {
+      "donde": {
+        "tipo": "actividad",
+        "actividad": "glosario",
+        "etiqueta": "Glosario feminista · 136 palabras",
+        "detalle": "",
+        "mes": null,
+        "orden": 9000
+      },
+      "dato": "Definiciones de las 136 palabras del glosario (castellano y catalán), reproducidas sin cambios",
+      "sub": "Glosario de «Dones i feminismes», Ajuntament de Barcelona (consultado el 25-11-2026). Su aviso legal permite reutilizar la información si no se altera, no se distorsiona su sentido y se cita la fuente. La versión inglesa no existe en la fuente: la traduce Claude y está pendiente de revisión.",
+      "region": "",
+      "fuentes": [
+        {
+          "nombre": "Ajuntament de Barcelona: Glosario (castellano)",
+          "url": "https://ajuntament.barcelona.cat/dones/es/glosario"
+        },
+        {
+          "nombre": "Ajuntament de Barcelona: Glossari (català)",
+          "url": "https://ajuntament.barcelona.cat/dones/ca/glossari"
+        },
+        {
+          "nombre": "Ajuntament de Barcelona: Aviso legal (condiciones de reutilización)",
+          "url": "https://ajuntament.barcelona.cat/dones/es/aviso-legal"
+        }
+      ]
     }
   ]
 }

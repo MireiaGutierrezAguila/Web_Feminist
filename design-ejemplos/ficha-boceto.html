@@ -44,7 +44,11 @@
     .mini .nombre { font-family: var(--fuente-nombres); font-weight: 800; text-align: center; font-size: .95rem; background: #16122a; border: 2px solid var(--oro); border-radius: 8px; padding: 8px 6px; }
     .boton-ver { font: inherit; font-weight: 700; color: var(--texto); background: transparent; border: 2px solid var(--oro); border-radius: 10px; padding: 11px 14px; min-height: 44px; cursor: pointer; }
     .boton-ver:hover { background: rgba(217,178,95,.16); }
-    :focus-visible { outline: 3px solid var(--oro-claro); outline-offset: 3px; }
+    /* Foco con teclado: brillo dorado detrás, no un cuadrado. drop-shadow sigue la forma real (también en botones con borde de imagen y en SVG).
+     Los campos de texto y los contenedores con scroll llevan un brillo normal (box-shadow), para no iluminar todo su contenido. */
+  html :focus-visible { outline: none; }
+  html :focus-visible:not([tabindex="-1"]) { filter: drop-shadow(0 0 5px rgba(232, 206, 134, .95)) drop-shadow(0 0 12px rgba(201, 162, 75, .75)); }
+  html input:focus-visible, html select:focus-visible, html textarea:focus-visible, html [tabindex="0"]:not(a):not(button):not(summary):not(svg):not(g):not(path):focus-visible { filter: none; box-shadow: 0 0 12px 3px rgba(232, 206, 134, .7); }
 
     /* ---------- Ficha abierta ---------- */
     .ficha { display: none; position: relative; border-radius: 22px; padding: 18px; background: radial-gradient(120% 80% at 20% 0%, var(--noche-2), var(--noche) 70%); border: 3px solid var(--oro); box-shadow: 0 0 0 4px #0d0d12, 0 0 0 6px rgba(217,178,95,.55), 0 20px 40px rgba(0,0,0,.6); }
@@ -223,5 +227,6 @@
       }).catch(function () { fila.appendChild(el('li', null, 'No se pudieron cargar los datos de las mujeres.')); });
     })();
   </script>
+<script src="js/estela.js"></script>
 </body>
 </html>

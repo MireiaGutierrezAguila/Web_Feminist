@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/encaje-pie.css">
 <style>
   :root {
     --negro: #101010; --blanco: #F5F5F0; --morado: #6B2D8C; --oro: #C9A24B; --oro-claro: #E8CE86; --rosa: #C2386E; --verdeazul: #127C86; --naranja: #E8762B;
@@ -21,7 +22,11 @@
   }
   * { box-sizing: border-box; }
   body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--fondo); color: var(--blanco); font-family: var(--fuente-texto); font-size: 1rem; line-height: 1.5; }
-  :focus-visible { outline: 3px solid var(--oro-claro); outline-offset: 3px; }
+  /* Foco con teclado: brillo dorado detrás, no un cuadrado. drop-shadow sigue la forma real (también en botones con borde de imagen y en SVG).
+     Los campos de texto y los contenedores con scroll llevan un brillo normal (box-shadow), para no iluminar todo su contenido. */
+  html :focus-visible { outline: none; }
+  html :focus-visible:not([tabindex="-1"]) { filter: drop-shadow(0 0 5px rgba(232, 206, 134, .95)) drop-shadow(0 0 12px rgba(201, 162, 75, .75)); }
+  html input:focus-visible, html select:focus-visible, html textarea:focus-visible, html [tabindex="0"]:not(a):not(button):not(summary):not(svg):not(g):not(path):focus-visible { filter: none; box-shadow: 0 0 12px 3px rgba(232, 206, 134, .7); }
   a { color: var(--oro-claro); }
   .envoltorio { width: min(1040px, 100% - 32px); margin-inline: auto; }
   header.cab { padding: 18px 0 4px; }
@@ -159,7 +164,7 @@
 </main>
 
 <footer><div class="envoltorio">
-  <p class="firma">Web diseñada y creada por Mireia Gutiérrez Águila<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:.75rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.85">Conoce su historia</a></p>
+  <p class="firma">Web diseñada y creada por Mireia Gutiérrez Águila<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:1rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.9">Conoce su historia</a></p>
   <p class="fuente-pie ref-enlace" id="refEnlace"></p>
 </div></footer>
 
@@ -294,5 +299,6 @@
   }).catch(function () { $('btnEmpezar').hidden = true; var e = $('msgError'); e.textContent = TXT.errorCarga; e.hidden = false; });
 })();
 </script>
+<script src="js/estela.js"></script>
 </body>
 </html>
