@@ -86,9 +86,20 @@
   .fuente-pie { margin: 10px 0 0; font-size: .85rem; color: var(--suave); }
   .fuente-pie a { color: var(--oro-claro); }
   @media (prefers-reduced-motion: reduce) { .abc button, .abc button img, .termino { transition: none; } .termino.destacado { animation: none; } .abc button:hover { transform: none; } }
+  /* fondo de espirales irregulares, muy suaves (iguales que en las actividades); el contenido va por encima */
+  .fondo-esp { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+  .esp { position: absolute; }
+  .esp.e1 { left: 3%; top: 9%; width: min(250px, 55vw); opacity: .075; animation: gira2 80s linear infinite; }
+  .esp.e2 { right: 2%; top: 34%; width: min(400px, 80vw); opacity: .065; animation: gira1 110s linear infinite; }
+  .esp.e3 { left: 9%; bottom: 3%; width: min(540px, 100vw); opacity: .055; animation: gira2 140s linear infinite; }
+  @keyframes gira1 { to { transform: rotate(360deg); } } @keyframes gira2 { to { transform: rotate(-360deg); } }
+  .fondo-esp.quieto .esp { animation: none; }
+  @media (prefers-reduced-motion: reduce) { .esp { animation: none; } }
+  header.cab, main, footer { position: relative; z-index: 1; }
 </style>
 </head>
 <body>
+<div class="fondo-esp" aria-hidden="true"><svg class="esp e1" id="esp1" viewBox="-400 -400 800 800"></svg><svg class="esp e2" id="esp2" viewBox="-400 -400 800 800"></svg><svg class="esp e3" id="esp3" viewBox="-400 -400 800 800"></svg></div>
 <header class="cab"><div class="envoltorio">
   <a class="logo" href="propuesta-d-mezcla.html">♀ Feminist</a>
   <h1 id="titulo"></h1>
@@ -207,6 +218,27 @@
     $('qLimpiar').addEventListener('click', function () { verLetra(letras[0]); $('q').focus(); });
     window.addEventListener('hashchange', hash);
   }).catch(function () { var e = $('msgError'); e.textContent = TXT.errorCarga; e.hidden = false; });
+})();
+</script>
+<script>
+/* Espirales de fondo irregulares (como las de la portada y las actividades). Si en otra página se pulsó «Parar efectos», aquí no giran. */
+(function () {
+  function irregular(vueltas, escala, semilla) {
+    var pts = [];
+    for (var t = 0; t <= vueltas * 2 * Math.PI; t += 0.12) {
+      var r = escala * t * (1 + 0.11 * Math.sin(t * 1.3 + semilla) + 0.07 * Math.sin(t * 3.1 + 2 * semilla)), a = t + 0.06 * Math.sin(t * 2.2 + semilla);
+      pts.push((r * Math.cos(a)).toFixed(1) + ' ' + (r * Math.sin(a)).toFixed(1));
+    }
+    return 'M' + pts.join(' L');
+  }
+  function pintar(id, vueltas, escala, semilla) {
+    var p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    p.setAttribute('d', irregular(vueltas, escala, semilla)); p.setAttribute('fill', 'none'); p.setAttribute('stroke', '#F5F5F0');
+    p.setAttribute('stroke-width', '15'); p.setAttribute('stroke-linecap', 'round'); p.setAttribute('stroke-linejoin', 'round');
+    document.getElementById(id).appendChild(p);
+  }
+  [['esp1', 11, 4.4, 1.7], ['esp2', 8, 6.2, 4.1], ['esp3', 9, 5.2, 2.9]].forEach(function (e) { pintar(e[0], e[1], e[2], e[3]); });
+  try { if (localStorage.getItem('feminist-sin-efectos') === '1') { document.querySelector('.fondo-esp').classList.add('quieto'); } } catch (e) { /* sin almacenamiento */ }
 })();
 </script>
 <script src="js/estela.js"></script>

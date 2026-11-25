@@ -126,6 +126,19 @@
     .disco::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 34% 28%, rgba(255,255,255,.4), transparent 42%), radial-gradient(circle, transparent 52%, rgba(0,0,0,.5) 100%); }
     @keyframes vuelta { to { transform: rotate(360deg); } }
 
+    /* Espirales sutiles de fondo en la parte de abajo de la portada: pocas, muy suaves y repartidas entre las secciones. Solo giran con los efectos activados. */
+    main { position: relative; }
+    /* z-index -1 (detrás del contenido) en vez de dar z-index al contenido: así no se crea una capa aislada y el vídeo del juego sigue fundiendo su negro con el fondo (mix-blend-mode) */
+    .fondo-bajo { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: -1; }
+    .fondo-bajo .esp { position: absolute; }
+    .fondo-bajo .b1 { left: -90px; top: 4%;  width: min(320px, 62vw); opacity: .07;  animation: gira2 130s linear infinite; }
+    .fondo-bajo .b2 { right: -110px; top: 21%; width: min(440px, 78vw); opacity: .06;  animation: gira3 160s linear infinite; }
+    .fondo-bajo .b3 { left: 2%; top: 44%; width: min(360px, 66vw); opacity: .06;  animation: gira3 140s linear infinite; }
+    .fondo-bajo .b4 { right: -60px; top: 66%; width: min(330px, 62vw); opacity: .07;  animation: gira2 120s linear infinite; }
+    .fondo-bajo .b5 { left: -120px; top: 85%; width: min(460px, 80vw); opacity: .055; animation: gira3 170s linear infinite; }
+    body:not(.fx) .fondo-bajo .esp { animation: none; }
+    @media (prefers-reduced-motion: reduce) { .fondo-bajo .esp { animation: none; } }
+
     /* ---------- Títulos: cinta torcida en morado con la letra de A ---------- */
     .bloque h2 { display: inline-block; background: var(--morado); color: var(--blanco); padding: .3em .7em; transform: rotate(-1.2deg); box-shadow: 5px 5px 0 var(--blanco); font-size: clamp(1.25rem, 4.6vw, 2.05rem); font-weight: 700; margin-bottom: 22px; line-height: 1.25; }
     .bloque .intro { margin-top: 4px; }
@@ -158,12 +171,19 @@
     .act-tarjeta:hover img, .act-tarjeta:focus-visible img { transform: scale(1.05); filter: brightness(1.08); }
     .act-tarjeta:hover span, .act-tarjeta:focus-visible span { color: #fff; text-shadow: 0 1px 0 #2a1033, 0 0 10px #E8CE86, 0 0 20px #C9A24B; }
     @media (prefers-reduced-motion: reduce) { .act-tarjeta img { transition: none; } .act-tarjeta:hover img, .act-tarjeta:focus-visible img { transform: none; } }
-    .glosario li { border-width: 4px; font-size: .95rem; padding: 0; }
-    .glosario li a { display: block; padding: 10px 18px; color: inherit; text-decoration: none; border-radius: 999px; }
-    .glosario li:hover { filter: brightness(1.08); }
-    .glosario li a:focus-visible { outline: none; box-shadow: 0 0 12px 4px rgba(232,206,134,.75); }
-    .glosario li:nth-child(4n+1) { border-color: var(--rosa); } .glosario li:nth-child(4n+2) { border-color: var(--verdeazul); }
-    .glosario li:nth-child(4n+3) { border-color: var(--naranja); } .glosario li:nth-child(4n) { border-color: #8a4fc2; }
+    /* Palabras del glosario: tarjetas con la letra dibujada por Mireia y la palabra debajo (6 en una fila en ordenador, 3 en tableta, 2 en móvil) */
+    .glo-tarjetas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    @media (min-width: 560px) { .glo-tarjetas { grid-template-columns: repeat(3, 1fr); } }
+    @media (min-width: 1000px) { .glo-tarjetas { grid-template-columns: repeat(6, 1fr); } }
+    .glo-tarjeta { display: flex; flex-direction: column; height: 100%; container-type: inline-size; overflow: hidden; border-radius: 16px; border: 3px solid var(--oro); text-decoration: none;
+      background: radial-gradient(circle at 50% 40%, var(--halo, rgba(138,79,194,.5)) 0, rgba(16,16,16,0) 68%), #101010; box-shadow: 0 6px 14px rgba(0,0,0,.5); }
+    .glo-img { position: relative; display: block; aspect-ratio: 1; }
+    .glo-img img { position: absolute; inset: 6%; width: 88%; height: 88%; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,.6)); transition: transform .4s ease; }
+    .glo-tarjeta span:last-child { min-height: 2.5em; display: grid; place-items: center; padding: 0 6px 12px; text-align: center; overflow-wrap: anywhere;
+      font-family: var(--fuente-titulos); font-weight: 700; font-size: 7.2cqw; line-height: 1.15; letter-spacing: .02em; color: var(--tinta, #DDBEE6); text-shadow: 0 1px 0 #2a1033, 0 2px 5px rgba(10,2,16,.85); }
+    .glo-tarjeta:hover img, .glo-tarjeta:focus-visible img { transform: translateY(-3px) scale(1.06); }
+    .glo-tarjeta:hover span:last-child, .glo-tarjeta:focus-visible span:last-child { color: #fff; text-shadow: 0 1px 0 #2a1033, 0 0 10px #E8CE86, 0 0 20px #C9A24B; }
+    @media (prefers-reduced-motion: reduce) { .glo-img img { transition: none; } .glo-tarjeta:hover img, .glo-tarjeta:focus-visible img { transform: none; } }
 
     /* ---------- Vídeo del juego (en bucle): el propio vídeo lleva el marco de zarcillos de Mireia ---------- */
     #juego { overflow-x: clip; }
@@ -227,7 +247,7 @@
       .hero h1 { font-size: clamp(1.6rem, 2.7vw, 2.15rem); }   /* cada frase del título en su caja y en una línea */
       .poste { margin-top: 10px; }
       .calendario { position: absolute; margin: 0; right: max(16px, calc((100% - 1100px) / 2)); top: 50px; width: min(340px, 38%); max-width: none; }
-      .nombres { position: absolute; z-index: 1; right: max(16px, calc((100% - 1100px) / 2)); top: 440px; bottom: 190px; width: min(46%, 520px); padding: 0; align-content: center; justify-content: flex-end; gap: 22px 34px; }
+      .nombres { position: absolute; z-index: 1; right: max(16px, calc((100% - 1100px) / 2)); top: 440px; bottom: 190px; width: min(46%, 520px); padding: 0; align-content: center; justify-content: flex-end; gap: 10px 34px; }
       .nombres a { font-size: clamp(1rem, 1.5vw, 1.2rem); }
       .nombres a:nth-child(3n+1) { font-size: clamp(1.1rem, 1.9vw, 1.5rem); }
     }
@@ -307,6 +327,7 @@
   </section>
 
   <main>
+    <div class="fondo-bajo" aria-hidden="true"><svg class="esp b1" id="bajo1" viewBox="-400 -400 800 800"></svg><svg class="esp b2" id="bajo2" viewBox="-400 -400 800 800"></svg><svg class="esp b3" id="bajo3" viewBox="-400 -400 800 800"></svg><svg class="esp b4" id="bajo4" viewBox="-400 -400 800 800"></svg><svg class="esp b5" id="bajo5" viewBox="-400 -400 800 800"></svg></div>
     <div class="wrap">
 
       <section class="bloque" id="mujeres">
@@ -358,13 +379,13 @@
         <h2>Glosario feminista</h2>
         <p class="intro">Palabras que conviene conocer, explicadas por profesionales. Toca una para ver su significado.</p>
         <!-- Palabras de ejemplo: todas existen en el glosario del Ayuntamiento de Barcelona (data/glosario.json). Cada una lleva a su definición. -->
-        <ul class="glosario">
-          <li><a href="glosario-boceto.html#sororidad" target="_blank" rel="noopener" aria-label="sororidad (se abre en una pestaña nueva)">sororidad</a></li>
-          <li><a href="glosario-boceto.html#techo-de-cristal" target="_blank" rel="noopener" aria-label="techo de cristal (se abre en una pestaña nueva)">techo de cristal</a></li>
-          <li><a href="glosario-boceto.html#brecha-salarial-de-genero" target="_blank" rel="noopener" aria-label="brecha salarial (se abre en una pestaña nueva)">brecha salarial</a></li>
-          <li><a href="glosario-boceto.html#microviolencias-machistas" target="_blank" rel="noopener" aria-label="microviolencias machistas (se abre en una pestaña nueva)">microviolencias machistas</a></li>
-          <li><a href="glosario-boceto.html#empoderamiento" target="_blank" rel="noopener" aria-label="empoderamiento (se abre en una pestaña nueva)">empoderamiento</a></li>
-          <li><a href="glosario-boceto.html#interseccionalidad" target="_blank" rel="noopener" aria-label="interseccionalidad (se abre en una pestaña nueva)">interseccionalidad</a></li>
+        <ul class="glo-tarjetas">
+          <li><a class="glo-tarjeta" style="--halo: rgba(194,56,110,.55); --tinta: #FFC4DF" href="glosario-boceto.html#sororidad" target="_blank" rel="noopener" aria-label="sororidad (se abre en una pestaña nueva)"><span class="glo-img"><img src="img/opt/glosario/letra-s.webp" alt="" loading="lazy" decoding="async"></span><span>sororidad</span></a></li>
+          <li><a class="glo-tarjeta" style="--halo: rgba(18,124,134,.6); --tinta: #C4F0E2" href="glosario-boceto.html#techo-de-cristal" target="_blank" rel="noopener" aria-label="techo de cristal (se abre en una pestaña nueva)"><span class="glo-img"><img src="img/opt/glosario/letra-t.webp" alt="" loading="lazy" decoding="async"></span><span>techo de cristal</span></a></li>
+          <li><a class="glo-tarjeta" style="--halo: rgba(232,118,43,.5); --tinta: #FFD9B5" href="glosario-boceto.html#brecha-salarial-de-genero" target="_blank" rel="noopener" aria-label="brecha salarial (se abre en una pestaña nueva)"><span class="glo-img"><img src="img/opt/glosario/letra-b.webp" alt="" loading="lazy" decoding="async"></span><span>brecha salarial</span></a></li>
+          <li><a class="glo-tarjeta" style="--halo: rgba(138,79,194,.6); --tinta: #DCC8FF" href="glosario-boceto.html#microviolencias-machistas" target="_blank" rel="noopener" aria-label="microviolencias machistas (se abre en una pestaña nueva)"><span class="glo-img"><img src="img/opt/glosario/letra-m.webp" alt="" loading="lazy" decoding="async"></span><span>microviolencias machistas</span></a></li>
+          <li><a class="glo-tarjeta" style="--halo: rgba(194,56,110,.55); --tinta: #FFC4DF" href="glosario-boceto.html#empoderamiento" target="_blank" rel="noopener" aria-label="empoderamiento (se abre en una pestaña nueva)"><span class="glo-img"><img src="img/opt/glosario/letra-e.webp" alt="" loading="lazy" decoding="async"></span><span>empoderamiento</span></a></li>
+          <li><a class="glo-tarjeta" style="--halo: rgba(18,124,134,.6); --tinta: #C4F0E2" href="glosario-boceto.html#interseccionalidad" target="_blank" rel="noopener" aria-label="interseccionalidad (se abre en una pestaña nueva)"><span class="glo-img"><img src="img/opt/glosario/letra-i.webp" alt="" loading="lazy" decoding="async"></span><span>interseccionalidad</span></a></li>
         </ul>
         <div class="botones" style="margin-top:22px"><a class="btn" href="glosario-boceto.html" target="_blank" rel="noopener" aria-label="Ver más palabras (se abre en una pestaña nueva)">Ver más palabras</a></div>
       </section>
@@ -390,6 +411,26 @@
 
   <script src="js/comun.js"></script>
   <script src="js/ficha.js"></script>
+  <script>
+  /* Espirales irregulares de la parte de abajo (mismas que en las actividades) */
+  (function () {
+  function irregular(vueltas, escala, semilla) {
+    var pts = [];
+    for (var t = 0; t <= vueltas * 2 * Math.PI; t += 0.12) {
+      var r = escala * t * (1 + 0.11 * Math.sin(t * 1.3 + semilla) + 0.07 * Math.sin(t * 3.1 + 2 * semilla)), a = t + 0.06 * Math.sin(t * 2.2 + semilla);
+      pts.push((r * Math.cos(a)).toFixed(1) + ' ' + (r * Math.sin(a)).toFixed(1));
+    }
+    return 'M' + pts.join(' L');
+  }
+  function pintar(id, vueltas, escala, semilla) {
+    var p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    p.setAttribute('d', irregular(vueltas, escala, semilla)); p.setAttribute('fill', 'none'); p.setAttribute('stroke', '#F5F5F0');
+    p.setAttribute('stroke-width', '15'); p.setAttribute('stroke-linecap', 'round'); p.setAttribute('stroke-linejoin', 'round');
+    document.getElementById(id).appendChild(p);
+  }
+    [['bajo1', 10, 4.6, 0.9], ['bajo2', 8, 6.0, 3.3], ['bajo3', 9, 5.2, 5.1], ['bajo4', 11, 4.4, 2.2], ['bajo5', 8, 6.2, 4.4]].forEach(function (e) { pintar(e[0], e[1], e[2], e[3]); });
+  })();
+  </script>
   <script src="js/estela.js"></script>
   <script>
     F.iniciar();
@@ -576,13 +617,14 @@
       var nombres = document.getElementById('nombres');
       // Cinco zonas (las rectángulos rosas de Mireia): 3 + 2 + 2 + 2 + 2 nombres. En pantallas estrechas las zonas "desaparecen" (display: contents)
       var reparto = [3, 2, 2, 2, 2], zonas = [], alineaciones = ['flex-start', 'center', 'flex-end'];
+      var INCLINACIONES = [-8, 5, -4, 9, -7, 4, -10, 7, -3, 6, -9];
       reparto.forEach(function (_, z) { var d = F.el('div', 'zona z' + (z + 1)); nombres.appendChild(d); zonas.push(d); });
       var z = 0, dentro = 0;
       F.mujeres.forEach(function (m, n) {
         var a = F.el('a', '', m.nombre);
         a.href = '#mujeres';
         a.style.setProperty('--c', COLORES_NOMBRE[n % COLORES_NOMBRE.length]);
-        a.style.setProperty('--g', ((n % 5) - 2) * 1.6 + 'deg');
+        a.style.setProperty('--g', INCLINACIONES[n % INCLINACIONES.length] + 'deg');   // cada nombre torcido de forma distinta (hasta ±10°), también sin efectos
         a.style.setProperty('--al', alineaciones[(n * 2 + z) % 3]); // cada nombre en un punto distinto de su zona
         a.addEventListener('click', function (e) {
           e.preventDefault();
