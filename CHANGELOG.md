@@ -3,6 +3,16 @@
 Cambios importantes del proyecto, de lo más reciente a lo más antiguo.
 
 
+## 2026-11-27
+
+- **Portada: botón «Ver el juego»** enlaza a la página del juego en el portfolio de Mireia (`…/Portfolio_Mireia/juegos/feminist.html`), en pestaña nueva. El cartel «Quién lo hizo» ya bajaba a «Hecha por una mujer informática»; Mireia da esa sección por buena (debajo, el pie lleva «Conoce su historia» a su portfolio).
+
+- **Calendario: días vacíos rellenados (decisión de Mireia tras revisar las pistas).**
+  - 21 entradas nuevas verificadas con fuentes propias (agente investigador, 2 fuentes abiertas cada una; las de prensa de entretenimiento, librerías o con el día solo en una fuente marcadas «fuentes básicas») y 2 promocionadas a «verificada» (Poniatowska 19-may; Trece Rosas 5-ago, a la que se quita la marca «sensible» porque Mireia la eligió, con los 13 nombres en la fuente). Texto propio en es/ca/en. Varias fechas de las pistas estaban mal y se pusieron en su día real: Berta Cáceres 3-mar (no 2), Emma Goldman 11-feb-1916 (no 28-mar-1915), amnistía de las sufragistas 10-ago (no 12), Lola Vendetta 2-mar-2017, «Uñas sucias» 29-oct-2026.
+  - **Lemas en los días sin efeméride:** la portada enseña una frase de `data/pancarta-frases.json` (siempre la misma para el mismo día del año) con la etiqueta «Lema feminista» y otro estilo; no lleva fuente. Sustituye al aviso «Hoy no tenemos efeméride» y a las entradas «sin día» como relleno. Hoy salen lemas en 60 días (54 huecos + 6 días con solo entradas «sensibles»). La lista del calendario centra sin cortar (`align-content: safe center`).
+  - Segunda tanda (Mireia quiso incluirlas): Sara García (23-may-2025, Universidad de La Rioja; la pista decía 14-may en León), Cristina Almeida (24-jul-1944, ficha del Congreso) y Khadija Amin (15-ago-2021, los talibanes la apartan del informativo; su nacimiento no es verificable). Mulleres de Negro: sin ninguna fuente, no se añade. Guardadas como «revisar» (no se ven): Gloria Giner, Rosa M.ª Calaf, Emília de Sousa Costa, Eva Hache, Henar Álvarez (19-nov), I Congreso de Feminismo Romaní (17-nov-2017) y Día de la Educación No Sexista. Pasadas a «sin día»: Haraway (1985) y Christine de Pizan (1364). Descartada: Celia Amorós.
+  - El archivo de pistas (`docs/calendario-pistas-STES-privado.xlsx`) y la copia con respuestas siguen siendo privados: no subir a git.
+
 ## 2026-11-25
 
 - **Pistas para los días vacíos del calendario (archivo de trabajo privado):** `docs/calendario-pistas-STES-privado.xlsx` (72 días, 88 pistas) con lo que trae el calendario de pared del STES 2026 para esos días, resumido con palabras de Claude (lectura de imagen con IA, puede tener errores) y con columnas para que Mireia decida (Usar / Descartar / Buscar fuente). Solo son pistas: nada se copia a la web y cada dato usado se redactará con palabras propias y 2 fuentes propias. **No subir a git** (deriva de un PDF CC BY-NC-ND).

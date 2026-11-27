@@ -233,10 +233,14 @@
     .cal-dia { position: absolute; left: 11%; right: 10%; top: 25%; height: 16%; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
     .cal-num { font-family: var(--fuente-titulos); font-weight: 900; font-size: 18cqw; line-height: 1; color: #fffaf0; -webkit-text-stroke: 3px #1a1420; paint-order: stroke fill; text-shadow: 3px 3px 0 rgba(26,20,32,.5); }
     .cal-semana { font-family: "Pirata One", var(--fuente-titulos); font-weight: 400; font-size: 8cqw; letter-spacing: .02em; color: #1a1420; text-transform: uppercase; line-height: 1; }
-    .cal-frases { position: absolute; left: 11%; right: 10%; top: 44%; bottom: 14%; margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; align-content: center; overflow: auto; scrollbar-width: none; }
+    .cal-frases { position: absolute; left: 11%; right: 10%; top: 44%; bottom: 14%; margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; align-content: safe center; overflow: auto; scrollbar-width: none; }
     .cal-frases li { border-left: 5px solid var(--magenta); padding: 2px 0 2px 10px; font-size: 4.6cqw; line-height: 1.38; color: #2a1c14; }
     .cal-frases cite { display: block; margin-top: 3px; font-style: normal; font-size: 3.7cqw; color: #5a4636; }
     .cal-frases .cal-vacio { border-left-color: #8a7aa0; color: #5a4636; font-style: italic; }
+    /* lema de pancarta para los días sin efeméride: más grande, entre comillas, con una etiqueta pequeña debajo */
+    .cal-frases .cal-lema { border-left-color: var(--oro); }
+    .cal-frases .cal-lema q { display: block; font-style: italic; font-weight: 700; font-size: 5.2cqw; line-height: 1.3; color: #2a1c14; quotes: "«" "»"; }
+    .cal-frases .cal-lema-etiqueta { display: block; margin-top: 6px; font-size: 3.5cqw; letter-spacing: .06em; text-transform: uppercase; color: #6b5440; }
     .cal-frases .pendiente { background: #E8CE86; color: #3a2a00; padding: 0 6px; border-radius: 4px; }
     @media (min-width: 800px) {
       .hero { display: block; min-height: 640px; }
@@ -344,7 +348,7 @@
             <p>Es divertido, reivindicativo y feminista, por supuesto. En él te enfrentarás al patriarcado, superarás obstáculos cargados de desigualdad y reflexionarás sobre nuestra lucha.</p>
             <p>Pero no te preocupes: cuando te quedes sin fuerzas, las grandes mujeres de la historia te entregarán su energía y sabiduría. Visítalas, descubre sus historias (científicas, artistas y líderes que cambiaron el mundo) y vuelve al camino más fuerte.</p>
             <div class="botones">
-              <a class="btn" href="#">Ver el juego</a>
+              <a class="btn" href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/juegos/feminist.html" target="_blank" rel="noopener" aria-label="Ver el juego (se abre en una pestaña nueva)">Ver el juego</a>
               <a class="btn alt btn-play" href="https://play.google.com/store/apps/details?id=com.mireiaguila9.feminist&amp;utm_source=emea_Med" target="_blank" rel="noopener" aria-label="Google Play (se abre en una pestaña nueva)"><img src="img/opt/android-robot.webp" alt="" width="125" height="218"><span>Google Play</span></a>
             </div>
             <!-- Código QR (de Mireia, hecho con Canva): lleva a la ficha del juego en Google Play. Solo se ve con ratón y pantalla ancha: en el móvil ya está el botón -->
@@ -482,7 +486,7 @@
 
     // Calendario: la fecha sale del reloj del navegador; la efeméride, de data/calendario.json (clave "MM-DD")
     (function () {
-      var datos = null;
+      var datos = null, lemas = null;
       var mayus = function (t) { return t.charAt(0).toUpperCase() + t.slice(1); };
       var dos = function (n) { return ('0' + n).slice(-2); };
       var diaDelAnio = function (d) { return Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 86400000); };
@@ -511,27 +515,22 @@
            Prioridad: la principal, luego una ancla, luego el resto. La fuente no se muestra aquí: está en los datos */
         var visibles = lista.filter(function (e) { return e.estado === 'verificada' && (!e.sensible || verSensibles); });
         var elegida = visibles.filter(function (e) { return e.principal; })[0] || visibles.filter(function (e) { return e.ancla; })[0] || visibles[0];
-        var etiqueta = '';
-        if (!elegida) {
-          /* Día sin efeméride: se enseña una entrada «sin día» (sección sinDia). Primero las del mes actual
-             («Este mes: …»); si no hay, las que solo tienen año («Sin día exacto, …»), rotando según el día del año */
-          var sin = (datos.sinDia || []).filter(function (e) { return (e.estado === 'verificada' || e.estado === 'parcial') && (!e.sensible || verSensibles); });
-          var delMes = sin.filter(function (e) { return e.mes === hoy.getMonth() + 1; });
-          var grupo = delMes.length ? delMes : sin.filter(function (e) { return !e.mes; });
-          if (grupo.length) {
-            elegida = grupo[diaDelAnio(hoy) % grupo.length];
-            /* Texto de interfaz (no es un dato): irá en el archivo de idiomas */
-            etiqueta = delMes.length ? 'Este mes: ' : 'Sin día exacto, ';
-          }
-        }
         var li = F.el('li');
         if (elegida) {
-          if (etiqueta) { li.appendChild(document.createTextNode(etiqueta)); }
           /* El año va en negrita (se crea con textContent, sin HTML, por seguridad) */
           var anio = F.el('strong');
           anio.textContent = elegida.anio + ':';
           li.appendChild(anio);
           li.appendChild(document.createTextNode(' ' + elegida.texto.es));
+        } else if (lemas && lemas.length) {
+          /* Día sin efeméride verificada (decisión de Mireia, 27-11-2026): se enseña un lema reivindicativo de las pancartas
+             (data/pancarta-frases.json). Sale siempre el mismo para el mismo día del año. No es un dato: no lleva fuente */
+          var lema = lemas[diaDelAnio(hoy) % lemas.length];
+          li.className = 'cal-lema';
+          var q = F.el('q'); q.textContent = lema.texto.es || lema.texto[lema.idioma];
+          li.appendChild(q);
+          var et = F.el('span', 'cal-lema-etiqueta'); et.textContent = 'Lema feminista';   /* texto de interfaz: irá en el archivo de idiomas */
+          li.appendChild(et);
         } else {
           /* Texto de interfaz (no es un dato): irá en el archivo de idiomas */
           li.className = 'cal-vacio';
@@ -541,8 +540,12 @@
       }
       window.pintarCalendario = pintar; /* solo para probar otras fechas en la maqueta */
       pintar(fechaInicial());
-      fetch('data/calendario.json').then(function (r) { return r.json(); }).then(function (d) {
-        datos = d;
+      Promise.all([
+        fetch('data/calendario.json').then(function (r) { return r.json(); }),
+        fetch('data/pancarta-frases.json').then(function (r) { return r.json(); }).catch(function () { return null; })
+      ]).then(function (res) {
+        datos = res[0];
+        lemas = res[1] && res[1].frases ? res[1].frases.filter(function (f) { return f.texto && (f.texto.es || f.texto[f.idioma]); }) : null;
         pintar(fechaInicial());
       }).catch(function () { /* sin datos: el calendario enseña solo la fecha */ });
     })();

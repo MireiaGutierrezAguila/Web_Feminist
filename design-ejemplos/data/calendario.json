@@ -548,6 +548,16 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Ancla. Resolución A/RES/70/212 de la Asamblea General, 22 dic 2015 (fecha del Anuario de la ONU y de los metadatos del PDF); el 11 feb es el día anual de celebración. Que se celebre desde 2016 es una inferencia (el Anuario habla de una «tercera conmemoración» en 2018): no incluido. UNESCO dice solo «desde su proclamación en 2015». Región «Mundial» por convención. Fuentes básicas."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1916, "pais": "EE. UU.", "mujer": "emma-goldman", "tema": "salud y derechos reproductivos", "region": "América del Norte",
+        "texto": { "es": "Detienen en Nueva York a la anarquista Emma Goldman por dar información sobre métodos anticonceptivos.", "ca": "Detenen a Nova York l'anarquista Emma Goldman per donar informació sobre mètodes anticonceptius.", "en": "The anarchist Emma Goldman is arrested in New York for giving out information about contraception." },
+        "fuentes": [
+          { "nombre": "PBS American Experience: Emma Goldman contra la ley", "url": "https://www.pbs.org/wgbh/americanexperience/features/goldman-she-fought-law/" },
+          { "nombre": "TIME: Emma Goldman, 1916", "url": "https://time.com/4208056/emma-goldman-1916-birth-control" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. La pista decía 28-03-1915; las fuentes dan el 11-02-1916."
       }
     ],
     "02-12": [
@@ -603,6 +613,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Relleno 2026-11-11. Alternativa del 14 feb. 14 feb 1838 en York (Maine). Sin cifra de patentes (26 o 27) ni años de patente (1870 o 1871)."
+      }
+    ],
+    "02-15": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1935, "pais": "EE. UU.", "mujer": null, "tema": "movimientos sociales y derechos", "region": "América del Norte",
+        "texto": { "es": "Nace en Brooklyn (Nueva York) Susan Brownmiller, periodista y escritora; su libro «Against Our Will» (1975) cambió la forma de entender la violación.", "ca": "Neix a Brooklyn (Nova York) Susan Brownmiller, periodista i escriptora; el seu llibre «Against Our Will» (1975) va canviar la manera d'entendre la violació.", "en": "Susan Brownmiller, journalist and writer, is born in Brooklyn (New York); her book «Against Our Will» (1975) changed how rape was understood." },
+        "fuentes": [
+          { "nombre": "Boston Globe: muere Susan Brownmiller (2025)", "url": "https://www.bostonglobe.com/2025/05/25/metro/susan-brownmiller-who-reshaped-views-about-rape-dies-90/" },
+          { "nombre": "New York State Literary Tree: Susan Brownmiller", "url": "https://nyslittree.org/?p=18719" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. Murió el 24-05-2025."
       }
     ],
     "02-16": [
@@ -794,7 +816,17 @@
     ],
     "03-02": [
       {
-        "principal": true, "tipo": "muerte", "anio": 1949, "pais": "India", "mujer": null, "tema": "arte y literatura", "region": "Asia",
+        "principal": true, "tipo": "hito", "anio": 2017, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa", "viva": true,
+        "texto": { "es": "Sale a la venta «Lola Vendetta. Más vale Lola que mal acompañada», primer libro de la ilustradora Raquel Riba Rossy, una crítica con humor a los roles de género.", "ca": "Surt a la venda «Lola Vendetta. Más vale Lola que mal acompañada», primer llibre de la il·lustradora Raquel Riba Rossy, una crítica amb humor als rols de gènere.", "en": "«Lola Vendetta. Más vale Lola que mal acompañada», the first book by illustrator Raquel Riba Rossy, goes on sale: a humorous critique of gender roles." },
+        "fuentes": [
+          { "nombre": "todostuslibros (librerías CEGAL): ficha del libro, Lumen", "url": "https://www.todostuslibros.com/busquedas?keyword=9788426403995" },
+          { "nombre": "Anika entre libros: reseña de «Lola Vendetta»", "url": "https://anikaentrelibros.com/lola-vendetta-mas-vale-lola-que-mal-acompanada" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27", "calidadFuentes": "basica",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. Mireia lo situó en «marzo de 2017»; la ficha de librería da el 02-03-2017 (Lumen). La reedición de Planeta Cómic (2024) es otra cosa."
+      },
+      {
+        "principal": false, "tipo": "muerte", "anio": 1949, "pais": "India", "mujer": null, "tema": "arte y literatura", "region": "Asia",
         "texto": { "es": "Muere Sarojini Naidu, poeta y activista india que presidió el Congreso Nacional Indio en 1925.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "EBSCO Research Starters: Sarojini Naidu", "url": "https://ebsco.com/research-starters/history/sarojini-naidu" },
@@ -824,6 +856,16 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11",
         "nota": "Relleno 2026-11-11. 3 mar 1887 en las dos fuentes. No citar la edad de Sullivan (20 o 21 según la fuente). Pasa a alternativa el 2026-11-13 porque el 3 mar tiene un ancla (el desfile sufragista de 1913)."
+      },
+      {
+        "principal": false, "tipo": "muerte", "anio": 2016, "pais": "Honduras", "mujer": null, "tema": "medio ambiente y derechos", "region": "América Latina",
+        "texto": { "es": "Asesinan en su casa de La Esperanza (Honduras) a Berta Cáceres, líder del pueblo lenca y defensora del medio ambiente.", "ca": "Assassinen a casa seva, a La Esperanza (Hondures), Berta Cáceres, líder del poble lenca i defensora del medi ambient.", "en": "Berta Cáceres, a leader of the Lenca people and environmental defender, is murdered at her home in La Esperanza (Honduras)." },
+        "fuentes": [
+          { "nombre": "Human Rights Watch: Honduras debe investigar el asesinato", "url": "https://www.hrw.org/es/news/2016/03/07/honduras-debe-investigar-asesinato-de-activista-ambiental" },
+          { "nombre": "Amnistía Internacional: asesinato de Berta Cáceres", "url": "https://www.amnesty.org/fr/latest/news/2016/03/honduras-brutal-murder-of-indigenous-leader-a-tragedy-waiting-to-happen/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. La pista decía 2 de marzo; las dos fuentes dan la madrugada del 3 de marzo."
       }
     ],
     "03-04": [
@@ -927,7 +969,17 @@
     ],
     "03-10": [
       {
-        "principal": true, "tipo": "muerte", "anio": 1897, "pais": "India", "mujer": null, "tema": "educación", "region": "Asia",
+        "principal": true, "tipo": "nacimiento", "anio": 1993, "pais": "Irak", "mujer": null, "tema": "movimientos sociales y derechos", "region": "Asia", "viva": true,
+        "texto": { "es": "Nace en Kocho (Irak) Nadia Murad, activista yazidí que denuncia la violencia sexual en la guerra; recibió el Premio Nobel de la Paz en 2018.", "ca": "Neix a Kocho (Iraq) Nadia Murad, activista iazidita que denuncia la violència sexual a la guerra; va rebre el Premi Nobel de la Pau el 2018.", "en": "Nadia Murad, a Yazidi activist who denounces sexual violence in war, is born in Kocho (Iraq); she received the Nobel Peace Prize in 2018." },
+        "fuentes": [
+          { "nombre": "Visuotinė lietuvių enciklopedija: Nadia Murad", "url": "https://www.vle.lt/straipsnis/nadia-murad/" },
+          { "nombre": "Wikipedia: Nadia Murad", "url": "https://en.wikipedia.org/wiki/Nadia_Murad" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27", "calidadFuentes": "basica",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. [VERIFICAR] con la ficha del Nobel (devolvió 403)."
+      },
+      {
+        "principal": false, "tipo": "muerte", "anio": 1897, "pais": "India", "mujer": null, "tema": "educación", "region": "Asia",
         "texto": { "es": "Muere Savitribai Phule, maestra india que en 1848 abrió en Pune lo que pudo ser la primera escuela para niñas del país.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "The News Minute: Savitribai Phule", "url": "https://www.thenewsminute.com/news/remembering-savitribai-phule-one-india-s-earliest-women-educators-her-119th-death" },
@@ -979,6 +1031,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-12", "calidadFuentes": "basica",
         "nota": "Relleno 2026-11-12. Alternativa del 13 mar. MUJER VIVA: premio con tono informativo. El 13 mar 2013 es el anuncio (la ceremonia fue en junio). La nota de prensa de ACM da 403 (no abierta). Fuentes básicas."
+      }
+    ],
+    "03-14": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1978, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa", "viva": true,
+        "texto": { "es": "Nace en Barcelona María Casado, periodista y presentadora de televisión.", "ca": "Neix a Barcelona María Casado, periodista i presentadora de televisió.", "en": "María Casado, journalist and television presenter, is born in Barcelona." },
+        "fuentes": [
+          { "nombre": "FormulaTV: María Casado", "url": "https://www.formulatv.com/personas/maria-casado/" },
+          { "nombre": "Libertad Digital: María Casado", "url": "https://www.libertaddigital.com/personajes/maria-casado/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27", "calidadFuentes": "basica",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. Libertad Digital solo da año y lugar; el día lo da FormulaTV."
       }
     ],
     "03-15": [
@@ -1091,7 +1155,17 @@
     ],
     "03-21": [
       {
-        "principal": true, "tipo": "muerte", "anio": 2021, "pais": "Egipto", "mujer": null, "tema": "arte y literatura", "region": "África",
+        "principal": true, "tipo": "hito", "anio": 1960, "pais": "Sudáfrica", "mujer": null, "tema": "derechos e igualdad", "region": "África",
+        "texto": { "es": "La policía dispara contra una protesta pacífica en Sharpeville (Sudáfrica); en su recuerdo, la ONU proclamó en 1966 el 21 de marzo Día Internacional de la Eliminación de la Discriminación Racial.", "ca": "La policia dispara contra una protesta pacífica a Sharpeville (Sud-àfrica); en record seu, l'ONU va proclamar el 1966 el 21 de març Dia Internacional de l'Eliminació de la Discriminació Racial.", "en": "Police open fire on a peaceful protest in Sharpeville (South Africa); in its memory, in 1966 the UN proclaimed 21 March the International Day for the Elimination of Racial Discrimination." },
+        "fuentes": [
+          { "nombre": "UNESCO: Día Internacional de la Eliminación de la Discriminación Racial", "url": "https://www.unesco.org/es/days/racial-discrimination-elimination-day" },
+          { "nombre": "Gobierno de Sudáfrica: 21 de marzo", "url": "https://www.gov.za/EliminationofRacialDiscrimination2023" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. Día conmemorativo (no protagonizado por mujeres); Mireia decidió usarlo. Resolución 2142 (XXI), 26-10-1966."
+      },
+      {
+        "principal": false, "tipo": "muerte", "anio": 2021, "pais": "Egipto", "mujer": null, "tema": "arte y literatura", "region": "África",
         "texto": { "es": "Muere Nawal El Saadawi, médica y escritora egipcia, autora de «Mujer en punto cero».", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "Egyptian Streets: muere Nawal El Saadawi", "url": "https://egyptianstreets.com/2021/03/21/pioneering-egyptian-feminist-nawal-el-saadawi-dies-aged-89/" }
@@ -1178,6 +1252,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Relleno 2026-11-11. Una sola fuente (institucional). Buscar Library and Archives Canada. Fuentes básicas."
+      }
+    ],
+    "03-28": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1886, "pais": "España", "mujer": null, "tema": "educación", "region": "Europa",
+        "texto": { "es": "Nace en Madrid Gloria Giner de los Ríos, profesora vinculada a la Institución Libre de Enseñanza.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: Gloria Giner de los Ríos García", "url": "https://en.wikipedia.org/wiki/Gloria_Giner_de_los_R%C3%ADos_Garc%C3%ADa" },
+          { "nombre": "Ruiz-Manjón, Cuadernos de Historia Contemporánea (UCM, 2007)", "url": "https://revistas.ucm.es/index.php/CHCO/article/view/CHCO0707220265A" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas). El día solo lo da Wikipedia; comprobar en el PDF de la UCM (no se pudo leer)."
       }
     ],
     "03-29": [
@@ -1518,6 +1604,18 @@
         "nota": "Relleno 2026-11-11. El día 25 solo lo da KCL; el Embryo Project dice solo «abril de 1953». Nature 171, 740–741 sin abrir. Fuentes básicas."
       }
     ],
+    "04-26": [
+      {
+        "principal": true, "tipo": "hito", "anio": 2008, "pais": "España", "mujer": null, "tema": "derechos e igualdad", "region": "Europa",
+        "texto": { "es": "Se celebra por primera vez en España el Día de la Visibilidad Lésbica, que después se ha extendido a otros países.", "ca": "Se celebra per primera vegada a Espanya el Dia de la Visibilitat Lèsbica, que després s'ha estès a altres països.", "en": "Lesbian Visibility Day is celebrated in Spain for the first time; it has since spread to other countries." },
+        "fuentes": [
+          { "nombre": "Amnistía Internacional España: Día de la Visibilidad Lésbica", "url": "https://www.es.amnesty.org/en-que-estamos/blog/historia/articulo/dia-de-la-visibilidad-lesbica/" },
+          { "nombre": "Expansión Política: Día de la Visibilidad Lésbica", "url": "https://politica.expansion.mx/sociedad/2022/04/26/dia-de-la-visibilidad-lesbica" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. Las fuentes abiertas no nombran a la organización que lo impulsó (FELGTB según PDFs no abiertos)."
+      }
+    ],
     "04-27": [
       {
         "principal": true, "tipo": "premio", "anio": 2011, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa",
@@ -1629,7 +1727,17 @@
     ],
     "05-06": [
       {
-        "principal": true, "tipo": "nacimiento", "anio": 1952, "pais": "Japón", "mujer": null, "tema": "ciencia y exploración", "region": "Asia", "viva": true,
+        "principal": true, "tipo": "nacimiento", "anio": 1959, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa", "viva": true,
+        "texto": { "es": "Nace en Monforte de Lemos (Lugo) Julia Otero, periodista de radio y televisión.", "ca": "Neix a Monforte de Lemos (Lugo) Julia Otero, periodista de ràdio i televisió.", "en": "Julia Otero, radio and television journalist, is born in Monforte de Lemos (Lugo)." },
+        "fuentes": [
+          { "nombre": "EcuRed: Julia Otero", "url": "https://www.ecured.cu/Julia_Otero" },
+          { "nombre": "¡Hola!: perfil de Julia Otero", "url": "https://www.hola.com/actualidad/20200420165917/julia-otero-perfil/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27", "calidadFuentes": "basica",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. "
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1952, "pais": "Japón", "mujer": null, "tema": "ciencia y exploración", "region": "Asia", "viva": true,
         "texto": { "es": "Nace Chiaki Mukai, médica y astronauta japonesa. En 1994 fue la primera japonesa en volar al espacio.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "NASA: Chiaki Mukai (PDF biográfico)", "url": "https://www.nasa.gov/wp-content/uploads/2016/01/mukai.pdf" },
@@ -1641,7 +1749,17 @@
     ],
     "05-07": [
       {
-        "principal": true, "tipo": "hito", "anio": 1849, "pais": "India", "mujer": null, "tema": "educación", "region": "Asia",
+        "principal": true, "tipo": "nacimiento", "anio": 1919, "pais": "Argentina", "mujer": null, "tema": "poder político", "region": "América Latina",
+        "texto": { "es": "Nace en Los Toldos (Argentina) Eva Duarte, conocida como Eva Perón o Evita, actriz y política.", "ca": "Neix a Los Toldos (Argentina) Eva Duarte, coneguda com a Eva Perón o Evita, actriu i política.", "en": "Eva Duarte, known as Eva Perón or Evita, actress and politician, is born in Los Toldos (Argentina)." },
+        "fuentes": [
+          { "nombre": "Gobierno de la Ciudad de Buenos Aires: Eva Duarte", "url": "https://buenosaires.gob.ar/noticias/26-de-julio-eva-duarte" },
+          { "nombre": "EcuRed: Eva Perón", "url": "https://www.ecured.cu/Eva_Perón" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. Un acta de 1945 la daba como nacida en 1922 en Junín; 1919 es la fecha aceptada."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1849, "pais": "India", "mujer": null, "tema": "educación", "region": "Asia",
         "texto": { "es": "Abre en Calcuta la escuela Bethune, una de las primeras de educación formal para niñas en la India.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "Banglapedia: Bethune College", "url": "https://en.banglapedia.org/index.php/Bethune_College" },
@@ -1709,6 +1827,16 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-22",
         "nota": "Relleno 2026-11-22 (agente). Algunas referencias dan 3 de mayo por error; las dos fuentes abiertas dan el 12."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 2022, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa", "viva": true,
+        "texto": { "es": "Helena Sotoca (Femme Sapiens) publica «Ni musas ni sumisas», un repaso ilustrado a la historia del arte occidental con perspectiva feminista.", "ca": "Helena Sotoca (Femme Sapiens) publica «Ni musas ni sumisas», un repàs il·lustrat a la història de l'art occidental amb perspectiva feminista.", "en": "Helena Sotoca (Femme Sapiens) publishes «Ni musas ni sumisas», an illustrated review of Western art history from a feminist perspective." },
+        "fuentes": [
+          { "nombre": "Casa del Libro: «Ni musas ni sumisas» (Bruguera)", "url": "https://www.casadellibro.com/libro-ni-musas-ni-sumisas/9788402426567/12804267" },
+          { "nombre": "todostuslibros (librerías CEGAL): «Ni musas ni sumisas»", "url": "https://www.todostuslibros.com/busquedas?keyword=9788402426567" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27", "calidadFuentes": "basica",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. Fecha de lanzamiento de la editorial (fichas de librería)."
       }
     ],
     "05-13": [
@@ -1785,13 +1913,13 @@
     "05-19": [
       {
         "principal": true, "tipo": "nacimiento", "anio": 1932, "pais": "México", "mujer": null, "tema": "arte y literatura", "region": "América Latina", "viva": true,
-        "texto": { "es": "Nace Elena Poniatowska, escritora y periodista. En 2013 recibió el Premio Cervantes.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "texto": { "es": "Nace en París Elena Poniatowska, escritora y periodista mexicana; ganó el Premio Cervantes 2013.", "ca": "Neix a París Elena Poniatowska, escriptora i periodista mexicana; va guanyar el Premi Cervantes 2013.", "en": "Elena Poniatowska, Mexican writer and journalist, is born in Paris; she won the 2013 Cervantes Prize." },
         "fuentes": [
-          { "nombre": "Planeta de Libros: Elena Poniatowska", "url": "https://www.planetadelibros.com/autor/elena-poniatowska/000025969" },
-          { "nombre": "Infobae: cumpleaños 94 de Elena Poniatowska (19-05-2026)", "url": "https://www.infobae.com/mexico/2026/05/19/sheinbaum-felicita-a-elena-poniatowska-por-su-cumpleanos-94-y-reconoce-su-trayectoria/" }
+          { "nombre": "Gran Enciclopèdia Catalana: Elena Poniatowska", "url": "https://www.enciclopedia.cat/gran-enciclopedia-catalana/elena-poniatowska" },
+          { "nombre": "Escritores.org: biografía de Elena Poniatowska", "url": "https://www.escritores.org/biografias/256-elena-poniatowska" }
         ],
-        "estado": "revisar", "comprobado": "2026-11-22",
-        "nota": "Relleno 2026-11-22 (agente). Mujer viva: seguía viva el 19-05-2026 según Infobae; no hay noticia posterior. Nació en París. Ninguna página abierta da la fecha completa en una sola frase."
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Relleno 2026-11-22 (agente). Mujer viva: seguía viva el 19-05-2026 según Infobae; no hay noticia posterior. Nació en París. Ninguna página abierta da la fecha completa en una sola frase. Verificada el 27-11-2026 a propuesta de Mireia (fuentes nuevas). [VERIFICAR] que sigue viva (94 años)."
       }
     ],
     "05-20": [
@@ -1808,7 +1936,17 @@
     ],
     "05-21": [
       {
-        "principal": true, "tipo": "premio", "anio": 2019, "pais": "Omán", "mujer": null, "tema": "arte y literatura", "region": "Asia", "viva": true,
+        "principal": true, "tipo": "nacimiento", "anio": 1944, "pais": "Irlanda", "mujer": null, "tema": "poder político", "region": "Europa", "viva": true,
+        "texto": { "es": "Nace en Ballina (Irlanda) Mary Robinson, abogada y primera mujer presidenta de Irlanda.", "ca": "Neix a Ballina (Irlanda) Mary Robinson, advocada i primera dona presidenta d'Irlanda.", "en": "Mary Robinson, lawyer and the first woman President of Ireland, is born in Ballina (Ireland)." },
+        "fuentes": [
+          { "nombre": "RTÉ Archives: Mary Robinson cumple 70", "url": "https://www.rte.ie/archives/2014/0521/618519-happy-birthday-mary-robinson-70-today" },
+          { "nombre": "Encyclopedia.com (Women in World History): Mary Robinson", "url": "https://encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/robinson-mary-1944" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. "
+      },
+      {
+        "principal": false, "tipo": "premio", "anio": 2019, "pais": "Omán", "mujer": null, "tema": "arte y literatura", "region": "Asia", "viva": true,
         "texto": { "es": "Jokha Alharthi gana el Man Booker International por «Celestial Bodies». Es la primera autora traducida del árabe en lograrlo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "ArabLit: Jokha Alharthi y Marilyn Booth ganan el Man Booker International", "url": "https://arablit.org/2019/05/21/jokha-al-harthi-and-marilyn-booth-win-2019-man-booker-international-for-celestial-bodies/" },
@@ -1820,7 +1958,17 @@
     ],
     "05-22": [
       {
-        "principal": true, "tipo": "nacimiento", "anio": 1846, "pais": "México", "mujer": null, "tema": "educación", "region": "América Latina",
+        "principal": true, "tipo": "nacimiento", "anio": 1884, "pais": "Reino Unido", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa",
+        "texto": { "es": "Nace en Dundee (Escocia) Wilhelmina Hay Abbott, sufragista, editora y conferenciante feminista.", "ca": "Neix a Dundee (Escòcia) Wilhelmina Hay Abbott, sufragista, editora i conferenciant feminista.", "en": "Wilhelmina Hay Abbott, suffragist, editor and feminist lecturer, is born in Dundee (Scotland)." },
+        "fuentes": [
+          { "nombre": "Dundee Women's Trail: Wilhelmina Hay Abbott", "url": "https://www.dundeewomenstrail.org.uk/?p=2203" },
+          { "nombre": "Wikipedia: Wilhelmina Hay Abbott", "url": "https://en.wikipedia.org/wiki/Wilhelmina_Hay_Abbott" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. "
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1846, "pais": "México", "mujer": null, "tema": "educación", "region": "América Latina",
         "texto": { "es": "Nace Rita Cetina Gutiérrez, maestra y poeta mexicana. En 1870 funda la revista «La Siempreviva», hecha por y para mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "México Desconocido: Rita Cetina", "url": "https://www.mexicodesconocido.com.mx/rita-cetina.html" },
@@ -1840,6 +1988,16 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-22", "calidadFuentes": "basica",
         "nota": "Relleno 2026-11-22 (agente). Una web de su empleador y un medio. Un medio indio da el 22; la mayoría el 23."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 2025, "pais": "España", "mujer": null, "tema": "ciencia y tecnología", "region": "Europa", "viva": true,
+        "texto": { "es": "La astronauta de reserva de la ESA Sara García Alonso protagoniza en la Universidad de La Rioja el encuentro «Pon en órbita tus sueños» con estudiantes.", "ca": "L'astronauta de reserva de l'ESA Sara García Alonso protagonitza a la Universitat de La Rioja la trobada «Pon en órbita tus sueños» amb estudiants.", "en": "ESA reserve astronaut Sara García Alonso headlines the «Pon en órbita tus sueños» meeting with students at the University of La Rioja." },
+        "fuentes": [
+          { "nombre": "Universidad de La Rioja: actividad «Pon en órbita tus sueños»", "url": "https://www.unirioja.es/actividades/pon-en-orbita-tus-suenos/" },
+          { "nombre": "Universidad de La Rioja: noticia del encuentro con Sara García", "url": "https://www.unirioja.es/la-astronauta-sara-garcia-protagonista-del-encuentro-pon-en-orbita-tus-suenos/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27", "calidadFuentes": "basica",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas). La pista decía 14-may en León: fue el 23-may-2025 en Logroño (el 14 se anunció). Las dos fuentes son de la misma universidad: fuentes básicas."
       }
     ],
     "05-24": [
@@ -2113,6 +2271,16 @@
         ],
         "estado": "revisar", "comprobado": "2026-11-22",
         "nota": "Relleno 2026-11-22 (agente). Solo una fuente legible, apoyada en un único sitio no abierto. Un artículo académico habla de donación notarial más que de «fundación»."
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1945, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa", "viva": true,
+        "texto": { "es": "Nace en Barcelona Rosa María Calaf, periodista y corresponsal de TVE.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: Rosa María Calaf", "url": "https://es.wikipedia.org/wiki/Rosa_María_Calaf" },
+          { "nombre": "Ajuntament de Barcelona: Rosa Maria Calaf i Solé", "url": "https://ajuntament.barcelona.cat/dones/ca/rosa-maria-calaf-sole" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas). El día solo lo da Wikipedia (el Ajuntament da año y lugar)."
       }
     ],
     "06-18": [
@@ -2141,7 +2309,17 @@
     ],
     "06-20": [
       {
-        "principal": true, "tipo": "nacimiento", "anio": 1914, "pais": "Turquía", "mujer": null, "tema": "ciencia", "region": "Asia",
+        "principal": true, "tipo": "muerte", "anio": 1933, "pais": "Alemania", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa",
+        "texto": { "es": "Muere cerca de Moscú Clara Zetkin, política alemana que en 1910 propuso crear un Día Internacional de la Mujer.", "ca": "Mor a prop de Moscou Clara Zetkin, política alemanya que el 1910 va proposar crear un Dia Internacional de la Dona.", "en": "Clara Zetkin, the German politician who in 1910 proposed creating an International Women's Day, dies near Moscow." },
+        "fuentes": [
+          { "nombre": "Museo Histórico Alemán (LeMO): Clara Zetkin", "url": "https://www.dhm.de/lemo/biografie/clara-zetkin.html" },
+          { "nombre": "Agencia Federal de Educación Cívica (bpb): Clara Zetkin", "url": "https://www.bpb.de/gesellschaft/gender/frauenbewegung/35316/clara-zetkin" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. "
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1914, "pais": "Turquía", "mujer": null, "tema": "ciencia", "region": "Asia",
         "texto": { "es": "Nace Muazzez İlmiye Çığ, sumeróloga turca. Estudió tablillas cuneiformes del museo de Estambul.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "Biyografya: Muazzez İlmiye Çığ", "url": "https://www.biyografya.com/biyografi/16493" },
@@ -2161,6 +2339,16 @@
         ],
         "estado": "revisar", "comprobado": "2026-11-22",
         "nota": "Relleno 2026-11-22 (agente). Mujer viva (comprobado 22-11-2026 sobre captura de Wikipedia). Ningún sitio institucional abierto da el día. Figura crítica con su gobierno: decide Mireia si encaja."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1981, "pais": "Latinoamérica", "mujer": null, "tema": "educación", "region": "América Latina",
+        "texto": { "es": "Se celebra el Día Internacional de la Educación No Sexista, impulsado por la Red de Educación Popular entre Mujeres de Latinoamérica y el Caribe (REPEM).", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Gobierno de Argentina: Día Internacional por la Educación No Sexista", "url": "https://www.argentina.gob.ar/noticias/21-de-junio-dia-internacional-por-la-educacion-no-sexista" },
+          { "nombre": "diainternacionalde.com: Educación No Sexista", "url": "https://www.diainternacionalde.com/ficha/dia-internacional-educacion-no-sexista" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas). Año de origen dudoso: 1981, 1989 o 1990. Si se publica, mejor sin año."
       }
     ],
     "06-22": [
@@ -2435,7 +2623,18 @@
     ],
     "07-13": [
       {
-        "principal": true, "tipo": "hito", "anio": 1976, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "principal": true, "tipo": "muerte", "anio": 1954, "pais": "México", "mujer": "frida-kahlo", "tema": "arte y literatura", "region": "América Latina",
+        "texto": { "es": "Muere la pintora Frida Kahlo en la Casa Azul de Coyoacán (Ciudad de México), la misma casa en la que nació.", "ca": "Mor la pintora Frida Kahlo a la Casa Blava de Coyoacán (Ciutat de Mèxic), la mateixa casa on va néixer.", "en": "The painter Frida Kahlo dies at the Blue House in Coyoacán (Mexico City), the same house where she was born." },
+        "fuentes": [
+          { "nombre": "México Desconocido: el día que murió Frida Kahlo", "url": "https://www.mexicodesconocido.com.mx/el-dia-que-murio-frida-kahlo.html" },
+          { "nombre": "El Universal: el día que murió Frida Kahlo", "url": "https://www.eluniversal.com.mx/cultura/el-dia-que-murio-frida-kahlo/" },
+          { "nombre": "Turismo de la Ciudad de México: Casa Azul", "url": "https://mexicocity.cdmx.gob.mx/venues/frida-kahlo-museum-casa-azul/?lang=es" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. El 14 de julio fue el funeral."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1976, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa",
         "texto": { "es": "Se presenta en Madrid «Vindicación Feminista», revista feminista que se publicó en Barcelona hasta 1979.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "Wikipedia en español: Vindicación Feminista", "url": "https://es.wikipedia.org/wiki/Vindicaci%C3%B3n_Feminista" },
@@ -2572,6 +2771,18 @@
         "nota": "Relleno 2026-11-22 (agente). Una sola fuente abierta; Te Ara dio 403. Se ha evitado «primera mujer al frente» (no respaldado por la fuente abierta)."
       }
     ],
+    "07-24": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1944, "pais": "España", "mujer": null, "tema": "justicia y violencia", "region": "Europa", "viva": true,
+        "texto": { "es": "Nace en Badajoz Cristina Almeida, abogada laboralista que defendió en los tribunales los derechos de las mujeres; fue diputada y senadora.", "ca": "Neix a Badajoz Cristina Almeida, advocada laboralista que va defensar als tribunals els drets de les dones; va ser diputada i senadora.", "en": "Cristina Almeida, a labour lawyer who defended women's rights in the courts, is born in Badajoz; she served as a member of Congress and as a senator." },
+        "fuentes": [
+          { "nombre": "Congreso de los Diputados: ficha de Cristina Almeida (VI Legislatura)", "url": "https://www.congreso.es/es/busqueda-de-diputados?p_p_id=diputadomodule&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_diputadomodule_mostrarFicha=true&codParlamentario=315&idLegislatura=VI" },
+          { "nombre": "Wikipedia: Cristina Almeida", "url": "https://es.wikipedia.org/wiki/Cristina_Almeida" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. Fecha del Congreso (también la ficha de la IV Legislatura); BuscaBiografías da 1945 (agregador). Política de partido viva: Mireia decidió incluirla. [VERIFICAR] que sigue viva antes de publicar."
+      }
+    ],
     "07-25": [
       {
         "principal": true, "tipo": "hito", "anio": 1978, "pais": "Reino Unido", "mujer": null, "tema": "salud y derechos reproductivos", "region": "Europa",
@@ -2703,14 +2914,15 @@
     ],
     "08-05": [
       {
-        "principal": true, "tipo": "hito", "anio": 1939, "pais": "España", "mujer": null, "tema": "justicia y violencia", "region": "Europa", "sensible": true,
-        "texto": { "es": "Son fusiladas en Madrid las Trece Rosas, trece jóvenes condenadas tras la Guerra Civil.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "principal": true, "tipo": "hito", "anio": 1939, "pais": "España", "mujer": null, "tema": "justicia y violencia", "region": "Europa",
+        "texto": { "es": "Son fusiladas en Madrid, junto a la tapia del cementerio del Este, las Trece Rosas: trece jóvenes condenadas por la dictadura franquista tras la Guerra Civil.", "ca": "Són afusellades a Madrid, al costat de la tàpia del cementiri de l'Est, les Tretze Roses: tretze joves condemnades per la dictadura franquista després de la Guerra Civil.", "en": "The Thirteen Roses, thirteen young women sentenced by the Franco dictatorship after the Civil War, are executed by firing squad by the wall of the Eastern Cemetery in Madrid." },
         "fuentes": [
           { "nombre": "Amnistía Internacional España: las 13 Rosas", "url": "https://www.es.amnesty.org/en-que-estamos/blog/historia/articulo/las-13-rosas-quienes-fueron-que-significan-hoy-y-por-que-su-memoria-esta-amenazada/" },
-          { "nombre": "La Moncloa: homenaje a los fusilados (Ministerio de Justicia)", "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/justicia/Paginas/2019/291019_homenajefusilados.aspx" }
+          { "nombre": "eldiario.es: la última noche de las Trece Rosas", "url": "https://www.eldiario.es/sociedad/ultima-noche-trece-rosas-fusiladas-vistieron-ayudadas-manos-temblaban_1_13427164.html" },
+          { "nombre": "El Español: los nombres de las Trece Rosas — Carmen Barrero Aguado, Martina Barroso García, Blanca Brisac Vázquez, Pilar Bueno Ibáñez, Julia Conesa Conesa, Adelina García Casillas, Elena Gil Olaya, Virtudes González García, Ana López Gallego, Joaquina López Laffite, Dionisia Manzanero Salas, Victoria Muñoz García y Luisa Rodríguez de la Fuente", "url": "https://elespanol.com/cultura/historia/20190212/muertes-trece-rosas-fusiladas-franco-mancilladas-legado/375712815_0.amp.html" }
         ],
-        "estado": "revisar", "comprobado": "2026-11-22",
-        "nota": "Relleno 2026-11-22 (agente). Dos fuentes sólidas con el 5 de agosto de 1939, pero es un fusilamiento: Mireia decide si entra con público infantil. Tono sobrio. Marcada sensible."
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Relleno 2026-11-22 (agente). Dos fuentes sólidas con el 5 de agosto de 1939, pero es un fusilamiento: Mireia decide si entra con público infantil. Tono sobrio. Marcada sensible. Verificada el 27-11-2026; Mireia la eligió, así que se quita la marca «sensible». Nombres según El Español y Wikipedia (ojo: «Manzanero Sala» en El Español, «Salas» en Wikipedia)."
       }
     ],
     "08-06": [
@@ -2734,6 +2946,16 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14",
         "nota": "Relleno 2026-11-14. Dos fuentes dan el 7 ago 2006 (la página de Planalto redirigió y no se pudo leer). Tema delicado: tono informativo, sin detalles del caso. Una alternativa del día es Derartu Tulu (primera campeona olímpica negra africana, 10.000 m de Barcelona 1992, confirmado el 7 ago por World Athletics)."
+      },
+      {
+        "principal": false, "tipo": "nacimiento", "anio": 1972, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa", "viva": true,
+        "texto": { "es": "Nace en Segovia Eva Hache, humorista y presentadora, una de las primeras mujeres al frente de un late night en España.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "FormulaTV: Eva Hache", "url": "https://www.formulatv.com/personas/eva-hache/" },
+          { "nombre": "FormulaTV: especial sobre Eva Hache (2017)", "url": "https://www.formulatv.com/noticias/70469/especial-facetas-eva-hache-television-rostro-imprescindible/" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas). Año dudoso: 1972 (FormulaTV, EcuRed) o 1971 (Wikipedia). «La primera» no se sostiene: «una de las primeras»."
       }
     ],
     "08-08": [
@@ -2770,6 +2992,16 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
         "nota": "Relleno 2026-11-14. Las dos fuentes son del mismo medio, no independientes: falta una académica o de museo. No reproducir su frase famosa (solo tradición). Fuentes básicas."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1914, "pais": "Reino Unido", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa",
+        "texto": { "es": "Al empezar la Primera Guerra Mundial, el Gobierno británico anuncia que dejará en libertad sin condiciones a las sufragistas presas.", "ca": "En començar la Primera Guerra Mundial, el Govern britànic anuncia que deixarà en llibertat sense condicions les sufragistes preses.", "en": "As the First World War begins, the British government announces that imprisoned suffragettes will be released unconditionally." },
+        "fuentes": [
+          { "nombre": "Hansard (Parlamento del Reino Unido): liberación de presas, 10-08-1914", "url": "https://api.parliament.uk/historic-hansard/commons/1914/aug/10/release-of-prisoners" },
+          { "nombre": "London Town Walks: el final de las sufragistas, agosto de 1914", "url": "https://londontownwalks.com/2014/07/26/the-end-of-the-suffragettes-august-1914/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27", "calidadFuentes": "basica",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. La pista decía 12 de agosto («el rey decreta una amnistía»); el anuncio en los Comunes fue el 10. El 12 fue la carta de Pankhurst suspendiendo la acción militante."
       }
     ],
     "08-11": [
@@ -2821,7 +3053,17 @@
     ],
     "08-15": [
       {
-        "principal": true, "tipo": "hito", "anio": 1947, "pais": "India", "mujer": null, "tema": "poder político", "region": "Asia",
+        "principal": true, "tipo": "hito", "anio": 2021, "pais": "Afganistán", "mujer": null, "tema": "justicia y violencia", "region": "Asia",
+        "texto": { "es": "Los talibanes toman Kabul y apartan de la redacción a Khadija Amin, presentadora de la televisión pública afgana, que acabará refugiada en España.", "ca": "Els talibans prenen Kabul i aparten de la redacció Khadija Amin, presentadora de la televisió pública afganesa, que acabarà refugiada a Espanya.", "en": "The Taliban take Kabul and bar Khadija Amin, a presenter on Afghan public television, from the newsroom; she will later become a refugee in Spain." },
+        "fuentes": [
+          { "nombre": "Hyphen: Khadija Amin", "url": "https://hyphenonline.com/2023/10/24/im-going-to-be-the-first-female-president-of-afghanistan-spain-khadija-amin/" },
+          { "nombre": "RTVC (Radiotelevisión Canaria): Khadiya Amin, la voz de las mujeres afganas", "url": "https://rtvc.es/khadiya-amin-la-voz-de-las-mujeres-afganas/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27", "calidadFuentes": "basica",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. La pista era su nacimiento (12-abr), sin día verificable; Mireia quería incluirla y se eligió este hecho fechado. Salida de Afganistán: 22 o 23-08-2021 según la fuente (sin usar)."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1947, "pais": "India", "mujer": null, "tema": "poder político", "region": "Asia",
         "texto": { "es": "Sarojini Naidu asume la gobernación de las Provincias Unidas, hoy Uttar Pradesh, en la India.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "Vidhan Parishad de Uttar Pradesh: gobernadores", "url": "https://www.vidhanparishadproceedings.up.gov.in/government/page/governor_tenure" },
@@ -2841,6 +3083,18 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-22",
         "nota": "Relleno 2026-11-22 (agente). Tercera fuente abierta con el mismo día: Encyclopedia.com. El lugar exacto varía, por eso no se cita. Fallecida en 1962."
+      }
+    ],
+    "08-17": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1801, "pais": "Suecia", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Nace cerca de Turku (Finlandia, entonces sueca) Fredrika Bremer, escritora y pionera de los derechos de las mujeres en Suecia.", "ca": "Neix a prop de Turku (Finlàndia, aleshores sueca) Fredrika Bremer, escriptora i pionera dels drets de les dones a Suècia.", "en": "Fredrika Bremer, writer and pioneer of women's rights in Sweden, is born near Turku (Finland, then Swedish)." },
+        "fuentes": [
+          { "nombre": "Svenskt kvinnobiografiskt lexikon: Fredrika Bremer", "url": "https://skbl.se/en/article/FredrikaBremer" },
+          { "nombre": "Store norske leksikon: Fredrika Bremer", "url": "https://snl.no/Fredrika_Bremer" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. "
       }
     ],
     "08-18": [
@@ -3301,7 +3555,17 @@
     ],
     "09-25": [
       {
-        "principal": true, "tipo": "hito", "anio": 2000, "pais": "Australia", "mujer": null, "tema": "deporte", "region": "Oceanía", "viva": true,
+        "principal": true, "tipo": "muerte", "anio": 2011, "pais": "Kenia", "mujer": null, "tema": "medio ambiente y derechos", "region": "África",
+        "texto": { "es": "Muere en Nairobi Wangari Maathai, ecologista keniana y primera mujer africana en recibir el Premio Nobel de la Paz (2004).", "ca": "Mor a Nairobi Wangari Maathai, ecologista kenyana i primera dona africana a rebre el Premi Nobel de la Pau (2004).", "en": "Wangari Maathai, Kenyan environmentalist and the first African woman to receive the Nobel Peace Prize (2004), dies in Nairobi." },
+        "fuentes": [
+          { "nombre": "ONU, Africa Renewal: muere Wangari Maathai", "url": "https://africarenewal.un.org/en/magazine/wangari-maathai-woman-trees-dies" },
+          { "nombre": "Brookings Institution: in memoriam Wangari Maathai", "url": "https://www.brookings.edu/articles/in-memoriam-nobel-laureate-wangari-maathai-1940-2011/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. "
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 2000, "pais": "Australia", "mujer": null, "tema": "deporte", "region": "Oceanía", "viva": true,
         "texto": { "es": "Cathy Freeman gana la final de 400 m de los Juegos de Sídney 2000 ante unas 110.000 personas.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "Comité Olímpico Australiano: Sídney 2000, día 10, 25 de septiembre", "url": "https://www.olympics.com.au/news/sydney-2000-relived-day-10-25-september-2000" }
@@ -3623,6 +3887,18 @@
         "nota": "Relleno 2026-11-14. SENSIBLE (violencia; la víctima era una menor): el texto no la nombra ni da detalles. Dos medios abiertos dan el 19 oct 2016; ninguno es institucional."
       }
     ],
+    "10-20": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1964, "pais": "EE. UU.", "mujer": null, "tema": "poder político", "region": "América del Norte", "viva": true,
+        "texto": { "es": "Nace en Oakland (California) Kamala Harris, abogada y política estadounidense.", "ca": "Neix a Oakland (Califòrnia) Kamala Harris, advocada i política nord-americana.", "en": "Kamala Harris, American lawyer and politician, is born in Oakland (California)." },
+        "fuentes": [
+          { "nombre": "Voteview (UCLA): Kamala Devi Harris", "url": "https://voteview.com/person/41701/kamala-devi-harris" },
+          { "nombre": "EBSCO Research Starters: Kamala Harris", "url": "https://www.ebsco.com/research-starters/womens-studies-and-feminism/kamala-harris" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. Política de partido viva: Mireia decidió incluirla."
+      }
+    ],
     "10-21": [
       {
         "principal": true, "tipo": "derecho", "anio": 1945, "pais": "Francia", "mujer": null, "tema": "voto y derechos políticos", "region": "Europa", "ancla": true, "precision": "dia",
@@ -3658,7 +3934,17 @@
     ],
     "10-23": [
       {
-        "principal": true, "tipo": "hito", "anio": 1964, "pais": "Japón", "mujer": null, "tema": "deporte", "region": "Asia",
+        "principal": true, "tipo": "nacimiento", "anio": 1981, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa", "viva": true,
+        "texto": { "es": "Nace en Barcelona Leticia Dolera, actriz, guionista y directora que aborda la perspectiva feminista en su obra.", "ca": "Neix a Barcelona Leticia Dolera, actriu, guionista i directora que aborda la perspectiva feminista en la seva obra.", "en": "Leticia Dolera, actress, screenwriter and director who brings a feminist perspective to her work, is born in Barcelona." },
+        "fuentes": [
+          { "nombre": "decine21: Leticia Dolera", "url": "https://decine21.com/Biografias/Leticia-Dolera-5414" },
+          { "nombre": "SensaCine: biografía de Leticia Dolera", "url": "https://www.sensacine.com/actores/actor-103931/biografia/" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27", "calidadFuentes": "basica",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. «Perspectiva feminista en su obra»: descripción de Mireia; las fuentes confirman fecha, lugar y profesiones."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 1964, "pais": "Japón", "mujer": null, "tema": "deporte", "region": "Asia",
         "texto": { "es": "El equipo femenino de voleibol de Japón gana el oro olímpico en Tokio al vencer 3-0 a la URSS.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
         "fuentes": [
           { "nombre": "Comité Olímpico Japonés: los Juegos de Tokio 1964", "url": "https://joc.or.jp/english/historyjapan/tokyo1964.html" },
@@ -3747,6 +4033,16 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-14", "calidadFuentes": "basica",
         "nota": "Relleno 2026-11-14. MUJER VIVA (cumpleaños; no se ha comprobado hoy que no haya noticia de fallecimiento). Sirleaf ya aparece el 16 ene (toma de posesión de 2006) y el 7 oct (Nobel de la Paz 2011): tres entradas de la misma persona. Una fuente solo en resultados (Nobel, 403). Fuentes básicas."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 2026, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa", "viva": true,
+        "texto": { "es": "La politóloga y divulgadora feminista Júlia Salander publica su primera novela, «Uñas sucias».", "ca": "La politòloga i divulgadora feminista Júlia Salander publica la seva primera novel·la, «Uñas sucias».", "en": "Political scientist and feminist communicator Júlia Salander publishes her first novel, «Uñas sucias»." },
+        "fuentes": [
+          { "nombre": "Casa del Libro: «Uñas sucias» (Montena)", "url": "https://www.casadellibro.com/libro-unas-sucias/9791387724450/18283572" },
+          { "nombre": "todostuslibros (librerías CEGAL): «Uñas sucias»", "url": "https://www.todostuslibros.com/busquedas?keyword=9791387724450" }
+        ],
+        "estado": "verificada", "comprobado": "2026-11-27", "calidadFuentes": "basica",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas); fuentes propias buscadas y abiertas por el agente investigador. Mireia lo situó en octubre de 2026; lanzamiento 29-10-2026. No es su primer libro (antes publicó ensayos): es su primera novela."
       }
     ],
     "10-30": [
@@ -4034,6 +4330,16 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Fuentes básicas (divulgación y Wikipedia). Cubre el tema de trabajo, que faltaba."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 2017, "pais": "España", "mujer": null, "tema": "movimientos sociales y derechos", "region": "Europa",
+        "texto": { "es": "Empieza en Madrid el I Congreso de Feminismo Romaní, organizado por la asociación Gitanas Feministas por la Diversidad.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "El Salto: Madrid acoge el primer congreso de feminismo romaní", "url": "https://www.elsaltodiario.com/feminismos/madrid-acoge-el-primer-congreso-de-feminismo-romani-" },
+          { "nombre": "Ayuntamiento de Madrid: inauguración del congreso (no abierta)", "url": "https://diario.madrid.es/blog/notas-de-prensa/mayer-en-la-inauguracion-del-primer-congreso-de-feminismo-romani/" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas). La pista decía 22-oct: fue el 17 y 18-nov-2017. Falta una segunda fuente abierta."
       }
     ],
     "11-18": [
@@ -4068,6 +4374,16 @@
         ],
         "estado": "verificada", "comprobado": "2026-11-11", "calidadFuentes": "basica",
         "nota": "Fuentes básicas. Murió en el año 2000 (el título de la página dice 2001)."
+      },
+      {
+        "principal": false, "tipo": "hito", "anio": 2026, "pais": "España", "mujer": null, "tema": "arte y literatura", "region": "Europa", "viva": true,
+        "texto": { "es": "Henar Álvarez anuncia el final de «Al cielo con ella», su programa de humor en RTVE centrado en las mujeres.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "elDiario.es / Vertele: Henar Álvarez anuncia el final", "url": "https://www.eldiario.es/vertele/noticias/henar-alvarez-anuncia-cancelacion-sorpresa-al-cielo-con-ella-rtve-no-ver-elecciones-derecha_1_13679064.html" },
+          { "nombre": "FormulaTV: RTVE cancela «Al cielo con ella»", "url": "https://www.formulatv.com/noticias/rtve-cancela-cielo-ella-henar-alvarez-138807/" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas). Anuncio la noche del 19-11 (solo elDiario.es da el día); último programa el 22-11. Mireia lo puso el 22."
       }
     ],
     "11-20": [
@@ -4435,6 +4751,18 @@
         "nota": "Diciembre, relleno. Nacida el 14 dic 1908 en Tanta (las dos fuentes coinciden; ninguna es institucional estricta; otra copia abierta en aljadid.com). Sin cifras de la marcha (1.000 o 1.500 mujeres según fuentes). No mencionar su muerte. Fuentes básicas."
       }
     ],
+    "12-15": [
+      {
+        "principal": true, "tipo": "nacimiento", "anio": 1877, "pais": "Portugal", "mujer": null, "tema": "arte y literatura", "region": "Europa",
+        "texto": { "es": "Nace en Lamego (Portugal) Emília de Sousa Costa, maestra, escritora y feminista, pionera de la literatura infantil portuguesa.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]" },
+        "fuentes": [
+          { "nombre": "Wikipedia: Emília de Sousa Costa", "url": "https://en.wikipedia.org/wiki/Em%C3%ADlia_de_Sousa_Costa" },
+          { "nombre": "Revistas de Ideias e Cultura: Emília de Sousa Costa", "url": "https://pt.revistasdeideias.net/en-gb/a-aguia/index/aut_0000015768" }
+        ],
+        "estado": "revisar", "comprobado": "2026-11-27",
+        "nota": "Propuesta de Mireia (27-11-2026, revisión de pistas). El día solo lo da Wikipedia en inglés. Muerte: 1957 o 1959 según la fuente."
+      }
+    ],
     "12-16": [
       {
         "principal": true, "tipo": "nacimiento", "anio": 1932, "pais": "Nigeria", "mujer": null, "tema": "educación y ciencia", "region": "África",
@@ -4637,5 +4965,5 @@
       }
     ]
   },
-  "sinDia": [{"mes": null, "anio": 1872, "pais": "España", "tema": "educación", "region": "Europa", "ancla": true, "precision": "anio", "texto": {"es": "María Elena Maseras se matricula en Medicina en la Universitat de Barcelona (curso 1872-73), considerada la primera universitaria de España.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Universitat de Barcelona: 575 aniversario (1872-1900)", "url": "https://www.ub.edu/575aniversari/en/history/1837-1900-the-restored-university/1872-1900"}, {"nombre": "Universitat de Barcelona: «Maseras, la primera de muchas»", "url": "https://web.ub.edu/en/web/actualitat/w/maseras-la-primera-de-moltes"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla propuesta por Mireia. Sin día ni mes en fuentes abiertas (un diario dice septiembre de 1872 y una Real Orden de Amadeo I; sin abrir). Las dos fuentes son de la UB. «Primera» lo afirma la UB; hay debate con Dolors Aleu (1874). No pudo asistir a clase hasta tres años después; terminó en 1878. Mireia decide cómo mostrar las entradas sin día."}, {"mes": null, "anio": 1848, "pais": "India", "tema": "educación", "region": "Asia", "ancla": true, "precision": "anio", "texto": {"es": "Savitribai Phule y Jyotirao Phule abren en Pune una escuela para niñas, un paso importante para la educación femenina en la India.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Universidad de Pune: vida y obra de Mahatma Phule", "url": "https://www.unipune.ac.in/chairs/mahatma_phule_chair/mphule_webfiles/Life_%20&amp;%20_Work.htm"}, {"nombre": "DD News (radiotelevisión pública de la India): homenaje a Savitribai Phule", "url": "https://ddnews.gov.in/en/pm-modi-pays-homage-to-savitribai-phule-on-her-birth-anniversary/"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. Solo se confirma el año (1848). El 1 ene 1848 lo da únicamente el Free Press Journal (prensa, sin fuente) y una página de NCERT (no abierta) apuntaría a agosto de 1848: día discutido. «Primera» (las dos fuentes institucionales dicen first school for girls) está matizado por otras fuentes (misioneros, o «una de las primeras dirigidas por indios»): no afirmar «primera». Nacimiento de Savitribai: 3 ene 1831 (de memoria, sin verificar)."}, {"mes": null, "anio": 1792, "tipo": "hito", "pais": "Reino Unido", "tema": "arte y literatura", "region": "Europa", "ancla": true, "precision": "anio", "texto": {"es": "Se publica en Londres la «Vindicación de los derechos de la mujer», obra de la escritora Mary Wollstonecraft.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Duke University: Vindication of the Rights of Woman (1792)", "url": "https://exhibits.library.duke.edu/exhibits/show/baskin/item/4065"}, {"nombre": "Encyclopedia.com: Vindication of the Rights of Woman", "url": "https://www.encyclopedia.com/arts/applied-and-social-sciences-magazines/vindication-rights-woman"}], "estado": "verificada", "comprobado": "2026-11-11", "nota": "Ancla. Solo se confirma el año: ninguna fuente abierta da el mes (hubo segunda edición ese mismo año). «Enero» solo está en Wikipedia; un anticuario da 28 feb (sin verificar)."}, {"mes": 9, "anio": 1791, "tipo": "hito", "pais": "Francia", "tema": "voto y derechos políticos", "region": "Europa", "ancla": true, "precision": "mes", "texto": {"es": "Olympe de Gouges publica la «Declaración de los derechos de la mujer y de la ciudadana», un folleto dirigido a la reina María Antonieta.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Centro de Historia y Nuevos Medios (George Mason y CUNY): Declaración de Olympe de Gouges", "url": "https://revolution.chnm.org/d/293"}, {"nombre": "Consejo Internacional de Archivos: Declaración de los derechos de la mujer", "url": "https://rightsandrecords.ica.org/bib/8KE7ZV7I"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. Septiembre de 1791. Las dos fuentes NO son independientes (la segunda remite a la primera). El día es dudoso: 14 sep (Asamblea Nacional francesa, PDF no abierto) o 5 sep (Univ. de Bari, solo en búsqueda). Su muerte (3 nov 1793) ya está en el calendario. Cuenta para la cuota de voto y política."}, {"mes": null, "anio": 1949, "tipo": "hito", "pais": "Francia", "tema": "arte y literatura", "region": "Europa", "ancla": true, "precision": "anio", "texto": {"es": "Se publica en Francia «El segundo sexo», de Simone de Beauvoir, en dos volúmenes.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Stanford Encyclopedia of Philosophy: Simone de Beauvoir", "url": "https://plato.stanford.edu/entries/beauvoir/"}, {"nombre": "Fabula: edición de «Le Deuxième sexe» en la Bibliothèque de la Pléiade", "url": "https://www.fabula.org/actualites/133488/simone-de-beauvoir-le-deuxieme-sexe-ed-e-demoulin-bibliotheque-de-la-pleiade.html"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. Solo se confirma el año. «Junio y noviembre» NO está confirmado: el catálogo de Gallimard (solo en búsqueda) apuntaría a 24 may y 28 oct 1949; otra fuente dice «junio» para el tomo I. [VERIFICAR] con BnF o Gallimard. Fabula es un aviso editorial, fuente débil."}, {"mes": 2, "anio": 1963, "tipo": "hito", "pais": "EE. UU.", "tema": "arte y literatura", "region": "América del Norte", "ancla": true, "precision": "mes", "texto": {"es": "Se publica en Estados Unidos «La mística de la feminidad», de Betty Friedan.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Ohio State University, Origins: La mística de la feminidad", "url": "https://origins.osu.edu/read/feminine-mystique"}, {"nombre": "Annenberg Classroom (Univ. de Pensilvania): se publica La mística de la feminidad", "url": "https://www.annenbergclassroom.org/timeline_event/feminine-mystique-published/"}], "estado": "verificada", "comprobado": "2026-11-11", "nota": "Ancla. Febrero de 1963 (Ohio State). El día 19 solo aparece como metadato de Annenberg y en Wikipedia/History.com; el Jewish Women's Archive da el 17 (solo en búsqueda): [VERIFICAR] el día. Apoyo: Columbia (año)."}, {"mes": null, "anio": 1989, "tipo": "hito", "pais": "EE. UU.", "tema": "movimientos sociales y derechos", "region": "América del Norte", "ancla": true, "precision": "anio", "texto": {"es": "Kimberlé Crenshaw publica un artículo jurídico sobre la discriminación hacia las mujeres negras, origen del concepto de «interseccionalidad».", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "University of Chicago Legal Forum: «Demarginalizing the Intersection of Race and Sex» (1989)", "url": "https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/"}, {"nombre": "Columbia Law School: Kimberlé Crenshaw sobre la interseccionalidad", "url": "https://scholarship.law.columbia.edu/books/255/"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. Cita confirmada: University of Chicago Legal Forum, vol. 1989, nº 1, p. 139. No se pudo comprobar que la palabra «interseccionalidad» aparezca en ese artículo (Columbia dice que ella acuñó el término), por eso se redacta «origen del concepto» y no «acuña el término». [VERIFICAR]."}, {"mes": 11, "anio": 1929, "tipo": "hito", "pais": "Nigeria", "tema": "movimientos sociales y derechos", "region": "África", "ancla": true, "precision": "mes", "texto": {"es": "Comienza en el sureste de Nigeria la «Guerra de las Mujeres»: mujeres igbo protestan contra la administración colonial británica.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Encyclopedia.com: la Guerra de las Mujeres igbo", "url": "https://encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/igbo-womens-war"}, {"nombre": "Universidad de Kent: la Guerra de las Mujeres de 1929", "url": "https://blogs.kent.ac.uk/history/?p=732"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. Noviembre de 1929; sin día: Encyclopedia.com dice 18 nov en Oloko, History Today (no abierta) dice 23 nov y que lo ocurrido ese día es «contested»; la AHA solo dice «finales de 1929» y que se extendió en la segunda semana de diciembre. Los británicos la llamaron «Aba Women's Riots»; las mujeres igbo, «Women's War» (nombre a usar). Sin cifras de muertes (varían). [VERIFICAR] el día."}, {"mes": null, "anio": 1906, "tipo": "derecho", "pais": "Finlandia", "tema": "voto y derechos políticos", "region": "Europa", "ancla": true, "precision": "anio", "texto": {"es": "Finlandia aprueba el sufragio de hombres y mujeres; en 1907 son elegidas 19 mujeres para el primer Parlamento.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Finland 100: la Dieta y el Parlamento de Finlandia, 1863-1919", "url": "https://finland100.fi/2017/09/11/the-diet-of-finland-and-parliament-1863-1919/"}, {"nombre": "Yle (radiotelevisión pública de Finlandia): el sufragio universal", "url": "https://yle.fi/a/3-5225942"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. Solo se confirma el año 1906; el día NO: Yle habla de «junio de 1906»; resúmenes de búsqueda no abiertos dan 1 jun, 20 jun, 20 jul o 18 sep (Finlex) y no coinciden. La cifra de 19 mujeres elegidas en 1907 la da finland100.fi. No decir «primer país europeo» (Nueva Zelanda 1893 y Australia 1902 concedieron el voto antes; finland100.fi dice «for the first time in the world», pero conviene no afirmarlo). Edad de voto: 24 años. Cuenta para la cuota de voto."}, {"mes": 10, "anio": 1929, "tipo": "hito", "pais": "Reino Unido", "tema": "arte y literatura", "region": "Europa", "ancla": true, "precision": "mes", "texto": {"es": "Se publica «Una habitación propia», de Virginia Woolf, un ensayo sobre las mujeres y la escritura, en la editorial Hogarth Press.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Smith College: «A Room of One's Own», Hogarth Press, 1929", "url": "https://www.smith.edu/libraries/libs/rarebook/exhibitions/conway/room.htm"}, {"nombre": "Biblioteca del Congreso de EE. UU.: obras de 1929 en dominio público", "url": "https://blogs.loc.gov/copyright/2025/01/lifecycle-of-copyright-1929-works-in-the-public-domain/"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. [VERIFICAR] El 24 oct no está confirmado: Smith College solo da el año y la LOC dice «registrada en el Copyright Office en octubre de 1929». Hay discrepancia con fuentes no abiertas (septiembre u octubre). Por eso va como «Este mes» (octubre)."}]
+  "sinDia": [{"mes": null, "anio": 1872, "pais": "España", "tema": "educación", "region": "Europa", "ancla": true, "precision": "anio", "texto": {"es": "María Elena Maseras se matricula en Medicina en la Universitat de Barcelona (curso 1872-73), considerada la primera universitaria de España.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Universitat de Barcelona: 575 aniversario (1872-1900)", "url": "https://www.ub.edu/575aniversari/en/history/1837-1900-the-restored-university/1872-1900"}, {"nombre": "Universitat de Barcelona: «Maseras, la primera de muchas»", "url": "https://web.ub.edu/en/web/actualitat/w/maseras-la-primera-de-moltes"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla propuesta por Mireia. Sin día ni mes en fuentes abiertas (un diario dice septiembre de 1872 y una Real Orden de Amadeo I; sin abrir). Las dos fuentes son de la UB. «Primera» lo afirma la UB; hay debate con Dolors Aleu (1874). No pudo asistir a clase hasta tres años después; terminó en 1878. Mireia decide cómo mostrar las entradas sin día."}, {"mes": null, "anio": 1848, "pais": "India", "tema": "educación", "region": "Asia", "ancla": true, "precision": "anio", "texto": {"es": "Savitribai Phule y Jyotirao Phule abren en Pune una escuela para niñas, un paso importante para la educación femenina en la India.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Universidad de Pune: vida y obra de Mahatma Phule", "url": "https://www.unipune.ac.in/chairs/mahatma_phule_chair/mphule_webfiles/Life_%20&amp;%20_Work.htm"}, {"nombre": "DD News (radiotelevisión pública de la India): homenaje a Savitribai Phule", "url": "https://ddnews.gov.in/en/pm-modi-pays-homage-to-savitribai-phule-on-her-birth-anniversary/"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. Solo se confirma el año (1848). El 1 ene 1848 lo da únicamente el Free Press Journal (prensa, sin fuente) y una página de NCERT (no abierta) apuntaría a agosto de 1848: día discutido. «Primera» (las dos fuentes institucionales dicen first school for girls) está matizado por otras fuentes (misioneros, o «una de las primeras dirigidas por indios»): no afirmar «primera». Nacimiento de Savitribai: 3 ene 1831 (de memoria, sin verificar)."}, {"mes": null, "anio": 1792, "tipo": "hito", "pais": "Reino Unido", "tema": "arte y literatura", "region": "Europa", "ancla": true, "precision": "anio", "texto": {"es": "Se publica en Londres la «Vindicación de los derechos de la mujer», obra de la escritora Mary Wollstonecraft.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Duke University: Vindication of the Rights of Woman (1792)", "url": "https://exhibits.library.duke.edu/exhibits/show/baskin/item/4065"}, {"nombre": "Encyclopedia.com: Vindication of the Rights of Woman", "url": "https://www.encyclopedia.com/arts/applied-and-social-sciences-magazines/vindication-rights-woman"}], "estado": "verificada", "comprobado": "2026-11-11", "nota": "Ancla. Solo se confirma el año: ninguna fuente abierta da el mes (hubo segunda edición ese mismo año). «Enero» solo está en Wikipedia; un anticuario da 28 feb (sin verificar)."}, {"mes": 9, "anio": 1791, "tipo": "hito", "pais": "Francia", "tema": "voto y derechos políticos", "region": "Europa", "ancla": true, "precision": "mes", "texto": {"es": "Olympe de Gouges publica la «Declaración de los derechos de la mujer y de la ciudadana», un folleto dirigido a la reina María Antonieta.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Centro de Historia y Nuevos Medios (George Mason y CUNY): Declaración de Olympe de Gouges", "url": "https://revolution.chnm.org/d/293"}, {"nombre": "Consejo Internacional de Archivos: Declaración de los derechos de la mujer", "url": "https://rightsandrecords.ica.org/bib/8KE7ZV7I"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. Septiembre de 1791. Las dos fuentes NO son independientes (la segunda remite a la primera). El día es dudoso: 14 sep (Asamblea Nacional francesa, PDF no abierto) o 5 sep (Univ. de Bari, solo en búsqueda). Su muerte (3 nov 1793) ya está en el calendario. Cuenta para la cuota de voto y política."}, {"mes": null, "anio": 1949, "tipo": "hito", "pais": "Francia", "tema": "arte y literatura", "region": "Europa", "ancla": true, "precision": "anio", "texto": {"es": "Se publica en Francia «El segundo sexo», de Simone de Beauvoir, en dos volúmenes.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Stanford Encyclopedia of Philosophy: Simone de Beauvoir", "url": "https://plato.stanford.edu/entries/beauvoir/"}, {"nombre": "Fabula: edición de «Le Deuxième sexe» en la Bibliothèque de la Pléiade", "url": "https://www.fabula.org/actualites/133488/simone-de-beauvoir-le-deuxieme-sexe-ed-e-demoulin-bibliotheque-de-la-pleiade.html"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. Solo se confirma el año. «Junio y noviembre» NO está confirmado: el catálogo de Gallimard (solo en búsqueda) apuntaría a 24 may y 28 oct 1949; otra fuente dice «junio» para el tomo I. [VERIFICAR] con BnF o Gallimard. Fabula es un aviso editorial, fuente débil."}, {"mes": 2, "anio": 1963, "tipo": "hito", "pais": "EE. UU.", "tema": "arte y literatura", "region": "América del Norte", "ancla": true, "precision": "mes", "texto": {"es": "Se publica en Estados Unidos «La mística de la feminidad», de Betty Friedan.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Ohio State University, Origins: La mística de la feminidad", "url": "https://origins.osu.edu/read/feminine-mystique"}, {"nombre": "Annenberg Classroom (Univ. de Pensilvania): se publica La mística de la feminidad", "url": "https://www.annenbergclassroom.org/timeline_event/feminine-mystique-published/"}], "estado": "verificada", "comprobado": "2026-11-11", "nota": "Ancla. Febrero de 1963 (Ohio State). El día 19 solo aparece como metadato de Annenberg y en Wikipedia/History.com; el Jewish Women's Archive da el 17 (solo en búsqueda): [VERIFICAR] el día. Apoyo: Columbia (año)."}, {"mes": null, "anio": 1989, "tipo": "hito", "pais": "EE. UU.", "tema": "movimientos sociales y derechos", "region": "América del Norte", "ancla": true, "precision": "anio", "texto": {"es": "Kimberlé Crenshaw publica un artículo jurídico sobre la discriminación hacia las mujeres negras, origen del concepto de «interseccionalidad».", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "University of Chicago Legal Forum: «Demarginalizing the Intersection of Race and Sex» (1989)", "url": "https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/"}, {"nombre": "Columbia Law School: Kimberlé Crenshaw sobre la interseccionalidad", "url": "https://scholarship.law.columbia.edu/books/255/"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. Cita confirmada: University of Chicago Legal Forum, vol. 1989, nº 1, p. 139. No se pudo comprobar que la palabra «interseccionalidad» aparezca en ese artículo (Columbia dice que ella acuñó el término), por eso se redacta «origen del concepto» y no «acuña el término». [VERIFICAR]."}, {"mes": 11, "anio": 1929, "tipo": "hito", "pais": "Nigeria", "tema": "movimientos sociales y derechos", "region": "África", "ancla": true, "precision": "mes", "texto": {"es": "Comienza en el sureste de Nigeria la «Guerra de las Mujeres»: mujeres igbo protestan contra la administración colonial británica.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Encyclopedia.com: la Guerra de las Mujeres igbo", "url": "https://encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/igbo-womens-war"}, {"nombre": "Universidad de Kent: la Guerra de las Mujeres de 1929", "url": "https://blogs.kent.ac.uk/history/?p=732"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. Noviembre de 1929; sin día: Encyclopedia.com dice 18 nov en Oloko, History Today (no abierta) dice 23 nov y que lo ocurrido ese día es «contested»; la AHA solo dice «finales de 1929» y que se extendió en la segunda semana de diciembre. Los británicos la llamaron «Aba Women's Riots»; las mujeres igbo, «Women's War» (nombre a usar). Sin cifras de muertes (varían). [VERIFICAR] el día."}, {"mes": null, "anio": 1906, "tipo": "derecho", "pais": "Finlandia", "tema": "voto y derechos políticos", "region": "Europa", "ancla": true, "precision": "anio", "texto": {"es": "Finlandia aprueba el sufragio de hombres y mujeres; en 1907 son elegidas 19 mujeres para el primer Parlamento.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Finland 100: la Dieta y el Parlamento de Finlandia, 1863-1919", "url": "https://finland100.fi/2017/09/11/the-diet-of-finland-and-parliament-1863-1919/"}, {"nombre": "Yle (radiotelevisión pública de Finlandia): el sufragio universal", "url": "https://yle.fi/a/3-5225942"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. Solo se confirma el año 1906; el día NO: Yle habla de «junio de 1906»; resúmenes de búsqueda no abiertos dan 1 jun, 20 jun, 20 jul o 18 sep (Finlex) y no coinciden. La cifra de 19 mujeres elegidas en 1907 la da finland100.fi. No decir «primer país europeo» (Nueva Zelanda 1893 y Australia 1902 concedieron el voto antes; finland100.fi dice «for the first time in the world», pero conviene no afirmarlo). Edad de voto: 24 años. Cuenta para la cuota de voto."}, {"mes": 10, "anio": 1929, "tipo": "hito", "pais": "Reino Unido", "tema": "arte y literatura", "region": "Europa", "ancla": true, "precision": "mes", "texto": {"es": "Se publica «Una habitación propia», de Virginia Woolf, un ensayo sobre las mujeres y la escritura, en la editorial Hogarth Press.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Smith College: «A Room of One's Own», Hogarth Press, 1929", "url": "https://www.smith.edu/libraries/libs/rarebook/exhibitions/conway/room.htm"}, {"nombre": "Biblioteca del Congreso de EE. UU.: obras de 1929 en dominio público", "url": "https://blogs.loc.gov/copyright/2025/01/lifecycle-of-copyright-1929-works-in-the-public-domain/"}], "estado": "parcial", "comprobado": "2026-11-11", "nota": "Ancla. [VERIFICAR] El 24 oct no está confirmado: Smith College solo da el año y la LOC dice «registrada en el Copyright Office en octubre de 1929». Hay discrepancia con fuentes no abiertas (septiembre u octubre). Por eso va como «Este mes» (octubre)."}, {"mes": null, "anio": 1985, "tipo": "hito", "pais": "EE. UU.", "tema": "movimientos sociales y derechos", "region": "América del Norte", "precision": "anio", "texto": {"es": "Donna Haraway publica el «Manifiesto cíborg» en la revista Socialist Review, un texto clave del ciberfeminismo.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Repositorio CETAPS (Univ. de Oporto): «A Manifesto for Cyborgs», Socialist Review 15.80 (1985)", "url": "https://cetapsrepository.letras.up.pt/items/ad64a138-02b0-423d-bb0b-c24e4d809f43/full"}, {"nombre": "Wikipedia: A Cyborg Manifesto", "url": "https://en.wikipedia.org/wiki/A_Cyborg_Manifesto"}], "estado": "verificada", "comprobado": "2026-11-27", "nota": "Propuesta de Mireia (27-11-2026). La pista daba 2 de abril: ninguna fuente da día ni mes."}, {"mes": null, "anio": 1364, "tipo": "nacimiento", "pais": "Italia", "tema": "arte y literatura", "region": "Europa", "precision": "anio", "texto": {"es": "Nace en Venecia Christine de Pizan, escritora.", "ca": "[TRADUCCIÓN PENDIENTE]", "en": "[TRADUCCIÓN PENDIENTE]"}, "fuentes": [{"nombre": "Johns Hopkins University (Digital Scriptorium): ¿quién es Christine de Pizan?", "url": "https://dlmm.library.jhu.edu/en/christine-de-pizan-digital-scriptorium/who-is-christine-de-pizan"}, {"nombre": "Wikipedia: Christine de Pizan", "url": "https://en.wikipedia.org/wiki/Christine_de_Pizan"}], "estado": "parcial", "comprobado": "2026-11-27", "nota": "Propuesta de Mireia (27-11-2026). La pista daba 11 de septiembre: solo Spartacus Educational da ese día, sin fuente. Año confirmado (JHU). Texto mínimo: ampliar solo con fuente."}]
 }
