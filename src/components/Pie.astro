@@ -1,0 +1,14 @@
+---
+// Pie común: firma de Mireia y enlace a la página de referencias (obligatorio en todas las páginas).
+// Los textos pasarán a src/i18n/ en el paso 1c.
+interface Props {
+  lang?: string;
+}
+const { lang = 'es' } = Astro.props;
+---
+<footer id="fuentes">
+  <div class="wrap">
+    <p class="firma">Web diseñada y creada por Mireia Gutiérrez Águila<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:1rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.9">Conoce su historia</a></p>
+    <p class="fuente-pie ref-enlace">Puedes ver todas las referencias de la web en <a href={`/${lang}/fuentes/`} target="_blank" rel="noopener" aria-label="esta página (se abre en una pestaña nueva)">esta página</a>, filtrando por la actividad.</p>
+  </div>
+</footer>

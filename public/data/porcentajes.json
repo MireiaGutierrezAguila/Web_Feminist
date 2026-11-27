@@ -1,0 +1,891 @@
+{
+  "aviso": "Datos extraídos de las infografías «Mujeres en cifras» del Instituto de las Mujeres (Gobierno de España). Cifras comprobadas en imagen por Claude; años de los datos (anioDatos) a confirmar cuando son null. Traducciones ca/en pendientes. En el juego NO se muestra una frase por dato: la fuente va en el pie y en la página de Fuentes («Actividad porcentajes: extraído de Instituto de las Mujeres, Mujeres en cifras»).",
+  "fuenteGeneral": "Instituto de las Mujeres (Gobierno de España), «Mujeres en cifras»",
+  "mecanicas": [
+    "contador",
+    "aguja",
+    "pintar",
+    "caraacara"
+  ],
+  "dado": "Antes de cada ronda sale un dado trucado: una bolsa que reparte las mecánicas para que todas se jueguen antes de repetir.",
+  "temas": {
+    "trabajo": {
+      "emoji": "💼",
+      "imagen": "img/opt/tema-trabajo.webp",
+      "es": "Trabajo y dinero",
+      "ca": "Feina i diners",
+      "en": "Work and money"
+    },
+    "deporte": {
+      "emoji": "⚽",
+      "imagen": "img/opt/tema-deporte.webp",
+      "es": "Deporte",
+      "ca": "Esport",
+      "en": "Sport"
+    },
+    "musica": {
+      "emoji": "🎵",
+      "imagen": "img/opt/tema-musica.webp",
+      "es": "Música",
+      "ca": "Música",
+      "en": "Music"
+    },
+    "ciencia": {
+      "emoji": "🔬",
+      "imagen": "img/opt/tema-ciencia.webp",
+      "es": "Ciencia",
+      "ca": "Ciència",
+      "en": "Science"
+    },
+    "educacion": {
+      "emoji": "🎓",
+      "imagen": "img/opt/tema-educacion.webp",
+      "es": "Educación",
+      "ca": "Educació",
+      "en": "Education"
+    },
+    "cine": {
+      "emoji": "🎬",
+      "imagen": "img/opt/tema-cine.webp",
+      "es": "Cine",
+      "ca": "Cinema",
+      "en": "Film"
+    },
+    "clima": {
+      "emoji": "🌍",
+      "imagen": "img/opt/tema-clima.webp",
+      "es": "Clima",
+      "ca": "Clima",
+      "en": "Climate"
+    },
+    "salud": {
+      "emoji": "🩺",
+      "imagen": "img/opt/tema-salud.webp",
+      "es": "Salud",
+      "ca": "Salut",
+      "en": "Health"
+    },
+    "violencia": {
+      "emoji": "🛡️",
+      "es": "Violencia digital",
+      "ca": "Violència digital",
+      "en": "Digital violence"
+    }
+  },
+  "infografias": {
+    "brecha": {
+      "titulo": "Brecha retributiva",
+      "fecha": "feb. 2023",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2023/Brecha_Retributiva_2023.pdf"
+    },
+    "poder": {
+      "titulo": "Poder empresarial",
+      "fecha": "abr. 2024",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2024/202404_PoderEmpresarial.pdf"
+    },
+    "empleo": {
+      "titulo": "Empleo",
+      "fecha": "jul. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/202507_Empleo.pdf"
+    },
+    "deporte": {
+      "titulo": "Deporte",
+      "fecha": "ene. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2024/202501_Deporte.pdf"
+    },
+    "musica": {
+      "titulo": "Música y festivales",
+      "fecha": "mar. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/202503_Musica.pdf"
+    },
+    "stem": {
+      "titulo": "STEM",
+      "fecha": "feb. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/202502_MujeresSTEM.pdf"
+    },
+    "educacion": {
+      "titulo": "Educación",
+      "fecha": "abr. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/202504_Educacion.pdf"
+    },
+    "creadoras": {
+      "titulo": "Creadoras",
+      "fecha": "may. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/202505_Creadoras.pdf"
+    },
+    "clima": {
+      "titulo": "Cambio climático",
+      "fecha": "jun. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/202506_CambioClimatico.pdf"
+    },
+    "beijing": {
+      "titulo": "Beijing +30",
+      "fecha": "sep. 2025",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2025/09_septiembre.pdf"
+    },
+    "violenciadigital": {
+      "titulo": "Violencia digital",
+      "fecha": "jun. 2026",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2026/202606_ViolenciaDigital.pdf"
+    },
+    "vivienda": {
+      "titulo": "Vivienda",
+      "fecha": "may. 2026",
+      "url": "https://www.inmujeres.gob.es/MujerCifras/Infografia/Docs/2026/202605_Vivienda.pdf"
+    }
+  },
+  "datos": [
+    {
+      "id": "p-01",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "brecha",
+      "pregunta": {
+        "es": "En España, de media al año, ¿qué porcentaje menos cobran las mujeres en comparación con los hombres?",
+        "ca": "A Espanya, de mitjana a l'any, quin percentatge menys cobren les dones en comparació amb els homes?",
+        "en": "In Spain, on average per year, what percentage less do women earn compared with men?"
+      },
+      "valor": 18.7,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de brecha salarial (ganancia media anual)",
+        "ca": "de bretxa salarial (guany mitjà anual)",
+        "en": "pay gap (average annual earnings)"
+      },
+      "mecanicas": [
+        "contador",
+        "aguja",
+        "pintar"
+      ],
+      "anioDatos": 2020,
+      "nota": "22.467 € ellas y 27.643 € ellos; equivale a unos 2 meses de trabajo gratis al año. Fuente de la cifra: INE (Encuesta de Estructura Salarial)."
+    },
+    {
+      "id": "p-02",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "brecha",
+      "pregunta": {
+        "es": "¿Cuánto menos cobran de pensión de jubilación las mujeres?",
+        "ca": "Quant menys cobren de pensió de jubilació les dones?",
+        "en": "How much less retirement pension do women receive?"
+      },
+      "valor": 33.1,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de brecha en las pensiones de jubilación",
+        "ca": "de bretxa en les pensions de jubilació",
+        "en": "gap in retirement pensions"
+      },
+      "mecanicas": [
+        "aguja",
+        "contador",
+        "pintar"
+      ],
+      "anioDatos": 2021,
+      "nota": "La infografía cita MITES (Pensiones Contributivas 2021)."
+    },
+    {
+      "id": "p-03",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "beijing",
+      "pregunta": {
+        "es": "¿Qué porcentaje de las empresas del IBEX 35 tiene una mujer como CEO, es decir, la persona de mayor rango ejecutivo?",
+        "ca": "Quin percentatge de les empreses de l'IBEX 35 té una dona com a CEO, és a dir, la persona de més rang executiu?",
+        "en": "What percentage of IBEX 35 companies have a woman as CEO, that is, the highest-ranking executive?"
+      },
+      "valor": 3,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de las empresas del IBEX 35 tienen una mujer CEO",
+        "ca": "de les empreses de l'IBEX 35 tenen una dona CEO",
+        "en": "of IBEX 35 companies have a woman CEO"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador",
+        "aguja"
+      ],
+      "anioDatos": null,
+      "nota": "KAN-2 2.13: antes preguntaba por presidentas (4 de 35 = 11,4 %). Cifra «3 % CEO» de la infografía Beijing +30 (sep. 2025, apartado 7). El año de los datos está por confirmar."
+    },
+    {
+      "id": "p-04",
+      "tipo": "dato",
+      "tema": "deporte",
+      "infografia": "deporte",
+      "pregunta": {
+        "es": "De las 100 personas deportistas mejor pagadas del mundo, ¿cuántas son mujeres?",
+        "ca": "De les 100 persones esportistes ben pagades del món, quantes són dones?",
+        "en": "Of the 100 highest-paid athletes in the world, how many are women?"
+      },
+      "valor": 0,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "0 de 100",
+        "ca": "0 de 100",
+        "en": "0 out of 100"
+      },
+      "mecanicas": [
+        "pintar"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 0,
+        "de": 100
+      }
+    },
+    {
+      "id": "p-05",
+      "tipo": "dato",
+      "tema": "musica",
+      "infografia": "musica",
+      "pregunta": {
+        "es": "De los 10 artistas más escuchados en Spotify en todo el mundo, ¿cuántos son mujeres?",
+        "ca": "Dels 10 artistes més escoltats a Spotify a tot el món, quantes són dones?",
+        "en": "Of the 10 most-streamed artists on Spotify worldwide, how many are women?"
+      },
+      "valor": 30,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "3 de 10 (en España, 1 de 10)",
+        "ca": "3 de 10 (a Espanya, 1 de 10)",
+        "en": "3 out of 10 (in Spain, 1 out of 10)"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 3,
+        "de": 10
+      },
+      "preguntaPct": {
+        "es": "De los 10 artistas más escuchados en Spotify en todo el mundo, ¿qué porcentaje son mujeres?",
+        "ca": "Dels 10 artistes més escoltats a Spotify a tot el món, quin percentatge són dones?",
+        "en": "Of the 10 most-streamed artists on Spotify worldwide, what percentage are women?"
+      }
+    },
+    {
+      "id": "p-06",
+      "tipo": "dato",
+      "tema": "ciencia",
+      "infografia": "stem",
+      "pregunta": {
+        "es": "En 123 años de premios Nobel de Física, Química y Medicina, ¿qué porcentaje de premiadas son mujeres?",
+        "ca": "En 123 anys de premis Nobel de Física, Química i Medicina, quin percentatge de premiades són dones?",
+        "en": "In 123 years of Nobel Prizes in Physics, Chemistry and Medicine, what percentage of winners are women?"
+      },
+      "valor": 4.0,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "25 mujeres frente a 624 hombres",
+        "ca": "25 dones davant de 624 homes",
+        "en": "25 women versus 624 men"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 25,
+        "de": 649
+      },
+      "nota": "25/649 = 3,85 %. En el juego se enseña como «25 de 649 premios» o ≈4 %; decidir cómo mostrarlo. Los 624 son hombres, los 25 mujeres."
+    },
+    {
+      "id": "p-09",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "empleo",
+      "pregunta": {
+        "es": "De las personas que tienen una jornada reducida para cuidar de menores o familiares, ¿qué porcentaje son mujeres?",
+        "ca": "De les persones que tenen una jornada reduïda per cuidar menors o familiars, quin percentatge són dones?",
+        "en": "Of the people who work reduced hours to care for children or relatives, what percentage are women?"
+      },
+      "valor": 93.3,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de la jornada a tiempo parcial por cuidados de familiares la hacen mujeres",
+        "ca": "de la jornada a temps parcial per cures de familiars la fan dones",
+        "en": "of part-time work for caring for relatives is done by women"
+      },
+      "mecanicas": [
+        "aguja",
+        "contador",
+        "pintar"
+      ],
+      "anioDatos": 2023,
+      "fraccion": {
+        "n": 93,
+        "de": 100
+      },
+      "nota": "KAN-2 2.10: antes era excedencia por cuidado de menores (87 %). Cifra del apartado «Jornada a tiempo parcial 2023» de la infografía Empleo (jul. 2025): «8 de cada 10 son mujeres» y «93,3 % por cuidados de familiares». La redacción de la pregunta es de Mireia («jornada reducida para cuidar de menores o familiares»); la infografía dice «jornada a tiempo parcial por cuidados de familiares» y no aclara con más detalle qué mide el 93,3 %."
+    },
+    {
+      "id": "p-10",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "beijing",
+      "pregunta": {
+        "es": "¿Cuál era la brecha salarial en 2023? En 1995 era del 31 %.",
+        "ca": "Quina era la bretxa salarial el 2023? El 1995 era del 31 %.",
+        "en": "What was the pay gap in 2023? In 1995 it was 31 %."
+      },
+      "valor": 16,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de brecha salarial en 2023 (31 % en 1995)",
+        "ca": "de bretxa salarial el 2023 (31 % el 1995)",
+        "en": "pay gap in 2023 (31 % in 1995)"
+      },
+      "mecanicas": [
+        "contador",
+        "aguja"
+      ],
+      "anioDatos": 2023,
+      "nota": "Datos de España; mejora real: la brecha se ha reducido a la mitad."
+    },
+    {
+      "id": "p-11",
+      "tipo": "dato",
+      "tema": "deporte",
+      "infografia": "deporte",
+      "pregunta": {
+        "es": "¿De todo el deporte que sale en los medios de comunicación, qué porcentaje crees que es de deportes femeninos?",
+        "ca": "De tot l'esport que surt als mitjans de comunicació, quin percentatge creus que és d'esports femenins?",
+        "en": "Of all the sport shown in the media, what percentage do you think is women's sport?"
+      },
+      "valor": 16,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "del deporte en los medios es femenino (menos del 16 %)",
+        "ca": "de l'esport als mitjans és femení (menys del 16 %)",
+        "en": "of the sport in the media is women's sport (less than 16 %)"
+      },
+      "mecanicas": [
+        "contador",
+        "aguja",
+        "pintar"
+      ],
+      "anioDatos": null,
+      "nota": "KAN-1 1.7. El 16 % de la infografía es «menos del 16 % del total» de cobertura mediática. Mireia lo redactó como «televisión», pero la infografía habla de cobertura mediática en general: por confirmar con la infografía antes de publicar. La cifra es un tope («menos del 16 %»)."
+    },
+    {
+      "id": "p-12",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "empleo",
+      "pregunta": {
+        "es": "¿Qué porcentaje de los puestos de dirección y gerencia ocupan mujeres?",
+        "ca": "Quin percentatge dels llocs de direcció i gerència ocupen dones?",
+        "en": "What percentage of management and director positions are held by women?"
+      },
+      "valor": 34.4,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de los puestos de dirección y gerencia (en ocupaciones elementales, el 58,5 %)",
+        "ca": "dels llocs de direcció i gerència (en ocupacions elementals, el 58,5 %)",
+        "en": "of management and director positions (in elementary occupations, 58.5 %)"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador",
+        "aguja"
+      ],
+      "anioDatos": null,
+      "nota": "KAN-2 2.11: techo de cristal. Infografía Empleo (jul. 2025): «Solo 34,4 % mujeres en dirección y gerencia» y «58,5 % en ocupaciones elementales». Año por confirmar."
+    },
+    {
+      "id": "p-14",
+      "tipo": "dato",
+      "tema": "trabajo",
+      "infografia": "vivienda",
+      "pregunta": {
+        "es": "De cada 100 hogares con una sola persona adulta y menores, ¿cuántos están a cargo de una mujer?",
+        "ca": "De cada 100 llars amb una sola persona adulta i menors, quantes estan a càrrec d'una dona?",
+        "en": "Out of every 100 households with a single adult and children, how many are run by a woman?"
+      },
+      "valor": 78.8,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de los hogares con una persona adulta y menores son monomarentales (4 de cada 5)",
+        "ca": "de les llars amb una persona adulta i menors són monomarentals (4 de cada 5)",
+        "en": "of households with one adult and children are headed by a single mother (4 out of 5)"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador",
+        "aguja"
+      ],
+      "anioDatos": 2025,
+      "fraccion": {
+        "n": 79,
+        "de": 100
+      },
+      "nota": "KAN-2 2.14: «4 de cada 5 (78,8 %) hogares con una persona adulta y menores son monomarentales», infografía Vivienda (may. 2026), gráfico de «Familias con solo una persona adulta» (2025; en 2019 la cifra era distinta). La infografía cita como fuentes el INE, pero no dice qué tabla da esta cifra."
+    },
+    {
+      "id": "p-15",
+      "tipo": "dato",
+      "tema": "violencia",
+      "infografia": "violenciadigital",
+      "pregunta": {
+        "es": "De las personas detenidas o investigadas por ciberdelincuencia sexual, ¿cuántas dirías que son hombres?",
+        "ca": "De les persones detingudes o investigades per ciberdelinqüència sexual, quantes diries que són homes?",
+        "en": "Of the people arrested or investigated for sexual cybercrime, how many would you say are men?"
+      },
+      "valor": 97,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de las personas detenidas o investigadas son hombres",
+        "ca": "de les persones detingudes o investigades són homes",
+        "en": "of the people arrested or investigated are men"
+      },
+      "mecanicas": [
+        "pintar"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 97,
+        "de": 100
+      },
+      "nota": "KAN-2 2.12: «97 % de las personas detenidas o investigadas son hombres» (ciberdelincuencia sexual), infografía Violencia digital (jun. 2026). Entre sus fuentes está el informe ONVIOS (Ministerio del Interior) sobre delitos contra la libertad sexual de 2024, pero la infografía no dice cuál da cada cifra: año por confirmar. Va justo después de la pareja c-07.",
+      "soloTrasPareja": true
+    }
+  ],
+  "parejas": [
+    {
+      "id": "c-01",
+      "tipo": "caraacara",
+      "tema": "salud",
+      "infografia": "beijing",
+      "anioDatos": null,
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "¿Quién vive más años, ellas o ellos?",
+            "ca": "Qui viu més anys, elles o ells?",
+            "en": "Who lives longer, women or men?"
+          },
+          "opciones": [
+            {
+              "id": "ellas",
+              "etiqueta": {
+                "es": "Ellas",
+                "ca": "Elles",
+                "en": "Women"
+              },
+              "valor": 86.3,
+              "unidad": "años"
+            },
+            {
+              "id": "ellos",
+              "etiqueta": {
+                "es": "Ellos",
+                "ca": "Ells",
+                "en": "Men"
+              },
+              "valor": 81.1,
+              "unidad": "años"
+            }
+          ],
+          "correcta": "ellas"
+        },
+        {
+          "pregunta": {
+            "es": "¿Y quién vive más años con buena salud?",
+            "ca": "I qui viu més anys amb bona salut?",
+            "en": "And who lives more years in good health?"
+          },
+          "opciones": [
+            {
+              "id": "ellas",
+              "etiqueta": {
+                "es": "Ellas",
+                "ca": "Elles",
+                "en": "Women"
+              },
+              "valor": 60.6,
+              "unidad": "años"
+            },
+            {
+              "id": "ellos",
+              "etiqueta": {
+                "es": "Ellos",
+                "ca": "Ells",
+                "en": "Men"
+              },
+              "valor": 61.7,
+              "unidad": "años"
+            }
+          ],
+          "correcta": "ellos"
+        }
+      ],
+      "nota": "Esperanza de vida y años de vida con buena salud, a partir de la infografía Beijing +30."
+    },
+    {
+      "id": "c-03",
+      "tipo": "caraacara",
+      "tema": "deporte",
+      "infografia": "deporte",
+      "anioDatos": null,
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "Entre las personas deportistas, ¿quién tiene más seguimiento en redes sociales, ellas o ellos?",
+            "ca": "Entre les persones esportistes, qui té més seguiment a les xarxes socials, elles o ells?",
+            "en": "Among athletes, who has more followers on social media, women or men?"
+          },
+          "opciones": [
+            {
+              "id": "ellas",
+              "etiqueta": {
+                "es": "Ellas",
+                "ca": "Elles",
+                "en": "Women"
+              },
+              "valor": 14,
+              "unidad": "%",
+              "texto": {
+                "es": "14 % más",
+                "ca": "14 % més",
+                "en": "14 % more"
+              }
+            },
+            {
+              "id": "ellos",
+              "etiqueta": {
+                "es": "Ellos",
+                "ca": "Ells",
+                "en": "Men"
+              },
+              "valor": null,
+              "unidad": "%",
+              "texto": {
+                "es": "Menos",
+                "ca": "Menys",
+                "en": "Less"
+              }
+            }
+          ],
+          "correcta": "ellas"
+        }
+      ]
+    },
+    {
+      "id": "c-04",
+      "tipo": "caraacara",
+      "tema": "trabajo",
+      "infografia": "empleo",
+      "anioDatos": null,
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "En servicios de salud y cuidados (un sector con mayoría de mujeres), ¿quién cobra más al año?",
+            "ca": "En serveis de salut i cures (un sector amb majoria de dones), qui cobra més a l'any?",
+            "en": "In health and care services (a sector with a majority of women), who earns more per year?"
+          },
+          "opciones": [
+            {
+              "id": "ellas",
+              "etiqueta": {
+                "es": "Ellas",
+                "ca": "Elles",
+                "en": "Women"
+              },
+              "valor": 29198.31,
+              "unidad": "€"
+            },
+            {
+              "id": "ellos",
+              "etiqueta": {
+                "es": "Ellos",
+                "ca": "Ells",
+                "en": "Men"
+              },
+              "valor": 38317.12,
+              "unidad": "€"
+            }
+          ],
+          "correcta": "ellos",
+          "nota": "Ellas cobran un 24 % menos."
+        }
+      ]
+    },
+    {
+      "id": "c-05",
+      "tipo": "caraacara",
+      "tema": "clima",
+      "infografia": "clima",
+      "anioDatos": null,
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "¿Quién se preocupa más por el cambio climático?",
+            "ca": "Qui es preocupa més pel canvi climàtic?",
+            "en": "Who worries more about climate change?"
+          },
+          "opciones": [
+            {
+              "id": "ellas",
+              "etiqueta": {
+                "es": "Ellas",
+                "ca": "Elles",
+                "en": "Women"
+              },
+              "valor": 79,
+              "unidad": "%"
+            },
+            {
+              "id": "ellos",
+              "etiqueta": {
+                "es": "Ellos",
+                "ca": "Ells",
+                "en": "Men"
+              },
+              "valor": 62,
+              "unidad": "%"
+            }
+          ],
+          "correcta": "ellas"
+        }
+      ]
+    },
+    {
+      "id": "c-06",
+      "tipo": "caraacara",
+      "tema": "clima",
+      "infografia": "clima",
+      "anioDatos": null,
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "En Europa, con la subida de las temperaturas, ¿en quién aumentan más las muertes?",
+            "ca": "A Europa, amb la pujada de les temperatures, en qui augmenten més les morts?",
+            "en": "In Europe, as temperatures rise, in whom do deaths increase more?"
+          },
+          "opciones": [
+            {
+              "id": "ellas",
+              "etiqueta": {
+                "es": "Ellas",
+                "ca": "Elles",
+                "en": "Women"
+              },
+              "valor": 21.5,
+              "unidad": "puntos porcentuales al año"
+            },
+            {
+              "id": "ellos",
+              "etiqueta": {
+                "es": "Ellos",
+                "ca": "Ells",
+                "en": "Men"
+              },
+              "valor": 13.8,
+              "unidad": "puntos porcentuales al año"
+            }
+          ],
+          "correcta": "ellas"
+        }
+      ],
+      "nota": "Revisar: la infografía da 21,5 y 13,8 «pp/año» (puntos porcentuales por año) sin explicar más; confirmar qué mide exactamente con su fuente antes de publicar."
+    },
+    {
+      "id": "c-07",
+      "tipo": "caraacara",
+      "tema": "violencia",
+      "infografia": "violenciadigital",
+      "anioDatos": null,
+      "despues": "p-15",
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "¿Quién crees que recibe más ciberdelincuencia sexual?",
+            "ca": "Qui creus que rep més ciberdelinqüència sexual?",
+            "en": "Who do you think receives more sexual cybercrime?"
+          },
+          "opciones": [
+            {
+              "id": "ellas",
+              "etiqueta": {
+                "es": "Ellas",
+                "ca": "Elles",
+                "en": "Women"
+              },
+              "valor": 70,
+              "unidad": "%",
+              "texto": {
+                "es": "70 % de las víctimas",
+                "ca": "70 % de les víctimes",
+                "en": "70 % of the victims"
+              }
+            },
+            {
+              "id": "ellos",
+              "etiqueta": {
+                "es": "Ellos",
+                "ca": "Ells",
+                "en": "Men"
+              },
+              "valor": null,
+              "unidad": "%",
+              "texto": {
+                "es": "Menos",
+                "ca": "Menys",
+                "en": "Less"
+              }
+            }
+          ],
+          "correcta": "ellas"
+        }
+      ],
+      "nota": "KAN-2 2.12: «70 % de las víctimas de ciberdelincuencia sexual son mujeres», infografía Violencia digital (jun. 2026). No confundir con el 67 % de «víctimas de delitos sexuales digitales» (2023) de la infografía Beijing +30: es otra cifra y otro año. Año de los datos por confirmar."
+    }
+  ],
+  "reserva": [
+    {
+      "id": "c-02",
+      "tipo": "caraacara",
+      "tema": "educacion",
+      "infografia": "educacion",
+      "anioDatos": null,
+      "rondas": [
+        {
+          "pregunta": {
+            "es": "¿Dónde hay más mujeres: entre quienes terminan la universidad o entre los rectorados?",
+            "ca": "On hi ha més dones: entre qui acaba la universitat o entre els rectorats?",
+            "en": "Where are there more women: among those who finish university or among university rectors?"
+          },
+          "opciones": [
+            {
+              "id": "univ",
+              "etiqueta": {
+                "es": "Terminan la universidad (curso 2022-23)",
+                "ca": "Acaben la universitat (curs 2022-23)",
+                "en": "Finish university (2022-23 academic year)"
+              },
+              "valor": 60.9,
+              "unidad": "%"
+            },
+            {
+              "id": "rect",
+              "etiqueta": {
+                "es": "Rectorados (2024)",
+                "ca": "Rectorats (2024)",
+                "en": "University rectors (2024)"
+              },
+              "valor": 23,
+              "unidad": "%"
+            }
+          ],
+          "correcta": "univ"
+        }
+      ]
+    }
+  ],
+  "reserva_aviso": {
+    "es": "Parejas retiradas del juego por decisión de Mireia (KAN-1, punto 1.4, 20-11-2026). No se muestran ni se cuentan en las fuentes; se guardan por si se quieren recuperar.",
+    "datos": {
+      "es": "Datos retirados del juego por decisión de Mireia y guardados en «reservaDatos»: cine (puestos directivos) y agua para el hogar (KAN-2, 2.10, 22-11-2026, para dar sitio a datos nuevos) y dirección de explotaciones agrarias, 29 % (22-11-2026, no es propiedad de la tierra).",
+      "ca": "[TRADUCCIÓN PENDIENTE]",
+      "en": "[TRADUCCIÓN PENDIENTE]"
+    }
+  },
+  "reservaDatos": [
+    {
+      "id": "p-07",
+      "tipo": "dato",
+      "tema": "cine",
+      "infografia": "creadoras",
+      "pregunta": {
+        "es": "De cada 10 puestos directivos en el cine, ¿cuántos ocupan mujeres?",
+        "ca": "De cada 10 llocs directius al cinema, quants ocupen dones?",
+        "en": "Out of every 10 management positions in film, how many are held by women?"
+      },
+      "valor": 30,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "3 de cada 10",
+        "ca": "3 de cada 10",
+        "en": "3 out of 10"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador"
+      ],
+      "anioDatos": 2023,
+      "fraccion": {
+        "n": 3,
+        "de": 10
+      },
+      "preguntaPct": {
+        "es": "En el cine, dentro de los puestos de más poder, ¿qué porcentaje hay de mujeres?",
+        "ca": "Al cinema, dins dels llocs de més poder, quin percentatge hi ha de dones?",
+        "en": "In film, among the most powerful positions, what percentage are women?"
+      }
+    },
+    {
+      "id": "p-08",
+      "tipo": "dato",
+      "tema": "clima",
+      "infografia": "clima",
+      "pregunta": {
+        "es": "De cada 100 personas que van a buscar agua para el hogar donde no hay agua corriente, ¿cuántas son mujeres?",
+        "ca": "De cada 100 persones que van a buscar aigua per a la llar on no hi ha aigua corrent, quantes són dones?",
+        "en": "Out of every 100 people who fetch water for the home where there is no running water, how many are women?"
+      },
+      "valor": 70,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de quienes van a buscar el agua",
+        "ca": "de qui va a buscar l'aigua",
+        "en": "of those who fetch the water"
+      },
+      "mecanicas": [
+        "contador",
+        "aguja",
+        "pintar"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 70,
+        "de": 100
+      }
+    },
+    {
+      "id": "p-13",
+      "tipo": "dato",
+      "tema": "clima",
+      "infografia": "clima",
+      "pregunta": {
+        "es": "En España, de cada 100 personas que dirigen una explotación agraria, ¿cuántas son mujeres?",
+        "ca": "A Espanya, de cada 100 persones que dirigeixen una explotació agrària, quantes són dones?",
+        "en": "In Spain, out of every 100 people who run a farm, how many are women?"
+      },
+      "valor": 29,
+      "unidad": "%",
+      "etiqueta": {
+        "es": "de las explotaciones agrarias están dirigidas por mujeres",
+        "ca": "de les explotacions agràries estan dirigides per dones",
+        "en": "of farms are run by women"
+      },
+      "mecanicas": [
+        "pintar",
+        "contador",
+        "aguja"
+      ],
+      "anioDatos": null,
+      "fraccion": {
+        "n": 29,
+        "de": 100
+      },
+      "nota": "KAN-2 2.12: gestión de la tierra. La infografía Cambio climático (jun. 2025) da 15 % (mundo) y 29 % (España) sin explicar qué mide. El 29 % coincide con el Censo Agrario 2020 del INE (28,6 % de jefes de explotación son mujeres), así que NO es propiedad de la tierra sino dirección de explotaciones. POR CONFIRMAR la redacción con la fuente original (FAO / INE). El 15 % mundial no se usa hasta confirmarlo."
+    }
+  ]
+}

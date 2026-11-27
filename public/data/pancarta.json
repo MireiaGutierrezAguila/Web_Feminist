@@ -1,0 +1,615 @@
+{
+  "aviso": "Modelos de la actividad «Crea tu pancarta o camiseta». Imágenes de Mireia (1500×1500 px, convertidas a WebP). Todas las coordenadas están en píxeles de la imagen original (1500×1500). «recorte» = la parte de la imagen que se usa (en las camisetas, solo la delantera o solo la espalda, porque cada imagen trae las dos); «tinte» = «poligono» que se tiñe al cambiar el color y «excluir» (opcional) zonas dentro de él que NO se tiñen, como las manos (si falta «tinte», se tiñe todo el modelo); «area» = zona de diseño, en fracciones del recorte (x, y, ancho, alto). Las camisetas negras son una imagen propia (el multiply no aclara ni cambia un negro). Medidas tomadas sobre las imágenes el 25-11-2026; los polígonos de las pancartas de mano y de palo son aproximados y se pueden afinar. Colores (25-11-2026): los 15 de la paleta que eligió Mireia en Canva, numerados tal como en su captura, más «Original» (sin teñir). Fuentes del texto (25-11-2026): 12 de Google Fonts (licencia libre OFL), elegidas por Claude y pendientes de confirmar por Mireia. Fuentes de grafiti y rotulador añadidas (25-11-2026) por propuesta de Mireia: Sedgwick Ave Display, Rock Salt, Rubik Spray Paint y Shadows Into Light (Google Fonts, licencia libre).",
+  "modelos": [
+    {
+      "id": "pancarta-mano",
+      "tipo": "pancarta",
+      "nombre": {
+        "es": "Pancarta de mano",
+        "ca": "Pancarta de mà",
+        "en": "Handheld banner"
+      },
+      "imagen": {
+        "claro": "img/opt/pancarta/modelos/pancarta-mano.webp"
+      },
+      "recorte": {
+        "claro": {
+          "x": 39,
+          "y": 272,
+          "w": 1427,
+          "h": 762
+        }
+      },
+      "tinte": {
+        "poligono": [
+          [
+            165,
+            262
+          ],
+          [
+            1360,
+            282
+          ],
+          [
+            1392,
+            945
+          ],
+          [
+            120,
+            925
+          ]
+        ],
+        "excluir": [
+          [
+            [
+              99,
+              775
+            ],
+            [
+              125,
+              770
+            ],
+            [
+              150,
+              795
+            ],
+            [
+              168,
+              830
+            ],
+            [
+              178,
+              862
+            ],
+            [
+              176,
+              895
+            ],
+            [
+              168,
+              915
+            ],
+            [
+              205,
+              922
+            ],
+            [
+              206,
+              1036
+            ],
+            [
+              117,
+              1036
+            ],
+            [
+              88,
+              985
+            ],
+            [
+              58,
+              935
+            ],
+            [
+              40,
+              900
+            ],
+            [
+              52,
+              868
+            ],
+            [
+              76,
+              830
+            ],
+            [
+              88,
+              806
+            ]
+          ],
+          [
+            [
+              1342,
+              865
+            ],
+            [
+              1352,
+              840
+            ],
+            [
+              1380,
+              822
+            ],
+            [
+              1406,
+              812
+            ],
+            [
+              1426,
+              818
+            ],
+            [
+              1436,
+              858
+            ],
+            [
+              1462,
+              925
+            ],
+            [
+              1468,
+              950
+            ],
+            [
+              1452,
+              978
+            ],
+            [
+              1402,
+              1036
+            ],
+            [
+              1301,
+              1036
+            ],
+            [
+              1308,
+              982
+            ],
+            [
+              1312,
+              935
+            ],
+            [
+              1322,
+              915
+            ],
+            [
+              1335,
+              905
+            ],
+            [
+              1332,
+              885
+            ]
+          ]
+        ]
+      },
+      "area": {
+        "fx": 0.134,
+        "fy": 0.089,
+        "fw": 0.764,
+        "fh": 0.709
+      }
+    },
+    {
+      "id": "pancarta-palo",
+      "tipo": "pancarta",
+      "nombre": {
+        "es": "Pancarta con palo",
+        "ca": "Pancarta amb pal",
+        "en": "Sign on a pole"
+      },
+      "imagen": {
+        "claro": "img/opt/pancarta/modelos/pancarta-palo.webp"
+      },
+      "recorte": {
+        "claro": {
+          "x": 59,
+          "y": 55,
+          "w": 1408,
+          "h": 1294
+        }
+      },
+      "tinte": {
+        "poligono": [
+          [
+            62,
+            58
+          ],
+          [
+            1465,
+            58
+          ],
+          [
+            1465,
+            1010
+          ],
+          [
+            62,
+            1010
+          ]
+        ]
+      },
+      "area": {
+        "fx": 0.036,
+        "fy": 0.039,
+        "fw": 0.927,
+        "fh": 0.665
+      }
+    },
+    {
+      "id": "pancarta-cabecera",
+      "tipo": "pancarta",
+      "nombre": {
+        "es": "Pancarta de cabecera",
+        "ca": "Pancarta de capçalera",
+        "en": "March banner"
+      },
+      "imagen": {
+        "claro": "img/opt/pancarta/modelos/pancarta-cabecera.webp"
+      },
+      "recorte": {
+        "claro": {
+          "x": 61,
+          "y": 407,
+          "w": 1361,
+          "h": 565
+        }
+      },
+      "area": {
+        "fx": 0.043,
+        "fy": 0.076,
+        "fw": 0.911,
+        "fh": 0.85
+      }
+    },
+    {
+      "id": "camiseta-manga-corta",
+      "tipo": "camiseta",
+      "nombre": {
+        "es": "Camiseta de manga corta",
+        "ca": "Samarreta de màniga curta",
+        "en": "Short-sleeve T-shirt"
+      },
+      "imagen": {
+        "claro": "img/opt/pancarta/modelos/camiseta-blanca-manga-corta.webp",
+        "oscuro": "img/opt/pancarta/modelos/camiseta-negra-manga-corta.webp"
+      },
+      "recorte": {
+        "claro": {
+          "delantera": {
+            "x": 49,
+            "y": 348,
+            "w": 692,
+            "h": 786
+          },
+          "espalda": {
+            "x": 783,
+            "y": 348,
+            "w": 686,
+            "h": 786
+          }
+        },
+        "oscuro": {
+          "delantera": {
+            "x": 31,
+            "y": 363,
+            "w": 711,
+            "h": 746
+          },
+          "espalda": {
+            "x": 752,
+            "y": 364,
+            "w": 711,
+            "h": 746
+          }
+        }
+      },
+      "area": {
+        "fx": 0.25,
+        "fy": 0.2,
+        "fw": 0.5,
+        "fh": 0.5
+      }
+    },
+    {
+      "id": "camiseta-tirantes",
+      "tipo": "camiseta",
+      "nombre": {
+        "es": "Camiseta de tirantes",
+        "ca": "Samarreta de tirants",
+        "en": "Tank top"
+      },
+      "imagen": {
+        "claro": "img/opt/pancarta/modelos/camiseta-blanca-tirantes.webp",
+        "oscuro": "img/opt/pancarta/modelos/camiseta-negra-tirantes.webp"
+      },
+      "recorte": {
+        "claro": {
+          "delantera": {
+            "x": 52,
+            "y": 205,
+            "w": 590,
+            "h": 932
+          },
+          "espalda": {
+            "x": 875,
+            "y": 204,
+            "w": 590,
+            "h": 933
+          }
+        },
+        "oscuro": {
+          "delantera": {
+            "x": 58,
+            "y": 196,
+            "w": 586,
+            "h": 921
+          },
+          "espalda": {
+            "x": 871,
+            "y": 195,
+            "w": 585,
+            "h": 922
+          }
+        }
+      },
+      "area": {
+        "fx": 0.2,
+        "fy": 0.28,
+        "fw": 0.6,
+        "fh": 0.45
+      }
+    }
+  ],
+  "colores": [
+    {
+      "id": "original",
+      "hex": null,
+      "nombre": {
+        "es": "Original",
+        "ca": "Original",
+        "en": "Original"
+      }
+    },
+    {
+      "id": "c01",
+      "num": 1,
+      "hex": "#9e2c67",
+      "nombre": {
+        "es": "Color 1 · #9e2c67",
+        "ca": "Color 1 · #9e2c67",
+        "en": "Color 1 · #9e2c67"
+      }
+    },
+    {
+      "id": "c02",
+      "num": 2,
+      "hex": "#008281",
+      "nombre": {
+        "es": "Color 2 · #008281",
+        "ca": "Color 2 · #008281",
+        "en": "Color 2 · #008281"
+      }
+    },
+    {
+      "id": "c03",
+      "num": 3,
+      "hex": "#143501",
+      "nombre": {
+        "es": "Color 3 · #143501",
+        "ca": "Color 3 · #143501",
+        "en": "Color 3 · #143501"
+      }
+    },
+    {
+      "id": "c04",
+      "num": 4,
+      "hex": "#002d6b",
+      "nombre": {
+        "es": "Color 4 · #002d6b",
+        "ca": "Color 4 · #002d6b",
+        "en": "Color 4 · #002d6b"
+      }
+    },
+    {
+      "id": "c05",
+      "num": 5,
+      "hex": "#3b1d49",
+      "nombre": {
+        "es": "Color 5 · #3b1d49",
+        "ca": "Color 5 · #3b1d49",
+        "en": "Color 5 · #3b1d49"
+      }
+    },
+    {
+      "id": "c06",
+      "num": 6,
+      "hex": "#521740",
+      "nombre": {
+        "es": "Color 6 · #521740",
+        "ca": "Color 6 · #521740",
+        "en": "Color 6 · #521740"
+      }
+    },
+    {
+      "id": "c07",
+      "num": 7,
+      "hex": "#8b0d3b",
+      "nombre": {
+        "es": "Color 7 · #8b0d3b",
+        "ca": "Color 7 · #8b0d3b",
+        "en": "Color 7 · #8b0d3b"
+      }
+    },
+    {
+      "id": "c08",
+      "num": 8,
+      "hex": "#c29dc2",
+      "nombre": {
+        "es": "Color 8 · #c29dc2",
+        "ca": "Color 8 · #c29dc2",
+        "en": "Color 8 · #c29dc2"
+      }
+    },
+    {
+      "id": "c09",
+      "num": 9,
+      "hex": "#3d4047",
+      "nombre": {
+        "es": "Color 9 · #3d4047",
+        "ca": "Color 9 · #3d4047",
+        "en": "Color 9 · #3d4047"
+      }
+    },
+    {
+      "id": "c10",
+      "num": 10,
+      "hex": "#8a9569",
+      "nombre": {
+        "es": "Color 10 · #8a9569",
+        "ca": "Color 10 · #8a9569",
+        "en": "Color 10 · #8a9569"
+      }
+    },
+    {
+      "id": "c11",
+      "num": 11,
+      "hex": "#c27a92",
+      "nombre": {
+        "es": "Color 11 · #c27a92",
+        "ca": "Color 11 · #c27a92",
+        "en": "Color 11 · #c27a92"
+      }
+    },
+    {
+      "id": "c12",
+      "num": 12,
+      "hex": "#58066e",
+      "nombre": {
+        "es": "Color 12 · #58066e",
+        "ca": "Color 12 · #58066e",
+        "en": "Color 12 · #58066e"
+      }
+    },
+    {
+      "id": "c13",
+      "num": 13,
+      "hex": "#871844",
+      "nombre": {
+        "es": "Color 13 · #871844",
+        "ca": "Color 13 · #871844",
+        "en": "Color 13 · #871844"
+      }
+    },
+    {
+      "id": "c14",
+      "num": 14,
+      "hex": "#000000",
+      "nombre": {
+        "es": "Color 14 · #000000",
+        "ca": "Color 14 · #000000",
+        "en": "Color 14 · #000000"
+      },
+      "oscuro": true
+    },
+    {
+      "id": "c15",
+      "num": 15,
+      "hex": "#efe9da",
+      "nombre": {
+        "es": "Color 15 · #efe9da",
+        "ca": "Color 15 · #efe9da",
+        "en": "Color 15 · #efe9da"
+      }
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "shadows",
+      "familia": "Shadows Into Light",
+      "peso": "400",
+      "nombre": "Shadows Into Light"
+    },
+    {
+      "id": "rubikspray",
+      "familia": "Rubik Spray Paint",
+      "peso": "400",
+      "nombre": "Rubik Spray Paint"
+    },
+    {
+      "id": "rocksalt",
+      "familia": "Rock Salt",
+      "peso": "400",
+      "nombre": "Rock Salt"
+    },
+    {
+      "id": "sedgwick",
+      "familia": "Sedgwick Ave Display",
+      "peso": "400",
+      "nombre": "Sedgwick Ave Display"
+    },
+    {
+      "id": "permanent-marker",
+      "familia": "Permanent Marker",
+      "peso": "400",
+      "nombre": "Permanent Marker"
+    },
+    {
+      "id": "anton",
+      "familia": "Anton",
+      "peso": "400",
+      "nombre": "Anton"
+    },
+    {
+      "id": "bebas",
+      "familia": "Bebas Neue",
+      "peso": "400",
+      "nombre": "Bebas Neue"
+    },
+    {
+      "id": "bangers",
+      "familia": "Bangers",
+      "peso": "400",
+      "nombre": "Bangers"
+    },
+    {
+      "id": "caveat",
+      "familia": "Caveat",
+      "peso": "700",
+      "nombre": "Caveat"
+    },
+    {
+      "id": "pacifico",
+      "familia": "Pacifico",
+      "peso": "400",
+      "nombre": "Pacifico"
+    },
+    {
+      "id": "special-elite",
+      "familia": "Special Elite",
+      "peso": "400",
+      "nombre": "Special Elite"
+    },
+    {
+      "id": "playfair",
+      "familia": "Playfair Display",
+      "peso": "800",
+      "nombre": "Playfair Display"
+    },
+    {
+      "id": "abril",
+      "familia": "Abril Fatface",
+      "peso": "400",
+      "nombre": "Abril Fatface"
+    },
+    {
+      "id": "cinzel",
+      "familia": "Cinzel",
+      "peso": "700",
+      "nombre": "Cinzel"
+    },
+    {
+      "id": "cinzel-deco",
+      "familia": "Cinzel Decorative",
+      "peso": "700",
+      "nombre": "Cinzel Decorative"
+    },
+    {
+      "id": "atkinson",
+      "familia": "Atkinson Hyperlegible Next",
+      "peso": "700",
+      "nombre": "Atkinson Hyperlegible"
+    }
+  ]
+}

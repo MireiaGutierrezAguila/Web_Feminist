@@ -1,0 +1,32 @@
+---
+// Parte de arriba: espirales, título, carteles de secciones, calendario y nombres escondidos (los pinta js/portada.js).
+import Calendario from './Calendario.astro';
+---
+<section class="hero" id="hero">
+  <svg class="espiral e1" id="esp1" viewBox="-400 -400 800 800" aria-hidden="true"></svg>
+  <svg class="espiral e2" id="esp2" viewBox="-400 -400 800 800" aria-hidden="true"></svg>
+  <svg class="espiral e3" id="esp3" viewBox="-400 -400 800 800" aria-hidden="true"></svg>
+  <svg class="espiral e4" id="esp4" viewBox="-400 -400 800 800" aria-hidden="true"></svg>
+  <div class="wrap hero-grid">
+    <div class="hero-texto">
+      <h1><span>Mujeres que hicieron historia</span><span class="futuro">Mujeres que haremos historia</span></h1>
+      <p>Muchas de las grandes mujeres de la historia permanecieron ocultas por miedo a las represalias. En esta web pondremos luz a la oscuridad. Mueve el ratón o arrastra el dedo para descubrir los nombres escondidos.</p>
+      <nav class="poste" aria-label="Secciones">
+        <div class="poste-img">
+          <img src="/img/opt/poste-carteles.webp" alt="" width="760" height="1167">
+          <ul>
+            <li><a href="#mujeres">Mujeres</a></li>
+            <li><a href="#juego">El juego</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+            <li><a href="#glosario">Glosario</a></li>
+            <li><a href="#informatica">Quién lo hizo</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <Calendario />
+  <nav class="nombres" id="nombres" aria-label="Mujeres de la historia"></nav>
+  <div class="oscuridad" aria-hidden="true"></div>
+  <div class="remolinos" id="remolinos" aria-hidden="true"><div class="base"></div></div>
+</section>

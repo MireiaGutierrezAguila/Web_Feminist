@@ -1,5 +1,9 @@
 node_modules/
 dist/
+# Tipos que genera Astro al construir
+.astro/
+# Archivos privados de trabajo (no se publican)
+docs/*privado*
 .env
 .DS_Store
 .playwright-mcp/

@@ -1,0 +1,34 @@
+---
+// Molde común de todas las páginas: <head> con fuentes tipográficas y estilos compartidos,
+// el contenido de la página, el pie con la firma y, al final, los scripts de la página.
+// Paso 1a: los estilos y scripts se sirven tal cual desde public/ (copias de design-ejemplos/).
+import Pie from '../components/Pie.astro';
+
+interface Props {
+  title: string;
+  lang?: string;
+}
+const { title, lang = 'es' } = Astro.props;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@800&family=Cinzel+Decorative:wght@700;900&family=Pirata+One&family=Quintessential&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/comun.css" />
+    <link rel="stylesheet" href="/css/ficha.css" />
+    <link rel="stylesheet" href="/css/encaje-pie.css" />
+    <!-- Estilos propios de cada página -->
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+    <Pie lang={lang} />
+    <!-- Scripts de la página: van después del pie, como en los bocetos -->
+    <slot name="scripts" />
+  </body>
+</html>

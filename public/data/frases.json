@@ -1,0 +1,312 @@
+{
+  "aviso": "Datos de la actividad «¿Quién dijo qué?». Frases elegidas por Mireia (CSV «Frases_mujeres», 23-11-2026); verificación de fuentes hecha por agentes de IA el 23-11-2026 y pendiente de revisión de Mireia. «verificada» = fuente primaria localizada; «atribuida» = circula con su nombre pero no hemos localizado la fuente primaria (la actividad lo dice con «Se le atribuye»). Descartadas: Marilyn Monroe, Frida Kahlo, Simone de Beauvoir (sin fuente), Maya Angelou (es de Carl W. Buehner), Angela Davis «el feminismo es la idea radical…» (es de Marie Shear, 1986) y Clara Zetkin (sin fuente). Los textos «quién fue» (2 frases, aprobados por Mireia el 23-11-2026) los redactó Claude con datos conocidos y quedan pendientes de comprobar con fuente (Goodall 1960, Curie, Parks «más de un año», Pankhurst 1903, Malala «más joven»); ca/en pendientes. Las fuentes se muestran solo en la página de referencias (data/fuentes-actividades.json).",
+  "mujeres": [
+    {
+      "id": "gandhi",
+      "nombre": "Indira Gandhi",
+      "anios": "1917-1984",
+      "foto": "img/opt/frases-gandhi.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Indira_Gandhi_1966(cropped).jpg",
+      "fotoAutor": "Desconocido (archivo Bettmann)",
+      "fotoLicencia": "Dominio público (EE. UU.)",
+      "quien": {
+        "es": "Fue primera ministra de India entre 1966 y 1977 y entre 1980 y 1984. Fue la primera mujer en ocupar ese cargo en su país.",
+        "ca": "Va ser primera ministra de l'Índia entre el 1966 i el 1977 i entre el 1980 i el 1984. Va ser la primera dona a ocupar aquest càrrec al seu país.",
+        "en": "She was Prime Minister of India from 1966 to 1977 and from 1980 to 1984. She was the first woman to hold that office in her country."
+      }
+    },
+    {
+      "id": "goodall",
+      "nombre": "Jane Goodall",
+      "anios": "1934-2025",
+      "foto": "img/opt/frases-goodall.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Jane_Goodall_2015.jpg",
+      "fotoAutor": "Departamento de Estado de EE. UU.",
+      "fotoLicencia": "Dominio público",
+      "quien": {
+        "es": "Fue una científica británica que estudió a los chimpancés en la naturaleza y descubrió que usan herramientas. Empezó su trabajo en 1960, en Tanzania, y después dedicó su vida a proteger la naturaleza.",
+        "ca": "Va ser una científica britànica que va estudiar els ximpanzés a la natura i va descobrir que fan servir eines. Va començar la seva feina el 1960, a Tanzània, i després va dedicar la vida a protegir la natura.",
+        "en": "She was a British scientist who studied chimpanzees in the wild and discovered that they use tools. She began her work in 1960, in Tanzania, and later devoted her life to protecting nature."
+      }
+    },
+    {
+      "id": "malala",
+      "nombre": "Malala Yousafzai",
+      "anios": "1997",
+      "foto": "img/opt/frases-malala.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Malala_Yousafzai-cropped.jpg",
+      "fotoAutor": "Southbank Centre",
+      "fotoLicencia": "CC BY 2.0",
+      "quien": {
+        "es": "Es una activista pakistaní por la educación de las niñas y ganó el Premio Nobel de la Paz en 2014. Tenía 17 años: es la persona más joven que lo ha recibido.",
+        "ca": "És una activista pakistanesa per l'educació de les nenes i va guanyar el Premi Nobel de la Pau el 2014. Tenia 17 anys: és la persona més jove que l'ha rebut.",
+        "en": "She is a Pakistani activist for girls' education and won the Nobel Peace Prize in 2014. She was 17: the youngest person ever to receive it."
+      }
+    },
+    {
+      "id": "steinem",
+      "nombre": "Gloria Steinem",
+      "anios": "1934-2026",
+      "foto": "img/opt/frases-steinem.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Gloria_Steinem_1975.jpg",
+      "fotoAutor": "Jay Godwin (LBJ Library)",
+      "fotoLicencia": "Dominio público",
+      "quien": {
+        "es": "Fue una periodista y activista estadounidense, cofundadora de la revista Ms. Durante décadas fue una de las voces más conocidas del movimiento feminista en su país.",
+        "ca": "Va ser una periodista i activista estatunidenca, cofundadora de la revista Ms. Durant dècades va ser una de les veus més conegudes del moviment feminista al seu país.",
+        "en": "She was an American journalist and activist, co-founder of Ms. magazine. For decades she was one of the best-known voices of the feminist movement in her country."
+      }
+    },
+    {
+      "id": "curie",
+      "nombre": "Marie Curie",
+      "anios": "1867-1934",
+      "foto": "img/opt/frases-curie.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Marie_Curie_c._1898.jpg",
+      "fotoAutor": "Autor desconocido",
+      "fotoLicencia": "Dominio público (EE. UU.)",
+      "quien": {
+        "es": "Fue una científica nacida en Polonia que investigó la radiactividad y ganó dos premios Nobel. Fue la primera persona en conseguirlo: Física en 1903 y Química en 1911.",
+        "ca": "Va ser una científica nascuda a Polònia que va investigar la radioactivitat i va guanyar dos premis Nobel. Va ser la primera persona a aconseguir-ho: Física el 1903 i Química el 1911.",
+        "en": "She was a Polish-born scientist who researched radioactivity and won two Nobel Prizes. She was the first person to do so: Physics in 1903 and Chemistry in 1911."
+      }
+    },
+    {
+      "id": "satir",
+      "nombre": "Virginia Satir",
+      "anios": "1916-1988",
+      "foto": "img/opt/frases-satir.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:VirginiaSatir.jpg",
+      "fotoAutor": "William Meyer",
+      "fotoLicencia": "Dominio público",
+      "quien": {
+        "es": "Fue una terapeuta familiar estadounidense. Es conocida por ayudar a las familias a comunicarse mejor.",
+        "ca": "Va ser una terapeuta familiar estatunidenca. És coneguda per ajudar les famílies a comunicar-se millor.",
+        "en": "She was an American family therapist. She is known for helping families communicate better."
+      }
+    },
+    {
+      "id": "parks",
+      "nombre": "Rosa Parks",
+      "anios": "1913-2005",
+      "foto": "img/opt/frases-parks.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Rosa_Parks,_November_1956_(cropped).jpg",
+      "fotoAutor": "Autor desconocido (Rosa Parks papers, Library of Congress)",
+      "fotoLicencia": "Dominio público",
+      "quien": {
+        "es": "Fue una activista afroamericana. En 1955 la detuvieron en Montgomery por no ceder su asiento en un autobús. Su detención provocó un boicot a los autobuses de la ciudad que duró más de un año.",
+        "ca": "Va ser una activista afroamericana. El 1955 la van detenir a Montgomery per no cedir el seu seient en un autobús. La seva detenció va provocar un boicot als autobusos de la ciutat que va durar més d'un any.",
+        "en": "She was an African American activist. In 1955 she was arrested in Montgomery for refusing to give up her seat on a bus. Her arrest set off a boycott of the city's buses that lasted more than a year."
+      }
+    },
+    {
+      "id": "davis",
+      "nombre": "Angela Davis",
+      "anios": "1944",
+      "foto": "img/opt/frases-davis.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Angela_Davis_in_2019.jpg",
+      "fotoAutor": "Oregon State University",
+      "fotoLicencia": "CC BY-SA 2.0",
+      "quien": {
+        "es": "Es una activista y profesora estadounidense, conocida por su lucha contra el racismo. También ha defendido los derechos de las mujeres y la reforma de las cárceles.",
+        "ca": "És una activista i professora estatunidenca, coneguda per la seva lluita contra el racisme. També ha defensat els drets de les dones i la reforma de les presons.",
+        "en": "She is an American activist and professor, known for her fight against racism. She has also defended women's rights and prison reform."
+      }
+    },
+    {
+      "id": "woolf",
+      "nombre": "Virginia Woolf",
+      "anios": "1882-1941",
+      "foto": "img/opt/frases-woolf.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Virginia_Woolf_1927.jpg",
+      "fotoAutor": "Autor desconocido",
+      "fotoLicencia": "Dominio público",
+      "quien": {
+        "es": "Fue una escritora inglesa, autora de «Una habitación propia». En ese libro defendió que una mujer necesita dinero y un espacio propio para poder escribir.",
+        "ca": "Va ser una escriptora anglesa, autora d'«Una cambra pròpia». En aquest llibre va defensar que una dona necessita diners i un espai propi per poder escriure.",
+        "en": "She was an English writer, author of «A Room of One's Own». In that book she argued that a woman needs money and a space of her own in order to write."
+      }
+    },
+    {
+      "id": "goldman",
+      "nombre": "Emma Goldman",
+      "anios": "1869-1940",
+      "foto": "img/opt/frases-goldman.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Emma_Goldman_seated.jpg",
+      "fotoAutor": "Takuma Kajiwara",
+      "fotoLicencia": "Dominio público",
+      "quien": {
+        "es": "Fue una anarquista y escritora nacida en Lituania que vivió en Estados Unidos. Defendió la libertad de expresión y los derechos de las mujeres.",
+        "ca": "Va ser una anarquista i escriptora nascuda a Lituània que va viure als Estats Units. Va defensar la llibertat d'expressió i els drets de les dones.",
+        "en": "She was an anarchist and writer born in Lithuania who lived in the United States. She defended freedom of speech and women's rights."
+      }
+    },
+    {
+      "id": "pankhurst",
+      "nombre": "Emmeline Pankhurst",
+      "anios": "1858-1928",
+      "foto": "img/opt/frases-pankhurst.webp",
+      "fotoPagina": "https://commons.wikimedia.org/wiki/File:Emmeline_Pankhurst_portrait,_New_York_1913.jpg",
+      "fotoAutor": "LSE Library",
+      "fotoLicencia": "Sin restricciones de copyright conocidas",
+      "quien": {
+        "es": "Fue una sufragista británica que luchó por el voto de las mujeres. En 1903 fundó la WSPU, un grupo de mujeres conocido por sus protestas para conseguir ese derecho.",
+        "ca": "Va ser una sufragista britànica que va lluitar pel vot de les dones. El 1903 va fundar la WSPU, un grup de dones conegut per les seves protestes per aconseguir aquest dret.",
+        "en": "She was a British suffragist who fought for women's right to vote. In 1903 she founded the WSPU, a group of women known for their protests to win that right."
+      }
+    }
+  ],
+  "frases": [
+    {
+      "id": "f-01",
+      "mujer": "gandhi",
+      "texto": {
+        "es": "Para liberarse, la mujer debe sentirse libre, no para rivalizar con los hombres, sino libres en sus capacidades y personalidad.",
+        "ca": "Per alliberar-se, la dona ha de sentir-se lliure, no per rivalitzar amb els homes, sinó lliure en les seves capacitats i personalitat.",
+        "en": "To be liberated, a woman must feel free, not to compete with men, but free in her abilities and personality."
+      },
+      "estado": "verificada"
+    },
+    {
+      "id": "f-02",
+      "mujer": "goodall",
+      "texto": {
+        "es": "El mayor peligro que nos depara el futuro es la apatía.",
+        "ca": "El major perill que ens depara el futur és l'apatia.",
+        "en": "The greatest danger to our future is apathy."
+      },
+      "estado": "verificada"
+    },
+    {
+      "id": "f-03",
+      "mujer": "malala",
+      "texto": {
+        "es": "Debemos decirles a nuestras jóvenes que sus voces son importantes.",
+        "ca": "Hem de dir a les nostres joves que les seves veus són importants.",
+        "en": "We must tell our young women that their voices are important."
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-04",
+      "mujer": "steinem",
+      "texto": {
+        "es": "Un feminista es cualquiera que reconozca la igualdad y plena humanidad en mujeres y hombres.",
+        "ca": "Un feminista és qualsevol persona que reconegui la igualtat i la plena humanitat de dones i homes.",
+        "en": "A feminist is anyone who recognizes the equality and full humanity of women and men."
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-05",
+      "mujer": "curie",
+      "texto": {
+        "es": "Sería bueno sentir menos curiosidad por las personas y más por las ideas.",
+        "ca": "Seria bo sentir menys curiositat per les persones i més per les idees.",
+        "en": "It would be good to feel less curiosity about people and more about ideas."
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-06",
+      "mujer": "steinem",
+      "texto": {
+        "es": "Una vez que nos cansamos de buscar aprobación, nos damos cuenta de que es más fácil ganarse el respeto.",
+        "ca": "Quan ens cansem de buscar aprovació, ens adonem que és més fàcil guanyar-se el respecte.",
+        "en": "Once we give up searching for approval we often find it easier to earn respect."
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-07",
+      "mujer": "satir",
+      "texto": {
+        "es": "No podemos dejar que las percepciones de los demás terminen definiéndonos.",
+        "ca": "No podem deixar que les percepcions dels altres acabin definint-nos.",
+        "en": "We must not allow other people's limited perceptions to define us."
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-08",
+      "mujer": "parks",
+      "texto": {
+        "es": "Nunca debes tener miedo de lo que estás haciendo cuando es correcto.",
+        "ca": "Mai no has de tenir por del que estàs fent quan és correcte.",
+        "en": "You must never be fearful about what you are doing when it is right."
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-09",
+      "mujer": "davis",
+      "texto": {
+        "es": "No estoy aceptando las cosas que no puedo cambiar, estoy cambiando las cosas que no puedo aceptar.",
+        "ca": "No estic acceptant les coses que no puc canviar, estic canviant les coses que no puc acceptar.",
+        "en": "I am no longer accepting the things I cannot change. I am changing the things I cannot accept."
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-10",
+      "mujer": "davis",
+      "texto": {
+        "es": "En una sociedad racista no ser racista no es suficiente. Tenemos que ser antirracistas.",
+        "ca": "En una societat racista no ser racista no és suficient. Hem de ser antiracistes.",
+        "en": "In a racist society, it is not enough to be non-racist, we must be anti-racist."
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-11",
+      "mujer": "malala",
+      "texto": {
+        "es": "Para hacerme poderosa solo necesito una cosa: educación.",
+        "ca": "Per fer-me poderosa només necessito una cosa: educació.",
+        "en": "To become powerful I only need one thing: education."
+      },
+      "estado": "atribuida"
+    },
+    {
+      "id": "f-12",
+      "mujer": "woolf",
+      "texto": {
+        "es": "No hay barrera, cerradura, ni cerrojo que puedas imponer a la libertad de mi mente.",
+        "ca": "No hi ha barrera, pany ni forrellat que puguis imposar a la llibertat de la meva ment.",
+        "en": "There is no gate, no lock, no bolt that you can set upon the freedom of my mind."
+      },
+      "estado": "verificada",
+      "nota": {
+        "es": "Lo escribió en «Una habitación propia» (1929).",
+        "ca": "Ho va escriure a «Una cambra pròpia» (1929).",
+        "en": "She wrote it in «A Room of One's Own» (1929)."
+      }
+    },
+    {
+      "id": "f-13",
+      "mujer": "goldman",
+      "texto": {
+        "es": "Requiere menos esfuerzo intelectual el condenar que el pensar.",
+        "ca": "Requereix menys esforç intel·lectual condemnar que pensar.",
+        "en": "It requires less mental effort to condemn than to think."
+      },
+      "estado": "verificada",
+      "nota": {
+        "es": "La escribió en 1910 y la presentó como un dicho que alguien había dicho antes.",
+        "ca": "Ho va escriure el 1910 i ho va presentar com una dita que algú havia dit abans.",
+        "en": "She wrote it in 1910 and presented it as something someone had said before."
+      }
+    },
+    {
+      "id": "f-14",
+      "mujer": "pankhurst",
+      "texto": {
+        "es": "Prefiero ser rebelde que una esclava.",
+        "ca": "Prefereixo ser rebel que una esclava.",
+        "en": "I would rather be a rebel than a slave."
+      },
+      "estado": "atribuida"
+    }
+  ],
+  "traduccion": "Catalán e inglés traducidos por Claude (23-11-2026), pendientes de revisión de Mireia. En inglés, las frases f-02, f-06, f-07, f-08, f-09, f-10, f-12, f-13, f-14 llevan el texto original en inglés localizado por los agentes de IA (en las «atribuidas» es la versión que circula, sin fuente primaria); el resto son traducción del castellano."
+}

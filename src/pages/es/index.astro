@@ -1,0 +1,41 @@
+---
+// Portada en castellano (paso 1b de docs/plan-astro.md): la misma portada del boceto
+// design-ejemplos/propuesta-d-mezcla.html, dividida en piezas. En el paso 1c los textos pasan a src/i18n/.
+import Base from '../../layouts/Base.astro';
+import Cabecera from '../../components/portada/Cabecera.astro';
+import Hero from '../../components/portada/Hero.astro';
+import FondoBajo from '../../components/portada/FondoBajo.astro';
+import Mujeres from '../../components/portada/Mujeres.astro';
+import Juego from '../../components/portada/Juego.astro';
+import Actividades from '../../components/portada/Actividades.astro';
+import Glosario from '../../components/portada/Glosario.astro';
+import Informatica from '../../components/portada/Informatica.astro';
+
+const lang = 'es';
+---
+<Base title="Feminist · Mujeres que hicieron historia" lang={lang}>
+  <link slot="head" rel="stylesheet" href="/css/portada.css" />
+
+  <Cabecera />
+  <Hero />
+
+  <main>
+    <FondoBajo />
+    <div class="wrap">
+      <Mujeres />
+      <Juego />
+      <Actividades lang={lang} />
+      <Glosario lang={lang} />
+      <Informatica />
+    </div>
+  </main>
+
+  <!-- Orden importante: comun.js (objeto F) y ficha.js antes que portada.js -->
+  <Fragment slot="scripts">
+    <script is:inline src="/js/comun.js"></script>
+    <script is:inline src="/js/ficha.js"></script>
+    <script is:inline src="/js/portada-espirales.js"></script>
+    <script is:inline src="/js/estela.js"></script>
+    <script is:inline src="/js/portada.js"></script>
+  </Fragment>
+</Base>

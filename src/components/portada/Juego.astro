@@ -1,0 +1,28 @@
+---
+// El juego Feminist: texto, botones, QR y vídeo.
+---
+<section class="bloque" id="juego">
+  <div class="juego-grid">
+    <div class="juego-texto">
+      <h2>El juego Feminist</h2>
+      <p>Además de todas las actividades de esta web, también puedes descargarte en el móvil <strong>FEMINIST</strong>, el videojuego.</p>
+      <p>Es divertido, reivindicativo y feminista, por supuesto. En él te enfrentarás al patriarcado, superarás obstáculos cargados de desigualdad y reflexionarás sobre nuestra lucha.</p>
+      <p>Pero no te preocupes: cuando te quedes sin fuerzas, las grandes mujeres de la historia te entregarán su energía y sabiduría. Visítalas, descubre sus historias (científicas, artistas y líderes que cambiaron el mundo) y vuelve al camino más fuerte.</p>
+      <div class="botones">
+        <a class="btn" href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/juegos/feminist.html" target="_blank" rel="noopener" aria-label="Ver el juego (se abre en una pestaña nueva)">Ver el juego</a>
+        <a class="btn alt btn-play" href="https://play.google.com/store/apps/details?id=com.mireiaguila9.feminist&amp;utm_source=emea_Med" target="_blank" rel="noopener" aria-label="Google Play (se abre en una pestaña nueva)"><img src="/img/opt/android-robot.webp" alt="" width="125" height="218"><span>Google Play</span></a>
+      </div>
+      <!-- Código QR (de Mireia, hecho con Canva): lleva a la ficha del juego en Google Play. Solo se ve con ratón y pantalla ancha: en el móvil ya está el botón -->
+      <div class="qr-juego">
+        <a href="https://play.google.com/store/apps/details?id=com.mireiaguila9.feminist&amp;utm_source=emea_Med" target="_blank" rel="noopener" aria-label="Código QR para descargar el juego en Google Play (se abre en una pestaña nueva)"><img src="/img/opt/qr-google-play.webp" alt="Código QR del juego Feminist en Google Play" width="480" height="477" loading="lazy"></a>
+        <p>¿Estás en el ordenador? Escanea el código con la cámara de tu móvil y descarga el juego.</p>
+      </div>
+    </div>
+    <div class="video-juego">
+      <video id="videoJuego" muted loop playsinline preload="none" poster="/media/video-juego-poster.webp" disablepictureinpicture aria-label="Vídeo del juego Feminist: la protagonista recorre un laberinto mientras una sombra la observa">
+        <source src="/media/video-juego.mp4" type="video/mp4">
+      </video>
+      <button class="btn-video" id="btnVideo" type="button" aria-pressed="false">Reproducir vídeo</button>
+    </div>
+  </div>
+</section>

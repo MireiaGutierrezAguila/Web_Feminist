@@ -1,0 +1,756 @@
+{
+  "aviso": "Fragmentos reales elegidos por Mireia (hoja «CancionesFragmentos», 14-11-2026), copiados tal cual. Pendiente de Mireia: año, explicación (es/ca/en), fuente de la explicación, enlace de audio (todas están en Spotify), y confirmar nivel y lenguaje. Estructura igual que vinilos-ejemplo.json. «respuesta»: columna MACHISMO de la hoja = perpetua; segundo bloque = apoya (la hoja lo titulaba también MACHISMO por error; confirmado por Mireia el 14-11-2026 que son canciones que apoyan el feminismo). Los fragmentos conservan sus saltos de línea. Sin niveles por edad (decisión de Mireia, 14-11-2026): un solo grupo de discos y, en los que tienen palabras malsonantes (lenguaje «explicito»), una marca 🤬 con su explicación. Campos de palabrotas: «lenguaje» (el fragmento las tiene: se avisa con 🤬 bajo el disco), «tapar» (lista de palabras que salen como ●●●● si se elige taparlas) y «cancionConPalabrotas» (true/false para la CANCIÓN COMPLETA; null = Mireia aún no lo ha indicado y la ficha no dice nada). Los 4 true son porque su fragmento ya las lleva; el resto está por confirmar. Temas: cada disco tiene una lista «temas» (varios valen como respuesta; si solo toca uno, uno solo), con el vocabulario en «temas» de este archivo (perpetua / apoya): propuesta de Claude aprobada por Mireia el 14-11-2026. Años y enlaces de Spotify: solo los verificados (años con «anioFuente»); faltan los enlaces de 15 canciones y varios años (Reinas, Señora, Fabuloso, Pamela, La puerta violeta). Fuente de cada ficha: la propia canción (decisión de Mireia). Audio: «inicio» y «fin» en segundos desde el principio de la canción (Mireia, 14-11-2026, escritos como minutos.segundos; solo las 6 canciones con enlace de Spotify). Explicaciones («explicacion.es»): BORRADOR de Claude (14-11-2026) redactado a partir de cada fragmento, sin juzgar a quien canta ni repetir las palabrotas; pendiente de revisión de Mireia (campo «explicacionEstado»).",
+  "discos": [
+    {
+      "id": "v-01",
+      "fragmento": "Tú llegas y estas putas empiezan a envidiarte",
+      "cancion": "Hasta que Dios diga",
+      "grupo": "Bad Bunny/Anuel AA",
+      "anio": 2020,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "explicito",
+      "explicacion": {
+        "es": "Muestra a las mujeres como rivales envidiosas y normaliza el uso frívolo de «puta», restándole gravedad a la prostitución y al sufrimiento de muchas mujeres.",
+        "ca": "Mostra les dones com a rivals envejoses i normalitza l'ús frívol de «puta», restant gravetat a la prostitució i al patiment de moltes dones.",
+        "en": "It shows women as envious rivals and normalizes the casual use of «puta» (a Spanish insult for a prostitute), downplaying the seriousness of prostitution and the suffering of many women."
+      },
+      "fuente": "Bad Bunny/Anuel AA: «Hasta que Dios diga» (2020). Spotify: https://open.spotify.com/track/06s3QtMJVXw1AJX3UfvZG1",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "06s3QtMJVXw1AJX3UfvZG1",
+        "inicio": 57,
+        "fin": 62
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "tapar": [
+        "putas"
+      ],
+      "cancionConPalabrotas": true,
+      "temas": [
+        "rivalidad-mujeres",
+        "cosificacion"
+      ],
+      "anioFuente": "Wikipedia",
+      "explicacionEstado": "texto de Mireia (CSV de frases, 22-11-2026), con faltas corregidas por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/06s3QtMJVXw1AJX3UfvZG1"
+    },
+    {
+      "id": "v-02",
+      "fragmento": "Cobras menos y tu jefe siempre será un él\nHarta de tanta tontería\nMe tienen hasta el...\nPor no dejarme ser quien quiero",
+      "cancion": "Reinas",
+      "grupo": "SUU",
+      "anio": 2018,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de la desigualdad en el trabajo. En 2020, las mujeres ganaron de media 22.467 € al año y los hombres 27.643 €: unos 5.200 € menos, como si trabajaran 2 meses gratis.",
+        "ca": "Parla de la desigualtat a la feina. El 2020, les dones van guanyar de mitjana 22.467 € a l'any i els homes 27.643 €: uns 5.200 € menys, com si treballessin 2 mesos gratis.",
+        "en": "It talks about inequality at work. In 2020, women earned on average €22,467 a year and men €27,643: about €5,200 less, as if they worked 2 months for free."
+      },
+      "fuente": "SUU: «Reinas» (2018). Spotify: https://open.spotify.com/track/5IzRE854ffPscZMDG0hJel. Datos: Instituto de las Mujeres (Gobierno de España), «Mujeres en cifras», infografías «Brecha retributiva» (feb. 2023) y «Poder empresarial» (abr. 2024).",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "5IzRE854ffPscZMDG0hJel",
+        "inicio": 70,
+        "fin": 123
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. · Cifras salariales de 2020 (así lo dice la infografía).",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "igualdad",
+        "autonomia-libertad"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases, 22-11-2026), con faltas corregidas por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/5IzRE854ffPscZMDG0hJel",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
+    },
+    {
+      "id": "v-03",
+      "fragmento": "Tití me preguntó\nSi tengo muchas novia'\nMuchas novia'\nHoy tengo a una, mañana otra\nEy, pero no hay boda",
+      "cancion": "Tití me preguntó",
+      "grupo": "Bad Bunny",
+      "anio": 2022,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Presume de tener muchas novias y de cambiarlas como si fueran cromos: hoy una, mañana otra. Imagina que lo cantara una mujer: ¿la juzgarían igual?",
+        "ca": "Presumeix de tenir moltes nòvies i de canviar-les com si fossin cromos: avui una, demà una altra. Imagina que ho cantés una dona: la jutjarien igual?",
+        "en": "He brags about having lots of girlfriends and swapping them like trading cards: one today, another tomorrow. Imagine a woman singing this: would she be judged the same way?"
+      },
+      "fuente": "Bad Bunny: «Tití me preguntó» (2022). Spotify: https://open.spotify.com/track/1IHWl5LamUGEuP4ozKQSXZ",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "1IHWl5LamUGEuP4ozKQSXZ",
+        "inicio": 0,
+        "fin": 21
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "cosificacion",
+        "juzgar-mujer"
+      ],
+      "anioFuente": "álbum Un Verano Sin Ti; fecha sin contrastar",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/1IHWl5LamUGEuP4ozKQSXZ"
+    },
+    {
+      "id": "v-04",
+      "fragmento": "Tengo una culpa que me aprieta\nSe posa en mis hombros, y me cuesta andar\n\nPero dibujé una puerta violeta en la pared\nY, al entrar, me liberé",
+      "cancion": "La puerta violeta",
+      "grupo": "Rozalen",
+      "anio": 2017,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de la culpa que sienten muchas mujeres por no hacerlo todo como se espera de ellas, en una sociedad que no mira igual a hombres y a mujeres ni les exige lo mismo. La «puerta violeta» es el feminismo (el violeta es su color), que ayuda y respalda a muchas mujeres en su día a día.",
+        "ca": "Parla de la culpa que senten moltes dones per no fer-ho tot com s'espera d'elles, en una societat que no mira igual homes i dones ni els exigeix el mateix. La «porta violeta» és el feminisme (el violeta n'és el color), que ajuda i dona suport a moltes dones en el seu dia a dia.",
+        "en": "It speaks of the guilt many women feel for not doing everything as expected of them, in a society that does not look at men and women in the same way or demand the same from them. The «violet door» is feminism (violet is its colour), which helps and supports many women in their daily lives."
+      },
+      "fuente": "Rozalen: «La puerta violeta» (2017). Spotify: https://open.spotify.com/track/42ZASSKlh3UtYCgwZb8lBS",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "42ZASSKlh3UtYCgwZb8lBS",
+        "inicio": 40,
+        "fin": 77
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. Explicación redactada solo con el fragmento: revisar con la letra completa.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "denuncia-violencia",
+        "autonomia-libertad"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/42ZASSKlh3UtYCgwZb8lBS",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
+    },
+    {
+      "id": "v-05",
+      "fragmento": "Siempre me dan lo que quiero\nChingan cuando yo les digo\nNinguna me pone pero",
+      "cancion": "Cuatro Babys",
+      "grupo": "Maluma",
+      "anio": 2016,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "explicito",
+      "explicacion": {
+        "es": "Se muestra a la mujer como un objeto sexual y obedecer parece una virtud. Esto puede llevar a muchas chicas a ver el sexo como una obligación, y a los chicos a creer que pueden exigirlo.",
+        "ca": "Es mostra la dona com un objecte sexual i obeir sembla una virtut. Això pot portar moltes noies a veure el sexe com una obligació, i els nois a creure que el poden exigir.",
+        "en": "The woman is shown as a sexual object and obeying seems like a virtue. This can lead many girls to see sex as an obligation, and boys to believe they can demand it."
+      },
+      "fuente": "Maluma: «Cuatro Babys» (2016). Spotify: https://open.spotify.com/track/0JoHqmlqE0W0i9prt6kcHR",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "0JoHqmlqE0W0i9prt6kcHR",
+        "inicio": 30,
+        "fin": 40
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "tapar": [
+        "Chingan"
+      ],
+      "cancionConPalabrotas": true,
+      "temas": [
+        "cosificacion",
+        "control-posesion"
+      ],
+      "anioFuente": "Wikipedia",
+      "explicacionEstado": "texto de Mireia (CSV de frases, 22-11-2026), con faltas corregidas por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/0JoHqmlqE0W0i9prt6kcHR"
+    },
+    {
+      "id": "v-06",
+      "fragmento": "Señora, usted rebélese, déjele claro que no está de acuerdo\nQue las papas se las haga él, que su corazón vuelve a estar despierto",
+      "cancion": "Señora",
+      "grupo": "La flor del Otro",
+      "anio": 2016,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla del machismo que se vivía y se vive dentro de muchas casas, el machismo más normalizado. Anima a esas mujeres a rebelarse contra sus maridos y a dejar de ser sus criadas. ¿Y tú, qué ves en tu casa? ¿Crees que sigue habiendo machismo o ya hemos roto esos estereotipos?",
+        "ca": "Parla del masclisme que es vivia i es viu dins de moltes cases, el masclisme més normalitzat. Anima aquestes dones a rebel·lar-se contra els seus marits i a deixar de ser les seves criades. I tu, què veus a casa teva? Creus que continua havent-hi masclisme o ja hem trencat aquests estereotips?",
+        "en": "It talks about the sexism that was and still is experienced inside many homes, the most normalized kind. It encourages those women to rebel against their husbands and stop being their maids. And you, what do you see in your home? Do you think sexism is still there, or have we already broken those stereotypes?"
+      },
+      "fuente": "La flor del Otro: «Señora» (2016). Spotify: https://open.spotify.com/track/6WBMnVvZNL9ZIKAXG8oLTA",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "6WBMnVvZNL9ZIKAXG8oLTA",
+        "inicio": 110,
+        "fin": 127
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "igualdad",
+        "critica-roles"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases, 22-11-2026), con faltas corregidas por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/6WBMnVvZNL9ZIKAXG8oLTA",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
+    },
+    {
+      "id": "v-07",
+      "fragmento": "Con su carita de inocente\nElla me enamoró\nEs una diabla bien vestida\nElla me enamoró\nHace todo lo que pido\nElla me enamoró (Me enamoró)",
+      "cancion": "Carita de Inocente",
+      "grupo": "Prince Royce",
+      "anio": 2020,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Dice que es atractivo que ella haga todo lo que él pide, como si para gustar a alguien una mujer no pudiera tener opinión ni decir que no. Presenta la obediencia como algo bonito.",
+        "ca": "Diu que és atractiu que ella faci tot el que ell demana, com si per agradar a algú una dona no pogués tenir opinió ni dir que no. Presenta l'obediència com una cosa bonica.",
+        "en": "It says it is attractive for her to do everything he asks, as if, to please someone, a woman could not have an opinion or say no. It presents obedience as something beautiful."
+      },
+      "fuente": "Prince Royce: «Carita de Inocente» (2020). Spotify: https://open.spotify.com/track/5kQre7o8ky5DXeEPcyaCR1",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "5kQre7o8ky5DXeEPcyaCR1",
+        "inicio": 26,
+        "fin": 42
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "control-posesion",
+        "roles-desigualdad"
+      ],
+      "anioFuente": "Wikipedia",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/5kQre7o8ky5DXeEPcyaCR1"
+    },
+    {
+      "id": "v-08",
+      "fragmento": "Y quiero volver por la noche\nSin echar la mirada atrás\nY quiero volver por la noche\nSin miedo a ir sola por esta ciudad",
+      "cancion": "No darás nunca la talla",
+      "grupo": "La flor del Otro",
+      "anio": 2017,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla del miedo que pasan muchísimas mujeres al caminar de noche por la calle, por las violaciones y los asesinatos a manos de hombres. Ella quiere volver tranquila, sin ese miedo.",
+        "ca": "Parla de la por que passen moltíssimes dones quan caminen de nit pel carrer, per les violacions i els assassinats a mans d'homes. Ella vol tornar a casa tranquil·la, sense aquesta por.",
+        "en": "It speaks of the fear that very many women feel when walking down the street at night, because of rapes and murders at the hands of men. She wants to get home safely, without that fear."
+      },
+      "fuente": "La flor del Otro: «No darás nunca la talla» (2017). Spotify: https://open.spotify.com/track/01vIuUCX6vbC9xf6vAR9cg",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "01vIuUCX6vbC9xf6vAR9cg",
+        "inicio": 40,
+        "fin": 56
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "seguridad-calle",
+        "autonomia-libertad"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/01vIuUCX6vbC9xf6vAR9cg",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
+    },
+    {
+      "id": "v-09",
+      "fragmento": "Tan buena que\nera en la universidad, y ahora está dañá' / Se la pasaba estudiando, ahora vive\nperreando",
+      "cancion": "Sur y norte",
+      "grupo": "Ñengo Flow y Anuel AA",
+      "anio": 2020,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Juzga si una mujer es buena o mala: antes estudiaba y ahora «perrea». La critica como si divertirse y salir a bailar la hiciera valer menos o ser peor persona.",
+        "ca": "Jutja si una dona és bona o dolenta: abans estudiava i ara «perrea». La critica com si divertir-se i sortir a ballar la fes valer menys o ser pitjor persona.",
+        "en": "It judges whether a woman is good or bad: before she studied and now she «perrea» (dances reggaeton in a sexy style). It criticizes her as if having fun and going out dancing made her worth less or a worse person."
+      },
+      "fuente": "Ñengo Flow y Anuel AA: «Sur y norte» (2020). Spotify: https://open.spotify.com/track/5SMNzC4twfxy9c9JVlwfCZ",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "5SMNzC4twfxy9c9JVlwfCZ",
+        "inicio": 142,
+        "fin": 160
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "juzgar-mujer"
+      ],
+      "anioFuente": "Recotop (fuente secundaria)",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/5SMNzC4twfxy9c9JVlwfCZ"
+    },
+    {
+      "id": "v-10",
+      "fragmento": "Nadie te pidió opinión sobre lo que me harías\nSi me dejaras, y como no me dejo\nSale tu macho alfa y te conviertes en un saco de complejos",
+      "cancion": "No darás nunca la talla",
+      "grupo": "La flor del Otro",
+      "anio": 2017,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Refleja un cambio brusco muy común en quienes se creen con derecho a exigir: ante una negativa, se cae la careta y aparece el enfado, la prepotencia o el reproche. Comportamiento que nadie tiene por qué tolerar.",
+        "ca": "Reflecteix un canvi brusc molt comú en qui es creu amb dret a exigir: davant d'una negativa, cau la careta i apareix l'enuig, la prepotència o el retret. Un comportament que ningú té per què tolerar.",
+        "en": "It reflects a sudden change that is very common in people who feel entitled to demand: faced with a refusal, the mask falls and anger, arrogance or reproach appears. Behaviour nobody has to put up with."
+      },
+      "fuente": "La flor del Otro: «No darás nunca la talla» (2017). Spotify: https://open.spotify.com/track/01vIuUCX6vbC9xf6vAR9cg",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "01vIuUCX6vbC9xf6vAR9cg",
+        "inicio": 76,
+        "fin": 88
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "critica-roles",
+        "autonomia-libertad"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases, 22-11-2026), con faltas corregidas por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/01vIuUCX6vbC9xf6vAR9cg",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
+    },
+    {
+      "id": "v-11",
+      "fragmento": "Se van a todo, aunque tengan novio\nLas envidiosa' le tienen odio (yeh)",
+      "cancion": "Fabuloso",
+      "grupo": "Sech y Justin Quiles",
+      "anio": 2020,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Muestra a las mujeres como rivales envidiosas y señala el detalle de «aunque tengan novio». Detrás está la idea absurda de que tener pareja significa dejar de salir o de tratar con otros chicos.",
+        "ca": "Mostra les dones com a rivals envejoses i assenyala el detall d'«aunque tengan novio». Al darrere hi ha la idea absurda que tenir parella significa deixar de sortir o de tractar amb altres nois.",
+        "en": "It shows women as envious rivals and points out the detail of «aunque tengan novio» («even if they have a boyfriend»). Behind it is the absurd idea that having a partner means no longer going out or dealing with other guys."
+      },
+      "fuente": "Sech y Justin Quiles: «Fabuloso» (2020). Spotify: https://open.spotify.com/track/3cg2Y9mIiYNdcPTLKaQgK3",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "3cg2Y9mIiYNdcPTLKaQgK3",
+        "inicio": 7,
+        "fin": 22
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "rivalidad-mujeres",
+        "cosificacion"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases, 22-11-2026), con faltas corregidas por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/3cg2Y9mIiYNdcPTLKaQgK3",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
+    },
+    {
+      "id": "v-12",
+      "fragmento": "Pam, Pam, Pam, Pamela\nTe hicieron sentir pequeña\nY no supimos quién eras\nMás allá de tu belleza",
+      "cancion": "Pamela",
+      "grupo": "Rigoberta bandini",
+      "anio": 2025,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de lo superficial: cuando una mujer encaja en los cánones de belleza, a menudo no se valora nada más de ella. Se quedan en el físico y no ven sus otras virtudes, seguramente más importantes que la apariencia. Es lo típico de la «rubia tonta».",
+        "ca": "Parla del que és superficial: quan una dona encaixa en els cànons de bellesa, sovint no se'n valora res més. Es queden en el físic i no veuen les seves altres virtuts, segurament més importants que l'aparença. És el típic de la «rossa tonta».",
+        "en": "It talks about superficiality: when a woman fits beauty standards, often nothing else about her is valued. They stop at the physical and don't see her other virtues, surely more important than appearance. It is the classic «dumb blonde» stereotype."
+      },
+      "fuente": "Rigoberta bandini: «Pamela» (2025). Spotify: https://open.spotify.com/track/14RuX6i71XGGWtN9jvuarp",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "14RuX6i71XGGWtN9jvuarp",
+        "inicio": 46,
+        "fin": 66
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. Solo se ha encontrado «Pamela Anderson» (Rigoberta Bandini, 2025): Mireia debe confirmar que es esta canción. Revisar con la letra completa (¿Pamela Anderson?).",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "contra-cosificacion",
+        "belleza-autoestima"
+      ],
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/14RuX6i71XGGWtN9jvuarp",
+      "anioFuente": "Dato de Mireia (sin verificar con otra fuente)"
+    },
+    {
+      "id": "v-13",
+      "fragmento": "Baby, la vista es roja, yeh-eh\nPero se pone verde cuando empiece' a tomar\nY te empiece' a soltar",
+      "cancion": "El Manual",
+      "grupo": "Anuel AA",
+      "anio": 2020,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Cuando dice que, al beber, ella «se empieza a soltar», da a entender que una mujer que no quiere sexo puede acabar cediendo tras beber. Pero alguien bajo los efectos del alcohol o de las drogas puede no estar en condiciones de decidir, ni de saber lo que siente. Darse cuenta después de lo ocurrido puede ser un golpe muy duro y dejar secuelas psicológicas.",
+        "ca": "Quan diu que, en beure, ella «se empieza a soltar», dona a entendre que una dona que no vol sexe pot acabar cedint després de beure. Però algú sota els efectes de l'alcohol o de les drogues pot no estar en condicions de decidir, ni de saber què sent. Adonar-se'n després del que ha passat pot ser un cop molt dur i deixar seqüeles psicològiques.",
+        "en": "When he says that, when she drinks, she «se empieza a soltar» («starts to loosen up»), he implies that a woman who does not want sex may end up giving in after drinking. But someone under the effects of alcohol or drugs may not be in a position to decide, or to know what she feels. Realizing afterwards what happened can be a very hard blow and leave psychological after-effects."
+      },
+      "fuente": "Anuel AA: «El Manual» (2020). Spotify: https://open.spotify.com/track/7kOf0qHO4Rcwk6QJifZDRJ",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "7kOf0qHO4Rcwk6QJifZDRJ",
+        "inicio": 150,
+        "fin": 165
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "presion-consentimiento"
+      ],
+      "anioFuente": "Wikipedia",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/7kOf0qHO4Rcwk6QJifZDRJ"
+    },
+    {
+      "id": "v-14",
+      "fragmento": "Muchos modales y muy poca moralidad\nInsultamos al que tarda pa aparcar por sexo o edad\nYo que creía que podía cambiar esto\nPero soy como el resto",
+      "cancion": "Ovarios y pelotas",
+      "grupo": "SFDK",
+      "anio": 2018,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de los prejuicios: quiere cambiar las cosas, por ejemplo que no se juzgue con tópicos sexistas (como que las mujeres no saben conducir), pero dice que él solo no puede y que al final nos influimos unos a otros.",
+        "ca": "Parla dels prejudicis: vol canviar les coses, per exemple que no es jutgi amb tòpics sexistes (com que les dones no saben conduir), però diu que ell sol no pot i que al final ens influïm els uns als altres.",
+        "en": "It talks about prejudice: he wants to change things, for example not judging with sexist clichés (like that women can't drive), but says he can't do it alone and that in the end we influence each other."
+      },
+      "fuente": "SFDK: «Ovarios y pelotas» (2018). Spotify: https://open.spotify.com/track/07jXmYODipOueFYOfeBf7a",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "07jXmYODipOueFYOfeBf7a",
+        "inicio": 61,
+        "fin": 75
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "critica-roles"
+      ],
+      "anioFuente": "año del álbum Redención",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/07jXmYODipOueFYOfeBf7a"
+    },
+    {
+      "id": "v-15",
+      "fragmento": "Conmigo una rubia, tiene grande las tetas .\ntiene cara de atrevida pero sin alcohol es tímida",
+      "cancion": "La Jeepeta Remix",
+      "grupo": "Anuel AA",
+      "anio": 2020,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "explicito",
+      "explicacion": {
+        "es": "Cosifica a la mujer al centrarse en su cuerpo y da a entender que el alcohol puede hacer que ceda si es tímida o no quiere. Sin embargo, con alcohol o drogas puede verse afectada la capacidad de decidir libremente, con posibles secuelas psicológicas después.",
+        "ca": "Cosifica la dona en centrar-se en el seu cos i dona a entendre que l'alcohol pot fer que cedeixi si és tímida o no vol. Tanmateix, amb alcohol o drogues pot veure's afectada la capacitat de decidir lliurement, amb possibles seqüeles psicològiques després.",
+        "en": "It objectifies the woman by focusing on her body and implies that alcohol can make her give in if she is shy or unwilling. However, with alcohol or drugs the ability to decide freely can be affected, with possible psychological after-effects."
+      },
+      "fuente": "Anuel AA: «La Jeepeta Remix» (2020). Spotify: https://open.spotify.com/track/1mohfLaTJtB2RplHLQVM70",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "1mohfLaTJtB2RplHLQVM70",
+        "inicio": 209,
+        "fin": 219
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. La Jeepeta Remix es de Nio García con Anuel AA, Myke Towers, Brray y Juanka; la hoja solo decía Anuel AA: Mireia debe decidir cómo acreditarla.",
+      "tapar": [
+        "tetas"
+      ],
+      "cancionConPalabrotas": true,
+      "temas": [
+        "cosificacion",
+        "presion-consentimiento"
+      ],
+      "anioFuente": "Wikipedia (versión Remix)",
+      "explicacionEstado": "texto de Mireia (CSV de frases, 22-11-2026), con faltas corregidas por Claude; a revisar por Mireia",
+      "enlaceSpotify": "https://open.spotify.com/track/1mohfLaTJtB2RplHLQVM70"
+    },
+    {
+      "id": "v-16",
+      "fragmento": "Como una potra salvaje\nQue en el oleaje no pierde el sentido\nNo quiero riendas ni herrajes\nY en los homenajes me pongo un vestido",
+      "cancion": "Potra Salvaje",
+      "grupo": "Isabel Aaiún",
+      "anio": 2021,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de mujeres que quieren ser libres y a veces sienten que llevan unas riendas que les dicen por dónde ir. Ella reivindica que quiere decidir por sí misma.",
+        "ca": "Parla de dones que volen ser lliures i de vegades senten que porten unes regnes que els diuen per on han d'anar. Ella reivindica que vol decidir per ella mateixa.",
+        "en": "It speaks of women who want to be free and sometimes feel they are wearing reins that tell them where to go. She insists she wants to decide for herself."
+      },
+      "fuente": "Isabel Aaiún: «Potra Salvaje» (2021). Spotify: https://open.spotify.com/track/7ulBZOeFHaCeN2ubZxHxsg",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "7ulBZOeFHaCeN2ubZxHxsg",
+        "inicio": 162,
+        "fin": 178
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "autonomia-libertad"
+      ],
+      "anioFuente": "Wikipedia",
+      "enlaceSpotify": "https://open.spotify.com/track/7ulBZOeFHaCeN2ubZxHxsg",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-17",
+      "fragmento": "Una ladrona. Que me has llevado a la ruina. Te has llevado mi corazón, mi orgullo, mi pasta, mi paz, mi vida",
+      "cancion": "Mala Mujer",
+      "grupo": "C. Tangana",
+      "anio": 2017,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "¿Le ha robado la cartera cuando habla de su «pasta»? No parece. Es habitual ver reproches en los que se acusa a las mujeres de «llevarse» cosas compartidas —dinero, casa, dinero para los hijos—.",
+        "ca": "Li ha robat la cartera quan parla de la seva «pasta»? No ho sembla. És habitual veure retrets en què s'acusa les dones d'«emportar-se» coses compartides —diners, casa, diners per als fills—.",
+        "en": "Did she steal his wallet when he talks about his «pasta» («dough», slang for money)? It doesn't seem so. It is common to see reproaches accusing women of «taking away» shared things —money, home, money for the children—."
+      },
+      "fuente": "C. Tangana: «Mala Mujer» (2017). Spotify: https://open.spotify.com/track/067QpM2xLhK24hTiovC3Zo",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "067QpM2xLhK24hTiovC3Zo",
+        "inicio": 152,
+        "fin": 171
+      },
+      "nota": "En la hoja aparecía «. Tangana» y «Mala Mujer. C»: corregido por Claude, a confirmar por Mireia. «tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. Palabras leves en la letra completa («culo», «perro») según dos transcripciones que no coinciden del todo: Mireia decide si cancionConPalabrotas es true.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "juzgar-mujer"
+      ],
+      "anioFuente": "álbum Ídolo / Shazam",
+      "enlaceSpotify": "https://open.spotify.com/track/067QpM2xLhK24hTiovC3Zo",
+      "explicacionEstado": "texto de Mireia (CSV de frases, 22-11-2026), con faltas corregidas por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-18",
+      "fragmento": "Y olvido aquella niña que una vez\nEntre golpes y caricias\nSe convertiría en mujer",
+      "cancion": "Tatuajes",
+      "grupo": "Benito Kamelas",
+      "anio": 2017,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla claramente del maltrato: de una mujer que creció, o maduró, junto a un maltratador. La canción busca visibilizar a esas miles de mujeres que han sido y siguen siendo asesinadas y maltratadas a manos de sus parejas.",
+        "ca": "Parla clarament del maltractament: d'una dona que va créixer, o va madurar, al costat d'un maltractador. La cançó vol visibilitzar aquestes milers de dones que han estat i continuen sent assassinades i maltractades a mans de les seves parelles.",
+        "en": "It speaks clearly about abuse: about a woman who grew up, or matured, beside an abuser. The song seeks to make visible the thousands of women who have been and continue to be murdered and abused at the hands of their partners."
+      },
+      "fuente": "Benito Kamelas: «Tatuajes» (2017). Spotify: https://open.spotify.com/track/0fKM423ueJ9bJBIas0dAY7",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "0fKM423ueJ9bJBIas0dAY7",
+        "inicio": 43,
+        "fin": 70
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. La hoja decía «Benito Camelas»: el grupo es Benito Kamelas; Mireia debe confirmarlo. Revisar con la letra completa y el contexto de la canción.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "denuncia-violencia"
+      ],
+      "anioFuente": "Deezer / Amazon Music",
+      "enlaceSpotify": "https://open.spotify.com/track/0fKM423ueJ9bJBIas0dAY7",
+      "explicacionEstado": "texto de Mireia (CSV de frases, 22-11-2026), con faltas corregidas por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-19",
+      "fragmento": "Y ahora te sientes libre\nEncerrada en una cárcel\nPerdiendo la vida\nPor culpa de un cobarde\nQue te hizo ser violenta",
+      "cancion": "Escapate",
+      "grupo": "Los de Marras",
+      "anio": 2011,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de mujeres que, tras ser maltratadas, han tenido que defenderse de sus agresores y, además de pasar por ese infierno, ahora tienen que cumplir una condena.",
+        "ca": "Parla de dones que, després de ser maltractades, han hagut de defensar-se dels seus agressors i, a més de passar per aquest infern, ara han de complir una condemna.",
+        "en": "It speaks of women who, after being abused, have had to defend themselves from their attackers and, besides going through that hell, now have to serve a sentence."
+      },
+      "fuente": "Los de Marras: «Escapate» (2011). Spotify: https://open.spotify.com/track/0O3d8fkNHawf6vUTtaT5jI",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "0O3d8fkNHawf6vUTtaT5jI",
+        "inicio": 8,
+        "fin": 34
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. Tiempos del fragmento 0:08 – 0:34: confirmados por Mireia el 14-11-2026. El fragmento dice que él «te hizo ser violenta»: revisar con la letra completa antes de fijar el texto.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "denuncia-violencia"
+      ],
+      "anioFuente": "Deezer / Apple Music",
+      "enlaceSpotify": "https://open.spotify.com/track/0O3d8fkNHawf6vUTtaT5jI",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-20",
+      "fragmento": "\"to'a las putas quieren kush... las putas se montan fácil como en GTA\" o \"borré toas' las putas de mis contactos.",
+      "cancion": "Krippy Kush",
+      "grupo": "Farruko, Bad Bunny y Rvssian",
+      "anio": 2017,
+      "idioma": "es",
+      "respuesta": "perpetua",
+      "lenguaje": "explicito",
+      "explicacion": {
+        "es": "Insinúa que si una mujer tiene sexo sin poner resistencia, ya se la etiqueta como prostituta. En otras canciones se premia que ella ceda; aquí se la insulta por hacerlo. Haga lo que haga, no gana.",
+        "ca": "Insinua que si una dona té sexe sense posar resistència, ja se l'etiqueta de prostituta. En altres cançons es premia que ella cedeixi; aquí se l'insulta per fer-ho. Faci el que faci, no guanya.",
+        "en": "It insinuates that if a woman has sex without putting up resistance, she is already labelled a prostitute. In other songs her giving in is rewarded; here she is insulted for it. Whatever she does, she can't win."
+      },
+      "fuente": "Farruko, Bad Bunny y Rvssian: «Krippy Kush» (2017). Spotify: https://open.spotify.com/track/4RtEGAXBoUGYmDF8puxM6V",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "4RtEGAXBoUGYmDF8puxM6V",
+        "inicio": 20,
+        "fin": 46
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. La hoja decía «Krippi Kush» de Bad Bunny: corregido según Spotify y Wikipedia; Mireia debe confirmarlo.",
+      "tapar": [
+        "putas"
+      ],
+      "cancionConPalabrotas": true,
+      "temas": [
+        "cosificacion",
+        "juzgar-mujer"
+      ],
+      "anioFuente": "Wikipedia",
+      "enlaceSpotify": "https://open.spotify.com/track/4RtEGAXBoUGYmDF8puxM6V",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    },
+    {
+      "id": "v-21",
+      "fragmento": "Siempre faltó la mitad\nMiro atrás y no están\nLas que estaban siempre a un lado\nLas que siempre faltarán",
+      "cancion": "Las Que Faltaron",
+      "grupo": "Mafalda y Rebeca Lane",
+      "anio": 2018,
+      "idioma": "es",
+      "respuesta": "apoya",
+      "lenguaje": "limpio",
+      "explicacion": {
+        "es": "Habla de todas las mujeres artistas, científicas, inventoras… que tuvieron que firmar con otro nombre sus hallazgos u obras, o dejar que sus maridos se llevaran el mérito. Si firmaban ellas, sabían que la sociedad no las iba a apoyar, o que ni siquiera era legal.",
+        "ca": "Parla de totes les dones artistes, científiques, inventores… que van haver de signar amb un altre nom els seus descobriments o obres, o deixar que els seus marits se n'emportessin el mèrit. Si signaven elles, sabien que la societat no les donaria suport, o que ni tan sols era legal.",
+        "en": "It speaks of all the women artists, scientists, inventors… who had to sign their discoveries or works under another name, or let their husbands take the credit. If they signed them themselves, they knew society would not support them, or that it was not even legal."
+      },
+      "fuente": "Mafalda y Rebeca Lane: «Las Que Faltaron» (2018). Spotify: https://open.spotify.com/track/0Go5M1GUnttFOTUm88PAeB",
+      "audio": {
+        "plataforma": "spotify",
+        "id": "0Go5M1GUnttFOTUm88PAeB",
+        "inicio": 13,
+        "fin": 34
+      },
+      "nota": "«tapar» (palabras a tapar en el fragmento) y «lenguaje» propuestos por Claude: a confirmar por Mireia. La hoja decía «Mafalda»: la canción es con Rebeca Lane; Mireia debe confirmarlo.",
+      "cancionConPalabrotas": null,
+      "temas": [
+        "visibilidad"
+      ],
+      "anioFuente": "Apple Music",
+      "enlaceSpotify": "https://open.spotify.com/track/0Go5M1GUnttFOTUm88PAeB",
+      "explicacionEstado": "texto de Mireia (CSV de frases), pulido por Claude; a revisar por Mireia"
+    }
+  ],
+  "temas": {
+    "perpetua": [
+      {
+        "id": "cosificacion",
+        "es": "Cosificación del cuerpo",
+        "ca": "Cosificació del cos",
+        "en": "Objectification of the body"
+      },
+      {
+        "id": "control-posesion",
+        "es": "Control y posesión",
+        "ca": "Control i possessió",
+        "en": "Control and possession"
+      },
+      {
+        "id": "violencia-genero",
+        "es": "Violencia de género",
+        "ca": "Violència de gènere",
+        "en": "Gender-based violence"
+      },
+      {
+        "id": "rivalidad-mujeres",
+        "es": "Rivalidad entre mujeres",
+        "ca": "Rivalitat entre dones",
+        "en": "Rivalry between women"
+      },
+      {
+        "id": "juzgar-mujer",
+        "es": "Juzgar a la mujer (doble moral)",
+        "ca": "Jutjar la dona (doble moral)",
+        "en": "Judging women (double standard)"
+      },
+      {
+        "id": "roles-desigualdad",
+        "es": "Roles y desigualdad",
+        "ca": "Rols i desigualtat",
+        "en": "Roles and inequality"
+      },
+      {
+        "id": "presion-consentimiento",
+        "es": "Presión y consentimiento",
+        "ca": "Pressió i consentiment",
+        "en": "Pressure and consent"
+      }
+    ],
+    "apoya": [
+      {
+        "id": "autonomia-libertad",
+        "es": "Autonomía y libertad",
+        "ca": "Autonomia i llibertat",
+        "en": "Autonomy and freedom"
+      },
+      {
+        "id": "denuncia-violencia",
+        "es": "Denuncia de la violencia de género",
+        "ca": "Denúncia de la violència de gènere",
+        "en": "Condemning gender-based violence"
+      },
+      {
+        "id": "igualdad",
+        "es": "Igualdad en el trabajo y en casa",
+        "ca": "Igualtat a la feina i a casa",
+        "en": "Equality at work and at home"
+      },
+      {
+        "id": "critica-roles",
+        "es": "Crítica a los roles y la desigualdad",
+        "ca": "Crítica als rols i a la desigualtat",
+        "en": "Criticism of roles and inequality"
+      },
+      {
+        "id": "seguridad-calle",
+        "es": "Seguridad en la calle",
+        "ca": "Seguretat al carrer",
+        "en": "Safety on the street"
+      },
+      {
+        "id": "belleza-autoestima",
+        "es": "Belleza y autoestima",
+        "ca": "Bellesa i autoestima",
+        "en": "Beauty and self-esteem"
+      },
+      {
+        "id": "contra-cosificacion",
+        "es": "Contra la cosificación",
+        "ca": "Contra la cosificació",
+        "en": "Against objectification"
+      },
+      {
+        "id": "visibilidad",
+        "es": "Visibilidad de las mujeres",
+        "ca": "Visibilitat de les dones",
+        "en": "Visibility of women"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1310 @@
+{
+ "version": 1,
+ "aviso": "Datos de PRUEBA. Cartas tomadas de calendario.json (estado verificada). Islas: informe de fechas del 2026-11-18; las de estado «parcial» necesitan una segunda fuente antes de publicar. «parejas»: formato nuevo (2 cartas a la vez, con título corto para el puntero y texto explicado). «frase» de cada isla: redactada por Claude (Mireia dio las de la Revolución Francesa y la Industrial); pendiente de su revisión.",
+ "escala": {
+  "inicio": 1750,
+  "fin": 2025
+ },
+ "islas": [
+  {
+   "id": "industrial",
+   "nombre": {
+    "es": "La Revolución Industrial",
+    "ca": "La Revolució Industrial",
+    "en": "The Industrial Revolution"
+   },
+   "inicio": 1760,
+   "fin": 1830,
+   "imagen": "img/opt/isla-industrial.webp",
+   "ratio": 1.021,
+   "fuentes": [
+    {
+     "nombre": "Science Museum Group (blog)",
+     "url": "https://blog.sciencemuseum.org.uk/steaming-through-the-centuries/"
+    },
+    {
+     "nombre": "National Geographic Education",
+     "url": "https://education.nationalgeographic.org/resource/industrial-revolution-and-technology/7th-grade/"
+    }
+   ],
+   "estado": "parcial",
+   "nota": "Las fuentes discrepan: Science Museum 1760–1830; National Geographic 1750–1850. Se usa 1760–1830 y se muestra como «hacia». Fin pendiente de verificar.",
+   "comprobado": "2026-11-18",
+   "descripcion": {
+    "es": "Ocurrió alrededor de estos años.",
+    "ca": "Va passar al voltant d'aquests anys.",
+    "en": "It happened around these years."
+   },
+   "frase": {
+    "es": "Proceso de transformación económica, tecnológica y social que sustituyó el trabajo manual por la producción mecanizada en fábricas.",
+    "ca": "Procés de transformació econòmica, tecnològica i social que va substituir el treball manual per la producció mecanitzada a les fàbriques.",
+    "en": "A process of economic, technological and social change that replaced manual work with mechanized production in factories."
+   }
+  },
+  {
+   "id": "francesa",
+   "nombre": {
+    "es": "La Revolución Francesa",
+    "ca": "La Revolució Francesa",
+    "en": "The French Revolution"
+   },
+   "inicio": 1789,
+   "fin": 1799,
+   "imagen": "img/opt/isla-francesa.webp",
+   "ratio": 1.037,
+   "fuentes": [
+    {
+     "nombre": "BnF Essentiels",
+     "url": "https://essentiels.bnf.fr/fr/en-images/720f93c1-225a-4fb4-b2b3-cec167b6e239-revolution-francaise-1789-1799"
+    },
+    {
+     "nombre": "Assemblée nationale (juniors)",
+     "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/juniors/histoire/1789-1799-la-revolution-francaise"
+    }
+   ],
+   "estado": "verificada",
+   "nota": "Inicio 5 may 1789 (Estados Generales); fin 9 nov 1799 (golpe de Bonaparte).",
+   "comprobado": "2026-11-18",
+   "frase": {
+    "es": "Conflicto social y político que puso fin a la monarquía absoluta en Francia e impulsó los derechos humanos y la democracia moderna.",
+    "ca": "Conflicte social i polític que va posar fi a la monarquia absoluta a França i va impulsar els drets humans i la democràcia moderna.",
+    "en": "A social and political conflict that ended absolute monarchy in France and advanced human rights and modern democracy."
+   }
+  },
+  {
+   "id": "primera-republica",
+   "nombre": {
+    "es": "La Primera República española",
+    "ca": "La Primera República espanyola",
+    "en": "The First Spanish Republic"
+   },
+   "inicio": 1873,
+   "fin": 1874,
+   "imagen": "img/opt/isla-primera-republica.webp",
+   "ratio": 0.755,
+   "fuentes": [
+    {
+     "nombre": "Congreso de los Diputados",
+     "url": "https://www.congreso.es/es/cem/sexrevol"
+    },
+    {
+     "nombre": "Gran Enciclopèdia Catalana",
+     "url": "https://www.enciclopedia.cat/gran-enciclopedia-catalana/primera-republica-espanyola"
+    }
+   ],
+   "estado": "verificada",
+   "nota": "Proclamada el 11 feb 1873. Fin: 3 ene 1874 (golpe de Pavía) según el Congreso; la GEC cierra el periodo el 29 dic 1874. Redactar con prudencia.",
+   "comprobado": "2026-11-18",
+   "frase": {
+    "es": "Primer periodo republicano de la historia de España, muy breve.",
+    "ca": "Primer període republicà de la història d'Espanya, molt breu.",
+    "en": "The first republican period in Spanish history, a very short one."
+   }
+  },
+  {
+   "id": "primera-guerra-mundial",
+   "nombre": {
+    "es": "La Primera Guerra Mundial",
+    "ca": "La Primera Guerra Mundial",
+    "en": "The First World War"
+   },
+   "inicio": 1914,
+   "fin": 1918,
+   "imagen": "img/opt/isla-primera-guerra-mundial.webp",
+   "ratio": 1.15,
+   "fuentes": [
+    {
+     "nombre": "Australian War Memorial",
+     "url": "https://wm.awm.gov.au/read/armistice"
+    }
+   ],
+   "estado": "parcial",
+   "nota": "Solo una fuente abierta, y solo para el fin (armisticio 11 nov 1918). Falta segunda fuente para el inicio (28 jul 1914).",
+   "comprobado": "2026-11-18",
+   "frase": {
+    "es": "Gran guerra entre potencias europeas y sus aliados que causó millones de muertos y cambió el mapa de Europa.",
+    "ca": "Gran guerra entre potències europees i els seus aliats que va causar milions de morts i va canviar el mapa d'Europa.",
+    "en": "A great war between European powers and their allies that caused millions of deaths and changed the map of Europe."
+   }
+  },
+  {
+   "id": "segunda-republica",
+   "nombre": {
+    "es": "La Segunda República española",
+    "ca": "La Segona República espanyola",
+    "en": "The Second Spanish Republic"
+   },
+   "inicio": 1931,
+   "fin": 1939,
+   "imagen": "img/opt/isla-segunda-republica.webp",
+   "ratio": 0.672,
+   "fuentes": [
+    {
+     "nombre": "Congreso de los Diputados (II República)",
+     "url": "https://www.congreso.es/es/cem/vidparl1931-2"
+    },
+    {
+     "nombre": "Congreso de los Diputados (Cortes franquistas)",
+     "url": "https://www.congreso.es/es/cem/cortesp"
+    }
+   ],
+   "estado": "parcial",
+   "nota": "Proclamada el 14 abr 1931. Las dos fuentes son del mismo organismo y el fin como fecha de la República (1 abr 1939 u otra) está sin verificar.",
+   "comprobado": "2026-11-18",
+   "frase": {
+    "es": "Régimen democrático español que reconoció el voto de las mujeres y terminó con la Guerra Civil.",
+    "ca": "Règim democràtic espanyol que va reconèixer el vot de les dones i va acabar amb la Guerra Civil.",
+    "en": "A Spanish democratic regime that recognized women's right to vote and ended with the Civil War."
+   }
+  },
+  {
+   "id": "guerra-civil",
+   "nombre": {
+    "es": "La Guerra Civil española",
+    "ca": "La Guerra Civil espanyola",
+    "en": "The Spanish Civil War"
+   },
+   "inicio": 1936,
+   "fin": 1939,
+   "imagen": "img/opt/isla-guerra-civil.webp",
+   "ratio": 1.23,
+   "fuentes": [
+    {
+     "nombre": "Gran Enciclopèdia Catalana",
+     "url": "https://www.enciclopedia.cat/gran-enciclopedia-catalana/guerra-civil-espanyola"
+    },
+    {
+     "nombre": "Encyclopædia Universalis",
+     "url": "https://www.universalis.fr/encyclopedie/guerre-civile-espagnole-reperes-chronologiques/"
+    }
+   ],
+   "estado": "verificada",
+   "nota": "Inicio 17-19 jul 1936 según la fuente (convencional: 18 jul); fin 1 abr 1939.",
+   "comprobado": "2026-11-18",
+   "frase": {
+    "es": "Enfrentamiento armado en España tras el golpe de Estado contra la Segunda República, que terminó con la victoria de Franco.",
+    "ca": "Enfrontament armat a Espanya després del cop d'estat contra la Segona República, que va acabar amb la victòria de Franco.",
+    "en": "An armed conflict in Spain after the coup against the Second Republic, which ended with Franco's victory."
+   }
+  },
+  {
+   "id": "franco",
+   "nombre": {
+    "es": "La dictadura de Franco",
+    "ca": "La dictadura de Franco",
+    "en": "Franco's dictatorship"
+   },
+   "inicio": 1939,
+   "fin": 1975,
+   "imagen": "img/opt/isla-franco.webp",
+   "ratio": 1.321,
+   "fuentes": [
+    {
+     "nombre": "Origins (Ohio State University)",
+     "url": "https://origins.osu.edu/milestones/death-franco-spanish-civil-war"
+    },
+    {
+     "nombre": "Congreso de los Diputados (Cortes franquistas)",
+     "url": "https://www.congreso.es/es/cem/cortesp"
+    }
+   ],
+   "estado": "verificada",
+   "nota": "El régimen se cuenta desde 1939; hay quien lo cuenta desde 1936. Fin: muerte de Franco, 20 nov 1975.",
+   "comprobado": "2026-11-18",
+   "frase": {
+    "es": "Régimen autoritario que gobernó España tras la Guerra Civil, sin democracia ni libertades, hasta la muerte de Franco.",
+    "ca": "Règim autoritari que va governar Espanya després de la Guerra Civil, sense democràcia ni llibertats, fins a la mort de Franco.",
+    "en": "An authoritarian regime that ruled Spain after the Civil War, without democracy or freedoms, until Franco's death."
+   }
+  },
+  {
+   "id": "segunda-guerra-mundial",
+   "nombre": {
+    "es": "La Segunda Guerra Mundial",
+    "ca": "La Segona Guerra Mundial",
+    "en": "The Second World War"
+   },
+   "inicio": 1939,
+   "fin": 1945,
+   "imagen": "img/opt/isla-segunda-guerra-mundial.webp",
+   "ratio": 0.959,
+   "fuentes": [
+    {
+     "nombre": "USHMM: World War II key dates",
+     "url": "https://encyclopedia.ushmm.org/content/en/article/world-war-ii-key-dates"
+    },
+    {
+     "nombre": "National Archives (EE. UU.): rendición de Japón",
+     "url": "https://www.archives.gov/milestone-documents/surrender-of-japan"
+    }
+   ],
+   "estado": "parcial",
+   "nota": "Inicio 1 sep 1939 con una sola fuente abierta (USHMM); fin 2 sep 1945 con dos. Pendiente: imagen sin cuchillo.",
+   "comprobado": "2026-11-18",
+   "frase": {
+    "es": "Conflicto mundial entre los Aliados y las potencias del Eje que causó decenas de millones de muertos.",
+    "ca": "Conflicte mundial entre els Aliats i les potències de l'Eix que va causar desenes de milions de morts.",
+    "en": "A world conflict between the Allies and the Axis powers that caused tens of millions of deaths."
+   }
+  },
+  {
+   "id": "apolo-11",
+   "nombre": {
+    "es": "La misión Apolo 11",
+    "ca": "La missió Apol·lo 11",
+    "en": "The Apollo 11 mission"
+   },
+   "inicio": 1969,
+   "fin": 1969,
+   "imagen": "img/opt/isla-apolo-11.webp",
+   "ratio": 1.997,
+   "fuentes": [
+    {
+     "nombre": "NASA: Apollo 11 mission overview",
+     "url": "https://www.nasa.gov/history/apollo-11-mission-overview/"
+    },
+    {
+     "nombre": "Smithsonian NASM: Apollo 11 timeline",
+     "url": "https://airandspace.si.edu/explore/stories/apollo-missions/apollo-11-moon-landing/apollo-11-timeline"
+    }
+   ],
+   "estado": "verificada",
+   "nota": "Alunizaje: 20 jul 1969.",
+   "comprobado": "2026-11-18",
+   "frase": {
+    "es": "Misión de la NASA con la que los primeros seres humanos pisaron la Luna.",
+    "ca": "Missió de la NASA amb la qual els primers éssers humans van trepitjar la Lluna.",
+    "en": "The NASA mission in which the first humans walked on the Moon."
+   }
+  },
+  {
+   "id": "muro-berlin",
+   "nombre": {
+    "es": "La caída del Muro de Berlín",
+    "ca": "La caiguda del Mur de Berlín",
+    "en": "The fall of the Berlin Wall"
+   },
+   "inicio": 1989,
+   "fin": 1989,
+   "imagen": "img/opt/isla-muro-berlin.webp",
+   "ratio": 1.277,
+   "fuentes": [
+    {
+     "nombre": "Stiftung Berliner Mauer",
+     "url": "https://www.stiftung-berliner-mauer.de/en/topics/berlin-wall"
+    },
+    {
+     "nombre": "U.S. Department of State, Office of the Historian",
+     "url": "https://history.state.gov/milestones/1989-1992/fall-of-communism"
+    }
+   ],
+   "estado": "verificada",
+   "nota": "9 nov 1989.",
+   "comprobado": "2026-11-18",
+   "frase": {
+    "es": "Caída del muro que dividía Berlín desde 1961, símbolo del fin de la Guerra Fría.",
+    "ca": "Caiguda del mur que dividia Berlín des del 1961, símbol del final de la Guerra Freda.",
+    "en": "The fall of the wall that had divided Berlin since 1961, a symbol of the end of the Cold War."
+   }
+  }
+ ],
+ "cartas": [
+  {
+   "id": "c-1792",
+   "anio": 1792,
+   "mes": 9,
+   "dia": 20,
+   "pais": "Francia",
+   "tema": "derechos e igualdad",
+   "texto": {
+    "es": "Se aprueba en Francia la ley que autoriza el divorcio y lo regula como trámite civil.",
+    "ca": "S'aprova a França la llei que autoritza el divorci i el regula com a tràmit civil.",
+    "en": "France passes the law that authorizes divorce and regulates it as a civil procedure."
+   },
+   "fuentes": [
+    {
+     "nombre": "Wikisource: ley del 20 de septiembre de 1792 sobre el divorcio",
+     "url": "https://fr.wikisource.org/wiki/Le_Divorce_(Gagneur)/Appendice/Loi_du_20_septembre_1792"
+    },
+    {
+     "nombre": "Hérodote: almanaque, 20 de septiembre",
+     "url": "https://www.herodote.net/almanach-ID-3218.php"
+    }
+   ],
+   "origen": "calendario.json 09-20",
+   "estado": "verificada",
+   "nota": "Relleno 2026-11-14. La ley no es específica para mujeres: el enfoque es el derecho al divorcio. Wikisource reproduce el texto con título y fecha."
+  },
+  {
+   "id": "c-1848",
+   "anio": 1848,
+   "mes": 7,
+   "dia": 19,
+   "pais": "EE. UU.",
+   "tema": "movimientos sociales y derechos",
+   "texto": {
+    "es": "Comienza en Seneca Falls (Nueva York) la primera convención de derechos de las mujeres de EE. UU.; 100 personas firman su Declaración de Sentimientos.",
+    "ca": "Comença a Seneca Falls (Nova York) la primera convenció de drets de les dones dels EUA; 100 persones signen la seva Declaració de Sentiments.",
+    "en": "The first women's rights convention in the U.S. begins in Seneca Falls (New York); 100 people sign its Declaration of Sentiments."
+   },
+   "fuentes": [
+    {
+     "nombre": "National Park Service: Declaración de Sentimientos y la primera convención",
+     "url": "https://www.nps.gov/articles/declaration-of-sentiments-the-first-women-s-rights-convention.htm"
+    },
+    {
+     "nombre": "Archivos Nacionales de EE. UU.: «A Declaration for the Rights of Women»",
+     "url": "https://prologue.blogs.archives.gov/2019/07/08/a-declaration-for-the-rights-of-women/"
+    }
+   ],
+   "origen": "calendario.json 07-19",
+   "estado": "verificada",
+   "nota": "Ancla. Convención 19–20 jul 1848; la Declaración se firmó el 20 jul (NPS). Firmantes: 100, de ellos 68 mujeres y 32 hombres. «Primera» respaldado por NPS y Census, siempre referido a EE. UU. Cuenta también para la cuota de voto y política."
+  },
+  {
+   "id": "c-1893",
+   "anio": 1893,
+   "mes": 9,
+   "dia": 19,
+   "pais": "Nueva Zelanda",
+   "tema": "voto y derechos políticos",
+   "texto": {
+    "es": "El gobernador firma la ley electoral que reconoce el voto a las mujeres en las elecciones parlamentarias de Nueva Zelanda.",
+    "ca": "El governador signa la llei electoral que reconeix el vot a les dones en les eleccions parlamentàries de Nova Zelanda.",
+    "en": "The governor signs the electoral law that grants women the vote in New Zealand's parliamentary elections."
+   },
+   "fuentes": [
+    {
+     "nombre": "Ministerio de la Mujer de Nueva Zelanda: historia del sufragio",
+     "url": "https://www.women.govt.nz/about-us/history-womens-suffrage-aotearoa-new-zealand"
+    },
+    {
+     "nombre": "DigitalNZ (Biblioteca Nacional): historia del sufragio",
+     "url": "https://digitalnz.org/stories/522f8cc6fb002c84f2000002"
+    }
+   ],
+   "origen": "calendario.json 09-19",
+   "estado": "verificada",
+   "nota": "Ancla. 19 sep = firma del gobernador Lord Glasgow. Las dos fuentes repiten la misma frase (probable origen común en NZHistory, que dio 403). Decir «primer país autogobernado» y no «primero del mundo» si se amplía. Las mujeres no pudieron presentarse como candidatas hasta 1919. El 28 nov (primer voto) ya está en el calendario."
+  },
+  {
+   "id": "c-1920",
+   "anio": 1920,
+   "mes": 8,
+   "dia": 18,
+   "pais": "EE. UU.",
+   "tema": "voto y derechos políticos",
+   "texto": {
+    "es": "Tennessee ratifica la 19.ª Enmienda de EE. UU., sobre el voto de las mujeres, y completa los estados necesarios; se certifica el 26 de agosto.",
+    "ca": "Tennessee ratifica la 19a esmena dels EUA, sobre el vot de les dones, i completa els estats necessaris; es certifica el 26 d'agost.",
+    "en": "Tennessee ratifies the 19th Amendment to the U.S. Constitution, on women's suffrage, completing the required states; it is certified on August 26."
+   },
+   "fuentes": [
+    {
+     "nombre": "Archivos Nacionales de EE. UU.: 19.ª Enmienda",
+     "url": "https://www.archives.gov/milestone-documents/19th-amendment"
+    },
+    {
+     "nombre": "National Constitution Center: la 19.ª Enmienda entra en la Constitución",
+     "url": "https://constitutioncenter.org/amp/blog/on-this-day-the-19th-amendment-joins-the-constitution"
+    }
+   ],
+   "origen": "calendario.json 08-18",
+   "estado": "verificada",
+   "nota": "Ancla. Tennessee fue el 36.º estado, el 18 ago 1920 (Archivos Nacionales). [VERIFICAR] La certificación del 26 ago (secretario de Estado Colby) solo está en una fuente abierta. Los Archivos dicen que «muchas mujeres siguieron sin poder votar» durante décadas; las barreras concretas (leyes Jim Crow, tasas de voto) salen solo de búsquedas no abiertas. Cuenta para la cuota de voto. Fuentes básicas."
+  },
+  {
+   "id": "c-1931",
+   "anio": 1931,
+   "mes": 10,
+   "dia": 1,
+   "pais": "España",
+   "tema": "voto y derechos políticos",
+   "texto": {
+    "es": "Las Cortes españolas aprueban que los ciudadanos de ambos sexos mayores de 23 años tengan los mismos derechos electorales.",
+    "ca": "Les Corts espanyoles aproven que els ciutadans dels dos sexes majors de 23 anys tinguin els mateixos drets electorals.",
+    "en": "The Spanish Cortes approve that citizens of both sexes over 23 have the same electoral rights."
+   },
+   "fuentes": [
+    {
+     "nombre": "Congreso de los Diputados (blog): la sesión del 1 de octubre de 1931",
+     "url": "https://blog.congreso.es/1-de-octubre-de-1931-la-sesion-en-la-que-las-mujeres-dan-el-gran-paso-hacia-la-plena-ciudadania-politica/"
+    },
+    {
+     "nombre": "Universidad de Barcelona: Constitución de 1931 (art. 36)",
+     "url": "https://www.ub.edu/ciudadania/textos/constituciones/ce1931.htm"
+    }
+   ],
+   "origen": "calendario.json 10-01",
+   "estado": "verificada",
+   "nota": "Ancla. El 1 oct se vota el artículo (art. 34 en el proyecto, 36 en la Constitución del 9 dic 1931). NO poner cifras de votos: las fuentes discrepan (161-121 / 161-131). Mencionar a Clara Campoamor en la versión larga."
+  },
+  {
+   "id": "c-1933",
+   "anio": 1933,
+   "mes": 11,
+   "dia": 19,
+   "pais": "España",
+   "tema": "voto y derechos políticos",
+   "texto": {
+    "es": "Las mujeres españolas votan por primera vez en unas elecciones generales.",
+    "ca": "Les dones espanyoles voten per primera vegada en unes eleccions generals.",
+    "en": "Spanish women vote for the first time in a general election."
+   },
+   "fuentes": [
+    {
+     "nombre": "Wikipedia: 1933 Spanish general election",
+     "url": "https://en.wikipedia.org/wiki/1933_Spanish_general_election"
+    },
+    {
+     "nombre": "Euro Weekly News",
+     "url": "https://euroweeklynews.com/2018/11/19/female-suffrage-spain-marks-85-years-since-women-first-voted-in-elections-today/"
+    }
+   ],
+   "origen": "calendario.json 11-19",
+   "estado": "verificada",
+   "nota": "Sustituir la segunda fuente por una oficial (Congreso de los Diputados, Museo Reina Sofía)."
+  },
+  {
+   "id": "c-1945",
+   "anio": 1945,
+   "mes": 10,
+   "dia": 21,
+   "pais": "Francia",
+   "tema": "voto y derechos políticos",
+   "texto": {
+    "es": "Las francesas votan por primera vez en un escrutinio nacional, un año después de que una ordenanza les reconociera el voto.",
+    "ca": "Les franceses voten per primera vegada en un escrutini nacional, un any després que una ordenança els reconegués el vot.",
+    "en": "Frenchwomen vote for the first time in a national election, a year after an ordinance granted them the vote."
+   },
+   "fuentes": [
+    {
+     "nombre": "Asamblea Nacional de Francia: las 33 mujeres elegidas diputadas en 1945",
+     "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/histoire/le-suffrage-universel/la-conquete-de-la-citoyennete-politique-des-femmes/les-33-femmes-elues-deputees-pour-la-premiere-fois-en-1945"
+    },
+    {
+     "nombre": "Ministerio de Cultura de Francia: exposición de los Archivos Nacionales sobre el voto de las mujeres",
+     "url": "https://www.culture.gouv.fr/fr/Actualites/Archives-nationales-trois-raisons-de-ne-pas-manquer-l-exposition-sur-le-droit-de-vote-des-femmes"
+    }
+   ],
+   "origen": "calendario.json 10-21",
+   "estado": "verificada",
+   "nota": "Ancla. Elecciones del 21 oct 1945 (33 diputadas elegidas); ordenanza del 21 abr 1944 (publicada en el Journal officiel el 22 abr 1944). Es el primer voto en un escrutinio NACIONAL, no el primero absoluto: ya votaron en las municipales del 29 abr 1945 (Asamblea Nacional). Decir siempre «escrutinio nacional». Cuenta para la cuota de voto."
+  },
+  {
+   "id": "c-1971",
+   "anio": 1971,
+   "mes": 2,
+   "dia": 7,
+   "pais": "Suiza",
+   "tema": "voto y derechos políticos",
+   "texto": {
+    "es": "Los votantes suizos, solo hombres, aprueban en referéndum el voto y la elegibilidad de las mujeres a nivel federal, con un 65,7 % a favor.",
+    "ca": "Els votants suïssos, només homes, aproven en referèndum el vot i l'elegibilitat de les dones a escala federal, amb un 65,7 % a favor.",
+    "en": "Swiss voters, men only, approve in a referendum women's right to vote and stand for election at the federal level, with 65.7 % in favour."
+   },
+   "fuentes": [
+    {
+     "nombre": "Parlamento suizo: las mujeres votan",
+     "url": "https://www.parlament.ch/de/%C3%BCber-das-parlament/Seiten/Frauen-stimmen.aspx"
+    },
+    {
+     "nombre": "Biblioteca del Congreso de EE. UU.: 50 años del voto femenino en Suiza",
+     "url": "https://blogs.loc.gov/law/2021/04/50-years-of-womens-suffrage-in-switzerland/"
+    }
+   ],
+   "origen": "calendario.json 02-07",
+   "estado": "verificada",
+   "nota": "Ancla. 7 feb 1971, 65,7 % sí / 34,3 % no. Appenzell Innerrhoden: sentencia del Tribunal Federal el 27 nov 1990 y primer voto de mujeres allí el 28 abr 1991. No afirmar «último cantón» (ninguna fuente abierta lo dice). Cuenta para la cuota de voto."
+  },
+  {
+   "id": "c-1978",
+   "anio": 1978,
+   "mes": 12,
+   "dia": 6,
+   "pais": "España",
+   "tema": "derechos e igualdad",
+   "texto": {
+    "es": "España aprueba en referéndum su Constitución, que prohíbe en el artículo 14 la discriminación por razón de sexo.",
+    "ca": "Espanya aprova en referèndum la seva Constitució, que prohibeix a l'article 14 la discriminació per raó de sexe.",
+    "en": "Spain approves its Constitution in a referendum; Article 14 prohibits discrimination on the grounds of sex."
+   },
+   "fuentes": [
+    {
+     "nombre": "Congreso de los Diputados: la Constitución de 1978",
+     "url": "https://www.congreso.es/cem/const1978"
+    },
+    {
+     "nombre": "BOE: Constitución Española",
+     "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+    }
+   ],
+   "origen": "calendario.json 12-06",
+   "estado": "verificada",
+   "nota": "Relleno 2026-11-13. El Congreso da el referéndum del 6 dic 1978 y el BOE el artículo 14 (y su publicación el 29 dic 1978): cada fuente confirma una parte. Se evita deliberadamente la masacre de Montreal del 6 dic (tema sensible). Cuenta como día de España."
+  },
+  {
+   "id": "c-1981",
+   "anio": 1981,
+   "mes": 7,
+   "dia": 7,
+   "pais": "España",
+   "tema": "derechos civiles",
+   "texto": {
+    "es": "España promulga la Ley 30/1981, que regula la nulidad, la separación y el divorcio del matrimonio.",
+    "ca": "Espanya promulga la Llei 30/1981, que regula la nul·litat, la separació i el divorci del matrimoni.",
+    "en": "Spain enacts Law 30/1981, which regulates the annulment, separation and divorce of marriage."
+   },
+   "fuentes": [
+    {
+     "nombre": "BOE: Ley 30/1981, de 7 de julio",
+     "url": "https://www.boe.es/eli/es/l/1981/07/07/30/con/19810720"
+    },
+    {
+     "nombre": "El Derecho: reflexiones sobre el aniversario de la ley del divorcio",
+     "url": "https://elderecho.com/reflexiones-sobre-el-aniversario-de-la-ley-del-divorcio"
+    }
+   ],
+   "origen": "calendario.json 07-07",
+   "estado": "verificada",
+   "nota": "Ancla. 7 jul 1981 = fecha de la ley; publicada en el BOE núm. 172 del 20 jul 1981; en vigor el 9 ago 1981. Aprobación en el Congreso el 22 jun 1981 (Abogacía). La fuente 2 es un portal jurídico, no institucional: repasar si se quiere reforzar. Una fuente dice «entró en vigor el 7 jul», lo que contradice al BOE."
+  }
+ ],
+ "parejas": [
+  {
+   "id": "p-primer-voto",
+   "tema": "voto",
+   "nota": "Pareja de prueba. «pregunta» no lleva el año (se ve antes de colocar); «explicacion» sí (se ve al terminar la ronda). Textos redactados por Claude a partir de las fuentes, pendientes de revisión de Mireia.",
+   "comparacion": {
+    "es": "Nueva Zelanda se adelantó {n} años a España.",
+    "ca": "Nova Zelanda es va avançar {n} anys a Espanya.",
+    "en": "New Zealand was {n} years ahead of Spain."
+   },
+   "cartas": [
+    {
+     "id": "v-es-1933",
+     "anio": 1933,
+     "pais": "España",
+     "precision": "anio",
+     "titulo": {
+      "es": "1r voto mujer en España",
+      "ca": "1r vot de dona a Espanya",
+      "en": "1st woman's vote in Spain"
+     },
+     "fuentes": [
+      {
+       "nombre": "Blog del Congreso de los Diputados: 90 aniversario del voto femenino",
+       "url": "https://blog.congreso.es/90-aniversario-voto-femenino/"
+      }
+     ],
+     "estado": "parcial",
+     "nota": "Fecha del 23-4-1933 y papel de Campoamor según el blog del Congreso (leído como índice de extractos). Falta una segunda fuente abierta; Mireia da por buena la fecha. Redacción propia pendiente de su revisión.",
+     "pregunta": {
+      "es": "¿En qué año crees que votó por primera vez una mujer en España?",
+      "ca": "En quin any creus que va votar per primera vegada una dona a Espanya?",
+      "en": "In what year do you think a woman first voted in Spain?"
+     },
+     "explicacion": {
+      "es": "El 23 de abril de 1933 las mujeres españolas votaron por primera vez en unas elecciones. Su derecho al voto se había aprobado en las Cortes en 1931 (artículo 36 de la Constitución), gracias sobre todo al tesón de Clara Campoamor. En aquellas Cortes Constituyentes solo había 21 diputadas, apenas un 5 % de los escaños.",
+      "ca": "El 23 d'abril del 1933 les dones espanyoles van votar per primera vegada en unes eleccions. El seu dret de vot s'havia aprovat a les Corts el 1931 (article 36 de la Constitució), gràcies sobretot a la tenacitat de Clara Campoamor. En aquelles Corts Constituents només hi havia 21 diputades, tot just un 5 % dels escons.",
+      "en": "On 23 April 1933 Spanish women voted for the first time in an election. Their right to vote had been approved in the Cortes in 1931 (Article 36 of the Constitution), thanks above all to the tenacity of Clara Campoamor. In those Constituent Cortes there were only 21 women deputies, barely 5 % of the seats."
+     },
+     "comprobado": "2026-11-19",
+     "tituloLargo": {
+      "es": "Primer voto de la mujer en España",
+      "ca": "Primer vot de la dona a Espanya",
+      "en": "The first woman's vote in Spain"
+     }
+    },
+    {
+     "id": "v-nz-1893",
+     "anio": 1893,
+     "pais": "Nueva Zelanda",
+     "precision": "anio",
+     "titulo": {
+      "es": "1r voto mujer en el mundo",
+      "ca": "1r vot de dona al món",
+      "en": "1st woman's vote in the world"
+     },
+     "fuentes": [
+      {
+       "nombre": "Historia National Geographic: «Ni Europa ni EE. UU.: el primer voto femenino fue en Nueva Zelanda»",
+       "url": "https://historia.nationalgeographic.com.es/a/ni-europa-ni-eeuu-primer-voto-femenino-fue-nueva-zelanda_23201"
+      },
+      {
+       "nombre": "Ministerio de la Mujer de Nueva Zelanda: historia del sufragio",
+       "url": "https://www.women.govt.nz/about-us/history-womens-suffrage-aotearoa-new-zealand"
+      },
+      {
+       "nombre": "DigitalNZ (Biblioteca Nacional): historia del sufragio",
+       "url": "https://digitalnz.org/stories/522f8cc6fb002c84f2000002"
+      }
+     ],
+     "estado": "parcial",
+     "nota": "Mireia leyó la página de National Geographic en su navegador (yo no pude abrirla: error 403) y aportó una captura que trata 1893, Sheppard y Te Tai Mangakāhia. El año 1893 coincide con calendario.json (ley firmada el 19-sep-1893). «Primer país» es la tesis de National Geographic; hay antecedentes locales (p. ej., el territorio de Wyoming, 1869), por eso se dice «el primer país».",
+     "pregunta": {
+      "es": "¿En qué año crees que votó por primera vez una mujer a nivel mundial?",
+      "ca": "En quin any creus que va votar per primera vegada una dona a escala mundial?",
+      "en": "In what year do you think a woman first voted anywhere in the world?"
+     },
+     "explicacion": {
+      "es": "En 1893 Nueva Zelanda fue el primer país donde las mujeres pudieron votar. La lucha la lideraron Kate Sheppard y Meri Te Tai Mangakāhia. Fue un caso excepcional: mientras en otros países las peticiones por el voto femenino tardaron décadas en materializarse, allí la propuesta contó con una amplia aceptación social.",
+      "ca": "El 1893 Nova Zelanda va ser el primer país on les dones van poder votar. La lluita la van liderar Kate Sheppard i Meri Te Tai Mangakāhia. Va ser un cas excepcional: mentre en altres països les peticions pel vot femení van trigar dècades a materialitzar-se, allà la proposta va tenir una àmplia acceptació social.",
+      "en": "In 1893 New Zealand became the first country where women could vote. The struggle was led by Kate Sheppard and Meri Te Tai Mangakāhia. It was an exceptional case: while in other countries petitions for women's suffrage took decades to bear fruit, there the proposal enjoyed broad social acceptance."
+     },
+     "comprobado": "2026-11-19",
+     "tituloLargo": {
+      "es": "Primer voto de la mujer en el mundo",
+      "ca": "Primer vot de la dona al món",
+      "en": "The first woman's vote in the world"
+     }
+    }
+   ],
+   "contexto": {
+    "imagen": "img/opt/primer-voto-contexto.webp",
+    "alt": {
+     "es": "La protagonista de Feminist depositando su voto en una urna",
+     "ca": "La protagonista de Feminist dipositant el seu vot en una urna",
+     "en": "The protagonist of Feminist casting her vote in a ballot box"
+    },
+    "pie": {
+     "es": "Una votante de Feminist deposita su voto",
+     "ca": "Una votant de Feminist diposita el seu vot",
+     "en": "A Feminist voter casts her vote"
+    }
+   }
+  },
+  {
+   "id": "p-we-can-do-it",
+   "tema": "simbolos",
+   "nota": "Pareja de prueba con el cartel «We Can Do It!». Datos del texto que Mireia pegó (UCM, enlace aún sin abrir por Claude). Fecha: UCM dice 1943; Commons «circa 1942–1943»; el cartel indica «Post Feb. 15 to Feb. 28». La imagen de contexto es el logo del juego Feminist (ilustración de Mireia), NO el cartel original (en España sigue protegido). La segunda carta es una DÉCADA: «rango» 1980–1989 cuenta como acierto; «anio» 1985 solo sirve para colocar el puntero.",
+   "comparacion": {
+    "es": "Pasaron unos {n} años hasta que el cartel se hizo símbolo feminista.",
+    "ca": "Van passar uns {n} anys fins que el cartell es va convertir en símbol feminista.",
+    "en": "It took about {n} years for the poster to become a feminist symbol."
+   },
+   "contexto": {
+    "imagen": "img/opt/logo-feminist-podemos.webp",
+    "alt": {
+     "es": "La protagonista de Feminist haciendo el gesto del cartel «We Can Do It!»",
+     "ca": "La protagonista de Feminist fent el gest del cartell «We Can Do It!»",
+     "en": "The protagonist of Feminist striking the pose from the «We Can Do It!» poster"
+    },
+    "pie": {
+     "es": "Feminist, con el gesto del famoso cartel «We Can Do It!»",
+     "ca": "Feminist, amb el gest del famós cartell «We Can Do It!»",
+     "en": "Feminist, striking the pose of the famous «We Can Do It!» poster"
+    }
+   },
+   "cartas": [
+    {
+     "id": "w-cartel-1943",
+     "anio": 1943,
+     "pais": "Estados Unidos",
+     "precision": "anio",
+     "titulo": {
+      "es": "Nace el cartel We Can Do It",
+      "ca": "Neix el cartell We Can Do It",
+      "en": "The We Can Do It poster is born"
+     },
+     "tituloLargo": {
+      "es": "Nace el cartel «We Can Do It!»",
+      "ca": "Neix el cartell «We Can Do It!»",
+      "en": "The «We Can Do It!» poster is born"
+     },
+     "pregunta": {
+      "es": "¿En qué año se creó el cartel «We Can Do It!»?",
+      "ca": "En quin any es va crear el cartell «We Can Do It!»?",
+      "en": "In what year was the «We Can Do It!» poster created?"
+     },
+     "explicacion": {
+      "es": "«We Can Do It!» («¡Podemos hacerlo!») es un cartel de propaganda estadounidense de la Segunda Guerra Mundial. Lo creó J. Howard Miller en 1943 para la compañía Westinghouse Electric, como una imagen inspiradora para levantar la moral de las trabajadoras.",
+      "ca": "«We Can Do It!» («Podem fer-ho!») és un cartell de propaganda estatunidenc de la Segona Guerra Mundial. El va crear J. Howard Miller el 1943 per a la companyia Westinghouse Electric, com una imatge inspiradora per aixecar la moral de les treballadores.",
+      "en": "«We Can Do It!» is an American propaganda poster from the Second World War. J. Howard Miller created it in 1943 for the Westinghouse Electric company as an inspiring image to boost the morale of women workers."
+     },
+     "fuentes": [
+      {
+       "nombre": "Universidad Complutense de Madrid (Centro de Comunicación e Información): Mural «We Can Do It»",
+       "url": "https://ccinformacion.ucm.es/mural-we-can-do-it"
+      },
+      {
+       "nombre": "Wikimedia Commons: «We Can Do It! NARA 535413» (Archivos Nacionales de EE. UU.; fecha hacia 1942–1943)",
+       "url": "https://commons.wikimedia.org/wiki/File:We_Can_Do_It!_NARA_535413_-_Restoration_2.jpg"
+      }
+     ],
+     "estado": "parcial",
+     "comprobado": "2026-11-19",
+     "nota": "Texto propio a partir de lo que Mireia pegó (UCM). Año 1943 según UCM; Commons «circa 1942–1943». Pendiente de revisión de Mireia."
+    },
+    {
+     "id": "w-simbolo-80",
+     "anio": 1985,
+     "rango": [
+      1980,
+      1989
+     ],
+     "anioTexto": {
+      "es": "los años 80",
+      "ca": "els anys 80",
+      "en": "the 1980s"
+     },
+     "anioPin": {
+      "es": "Años 80",
+      "ca": "Anys 80",
+      "en": "1980s"
+     },
+     "pais": "Estados Unidos",
+     "precision": "decada",
+     "titulo": {
+      "es": "We Can Do It, símbolo feminista",
+      "ca": "We Can Do It, símbol feminista",
+      "en": "We Can Do It, a feminist symbol"
+     },
+     "tituloLargo": {
+      "es": "«We Can Do It!» se convierte en símbolo feminista",
+      "ca": "«We Can Do It!» es converteix en símbol feminista",
+      "en": "«We Can Do It!» becomes a feminist symbol"
+     },
+     "pregunta": {
+      "es": "¿En qué década volvió a ser famoso el cartel y empezó a considerarse un símbolo del feminismo?",
+      "ca": "En quina dècada va tornar a ser famós el cartell i va començar a considerar-se un símbol del feminisme?",
+      "en": "In what decade did the poster become famous again and begin to be seen as a symbol of feminism?"
+     },
+     "explicacion": {
+      "es": "Durante años el cartel quedó en el olvido. Fue en los años 80 cuando regresó y empezó a consolidarse como símbolo del feminismo. En las últimas décadas se usa en la lucha feminista con el mensaje de que las mujeres pueden: «¡Nosotras podemos hacerlo!».",
+      "ca": "Durant anys el cartell va quedar en l'oblit. Va ser als anys 80 quan va tornar i va començar a consolidar-se com a símbol del feminisme. En les últimes dècades s'utilitza en la lluita feminista amb el missatge que les dones poden: «Nosaltres podem fer-ho!».",
+      "en": "For years the poster was forgotten. It was in the 1980s that it came back and began to take hold as a symbol of feminism. In recent decades it has been used in the feminist struggle with the message that women can: «We can do it!»."
+     },
+     "fuentes": [
+      {
+       "nombre": "Universidad Complutense de Madrid (Centro de Comunicación e Información): Mural «We Can Do It»",
+       "url": "https://ccinformacion.ucm.es/mural-we-can-do-it"
+      }
+     ],
+     "estado": "parcial",
+     "comprobado": "2026-11-19",
+     "nota": "Texto propio a partir de lo que Mireia pegó (UCM). «Años 80» es una década: cualquier año 1980–1989 cuenta como acierto. Una sola fuente (sin abrir). Pendiente de revisión de Mireia."
+    }
+   ]
+  },
+  {
+   "id": "p-343-metoo",
+   "tema": "voz-publica",
+   "nota": "Pareja con info de Mireia (2026-11-19). Preguntas redactadas por Claude a partir de su texto: pendientes de su visto bueno. Datos contrastados en las dos páginas que Mireia aportó (Amnistía y Wikipedia), cada una la única fuente de su carta. Ojo: #MeToo tiene dos fechas: la frase la usa Tarana Burke desde 2006; el hashtag se hizo viral en octubre de 2017 (se usa 2017). Mireia vincula las dos: exposición pública masiva y respaldo de personas famosas para romper un tabú y eliminar la vergüenza individual.",
+   "comparacion": {
+    "es": "Entre una y otra pasaron {n} años, pero la estrategia es la misma: dar la cara en público para romper un tabú.",
+    "ca": "Entre l'una i l'altra van passar {n} anys, però l'estratègia és la mateixa: donar la cara en públic per trencar un tabú.",
+    "en": "{n} years passed between the two, but the strategy is the same: speaking out in public to break a taboo."
+   },
+   "contexto": {
+    "imagen": "img/opt/metoo-contexto.webp",
+    "alt": {
+     "es": "Tres puños de mujeres de distintos tonos de piel sobre el cartel «Me Too»",
+     "ca": "Tres punys de dones de diferents tons de pell sobre el cartell «Me Too»",
+     "en": "Three women's fists of different skin tones above the «Me Too» sign"
+    },
+    "pie": {
+     "es": "Tres puños bajo el cartel «Me Too»",
+     "ca": "Tres punys sota el cartell «Me Too»",
+     "en": "Three fists under the «Me Too» sign"
+    }
+   },
+   "cartas": [
+    {
+     "id": "m-343-1971",
+     "anio": 1971,
+     "pais": "Francia",
+     "precision": "anio",
+     "titulo": {
+      "es": "Manifiesto de las 343",
+      "ca": "Manifest de les 343",
+      "en": "Manifesto of the 343"
+     },
+     "tituloLargo": {
+      "es": "El Manifiesto de las 343 en Francia",
+      "ca": "El Manifest de les 343 a França",
+      "en": "The Manifesto of the 343 in France"
+     },
+     "pregunta": {
+      "es": "¿En qué año firmaron 343 francesas una declaración pública admitiendo haber abortado?",
+      "ca": "En quin any van signar 343 franceses una declaració pública admetent haver avortat?",
+      "en": "In what year did 343 Frenchwomen sign a public statement admitting they had had abortions?"
+     },
+     "explicacion": {
+      "es": "El 5 de abril de 1971, la revista Le Nouvel Observateur publicó un llamamiento firmado por 343 francesas, entre ellas Simone de Beauvoir y Catherine Deneuve, que declaraban públicamente haber abortado, algo ilegal entonces y que podía llevarlas a la cárcel. Reclamaban el derecho a un aborto libre y seguro. Francia despenalizó el aborto en 1975 con la Ley Veil.",
+      "ca": "El 5 d'abril del 1971, la revista Le Nouvel Observateur va publicar un crit signat per 343 franceses, entre elles Simone de Beauvoir i Catherine Deneuve, que declaraven públicament haver avortat, cosa il·legal aleshores i que podia portar-les a la presó. Reclamaven el dret a un avortament lliure i segur. França va despenalitzar l'avortament el 1975 amb la Llei Veil.",
+      "en": "On 5 April 1971, the magazine Le Nouvel Observateur published an appeal signed by 343 Frenchwomen, among them Simone de Beauvoir and Catherine Deneuve, who publicly declared that they had had abortions, something illegal at the time that could send them to prison. They demanded the right to a free and safe abortion. France decriminalized abortion in 1975 with the Veil Law."
+     },
+     "fuentes": [
+      {
+       "nombre": "Amnistía Internacional España: «El Manifiesto de las 343 o cómo el aborto clandestino sigue matando mujeres» (Vega Alonso del Val, 2024)",
+       "url": "https://www.es.amnesty.org/en-que-estamos/blog/historia/articulo/el-manifiesto-de-las-343-o-como-el-aborto-clandestino-sigue-matando-mujeres/"
+      }
+     ],
+     "estado": "parcial",
+     "comprobado": "2026-11-19",
+     "nota": "Texto propio a partir de Amnistía (leída por Claude el 2026-11-19). Una sola fuente. Pendiente de revisión de Mireia."
+    },
+    {
+     "id": "m-metoo-2017",
+     "anio": 2017,
+     "pais": "Estados Unidos",
+     "precision": "anio",
+     "titulo": {
+      "es": "Se hace viral #MeToo",
+      "ca": "Es fa viral #MeToo",
+      "en": "#MeToo goes viral"
+     },
+     "tituloLargo": {
+      "es": "El movimiento #MeToo se hace viral",
+      "ca": "El moviment #MeToo es fa viral",
+      "en": "The #MeToo movement goes viral"
+     },
+     "pregunta": {
+      "es": "¿En qué año se hizo viral el hashtag #MeToo y empezó el movimiento mundial?",
+      "ca": "En quin any es va fer viral l'etiqueta #MeToo i va començar el moviment mundial?",
+      "en": "In what year did the #MeToo hashtag go viral and the worldwide movement begin?"
+     },
+     "explicacion": {
+      "es": "Tarana Burke ya usaba la frase «Me Too» desde 2006. El 15 de octubre de 2017, tras las acusaciones contra el productor Harvey Weinstein, la actriz Alyssa Milano la publicó en Twitter y el hashtag se hizo viral: ese día se usó más de 200 000 veces y llegó al menos a 85 países. Mujeres de todo el mundo se atrevieron a contar sus experiencias de abuso.",
+      "ca": "Tarana Burke ja feia servir la frase «Me Too» des del 2006. El 15 d'octubre del 2017, després de les acusacions contra el productor Harvey Weinstein, l'actriu Alyssa Milano la va publicar a Twitter i l'etiqueta es va fer viral: aquell dia es va fer servir més de 200 000 vegades i va arribar almenys a 85 països. Dones d'arreu del món es van atrevir a explicar les seves experiències d'abús.",
+      "en": "Tarana Burke had been using the phrase «Me Too» since 2006. On 15 October 2017, after the accusations against producer Harvey Weinstein, actress Alyssa Milano posted it on Twitter and the hashtag went viral: that day it was used more than 200,000 times and reached at least 85 countries. Women all over the world dared to share their experiences of abuse."
+     },
+     "fuentes": [
+      {
+       "nombre": "Wikipedia: «Me Too (movimiento)»",
+       "url": "https://es.wikipedia.org/wiki/Me_Too_(movimiento)"
+      }
+     ],
+     "estado": "parcial",
+     "comprobado": "2026-11-19",
+     "nota": "Texto propio a partir de Wikipedia (leída por Claude el 2026-11-19). La última frase («mujeres de todo el mundo se atrevieron…») resume el sentido del movimiento y la idea de Mireia, no una cita. Una sola fuente, no académica. Pendiente de revisión de Mireia."
+    }
+   ]
+  },
+  {
+   "id": "p-juegos-olimpicos",
+   "tema": "deporte",
+   "nota": "Pareja con info de Mireia (2026-11-19). Corrección sobre su texto: las fuentes abiertas dan CUATRO deportes en París 1900 (tenis, golf, croquet y vela), no cinco. Preguntas y explicaciones redactadas por Claude: pendientes de su visto bueno. Fuentes de olympics.com (COI) no se pudieron abrir (timeout). Londres 2012: «todos los deportes del programa (26)», no «todas las pruebas».",
+   "comparacion": {
+    "es": "Entre el debut de las mujeres y su presencia en todos los deportes pasaron {n} años.",
+    "ca": "Entre el debut de les dones i la seva presència en tots els esports van passar {n} anys.",
+    "en": "{n} years passed between women's debut and their presence in every sport."
+   },
+   "contexto": {
+    "imagen": "img/opt/olimpicos-contexto.webp",
+    "alt": {
+     "es": "La protagonista de Feminist corriendo en una pista de atletismo ante los aros olímpicos",
+     "ca": "La protagonista de Feminist corrent en una pista d'atletisme davant dels anells olímpics",
+     "en": "The protagonist of Feminist running on an athletics track in front of the Olympic rings"
+    }
+   },
+   "cartas": [
+    {
+     "id": "o-1900",
+     "anio": 1900,
+     "pais": "Francia (París)",
+     "precision": "anio",
+     "titulo": {
+      "es": "Debutan las mujeres en los Juegos",
+      "ca": "Debuten les dones als Jocs",
+      "en": "Women make their debut at the Games"
+     },
+     "tituloLargo": {
+      "es": "Las mujeres debutan en los Juegos Olímpicos",
+      "ca": "Les dones debuten als Jocs Olímpics",
+      "en": "Women make their debut at the Olympic Games"
+     },
+     "pregunta": {
+      "es": "¿En qué año compitieron por primera vez mujeres en unos Juegos Olímpicos modernos?",
+      "ca": "En quin any van competir per primera vegada dones en uns Jocs Olímpics moderns?",
+      "en": "In what year did women first compete at the modern Olympic Games?"
+     },
+     "explicacion": {
+      "es": "Los Juegos Olímpicos modernos empezaron en Atenas en 1896, solo con hombres. Las mujeres debutaron en París 1900: fueron 22 deportistas, frente a 975 hombres, en tenis, golf, croquet y vela. La británica Charlotte Cooper ganó el torneo de tenis y fue la primera campeona olímpica individual.",
+      "ca": "Els Jocs Olímpics moderns van començar a Atenes el 1896, només amb homes. Les dones van debutar a París 1900: van ser 22 esportistes, enfront de 975 homes, en tennis, golf, croquet i vela. La britànica Charlotte Cooper va guanyar el torneig de tennis i va ser la primera campiona olímpica individual.",
+      "en": "The modern Olympic Games began in Athens in 1896, with men only. Women made their debut in Paris 1900: there were 22 female athletes, compared with 975 men, in tennis, golf, croquet and sailing. Britain's Charlotte Cooper won the tennis tournament and became the first individual Olympic champion."
+     },
+     "fuentes": [
+      {
+       "nombre": "Comité Olímpico Canadiense: mujeres en los Juegos",
+       "url": "https://olympic.ca/?p=339984"
+      },
+      {
+       "nombre": "Museo Olímpico (Google Arts & Culture): Juegos de 1896",
+       "url": "https://artsandculture.google.com/story/IwXhcR1S0lf8ZQ"
+      },
+      {
+       "nombre": "Museo Olímpico (Google Arts & Culture): Charlotte Cooper y las pioneras",
+       "url": "https://artsandculture.google.com/story/rQUhd8W2J4ywLg"
+      },
+      {
+       "nombre": "Olympedia: Juegos de 1896",
+       "url": "https://www.olympedia.org/editions/1"
+      },
+      {
+       "nombre": "Olympedia: Juegos de 1900",
+       "url": "https://www.olympedia.org/editions/2"
+      },
+      {
+       "nombre": "Olympedia: Charlotte Cooper",
+       "url": "https://www.olympedia.org/athletes/45"
+      }
+     ],
+     "estado": "verificada",
+     "comprobado": "2026-11-19",
+     "nota": "Cifras (22 mujeres, 975 hombres, 4 deportes) con dos fuentes abiertas. El texto de Mireia decía «cinco disciplinas»: se corrige a cuatro. Dos mujeres corrieron el maratón de 1896 fuera de la competición oficial (no se menciona)."
+    },
+    {
+     "id": "o-2012",
+     "anio": 2012,
+     "pais": "Reino Unido (Londres)",
+     "precision": "anio",
+     "titulo": {
+      "es": "Mujeres en todos los deportes",
+      "ca": "Dones en tots els esports",
+      "en": "Women in every sport"
+     },
+     "tituloLargo": {
+      "es": "Mujeres en todos los deportes olímpicos",
+      "ca": "Dones en tots els esports olímpics",
+      "en": "Women in every Olympic sport"
+     },
+     "pregunta": {
+      "es": "¿En qué año hubo por primera vez mujeres compitiendo en todos los deportes de los Juegos Olímpicos?",
+      "ca": "En quin any hi va haver per primera vegada dones competint en tots els esports dels Jocs Olímpics?",
+      "en": "In what year were there women competing in every sport at the Olympic Games for the first time?"
+     },
+     "explicacion": {
+      "es": "En Londres 2012, con el debut del boxeo femenino, las mujeres compitieron por primera vez en todos los deportes del programa olímpico (26). Habían pasado 116 años desde los primeros Juegos modernos, los de Atenas 1896.",
+      "ca": "A Londres 2012, amb el debut del boxa femení, les dones van competir per primera vegada en tots els esports del programa olímpic (26). Havien passat 116 anys des dels primers Jocs moderns, els d'Atenes 1896.",
+      "en": "At London 2012, with the debut of women's boxing, women competed for the first time in every sport on the Olympic programme (26). 116 years had passed since the first modern Games, in Athens 1896."
+     },
+     "fuentes": [
+      {
+       "nombre": "The Irish Times (2012): el COI y el equilibrio de género",
+       "url": "https://www.irishtimes.com/news/ioc-not-facing-gender-imbalance-1.1076750"
+      },
+      {
+       "nombre": "Comité Olímpico Canadiense: mujeres en los Juegos",
+       "url": "https://olympic.ca/?p=339984"
+      },
+      {
+       "nombre": "Guinness World Records: primeros Juegos con deportistas mujeres de todos los países participantes",
+       "url": "https://www.guinnessworldrecords.com/world-records/103769-first-olympic-games-to-feature-female-athletes-from-every-participating-nation"
+      }
+     ],
+     "estado": "parcial",
+     "comprobado": "2026-11-19",
+     "nota": "Sin fuente del COI (web no accesible). El Irish Times es anterior a los Juegos («will compete»). Los 116 años cuentan desde 1896, no son años sin mujeres (hubo desde 1900)."
+    }
+   ]
+  },
+  {
+   "id": "p-rae",
+   "tema": "lengua",
+   "nota": "Pareja «Ingresar en la RAE: hombres vs mujeres» con info de Mireia (2026-11-19). Preguntas y explicaciones redactadas por Claude: pendientes de su visto bueno. La frase final de la carta de ellas («en parte esta diferencia ayuda a explicar…») es idea de Mireia, no un dato de una fuente. Los «11 académicos varones» solo tienen una fuente abierta, y que todos fueran varones no lo dice ninguna página abierta expresamente.",
+   "comparacion": {
+    "es": "La RAE tardó {n} años en elegir a su primera académica.",
+    "ca": "La RAE va trigar {n} anys a elegir la seva primera acadèmica.",
+    "en": "The RAE took {n} years to elect its first woman academician."
+   },
+   "contexto": {
+    "imagen": "img/opt/rae-contexto.webp",
+    "rotulo": {
+     "es": "Real Academia Española",
+     "ca": "Reial Acadèmia Espanyola",
+     "en": "Royal Spanish Academy"
+    },
+    "alt": {
+     "es": "Un gran libro rojo con las letras RAE rodeado de rosas y hierro forjado",
+     "ca": "Un gran llibre vermell amb les lletres RAE envoltat de roses i ferro forjat",
+     "en": "A large red book with the letters RAE surrounded by roses and wrought iron"
+    }
+   },
+   "cartas": [
+    {
+     "id": "r-1713",
+     "anio": 1713,
+     "pais": "España",
+     "precision": "anio",
+     "titulo": {
+      "es": "Se funda la RAE",
+      "ca": "Es funda la RAE",
+      "en": "The RAE is founded"
+     },
+     "tituloLargo": {
+      "es": "Se funda la Real Academia Española",
+      "ca": "Es funda la Reial Acadèmia Espanyola",
+      "en": "The Royal Spanish Academy is founded"
+     },
+     "pregunta": {
+      "es": "¿En qué año se fundó la Real Academia Española (RAE), la institución que cuida nuestro idioma?",
+      "ca": "En quin any es va fundar la Reial Acadèmia Espanyola (RAE), la institució que vetlla per la llengua castellana?",
+      "en": "In what year was the Royal Spanish Academy (RAE), the institution that looks after the Spanish language, founded?"
+     },
+     "explicacion": {
+      "es": "La Real Academia Española (RAE) nació en 1713, impulsada por el marqués de Villena, y el rey Felipe V aprobó su creación en 1714. Al principio tenía once académicos de número, todos varones.",
+      "ca": "La Reial Acadèmia Espanyola (RAE) va néixer el 1713, impulsada pel marquès de Villena, i el rei Felip V en va aprovar la creació el 1714. Al principi tenia onze acadèmics de número, tots homes.",
+      "en": "The Royal Spanish Academy (RAE) was born in 1713, promoted by the Marquis of Villena, and King Philip V approved its creation in 1714. At first it had eleven full members, all of them men."
+     },
+     "fuentes": [
+      {
+       "nombre": "Biblioteca Virtual Miguel de Cervantes: portal de la Real Academia Española",
+       "url": "https://www.cervantesvirtual.com/portales/real_academia_espanola/"
+      },
+      {
+       "nombre": "Biblioteca Virtual Miguel de Cervantes (blog): «La cédula real de Felipe V cumple tres siglos»",
+       "url": "https://blog.cervantesvirtual.com/la-cedula-real-de-felipe-v-cumple-tres-siglos/"
+      },
+      {
+       "nombre": "Biblioteca Virtual Miguel de Cervantes (blog): «La RAE celebra su tricentenario»",
+       "url": "https://blog.cervantesvirtual.com/la-rae-celebra-su-tricentenario/"
+      }
+     ],
+     "estado": "parcial",
+     "comprobado": "2026-11-19",
+     "nota": "1713 y cédula de 3-10-1714: dos páginas del mismo proyecto (Cervantes Virtual). «Once académicos» al inicio: una sola fuente abierta (la RAE habla de 8 fundadores y 24 plazas en 1715). «Todos varones»: no lo dice ninguna página abierta expresamente; Mireia lo aporta. Las páginas de rae.es no se pudieron abrir (403)."
+    },
+    {
+     "id": "r-1978",
+     "anio": 1978,
+     "pais": "España",
+     "precision": "anio",
+     "titulo": {
+      "es": "Primera académica en la RAE",
+      "ca": "Primera acadèmica a la RAE",
+      "en": "First woman academician at the RAE"
+     },
+     "tituloLargo": {
+      "es": "Carmen Conde, primera académica de la RAE",
+      "ca": "Carmen Conde, primera acadèmica de la RAE",
+      "en": "Carmen Conde, first woman academician of the RAE"
+     },
+     "pregunta": {
+      "es": "¿En qué año fue elegida la primera mujer académica de número de la RAE?",
+      "ca": "En quin any va ser elegida la primera dona acadèmica de número de la RAE?",
+      "en": "In what year was the first woman full member of the RAE elected?"
+     },
+     "explicacion": {
+      "es": "La escritora Carmen Conde fue elegida en 1978 como primera académica de número de la RAE, y tomó posesión en 1979. Habían pasado 265 años desde su fundación. En parte, esta diferencia ayuda a explicar por qué muchas palabras usan el masculino para referirse a hombres y mujeres.",
+      "ca": "L'escriptora Carmen Conde va ser elegida el 1978 com a primera acadèmica de número de la RAE, i en va prendre possessió el 1979. Havien passat 265 anys des de la seva fundació. En part, aquesta diferència ajuda a explicar per què moltes paraules fan servir el masculí per referir-se a homes i dones.",
+      "en": "The writer Carmen Conde was elected in 1978 as the first woman full member of the RAE, and took her seat in 1979. 265 years had passed since its founding. In part, this gap helps explain why many words use the masculine to refer to both men and women."
+     },
+     "fuentes": [
+      {
+       "nombre": "Biblioteca Virtual Miguel de Cervantes: biografía de Carmen Conde",
+       "url": "https://cervantesvirtual.com/portales/carmen_conde/autora_biografia/"
+      },
+      {
+       "nombre": "Biblioteca Virtual Miguel de Cervantes: portal de Carmen Conde",
+       "url": "https://www.cervantesvirtual.com/portales/carmen_conde/"
+      },
+      {
+       "nombre": "El Español (El Cultural): mujeres en las academias españolas",
+       "url": "https://elespanol.com/el-cultural/letras/20230308/mujeres-academias-espanolas-anos-olvido-reparacion/744925835_0.amp.html"
+      }
+     ],
+     "estado": "parcial",
+     "comprobado": "2026-11-19",
+     "nota": "Año de elección (1978; 9-feb según El Español) con dos fuentes abiertas; ingreso en 1979. Ojo: la ficha de la RAE no se pudo abrir. La frase sobre el masculino en el vocabulario es idea de Mireia, sin fuente."
+    }
+   ]
+  },
+  {
+   "id": "p-coche",
+   "tema": "conducir",
+   "nota": "Pareja del coche con info de Mireia (2026-11-19). Mireia dio 1885 para el primer automóvil; se usa 1886 (patente 29-ene y presentación 3-jul), que es la fecha segura (1885 = construcción, una sola fuente). Preguntas y explicaciones redactadas por Claude: pendientes de su visto bueno. La Ley 14/1975 NO menciona el carné de conducir: suprime la licencia marital en general; que la casada pudiera sacarse el carné sin permiso del marido solo lo dice una fuente divulgativa. La frase de Arabia Saudí la pidió Mireia: se escribe «desde junio de 2018» (el 24 de junio no tiene fuente abierta explícita).",
+   "comparacion": {
+    "es": "Pasaron {n} años entre el primer automóvil y el fin del permiso del marido para conducir.",
+    "ca": "Van passar {n} anys entre el primer automòbil i el final del permís del marit per conduir.",
+    "en": "{n} years passed between the first automobile and the end of the husband's permission to drive."
+   },
+   "contexto": {
+    "imagen": "img/opt/coche-contexto.webp",
+    "alt": {
+     "es": "La protagonista de Feminist al volante de un coche antiguo rodeado de rosas y adornos",
+     "ca": "La protagonista de Feminist al volant d'un cotxe antic envoltat de roses i adorns",
+     "en": "The protagonist of Feminist at the wheel of an old car surrounded by roses and ornaments"
+    }
+   },
+   "cartas": [
+    {
+     "id": "c-benz-1886",
+     "anio": 1886,
+     "pais": "Alemania",
+     "precision": "anio",
+     "titulo": {
+      "es": "Primer automóvil",
+      "ca": "Primer automòbil",
+      "en": "First automobile"
+     },
+     "tituloLargo": {
+      "es": "Se presenta el primer automóvil",
+      "ca": "Es presenta el primer automòbil",
+      "en": "The first automobile is presented"
+     },
+     "pregunta": {
+      "es": "¿En qué año se patentó y presentó el primer automóvil?",
+      "ca": "En quin any es va patentar i presentar el primer automòbil?",
+      "en": "In what year was the first automobile patented and presented?"
+     },
+     "explicacion": {
+      "es": "El alemán Karl Benz solicitó la patente de su Motorwagen, considerado el primer automóvil práctico, el 29 de enero de 1886, y lo presentó en Mannheim el 3 de julio de ese mismo año. Conducían los hombres.",
+      "ca": "L'alemany Karl Benz va sol·licitar la patent del seu Motorwagen, considerat el primer automòbil pràctic, el 29 de gener del 1886, i el va presentar a Mannheim el 3 de juliol d'aquell mateix any. Conduïen els homes.",
+      "en": "The German Karl Benz applied for a patent on his Motorwagen, considered the first practical automobile, on 29 January 1886, and presented it in Mannheim on 3 July of that year. Men were the ones who drove."
+     },
+     "fuentes": [
+      {
+       "nombre": "National Motor Museum (Reino Unido): el Benz Motorwagen",
+       "url": "https://nationalmotormuseum.org.uk/story-of-motoring/motoring-topics/vehicle-stories/benz-motorwagen/"
+      }
+     ],
+     "estado": "parcial",
+     "comprobado": "2026-11-19",
+     "nota": "Una sola fuente abierta (Mercedes-Benz, Britannica, Smithsonian y Library of Congress dieron 403). Se usa 1886; 1885 es el año de construcción. «Primer automóvil» = primero práctico con motor de combustión (Daimler, 1886, y Cugnot, 1769, tienen matices). La frase «Conducían los hombres» es de Mireia, no de la fuente."
+    },
+    {
+     "id": "c-1975",
+     "anio": 1975,
+     "pais": "España",
+     "precision": "anio",
+     "titulo": {
+      "es": "Conducir sin permiso del marido",
+      "ca": "Conduir sense permís del marit",
+      "en": "Driving without her husband's permission"
+     },
+     "tituloLargo": {
+      "es": "Las españolas pueden conducir sin permiso del marido",
+      "ca": "Les espanyoles poden conduir sense permís del marit",
+      "en": "Spanish women can drive without their husband's permission"
+     },
+     "pregunta": {
+      "es": "¿En qué año dejaron de necesitar las mujeres casadas en España el permiso del marido para conducir?",
+      "ca": "En quin any les dones casades a Espanya van deixar de necessitar el permís del marit per conduir?",
+      "en": "In what year did married women in Spain stop needing their husband's permission to drive?"
+     },
+     "explicacion": {
+      "es": "En 1975, la Ley 14/1975 suprimió en España la licencia marital, y con ella desapareció el permiso del marido para actos como conducir. En Arabia Saudí, las mujeres pueden conducir legalmente desde junio de 2018.",
+      "ca": "El 1975, la Llei 14/1975 va suprimir a Espanya la llicència marital, i amb ella va desaparèixer el permís del marit per a actes com conduir. A l'Aràbia Saudita, les dones poden conduir legalment des del juny del 2018.",
+      "en": "In 1975, Law 14/1975 abolished the marital licence in Spain, and with it the husband's permission for acts such as driving disappeared. In Saudi Arabia, women have been legally allowed to drive since June 2018."
+     },
+     "fuentes": [
+      {
+       "nombre": "BOE: Ley 14/1975, de 2 de mayo, sobre la situación jurídica de la mujer casada",
+       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1975-9245"
+      },
+      {
+       "nombre": "Noticias para Municipios: 50 años sin el permiso del marido para trabajar, viajar o conducir",
+       "url": "https://noticiasparamunicipios.com/portada/p-ellas/50-anos-sin-el-permiso-del-marido-para-trabajar-viajar-o-conducir/"
+      },
+      {
+       "nombre": "Al Jazeera (2017): Arabia Saudí permitirá conducir a las mujeres",
+       "url": "https://www.aljazeera.com/amp/news/2017/9/27/saudi-arabia-to-allow-women-to-drive"
+      },
+      {
+       "nombre": "Khaleej Times: Arabia Saudí pone fin a la prohibición de conducir a las mujeres",
+       "url": "https://www.khaleejtimes.com/region/saudi-arabia/driving-change-saudis-end-ban-on-women-behind-wheel"
+      }
+     ],
+     "estado": "parcial",
+     "comprobado": "2026-11-19",
+     "nota": "La ley está confirmada en el BOE, pero no menciona el carné: lo del permiso para conducir lo respalda solo una fuente divulgativa. Arabia Saudí: decreto de septiembre de 2017 y entrada en vigor en junio de 2018; el 24 de junio no figura expresamente en ninguna fuente abierta."
+    }
+   ]
+  }
+ ],
+ "reserva": [
+  {
+   "id": "p-voto-europa",
+   "tema": "voto",
+   "nota": "Pareja de prueba, solo con lo que dicen las entradas verificadas de calendario.json. Francia = primer voto en un escrutinio NACIONAL (ya habían votado en las municipales de abril de 1945). Suiza = APROBACIÓN en referéndum (solo hombres) del voto federal, no el primer voto de las mujeres.",
+   "comparacion": {
+    "es": "Suiza aprobó el voto federal {n} años después.",
+    "ca": "Suïssa va aprovar el vot federal {n} anys després.",
+    "en": "Switzerland approved the federal vote {n} years later."
+   },
+   "cartas": [
+    {
+     "id": "v-fr-1945",
+     "anio": 1945,
+     "pais": "Francia",
+     "precision": "anio",
+     "titulo": {
+      "es": "1r voto mujer en Francia",
+      "ca": "1r vot de dona a França",
+      "en": "1st woman's vote in France"
+     },
+     "tituloLargo": {
+      "es": "Las francesas votan en elecciones nacionales",
+      "ca": "Les franceses voten en eleccions nacionals",
+      "en": "Frenchwomen vote in national elections"
+     },
+     "pregunta": {
+      "es": "¿En qué año votaron por primera vez las francesas en unas elecciones nacionales?",
+      "ca": "En quin any van votar per primera vegada les franceses en unes eleccions nacionals?",
+      "en": "In what year did Frenchwomen first vote in national elections?"
+     },
+     "explicacion": {
+      "es": "El 21 de octubre de 1945 las francesas votaron por primera vez en unas elecciones nacionales. Una ordenanza de abril de 1944 ya les había reconocido el derecho al voto, y en aquellas elecciones fueron elegidas 33 diputadas. Antes ya habían votado en las elecciones municipales de abril de 1945.",
+      "ca": "El 21 d'octubre del 1945 les franceses van votar per primera vegada en unes eleccions nacionals. Una ordenança d'abril del 1944 ja els havia reconegut el dret de vot, i en aquelles eleccions van ser elegides 33 diputades. Abans ja havien votat a les eleccions municipals d'abril del 1945.",
+      "en": "On 21 October 1945 Frenchwomen voted for the first time in national elections. An ordinance of April 1944 had already granted them the right to vote, and 33 women deputies were elected in that election. They had already voted in the municipal elections of April 1945."
+     },
+     "fuentes": [
+      {
+       "nombre": "Asamblea Nacional de Francia: las 33 mujeres elegidas diputadas en 1945",
+       "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/histoire/le-suffrage-universel/la-conquete-de-la-citoyennete-politique-des-femmes/les-33-femmes-elues-deputees-pour-la-premiere-fois-en-1945"
+      },
+      {
+       "nombre": "Ministerio de Cultura de Francia: exposición de los Archivos Nacionales sobre el voto de las mujeres",
+       "url": "https://www.culture.gouv.fr/fr/Actualites/Archives-nationales-trois-raisons-de-ne-pas-manquer-l-exposition-sur-le-droit-de-vote-des-femmes"
+      }
+     ],
+     "estado": "verificada",
+     "comprobado": "2026-11-11",
+     "nota": "Texto propio a partir de calendario.json (21-10-1945). Pendiente de revisión de Mireia."
+    },
+    {
+     "id": "v-ch-1971",
+     "anio": 1971,
+     "pais": "Suiza",
+     "precision": "anio",
+     "titulo": {
+      "es": "Voto mujer en Suiza",
+      "ca": "Vot de dona a Suïssa",
+      "en": "Women's vote in Switzerland"
+     },
+     "tituloLargo": {
+      "es": "Suiza aprueba el voto femenino federal",
+      "ca": "Suïssa aprova el vot femení federal",
+      "en": "Switzerland approves women's federal vote"
+     },
+     "pregunta": {
+      "es": "¿En qué año aprobaron los suizos, en referéndum, el voto de las mujeres a nivel federal?",
+      "ca": "En quin any van aprovar els suïssos, en referèndum, el vot de les dones a escala federal?",
+      "en": "In what year did the Swiss approve, in a referendum, women's vote at the federal level?"
+     },
+     "explicacion": {
+      "es": "El 7 de febrero de 1971, los votantes suizos, que entonces eran solo hombres, aprobaron en referéndum el voto y la elegibilidad de las mujeres a nivel federal, con un 65,7 % a favor.",
+      "ca": "El 7 de febrer del 1971, els votants suïssos, que aleshores eren només homes, van aprovar en referèndum el vot i l'elegibilitat de les dones a escala federal, amb un 65,7 % a favor.",
+      "en": "On 7 February 1971, Swiss voters, who at that time were men only, approved in a referendum women's right to vote and stand for election at the federal level, with 65.7 % in favour."
+     },
+     "fuentes": [
+      {
+       "nombre": "Parlamento suizo: las mujeres votan",
+       "url": "https://www.parlament.ch/de/%C3%BCber-das-parlament/Seiten/Frauen-stimmen.aspx"
+      },
+      {
+       "nombre": "Biblioteca del Congreso de EE. UU.: 50 años del voto femenino en Suiza",
+       "url": "https://blogs.loc.gov/law/2021/04/50-years-of-womens-suffrage-in-switzerland/"
+      }
+     ],
+     "estado": "verificada",
+     "comprobado": "2026-11-11",
+     "nota": "Texto propio a partir de calendario.json (7-2-1971). Pendiente de revisión de Mireia."
+    }
+   ]
+  }
+ ],
+ "reserva_aviso": "«reserva»: parejas guardadas que NO se juegan. p-voto-europa (Francia 1945 / Suiza 1971) la añadió Claude por su cuenta, sin que Mireia la pidiera; se retiró el 2026-11-19."
+}

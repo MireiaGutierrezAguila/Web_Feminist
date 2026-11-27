@@ -1,0 +1,14 @@
+---
+// Hoja del calendario: la rellena js/portada.js con la efeméride del día o un lema (public/data/calendario.json y pancarta-frases.json).
+---
+<aside class="calendario" aria-label="Calendario de hoy">
+  <img class="cal-base" src="/img/opt/calendario-todo.webp" alt="" width="680" height="651">
+  <div class="cal-frente">
+    <img class="cal-hoja-img" src="/img/opt/calendario-hoja.webp" alt="" width="680" height="651">
+    <div class="cal-hoja">
+      <div class="cal-cabecera"><span id="calMes">Mes</span><span id="calAnio"></span></div>
+      <time class="cal-dia" id="calFecha"><span class="cal-semana" id="calSemana">Día</span><span class="cal-num" id="calNum">0</span></time>
+      <ul class="cal-frases" id="calFrases"></ul>
+    </div>
+  </div>
+</aside>
