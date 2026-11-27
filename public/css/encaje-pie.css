@@ -1,0 +1,13 @@
+/* Encaje morado de Mireia (img/opt/encaje-morado-doble.webp: el encaje y su copia en espejo juntos, para que al repetirlo no se note el corte)
+   en el borde superior del pie de página, de lado a lado y a mitad sobre el borde. Se usa en todas las páginas con pie.
+   El texto del pie sube y sus líneas se juntan. */
+footer { position: relative; --h-encaje: clamp(56px, 7vw, 88px); }
+footer::before { content: ""; position: absolute; left: 0; right: 0; top: calc(var(--h-encaje) * -.42); height: var(--h-encaje); z-index: 2; pointer-events: none;
+  background: url("/img/opt/encaje-morado-doble.webp") left top / auto 100% repeat-x; }
+html footer { border-top: 0; padding-top: calc(var(--h-encaje) * .58 + 6px); }
+html footer .envoltorio, html footer .wrap { padding-top: 0; padding-bottom: 22px; }
+html footer .wrap { gap: 0; }   /* la portada usaba una rejilla con 10 px de hueco entre líneas */
+html footer .firma { margin: 0; }
+html footer .fuente-pie { margin: 4px 0 0; }
+/* deja sitio por encima del pie para que el encaje no tape el final del contenido */
+html main { padding-bottom: 40px; }

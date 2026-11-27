@@ -1,0 +1,93 @@
+{
+  "aviso": "Objeto relacionado con cada mujer (idea de Mireia, 2026-11-11). Las descripciones (alt) son de redacción propia y están pendientes de revisión de Mireia.",
+  "objetos": {
+    "ada-lovelace": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Esfera cubierta de ceros y unos verdes, el código binario",
+        "ca": "Esfera coberta de zeros i uns verds, el codi binari",
+        "en": "A sphere covered in green zeros and ones, binary code"
+      }
+    },
+    "aglaonice-de-tesalia": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "La Luna, gris y con cráteres",
+        "ca": "La Lluna, grisa i amb cràters",
+        "en": "The Moon, grey and full of craters"
+      }
+    },
+    "emma-goldman": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Símbolo de la anarquía: una A dentro de un círculo, en tres dimensiones",
+        "ca": "Símbol de l'anarquia: una A dins d'un cercle, en tres dimensions",
+        "en": "The symbol of anarchy: an A inside a circle, in three dimensions"
+      }
+    },
+    "frida-kahlo": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Pincel de pintar con el mango granate",
+        "ca": "Pinzell de pintar amb el mànec granat",
+        "en": "A paintbrush with a maroon handle"
+      }
+    },
+    "hedy-lamarr": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Símbolo del Wi-Fi en tres dimensiones, en tonos azules y verdes",
+        "ca": "Símbol del Wi-Fi en tres dimensions, en tons blaus i verds",
+        "en": "The Wi-Fi symbol in three dimensions, in shades of blue and green"
+      }
+    },
+    "hipatia-de-alejandria": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Astrolabio antiguo, un instrumento para observar los astros",
+        "ca": "Astrolabi antic, un instrument per observar els astres",
+        "en": "An ancient astrolabe, an instrument for observing the stars"
+      }
+    },
+    "julia-hermosilla": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Gorra militar verde con una estrella roja y una borla granate",
+        "ca": "Gorra militar verda amb una estrella vermella i una borla granat",
+        "en": "A green military cap with a red star and a maroon tassel"
+      }
+    },
+    "lynn-margulis": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Corte de una célula con su núcleo morado y sus orgánulos",
+        "ca": "Tall d'una cèl·lula amb el nucli morat i els seus orgànuls",
+        "en": "A cross-section of a cell with its purple nucleus and organelles"
+      }
+    },
+    "olimpia-de-gouges": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Pergamino con una pluma y un tintero",
+        "ca": "Pergamí amb una ploma i un tinter",
+        "en": "A parchment with a quill and an inkwell"
+      }
+    },
+    "rosa-parks": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Autobús urbano verde y crema de los años cincuenta",
+        "ca": "Autobús urbà verd i crema dels anys cinquanta",
+        "en": "A green and cream city bus from the 1950s"
+      }
+    },
+    "zheng-shi": {
+      "imagen": "objeto.png",
+      "alt": {
+        "es": "Catalejo de latón con el cuerpo de madera tallada",
+        "ca": "Catalejo de llautó amb el cos de fusta tallada",
+        "en": "A brass spyglass with a carved wooden body"
+      }
+    }
+  }
+}

@@ -53,11 +53,26 @@ src/
 
 Después de cada paso: `npm run build` sin errores, prueba en escritorio y móvil (Playwright), revisión visual de Mireia 👀 y commit sugerido.
 
+7. **Publicidad y páginas legales** (ver apartado «Publicidad»): huecos de anuncios, aviso de cookies, política de privacidad y de cookies, aviso legal.
+
+## Publicidad (decidido por Mireia el 27-11-2026)
+
+- **Red de anuncios automática** (propuesta: Google AdSense, a confirmar), no patrocinios propios.
+- **Aptos para menores:** la web se marca como dirigida a público infantil (anuncios no personalizados y categorías restringidas). Comprobar en las normas de la red cómo se configura.
+- **Dónde:**
+  - Escritorio: banners **a los lados** de la pantalla en portada, glosario, fuentes y en las actividades que dejan espacio.
+  - **Ninguno** en las actividades que ocupan la pantalla entera (pancarta, mapa, línea del tiempo…).
+  - Móvil: [POR DECIDIR — banner entre dos secciones de la portada o franja fina abajo que se pueda cerrar].
+- **Banners que se puedan cerrar:** deseo de Mireia. Antes de programarlo, comprobar que las normas de la red lo permiten (algunas prohíben tapar o quitar sus anuncios).
+- **Huecos de tamaño fijo** reservados en la maquetación, para que la página no salte al cargar el anuncio.
+- **Cookies y privacidad:** aunque no sean personalizados, los anuncios usan cookies → aviso de consentimiento (RGPD/LSSI) antes de cargarlos, política de privacidad y de cookies, y aviso legal con la persona titular. En España, por debajo de 14 años el consentimiento lo dan madres, padres o tutores.
+- **Licencias:** nada con cláusula NC (no comercial) en textos, datos ni imágenes.
+
 ## Publicación (decisión pendiente, t28) — 🔗 necesita tu permiso
 
-- Propuesta: **GitHub Pages** (gratis, estático, el portfolio de Mireia ya está ahí), con una acción de GitHub que construye la web al hacer merge en `main`.
-- Alternativa: Netlify (también gratis para webs estáticas).
-- Nombre y dominio: pendientes.
+- Con publicidad, **GitHub Pages no encaja** (no está pensado para webs con fines comerciales).
+- Propuesta: **Netlify** o **Cloudflare Pages** (gratis para webs estáticas), que construyen la web al hacer merge en `main`.
+- Nombre y dominio: pendientes (un dominio propio suele ser necesario para que la red de anuncios acepte la web).
 
 ## Tareas relacionadas
 

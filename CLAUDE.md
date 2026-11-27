@@ -30,8 +30,8 @@
   - Pancarta 8M: Konva.js o Fabric.js.
   - Antes de añadir cualquier otra librería, pregúntame.
 - **Herramientas conectadas:** GitHub, Canva, Confluence (notas del proyecto).
-- **Hosting:** [POR DECIDIR — Netlify, Vercel o GitHub Pages]
-- **Versiones importantes:** Node LTS. [RELLENAR cuando se cree el proyecto]
+- **Hosting:** [POR DECIDIR — Netlify o Cloudflare Pages; GitHub Pages no, porque la web llevará publicidad]
+- **Versiones importantes:** Node 24.22.1, npm 11.19.1, Astro 7.4.12 (versión fija, instalada el 2026-11-27).
 
 ## Estructura de carpetas (propuesta)
 ```
@@ -69,7 +69,9 @@
 - **Móvil primero:** todo debe funcionar con el dedo en pantallas pequeñas. El drag & drop nativo de HTML no sirve en táctil: usar la librería elegida.
 - **Fuentes obligatorias:** todo dato, fecha, cifra o cita debe llevar su fuente visible. Nunca inventes datos, fechas, citas ni referencias. Si no encuentras una fuente fiable, déjalo marcado como `[FUENTE PENDIENTE]` y avísame.
 - **Fotos reales:** solo imágenes con licencia que permita usarlas (dominio público o Creative Commons), guardando el autor y la licencia para mostrarlos.
-- **Sin servidor ni cuentas:** no se recogen datos personales. El progreso (insignias) se guarda en el navegador (`localStorage`, siempre dentro de try/catch).
+- **Sin servidor ni cuentas:** la web no pide ni guarda datos personales. El progreso (insignias) se guarda en el navegador (`localStorage`, siempre dentro de try/catch).
+- **Publicidad:** red de anuncios configurada para público infantil (no personalizados). Los anuncios solo se cargan tras aceptar el aviso de cookies. Huecos de tamaño fijo a los lados en escritorio; ninguno dentro de las actividades a pantalla completa. Ver `webFeminist.md` 5.8.
+- **Licencias para uso comercial:** como hay anuncios, no usar textos, datos ni imágenes con cláusula NC (no comercial).
 - **Idiomas:** castellano, catalán e inglés. Las traducciones que hagas tú se marcan como pendientes de revisión de Mireia.
 - **Accesibilidad:** textos alternativos en imágenes, contraste suficiente, se puede usar con teclado y se respeta `prefers-reduced-motion` en las animaciones.
 - **Rendimiento:** imágenes optimizadas (WebP/AVIF) y carga diferida. El globo y la pancarta se cargan solo al abrir su actividad.

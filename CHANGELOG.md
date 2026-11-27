@@ -5,6 +5,12 @@ Cambios importantes del proyecto, de lo más reciente a lo más antiguo.
 
 ## 2026-11-27
 
+- **Astro instalado (paso 0 de `docs/plan-astro.md`).** Astro 7.4.12 con versión fija (`package.json`), `astro.config.mjs` con idiomas es/ca/en en rutas `/es/`, `/ca/`, `/en/` y una página temporal `src/pages/es/index.astro` para comprobar que `npm run build` funciona. `.gitignore`: `.astro/` y `docs/*privado*`.
+
+- **Astro paso 1a: portada en `/es/`.** Copia fiel de `design-ejemplos/propuesta-d-mezcla.html` en `src/pages/es/index.astro` con el molde `src/layouts/Base.astro` y el pie `src/components/Pie.astro`. Se copiaron a `public/` los datos (`data/`), las imágenes optimizadas (`img/opt/`), el vídeo (`media/`), `js/` y `css/`, con las rutas cambiadas a la raíz (`/data/…`, `/images/…`). Los enlaces apuntan ya a las rutas futuras (`/es/glosario/`, `/es/actividades/…`, `/es/fuentes/`), que aún no existen. Comprobado con Playwright: mismas alturas por sección que el boceto a 1280 y 390 px, calendario, cartas, nombres, ficha y vídeo funcionan.
+
+- **Publicidad decidida:** red de anuncios automática apta para niños, banners a los lados en escritorio, ninguno en actividades a pantalla completa, cerrables si la red lo permite; móvil por decidir. Anotado en `docs/plan-astro.md`, `webFeminist.md` 5.8 y `CLAUDE.md` (hosting Netlify/Cloudflare Pages, aviso de cookies, nada con licencia NC).
+
 - **Portada: botón «Ver el juego»** enlaza a la página del juego en el portfolio de Mireia (`…/Portfolio_Mireia/juegos/feminist.html`), en pestaña nueva. El cartel «Quién lo hizo» ya bajaba a «Hecha por una mujer informática»; Mireia da esa sección por buena (debajo, el pie lleva «Conoce su historia» a su portfolio).
 
 - **Calendario: días vacíos rellenados (decisión de Mireia tras revisar las pistas).**

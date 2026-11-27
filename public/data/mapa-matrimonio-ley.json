@@ -1,0 +1,347 @@
+{
+  "id": "matrimonio-ley",
+  "aviso": "Tema del mapa «La mujer en el mundo»: leyes sobre el matrimonio infantil. Datos del Banco Mundial (Women, Business and the Law 2026). Categorías simplificadas por Mireia (2026-11-20): se juntan las antiguas C y D en una sola. Textos redactados por Claude, pendientes de revisión de Mireia.",
+  "tipo": "categorias",
+  "titulo": {
+    "es": "¿En qué países es legal el matrimonio infantil?",
+    "ca": "En quins països és legal el matrimoni infantil?",
+    "en": "In which countries is child marriage legal?"
+  },
+  "subtitulo": {
+    "es": "Estos datos muestran si la ley permite casarse antes de los 18 años. Pero muchas veces las niñas se casan incluso antes, a los 15 años o más pequeñas. Mira qué dice la ley en cada país.",
+    "ca": "Aquestes dades mostren si la llei permet casar-se abans dels 18 anys. Però moltes vegades les nenes es casen fins i tot abans, als 15 anys o més petites. Mira què diu la llei a cada país.",
+    "en": "This data shows whether the law allows people to marry before the age of 18. But girls are often married even younger, at 15 or smaller. See what the law says in each country."
+  },
+  "afirmaciones": [
+    {
+      "texto": "muchas veces las niñas se casan incluso antes, a los 15 años o más pequeñas",
+      "estado": "ACEPTADA SIN FUENTE (decisión de Mireia, 2026-11-20)",
+      "nota": "Frase general y sin cifras ni países, que Mireia considera de conocimiento común, por eso no lleva fuente. El manual del Banco Mundial respalda aparte que «aproximadamente una de cada cinco jóvenes de 20 a 24 años se casó de niña» (UNICEF 2023)."
+    }
+  ],
+  "categorias": [
+    {
+      "id": "A",
+      "color": "#8A0030",
+      "texto": {
+        "es": "Es legal casarse antes de los 18",
+        "ca": "És legal casar-se abans dels 18",
+        "en": "It is legal to marry before 18"
+      },
+      "orden": 1
+    },
+    {
+      "id": "B",
+      "color": "#BF5F0A",
+      "texto": {
+        "es": "Los padres pueden autorizar el matrimonio antes de los 18",
+        "ca": "Els pares poden autoritzar el matrimoni abans dels 18",
+        "en": "Parents can approve a marriage before 18"
+      },
+      "orden": 2
+    },
+    {
+      "id": "V",
+      "color": "#7B9E09",
+      "texto": {
+        "es": "La ley no permite el matrimonio antes de los 18",
+        "ca": "La llei no permet el matrimoni abans dels 18",
+        "en": "The law does not allow marriage before 18"
+      },
+      "orden": 3
+    }
+  ],
+  "sinDatos": {
+    "color": "#9a93a8",
+    "texto": {
+      "es": "No tenemos datos de este país",
+      "ca": "No tenim dades d'aquest país",
+      "en": "We have no data for this country"
+    }
+  },
+  "avisoLeyes": {
+    "es": "Este mapa muestra lo que dicen las leyes escritas. Lo que pasa en la vida real puede ser distinto.",
+    "ca": "Aquest mapa mostra el que diuen les lleis escrites. El que passa a la vida real pot ser diferent.",
+    "en": "This map shows what the written laws say. What happens in real life can be different."
+  },
+  "avisoRegiones": {
+    "es": "En los países con leyes distintas en cada región o estado, el mapa muestra la ley de su ciudad principal.",
+    "ca": "Als països amb lleis diferents a cada regió o estat, el mapa mostra la llei de la seva ciutat principal.",
+    "en": "In countries with different laws in each region or state, the map shows the law of the main city."
+  },
+  "detalle": {
+    "edad18": {
+      "es": "¿Hay que tener al menos 18 años para casarse sin permiso?",
+      "ca": "Cal tenir almenys 18 anys per casar-se sense permís?",
+      "en": "Do you have to be at least 18 to marry without permission?"
+    },
+    "sinExcepcionPadres": {
+      "es": "¿Impide la ley que los padres autoricen un matrimonio antes de los 18?",
+      "ca": "Impedeix la llei que els pares autoritzin un matrimoni abans dels 18?",
+      "en": "Does the law stop parents from approving a marriage before 18?"
+    },
+    "anula": {
+      "es": "¿Se puede anular un matrimonio hecho antes de los 18?",
+      "ca": "Es pot anul·lar un matrimoni fet abans dels 18?",
+      "en": "Can a marriage made before 18 be annulled?"
+    },
+    "castiga": {
+      "es": "¿Castiga la ley a los adultos que permiten un matrimonio antes de los 18?",
+      "ca": "Castiga la llei els adults que permeten un matrimoni abans dels 18?",
+      "en": "Does the law punish adults who allow a marriage before 18?"
+    }
+  },
+  "fuente": {
+    "cita": "World Bank. 2026. “Women, Business and the Law” [dataset]. Washington, DC: World Bank. https://wbl.worldbank.org/en/wbl-data",
+    "datos": "https://wbl.worldbank.org/content/dam/sites/wbl/documents/2026/2026-02-18-WBL26-1-Safety-Data.xlsx",
+    "metodologia": "https://wbl.worldbank.org/content/dam/sites/wbl/documents/2026/WBL-Methodology-Handbook-2026-FINAL.pdf",
+    "licencia": "CC BY 4.0 según el catálogo de datos del Banco Mundial (https://datacatalog.worldbank.org/search/dataset/0038489). Pendiente de que Mireia la confirme antes de publicar. Hay que citar la fuente, no sugerir que el Banco Mundial respalda la web e indicar que los datos se han agrupado.",
+    "comprobado": "2026-11-20",
+    "anio": 2026
+  },
+  "notasMetodo": [
+    "Solo cuentan las leyes escritas; las normas religiosas o de costumbre no escritas no se miden.",
+    "En países federales o con varios sistemas legales se mide la ley de la ciudad principal de negocios, no la de todo el país.",
+    "Se mira la ley para una chica menor de 18 años no emancipada.",
+    "El manual solo habla de excepciones por permiso de los padres; no dice nada de excepciones por autorización de un juez.",
+    "Categoría V = antes C (18 años, sin excepción de los padres, pero sin anulación o sin castigos) + D (marco legal completo): ambas dicen que la ley no permite el matrimonio antes de los 18."
+  ],
+  "chip": {
+    "es": "Matrimonio infantil: ¿Dónde es legal?",
+    "ca": "Matrimoni infantil: On és legal?",
+    "en": "Child marriage: Where is it legal?"
+  },
+  "juego": {
+    "tipo": "adivinar-categorias",
+    "aviso": "Juego de Mireia (2026-11-20): se iluminan en azul los países de una categoría; el niño elige qué dice la ley en ellos; se pintan de su color; la última categoría se deduce. Textos redactados por Claude, pendientes de revisión de Mireia.",
+    "pregunta": {
+      "es": "¿Qué crees que dice la ley en los países marcados en azul?",
+      "ca": "Què creus que diu la llei als països marcats en blau?",
+      "en": "What do you think the law says in the countries marked in blue?"
+    },
+    "acierto": {
+      "es": "¡Acertaste!",
+      "ca": "Ho has encertat!",
+      "en": "You got it!"
+    },
+    "fallo": {
+      "es": "No era esa. ¡Ahora lo sabes!",
+      "ca": "No era aquesta. Ara ja ho saps!",
+      "en": "That wasn't it. Now you know!"
+    },
+    "explicaciones": {
+      "A": {
+        "es": "En estos países la ley deja que las chicas o los chicos se casen antes de los 18 años.",
+        "ca": "En aquests països la llei deixa que les noies o els nois es casin abans dels 18 anys.",
+        "en": "In these countries the law lets girls or boys marry before the age of 18."
+      },
+      "B": {
+        "es": "En estos países la ley dice 18 años, pero los padres pueden autorizar el matrimonio antes.",
+        "ca": "En aquests països la llei diu 18 anys, però els pares poden autoritzar el matrimoni abans.",
+        "en": "In these countries the law says 18, but parents can approve the marriage earlier."
+      },
+      "V": {
+        "es": "En estos países la ley no permite el matrimonio antes de los 18 años.",
+        "ca": "En aquests països la llei no permet el matrimoni abans dels 18 anys.",
+        "en": "In these countries the law does not allow marriage before the age of 18."
+      }
+    },
+    "finalFrase": {
+      "es": "Y los países que quedan son los de «{texto}».",
+      "ca": "I els països que queden són els de «{texto}».",
+      "en": "And the remaining countries are the ones in “{texto}”."
+    }
+  },
+  "paises": {
+    "AFG": {"cat": "A", "edad18": false, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Afghanistan"},
+    "AGO": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Angola"},
+    "ALB": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Albania"},
+    "ARE": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "United Arab Emirates"},
+    "ARG": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Argentina"},
+    "ARM": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Armenia"},
+    "ATG": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Antigua and Barbuda"},
+    "AUS": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Australia"},
+    "AUT": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Austria"},
+    "AZE": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Azerbaijan"},
+    "BDI": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Burundi"},
+    "BEL": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Belgium"},
+    "BEN": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Benin"},
+    "BFA": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Burkina Faso"},
+    "BGD": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": true, "nombreBM": "Bangladesh"},
+    "BGR": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Bulgaria"},
+    "BHR": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Bahrain"},
+    "BHS": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Bahamas, The"},
+    "BIH": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Bosnia and Herzegovina"},
+    "BLR": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Belarus"},
+    "BLZ": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Belize"},
+    "BOL": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Bolivia"},
+    "BRA": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Brazil"},
+    "BRB": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Barbados"},
+    "BRN": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Brunei Darussalam"},
+    "BTN": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Bhutan"},
+    "BWA": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Botswana"},
+    "CAF": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Central African Republic"},
+    "CAN": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": true, "nombreBM": "Canada"},
+    "CHE": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Switzerland"},
+    "CHL": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Chile"},
+    "CHN": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "China"},
+    "CIV": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Côte d'Ivoire"},
+    "CMR": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": true, "nombreBM": "Cameroon"},
+    "COD": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Congo, Dem. Rep."},
+    "COG": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Congo, Rep."},
+    "COL": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Colombia"},
+    "COM": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Comoros"},
+    "CPV": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Cabo Verde"},
+    "CRI": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Costa Rica"},
+    "CYP": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Cyprus"},
+    "CZE": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Czechia"},
+    "DEU": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Germany"},
+    "DJI": {"cat": "A", "edad18": false, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Djibouti"},
+    "DMA": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Dominica"},
+    "DNK": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Denmark"},
+    "DOM": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Dominican Republic"},
+    "DZA": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Algeria"},
+    "ECU": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Ecuador"},
+    "EGY": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Egypt, Arab Rep."},
+    "ERI": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Eritrea"},
+    "ESP": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Spain"},
+    "EST": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Estonia"},
+    "ETH": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Ethiopia"},
+    "FIN": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Finland"},
+    "FJI": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Fiji"},
+    "FRA": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "France"},
+    "FSM": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Micronesia, Fed. Sts."},
+    "GAB": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Gabon"},
+    "GBR": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "United Kingdom"},
+    "GEO": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Georgia"},
+    "GHA": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Ghana"},
+    "GIN": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Guinea"},
+    "GMB": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Gambia, The"},
+    "GNB": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Guinea-Bissau"},
+    "GNQ": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Equatorial Guinea"},
+    "GRC": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Greece"},
+    "GRD": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Grenada"},
+    "GTM": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Guatemala"},
+    "GUY": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Guyana"},
+    "HKG": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Hong Kong SAR, China"},
+    "HND": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Honduras"},
+    "HRV": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Croatia"},
+    "HTI": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Haiti"},
+    "HUN": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Hungary"},
+    "IDN": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Indonesia"},
+    "IND": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "India"},
+    "IRL": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Ireland"},
+    "IRN": {"cat": "A", "edad18": false, "sinExcepcionPadres": false, "anula": false, "castiga": true, "nombreBM": "Iran, Islamic Rep."},
+    "IRQ": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Iraq"},
+    "ISL": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Iceland"},
+    "ISR": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Israel"},
+    "ITA": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Italy"},
+    "JAM": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Jamaica"},
+    "JOR": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Jordan"},
+    "JPN": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Japan"},
+    "KAZ": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Kazakhstan"},
+    "KEN": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Kenya"},
+    "KGZ": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Kyrgyz Republic"},
+    "KHM": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Cambodia"},
+    "KIR": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Kiribati"},
+    "KNA": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "St. Kitts and Nevis"},
+    "KOR": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Korea, Rep."},
+    "KOS": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Kosovo"},
+    "KWT": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Kuwait"},
+    "LAO": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Lao PDR"},
+    "LBN": {"cat": "A", "edad18": false, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Lebanon"},
+    "LBR": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Liberia"},
+    "LBY": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Libya"},
+    "LCA": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "St. Lucia"},
+    "LKA": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": true, "nombreBM": "Sri Lanka"},
+    "LSO": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": true, "nombreBM": "Lesotho"},
+    "LTU": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Lithuania"},
+    "LUX": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": true, "nombreBM": "Luxembourg"},
+    "LVA": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Latvia"},
+    "MAR": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Morocco"},
+    "MDA": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Moldova"},
+    "MDG": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Madagascar"},
+    "MDV": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Maldives"},
+    "MEX": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Mexico"},
+    "MHL": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Marshall Islands"},
+    "MKD": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "North Macedonia"},
+    "MLI": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Mali"},
+    "MLT": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Malta"},
+    "MMR": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Myanmar"},
+    "MNE": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Montenegro"},
+    "MNG": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Mongolia"},
+    "MOZ": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Mozambique"},
+    "MRT": {"cat": "A", "edad18": false, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Mauritania"},
+    "MUS": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Mauritius"},
+    "MWI": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Malawi"},
+    "MYS": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Malaysia"},
+    "NAM": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Namibia"},
+    "NER": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Niger"},
+    "NGA": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Nigeria"},
+    "NIC": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Nicaragua"},
+    "NLD": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Netherlands"},
+    "NOR": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Norway"},
+    "NPL": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Nepal"},
+    "NZL": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "New Zealand"},
+    "OMN": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Oman"},
+    "PAK": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Pakistan"},
+    "PAN": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Panama"},
+    "PER": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Peru"},
+    "PHL": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Philippines"},
+    "PLW": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Palau"},
+    "PNG": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Papua New Guinea"},
+    "POL": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Poland"},
+    "PRI": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Puerto Rico (US)"},
+    "PRT": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Portugal"},
+    "PRY": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Paraguay"},
+    "PSX": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "West Bank and Gaza"},
+    "QAT": {"cat": "A", "edad18": false, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Qatar"},
+    "ROU": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Romania"},
+    "RUS": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Russian Federation"},
+    "RWA": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Rwanda"},
+    "SAU": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Saudi Arabia"},
+    "SDN": {"cat": "A", "edad18": false, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Sudan"},
+    "SDS": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "South Sudan"},
+    "SEN": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Senegal"},
+    "SGP": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Singapore"},
+    "SLB": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": true, "nombreBM": "Solomon Islands"},
+    "SLE": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Sierra Leone"},
+    "SLV": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "El Salvador"},
+    "SMR": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "San Marino"},
+    "SOM": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Somalia, Fed. Rep."},
+    "SRB": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Serbia"},
+    "STP": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "São Tomé and Príncipe"},
+    "SUR": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Suriname"},
+    "SVK": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Slovak Republic"},
+    "SVN": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Slovenia"},
+    "SWE": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Sweden"},
+    "SWZ": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": true, "nombreBM": "Eswatini"},
+    "SYC": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Seychelles"},
+    "SYR": {"cat": "A", "edad18": false, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Syrian Arab Republic"},
+    "TCD": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Chad"},
+    "TGO": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": true, "nombreBM": "Togo"},
+    "THA": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Thailand"},
+    "TJK": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Tajikistan"},
+    "TLS": {"cat": "A", "edad18": false, "sinExcepcionPadres": false, "anula": true, "castiga": false, "nombreBM": "Timor-Leste"},
+    "TON": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Tonga"},
+    "TTO": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Trinidad and Tobago"},
+    "TUN": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": false, "nombreBM": "Tunisia"},
+    "TUR": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Türkiye"},
+    "TWN": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Taiwan, China"},
+    "TZA": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Tanzania"},
+    "UGA": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Uganda"},
+    "UKR": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": false, "nombreBM": "Ukraine"},
+    "URY": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "Uruguay"},
+    "USA": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "United States"},
+    "UZB": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Uzbekistan"},
+    "VCT": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": true, "castiga": true, "nombreBM": "St. Vincent and the Grenadines"},
+    "VEN": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Venezuela, RB"},
+    "VNM": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Viet Nam"},
+    "VUT": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": true, "nombreBM": "Vanuatu"},
+    "WSM": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": true, "nombreBM": "Samoa"},
+    "YEM": {"cat": "A", "edad18": false, "sinExcepcionPadres": false, "anula": false, "castiga": false, "nombreBM": "Yemen, Rep."},
+    "ZAF": {"cat": "B", "edad18": true, "sinExcepcionPadres": false, "anula": false, "castiga": true, "nombreBM": "South Africa"},
+    "ZMB": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": true, "castiga": true, "nombreBM": "Zambia"},
+    "ZWE": {"cat": "V", "edad18": true, "sinExcepcionPadres": true, "anula": false, "castiga": true, "nombreBM": "Zimbabwe"}
+  }
+}

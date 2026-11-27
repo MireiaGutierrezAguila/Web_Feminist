@@ -18,7 +18,7 @@
 - Muy amplio: niñas y niños, adolescentes y adultos.
 - Uso desde móvil (prioritario) y desde ordenador.
 - Puede usarse en colegios e institutos.
-- Como hay menores, no se recogen datos personales.
+- Como hay menores, la web no pide ni guarda datos personales. Los anuncios sí usan cookies: solo se cargan tras aceptar el aviso de consentimiento y son no personalizados (ver 5.8).
 
 ## 3. Especificaciones generales
 - **Responsive**, pensada primero para móvil y uso táctil.
@@ -100,6 +100,14 @@
 ### 5.7 Fuentes de información
 - Página que reúne todas las referencias, además de las que se muestran en cada ficha y actividad.
 
+### 5.8 Publicidad (decisión de Mireia, 2026-11-27)
+- **Red de anuncios automática** (propuesta: Google AdSense, a confirmar), configurada para **público infantil** (anuncios no personalizados).
+- **Escritorio:** banners a los lados de la pantalla. **Ninguno** en las actividades que ocupan la pantalla entera.
+- **Móvil:** [POR DECIDIR — banner entre secciones de la portada o franja fina abajo].
+- **Banners que se puedan cerrar**, si las normas de la red lo permiten.
+- Necesita: aviso de cookies con consentimiento, política de privacidad y de cookies, aviso legal, y hosting que admita fines comerciales (no GitHub Pages).
+- Todo el contenido debe tener licencia que permita uso comercial (nada «NC»).
+
 ---
 
 ## 6. Actividades
@@ -140,7 +148,8 @@
 
 ## 7. Decisiones pendientes
 - [ ] Nombre definitivo y dominio de la web.
-- [ ] Framework (propuesta: Astro) y hosting.
+- [ ] Framework (propuesta: Astro) y hosting (con publicidad: Netlify o Cloudflare Pages, no GitHub Pages).
+- [ ] Publicidad: confirmar la red (AdSense u otra), si permite banners cerrables y dónde van en móvil.
 - [ ] Actividades en sección propia o en la portada.
 - [ ] Formato de la animación de la cabeza de cada mujer.
 - [ ] Cómo se muestran las fuentes (diseño).
