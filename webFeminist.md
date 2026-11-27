@@ -74,6 +74,11 @@
 > ### ¿Quién fue ?
 > Hipatia de Alejandría fue una brillante filósofa, matemática y astrónoma griega que vivió en Egipto a finales del siglo IV y principios del V. Es la primera mujer matemática de la que se conserva un registro biográfico e histórico detallado, además destacó por sus profundos conocimientos en geometría, álgebra y astronomía. Su figura se convirtió en un símbolo universal de la razón, el libre pensamiento y la erudición. Su trágica muerte, a manos de una multitud de cristianos extremistas que atacaban la ciencia y el paganismo clásico, la consagró definitivamente como un icono histórico de la defensa del conocimiento y la libertad intelectual. Para algunos historiadores su muerte supuso el principio del fin del paganismo en la Antigüedad.
 
+### 5.2 bis Mujeres de hoy (idea de Mireia, 2026-11-27)
+- Sección nueva justo debajo de «Mujeres de la historia», **igual que esa** (cartas que giran, ficha), pero con **mujeres actuales conocidas en el mundo del feminismo**.
+- Título de la sección y nombres: [POR DECIDIR — los elige Mireia].
+- Ojo: son mujeres vivas → solo datos públicos de su trayectoria, fotos con licencia libre y revisar los textos con cuidado.
+
 ### 5.3 El juego Feminist
 - Explicación detallada de cómo se juega.
 - Enlace a Google Play.
