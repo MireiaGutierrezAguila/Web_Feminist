@@ -1,0 +1,20 @@
+---
+// Glosario: 6 palabras de ejemplo con las letras de Mireia. Todas existen en el glosario del
+// Ayuntamiento de Barcelona (public/data/glosario.json); los datos están en src/data/portada.json.
+import datos from '../../data/portada.json';
+interface Props {
+  lang?: string;
+}
+const { lang = 'es' } = Astro.props;
+const texto = (o: Record<string, string>) => o[lang] ?? o.es;
+---
+<section class="bloque" id="glosario">
+  <h2>Glosario feminista</h2>
+  <p class="intro">Palabras que conviene conocer, explicadas por profesionales. Toca una para ver su significado.</p>
+  <ul class="glo-tarjetas">
+    {datos.glosario.map((p) => (
+      <li><a class="glo-tarjeta" style={`--halo: ${p.halo}; --tinta: ${p.tinta}`} href={`/${lang}/glosario/#${p.ancla}`} target="_blank" rel="noopener" aria-label={`${texto(p.palabra)} (se abre en una pestaña nueva)`}><span class="glo-img"><img src={`/img/opt/glosario/letra-${p.letra}.webp`} alt="" loading="lazy" decoding="async"></span><span>{texto(p.palabra)}</span></a></li>
+    ))}
+  </ul>
+  <div class="botones" style="margin-top:22px"><a class="btn" href={`/${lang}/glosario/`} target="_blank" rel="noopener" aria-label="Ver más palabras (se abre en una pestaña nueva)">Ver más palabras</a></div>
+</section>

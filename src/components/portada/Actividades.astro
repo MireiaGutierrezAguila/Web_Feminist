@@ -1,0 +1,19 @@
+---
+// Actividades: tarjetas cuadradas con la imagen de Mireia; los datos están en src/data/portada.json.
+import datos from '../../data/portada.json';
+interface Props {
+  lang?: string;
+}
+const { lang = 'es' } = Astro.props;
+// Texto en el idioma pedido o, si falta, en castellano
+const texto = (o: Record<string, string>) => o[lang] ?? o.es;
+---
+<section class="bloque" id="actividades">
+  <h2>Actividades</h2>
+  <p class="intro">Cada actividad completada te da un sello, que se guarda en tu navegador.</p>
+  <ul class="act-tarjetas">
+    {datos.actividades.map((a) => (
+      <li><a class="act-tarjeta" style={`--tinta: ${a.tinta}`} href={`/${lang}/actividades/${a.ruta}/`} target="_blank" rel="noopener" aria-label={`${texto(a.titulo)} (se abre en una pestaña nueva)`}><img src={`/img/opt/actividades/${a.imagen}.webp`} alt="" width="800" height="800" loading="lazy"><span>{texto(a.titulo)}</span></a></li>
+    ))}
+  </ul>
+</section>
