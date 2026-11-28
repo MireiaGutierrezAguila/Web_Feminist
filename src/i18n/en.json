@@ -90,7 +90,11 @@
     "fotoPendiente": "[REAL PHOTO PENDING]",
     "autorPendiente": "author and licence to be added",
     "reproducirVideo": "Play video",
-    "pausarVideo": "Pause video"
+    "pausarVideo": "Pause video",
+    "compartir": "Share",
+    "compartirAria": "Share {nombre}'s profile",
+    "enlaceCopiado": "Link copied",
+    "copiaEnlace": "Copy this link: "
   },
   "glosarioPagina": {
     "tituloPagina": "Feminist glossary · Feminist",

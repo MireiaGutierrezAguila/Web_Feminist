@@ -1,5 +1,14 @@
-/* Página propia de cada mujer: ajusta el tamaño del nombre para que quepa en el cartel
+/* Página propia de cada mujer: botón «Compartir» (necesita js/compartir.js) y tamaño del nombre para que quepa en el cartel
    (lo mismo que hace js/ficha.js con la ficha de la portada). */
+(function () {
+  var b = document.getElementById('btnCompartir');
+  if (b && window.compartirEnlace) {
+    b.addEventListener('click', function () {
+      // Se comparte la dirección de esta página sin «?…» ni «#…»
+      window.compartirEnlace(location.origin + location.pathname, b.dataset.titulo, document.getElementById('avisoCompartir'));
+    });
+  }
+})();
 (function () {
   var n = document.getElementById('nombreFicha');
   if (!n) { return; }

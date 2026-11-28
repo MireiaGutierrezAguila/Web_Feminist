@@ -43,7 +43,7 @@ const conFuentes = fuentes && fuentes.fuentes && fuentes.fuentes.length;
 const nueva = t('comun.pestanaNueva');
 const nombre = (s: string) => s.replace('{nombre}', m.nombre);
 ---
-<Subpagina title={t('fichaPagina.tituloPagina').replace('{nombre}', m.nombre)} lang={lang} description={m.logro}>
+<Subpagina title={t('fichaPagina.tituloPagina').replace('{nombre}', m.nombre)} lang={lang} description={m.logro} secciones={['scripts']}>
   <Fragment slot="head">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Quintessential&family=Cinzel:wght@800&display=swap" rel="stylesheet" />
@@ -73,15 +73,6 @@ const nombre = (s: string) => s.replace('{nombre}', m.nombre);
             <h2>{nombre(t('scripts.quienFue'))}</h2>
             <p>{m.quien}</p>
           </div>
-          <p class="fa-fuentes"><strong>{t('scripts.fuentes')}</strong>
-            {conFuentes
-              ? fuentes.fuentes.map((s: { nombre: string; url?: string }, i: number) => (
-                  <>{i > 0 && ' · '}{s.url ? <a href={s.url} target="_blank" rel="noopener noreferrer">{s.nombre}</a> : s.nombre}</>
-                ))
-              : <span class={/PENDIENTE/.test(m.fuentes) ? 'fa-pend' : ''}>{m.fuentes}</span>}
-            {conFuentes && fuentes.provisional && <span class="fa-prov"> {t('scripts.provisional')}</span>}
-          </p>
-
           {/* Imagen real de la mujer (en la portada está detrás de la carta): con su autor y licencia */}
           {foto && (
             <figure class="fa-foto">
@@ -91,8 +82,26 @@ const nombre = (s: string) => s.replace('{nombre}', m.nombre);
           )}
           {!foto && sinImagen && <p class="fa-credito">{enIdioma(sinImagen as Texto, lang)}</p>}
 
+          {/* Botón «Compartir» (js/compartir.js + js/ficha-pagina.js): comparte la dirección de esta página */}
+          <div class="fa-compartir">
+            <button type="button" class="btn-compartir" id="btnCompartir" data-titulo={`${m.nombre} · Feminist`} aria-label={nombre(t('scripts.compartirAria'))}>{t('scripts.compartir')}</button>
+            <span class="fa-aviso" id="avisoCompartir" aria-live="polite"></span>
+          </div>
+
           <img class="fa-rayas" src={RUTA_J + 'adornos/separador-rayas.png'} alt="" />
         </div>
+      </div>
+
+      {/* Fuentes abajo, a todo el ancho de la ficha y con letra pequeña (decisión de Mireia, 28-11-2026) */}
+      <div class="fa-pie">
+        <p class="fa-fuentes"><strong>{t('scripts.fuentes')}</strong>
+          {conFuentes
+            ? fuentes.fuentes.map((s: { nombre: string; url?: string }, i: number) => (
+                <>{i > 0 && ' · '}{s.url ? <a href={s.url} target="_blank" rel="noopener noreferrer">{s.nombre}</a> : s.nombre}</>
+              ))
+            : <span class={/PENDIENTE/.test(m.fuentes) ? 'fa-pend' : ''}>{m.fuentes}</span>}
+          {conFuentes && fuentes.provisional && <span class="fa-prov"> {t('scripts.provisional')}</span>}
+        </p>
       </div>
     </article>
 
@@ -105,5 +114,8 @@ const nombre = (s: string) => s.replace('{nombre}', m.nombre);
 
   <p slot="pie" class="fuente-pie ref-enlace">{t('pie.refAntes')} <a href={`/${lang}/fuentes/?tipo=ficha`} target="_blank" rel="noopener" aria-label={`${t('pie.refEnlace')} ${nueva}`}>{t('pie.refEnlace')}</a>, {t('fichaPagina.refFiltro')}</p>
 
-  <script slot="scripts" is:inline src="/js/ficha-pagina.js"></script>
+  <Fragment slot="scripts">
+    <script is:inline src="/js/compartir.js"></script>
+    <script is:inline src="/js/ficha-pagina.js"></script>
+  </Fragment>
 </Subpagina>
