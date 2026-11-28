@@ -1,0 +1,70 @@
+{
+  "_nota": "Textos de interfaz en catalán. TRADUCCIÓN DE CLAUDE (28-11-2026), PENDIENTE DE REVISIÓN DE MIREIA.",
+  "_revisada": false,
+  "meta": {
+    "tituloPortada": "Feminist · Dones que van fer història"
+  },
+  "comun": {
+    "pestanaNueva": "(s'obre en una pestanya nova)"
+  },
+  "cabecera": {
+    "quitarEfectos": "Treure efectes",
+    "idioma": "Idioma"
+  },
+  "hero": {
+    "titulo": "Dones que van fer història",
+    "tituloFuturo": "Dones que farem història",
+    "intro": "Moltes de les grans dones de la història van romandre amagades per por de les represàlies. En aquest web posarem llum a la foscor. Mou el ratolí o arrossega el dit per descobrir els noms amagats.",
+    "secciones": "Seccions",
+    "posteMujeres": "Dones",
+    "posteJuego": "El joc",
+    "posteActividades": "Activitats",
+    "posteGlosario": "Glossari",
+    "posteQuien": "Qui ho ha fet",
+    "nombresAria": "Dones de la història"
+  },
+  "calendario": {
+    "aria": "Calendari d'avui",
+    "mes": "Mes",
+    "dia": "Dia"
+  },
+  "mujeres": {
+    "titulo": "Dones de la història",
+    "pista": "Toca una carta per girar-la i veure la foto real, o prem «Veure fitxa» per obrir-la aquí mateix.",
+    "carruselAria": "Carrusel de dones"
+  },
+  "juego": {
+    "titulo": "El joc Feminist",
+    "parrafo1": "A més de totes les activitats d'aquest web, també et pots descarregar al mòbil <strong>FEMINIST</strong>, el videojoc.",
+    "parrafo2": "És divertit, reivindicatiu i feminista, és clar. Hi faràs front al patriarcat, superaràs obstacles carregats de desigualtat i reflexionaràs sobre la nostra lluita.",
+    "parrafo3": "Però no pateixis: quan et quedis sense forces, les grans dones de la història et donaran la seva energia i saviesa. Visita-les, descobreix les seves històries (científiques, artistes i líders que van canviar el món) i torna al camí amb més força.",
+    "verJuego": "Veure el joc",
+    "qrAria": "Codi QR per descarregar el joc a Google Play",
+    "qrAlt": "Codi QR del joc Feminist a Google Play",
+    "qrTexto": "Ets a l'ordinador? Escaneja el codi amb la càmera del mòbil i descarrega't el joc.",
+    "videoAria": "Vídeo del joc Feminist: la protagonista recorre un laberint mentre una ombra l'observa",
+    "reproducirVideo": "Reproduir el vídeo",
+    "pausarVideo": "Pausar el vídeo"
+  },
+  "actividades": {
+    "titulo": "Activitats",
+    "intro": "Cada activitat completada et dona un segell, que es guarda al teu navegador."
+  },
+  "glosario": {
+    "titulo": "Glossari feminista",
+    "intro": "Paraules que convé conèixer, explicades per professionals. Toca'n una per veure'n el significat.",
+    "verMas": "Veure més paraules"
+  },
+  "informatica": {
+    "titulo": "Feta per una dona informàtica",
+    "parrafo1": "Aquest web i aquest joc els ha creat una dona, en un sector amb una clara majoria masculina. La Mireia va treballar anys com a mestra abans de passar-se a la programació. Quan va triar carrera, mai no va contemplar aquesta opció —ni ella ni les seves amigues—. Per què creus que ni tan sols se li va acudir?",
+    "parrafo2": "I tu, alguna vegada t'has plantejat estudiar informàtica?"
+  },
+  "pie": {
+    "firma": "Web dissenyat i creat per Mireia Gutiérrez Águila",
+    "conoceSuHistoria": "Coneix la seva història",
+    "refAntes": "Pots veure totes les referències del web en",
+    "refEnlace": "aquesta pàgina",
+    "refDespues": ", filtrant per l'activitat."
+  }
+}

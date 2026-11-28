@@ -3,6 +3,11 @@
 Cambios importantes del proyecto, de lo más reciente a lo más antiguo.
 
 
+## 2026-11-28
+
+- **Astro paso 1c-1: textos de interfaz en archivos de idioma.** Nuevos `src/i18n/es.json`, `ca.json` y `en.json` (44 textos cada uno, mismas claves) y `src/i18n/index.ts` con `usarTextos(lang)` (si falta un texto en un idioma, sale el castellano) y `enIdioma()` para los datos. Los componentes de la portada y el pie ya no llevan texto escrito dentro. `src/data/portada.json` tiene catalán e inglés en los títulos de actividades y las palabras del glosario. Las traducciones al catalán y al inglés son de Claude y están **pendientes de revisión de Mireia** (`"_revisada": false`); las palabras del glosario en catalán son las del Ayuntamiento de Barcelona. El HTML en castellano es idéntico al de antes.
+
+
 ## 2026-11-27
 
 - **Astro instalado (paso 0 de `docs/plan-astro.md`).** Astro 7.4.12 con versión fija (`package.json`), `astro.config.mjs` con idiomas es/ca/en en rutas `/es/`, `/ca/`, `/en/` y una página temporal `src/pages/es/index.astro` para comprobar que `npm run build` funciona. `.gitignore`: `.astro/` y `docs/*privado*`.
