@@ -11,6 +11,23 @@
   var F = window.F = { RUTA: RUTA, reduce: reduce, mujeres: [] };
   F.efectosOn = function () { return efectos; };
 
+  /* ---------- Idioma ---------- */
+  // La página (src/layouts/Base.astro) deja el idioma en window.IDIOMA y los textos de interfaz en window.TXT
+  F.lang = window.IDIOMA || 'es';
+  var TXT = window.TXT || {};
+  // Texto de interfaz; {nombre} se cambia por el nombre de la mujer. Si faltara, se ve la clave (así se nota enseguida)
+  F.t = function (clave, nombre) {
+    var s = TXT[clave];
+    if (s === undefined) return clave;
+    return nombre === undefined ? s : s.replace('{nombre}', nombre);
+  };
+  // Dato con un campo por idioma ({ es, ca, en }): el del idioma de la página o, si falta o está sin traducir, el castellano
+  F.dato = function (o) {
+    if (!o) return '';
+    var v = o[F.lang];
+    return (typeof v === 'string' && v && v.indexOf('PENDIENTE]') === -1) ? v : o.es;
+  };
+
   F.el = function (tag, clase, texto) {
     var n = document.createElement(tag);
     if (clase) n.className = clase;
@@ -36,7 +53,7 @@
   function pintar() {
     document.body.classList.toggle('fx', efectos);
     var b = document.getElementById('fxBtn');
-    if (b) b.textContent = efectos ? 'Quitar efectos' : 'Poner efectos';
+    if (b) b.textContent = efectos ? F.t('quitarEfectos') : F.t('ponerEfectos');
   }
   F.iniciar = function () {
     pintar();
@@ -46,13 +63,7 @@
       try { localStorage.setItem('fx', efectos ? '1' : '0'); } catch (e) { /* idem */ }
       pintar();
     });
-    // Selector de idioma: en la maqueta solo cambia el aspecto del botón
-    document.querySelectorAll('.idiomas button').forEach(function (bt) {
-      bt.addEventListener('click', function () {
-        document.querySelectorAll('.idiomas button').forEach(function (o) { o.setAttribute('aria-pressed', 'false'); });
-        bt.setAttribute('aria-pressed', 'true');
-      });
-    });
+    // El selector de idioma son enlaces normales a /es/, /ca/ y /en/ (src/components/portada/Cabecera.astro): no necesita código
   };
 
   // Luz que sigue al ratón o al dedo: guarda --lx y --ly (en px) relativos al elemento "objetivo"
@@ -70,7 +81,7 @@
   /* ---------- Figura de la mujer: imagen completa + capas (cuerpo y cabeza) ---------- */
   F.figura = function (m, n) {
     var fig = F.el('span', 'figura');
-    fig.appendChild(F.imagen(RUTA + m.slug + '/completa.png', 'Dibujo de ' + m.nombre, 'completa'));
+    fig.appendChild(F.imagen(RUTA + m.slug + '/completa.png', F.t('dibujoDe', m.nombre), 'completa'));
     var capas = F.el('span', 'capas');
     var cu = F.imagen(RUTA + m.slug + '/cuerpo.png', '', 'cuerpo'); colocar(cu, m.capas.cuerpo);
     var ca = F.imagen(RUTA + m.slug + '/cabeza.png', '', 'cabeza'); colocar(ca, m.capas.cabeza);
@@ -108,14 +119,14 @@
     var b = F.el('button', 'giro');
     b.type = 'button';
     b.setAttribute('aria-pressed', 'false');
-    b.setAttribute('aria-label', 'Girar el retrato de ' + m.nombre + ' para ver la foto de la mujer real');
+    b.setAttribute('aria-label', F.t('girarRetrato', m.nombre));
     var gin = F.el('span', 'giro-in');
     var fr = F.el('span', 'cara frente'), dr = F.el('span', 'cara dorso');
     cfg.frente(fr, m, F.figura(m, n), n);
     cfg.dorso(dr, m, n);
     gin.appendChild(fr); gin.appendChild(dr); b.appendChild(gin); tin.appendChild(b); tilt.appendChild(tin);
     F.giro(b); F.tilt(tilt, tin);
-    var ver = F.el('button', 'ver-ficha', 'Ver ficha');
+    var ver = F.el('button', 'ver-ficha', F.t('verFicha'));
     ver.type = 'button';
     ver.addEventListener('click', function () {
       if (cfg.alVerFicha) { cfg.alVerFicha(m, li); return; } // portada D: la ficha se abre en su sitio, dentro de la fila
@@ -134,14 +145,14 @@
     p.appendChild(F.el('p', 'fechas', m.cabecera));
     p.appendChild(F.el('p', '', m.profesionLugar));
     var logro = F.el('div', 'logro');
-    logro.appendChild(F.el('strong', '', 'LOGRO:'));
+    logro.appendChild(F.el('strong', '', F.t('logro')));
     logro.appendChild(document.createTextNode(m.logro));
     p.appendChild(logro);
     var d = F.el('details', 'quien');
     d.appendChild(F.el('summary', '', m.quienTitulo));
     d.appendChild(F.el('p', '', m.quien));
     p.appendChild(d);
-    var f = F.el('a', 'fuentes-btn', 'Fuentes ');
+    var f = F.el('a', 'fuentes-btn', F.t('fuentesBoton'));
     f.href = '#fuentes';
     f.appendChild(F.el('span', 'pendiente', m.fuentes));
     p.appendChild(f);
@@ -153,11 +164,20 @@
     return fetch('/data/mujeres.json').then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
-    }).then(function (d) { F.mujeres = d; return d; });
+    }).then(function (d) {
+      // Cada ficha lleva su traducción en m.ca / m.en: si existe, sus textos sustituyen a los del castellano
+      // (el castellano de Mireia no se toca: solo se elige qué versión enseñar)
+      d.forEach(function (m) {
+        var tr = m[F.lang];
+        if (F.lang === 'es' || !tr) return;
+        Object.keys(tr).forEach(function (k) { if (typeof tr[k] === 'string' && tr[k]) m[k] = tr[k]; });
+      });
+      F.mujeres = d; return d;
+    });
   };
   F.errorDatos = function () {
     var cont = document.getElementById('ficha');
-    if (cont) cont.appendChild(F.el('p', 'error', 'No se han podido cargar los datos de las mujeres. Abre la maqueta desde el servidor local.'));
+    if (cont) cont.appendChild(F.el('p', 'error', F.t('errorDatos')));
   };
 
   /* ---------- Lluvia de código decorativa ---------- */

@@ -1,5 +1,13 @@
 ---
-// Cabecera de la portada: logo, botón de efectos y selector de idioma (el selector funcionará en el paso 1c).
+// Cabecera de la portada: logo, botón de efectos y selector de idioma.
+// El selector son enlaces a la portada en cada idioma; se abren en la misma pestaña (excepción a la regla
+// de «pestaña nueva», decidida por Mireia el 28-11-2026: cambiar de idioma no es abrir otra página).
+import { usarTextos, idiomas, nombreIdioma } from '../../i18n';
+interface Props {
+  lang?: string;
+}
+const { lang = 'es' } = Astro.props;
+const t = usarTextos(lang);
 ---
 <div class="wrap">
   <header class="top">
@@ -9,12 +17,12 @@
         Feminist
       </a>
       <div class="controles">
-        <button type="button" class="fx-btn" id="fxBtn">Quitar efectos</button>
-        <div class="idiomas" role="group" aria-label="Idioma">
-          <button type="button" aria-pressed="true">ES</button>
-          <button type="button" aria-pressed="false">CA</button>
-          <button type="button" aria-pressed="false">EN</button>
-        </div>
+        <button type="button" class="fx-btn" id="fxBtn">{t('cabecera.quitarEfectos')}</button>
+        <nav class="idiomas" aria-label={t('cabecera.idioma')}>
+          {idiomas.map((l) => (
+            <a href={`/${l}/`} hreflang={l} lang={l} aria-label={nombreIdioma[l]} aria-current={l === lang ? 'page' : undefined}>{l.toUpperCase()}</a>
+          ))}
+        </nav>
       </div>
     </div>
   </header>

@@ -1,0 +1,94 @@
+{
+  "_nota": "Textos de interfaz en castellano (idioma de referencia). Las claves son iguales en ca.json y en.json.",
+  "meta": {
+    "tituloPortada": "Feminist · Mujeres que hicieron historia"
+  },
+  "comun": {
+    "pestanaNueva": "(se abre en una pestaña nueva)"
+  },
+  "cabecera": {
+    "quitarEfectos": "Quitar efectos",
+    "idioma": "Idioma"
+  },
+  "hero": {
+    "titulo": "Mujeres que hicieron historia",
+    "tituloFuturo": "Mujeres que haremos historia",
+    "intro": "Muchas de las grandes mujeres de la historia permanecieron ocultas por miedo a las represalias. En esta web pondremos luz a la oscuridad. Mueve el ratón o arrastra el dedo para descubrir los nombres escondidos.",
+    "secciones": "Secciones",
+    "posteMujeres": "Mujeres",
+    "posteJuego": "El juego",
+    "posteActividades": "Actividades",
+    "posteGlosario": "Glosario",
+    "posteQuien": "Quién lo hizo",
+    "nombresAria": "Mujeres de la historia"
+  },
+  "calendario": {
+    "aria": "Calendario de hoy",
+    "mes": "Mes",
+    "dia": "Día"
+  },
+  "mujeres": {
+    "titulo": "Mujeres de la historia",
+    "pista": "Toca una carta para girarla y ver la foto real, o pulsa «Ver ficha» para abrirla aquí mismo.",
+    "carruselAria": "Carrusel de mujeres"
+  },
+  "juego": {
+    "titulo": "El juego Feminist",
+    "parrafo1": "Además de todas las actividades de esta web, también puedes descargarte en el móvil <strong>FEMINIST</strong>, el videojuego.",
+    "parrafo2": "Es divertido, reivindicativo y feminista, por supuesto. En él te enfrentarás al patriarcado, superarás obstáculos cargados de desigualdad y reflexionarás sobre nuestra lucha.",
+    "parrafo3": "Pero no te preocupes: cuando te quedes sin fuerzas, las grandes mujeres de la historia te entregarán su energía y sabiduría. Visítalas, descubre sus historias (científicas, artistas y líderes que cambiaron el mundo) y vuelve al camino más fuerte.",
+    "verJuego": "Ver el juego",
+    "qrAria": "Código QR para descargar el juego en Google Play",
+    "qrAlt": "Código QR del juego Feminist en Google Play",
+    "qrTexto": "¿Estás en el ordenador? Escanea el código con la cámara de tu móvil y descarga el juego.",
+    "videoAria": "Vídeo del juego Feminist: la protagonista recorre un laberinto mientras una sombra la observa",
+    "reproducirVideo": "Reproducir vídeo",
+    "pausarVideo": "Pausar vídeo"
+  },
+  "actividades": {
+    "titulo": "Actividades",
+    "intro": "Cada actividad completada te da un sello, que se guarda en tu navegador."
+  },
+  "glosario": {
+    "titulo": "Glosario feminista",
+    "intro": "Palabras que conviene conocer, explicadas por profesionales. Toca una para ver su significado.",
+    "verMas": "Ver más palabras"
+  },
+  "informatica": {
+    "titulo": "Hecha por una mujer informática",
+    "parrafo1": "Esta web y este juego los ha creado una mujer, en un sector con clara mayoría masculina. Mireia trabajó años como maestra antes de pasarse a la programación. Al elegir carrera, nunca contempló esta opción —ni ella ni sus amigas—. ¿Por qué crees que ni se le ocurrió?",
+    "parrafo2": "Y tú, ¿alguna vez te has planteado estudiar informática?"
+  },
+  "pie": {
+    "firma": "Web diseñada y creada por Mireia Gutiérrez Águila",
+    "conoceSuHistoria": "Conoce su historia",
+    "refAntes": "Puedes ver todas las referencias de la web en",
+    "refEnlace": "esta página",
+    "refDespues": ", filtrando por la actividad."
+  },
+  "scripts": {
+    "fecha": "es-ES",
+    "quitarEfectos": "Quitar efectos",
+    "ponerEfectos": "Poner efectos",
+    "dibujoDe": "Dibujo de {nombre}",
+    "girarRetrato": "Girar el retrato de {nombre} para ver la foto de la mujer real",
+    "verFicha": "Ver ficha",
+    "logro": "LOGRO:",
+    "fuentesBoton": "Fuentes ",
+    "errorDatos": "No se han podido cargar los datos de las mujeres. Prueba a recargar la página.",
+    "fichaDe": "Ficha de {nombre}",
+    "cerrarFicha": "Cerrar ficha",
+    "quienFue": "¿Quién fue {nombre}?",
+    "fuentes": "Fuentes: ",
+    "imagenDorso": "Imagen del dorso: ",
+    "origen": "Origen",
+    "licencia": "Licencia",
+    "provisional": "(fuentes provisionales, pendientes de reforzar)",
+    "lemaFeminista": "Lema feminista",
+    "sinEfemeride": "Hoy no tenemos efeméride. ¡Vuelve mañana!",
+    "fotoPendiente": "[FOTO REAL PENDIENTE]",
+    "autorPendiente": "autor y licencia por indicar",
+    "reproducirVideo": "Reproducir vídeo",
+    "pausarVideo": "Pausar vídeo"
+  }
+}
