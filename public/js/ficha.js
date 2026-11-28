@@ -132,16 +132,24 @@
     } else {
       fu.appendChild(F.el('span', /PENDIENTE/.test(m.fuentes) ? 'fa-pend' : '', m.fuentes));
     }
-    der.appendChild(fu);
+    // Fuentes y crédito de la imagen van abajo, a todo el ancho de la ficha y con letra más pequeña (decisión de Mireia, 28-11-2026),
+    // para que la ficha no se alargue tanto
+    var pie = F.el('div', 'fa-pie');
+    pie.appendChild(fu);
     var ft = F.foto(m.slug);
     if (ft) { // crédito completo de la imagen del dorso, con enlaces al origen y a la licencia
       var cr = F.el('p', 'fa-credito'); cr.appendChild(F.el('strong', '', F.t('imagenDorso')));
       cr.appendChild(document.createTextNode(ft.credito + ' '));
       cr.appendChild(enlace(F.t('origen'), ft.fuenteUrl)); cr.appendChild(document.createTextNode(' · '));
-      cr.appendChild(enlace(F.t('licencia'), ft.licenciaUrl)); der.appendChild(cr);
+      cr.appendChild(enlace(F.t('licencia'), ft.licenciaUrl)); pie.appendChild(cr);
+    }
+    // Botón «Compartir»: comparte la página propia de esta mujer en el idioma actual (js/compartir.js)
+    if (window.botonCompartir) {
+      var url = location.origin + '/' + F.lang + '/mujeres/' + m.slug + '/';
+      der.appendChild(window.botonCompartir(url, m.nombre + ' · Feminist', m.nombre));
     }
     der.appendChild(F.imagen(RUTA_J + 'adornos/separador-rayas.png', '', 'fa-rayas'));
-    cont.appendChild(der); f.appendChild(cont);
+    cont.appendChild(der); f.appendChild(cont); f.appendChild(pie);
     li.appendChild(f);
     return f;
   }

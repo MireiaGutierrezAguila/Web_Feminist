@@ -89,7 +89,11 @@
     "fotoPendiente": "[FOTO REAL PENDIENTE]",
     "autorPendiente": "autor y licencia por indicar",
     "reproducirVideo": "Reproducir vídeo",
-    "pausarVideo": "Pausar vídeo"
+    "pausarVideo": "Pausar vídeo",
+    "compartir": "Compartir",
+    "compartirAria": "Compartir la ficha de {nombre}",
+    "enlaceCopiado": "Enlace copiado",
+    "copiaEnlace": "Copia este enlace: "
   },
   "glosarioPagina": {
     "tituloPagina": "Glosario feminista · Feminist",
@@ -208,5 +212,14 @@
     "viva": "viva",
     "sensible": "sensible",
     "basica": "fuentes básicas"
+  },
+  "fichaPagina": {
+    "tituloPagina": "{nombre} · Mujeres de la historia · Feminist",
+    "navAria": "Otras mujeres",
+    "anterior": "Anterior",
+    "siguiente": "Siguiente",
+    "todas": "Todas las mujeres",
+    "imagen": "Imagen: ",
+    "refFiltro": "filtrando por las fichas."
   }
 }
