@@ -36,9 +36,10 @@ export function usarTextos(lang: string) {
 
 // Todos los textos de una sección ("scripts"), con el castellano debajo para rellenar lo que falte.
 // Se usa para pasar a los scripts del navegador (public/js/) los textos que escriben.
-export function seccion(lang: string, nombre: string): Record<string, string> {
+// (Una sección puede llevar también listas u objetos, como los nombres de los meses.)
+export function seccion(lang: string, nombre: string): Record<string, unknown> {
   const de = (archivo: unknown) =>
-    ((archivo as Record<string, unknown>)?.[nombre] ?? {}) as Record<string, string>;
+    ((archivo as Record<string, unknown>)?.[nombre] ?? {}) as Record<string, unknown>;
   return { ...de(textos.es), ...de(textos[lang]) };
 }
 

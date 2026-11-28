@@ -1,0 +1,14 @@
+---
+// Deja en la página el idioma (window.IDIOMA) y los textos que escriben los scripts de public/js/ (window.TXT).
+// «secciones» son las partes de src/i18n/*.json que necesita la página (por ejemplo ['scripts'] o ['glosarioPagina']).
+import { seccion } from '../i18n';
+interface Props {
+  lang: string;
+  secciones: string[];
+}
+const { lang, secciones } = Astro.props;
+const textos = Object.assign({}, ...secciones.map((s) => seccion(lang, s)));
+// Se escapa «<» para que ningún texto pueda cerrar la etiqueta <script> por error
+const json = JSON.stringify(textos).replace(/</g, '\\u003c');
+---
+<script is:inline set:html={`window.IDIOMA = ${JSON.stringify(lang)}; window.TXT = ${json};`}></script>
