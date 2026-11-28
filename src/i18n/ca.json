@@ -1,5 +1,5 @@
 {
-  "_nota": "Textos de interfaz en catalán. Traducción de Claude (28-11-2026), revisada por Mireia el 28-11-2026 (también «scripts»), salvo las secciones «glosarioPagina» y «fuentesPagina» (pendientes de revisión).",
+  "_nota": "Textos de interfaz en catalán. Traducción de Claude (28-11-2026), revisada por Mireia el 28-11-2026 (también «scripts»), salvo las secciones «glosarioPagina», «fuentesPagina» y «fichaPagina» (pendientes de revisión).",
   "_revisada": true,
   "meta": {
     "tituloPortada": "Feminist · Dones que van fer història"
@@ -209,5 +209,14 @@
     "viva": "viva",
     "sensible": "sensible",
     "basica": "fonts bàsiques"
+  },
+  "fichaPagina": {
+    "tituloPagina": "{nombre} · Dones de la història · Feminist",
+    "navAria": "Altres dones",
+    "anterior": "Anterior",
+    "siguiente": "Següent",
+    "todas": "Totes les dones",
+    "imagen": "Imatge: ",
+    "refFiltro": "filtrant per les fitxes."
   }
 }

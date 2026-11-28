@@ -208,5 +208,14 @@
     "viva": "viva",
     "sensible": "sensible",
     "basica": "fuentes básicas"
+  },
+  "fichaPagina": {
+    "tituloPagina": "{nombre} · Mujeres de la historia · Feminist",
+    "navAria": "Otras mujeres",
+    "anterior": "Anterior",
+    "siguiente": "Siguiente",
+    "todas": "Todas las mujeres",
+    "imagen": "Imagen: ",
+    "refFiltro": "filtrando por las fichas."
   }
 }

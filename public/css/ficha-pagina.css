@@ -1,0 +1,35 @@
+/* Página propia de cada mujer (/es/mujeres/…): la ficha de public/css/ficha.css abierta a todo el ancho, la imagen real
+   y los enlaces a la mujer anterior y siguiente. Lo común de las subpáginas está en subpagina.css. */
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--fondo); color: var(--blanco); font-family: var(--fuente-texto); font-size: 1rem; line-height: 1.5; }
+a { color: var(--oro-claro); }
+.envoltorio { width: min(880px, 100% - 32px); margin-inline: auto; }
+header.cab { padding: 18px 0 4px; }
+main { padding: 26px 0 28px; }
+
+/* La ficha siempre abierta (en la portada solo se ve dentro de una carta abierta) */
+.fa-ficha.fa-sola { display: block; }
+/* Aquí el nombre es el título de la página (h1) y «¿Quién fue…?» un h2: mismo aspecto que el h3 y el h4 de la portada */
+.fa-cartel h1 { position: absolute; left: 20%; right: 20%; top: 24%; bottom: 26%; margin: 0; display: flex; align-items: center; justify-content: center;
+  text-align: center; white-space: nowrap; font-family: var(--fa-fuente-titulos); font-weight: 700; font-size: 2.1rem; line-height: 1.1; color: #f3e9fb; text-shadow: 0 2px 4px rgba(0, 0, 0, .6); }
+.fa-quien h2 { font-family: var(--fa-fuente-nombres); font-weight: 800; font-size: 1.25rem; margin: 0 0 8px; color: var(--fa-oro-claro); }
+.fa-sola .fa-cab { padding-right: 0; }   /* sin botón de cerrar, el cartel puede centrarse del todo */
+
+/* Imagen real de la mujer, con su crédito debajo */
+.fa-foto { margin: 18px 0 0; }
+.fa-foto img { display: block; width: 100%; max-width: 420px; height: auto; border: 3px solid var(--fa-oro); border-radius: 14px; box-shadow: 0 10px 24px rgba(0, 0, 0, .5); }
+.fa-foto .fa-credito { margin-top: 8px; }
+
+/* Anterior · Todas las mujeres · Siguiente */
+.otras { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-top: 26px; }
+.otras a { display: inline-flex; flex-direction: column; align-items: center; min-height: 48px; justify-content: center; padding: 8px 16px; border: 2px solid var(--linea); border-radius: 12px;
+  font-family: var(--fuente-nombres); font-weight: 700; color: var(--blanco); text-decoration: none; text-align: center; }
+.otras a:hover { border-color: var(--oro); color: var(--oro-claro); }
+.otras a:focus-visible { border-color: var(--oro); box-shadow: 0 0 12px 3px rgba(232, 206, 134, .55); }
+.otras .otra-nombre { font-family: var(--fuente-texto); font-weight: 400; font-size: .85rem; color: var(--suave); }
+.otras .todas { order: 0; }
+@media (max-width: 560px) { .otras { justify-content: center; } .otras .todas { order: 3; flex-basis: 100%; } }
+
+footer { margin-top: auto; background: #000; border-top: 2px solid rgba(185, 177, 201, .35); }
+footer .envoltorio { padding: 20px 0 26px; }
+.fuente-pie { margin: 10px 0 0; font-size: .85rem; color: var(--suave); }
+.fuente-pie a { color: var(--oro-claro); }

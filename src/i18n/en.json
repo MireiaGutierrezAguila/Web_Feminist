@@ -209,5 +209,14 @@
     "viva": "living",
     "sensible": "sensitive",
     "basica": "basic sources"
+  },
+  "fichaPagina": {
+    "tituloPagina": "{nombre} · Women of history · Feminist",
+    "navAria": "Other women",
+    "anterior": "Previous",
+    "siguiente": "Next",
+    "todas": "All the women",
+    "imagen": "Image: ",
+    "refFiltro": "filtered by profiles."
   }
 }

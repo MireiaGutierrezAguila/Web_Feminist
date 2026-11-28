@@ -1,0 +1,109 @@
+---
+// Página propia de cada mujer (/es/mujeres/frida-kahlo/…), paso 2 de docs/plan-astro.md (aprobado por Mireia el 28-11-2026).
+// Es la misma ficha que se abre en el carrusel de la portada (mismas clases «fa-» de public/css/ficha.css), pero escrita
+// en la página (no la pinta un script) para que los buscadores la lean, y con la imagen real dentro de la ficha.
+// Los textos de las fichas son de Mireia y NO se modifican: aquí solo se elige qué versión (es/ca/en) se enseña.
+import Subpagina from '../../../layouts/Subpagina.astro';
+import { idiomas, usarTextos, enIdioma } from '../../../i18n';
+import mujeres from '../../../../public/data/mujeres.json';
+import objetosDatos from '../../../../public/data/objetos.json';
+import fotosDatos from '../../../../public/data/fotos.json';
+import fuentesDatos from '../../../../public/data/fuentes-fichas.json';
+
+type Texto = Record<string, string>;
+type Mujer = Record<string, any>;
+
+export function getStaticPaths() {
+  return idiomas.flatMap((lang) => (mujeres as Mujer[]).map((m) => ({ params: { lang, slug: m.slug } })));
+}
+
+const { lang, slug } = Astro.params;
+const t = usarTextos(lang);
+const lista = mujeres as Mujer[];
+const n = lista.findIndex((x) => x.slug === slug);
+
+// Ficha en el idioma de la página: la traducción (m.ca / m.en) sustituye los campos que tenga; si no, el castellano de Mireia
+function enSuIdioma(m: Mujer): Mujer {
+  const tr = lang !== 'es' ? m[lang] : null;
+  const r: Mujer = { ...m };
+  if (tr) for (const [k, v] of Object.entries(tr)) if (typeof v === 'string' && v) r[k] = v;
+  return r;
+}
+const m = enSuIdioma(lista[n]);
+const anterior = enSuIdioma(lista[(n - 1 + lista.length) % lista.length]);
+const siguiente = enSuIdioma(lista[(n + 1) % lista.length]);
+
+const RUTA = `/images/mujeres/${slug}/`;
+const RUTA_J = '/images/juego/';
+const objeto = (objetosDatos as any).objetos?.[slug as string];
+const foto = (fotosDatos as any).fotos?.[slug as string];
+const sinImagen = (fotosDatos as any).sinImagen?.[slug as string];
+const fuentes = (fuentesDatos as any).fichas?.[slug as string];
+const conFuentes = fuentes && fuentes.fuentes && fuentes.fuentes.length;
+const nueva = t('comun.pestanaNueva');
+const nombre = (s: string) => s.replace('{nombre}', m.nombre);
+---
+<Subpagina title={t('fichaPagina.tituloPagina').replace('{nombre}', m.nombre)} lang={lang} description={m.logro}>
+  <Fragment slot="head">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&family=Cinzel:wght@800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/ficha.css" />
+    <link rel="stylesheet" href="/css/ficha-pagina.css" />
+  </Fragment>
+
+  <main class="envoltorio">
+    <article class="fa-ficha fa-sola" aria-label={nombre(t('scripts.fichaDe'))}>
+      <div class="fa-cab">
+        {objeto && <img class="fa-objeto" src={RUTA + objeto.imagen} alt={enIdioma(objeto.alt, lang)} />}
+        <div class="fa-cartel"><h1 id="nombreFicha">{m.nombre}</h1></div>
+      </div>
+
+      <div class="fa-cont">
+        <figure class="fa-retrato">
+          <div class="fa-marco">
+            <div class="fa-fondo"><img src={RUTA + 'completa.png'} alt={nombre(t('scripts.dibujoDe'))} /></div>
+            <img class="fa-borde" src={RUTA_J + 'marcos/marco-retrato.png'} alt="" />
+          </div>
+          <figcaption><div class="fa-datos">{m.profesionLugar}</div><div class="fa-fechas">{m.cabecera}</div></figcaption>
+        </figure>
+
+        <div class="fa-texto">
+          <p class="fa-perg">{m.logro}</p>
+          <div class="fa-quien">
+            <h2>{nombre(t('scripts.quienFue'))}</h2>
+            <p>{m.quien}</p>
+          </div>
+          <p class="fa-fuentes"><strong>{t('scripts.fuentes')}</strong>
+            {conFuentes
+              ? fuentes.fuentes.map((s: { nombre: string; url?: string }, i: number) => (
+                  <>{i > 0 && ' · '}{s.url ? <a href={s.url} target="_blank" rel="noopener noreferrer">{s.nombre}</a> : s.nombre}</>
+                ))
+              : <span class={/PENDIENTE/.test(m.fuentes) ? 'fa-pend' : ''}>{m.fuentes}</span>}
+            {conFuentes && fuentes.provisional && <span class="fa-prov"> {t('scripts.provisional')}</span>}
+          </p>
+
+          {/* Imagen real de la mujer (en la portada está detrás de la carta): con su autor y licencia */}
+          {foto && (
+            <figure class="fa-foto">
+              <img src={RUTA + foto.archivo} alt={enIdioma(foto.alt, lang)} loading="lazy" decoding="async" />
+              <figcaption class="fa-credito"><strong>{t('fichaPagina.imagen')}</strong>{foto.credito} <a href={foto.fuenteUrl} target="_blank" rel="noopener noreferrer">{t('scripts.origen')}</a> · <a href={foto.licenciaUrl} target="_blank" rel="noopener noreferrer">{t('scripts.licencia')}</a></figcaption>
+            </figure>
+          )}
+          {!foto && sinImagen && <p class="fa-credito">{enIdioma(sinImagen as Texto, lang)}</p>}
+
+          <img class="fa-rayas" src={RUTA_J + 'adornos/separador-rayas.png'} alt="" />
+        </div>
+      </div>
+    </article>
+
+    <nav class="otras" aria-label={t('fichaPagina.navAria')}>
+      <a href={`/${lang}/mujeres/${anterior.slug}/`} rel="prev">← {t('fichaPagina.anterior')}<span class="otra-nombre">{anterior.nombre}</span></a>
+      <a href={`/${lang}/#mujeres`} class="todas">{t('fichaPagina.todas')}</a>
+      <a href={`/${lang}/mujeres/${siguiente.slug}/`} rel="next">{t('fichaPagina.siguiente')} →<span class="otra-nombre">{siguiente.nombre}</span></a>
+    </nav>
+  </main>
+
+  <p slot="pie" class="fuente-pie ref-enlace">{t('pie.refAntes')} <a href={`/${lang}/fuentes/?tipo=ficha`} target="_blank" rel="noopener" aria-label={`${t('pie.refEnlace')} ${nueva}`}>{t('pie.refEnlace')}</a>, {t('fichaPagina.refFiltro')}</p>
+
+  <script slot="scripts" is:inline src="/js/ficha-pagina.js"></script>
+</Subpagina>
