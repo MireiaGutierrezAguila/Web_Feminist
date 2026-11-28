@@ -65,5 +65,30 @@
     "refAntes": "Puedes ver todas las referencias de la web en",
     "refEnlace": "esta página",
     "refDespues": ", filtrando por la actividad."
+  },
+  "scripts": {
+    "fecha": "es-ES",
+    "quitarEfectos": "Quitar efectos",
+    "ponerEfectos": "Poner efectos",
+    "dibujoDe": "Dibujo de {nombre}",
+    "girarRetrato": "Girar el retrato de {nombre} para ver la foto de la mujer real",
+    "verFicha": "Ver ficha",
+    "logro": "LOGRO:",
+    "fuentesBoton": "Fuentes ",
+    "errorDatos": "No se han podido cargar los datos de las mujeres. Prueba a recargar la página.",
+    "fichaDe": "Ficha de {nombre}",
+    "cerrarFicha": "Cerrar ficha",
+    "quienFue": "¿Quién fue {nombre}?",
+    "fuentes": "Fuentes: ",
+    "imagenDorso": "Imagen del dorso: ",
+    "origen": "Origen",
+    "licencia": "Licencia",
+    "provisional": "(fuentes provisionales, pendientes de reforzar)",
+    "lemaFeminista": "Lema feminista",
+    "sinEfemeride": "Hoy no tenemos efeméride. ¡Vuelve mañana!",
+    "fotoPendiente": "[FOTO REAL PENDIENTE]",
+    "autorPendiente": "autor y licencia por indicar",
+    "reproducirVideo": "Reproducir vídeo",
+    "pausarVideo": "Pausar vídeo"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "_nota": "Textos de interfaz en catalán. TRADUCCIÓN DE CLAUDE (28-11-2026), PENDIENTE DE REVISIÓN DE MIREIA.",
-  "_revisada": false,
+  "_nota": "Textos de interfaz en catalán. Traducción de Claude (28-11-2026), revisada por Mireia el 28-11-2026 (también la sección «scripts»).",
+  "_revisada": true,
   "meta": {
     "tituloPortada": "Feminist · Dones que van fer història"
   },
@@ -66,5 +66,30 @@
     "refAntes": "Pots veure totes les referències del web en",
     "refEnlace": "aquesta pàgina",
     "refDespues": ", filtrant per l'activitat."
+  },
+  "scripts": {
+    "fecha": "ca-ES",
+    "quitarEfectos": "Treure efectes",
+    "ponerEfectos": "Posar efectes",
+    "dibujoDe": "Dibuix de {nombre}",
+    "girarRetrato": "Girar el retrat de {nombre} per veure la foto de la dona real",
+    "verFicha": "Veure fitxa",
+    "logro": "FITA:",
+    "fuentesBoton": "Fonts ",
+    "errorDatos": "No s'han pogut carregar les dades de les dones. Prova de tornar a carregar la pàgina.",
+    "fichaDe": "Fitxa de {nombre}",
+    "cerrarFicha": "Tancar la fitxa",
+    "quienFue": "Qui va ser {nombre}?",
+    "fuentes": "Fonts: ",
+    "imagenDorso": "Imatge del revers: ",
+    "origen": "Origen",
+    "licencia": "Llicència",
+    "provisional": "(fonts provisionals, pendents de reforçar)",
+    "lemaFeminista": "Lema feminista",
+    "sinEfemeride": "Avui no tenim efemèride. Torna demà!",
+    "fotoPendiente": "[FOTO REAL PENDENT]",
+    "autorPendiente": "autor i llicència per indicar",
+    "reproducirVideo": "Reproduir el vídeo",
+    "pausarVideo": "Pausar el vídeo"
   }
 }

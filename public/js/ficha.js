@@ -4,9 +4,7 @@
 (function () {
   var F = window.F;
   var RUTA_J = '/images/juego/';
-  // Textos de interfaz (irán al archivo de idiomas). No son contenido de las fichas.
-  var TXT = { cerrar: 'Cerrar ficha', quienFue: '¿Quién fue ', fuentes: 'Fuentes: ', imagen: 'Imagen del dorso: ', origen: 'Origen', licencia: 'Licencia', girar: 'Girar', provisional: '(fuentes provisionales, pendientes de reforzar)' };
-  F.txt = TXT; // la portada reutiliza estos textos de interfaz (irán al archivo de idiomas)
+  // Los textos de interfaz salen de src/i18n/ (sección «scripts») a través de F.t(), definido en comun.js
   var objetos = {};
   var abierta = null;
 
@@ -94,15 +92,15 @@
   function construir(m, li) {
     var f = F.el('section', 'fa-ficha');
     f.id = 'ficha-' + m.slug;
-    f.setAttribute('aria-label', 'Ficha de ' + m.nombre);
+    f.setAttribute('aria-label', F.t('fichaDe', m.nombre));
 
-    var x = F.el('button', 'fa-cerrar'); x.type = 'button'; x.setAttribute('aria-label', TXT.cerrar);
+    var x = F.el('button', 'fa-cerrar'); x.type = 'button'; x.setAttribute('aria-label', F.t('cerrarFicha'));
     x.addEventListener('click', function () { F.cerrarFicha(li, true); });
     f.appendChild(x);
 
     var cab = F.el('div', 'fa-cab');
     var ob = objetos[m.slug];
-    if (ob) { cab.appendChild(F.imagen(F.RUTA + m.slug + '/' + ob.imagen, ob.alt.es, 'fa-objeto')); }
+    if (ob) { cab.appendChild(F.imagen(F.RUTA + m.slug + '/' + ob.imagen, F.dato(ob.alt), 'fa-objeto')); }
     var cartel = F.el('div', 'fa-cartel');
     var h = F.el('h3', '', m.nombre); h.tabIndex = -1;
     cartel.appendChild(h); cab.appendChild(cartel); f.appendChild(cab);
@@ -111,7 +109,7 @@
 
     var cont = F.el('div', 'fa-cont');
     var fig = F.el('figure', 'fa-retrato'), marco = F.el('div', 'fa-marco'), fondo = F.el('div', 'fa-fondo');
-    fondo.appendChild(F.imagen(F.RUTA + m.slug + '/completa.png', 'Dibujo de ' + m.nombre));
+    fondo.appendChild(F.imagen(F.RUTA + m.slug + '/completa.png', F.t('dibujoDe', m.nombre)));
     marco.appendChild(fondo); marco.appendChild(F.imagen(RUTA_J + 'marcos/marco-retrato.png', '', 'fa-borde'));
     fig.appendChild(marco);
     var cap = F.el('figcaption');
@@ -121,26 +119,26 @@
     var der = F.el('div', 'fa-texto');
     der.appendChild(F.el('p', 'fa-perg', m.logro));
     var q = F.el('div', 'fa-quien');
-    q.appendChild(F.el('h4', '', TXT.quienFue + m.nombre + '?')); // el dato quienTitulo está incompleto («¿Quién fue ?»); no se modifica
+    q.appendChild(F.el('h4', '', F.t('quienFue', m.nombre))); // el dato quienTitulo está incompleto («¿Quién fue ?»); no se modifica
     q.appendChild(F.el('p', '', m.quien)); der.appendChild(q);
-    var fu = F.el('p', 'fa-fuentes'); fu.appendChild(F.el('strong', '', TXT.fuentes));
+    var fu = F.el('p', 'fa-fuentes'); fu.appendChild(F.el('strong', '', F.t('fuentes')));
     var lista = fuentesFicha[m.slug]; // data/fuentes-fichas.json; sin ellas se muestra el texto de mujeres.json
     if (lista && lista.fuentes && lista.fuentes.length) {
       lista.fuentes.forEach(function (s, i) {
         if (i) { fu.appendChild(document.createTextNode(' · ')); }
         if (s.url) { fu.appendChild(enlace(s.nombre, s.url)); } else { fu.appendChild(document.createTextNode(s.nombre)); }
       });
-      if (lista.provisional) { fu.appendChild(F.el('span', 'fa-prov', ' ' + TXT.provisional)); }
+      if (lista.provisional) { fu.appendChild(F.el('span', 'fa-prov', ' ' + F.t('provisional'))); }
     } else {
       fu.appendChild(F.el('span', /PENDIENTE/.test(m.fuentes) ? 'fa-pend' : '', m.fuentes));
     }
     der.appendChild(fu);
     var ft = F.foto(m.slug);
     if (ft) { // crédito completo de la imagen del dorso, con enlaces al origen y a la licencia
-      var cr = F.el('p', 'fa-credito'); cr.appendChild(F.el('strong', '', TXT.imagen));
+      var cr = F.el('p', 'fa-credito'); cr.appendChild(F.el('strong', '', F.t('imagenDorso')));
       cr.appendChild(document.createTextNode(ft.credito + ' '));
-      cr.appendChild(enlace(TXT.origen, ft.fuenteUrl)); cr.appendChild(document.createTextNode(' · '));
-      cr.appendChild(enlace(TXT.licencia, ft.licenciaUrl)); der.appendChild(cr);
+      cr.appendChild(enlace(F.t('origen'), ft.fuenteUrl)); cr.appendChild(document.createTextNode(' · '));
+      cr.appendChild(enlace(F.t('licencia'), ft.licenciaUrl)); der.appendChild(cr);
     }
     der.appendChild(F.imagen(RUTA_J + 'adornos/separador-rayas.png', '', 'fa-rayas'));
     cont.appendChild(der); f.appendChild(cont);

@@ -19,8 +19,11 @@ header.top { padding-block: 14px 0; position: relative; z-index: 5; }
 .venus { width: 22px; height: 30px; flex: none; }
 .controles { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .idiomas { display: flex; gap: 6px; }
-.idiomas button, .fx-btn { font: 700 .85rem var(--fuente-texto); min-width: 44px; min-height: 44px; border-radius: 10px; border: 2px solid var(--borde); color: var(--boton-texto); background: transparent; cursor: pointer; padding-inline: 12px; }
-.idiomas button[aria-pressed="true"] { background: var(--borde); color: var(--boton-activo-texto); }
+.idiomas button, .idiomas a, .fx-btn { font: 700 .85rem var(--fuente-texto); min-width: 44px; min-height: 44px; border-radius: 10px; border: 2px solid var(--borde); color: var(--boton-texto); background: transparent; cursor: pointer; padding-inline: 12px; }
+.idiomas button[aria-pressed="true"], .idiomas a[aria-current="page"] { background: var(--borde); color: var(--boton-activo-texto); }
+/* En Astro el selector de idioma son enlaces: se centran y se ven igual que los botones */
+.idiomas a { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; box-sizing: border-box; }
+.idiomas a:not([aria-current="page"]):hover { background: rgba(201,162,75,.18); }
 nav.menu ul { display: flex; gap: 4px 20px; list-style: none; margin: 0; padding: 8px 0; overflow-x: auto; white-space: nowrap; }
 nav.menu a { display: inline-block; padding: 10px 2px; text-decoration: none; font-weight: 700; }
 

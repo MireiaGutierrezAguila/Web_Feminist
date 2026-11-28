@@ -1,6 +1,6 @@
 ---
-// Portada en castellano (paso 1b de docs/plan-astro.md): la misma portada del boceto
-// design-ejemplos/propuesta-d-mezcla.html, dividida en piezas. En el paso 1c los textos pasan a src/i18n/.
+// Portada en cada idioma (paso 1c-2 de docs/plan-astro.md): un solo molde genera /es/, /ca/ y /en/.
+// Los textos salen de src/i18n/ y de src/data/portada.json.
 import Base from '../../layouts/Base.astro';
 import Cabecera from '../../components/portada/Cabecera.astro';
 import Hero from '../../components/portada/Hero.astro';
@@ -10,9 +10,14 @@ import Juego from '../../components/portada/Juego.astro';
 import Actividades from '../../components/portada/Actividades.astro';
 import Glosario from '../../components/portada/Glosario.astro';
 import Informatica from '../../components/portada/Informatica.astro';
-import { usarTextos } from '../../i18n';
+import { idiomas, usarTextos } from '../../i18n';
 
-const lang = 'es';
+// Una página por idioma de la lista (añadir un idioma allí crea su portada)
+export function getStaticPaths() {
+  return idiomas.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
 const t = usarTextos(lang);
 ---
 <Base title={t('meta.tituloPortada')} lang={lang}>

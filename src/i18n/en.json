@@ -1,5 +1,5 @@
 {
-  "_nota": "Textos de interfaz en inglés. TRADUCCIÓN DE CLAUDE (28-11-2026), PENDIENTE DE REVISIÓN DE MIREIA.",
+  "_nota": "Textos de interfaz en inglés. Traducción de Claude (28-11-2026). Mireia no revisa el inglés: lo deja en manos de Claude (28-11-2026).",
   "_revisada": false,
   "meta": {
     "tituloPortada": "Feminist · Women who made history"
@@ -66,5 +66,30 @@
     "refAntes": "You can see all the website's references on",
     "refEnlace": "this page",
     "refDespues": ", filtered by activity."
+  },
+  "scripts": {
+    "fecha": "en-GB",
+    "quitarEfectos": "Turn off effects",
+    "ponerEfectos": "Turn on effects",
+    "dibujoDe": "Drawing of {nombre}",
+    "girarRetrato": "Flip the portrait of {nombre} to see a picture of the real woman",
+    "verFicha": "View profile",
+    "logro": "ACHIEVEMENT:",
+    "fuentesBoton": "Sources ",
+    "errorDatos": "The women's data could not be loaded. Try reloading the page.",
+    "fichaDe": "Profile of {nombre}",
+    "cerrarFicha": "Close profile",
+    "quienFue": "Who was {nombre}?",
+    "fuentes": "Sources: ",
+    "imagenDorso": "Image on the back: ",
+    "origen": "Source",
+    "licencia": "Licence",
+    "provisional": "(provisional sources, still to be strengthened)",
+    "lemaFeminista": "Feminist slogan",
+    "sinEfemeride": "No anniversary today. Come back tomorrow!",
+    "fotoPendiente": "[REAL PHOTO PENDING]",
+    "autorPendiente": "author and licence to be added",
+    "reproducirVideo": "Play video",
+    "pausarVideo": "Pause video"
   }
 }

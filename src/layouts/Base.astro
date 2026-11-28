@@ -3,12 +3,15 @@
 // el contenido de la página, el pie con la firma y, al final, los scripts de la página.
 // Paso 1a: los estilos y scripts se sirven tal cual desde public/ (copias de design-ejemplos/).
 import Pie from '../components/Pie.astro';
+import { seccion } from '../i18n';
 
 interface Props {
   title: string;
   lang?: string;
 }
 const { title, lang = 'es' } = Astro.props;
+// Textos que escriben los scripts de public/js/, en el idioma de la página (los leen desde window.TXT)
+const textosScripts = JSON.stringify(seccion(lang, 'scripts')).replace(/</g, '\\u003c');
 ---
 <!doctype html>
 <html lang={lang}>
@@ -28,7 +31,8 @@ const { title, lang = 'es' } = Astro.props;
   <body>
     <slot />
     <Pie lang={lang} />
-    <!-- Scripts de la página: van después del pie, como en los bocetos -->
+    <!-- Scripts de la página: van después del pie, como en los bocetos. Antes, el idioma y sus textos -->
+    <script is:inline set:html={`window.IDIOMA = ${JSON.stringify(lang)}; window.TXT = ${textosScripts};`}></script>
     <slot name="scripts" />
   </body>
 </html>

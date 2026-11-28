@@ -66,8 +66,8 @@ fondo('esp4', 7, 6.6, 5.3);
   }
   function pintar(hoy) {
     document.getElementById('calNum').textContent = hoy.getDate();
-    document.getElementById('calSemana').textContent = mayus(hoy.toLocaleDateString('es-ES', { weekday: 'long' }));
-    document.getElementById('calMes').textContent = mayus(hoy.toLocaleDateString('es-ES', { month: 'long' }));
+    document.getElementById('calSemana').textContent = mayus(hoy.toLocaleDateString(F.t('fecha'), { weekday: 'long' }));
+    document.getElementById('calMes').textContent = mayus(hoy.toLocaleDateString(F.t('fecha'), { month: 'long' }));
     document.getElementById('calAnio').textContent = hoy.getFullYear();
     document.getElementById('calFecha').setAttribute('datetime', hoy.getFullYear() + '-' + dos(hoy.getMonth() + 1) + '-' + dos(hoy.getDate()));
     var ul = document.getElementById('calFrases');
@@ -84,20 +84,19 @@ fondo('esp4', 7, 6.6, 5.3);
       var anio = F.el('strong');
       anio.textContent = elegida.anio + ':';
       li.appendChild(anio);
-      li.appendChild(document.createTextNode(' ' + elegida.texto.es));
+      li.appendChild(document.createTextNode(' ' + F.dato(elegida.texto)));
     } else if (lemas && lemas.length) {
       /* Día sin efeméride verificada (decisión de Mireia, 27-11-2026): se enseña un lema reivindicativo de las pancartas
          (data/pancarta-frases.json). Sale siempre el mismo para el mismo día del año. No es un dato: no lleva fuente */
       var lema = lemas[diaDelAnio(hoy) % lemas.length];
       li.className = 'cal-lema';
-      var q = F.el('q'); q.textContent = lema.texto.es || lema.texto[lema.idioma];
+      var q = F.el('q'); q.textContent = F.dato(lema.texto) || lema.texto[lema.idioma];
       li.appendChild(q);
-      var et = F.el('span', 'cal-lema-etiqueta'); et.textContent = 'Lema feminista';   /* texto de interfaz: irá en el archivo de idiomas */
+      var et = F.el('span', 'cal-lema-etiqueta'); et.textContent = F.t('lemaFeminista');
       li.appendChild(et);
     } else {
-      /* Texto de interfaz (no es un dato): irá en el archivo de idiomas */
       li.className = 'cal-vacio';
-      li.appendChild(document.createTextNode('Hoy no tenemos efeméride. ¡Vuelve mañana!'));
+      li.appendChild(document.createTextNode(F.t('sinEfemeride')));
     }
     ul.appendChild(li);
   }
@@ -262,7 +261,7 @@ F.cargar().then(function () { return F.cargarObjetos(); }).then(function () { re
         var a;
         if (ft) {
           a = F.el('span', 'arco con-foto');
-          var im = F.imagen(F.RUTA + m.slug + '/' + ft.archivo, ft.alt.es, 'foto-dorso');
+          var im = F.imagen(F.RUTA + m.slug + '/' + ft.archivo, F.dato(ft.alt), 'foto-dorso');
           im.loading = 'lazy'; im.decoding = 'async';
           a.appendChild(im);
           a.appendChild(F.el('span', 'foto-credito', ft.creditoCorto));
@@ -271,11 +270,11 @@ F.cargar().then(function () { return F.cargarObjetos(); }).then(function () { re
           a.appendChild(F.el('span', 'icono-espiral'));
           var sin = F.sinImagen(m.slug); // texto honesto cuando no hay imagen utilizable
           if (sin) {
-            a.appendChild(document.createTextNode(sin.es));
+            a.appendChild(document.createTextNode(F.dato(sin)));
           } else {
-            a.appendChild(document.createTextNode('[FOTO REAL PENDIENTE]'));
+            a.appendChild(document.createTextNode(F.t('fotoPendiente')));
             a.appendChild(document.createElement('br'));
-            a.appendChild(document.createTextNode('autor y licencia por indicar'));
+            a.appendChild(document.createTextNode(F.t('autorPendiente')));
           }
         }
         cara.appendChild(a);
@@ -293,7 +292,7 @@ F.cargar().then(function () { return F.cargarObjetos(); }).then(function () { re
   var v = document.getElementById('videoJuego'), b = document.getElementById('btnVideo');
   if (!v || !b) { return; }
   var visible = false, usuario = null; // usuario: null (automático), 'play' o 'pausa'
-  function pintar() { b.textContent = v.paused ? 'Reproducir vídeo' : 'Pausar vídeo'; b.setAttribute('aria-pressed', v.paused ? 'false' : 'true'); }
+  function pintar() { b.textContent = v.paused ? F.t('reproducirVideo') : F.t('pausarVideo'); b.setAttribute('aria-pressed', v.paused ? 'false' : 'true'); }
   function ajustar() {
     var quiere = usuario === 'play' ? visible : usuario === 'pausa' ? false : (document.body.classList.contains('fx') && visible);
     if (quiere && v.paused) { var pr = v.play(); if (pr && pr.catch) { pr.catch(function () { /* el navegador no deja reproducir: queda el botón */ }); } }
