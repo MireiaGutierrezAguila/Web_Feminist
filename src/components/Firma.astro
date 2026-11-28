@@ -1,0 +1,11 @@
+---
+// Firma de Mireia (obligatoria en el pie de todas las páginas). La usan Pie.astro (portada) y el molde Subpagina.astro.
+// Formato decidido por Mireia: toda la frase con la misma letra y color; solo «Conoce su historia» más pequeño y subrayado.
+import { usarTextos } from '../i18n';
+interface Props {
+  lang?: string;
+}
+const { lang = 'es' } = Astro.props;
+const t = usarTextos(lang);
+---
+<p class="firma">{t('pie.firma')}<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:1rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.9">{t('pie.conoceSuHistoria')}</a></p>

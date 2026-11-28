@@ -1,0 +1,48 @@
+---
+// Molde de las subpáginas (glosario, referencias y, más adelante, actividades): fondo de espirales suaves,
+// logo que vuelve a la portada del mismo idioma, contenido, pie con encaje y firma, y la estela del puntero.
+// Cada página añade sus estilos (slot "head"), su cabecera (slot "cabecera"), su línea del pie (slot "pie") y sus scripts.
+import Firma from '../components/Firma.astro';
+import TextosScripts from '../components/TextosScripts.astro';
+
+interface Props {
+  title: string;
+  lang: string;
+  secciones?: string[]; // partes de src/i18n/ que necesitan los scripts de la página
+}
+const { title, lang, secciones = [] } = Astro.props;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/encaje-pie.css" />
+    <link rel="stylesheet" href="/css/subpagina.css" />
+    <!-- Estilos propios de cada página -->
+    <slot name="head" />
+  </head>
+  <body>
+    <div class="fondo-esp" aria-hidden="true"><svg class="esp e1" id="esp1" viewBox="-400 -400 800 800"></svg><svg class="esp e2" id="esp2" viewBox="-400 -400 800 800"></svg><svg class="esp e3" id="esp3" viewBox="-400 -400 800 800"></svg></div>
+    <header class="cab"><div class="envoltorio">
+      <a class="logo" href={`/${lang}/`}>♀ Feminist</a>
+      <slot name="cabecera" />
+    </div></header>
+
+    <slot />
+
+    <footer><div class="envoltorio">
+      <Firma lang={lang} />
+      <slot name="pie" />
+    </div></footer>
+
+    <TextosScripts lang={lang} secciones={secciones} />
+    <slot name="scripts" />
+    <script is:inline src="/js/fondo-espirales.js"></script>
+    <script is:inline src="/js/estela.js"></script>
+  </body>
+</html>

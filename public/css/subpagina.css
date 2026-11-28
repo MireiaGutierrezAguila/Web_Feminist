@@ -1,0 +1,26 @@
+/* Estilos comunes de las subpáginas (glosario, referencias, actividades): colores, letras, logo, firma y fondo de espirales.
+   Lo propio de cada página (anchos, cabecera, pie…) va en su archivo (glosario.css, fuentes.css…). Copiado de los bocetos de design-ejemplos/. */
+:root {
+  --negro: #101010; --blanco: #F5F5F0; --morado: #6B2D8C; --oro: #C9A24B; --oro-claro: #E8CE86; --rosa: #C2386E; --verdeazul: #127C86; --naranja: #E8762B;
+  --fondo: #101010; --panel: #17121f; --linea: rgba(201, 162, 75, .35); --suave: #b9b1c9;
+  --fuente-titulos: "Cinzel Decorative", Georgia, serif; --fuente-nombres: "Cinzel", Georgia, serif;
+  --fuente-texto: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+  --cinta-colores: linear-gradient(90deg, #C2386E 0 25%, #127C86 25% 50%, #E8762B 50% 75%, #6B2D8C 75%);
+}
+* { box-sizing: border-box; }
+/* El foco es un brillo dorado, no un cuadrado */
+html :focus-visible { outline: none; }
+.logo { display: block; width: fit-content; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.4rem; color: var(--blanco); text-decoration: none; }
+.firma { margin: 0; font-family: var(--fuente-titulos); font-weight: 700; font-size: 1.05rem; color: var(--oro-claro); }
+
+/* fondo de espirales irregulares, muy suaves (iguales que en las actividades); el contenido va por encima.
+   Las dibuja js/fondo-espirales.js; con los efectos quitados (o con menos movimiento) no giran */
+.fondo-esp { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+.esp { position: absolute; }
+.esp.e1 { left: 3%; top: 9%; width: min(250px, 55vw); opacity: .075; animation: gira2 80s linear infinite; }
+.esp.e2 { right: 2%; top: 34%; width: min(400px, 80vw); opacity: .065; animation: gira1 110s linear infinite; }
+.esp.e3 { left: 9%; bottom: 3%; width: min(540px, 100vw); opacity: .055; animation: gira2 140s linear infinite; }
+@keyframes gira1 { to { transform: rotate(360deg); } } @keyframes gira2 { to { transform: rotate(-360deg); } }
+.fondo-esp.quieto .esp { animation: none; }
+@media (prefers-reduced-motion: reduce) { .esp { animation: none; } }
+header.cab, main, footer { position: relative; z-index: 1; }

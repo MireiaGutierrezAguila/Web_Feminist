@@ -6,7 +6,8 @@
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   // Los efectos arrancan activados salvo que la persona prefiera menos movimiento
   var efectos = !reduce;
-  try { var g = localStorage.getItem('fx'); if (g !== null) efectos = g === '1'; } catch (e) { /* sin almacenamiento: se usa el valor por defecto */ }
+  // La preferencia se guarda como «feminist-sin-efectos» ('1' = quitados), la misma que leen las subpáginas y las actividades
+  try { var g = localStorage.getItem('feminist-sin-efectos'); if (g !== null) efectos = g !== '1'; } catch (e) { /* sin almacenamiento: se usa el valor por defecto */ }
 
   var F = window.F = { RUTA: RUTA, reduce: reduce, mujeres: [] };
   F.efectosOn = function () { return efectos; };
@@ -60,7 +61,7 @@
     var b = document.getElementById('fxBtn');
     if (b) b.addEventListener('click', function () {
       efectos = !efectos;
-      try { localStorage.setItem('fx', efectos ? '1' : '0'); } catch (e) { /* idem */ }
+      try { localStorage.setItem('feminist-sin-efectos', efectos ? '0' : '1'); } catch (e) { /* idem */ }
       pintar();
     });
     // El selector de idioma son enlaces normales a /es/, /ca/ y /en/ (src/components/portada/Cabecera.astro): no necesita código

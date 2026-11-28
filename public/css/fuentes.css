@@ -1,0 +1,74 @@
+/* Página de fuentes (referencias): estilos propios (copiados de design-ejemplos/fuentes-boceto.html). Lo común está en subpagina.css. */
+body { margin: 0; background: var(--fondo); color: var(--blanco); font-family: var(--fuente-texto); font-size: 1rem; line-height: 1.5; }
+a { color: var(--oro-claro); overflow-wrap: anywhere; }
+/* Foco con teclado: brillo dorado detrás, no un cuadrado. drop-shadow sigue la forma real (también en botones con borde de imagen y en SVG).
+   Los campos de texto y los contenedores con scroll llevan un brillo normal (box-shadow), para no iluminar todo su contenido. */
+html :focus-visible:not([tabindex="-1"]) { filter: drop-shadow(0 0 5px rgba(232, 206, 134, .95)) drop-shadow(0 0 12px rgba(201, 162, 75, .75)); }
+html input:focus-visible, html select:focus-visible, html textarea:focus-visible, html [tabindex="0"]:not(a):not(button):not(summary):not(svg):not(g):not(path):focus-visible { filter: none; box-shadow: 0 0 12px 3px rgba(232, 206, 134, .7); }
+.envoltorio { width: min(1120px, 100% - 32px); margin-inline: auto; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+header.cab { padding: 18px 0 8px; }
+h1 { display: inline-block; margin: 26px 0 14px; padding: .25em .7em; background: var(--morado); color: var(--blanco); transform: rotate(-1.2deg); box-shadow: 5px 5px 0 var(--blanco);
+  font-family: var(--fuente-titulos); font-weight: 700; font-size: clamp(1.4rem, 5vw, 2.2rem); line-height: 1.25; }
+.intro { max-width: 70ch; color: #e6e0f0; margin: 0 0 6px; }
+.aviso-interno { display: none; margin: 12px 0 0; padding: 10px 14px; border-radius: 10px; background: #3a2f14; color: var(--oro-claro); border: 1px solid var(--oro); }
+body.interno .aviso-interno { display: block; }
+
+.filtros { margin: 22px 0 16px; padding: 16px; background: var(--panel); border: 2px solid var(--oro); border-radius: 14px; display: grid; gap: 12px; }
+.fila { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+.acciones-filtros { display: flex; justify-content: flex-end; }
+.btn-limpiar { font: inherit; font-size: .9rem; font-weight: 700; padding: 8px 18px; min-height: 40px; color: var(--blanco); background: transparent; border: 1px solid rgba(185, 177, 201, .6); border-radius: 99px; cursor: pointer; }
+.btn-limpiar:hover:not(:disabled) { border-color: var(--oro-claro); color: var(--oro-claro); }
+.btn-limpiar:disabled { opacity: .4; cursor: default; }
+.campo select:disabled { opacity: .5; }
+.campo { display: grid; gap: 4px; flex: 1 1 170px; min-width: 0; }
+.campo label { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--oro-claro); font-family: var(--fuente-nombres); font-weight: 600; }
+select, input[type="search"] { font: inherit; color: var(--blanco); background: #0b0910; border: 1px solid var(--linea); border-radius: 8px; padding: 10px 11px; width: 100%; min-width: 0; }
+select:disabled { opacity: .45; }
+.cuenta { margin: 0 0 10px; color: var(--suave); }
+
+.tabla-caja { border: 2px solid var(--oro); border-radius: 14px; overflow: hidden; background: var(--panel); }
+table { width: 100%; border-collapse: collapse; }
+thead { background: linear-gradient(135deg, #8a6a24, #E8CE86 30%, #C9A24B 55%, #7a5a1c 80%, #E8CE86); }
+thead th { text-align: left; padding: 12px 14px; font-family: var(--fuente-nombres); font-weight: 700; font-size: .9rem; letter-spacing: .06em; text-transform: uppercase; color: #2b2418; }
+tbody td { padding: 12px 14px; vertical-align: top; border-top: 1px solid var(--linea); }
+tbody tr:nth-child(even) td { background: rgba(255, 255, 255, .025); }
+td.donde { width: 16%; min-width: 130px; }
+.donde-tipo { display: block; font-family: var(--fuente-nombres); font-weight: 700; color: var(--oro-claro); }
+.donde-det { display: block; color: var(--suave); font-size: .9rem; }
+td.dato { width: 40%; }
+.dato-sub { display: block; color: var(--suave); font-size: .88rem; margin-top: 3px; }
+td.fuentes { width: 30%; }
+.fuentes ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
+.fuentes li:has(a)::before { content: "↗ "; color: var(--oro); }   /* la flecha solo en las fuentes que son enlace */
+.fuentes li:not(:has(a))::before { content: "• "; color: var(--suave); }
+.comp { display: block; margin-top: 6px; color: var(--suave); font-size: .82rem; }
+.prov { display: block; margin-top: 4px; color: var(--suave); font-style: italic; font-size: .85rem; }
+.mes-fila td { background: #231a33 !important; font-family: var(--fuente-nombres); font-weight: 700; color: var(--blanco); letter-spacing: .04em; }
+.vacio { padding: 26px; text-align: center; color: var(--suave); }
+
+/* columnas de trabajo: solo con ?interno=1 */
+.solo-interno { display: none; }
+body.interno .solo-interno { display: table-cell; }
+td.interno-est, td.interno-nota { font-size: .85rem; color: #d9d2e6; }
+body.interno td.donde { width: 12%; } body.interno td.dato { width: 28%; } body.interno td.fuentes { width: 24%; }
+body.interno td.interno-est { width: 10%; } body.interno td.interno-nota { width: 26%; }
+.etq { display: inline-block; margin: 0 4px 4px 0; padding: 1px 8px; border: 1px solid currentColor; border-radius: 99px; font-size: .75rem; }
+.e-verificada { color: #7fd79e; } .e-parcial { color: #f0c46a; } .e-revisar { color: #ff9a90; } .e-otro { color: #c39bee; }
+
+footer { margin-top: 44px; background: #000; border-top: 10px solid transparent; border-image: var(--cinta-colores) 10; }
+footer .envoltorio { padding: 22px 0 28px; }
+
+/* móvil: cada fila pasa a ser una tarjeta */
+@media (max-width: 760px) {
+  table, tbody, tr, td { display: block; width: 100% !important; }
+  thead { display: none; }
+  tbody tr { border-top: 1px solid var(--linea); padding: 12px 14px; }
+  tbody td { border: 0; padding: 4px 0; background: none !important; }
+  td.donde { min-width: 0; }
+  .mes-fila { padding: 0 !important; }
+  .mes-fila td { padding: 10px 14px !important; }
+  body.interno .solo-interno { display: block; }
+  td.fuentes::before { content: var(--etq-fuentes, "Fuentes"); display: block; margin-top: 6px; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--oro-claro); font-family: var(--fuente-nombres); }
+}

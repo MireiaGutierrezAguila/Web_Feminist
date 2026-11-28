@@ -1,0 +1,40 @@
+---
+// Glosario feminista en cada idioma (/es/glosario/, /ca/glosario/, /en/glosario/), paso 3a de docs/plan-astro.md.
+// Diseño del boceto design-ejemplos/glosario-boceto.html. Las palabras y definiciones las pinta public/js/glosario.js.
+// No lleva la frase «Puedes ver todas las referencias…»: el pie ya cita al Ayuntamiento de Barcelona (decisión de Mireia).
+import Subpagina from '../../layouts/Subpagina.astro';
+import { idiomas, usarTextos } from '../../i18n';
+
+export function getStaticPaths() {
+  return idiomas.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = usarTextos(lang);
+---
+<Subpagina title={t('glosarioPagina.tituloPagina')} lang={lang} secciones={['glosarioPagina']}>
+  <link slot="head" rel="stylesheet" href="/css/glosario.css" />
+
+  <Fragment slot="cabecera">
+    <h1 id="titulo">{t('glosarioPagina.titulo')}</h1>
+    <p class="sub" id="subtitulo">{t('glosarioPagina.subtitulo')}</p>
+  </Fragment>
+
+  <main class="envoltorio">
+    <div class="buscar">
+      <label for="q" id="lBuscar">{t('glosarioPagina.buscar')}</label>
+      <div class="campo">
+        <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder={t('glosarioPagina.buscarPh')}>
+        <button class="btn-sec" id="qLimpiar" type="button" hidden>{t('glosarioPagina.limpiar')}</button>
+      </div>
+    </div>
+    <nav class="abc" id="abc" aria-label={t('glosarioPagina.abcAria')}></nav>
+    <p class="estado" id="estado" aria-live="polite"></p>
+    <section id="lista" aria-label={t('glosarioPagina.listaAria')}></section>
+    <p class="error" id="msgError" role="alert" hidden></p>
+  </main>
+
+  <p slot="pie" class="fuente-pie" id="creditoPie"></p>
+
+  <script slot="scripts" is:inline src="/js/glosario.js"></script>
+</Subpagina>

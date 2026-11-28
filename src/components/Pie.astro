@@ -1,5 +1,6 @@
 ---
-// Pie común: firma de Mireia y enlace a la página de referencias (obligatorio en todas las páginas).
+// Pie de la portada: firma de Mireia y enlace a la página de referencias (obligatorio en todas las páginas).
+import Firma from './Firma.astro';
 import { usarTextos } from '../i18n';
 interface Props {
   lang?: string;
@@ -9,7 +10,7 @@ const t = usarTextos(lang);
 ---
 <footer id="fuentes">
   <div class="wrap">
-    <p class="firma">{t('pie.firma')}<span style="margin:0 8px;font-weight:400">–</span><a href="https://mireiagutierrezaguila.github.io/Portfolio_Mireia/" target="_blank" rel="noopener" style="font-family:var(--fuente-texto,system-ui,sans-serif);font-size:1rem;font-weight:400;letter-spacing:0;color:inherit;text-decoration:underline;opacity:.9">{t('pie.conoceSuHistoria')}</a></p>
+    <Firma lang={lang} />
     <p class="fuente-pie ref-enlace">{t('pie.refAntes')} <a href={`/${lang}/fuentes/`} target="_blank" rel="noopener" aria-label={`${t('pie.refEnlace')} ${t('comun.pestanaNueva')}`}>{t('pie.refEnlace')}</a>{t('pie.refDespues')}</p>
   </div>
 </footer>
